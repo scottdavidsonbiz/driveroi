@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Figtree } from 'next/font/google'
+import { Shell } from '@/components/layout'
 import './globals.css'
 
 const figtree = Figtree({
@@ -21,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={figtree.variable}>
       <body className="min-h-screen font-sans">
-        {children}
+        <Shell>{children}</Shell>
       </body>
     </html>
   )
