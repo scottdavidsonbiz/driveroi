@@ -1,0 +1,1112 @@
+---
+title: "IVS (Jeff + Jennifer) x Scott - Final Decision Meeting"
+date: 2025-11-11
+type: transcript
+category: [client-discovery, sales-enablement]
+use-cases: [closing-deal, stakeholder-alignment, project-kickoff]
+personas: [ceo-founder, office-manager]
+participants: [jeffrey-cohen, jennifer-cohen, scott-davidson]
+client: ivs-tax-services
+lifecycle: validated
+validated-by: [jeff-insights, positioning-update-2024-12-09]
+integrates-with:
+  - content/insights/2025-11-11_11-00_ivs-x-scott-next-steps_insights.md
+  - transcripts/2025-10-29_11-30_jeff-scott-sync_transcript.txt
+  - transcripts/2025-11-03_10-30_scott-jeff-proposal-sync-next-steps_transcript.txt
+  - positioning/positioning-update-2024-12-09.md
+tags: [transcript, closing, stakeholder-meeting, decision-making]
+---
+
+# IVS (Jeff + Jennifer) x Scott - Final Decision Meeting
+**Date:** November 11, 2025 (11:00 AM)  
+**Participants:** Jeffrey Cohen, Jennifer Cohen (IVS), Scott Davidson  
+**Context:** Final meeting with both partners to approve engagement
+
+---
+
+[19:02:52 - 19:02:53] Scott Davidson: Hello.
+
+[19:02:59 - 19:02:59] Jennifer Cohen: Not.
+
+[19:03:01 - 19:03:02] Jeffrey Cohen: There we go.
+
+[19:03:02 - 19:03:06] Scott Davidson: Hey. There.
+
+[19:03:06 - 19:03:08] Jeffrey Cohen: We closed my door real fast.
+
+[19:03:08 - 19:03:17] Scott Davidson: Sure thing. How are you doing, Jenna? Hi. How are you?
+
+[19:03:16 - 19:03:18] Jennifer Cohen: Okay.
+
+[19:03:17 - 19:03:18] Jeffrey Cohen: Good morning.
+
+[19:03:19 - 19:03:23] Scott Davidson: There's some feedback going on, but I don't know.
+
+[19:03:22 - 19:03:23] Jennifer Cohen: so, for me,
+
+[19:03:23 - 19:03:34] Scott Davidson: Okay, it's not from you. No, I don't hear now. I don't hear it. No, I don't hear. So, maybe it was cross
+
+[19:03:26 - 19:03:32] Jeffrey Cohen: Is it for me? Okay, okay.
+
+[19:03:31 - 19:03:34] Scott Davidson: office. Yeah. Your offices near each other man? I don't know.
+
+[19:03:33 - 19:03:36] Jeffrey Cohen: Oh no. We're on completely separate sides of the building.
+
+[19:03:36 - 19:03:55] Scott Davidson: Okay, well there you go. Maybe I'm just hearing things Anyways, good morning. Hi Jennifer. I don't know if how much contacts Jeffrey
+
+[19:03:44 - 19:03:45] Jeffrey Cohen: Good morning.
+
+[19:03:48 - 19:04:22] Scott Davidson: gave you on myself and who I am but happy to kind of go into an intro. I'm in Richmond, Virginia. Done some visits to Austin. Love Austin was considering getting to UT Austin, but ultimately ended up at Tulane. So I wanted to Southern school at first, it was I only wanted to be at a large football school and so that's everywhere. I applied, and Post. Katrina, it was free to apply to Tulane and that's what brought me to Tulane. So ultimately that's how I ended up there but
+
+[19:04:20 - 19:04:20] Jennifer Cohen: Okay.
+
+[19:04:22 - 19:04:28] Jeffrey Cohen: We enjoy our our football at UT as well. So I understand
+
+[19:04:23 - 19:04:42] Scott Davidson: I've Oh, yeah, I I'm sure I went to a game in 2021 against Kansas. Ku, It was a lot
+
+[19:04:34 - 19:04:35] Jeffrey Cohen: Mmm.
+
+[19:04:34 - 19:05:04] Scott Davidson: of fun. It was a little chilly, but it was fun. I mean, it was crazy. All the tailgating we didn't have that at Two Lane, for sure. and for the last 13 years or so I've been in finance and accounting but the last five or six years I've been in B2B software in the marketing technology space and doing a lot of related activities to some of the things we'll be talking about. So, that's,
+
+[19:05:04 - 19:05:05] Jeffrey Cohen: Okay.
+
+[19:05:05 - 19:05:12] Scott Davidson: Yeah. And you are have been there for there, over at IBS for how long.
+
+[19:05:17 - 19:05:19] Jeffrey Cohen: It's about 10 years after me.
+
+[19:05:20 - 19:05:41] Scott Davidson: Nice cool. Awesome. Well, I just sent you all. A document some documentation about kickoff which we can go through or not go through. I wanted to see, you know, I know you mentioned some things you wanted to cover Jeffrey. I think it probably addresses that but I want to see if you
+
+[19:05:35 - 19:05:38] Jeffrey Cohen: Yeah, I just thought that.
+
+[19:05:39 - 19:05:41] Scott Davidson: have any questions to start off, maybe.
+
+[19:05:43 - 19:05:45] Jeffrey Cohen: Jen.
+
+[19:05:44 - 19:05:46] Jennifer Cohen: I don't have anything yet.
+
+[19:05:46 - 19:05:48] Jeffrey Cohen: Okay.
+
+[19:05:47 - 19:07:01] Scott Davidson: Okay. All right, so let me share my screen and we can kind of walk through and this is, you know, what would typically I guess this is like a pre kickoff but kind of also a kickoff but we'll just go ahead and do it. You see what happens. Alrighty. So yeah the agenda is going to be kind of setting the the stage from a strategic level which is far more important than the tactics and then, you know, the tactics flow from there. We can if we want to do like a working session and go through some of these items, if that's something you all want to do, kind of preliminary, like Who's your ideal customer, How do we segment into various groups, like public companies versus mom and pop shops and things like that? What are the value propositions that we would? How would we position ourselves against those personas? and then, What are the intense signals that someone would be buying? Creating an offer which will have to talk about a little bit. I think it's going to be a little unique.
+
+[19:07:00 - 19:07:05] Jeffrey Cohen: Hmm.
+
+[19:07:02 - 19:07:20] Scott Davidson: Just based on what you all do, talk about your current tool stock, I know use them and zoom info. So if there's anything else we can kind of talk through that and then I have a copy of the agreement that I can flash or we can walk through.
+
+[19:07:14 - 19:07:15] Jeffrey Cohen: Okay.
+
+[19:07:15 - 19:07:20] Scott Davidson: So any questions on that before we kind of go in to it?
+
+[19:07:16 - 19:07:17] Jennifer Cohen: Okay.
+
+[19:07:22 - 19:07:25] Jeffrey Cohen: Not that I can think of, I mean that.
+
+[19:07:26 - 19:07:26] Scott Davidson: You know.
+
+[19:07:27 - 19:07:48] Jeffrey Cohen: I'm looking into. What we were kind of talking about previously and then looking at all questions I had and that seems to cover it. So kind of how we determine SCP analysis and what information we would need to get started and utilize the services that we
+
+[19:07:42 - 19:07:43] Scott Davidson: Okay.
+
+[19:07:43 - 19:07:48] Jeffrey Cohen: have. So that's kind of all included in here that
+
+[19:07:46 - 19:08:15] Scott Davidson: Okay, cool. So we'll go through, we'll go through and talk about that, but it's probably fairly self-explanatory, but having an ideal customer profile and segmentation Means what one we can track the customer acquisition cost by channel by channel. And by persona, etc, and then we don't have to just spray and pray like blast people with cold emails and you know, look like spammy, crappy, no one like
+
+[19:08:13 - 19:08:21] Jeffrey Cohen: Thing. Yeah, and that appears to be what if I was defining what we were doing at this point, I think it's more of the sprayer.
+
+[19:08:20 - 19:08:45] Scott Davidson: There you go. So yeah. Try to avoid that as much as possible. And then in 10 signals, which is something we'll talk about. I think, you know, we talked about LinkedIn posting 10K, filings new tax managers job changes, those are some
+
+[19:08:32 - 19:08:32] Jeffrey Cohen: Mm-hmm.
+
+[19:08:34 - 19:09:11] Scott Davidson: examples of some things. And then I kind of put this. It's from a book. I can't recall what book but I think it's, it's pretty Good job of showing what we're attempting to do. So, We're kind of going after the first three buckets here. There's people that are like, actively buying. There's people that are Open to buying, but they just need to know that they should be buying now. And then there are people that like, aren't thinking about it, but If they were presented with it, they might be open to a conversation or realize that they need it. It's a really we're just trying to like move people up the pyramid.
+
+[19:09:12 - 19:09:13] Jeffrey Cohen: Okay.
+
+[19:09:12 - 19:09:38] Scott Davidson: and then we'll talk about an offer, which is You know how we package and bundle what we're doing and we can talk about that because again I don't know. You know, it's you all have a very defined like service. So we maybe we'll talk about some of the things that we could. Do or give away or things like that if there's something in case studies could be an example. So
+
+[19:09:37 - 19:09:37] Jeffrey Cohen: Mmm.
+
+[19:09:39 - 19:10:19] Scott Davidson: So, this is just a, I think a helpful. Um, graphic here so Abx is. The company, you know, the company that I came from six cents was like a one of the first companies that was in account based marketing and kind of like, developed the term and was a early in the forefront. So there actually compete with this company here, called Key Play and Zoom Info and they were one of the first like intent providers. I would say in the kind of actually even coined, this term abx is just accounting everything
+
+[19:10:10 - 19:10:11] Jennifer Cohen: Three.
+
+[19:10:13 - 19:11:12] Scott Davidson: and the concept is defining particular accounts that we want to go after and not just spray and pray or go after, you know, X1 every company that we possibly could go after like all those sorts of things. So very, you know in in the case there we had like named countless. Okay. We want to go after like these 100 of the fork and 500. And this is how we're gonna like penetrate those accounts with blah. And it's very different. If you're in Essen targeting, SMB versus enterprise. It gets, you know, there's a lot more touch points required with an enterprise deal because there's a lot more decision makers versus down market. Maybe there's one or two decision makers. So basically, you can think about I mean, it's very similar to the pyramid above, you know, kind of who's in market, who's actually considering who's in the selection process, and then, who can we ultimately become a customer out of, you know, 100 accounts,
+
+[19:11:06 - 19:11:08] Jeffrey Cohen: Okay.
+
+[19:11:07 - 19:11:12] Scott Davidson: theoretically, and you'll notice you'll see like zoom info here.
+
+[19:11:11 - 19:11:12] Jeffrey Cohen: Mm-hmm.
+
+[19:11:13 - 19:11:51] Scott Davidson: And then Clay is that it's a tool that will be using it. That clay is more of like an orchestration layer behind the scenes, that is the brain of the operations and kind of connects everything together and ultimately connects things to These are like outbound platform. This is a little more software focused, but And then this is for website that is that there's and there's some other intense signal providers here. But just the concept is you know, trying to Focus on on the top component of the pyramid. Using the tools at our discretion.
+
+[19:11:51 - 19:11:52] Jeffrey Cohen: Okay.
+
+[19:11:53 - 19:11:59] Scott Davidson: all right, any questions before we Move along. Okay.
+
+[19:11:58 - 19:12:01] Jeffrey Cohen: Or to email, okay.
+
+[19:12:01 - 19:12:41] Scott Davidson: All right, so, this would be like, where we start and we can do this, You know, you can take this as a homework exercise or we can do some of it now, but and this is where I think you all mentioned, like, you have a long Google sheet of like your active customers and guilty attempted to win and things like that. So this is where we kind of Brainstorm and think through. those ICP and segmentation definition, so You know what particular sub industries are we going after? What sizes of companies? I think us is your primary geography and any other like characteristics that
+
+[19:12:34 - 19:12:36] Jeffrey Cohen: Yeah.
+
+[19:12:37 - 19:12:51] Scott Davidson: then we can take in segment down. I took this from somewhere else, but Tam, you know, Tam is total addressable market. Just because it's the biggest dam, doesn't mean it. We should prioritize it.
+
+[19:12:46 - 19:12:52] Jeffrey Cohen: Gotcha.
+
+[19:12:53 - 19:13:24] Scott Davidson: But, you know, if like Fortune 500, it's a very defined tam, but they're way more valuable the deals, take longer more points of so it and you can do all the things at once. Like, it's not like it's only do this or only do that. So, you know, we can, we can take a multi-pronged approach to to do these. It's just like going in clear-eyed understanding that, you know, an average sales cycle for a Enterprise deals. I mean, you would know better than me in your market but Speaking from the software perspective, it's like six months, you know. So
+
+[19:13:22 - 19:13:32] Jeffrey Cohen: Yeah. I mean, this this does sound like a homework kind of thing so that we can I just take some time, figure out what
+
+[19:13:29 - 19:13:30] Scott Davidson: Yeah.
+
+[19:13:33 - 19:13:57] Jeffrey Cohen: what some of those answers could be, because number two, I think it's gonna be the one that that would take the most time to kind of figure out where, if we look at, historically, what we've worked to determine What the win rates have been, and I'm assuming that by win rate. You mean closing the contract, not receiving the most tax reduction for
+
+[19:13:56 - 19:14:15] Scott Davidson: Yeah, win rate is defined as a closed. One deal number of close, one deals
+
+[19:14:01 - 19:14:02] Jeffrey Cohen: Okay.
+
+[19:14:02 - 19:14:21] Scott Davidson: divided by qualified opportunities. So, not just any opportunity, but an opportunity that's actually qualified. Which so our intent with this, with this newer methodology of using these tools is to Vastly increase the number of qualified opportunities. We get up front.
+
+[19:14:21 - 19:14:22] Jeffrey Cohen: Okay.
+
+[19:14:21 - 19:14:28] Scott Davidson: Rather than spray and pray and it turns out 50% of them aren't even qualified to begin with. We're defining what constitutes qualified upfront.
+
+[19:14:28 - 19:14:30] Jeffrey Cohen: Gotcha. Okay.
+
+[19:14:29 - 19:14:59] Scott Davidson: Is the intent. So, The it, you know, win rate. It's this very similarly well maybe maybe or maybe not you would have to tell me but like maybe you're way more competitive because there's fewer providers in the inbound market and therefore, Your win rate might technically be higher but the average contract value in the lifetime value. You know, or do they stay customers forever like you know what's the average lifetime value?
+
+[19:14:58 - 19:15:00] Jeffrey Cohen: Mm-hmm.
+
+[19:14:59 - 19:15:06] Scott Davidson: So that's an actual question. Like do they tend to stick with you all for like years and years and years or
+
+[19:15:08 - 19:15:18] Jeffrey Cohen: I mean, I would say they're they're very few, would you agree with this gender?
+
+[19:15:09 - 19:15:11] Scott Davidson: Right. Jennifer, I think you.
+
+[19:15:13 - 19:15:23] Jeffrey Cohen: There's very few companies that have come in for like a one, two year period and left. like I would think the majority of them, Are.
+
+[19:15:24 - 19:15:24] Jennifer Cohen: I,
+
+[19:15:24 - 19:15:25] Jeffrey Cohen: Five. Plus
+
+[19:15:25 - 19:15:34] Jennifer Cohen: I think we have had a number of those we just forget about them because they're
+
+[19:15:26 - 19:15:27] Jeffrey Cohen: Recording.
+
+[19:15:31 - 19:15:34] Jennifer Cohen: not continued because
+
+[19:15:32 - 19:15:34] Jeffrey Cohen: That's possible.
+
+[19:15:36 - 19:15:38] Jennifer Cohen: Yeah, and
+
+[19:15:36 - 19:15:53] Scott Davidson: so that's another thing to consider, too is like You probably want to maximize for like lifetime value or and and other things,
+
+[19:15:43 - 19:15:44] Jeffrey Cohen: Yeah.
+
+[19:15:44 - 19:16:33] Scott Davidson: like maybe it's just like ease of dealing with them ease of providing the service. Like there's you know, there's a lot of different components if you needed to hire like additional staff, if, you know, things like that, that I don't, you know, we have to work through and think about but there's a metric, you know, customer acquisition, causes CAC and then there's lifetime value and you want to Maximize your lifetime value divided by your character because if it's one to one, it's like, Okay, why are we even doing this? But if it's three to one or greater, it's like, Okay, we can spend a lot of money up front to acquire the customer. Knowing there's a payback period of X. And that's yeah, so that's something we definitely want to think about too. Like your CAC is gonna be way our fork and 500 company.
+
+[19:16:33 - 19:16:33] Jeffrey Cohen: Mm-hmm.
+
+[19:16:34 - 19:17:25] Scott Davidson: Just because of the touch depending you have relatively fixed costs because we're Keeping it in an ecosystem, but Theoretically and your time is worth money and things like that. So, But in Enterprise Customer might pay 10x the product costs and you know, last five years. So, you know, there's a lot of considerations and that's why we want to kind of like go through. Your customer lists. And even you know it's worth thinking about the ones that did turn and the ones that you've pitched and lost to think through Is it, is it something about the customer? Is it something about the offer and pitch and value proposition? That isn't landing because it could be many different things. So, that would be the Homework assignment, I guess.
+
+[19:17:25 - 19:17:26] Jeffrey Cohen: Okay.
+
+[19:17:27 - 19:17:32] Scott Davidson: Decide any? Questions or thoughts concerns on that part?
+
+[19:17:34 - 19:17:37] Jeffrey Cohen: oh, Thanks. So
+
+[19:17:37 - 19:17:39] Scott Davidson: Okay.
+
+[19:17:38 - 19:17:55] Jeffrey Cohen: I'm just at the same time also trying to look to to Jen's thoughts, like Pull up that that number of inactive clients that we still have in our system. So I could compare that and see how many
+
+[19:17:53 - 19:17:55] Scott Davidson: Hmm.
+
+[19:17:56 - 19:18:02] Jeffrey Cohen: Have been. As she mentioned, potentially forgotten.
+
+[19:18:02 - 19:18:05] Scott Davidson: Yeah. Yeah.
+
+[19:18:03 - 19:18:05] Jeffrey Cohen: Okay. Okay. That's all
+
+[19:18:05 - 19:18:26] Scott Davidson: Yeah. Okay. And we can, you know, if we want to like a schedule, a real kickoff and like do it then, or you know, do some homework and then take it and iterate from there. Or if you want me to just like you give me the information, I do it
+
+[19:18:14 - 19:18:16] Jeffrey Cohen: Mmm.
+
+[19:18:17 - 19:18:26] Scott Davidson: offline. It's it's kind of like, however involved, you know, you want to be
+
+[19:18:21 - 19:18:22] Jeffrey Cohen: Okay.
+
+[19:18:22 - 19:18:26] Scott Davidson: being involved is helpful and tends to feel better. But
+
+[19:18:25 - 19:18:27] Jeffrey Cohen: I would think so.
+
+[19:18:27 - 19:18:54] Scott Davidson: Yeah, it's kind of up to you and then segmentation like I just put two here but we could segment it more than there. Could be definitely more than two ways. I mean it could be you know, Colton paper and oil gas and this and that and there might be different messaging that's required for those different groupings. There's concept of message market fit. So there's there's product market fit, like, clearly. You're providing a product that you clearly have or else, you wouldn't be a business for 26 years, like,
+
+[19:18:53 - 19:18:53] Jeffrey Cohen: M.
+
+[19:18:54 - 19:19:41] Scott Davidson: There's a service that's providable. Now it's finding the message to go to these different segments and Explain why they should be engaging with you all and you know, preparing your services. So that's the part of this that takes longer and requires the repetitions and the outflow not with spraying and praying. But like, we're gonna make a hypothesis and tested and see the data and iterate. so, we want to You know, I I think we pick a handful of segments, like the ones that we believe will be the highest. Conversion rates or could stand a value. Whatever it is, you're trying to optimize for And then, like test those with a couple angles and then maybe broaden it out as we go.
+
+[19:19:40 - 19:19:42] Jeffrey Cohen: Okay.
+
+[19:19:41 - 19:19:49] Scott Davidson: Just so things don't get overwhelming and crazy. Anyways, so that's that.
+
+[19:19:49 - 19:19:51] Jeffrey Cohen: That's the value proposition part, okay.
+
+[19:19:50 - 19:20:16] Scott Davidson: Cell value Proposition. Yeah. So this is Yeah, exactly. Like Why, what's valuable about the service to them? Like, whoa, you know, What are the pain points that you're solving for? Is it simply like Is it simply tax reduction? Is it compliance? Is it? You know? Any matter of things.
+
+[19:20:14 - 19:20:16] Jeffrey Cohen: Yeah.
+
+[19:20:17 - 19:20:27] Scott Davidson: And that's where we yeah, ideally like to rank those but even just having a list of them is helpful doesn't need to be anything like to in-depth or crazy.
+
+[19:20:27 - 19:20:50] Jeffrey Cohen: Getting the list together. I think is going to be fairly easy. The I guess listing them as what is most important to least important to the client that That might take some thought process, or maybe even. asking a couple of our current clients, you know, What seems most beneficial to you.
+
+[19:20:50 - 19:21:02] Scott Davidson: yeah, I mean yeah, that's a good way to go about it too, and it doesn't have to be part of doing the message market, that will be you know, determining what is resonating from a value perspective but I mean
+
+[19:21:01 - 19:21:02] Jeffrey Cohen: Yeah.
+
+[19:21:01 - 19:21:11] Scott Davidson: certainly we can like Accelerate by asking current customers. Yeah, that would be to the extent here able to do that. Definitely, think about that.
+
+[19:21:10 - 19:21:12] Jeffrey Cohen: Okay.
+
+[19:21:12 - 19:21:24] Scott Davidson: so I think we talked about this intense signals, these are things we can You want to think about you, what's happening before someone procures?
+
+[19:21:22 - 19:21:24] Jeffrey Cohen: Yeah.
+
+[19:21:24 - 19:21:40] Scott Davidson: Is it? You know, they're mentioning it in their 10K. I know as an example is it a new Kind of tax kind of internal auditor you know whatever the roles are that or the personas that we define. Some level of understanding around.
+
+[19:21:38 - 19:21:39] Jeffrey Cohen: Mmm.
+
+[19:21:41 - 19:21:43] Scott Davidson: You know.
+
+[19:21:43 - 19:22:07] Jeffrey Cohen: And a lot of the things that you have listed, there are a lot of the kind of things that we see. Yeah, whether it's a new CFO or a new tax director burgers and acquisitions, Definitely if they're if they get an assessment notice and it goes sky high and their current provider. If they have one isn't doing anything about it. Those are the kind words that or if the current
+
+[19:22:05 - 19:22:06] Scott Davidson: He?
+
+[19:22:07 - 19:22:14] Jeffrey Cohen: provider made a mistake that caused the assessment notice to go sky, high things that we usually get a call about
+
+[19:22:14 - 19:22:17] Scott Davidson: Is that publicly available information in any way.
+
+[19:22:16 - 19:23:05] Jeffrey Cohen: so the majority of them are the notices in most, I will say almost all real property is publicly accessible in the states that tax personal property a number of them have Noticeable or and publicly accessible personal property valuations on the site. The, I guess the tricks sometimes is finding the data because it could be in the name of a subsidiary, it could be in the name of the agent itself. It can be in the name of the company or who they bought the property from, because the deeds
+
+[19:22:51 - 19:22:51] Scott Davidson: Okay.
+
+[19:22:56 - 19:23:05] Jeffrey Cohen: haven't changed over yet. So sometimes finding it can be difficult, but it's usually there would you agree with that? Jen.
+
+[19:23:05 - 19:23:05] Jennifer Cohen: Mm-hmm.
+
+[19:23:08 - 19:23:16] Scott Davidson: So that part might be difficult to automate. I mean, it's Probably technically possible.
+
+[19:23:16 - 19:23:26] Jeffrey Cohen: Hmm. Yeah.
+
+[19:23:16 - 19:23:45] Scott Davidson: It's just that it would be. Like, you know, there are agents AI agencies these days that can like it can go to the those sites and like crawl in and whatever enter information into Look at it. Um I just don't know, same you know similar thing like if there's so many variations of I mean if you have you know the law. I don't know if it works the same way as like residential or commercial where there's are there, like plots, and that you could look in like the text. Oh,
+
+[19:23:43 - 19:23:55] Jeffrey Cohen: Yes, that is exactly how it works, Scott. And then on the personal property, it would just be another number at that geographical ID, but a separate one for
+
+[19:23:52 - 19:24:01] Scott Davidson: Okay, well to the extent, you know, we make a list of those and we want to
+
+[19:23:53 - 19:23:55] Jeffrey Cohen: personal property.
+
+[19:23:58 - 19:24:01] Scott Davidson: target it that way. I mean that possible certainly
+
+[19:23:59 - 19:24:20] Jeffrey Cohen: Yeah, like, for the most part, Texas and Louisiana are really easy to get. If you go to like Arkansas, they tax personal property, Alabama, they tax personal property, but most of the assessment websites just contain the real estate. And so, they're on the assumption of. If your filing personal property, you're going to get your physical notice, and you're going to talk with us.
+
+[19:24:22 - 19:24:27] Scott Davidson: Okay, so yeah, I mean that's something we can definitely think about. I think
+
+[19:24:25 - 19:24:26] Jeffrey Cohen: Okay.
+
+[19:24:25 - 19:25:04] Scott Davidson: it's possible. So yeah. So we'll you know well again. Try to. stack rank these and then what we can then do is like Take a combination. Any combination of these and come up with our own logic that says like if all these things are true, It's a super high priority account, like we want to reach out right now, you
+
+[19:24:52 - 19:24:54] Jeffrey Cohen: Okay.
+
+[19:24:53 - 19:25:04] Scott Davidson: know? And then it's a and we can do like a scoring out of a hundred and on the back and we can set up some workflows to, you know, do you slacker teams or anything like that? Internal
+
+[19:25:03 - 19:25:24] Jeffrey Cohen: Um, we mostly use, since we use Google Workspace in office, we use chat, we use me, We use shared docs in drive, to send that data. And I know we've used forms
+
+[19:25:11 - 19:25:16] Scott Davidson: Look up. Okay.
+
+[19:25:18 - 19:25:28] Jeffrey Cohen: for some internal stuff, but I think for the most part for the group discussion, and Are files. We've used chat.
+
+[19:25:28 - 19:25:43] Scott Davidson: Okay, yeah, I don't know what the integrations would chat looks like, but I know, I mean, we can definitely push to a Google Sheet or Doc, and then you could just have like, a refresh email type thing go out every day or however frequently. So yeah, there's something to be done there for sure.
+
+[19:25:40 - 19:25:41] Jeffrey Cohen: Mmm.
+
+[19:25:40 - 19:25:41] Jennifer Cohen: oh,
+
+[19:25:43 - 19:26:01] Scott Davidson: So yeah, that's what we do. We would stackering them again. The 10ks like those can be Automatically you can go through them. So, I don't know, I guess you all put these here, I don't know. Where did I put them there? I'm not sure. And
+
+[19:25:59 - 19:26:05] Jeffrey Cohen: I think we talked about those and I think you you based on that.
+
+[19:26:03 - 19:26:08] Scott Davidson: Okay, maybe I was populated not just that I didn't do.
+
+[19:26:05 - 19:26:06] Jeffrey Cohen: Yeah.
+
+[19:26:08 - 19:26:39] Scott Davidson: So, okay, so yeah. We'll This is what we'll go through and determine how we want to. Create like a scoring mechanism and I can create like a draft of it and then we can determine if it's like giving us a good output, you know, test it on. We'll use that tool clay, we'll get a number of, you know, maybe you have Ones that you know, like, Oh, this is an example that would be 90 or 100 or a high score doesn't, you know? Doesn't exactly. Then we can test the logic and
+
+[19:26:33 - 19:26:34] Jeffrey Cohen: Okay.
+
+[19:26:36 - 19:28:03] Scott Davidson: and see that we're getting output. We expect You know, so that's something we'll kind of doing that first couple weeks Sprint. And then this is the concept of of an offer again. I'm not sure quite how it will work out for you all, but or what exactly, it'll look like, but Alex Hormuzi, if you haven't heard of him, he's Great. He's like he has a private equity company and he's started a bunch of businesses and scout them. Any has these books that are highly recommend one is called a hundred million Dollar offers, which is where this concept comes from. And it's basically, Exactly what you see here. You want to? You know, help them achieve their exact result with a high likelihood of achievement. With a short possible delay and no sacrifice. So like if I could take a pill right now and lose 20 pounds like that's the best offer you could possibly have, right? But obviously, that's not possible. So it's, you know, trying to quantity to take all those inputs and Make them. The best versions his argument is that the last two are the most. Important to optimize for, because He puts them as like a divisor so like, you know you get more. You know, the quicker to value. Time to value in the less sacrifice, the more of a multiplier. That is so
+
+[19:28:03 - 19:28:05] Jeffrey Cohen: That makes sense.
+
+[19:28:05 - 19:28:39] Scott Davidson: You know. I don't think this is exactly what something could look like, but it could be like A free resource. That's like commonly missed. You know. Components of an Assessment Or but you know whatever the thing is something like that. That's like a it could be a free valuable resource that we use as like a lead magnet to get in the door. and then, you want to somehow can be able to convert that into a meeting like, Oh, okay, if you resonate with this like,
+
+[19:28:37 - 19:28:38] Jeffrey Cohen: Okay.
+
+[19:28:40 - 19:28:54] Scott Davidson: We can help you in that way in this way. So, you know, that's an example of the thing, we'd want to think about. And actually, that leads me to a question, which is How do you determine your pricing?
+
+[19:28:54 - 19:28:56] Jeffrey Cohen: How do we determine our pricing?
+
+[19:28:56 - 19:29:00] Scott Davidson: Yeah, like when you go to Do the work for a call.
+
+[19:28:59 - 19:29:56] Jeffrey Cohen: So there's a couple ways that we do it. One of the things that we always ask for when we're kind of putting together a contract is we want to get as accurate as possible listing of the properties whether that's just real estate or real impersonal and then get copies of either the notices or the tax bills from the prior year. The reason We're going to do that is we're going to use that to determine two things. One, the total market value of the property, and then to the the potential tax, that's there, We're going to use that information in a couple ways one. We're going to see. Okay? How spread out is the the Potential Clients property list. So we'll have to build our build in potential costs of actually doing on-site inspections. So the flights hotels, cars, etc. In addition to that, we're going
+
+[19:29:54 - 19:29:54] Scott Davidson: Hmm.
+
+[19:29:55 - 19:30:37] Jeffrey Cohen: to use the accessible value and the taxable or the taxes to say, we're going to make an assumption that. If we can get a 10 to 15% reduction in overall tax liability on a given year, how much that would be. And then we'll get that compared to what we consider kind of our set flat rate, which is approximately 350 dollars an hour. Um and determine the amount of time it would be required for the set of properties to work it. And we'll kind of compare those two numbers between the amount of time and travel and the potential for 10 to 15% reduction in tax and use that to determine an overall amount that we would bid for
+
+[19:30:38 - 19:30:49] Scott Davidson: I see. so, There are instances where you might not been at all. If The time or potential for reduction is not sufficient.
+
+[19:30:46 - 19:31:36] Jeffrey Cohen: If we think it's not, I mean, normally that would be the case if we're looking at like a single property in Somewhere far away, I guess that is possible. But normally, in a case like that,
+
+[19:30:58 - 19:30:59] Scott Davidson: Okay.
+
+[19:31:02 - 19:31:36] Jeffrey Cohen: we wouldn't be talking to that company unless we thought it could potentially lead to something bigger. For example, this year, we had talked with one industrial manufacturer, who at the time wasn't ready to leave, who they were currently working with. But they said, Hey, I have these friends that have this small business in Houston. Would you be interested in kind of seeing what you
+
+[19:31:26 - 19:31:26] Scott Davidson: Hmm.
+
+[19:31:26 - 19:31:47] Jeffrey Cohen: could do for them? So that second client. Um, we got and we started working for them. I don't think that's the kind of company that we probably would have picked up unless we thought it could potentially lead to the bigger jar junk that we were looking at just because yeah, time value money, it didn't seem
+
+[19:31:40 - 19:31:42] Scott Davidson: I say.
+
+[19:31:43 - 19:31:47] Jeffrey Cohen: that. It would necessarily be worth it based on the amount of property that they had.
+
+[19:31:47 - 19:31:57] Scott Davidson: I say, I say, That makes sense. Okay. Add more questions. But I'll leave them anyways.
+
+[19:31:57 - 19:32:03] Jeffrey Cohen: No go ahead shoot if it helps us come up with kind of scenarios. Then that
+
+[19:32:01 - 19:32:03] Scott Davidson: Yeah. Yeah.
+
+[19:32:02 - 19:32:03] Jeffrey Cohen: questions
+
+[19:32:05 - 19:32:08] Scott Davidson: So historically.
+
+[19:32:08 - 19:32:09] Jeffrey Cohen: Mmm.
+
+[19:32:08 - 19:32:22] Scott Davidson: Have the deals come from referral? Has that been the primary channel or have? There been have the outbound or inbounder, maybe outbounder in them, I guess is and for inbound as it referral or not.
+
+[19:32:23 - 19:32:47] Jeffrey Cohen: I'd say it's a little bit of both. I would think more historically. It's been either outbound or inbound, because it's been companies. Well, I guess originally if we look at very originally, It was probably mostly referral because it was the companies that worked with James and Steve when they were
+
+[19:32:45 - 19:32:46] Scott Davidson: Right.
+
+[19:32:47 - 19:32:54] Jeffrey Cohen: working at a prior company that came and started with them from that. There were
+
+[19:32:50 - 19:32:51] Scott Davidson: Mm-hmm.
+
+[19:32:52 - 19:33:45] Jeffrey Cohen: probably a number of referrals that said, Hey we're working with these guys. They're doing really well and that started bringing and building the business. In those mid-years. I'd say it was a lot more of the outbound because I'd say between like your ten in your 20. That's when we were really pushing to grow and our marketer at that point or at that time was doing research, reaching out to a lot of companies that were just in the similar industries that we had been working in finding out, Is going on with them and where their things have changed. And then that was where mostly shifted to, I guess outbound marketing. And then we've gotten a few
+
+[19:33:32 - 19:33:33] Scott Davidson: Okay.
+
+[19:33:34 - 19:33:45] Jeffrey Cohen: referrals since then, but the majority of it, I'd say, since that kind of mid-time has been outbound marketing. It's just, that's what's been drying up for the most part.
+
+[19:33:45 - 19:34:33] Scott Davidson: Yeah, yeah. And I mean it has gotten hard like to be completely fair because there's so much noise and it's so much easier to ai slopify anyone. So there's a lot of spring and nonsense but yeah I think I mean there's definitely ways to Cut through the noise with all of this stuff. So Was I gonna ask? I have a question about I don't remember. yeah, we'll talk about I'm curious about I mean what we'll find this out after the fact but Tam total addressable market of I mean, I guess the various segments,
+
+[19:34:32 - 19:34:44] Jeffrey Cohen: yeah, I mean if we look at Segments total addressable market I'd say is almost any Manufacturer distributor us. So
+
+[19:34:41 - 19:34:45] Scott Davidson: That's good.
+
+[19:34:44 - 19:34:50] Jeffrey Cohen: It could be, you know, I'm not going to say infinite but a very high number.
+
+[19:34:48 - 19:34:54] Scott Davidson: Yeah. It's very large. Okay, that's good. Oh, I remember what differentiates
+
+[19:34:51 - 19:34:51] Jeffrey Cohen: Yes.
+
+[19:34:54 - 19:35:05] Scott Davidson: Why would a customer pick you all versus other providers? Like, what's the Differentiate, What's the statement of differentiation? if there is one,
+
+[19:35:05 - 19:35:06] Jennifer Cohen: Question.
+
+[19:35:07 - 19:35:32] Jeffrey Cohen: We we do struggle with that internally trying to figure out, I know, one of the things that I would say specific to us is we do. we do specifically target and, and kind of Educate ourselves in what works in the industrial sector. So whereas others
+
+[19:35:30 - 19:35:30] Scott Davidson: Mmm.
+
+[19:35:32 - 19:35:58] Jeffrey Cohen: would be, we'll do whatever whether it's residential commercial or industrial, we put an educate our staff for industrial properties. We we train for industrial properties. So I think we have a little bit. Of a better idea of what works in those cases, because a lot of those can be
+
+[19:35:53 - 19:35:54] Scott Davidson: Okay.
+
+[19:35:55 - 19:36:19] Jeffrey Cohen: done on a unitary valuation. That's not something that's going to be done in commercial. That's not going to be done in residential, so it's more specified and more targeted and into how we approach evaluation. Additionally to that. One of the things that we always say with our clients and
+
+[19:36:09 - 19:36:10] Scott Davidson: That's it.
+
+[19:36:15 - 19:37:17] Jeffrey Cohen: also in the meetings that we have, is that Since the company was built from folks with a corporate background, we try to keep that corporate structure internally so that there's not going to be any surprises when it comes to information coming because bad news, good news, doesn't matter. It doesn't get better with age. We are going to As as Elaine was saying This morning, Jen, we were going to operate by the beard truck mentality to that. There's always at least two people familiar with the properties in your portfolio. So if something happens to that first person, if they're not in the office, there's gonna be a second person. Here, that can answer your calls. And then we kind of pride ourselves on the The feedback and, and Communication that we have with our clients to make sure always an open dialogue.
+
+[19:37:17 - 19:37:19] Scott Davidson: Okay, no.
+
+[19:37:18 - 19:37:22] Jeffrey Cohen: But they're not going to hear. It's not going to be the case that they don't hear from us until they get a bill.
+
+[19:37:22 - 19:37:38] Scott Davidson: Yeah, okay, no, that's that's helpful. And then what about like the competitive landscape? generally, and then, I guess, once you get into the more like specialized
+
+[19:37:34 - 19:37:50] Jeffrey Cohen: Mmm. Yeah so they're they're definitely a couple and and that's part of the issue
+
+[19:37:38 - 19:37:39] Scott Davidson: Well.
+
+[19:37:43 - 19:38:21] Jeffrey Cohen: that we have I think in the competitive landscape is there's a couple really big fish out there that One of them like Ryan or KPMG who are not necessarily the big accounting firms, but big in evaluation and big in tax compliance in that they handle not just property tax but they'll handle franchise tax, they'll handle federal tax, they'll handle sales and use tax and a lot of times what they'll do is they'll work with a company to do those bigger ones and then they'll be like, Oh we'll handle your property tax on the side just because it's easy to do it all in one house.
+
+[19:38:21 - 19:38:23] Scott Davidson: Yeah.
+
+[19:38:22 - 19:38:40] Jeffrey Cohen: Where they don't necessarily have, or let me rephrase that they didn't necessarily have the accumont to handle it. But, I mean, if you take a company like Ryan, they've been buying property, tax firms, less left and right for the last three or four years to build up that internal knowledge.
+
+[19:38:40 - 19:38:42] Scott Davidson: Hmm.
+
+[19:38:41 - 19:39:20] Jeffrey Cohen: In addition, it does seem like every seven to 10 years. The bigger accounting firms. You're in why you're Deloitte. They decide that they want to get back into property tax and we're in kind of one of those periods where they're doing that. So similarly, they're going to be will handle everything for you in-house at once up. So and then and then, there are a number of smaller guys, like us most of which do work mostly in commercial but there are I can think of maybe a couple, a handful that specialize in industrial that are also here in Texas.
+
+[19:39:22 - 19:39:43] Scott Davidson: Okay. I think Okay, that's good to know. Yeah, I think I'm leaning into the like industry, industrial specific knowledge and then Size. I'm sure people care about that compared to Dealing with Emo. I mean,
+
+[19:39:43 - 19:39:57] Jeffrey Cohen: You never know who you're gonna get there, like they can say, they'll throw 20 bodies at it, but I mean, it might be kids right out of school. That don't know
+
+[19:39:48 - 19:39:49] Scott Davidson: Yeah.
+
+[19:39:50 - 19:40:02] Jeffrey Cohen: what they're doing where we're gonna have, you know, five people that will throw at it, but they're going to be Definitely. More knowledgeable.
+
+[19:40:01 - 19:40:07] Scott Davidson: Yeah, yeah. So that's some sort of stuff we can lean in on and then I think I'm at, you know, we talked about case studies and
+
+[19:40:07 - 19:40:19] Jeffrey Cohen: Yeah. And I do think that we can put together some of those that would be
+
+[19:40:09 - 19:40:11] Scott Davidson: I think they're yeah, you can make some
+
+[19:40:14 - 19:40:19] Jeffrey Cohen: beneficial to kind of grow out there. And I saw that kind of in the
+
+[19:40:15 - 19:40:16] Scott Davidson: Okay.
+
+[19:40:21 - 19:40:24] Jeffrey Cohen: Where was it in?
+
+[19:40:22 - 19:40:25] Scott Davidson: Yeah.
+
+[19:40:24 - 19:40:28] Jeffrey Cohen: The yeah, the offer ideas where we can talk about potential case studies there.
+
+[19:40:28 - 19:40:29] Scott Davidson: Okay.
+
+[19:40:28 - 19:40:30] Jeffrey Cohen: Okay.
+
+[19:40:29 - 19:40:39] Scott Davidson: Yeah, yeah, exactly. Okay, that's perfect. Alright, any other any questions before we move to your tools?
+
+[19:40:41 - 19:40:43] Jeffrey Cohen: Not that I can think of.
+
+[19:40:43 - 19:40:52] Scott Davidson: Okay. and so is zoom info, the only Specific service that you're
+
+[19:40:52 - 19:41:29] Jeffrey Cohen: As far as something separate that we pay for for potential lead generation right now. Yes, that is the only one Something that I just started playing with yesterday that's built into. Now, the Google Suite is the Google Opal which allows you to build, kind of like the little Mini AI tools. And I started putting together one of those that will
+
+[19:41:13 - 19:41:15] Scott Davidson: Yeah. Yeah.
+
+[19:41:19 - 19:41:29] Jeffrey Cohen: scour information for either a specific company or a specific industry to start pulling valuation issues relative to this.
+
+[19:41:30 - 19:41:31] Scott Davidson: Sorry.
+
+[19:41:30 - 19:41:33] Jeffrey Cohen: That I'm like that. That's something that we might be able to use.
+
+[19:41:33 - 19:41:43] Scott Davidson: Oh yeah, that'll be, that'd be awesome. Yeah, I mean, yeah. Okay, yeah. I mean, that's something we can definitely do. I mean, there's a, I'll go into Clay in a little bit, but
+
+[19:41:43 - 19:41:44] Jeffrey Cohen: Okay.
+
+[19:41:45 - 19:41:50] Scott Davidson: Yeah, let me go in a minute so okay and you said they do have intent data.
+
+[19:41:50 - 19:42:17] Jeffrey Cohen: Uh, we do have intent data with zoom and I actually just got so we had to set kind of what our weekly. Intent updates are so I set up, I think it was like four or five pulls. So, and
+
+[19:42:06 - 19:42:06] Scott Davidson: M.
+
+[19:42:07 - 19:42:44] Jeffrey Cohen: I actually get my emails, every Tuesday mornings at the timing is great. So, like, the one that I can tell you, is the first one was looking for, just manufacturing companies in the US that have searched for either property, tax business, personal property tax or compliance. The second was manufacturing companies in the US that have searched for Again that larger companies are that have searched for business personal property, tax, or property tax services. The last one was industrial companies that have served for property tax services
+
+[19:42:44 - 19:42:45] Scott Davidson: Okay.
+
+[19:42:46 - 19:42:52] Jeffrey Cohen: And then the last one was just Fortune, 500 companies that were looking for property tax services.
+
+[19:42:52 - 19:42:59] Scott Davidson: Okay. And Can you mind sharing? Can we see what the output looks like?
+
+[19:42:58 - 19:43:02] Jeffrey Cohen: Oh yeah, sure. Let me share my screen real fast.
+
+[19:42:59 - 19:43:08] Scott Davidson: I think that'd be helpful. Because I'm almost 100% positive. We can pull that information.
+
+[19:43:08 - 19:43:28] Jeffrey Cohen: so like this is the first one where it lists and and this is the sample and then I can click into the you know the link to see the whole thing so that it each
+
+[19:43:16 - 19:43:20] Scott Davidson: Okay. Yeah.
+
+[19:43:19 - 19:43:48] Jeffrey Cohen: one is score based on the obviously that the type of company that we're looking for and what they were searching for the problem that our current Her has had with this so far when we pull it into zoom info and see what it looks like. Is that like you? And I had talked about previously is It could be anyone in that IP range that's kind of looking for that. So it might
+
+[19:43:42 - 19:43:43] Scott Davidson: Hmm.
+
+[19:43:44 - 19:43:58] Jeffrey Cohen: not necessarily be the people that we were looking for, but normally have a
+
+[19:43:49 - 19:43:50] Jennifer Cohen: It could be.
+
+[19:43:50 - 19:44:00] Jeffrey Cohen: specific audience that we're looking for again C-suite people or In the accounting department.
+
+[19:44:00 - 19:44:01] Scott Davidson: I say.
+
+[19:44:01 - 19:44:03] Jeffrey Cohen: And then, so that's the
+
+[19:44:02 - 19:44:13] Scott Davidson: and is there an ability to Love that have personas, you know, filtering by persona or is that? Is that what the audience strength is or I haven't
+
+[19:44:11 - 19:44:24] Jeffrey Cohen: yes, so when I do the company, Or sorry. Is I think it's the It's one of these I'm trying to remember which signal it is that I search for.
+
+[19:44:25 - 19:44:27] Scott Davidson: The audience strength, maybe.
+
+[19:44:27 - 19:44:38] Jeffrey Cohen: That could be. The size of the group, the company can research. So, that's how many people I
+
+[19:44:31 - 19:44:32] Scott Davidson: Hmm.
+
+[19:44:34 - 19:44:38] Jeffrey Cohen: think. And then there is one where
+
+[19:44:34 - 19:44:36] Scott Davidson: Yeah.
+
+[19:44:39 - 19:44:45] Jeffrey Cohen: Can't remember which one of these is that I specifically say like I'm looking for C-suite people.
+
+[19:44:47 - 19:44:52] Scott Davidson: Interesting. Hmm. Okay.
+
+[19:44:52 - 19:44:59] Jeffrey Cohen: So, this one is, yeah, it would be like they're looking for business personal
+
+[19:44:55 - 19:45:01] Scott Davidson: Okay.
+
+[19:44:56 - 19:44:59] Jeffrey Cohen: property, tax, property tax, or property tax services.
+
+[19:45:01 - 19:45:07] Scott Davidson: Okay, that's helpful. Um, so this is called third party in 10 data, where
+
+[19:45:07 - 19:45:08] Jeffrey Cohen: Yes.
+
+[19:45:08 - 19:45:11] Scott Davidson: they're Using Google or Something Similar.
+
+[19:45:11 - 19:45:15] Jeffrey Cohen: Yes, exactly. To kind of look at for that.
+
+[19:45:14 - 19:45:19] Scott Davidson: Yeah. Yeah, and then first party input, you
+
+[19:45:17 - 19:45:27] Jeffrey Cohen: What if I clicked on one? It would show when they're looking and then it would give me the potential. Contact information for that.
+
+[19:45:24 - 19:45:39] Scott Davidson: Okay. You know, okay. And then Maybe I will need to look but I'm curious if you're a level of the the level you have has API access. I don't know if you know that answer.
+
+[19:45:39 - 19:45:42] Jeffrey Cohen: I don't know that answer. I'd have to look.
+
+[19:45:42 - 19:45:47] Scott Davidson: You might be able to your account info on the top, right? And see, but we can.
+
+[19:45:42 - 19:45:43] Jeffrey Cohen: Yeah.
+
+[19:45:46 - 19:45:47] Scott Davidson: Anyways we can
+
+[19:45:48 - 19:45:54] Jennifer Cohen: We might not anymore because we didn't back off our Personal little.
+
+[19:45:54 - 19:45:59] Jeffrey Cohen: We did. So this yeah. This is the one that we currently have.
+
+[19:45:58 - 19:46:02] Scott Davidson: Hmm. Territory of
+
+[19:46:00 - 19:46:08] Jeffrey Cohen: Intentions and bulk exporting. But I see.
+
+[19:46:06 - 19:46:14] Scott Davidson: And how's the website? Visitor. Is that have you tried? That does not worked at all for
+
+[19:46:13 - 19:46:34] Jeffrey Cohen: so I have I think we have it set up so what you have to do is you set Your? You put in your, your website information and your hosting and then it has you all script on the site.
+
+[19:46:33 - 19:46:35] Scott Davidson: Yeah. Yeah.
+
+[19:46:34 - 19:46:37] Jeffrey Cohen: That it gets that information.
+
+[19:46:37 - 19:46:38] Scott Davidson: Okay.
+
+[19:46:38 - 19:46:41] Jennifer Cohen: But the red, I think we did it.
+
+[19:46:39 - 19:46:42] Jeffrey Cohen: We have, yes, we did.
+
+[19:46:41 - 19:46:44] Jennifer Cohen: Have we ever looked at the results?
+
+[19:46:44 - 19:46:50] Jeffrey Cohen: I don't think I have. But yeah, it's up. It's it's on here.
+
+[19:46:50 - 19:47:36] Scott Davidson: um, Okay, well, I'll dig into that'll be part of something I like work on and I mean we can work on it together. But yeah, I I'm gonna open up clay and see if that's that's Problem I can pull in them. I know there's no info connection. I just don't know. Exactly what information. Zoom info. Enrich Company. Cinnamon Foam company name. Hmm, but there's probably a way to get a CSV export, I suspect. so the worst case,
+
+[19:47:35 - 19:47:50] Jeffrey Cohen: Yes, I do know that. That's one of the things that we have. I think it said like there are 5,000 credits, Those are exportable information that you could take one of those searches and then it'll dump contact information for those
+
+[19:47:45 - 19:47:45] Scott Davidson: Yeah.
+
+[19:47:49 - 19:47:50] Jeffrey Cohen: searches.
+
+[19:47:50 - 19:48:04] Scott Davidson: Mmm. Okay, so worst case scenario, that's what we'll, I think that might be what we have to do if we don't have API access because I think that functionality in Clay is once you already have the company, then you can enrich it with
+
+[19:48:04 - 19:48:06] Jeffrey Cohen: Okay.
+
+[19:48:05 - 19:48:11] Scott Davidson: the information or the people information, but we can we can leverage both
+
+[19:48:07 - 19:48:08] Jeffrey Cohen: Gotcha.
+
+[19:48:11 - 19:48:22] Scott Davidson: So okay, so that that and then email. Are you all just sending emails, Or are you doing cold email still or what it was out?
+
+[19:48:21 - 19:48:58] Jeffrey Cohen: Um, yes, our current marketer does and she sends them mostly from her email account, but That that's a little bit of a sore point to at least currently for us because We, I feel like we have to review. everything that gets set out before it gets sent out so that we can make sure there are Mistakes in it or one that I won't even necessarily say mistakes. I will say like one thing that we can make sure that there's nothing that we can't do either ethically or professionally
+
+[19:48:57 - 19:49:00] Scott Davidson: because really,
+
+[19:49:00 - 19:49:09] Jeffrey Cohen: A guaranteeing results or to if if yeah, she's using wording that we won't
+
+[19:49:00 - 19:49:02] Scott Davidson: Yeah.
+
+[19:49:04 - 19:49:09] Jeffrey Cohen: necessarily agree with because it would potentially be misleading or something
+
+[19:49:08 - 19:49:09] Scott Davidson: Okay.
+
+[19:49:08 - 19:49:09] Jeffrey Cohen: like that.
+
+[19:49:09 - 19:49:11] Scott Davidson: Okay.
+
+[19:49:10 - 19:49:11] Jeffrey Cohen: Or anything that you would add to that Jen.
+
+[19:49:13 - 19:49:22] Jennifer Cohen: See. She can't write really. She has all live in everything.
+
+[19:49:19 - 19:49:23] Jeffrey Cohen: and if ai to write,
+
+[19:49:22 - 19:49:22] Jennifer Cohen: Move.
+
+[19:49:25 - 19:49:39] Scott Davidson: Yeah. I have a bunch of Stuff we can leverage and we could leverage AI for personalization like, you know, it's a time. It's templated kind of
+
+[19:49:38 - 19:49:38] Jeffrey Cohen: M.
+
+[19:49:39 - 19:50:53] Scott Davidson: But you know it's like Hey notice if it's noticing something intent wise it's like Hey notice you just started a blah blah, congrats on the new role. We've helped XYZ type of thing, save XYZ amount of tax, like would it be helpful to have a conversation? It's like it it's not gonna there's no changing because the list will be new start CFOs at blah and we just send it to 200 of them or new tax people. It could be people that visit your website like Hey are seems like it might be a market for blah blah and then we you know It's three. It's like three little blocks. That's the most. You really want to keep it short and sweet. And it's, there's like a framework. It's You know, something that's like first line hyper-relevant personalization. and it doesn't need to be necessarily like just as long as it's relevant to the intent, then like, case, study blur something about us, and then, Trying to make a next step, which may not be getting on a call. If it's like providing the framework, it could be Would it be helpful or you could just reference the framework? What are you interested? You know, that sort of thing. just,
+
+[19:50:53 - 19:50:58] Jeffrey Cohen: Here, I'll give you an idea. She just said this one. shortly ago, based on
+
+[19:50:58 - 19:50:59] Scott Davidson: Okay.
+
+[19:50:58 - 19:51:04] Jeffrey Cohen: something that we said and and as you're saying you know, short and sweet three things
+
+[19:51:03 - 19:51:08] Scott Davidson: That's way too long. Yeah, that is way too. That is four times two.
+
+[19:51:08 - 19:51:10] Jeffrey Cohen: Majority. They look
+
+[19:51:09 - 19:51:17] Scott Davidson: Yeah. Yeah, you want to be like because no one, it's hard to get them. People
+
+[19:51:13 - 19:51:15] Jeffrey Cohen: No one's gonna take that long to read.
+
+[19:51:13 - 19:51:17] Scott Davidson: read them. What's this project line? I'm curious.
+
+[19:51:16 - 19:51:19] Jeffrey Cohen: Oh sorry. Let me go back to it.
+
+[19:51:17 - 19:51:21] Scott Davidson: Yeah. Hey, I'm curious.
+
+[19:51:19 - 19:51:20] Jeffrey Cohen: Let me.
+
+[19:51:24 - 19:51:26] Jennifer Cohen: us, right?
+
+[19:51:25 - 19:51:30] Jeffrey Cohen: No, no, this is the one that she just sent to Cesaric.
+
+[19:51:30 - 19:51:31] Jennifer Cohen: No.
+
+[19:51:32 - 19:51:38] Jeffrey Cohen: So following my voicemail specific issues your property tax savings.
+
+[19:51:35 - 19:51:42] Scott Davidson: Okay, yeah, we should. Yeah we'll work on that.
+
+[19:51:42 - 19:51:42] Jeffrey Cohen: Okay.
+
+[19:51:42 - 19:52:06] Scott Davidson: Yeah, so that's another thing too. I will have to sort out how we Like manage it. I mean there's like we talked last time and it's in the proposal about like infrastructure but one of the tools that I use is it has like a unit box feature which you'll just be able to go in and manage from there. It's the email automation platform. The first one
+
+[19:52:04 - 19:52:08] Jeffrey Cohen: Okay. Yeah, I do have that one up here. So
+
+[19:52:07 - 19:52:44] Scott Davidson: Yeah, and it manages all the Like we purchase a domains and everything separately. We manage it all in there and then it does have ai where can determine if A constitutes interested Do not f off, you know, things like that, and then we can route it, but there's other things, you know, using like an opal type thing, where it's like okay interested, boom, wrap it to me. No, so that's an example and same with the LinkedIn automation tool that also has a UNO box. So we have to Capture it and send it somewhere, unless you want to be in that tool, which is also fine, but it's still a couple things you have to think about.
+
+[19:52:42 - 19:52:48] Jeffrey Cohen: Okay.
+
+[19:52:46 - 19:53:04] Scott Davidson: Cool. All right. Any other? Oh, I already have a case. Study section here. Look at that. Any other question? 'S before. I have. Okay, I have next step. So let me let me just share that real quick.
+
+[19:53:04 - 19:53:10] Jeffrey Cohen: Yeah, sure.
+
+[19:53:05 - 19:53:33] Scott Davidson: And then I can show you some of the tools if you're interested in seeing them. I mean, I don't know. okay, so next steps would be It's not the contract which we can talk about and then kind of going through the excess of the homework exercise here that we just went through. You know, we could do a call where we like sign up for the tools do one password, you know, so you can share the credentials safely and all that good stuff.
+
+[19:53:32 - 19:53:33] Jeffrey Cohen: Okay.
+
+[19:53:33 - 19:53:45] Scott Davidson: And then, you know, that's when all kind of start to do the behind the scenes, setting everything up. So, any questions on that?
+
+[19:53:44 - 19:53:58] Jeffrey Cohen: So I guess I'm looking at the the next steps and the case studies improve points
+
+[19:53:48 - 19:53:48] Jennifer Cohen: Me.
+
+[19:53:50 - 19:54:14] Jeffrey Cohen: kind of together because you you put them in as the next steps. I'm assuming for a case studies, we should try to Limit to say one per industry and then kind of spread them out. So we have say one in like, Bottling or manufacturing side and one in pulp and paper and one in oil and gas, that kind of thing.
+
+[19:54:14 - 19:54:18] Scott Davidson: I would yes to the extent that possible.
+
+[19:54:16 - 19:54:23] Jeffrey Cohen: As if all. And like, you know, here's three times we did great things for
+
+[19:54:22 - 19:54:22] Scott Davidson: Yeah. Yeah.
+
+[19:54:22 - 19:54:23] Jeffrey Cohen: refineries
+
+[19:54:23 - 19:54:43] Scott Davidson: yeah, we can just reference one and say like, you know, we've achieved similar results for You know, dozens of other whatever dozens of other companies are, you know, things like that and even if it's like you're using an oil and gas for that. I
+
+[19:54:35 - 19:54:36] Jeffrey Cohen: Okay.
+
+[19:54:38 - 19:54:55] Scott Davidson: mean it's ideal that it's in the same sub segment but again, maybe we Start with two sub segments, and we have the two case, studies, one for each of those. And then we, we kind of start there, and maybe the case study hasn't even
+
+[19:54:49 - 19:54:51] Jeffrey Cohen: Okay.
+
+[19:54:51 - 19:54:55] Scott Davidson: the thing that resonates, so we'll that will test to
+
+[19:54:54 - 19:55:04] Jeffrey Cohen: I think we could definitely put together two or three of those that looking at
+
+[19:54:57 - 19:54:58] Scott Davidson: Okay.
+
+[19:54:57 - 19:55:07] Jeffrey Cohen: the industry and the results that we had we can we can do a couple per or one or two per Maybe like two or three industries.
+
+[19:55:07 - 19:55:09] Scott Davidson: Okay, cool.
+
+[19:55:08 - 19:55:13] Jeffrey Cohen: To start. Okay. All right, let me keep going.
+
+[19:55:11 - 19:55:25] Scott Davidson: Any. Any other questions there's a timeline in here. I don't know if this is actually relevant. I have the Contract separately.
+
+[19:55:25 - 19:55:27] Jeffrey Cohen: Okay.
+
+[19:55:27 - 19:55:32] Scott Davidson: Would you like to go through that? Do you want to go through the tooling and take a look at that.
+
+[19:55:32 - 19:55:36] Jeffrey Cohen: um, Go to what was the first thing?
+
+[19:55:34 - 19:55:47] Scott Davidson: I know we're we're running up on time too. Um, We can look at the agreement here if you want to scroll through it quickly or we could look at like the tooling. If you wanted to, it's really kind of wherever you want to go next.
+
+[19:55:47 - 19:55:55] Jeffrey Cohen: I guess let's look at the agreement so that Jen and I can can get an idea of that and then we can discuss that with James when he gets back and see about moving forward with it.
+
+[19:55:54 - 19:55:58] Scott Davidson: Okay. Okay, cool. It shouldn't be anything.
+
+[19:55:56 - 19:55:57] Jennifer Cohen: Okay.
+
+[19:55:59 - 19:56:15] Scott Davidson: Too crazy or surprising. The scope of work is literally just from the proposal, it's the same. Thing, you know starting with a phase two weeks sprint to do what we just talked
+
+[19:56:09 - 19:56:10] Jeffrey Cohen: Okay.
+
+[19:56:14 - 19:56:15] Scott Davidson: about.
+
+[19:56:15 - 19:56:16] Jeffrey Cohen: Yeah.
+
+[19:56:17 - 19:56:39] Scott Davidson: Campaign execution is where we'll actually start messaging and Will have. We'll test sequences. And what we constantly testing, it's possible that like, in a domain gets flagged, or email gets flagged. I'll handle like procure, you know what? Procurement ones and Deliverability and all that good stuff. We'll handle that.
+
+[19:56:37 - 19:56:39] Jeffrey Cohen: Okay.
+
+[19:56:43 - 19:57:20] Scott Davidson: and then so deliverables can be We can define what the ICP document, you know, what is icps or What are they, our industry company, etc. We can create lists, we can refine the list as we go. Like if we wanted to include, or if you just want to like, Grab the zoom info data and maybe that's and then we can, I see people score against that list, knowing that there is some level of intent. There. That could be like a good
+
+[19:57:05 - 19:57:06] Jeffrey Cohen: Okay.
+
+[19:57:09 - 19:57:20] Scott Davidson: starting point but again, there's there's multiple ways to go about that. Like, it could be recent job changers, You know, there's there's lots of different things.
+
+[19:57:18 - 19:57:19] Jeffrey Cohen: Mm-hmm.
+
+[19:57:21 - 19:58:05] Scott Davidson: Messaging. We Don't you know, we don't always have to have the messaging, be personally specific. If it's A CFO versus the tax manager. Like, it's probably similar language that we'd use, but that's something to think about. Again the intent signal monitoring. We won't necessarily set it all up but we'll talk about what they are and I can I mean we'll start to set them up. And then we're gonna yeah. Launches quickly as possible with The actual campaigns. And iterate from there. My thought is we'll do like Bi-weekly call. That looks something like this that involved. Like
+
+[19:58:04 - 19:58:05] Jeffrey Cohen: Okay.
+
+[19:58:06 - 19:58:43] Scott Davidson: strategy and iteration and then on the opposite weeks, I can send just like a report with These things reply rates and what's resonating hypotheses? Etc. Anything can even decide like change that or don't change that or have you thought about this or that? Some timelines here. Same Same thing, similar. Um yeah, minimum commitment. So payment, we're gonna we would do 50, 25, 25. I can provide an invoice with all the information.
+
+[19:58:43 - 19:58:44] Jeffrey Cohen: Okay.
+
+[19:58:46 - 19:59:06] Scott Davidson: Late payment, etc. These are your responsibilities. you know, doing the things we just talked about basically Being in the meetings and Tori giving me access to the things that we need to
+
+[19:59:01 - 19:59:01] Jeffrey Cohen: Mm-hmm.
+
+[19:59:02 - 19:59:53] Scott Davidson: things and then like you all pay for the tools. And then I will do all things that I said, I'm going to do here. Async reporting weekly by weekly meeting etc. And fast response times. Confidentiality yellow and all the documentation. I will. You know, use these methodologies with other people. Um obviously and then it's a legally is nonsense. termination, not in the first three months, but 30 days after that, we can and we can I allude to the second Phase, we talked about here, which is completely optional and we can, we'll pay
+
+[19:59:49 - 19:59:49] Jeffrey Cohen: Yeah.
+
+[19:59:49 - 19:59:53] Scott Davidson: for that separately and it's all separate.
+
+[19:59:53 - 19:59:54] Jeffrey Cohen: Okay.
+
+[19:59:54 - 19:59:56] Scott Davidson: Simple, work and everything.
+
+[19:59:56 - 20:00:01] Jeffrey Cohen: And Jen, the the second phase was shared in the original.
+
+[20:00:01 - 20:00:02] Scott Davidson: Oh yeah.
+
+[20:00:03 - 20:00:12] Jeffrey Cohen: That the original thing that that I sent you guys that you and James that had the workflow automation and and potentially setting up a separate CRM.
+
+[20:00:12 - 20:00:13] Jennifer Cohen: Yeah.
+
+[20:00:14 - 20:00:16] Jeffrey Cohen: Just so, you know, okay.
+
+[20:00:15 - 20:00:27] Scott Davidson: yeah, and it includes some of that and then so what will ideally know by then is Art. Do we have top of funnel? Qualified.
+
+[20:00:26 - 20:00:26] Jeffrey Cohen: Mm-hmm.
+
+[20:00:29 - 20:00:56] Scott Davidson: We will come up with staging in the phase Two, but like Stage 2 is qualified, but whatever, qualified pipeline and then. Do we have issues beyond the qualification? Is it? Discovery. You know, there's different methodologies to do discovery and qualify like band, medic. I talked about last time. and then, you know, kind of like using those to determine if there's ways to Improve conversion. Like further down the funnel.
+
+[20:00:56 - 20:00:58] Jeffrey Cohen: Okay.
+
+[20:00:59 - 20:01:05] Scott Davidson: But we have to get top of them first too. Let's see how it goes from there and
+
+[20:01:01 - 20:01:08] Jeffrey Cohen: Okay.
+
+[20:01:04 - 20:01:05] Scott Davidson: that's it.
+
+[20:01:06 - 20:01:07] Jennifer Cohen: Okay.
+
+[20:01:09 - 20:01:13] Scott Davidson: Any concerns questions, thoughts.
+
+[20:01:12 - 20:01:13] Jeffrey Cohen: um,
+
+[20:01:12 - 20:01:15] Jennifer Cohen: oh, I want to read through the whole thing that
+
+[20:01:14 - 20:01:16] Jeffrey Cohen: Yeah.
+
+[20:01:15 - 20:01:17] Jennifer Cohen: Yeah.
+
+[20:01:15 - 20:01:17] Scott Davidson: Of course, of course.
+
+[20:01:17 - 20:01:18] Jeffrey Cohen: um,
+
+[20:01:17 - 20:01:19] Scott Davidson: Cool.
+
+[20:01:18 - 20:01:44] Jeffrey Cohen: The only other I guess. Comment question I had is I know we had originally talked about when we are going through, the, the kind of expected outcomes, we're looking at the original number of, like, One meeting book per 500 or so prospects contacted, you mentioned that with
+
+[20:01:37 - 20:01:38] Scott Davidson: Yeah.
+
+[20:01:39 - 20:02:08] Jeffrey Cohen: LinkedIn. We tend to have a better rate as far as that's concerned. I guess my question regarding that would be like, so how? Often. Or Argus how many people within like one company? Would we necessarily be contacting at the same time with that, increase those potential I guess connections and and bring down that number a little bit?
+
+[20:02:08 - 20:02:35] Scott Davidson: Yeah, I mean, there's definitely the concept of that you know, sales and marketing always needs to make it sound fancy, but it's called multithreading and it's like, you know, in enterprise accounts it's kind of what I was living to where You just trying to like Wedge in and then you can expand and find out like, Who's the buying committee? Who's making the decisions etc? You know, at the moment Poppy type place and they have a handful of properties or whatever. Maybe it's there might only be one decision maker. Um
+
+[20:02:33 - 20:02:35] Jeffrey Cohen: Yeah.
+
+[20:02:35 - 20:02:53] Scott Davidson: so yeah, I mean I definitely think Yeah, I mean, it's very possible doing this target approach that we should see better rates than that. You know, may take time to iterate upon like the messaging and what's landing and resonating.
+
+[20:02:52 - 20:02:53] Jeffrey Cohen: Up.
+
+[20:02:54 - 20:03:41] Scott Davidson: and then, You know, we can start to think about things like engaging with LinkedIn content. That's like relevant and that gets you like visibility like, Oh maybe. So, like I use a tool that I put I can put the prospects in and it shows it's either their direct posts or people that they engage with frequently and you can comment on those posts automatically and then they're like, Okay, you show up, you know, like they see your face and they recognize even things. So it's like, you're, you're kind of active and out and about and then, of course we could, you could work on. We can work on your content. If you wanted to create content, which the whole separate
+
+[20:03:33 - 20:03:35] Jeffrey Cohen: Yeah.
+
+[20:03:33 - 20:04:21] Scott Davidson: thing that take thinking through and maybe it's publishing case studies on your website, like it could be a simple as that or publishing them on LinkedIn. And just, you can like pin them and have them, you know, permanently there. So, when someone goes to your page, because within this tool you can, you're kind of like, you can it automatically will like view another person's page. So they kind of like, see you and then maybe they come to your page, and then they see nothing there or you're never active. It's like, and maybe that's okay. Like, that could be fine. That could be sufficient to get them interested or it could be. Oh, here's a case. Like, let me read through this and just engaging interest further. So, you know, it it does kind of depend but Yeah, I mean, anyone that could be a possible decision maker or have influences like worth contacting.
+
+[20:04:21 - 20:04:23] Jeffrey Cohen: Okay.
+
+[20:04:22 - 20:04:24] Scott Davidson: And that's something we can work through.
+
+[20:04:25 - 20:04:27] Jeffrey Cohen: Okay.
+
+[20:04:27 - 20:04:30] Scott Davidson: I'm not that. Does that answer the question or not really?
+
+[20:04:30 - 20:04:33] Jeffrey Cohen: No, it does. I think that'll help.
+
+[20:04:33 - 20:04:49] Scott Davidson: Okay. Yeah, okay, I think that's it. Any do you? I want to call it, or do you want to do a brief walkthrough of tooling or
+
+[20:04:50 - 20:05:02] Jeffrey Cohen: Do you have time to continue going to energies going to or get on something? Do you want to look at the tooling? I think you're read it.
+
+[20:05:03 - 20:05:04] Jennifer Cohen: All right, I'm interested in the tools.
+
+[20:05:05 - 20:05:05] Jeffrey Cohen: Okay.
+
+[20:05:05 - 20:07:20] Scott Davidson: Okay. All right. Let's see what I have here. Okay, so Clay is, is the brain of the operations, really? You can see, like, there's him info here. It's basically, it looks like a spreadsheet. Like you basically can't tell the difference but it's it's connected to all these different data providers. Let me show you my Like here. dry little, With less than one month in the job. You do. So, you can create filters for. I'm looking for C-suite VP is heads of XYZ. I already had a company list, so like we would take your company list. Put it in here and then look up. This is where we would look up the individuals and it uses LinkedIn primarily to find these people and then I don't know why. It's Working. Things slow for me. Okay, so yeah, individuals that meet that criteria, we can do less than 90 days less than x amount of time. And then we get all this information about, you know, the company which zoom in filming provide us like up front which would be great because then we won't have to use clay credits. They have a credit system. And then yeah, we go ahead and find it individual. We can find out all this information about them. Here's where. Like I have an AI agent here. That cleans up the company name. So if it's like Blah blah, blah, LLC. Like it takes the LLC off for Corp and it makes it seem like when you're. And then I use these in my lines and email. So it looks like you're you know, it's very clearly automated if it says like Ibs, LLC, you know, like no, no do that. And then you can look up there icps if you want to. So I do that. Etc, and then here's this is Hay Reach which is the LinkedIn Automation tool.
+
+[20:07:21 - 20:07:22] Jeffrey Cohen: Okay.
+
+[20:07:22 - 20:08:38] Scott Davidson: I'm sure I have that up somewhere. I have a lot of tabs open. I have a problem. And then we, we can auto route it over to Hey, reach from Clay. So we would take the information from zoom info. Run it through these waterfalls and we can find emails with one of the tools that I mentioned that will need to procure. and then, we were out on based on like tier one, we would probably route here and we have Campaigns. So, This is a campaign I have that automates. It's actually updates in every single day. It goes in, and it looks up companies that are hiring for a role. That's it's called gtm engineering. Like this line of work that I'm doing so it looks for open rolls on LinkedIn for gtm engineers. Pulls in all the data information, blah blah and then it sends them. And then we can set up sequences here so we can like send our connection requests via their profile. If they don't accept, we create the workflow, whatever we want it to be. I'm sending a message.
+
+[20:08:36 - 20:08:37] Jennifer Cohen: Interesting.
+
+[20:08:38 - 20:08:49] Scott Davidson: That sounds like hey, sorry, hiring an engineer. If you're open to a contractor like work with me instead and yeah, that's kind of like an example of a workflow.
+
+[20:08:49 - 20:08:51] Jennifer Cohen: so,
+
+[20:08:50 - 20:08:52] Scott Davidson: Any questions, you know? Yeah.
+
+[20:08:52 - 20:08:58] Jennifer Cohen: And would we need to subscribe to all of these things?
+
+[20:08:57 - 20:08:58] Scott Davidson: Yes.
+
+[20:08:58 - 20:08:59] Jennifer Cohen: Okay.
+
+[20:08:59 - 20:08:59] Scott Davidson: Yes.
+
+[20:09:00 - 20:09:04] Jennifer Cohen: so, What are those subscription fees like?
+
+[20:09:04 - 20:09:09] Scott Davidson: They're in the it's about 500 dollars, total a month.
+
+[20:09:09 - 20:09:13] Jeffrey Cohen: Oh, that was part of what was in the original.
+
+[20:09:15 - 20:09:17] Scott Davidson: It was right? Yeah this
+
+[20:09:16 - 20:09:23] Jeffrey Cohen: Yeah. So that was the the monthly automation costs. They're so that was I guess this screen. Yeah.
+
+[20:09:24 - 20:09:26] Scott Davidson: Yeah, well notes, of course.
+
+[20:09:25 - 20:09:29] Jeffrey Cohen: The 439-ish.
+
+[20:09:29 - 20:09:31] Scott Davidson: Yeah, so it is 79 per account per LinkedIn. So however many
+
+[20:09:31 - 20:09:33] Jeffrey Cohen: Okay. And I think
+
+[20:09:32 - 20:09:47] Scott Davidson: it may depend on the number of ICP like how many Accounts. Are we going to find with this preliminary segmentation if we want to
+
+[20:09:39 - 20:09:39] Jeffrey Cohen: Yeah.
+
+[20:09:39 - 20:09:47] Scott Davidson: because we're on LinkedIn? 25 connections per day is the maximum. So
+
+[20:09:46 - 20:09:47] Jennifer Cohen: Okay.
+
+[20:09:47 - 20:09:51] Jeffrey Cohen: So I think it would be at least you me and James for now Jen.
+
+[20:09:52 - 20:09:53] Jennifer Cohen: Okay.
+
+[20:09:52 - 20:09:54] Scott Davidson: so, that would be
+
+[20:09:53 - 20:09:56] Jeffrey Cohen: I don't, I don't know that I would have Mel included with that right now.
+
+[20:09:58 - 20:10:10] Scott Davidson: So, so, yeah. So that would be. And there's a 14 day free trial, but 79 per month per account. And then The email automation platform. I think we're going to.
+
+[20:10:08 - 20:10:12] Jennifer Cohen: So, which one is that the hay reach.
+
+[20:10:11 - 20:10:22] Scott Davidson: know hey reaches the LinkedIn instantly is the It looks, it's very similar, they're all very similar, but this one just as email
+
+[20:10:18 - 20:10:19] Jennifer Cohen: Okay.
+
+[20:10:23 - 20:11:34] Scott Davidson: So same thing, you put the leads. You can personalize. Information. And then we set up sequences. So like I'm using ai these, these are variables. So like first name, use ai concise phrase so I'm saying, you know, these are for Like accounting firms and other consulting. And I'm saying, I'm sure you're balancing. You know, managing your staff with doing whatever else you're doing. Um, And then I'll send you either 50 leads in your ICP. And then I put in parentheses like CFO, you know, yours would be CFL is new in the job at Fortune 500 companies, but that would automatically fill in here. And then, Or high converting outreach template, specifically for your company. And then we can set up, you know, multiples how many days in between them, scheduling to make it seem. Like it's normal working hours. And then some other, you know, these is where we would procure. The The different email addresses and domains. How many we want to send per day, etc. And then there's a unit box that we can manage
+
+[20:11:37 - 20:11:37] Jennifer Cohen: Okay.
+
+[20:11:39 - 20:12:16] Scott Davidson: For inbound requests. And then we can use the tool that I was referencing earlier, which is Not. I have it somewhere. Make calm. It's cheap. It's like 11 bucks a month. I think. And that that does kind of like what opal's doing. So we can route. all the inboxes or all the replies to Google Sheet or You know, you can do anything really. So those are kind of the Primary tools.
+
+[20:12:21 - 20:12:22] Jennifer Cohen: Interesting.
+
+[20:12:22 - 20:13:07] Scott Davidson: Yeah. Any other? Questions. Or And we can use the clay comes with credit so we can use the clay credits to Find emails or I mean we should it's cheaper. If you do it by yourself, this way by a lot. And also if you get your own, AI key API keys, and things like that. Like, that brings The cost down but there are things that it's just easier or you might want to do within clay and clay. You just use their credit system which comes with. I think you get like 10,000 a month to do you to do various things. Get contact information, have it. Scrape. The Internet, go on the Internet and do things, etc.
+
+[20:13:09 - 20:13:10] Jennifer Cohen: Okay.
+
+[20:13:11 - 20:13:24] Scott Davidson: Cool. Well, I think that's everything on my end. Is there anything else? Concerned questions, anything you want to? Think that I'll talk about.
+
+[20:13:24 - 20:13:26] Jeffrey Cohen: I think that's it for me.
+
+[20:13:26 - 20:13:31] Scott Davidson: Open dream. That's that.
+
+[20:13:30 - 20:13:31] Jennifer Cohen: I don't think.
+
+[20:13:31 - 20:13:42] Scott Davidson: Okay, cool. So I think I sent let me know if you got the the contract you can, if you have like red lines or anything you want to throw in there,
+
+[20:13:42 - 20:13:43] Jennifer Cohen: Okay.
+
+[20:13:43 - 20:13:45] Scott Davidson: Let me know.
+
+[20:13:43 - 20:13:47] Jeffrey Cohen: Yeah, I definitely come through on drive. So
+
+[20:13:45 - 20:13:46] Scott Davidson: Okay.
+
+[20:13:45 - 20:13:46] Jennifer Cohen: Yeah.
+
+[20:13:47 - 20:13:52] Scott Davidson: And that's not an X like I'll do a doctor so I'm like executable copy. Once we
+
+[20:13:52 - 20:13:53] Jeffrey Cohen: Hmm.
+
+[20:13:52 - 20:14:04] Scott Davidson: you know, final Version. So just keep me posted on that. And then, you know, what is what's your
+
+[20:13:54 - 20:13:55] Jeffrey Cohen: Okay.
+
+[20:13:59 - 20:14:04] Scott Davidson: timeline looking like, I know you mentioned, I think James is out of office this week.
+
+[20:14:04 - 20:14:13] Jeffrey Cohen: Yeah, the three of us are going to be together in Fort Worth Sunday, Monday,
+
+[20:14:09 - 20:14:10] Jennifer Cohen: but,
+
+[20:14:09 - 20:14:50] Jeffrey Cohen: Tuesday. So I'm hoping one, you know, since we're going to be out of the office, we won't get inundated with people coming into our different offices asking us questions. So that's three of us can actually sit down and talk about this. Um the first half of next week and I like to make a decision up hopefully by the end of the week on what we want to do and how we want to do it so that we can get started because I know as you and I talked about you know, time frame is kind of Coming up as fat are quickly and we've already got the holidays that we need to work around. So I'd like going as soon as possible so that we could get information.
+
+[20:14:49 - 20:15:01] Scott Davidson: Look at gotcha. So you're so the primarily the primary blocker timing wise could be in relation to the holidays but otherwise it's more like sorry before the
+
+[20:14:57 - 20:14:59] Jeffrey Cohen: Yeah.
+
+[20:14:59 - 20:15:01] Scott Davidson: holidays.
+
+[20:15:01 - 20:15:23] Jeffrey Cohen: Um, definitely before the Christmas holiday. I if we if we decide on something and move inside next week, I don't know if that gives us enough time to get anything done before Thanksgiving that basically gives us 30 days so I can get, I can definitely get started on things
+
+[20:15:17 - 20:15:18] Scott Davidson: Yeah.
+
+[20:15:19 - 20:15:23] Jeffrey Cohen: but I don't know if that would give us enough time to actually push anything, you know?
+
+[20:15:22 - 20:16:09] Scott Davidson: Yeah. Yeah. I mean and that might be a good time. There's, you know, sometimes you have to warm up the They said the emails, they send emails to each other the fake emails that you buy just to keep them looking like they're real email. So like things like that can happen domain purchasing infrastructural stuff can happen. That's like a perfect time actually because no one's gonna answer emails on, Thanksgiving, agree, setting up the segmentation and, you know, setting up the messaging making sure the campaigns are set up ready to go. Is probably good course of action during those during that down period. So yeah, that time, it works out great. Cool. Well yeah, let me know if anything else comes up or any other. Questions, concerns and otherwise. Enjoy Fort Worth have not been there before.
+
+[20:16:11 - 20:16:12] Jennifer Cohen: Yeah.
+
+[20:16:11 - 20:16:15] Jeffrey Cohen: Well, we're probably stuck in the
+
+[20:16:11 - 20:16:13] Scott Davidson: Not many questions.
+
+[20:16:18 - 20:16:25] Jeffrey Cohen: The lows Arlington Hotel for the majority period. But
+
+[20:16:23 - 20:16:27] Scott Davidson: I did go to Dallas recently for the first time. Yeah, it was a
+
+[20:16:27 - 20:16:32] Jeffrey Cohen: I know it's supposed to be right across the street from Cowboy Stadium, so.
+
+[20:16:31 - 20:16:31] Jennifer Cohen: Six.
+
+[20:16:31 - 20:16:35] Jeffrey Cohen: so. Though. Yeah.
+
+[20:16:33 - 20:16:38] Scott Davidson: Let's do that because I'm a I'm a commander fan, unfortunately. So
+
+[20:16:38 - 20:16:43] Jeffrey Cohen: Oh, so you're good. You're gonna be up at 9:30 on Sunday with me. Watching the game and great.
+
+[20:16:43 - 20:16:47] Scott Davidson: I was, are they playing? See, I don't I can't even watch them anymore. They're so bad.
+
+[20:16:47 - 20:16:49] Jeffrey Cohen: Yeah, during the club.
+
+[20:16:50 - 20:16:52] Jennifer Cohen: Well, he's
+
+[20:16:50 - 20:16:55] Jeffrey Cohen: You're playing Miami who is just as bad at least you have excuses that Jayden. Daniels is injured.
+
+[20:16:55 - 20:16:59] Scott Davidson: Oh yeah, your plan so wait. You're a cowboys finding? They're playing Miami. You
+
+[20:16:58 - 20:17:06] Jeffrey Cohen: No, no, I'm a dolphins fan and yeah and Miami and Washington are playing in
+
+[20:16:58 - 20:17:02] Scott Davidson: said. Oh, you're dolphins then.
+
+[20:17:03 - 20:17:06] Jeffrey Cohen: Madrid at 9:30, Sunday morning.
+
+[20:17:04 - 20:17:08] Scott Davidson: Yes. Yes. Why are you? Where did Miami come from?
+
+[20:17:07 - 20:17:18] Jeffrey Cohen: So I grew up for the most part in South Florida and I was there from 1985 96 so
+
+[20:17:13 - 20:17:15] Jennifer Cohen: The Merino.
+
+[20:17:15 - 20:17:18] Jeffrey Cohen: that was like Peak Dan Marino time.
+
+[20:17:18 - 20:17:20] Scott Davidson: Okay, where in saltwater?
+
+[20:17:19 - 20:17:27] Jeffrey Cohen: And I I made the mistake of becoming a dolphin fan and have been paying for that
+
+[20:17:23 - 20:17:24] Scott Davidson: Yeah.
+
+[20:17:24 - 20:17:27] Jeffrey Cohen: for the last 25-30 years.
+
+[20:17:26 - 20:17:28] Scott Davidson: Where in south Florida?
+
+[20:17:28 - 20:17:32] Jeffrey Cohen: Boca Raton. So just just south of West Palm, just north of Fort Lauderdale. Lauderdale.
+
+[20:17:33 - 20:17:35] Scott Davidson: yeah, my dad lives in Boynton
+
+[20:17:35 - 20:17:38] Jeffrey Cohen: Ah yep my grandparents. Well one said yes.
+
+[20:17:35 - 20:17:40] Scott Davidson: And my mom from my mom's from North Miami Beach. Oh sorry there.
+
+[20:17:38 - 20:17:53] Jeffrey Cohen: Yeah. Sorry I said one set of grandparents were in Delray once that were in West Palm. So we would drive and go to Boynton many many times I do miss the Jewish delis down there, a lot, there's nothing like
+
+[20:17:52 - 20:17:56] Scott Davidson: Yeah, yeah, they're better. I mean Maryland has better but
+
+[20:17:55 - 20:17:57] Jeffrey Cohen: I would agree with that.
+
+[20:17:56 - 20:18:06] Scott Davidson: Virginia. This central Virginia's slacking. I mean, very few Jews here, unfortunately, for
+
+[20:18:00 - 20:18:01] Jeffrey Cohen: Mmm.
+
+[20:18:03 - 20:18:06] Scott Davidson: me, because I'm Jewish. Anyway.
+
+[20:18:03 - 20:18:09] Jeffrey Cohen: That. Hi I'm good with the last name. Like Cohen, I think it gives it away.
+
+[20:18:07 - 20:18:21] Scott Davidson: Cohen. Yeah. Yeah. Very good. Well. I also doubting that Fort Worth house pastrami and corned beef, but enjoy that. Well while you're there, if possible,
+
+[20:18:20 - 20:18:31] Jeffrey Cohen: I actually have a, a brisket in the outside refrigerator that over the next three days before we leave, I need to start brining so that I can make it
+
+[20:18:27 - 20:18:30] Scott Davidson: Place. Nice.
+
+[20:18:30 - 20:18:31] Jeffrey Cohen: pastrami.
+
+[20:18:30 - 20:18:34] Scott Davidson: Nice. I have two smokers and I do that as well. So
+
+[20:18:34 - 20:18:36] Jeffrey Cohen: Yeah.
+
+[20:18:35 - 20:18:45] Scott Davidson: Very good. Very good. Awesome. Well, yeah, it was great chatting with y'all excited to get started. Let me know if any Concerns or questions, come up and I'll be happy to take them as they come.
+
+[20:18:45 - 20:18:49] Jeffrey Cohen: We'll do well, we'll talk a monster cells and get back to you soon. Scott.
+
+[20:18:48 - 20:18:50] Scott Davidson: Very good. Awesome. Thanks so much.
+
+[20:18:50 - 20:18:51] Jeffrey Cohen: Thank you.
+
+[20:18:51 - 20:18:51] Scott Davidson: Okay.
+
+[20:18:51 - 20:18:53] Jennifer Cohen: I,
+

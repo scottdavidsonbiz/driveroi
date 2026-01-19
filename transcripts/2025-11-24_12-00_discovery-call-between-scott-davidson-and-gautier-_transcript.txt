@@ -1,0 +1,211 @@
+---
+title: "Gautier x Scott - International Founder Discovery"
+date: 2025-11-24
+type: transcript
+category: [client-discovery, international-expansion]
+use-cases: [us-market-entry, international-founder, early-exploration]
+personas: [ceo-founder, international-founder]
+participants: [gautier-mary-dauphin, scott-davidson]
+client: gautier-unknown
+lifecycle: emergent
+integrates-with:
+  - content/insights/2025-11-24_12-00_discovery-call-between-scott-davidson-and-gautier-_insights.md
+  - positioning/positioning-premium-partnership-2024-12-16.md
+tags: [transcript, client-discovery, international, london-based, us-market-entry]
+---
+
+# Gautier x Scott - International Founder Discovery
+**Date:** November 24, 2025 (12:00 PM)  
+**Participants:** Gautier Mary-Dauphin, Scott Davidson  
+**Context:** Discovery call with London-based founder exploring US market
+
+---
+
+[19:00:22 - 19:00:23] Gautier Mary-Dauphin: Hey Scott. It's not.
+
+[19:00:23 - 19:00:24] Scott Davidson: Hey, can you?
+
+[19:00:24 - 19:00:49] Gautier Mary-Dauphin: Hey, very good. Thank you. Very good. Thank you. Hold on. There's yeah. Hold on. There's yeah, there's nuclear, it's only one second. Okay. Sorry. I I cell phone and I'm just logging for the video access to camera on my laptop. My female two days is terrible somehow,
+
+[19:00:49 - 19:00:51] Scott Davidson: No worries, no worries.
+
+[19:00:50 - 19:00:51] Gautier Mary-Dauphin: Yeah.
+
+[19:00:52 - 19:00:54] Scott Davidson: How do I pronounce your name?
+
+[19:00:54 - 19:00:55] Gautier Mary-Dauphin: Oh good.
+
+[19:00:56 - 19:00:58] Scott Davidson: Gautier. Okay.
+
+[19:00:57 - 19:01:11] Gautier Mary-Dauphin: Yeah. Yeah, I go by G sometimes to keep kind of tricky sometimes.
+
+[19:01:11 - 19:01:16] Scott Davidson: Was like Um, you know, there's a song maybe 10 years ago by someone named Goat. It was spelled G O, T Y E or something you know it was like the band name but people should be able to pronounce it based off that
+
+[19:01:16 - 19:01:28] Gautier Mary-Dauphin: Yeah it's funny actually when I when I moved to San Francisco in 2011 this is exactly when this band was getting popular. So actually helped me quite quite a
+
+[19:01:22 - 19:01:22] Scott Davidson: oh,
+
+[19:01:25 - 19:01:28] Gautier Mary-Dauphin: bit. That's funny that you are reference them.
+
+[19:01:28 - 19:01:31] Scott Davidson: That's why are you are you still in San Francisco?
+
+[19:01:31 - 19:01:43] Gautier Mary-Dauphin: No, no. We left at the Bay Area back in 2021. Actually, we spent a year in Ohio which were my wife is from and we'll then left for London. So we've been London for four years now.
+
+[19:01:42 - 19:01:44] Scott Davidson: Oh, that's great. That's awesome.
+
+[19:01:44 - 19:01:46] Gautier Mary-Dauphin: Yeah, and you're in Virginia.
+
+[19:01:46 - 19:01:53] Scott Davidson: Yeah I'm in Richmond Virginia. The capital. Yeah, about two hours south of DC.
+
+[19:01:52 - 19:01:56] Gautier Mary-Dauphin: Yeah. Okay. My wife has a family members in this area.
+
+[19:01:57 - 19:02:09] Scott Davidson: Oh cool. Very nice. Yeah, it's nice but London, he has more cultural activities
+
+[19:01:58 - 19:02:02] Gautier Mary-Dauphin: Yeah. Yeah.
+
+[19:02:04 - 19:02:09] Scott Davidson: going on. So I went to London when I studied abroad and it was it was good time.
+
+[19:02:09 - 19:02:13] Gautier Mary-Dauphin: Oh no kidding. Yes. Great place to study for sure. Yeah.
+
+[19:02:14 - 19:02:15] Scott Davidson: Really. Yeah.
+
+[19:02:15 - 19:02:23] Gautier Mary-Dauphin: Well hey thanks so much for making time to check. It's funny. I was just gonna
+
+[19:02:16 - 19:02:18] Scott Davidson: Yeah.
+
+[19:02:18 - 19:03:12] Gautier Mary-Dauphin: reviewing the profile of the the crew that is kind of joining usually to help. Power the business. And I, I kind of saw what you were working on and I like, you just started helping another friend, two, three days a week, really? Just setting up the go to market and just more broadly. The corporational structure for his very small startup, like five people now want to grow 20, next 12 months, and yes, true training to go to market efforts really starting from Knowing who we target. You just managing kind of the data pipeline Thinking about coverage model is going to be something that I'm gonna dive in very soon. And I thought that was actually kind of curious to having a conversation with you to see how you were thinking about supporting companies like ours. I understand from your website that was smaller than the target segment, but I thought it'd be interesting to just
+
+[19:03:12 - 19:03:24] Scott Davidson: Yeah. Yeah, and I think yeah. So for for some context I worked at six cents in
+
+[19:03:13 - 19:03:13] Gautier Mary-Dauphin: Quickest.
+
+[19:03:20 - 19:04:11] Scott Davidson: leading, go to market finance. But I did a lot of work with Revops During that time, and now I'm at a larger private company. But yeah, I think there's You know, I There's a lot that can be done in that early stage like figuring out them. Yeah. Who's your ICP like working on? Messaging frameworks, like what messaging resonates, most with those audiences, and then, you know, using that to scale. And then of course I've done things like, you know, capacity modeling attainment, like how to build out the sales team and things like that. But I saw your rep, your backgrounds in Redbox. So Yeah, I was curious you know what exactly you know are you focused on and what areas are you looking for support on?
+
+[19:04:11 - 19:04:52] Gautier Mary-Dauphin: Yeah, yeah, so, you're right. I mean, my background is like a very heavy stuff finance forever and more recently visa off. So, I think like the, though, it's like the capacity planning kind of like Scripture in sales team, go to market motion. These are things that I've done in the past, I'm not kind of the best ad. Battlefield competent enough to help my help. My, my friend, I think when I think about like pipeline generations, specifically around like ICP, you know, outrage, kind of and data enrichment for this CRM. This is these are areas that are a little bit more blurry to me that I've not owned directly and I was
+
+[19:04:47 - 19:04:49] Scott Davidson: Okay.
+
+[19:04:48 - 19:04:52] Gautier Mary-Dauphin: looking at our stage, you could be something that could be quite valuable to us.
+
+[19:04:52 - 19:04:57] Scott Davidson: Yeah, yeah. For sure. What's CRM Gina? Have you decided on the CRM yet?
+
+[19:04:57 - 19:05:00] Gautier Mary-Dauphin: Yeah, we were going with the Upspot.
+
+[19:05:00 - 19:06:02] Scott Davidson: Okay, yeah, yeah. So again like Depending on the goal, like I think doing outreaches helpful, regardless. you know, obviously building pipeline but also just like seeing what messages ref Are resonating with the market and understanding, you know, how can we refine our ICP and where we want to go based on that. And then, Yeah, enrichment. I mean, you know, you've probably heard of clay, but you can kind of do bespoke, whatever it is. And actually at this stage, it is good to Build the infrastructure because you're constraint. Might be. SDRs or reps time like doing this manual work. So to the extent you can set up the enrichment up front, you're going to be Saving substantial amount of administrative time. So agree.
+
+[19:06:00 - 19:06:18] Gautier Mary-Dauphin: Yeah. Okay. And the and so the drive, this will drive our eye is something that you starting. In addition to like having you full time job was easy. Oh, you already kind of all laying on running this, this new company
+
+[19:06:17 - 19:06:31] Scott Davidson: Yeah, I'm gonna leave. At the beginning of the year, go all on this. I have a, you know, I'm working with some folks now early stage and just like running it on the side for now. But yeah, I'll be doing this full time.
+
+[19:06:31 - 19:06:33] Gautier Mary-Dauphin: Okay. Super exciting.
+
+[19:06:32 - 19:06:35] Scott Davidson: Soon. Yeah, yeah.
+
+[19:06:35 - 19:06:51] Gautier Mary-Dauphin: And, and the way you thinking about it, is it mostly like a consultative approach where you actually like selling like consulting, okay? Support to help these functions being set up, or is it gonna take solution or is you recommendation of both?
+
+[19:06:51 - 19:07:41] Scott Davidson: No. Yeah I would think a bit more of like a systems integrator and consultative approach. So I think you know, there's a lot of folks in the space that are very technical and they can, you know, they would rely a lot on The individual to like, tell me everything about the business. Give me all the business context. I, you know, you need to tell me exactly what it is you want to do. And I'll build it for you where I'm trying to be differentiated as that, you know, I've worked in SAS, I've worked around ops and finance and like, I understand, you know, the metrics and mechanics of scaling, and I think I have like fairly good business acumen. So the ideas like Yeah. It's very consultative. Like I want to work with the business to understand. You know okay we're going this direction. We need to like slightly shift this way slightly shift that way and yeah just take a consultative approach and like grow together
+
+[19:07:41 - 19:07:53] Gautier Mary-Dauphin: Okay, okay, cool. That's that's good to know. And yeah, I mean there's a yeah a ton of needs and value to be added by taking this approach. So that makes sense. Okay.
+
+[19:07:52 - 19:08:10] Scott Davidson: Yeah, yeah. So yeah in the same way like I would say it's not productized like
+
+[19:07:54 - 19:07:55] Gautier Mary-Dauphin: Yeah.
+
+[19:07:57 - 19:08:10] Scott Davidson: I'm not I'm not gonna be like blasting millions of cold emails like that's not the approach. I take, it's very bespoke to the needs of the company and individual so that that's kind of the approach I take.
+
+[19:08:10 - 19:08:58] Gautier Mary-Dauphin: Got it, got it. Got it. Cool. I mean, I'm just, I'm just now starting to have my body. So thinking about, you know, early 2026, like what we want to do to really set up and trust structure and help the yeah, just kind of Pipeline and revenue to to grow. So we've just signed with kind of up spots last week and, you know, from there I'm just gonna build up the function, a little bit, but I'll think about, you know, things that maybe we can use your help on and, and reach back out at this point, I'm thinking of discovery in terms of what we want to invest. And where do I need help? Because right now, I'm just a team of one. Again every minute knowledge on certain aspects of Of Rev ups and yeah, just killing or gtm intelligence.
+
+[19:08:58 - 19:09:12] Scott Davidson: Okay yeah yeah, that sounds good. So do they have are they planning on scaling? You said they have five folks? Like is it the sales organization that they're looking to build out?
+
+[19:09:12 - 19:09:45] Gautier Mary-Dauphin: yeah yeah I think so right now that the CEO is doing a lot of the selling and then we have two Kind of like senior advisors were like fractional sales reps. So we are in the process of varying or like first full-time rep and also like bdr and hopefully
+
+[19:09:27 - 19:09:28] Scott Davidson: Okay.
+
+[19:09:28 - 19:09:45] Gautier Mary-Dauphin: just getting some quick quick wins. You know sometimes in Q1 and and from there we'd like to scale to 220 and half of the growth would come from engineering and product, and the other half would come from from cells. So maybe, you know, five to six reps by the end of next year, potentially,
+
+[19:09:45 - 19:09:58] Scott Davidson: Yeah. and yeah, I saw like you you all send cell data to Like an end software. Is that is that the business model?
+
+[19:09:58 - 19:10:23] Gautier Mary-Dauphin: Yeah, so business model is measuring as you may imagine, but the idea right now is we're selling data. Forms. So like a Bloomberg for example, who then resell to large corporations or financial institutions, but we don't really tell to the end consumer of the data. We go through a platforms who then sell this data to and customers.
+
+[19:10:23 - 19:10:32] Scott Davidson: Okay. Okay. And is it primarily commercial or they're like public entities like governments and things like that that are looking for this data as well.
+
+[19:10:33 - 19:10:46] Gautier Mary-Dauphin: Yeah, it's both actually a lot of government and very much Registies are are quite keen to you to getting their hands on these data. So we have a wide Wide range of customers type customers.
+
+[19:10:44 - 19:11:05] Scott Davidson: Okay. Okay. That's yeah, that's interesting. Um, if you ever want to talk to someone that has sold a lot to the federal government, my mom actually has been in federal sales for 30 years or something. So yeah, she knows a lot of folks in DC and
+
+[19:11:01 - 19:11:01] Gautier Mary-Dauphin: ah,
+
+[19:11:06 - 19:11:21] Scott Davidson: Around there. So she kind of she has a consulting business too. She mostly focuses on like, Fedramp readiness but also like zero to one in federal sales. so yeah, if you ever wonder chat about that,
+
+[19:11:20 - 19:11:27] Gautier Mary-Dauphin: Yeah, that's actually quite yes. Yes. I definitely make your make note of this, thank you. Yeah. This could be quite interesting.
+
+[19:11:25 - 19:11:50] Scott Davidson: Yeah. Yeah. Sure thing trying to think if I have any other questions Let's see here. And then are you are you thinking about like data providers as well or you're kind of like early phase of of what even the motion? Like you know, who's gonna be targeted? Like, is that where you're at? Like just deciding the ICP to begin with?
+
+[19:11:50 - 19:12:05] Gautier Mary-Dauphin: Yeah, so the RSVP right now are these platforms that are really focused on the look of our environmental. Deforestation kind of type of data and industry.
+
+[19:12:05 - 19:12:06] Scott Davidson: Yeah.
+
+[19:12:06 - 19:12:26] Gautier Mary-Dauphin: Yeah but then actually this platforms require a lot of help selling to their own customer because you know, skip their essentially their channel. Channel partners and, you know, they can and board us but they may never even
+
+[19:12:14 - 19:12:15] Scott Davidson: Yeah.
+
+[19:12:18 - 19:12:33] Gautier Mary-Dauphin: bother selling our solution to the end customer and that's, you know, that doesn't quite help us. So we actually, we likely gonna have to deploy quite a lot of Capacity. Help them kind of pitch pitch and make sure they were really incentivize the right way to you to sell our solution.
+
+[19:12:33 - 19:12:38] Scott Davidson: Okay, yeah, a lot of. Yeah, partnership ecosystem. Okay, that makes sense.
+
+[19:12:39 - 19:12:40] Gautier Mary-Dauphin: Yeah.
+
+[19:12:41 - 19:12:54] Scott Davidson: And are there? like the Tam seeing, you know, is it a fairly Discreet like defined amount of these companies that could be resellers.
+
+[19:12:55 - 19:13:05] Gautier Mary-Dauphin: Yes, the platform themselves really focused on the serving. These again, this environmental industry we've identified about a hundred and ten.
+
+[19:13:03 - 19:13:07] Scott Davidson: Yeah. Okay.
+
+[19:13:07 - 19:13:26] Gautier Mary-Dauphin: Now there are also many other type of data platforms serving, different mysteries, like financial industry like Bloomberg or more. Just kind of very broad like you know, done broad streets. So it's a pretty big market and I think
+
+[19:13:20 - 19:13:21] Scott Davidson: Yep.
+
+[19:13:22 - 19:13:35] Gautier Mary-Dauphin: at some point you could maybe a sales direct to To like a Starbucks. For example, we won't have access to to know exactly where their suppliers are from. That's kind of much later down the road.
+
+[19:13:36 - 19:13:41] Scott Davidson: Okay. Yeah, but it's it's primarily folks that are interested in like ESG reporting and things like that.
+
+[19:13:40 - 19:13:41] Gautier Mary-Dauphin: Yeah.
+
+[19:13:42 - 19:13:50] Scott Davidson: Okay. Got it. Cool. That's the company I work at now. Does ESG stuff as well. So
+
+[19:13:43 - 19:13:44] Gautier Mary-Dauphin: Yeah.
+
+[19:13:46 - 19:13:50] Scott Davidson: yeah. Yeah.
+
+[19:13:47 - 19:13:48] Gautier Mary-Dauphin: Oh, really okay.
+
+[19:13:51 - 19:14:06] Scott Davidson: In addition of other things. But okay, that's helpful. So it sounds like Your timeline is. Really getting set for next year, or How are you thinking about like approaching working with someone potentially?
+
+[19:14:05 - 19:14:50] Gautier Mary-Dauphin: Yeah, timeline. I mean I'm just ramping up myself. Just one kind of reach out to to say I can never understand kind of what, you know How you think about supporting is you know, startups and growing business as I'm forming. An idea to like when these are like support model would be them thinking. I mean December, we have a couple of like short term tactics. We have to focus on but Q1, maybe the quarter where we start bringing people and we're maybe where I seek you know help externally to make sure that we're doing the right thing. So I could I'll definitely kind of give you keep keep you and you are you you new company? In mind and you know I can ping you. As I make progress, you won't keep you updated and see whether there's an opportunity for us to work together.
+
+[19:14:50 - 19:14:57] Scott Davidson: Okay yeah that sounds great. And yeah, if any anything comes up that you want to just bring me and run by me like happy to chat.
+
+[19:14:57 - 19:15:08] Gautier Mary-Dauphin: Okay. Sounds good. Sounds great. Well, thanks so much for your time here. Enjoy your
+
+[19:14:59 - 19:14:59] Scott Davidson: Awesome.
+
+[19:15:03 - 19:15:08] Gautier Mary-Dauphin: last few weeks. I guess with your employers before I kind of creating new business, that's quite exciting.
+
+[19:15:07 - 19:15:15] Scott Davidson: Yeah. Yeah, thanks so much. Yeah, I'm excited. It'll be a good time. Enjoy the holidays and then kind of off to the races.
+
+[19:15:15 - 19:15:28] Gautier Mary-Dauphin: Yeah exactly. Exactly. And I'm sure also talk about talk soon to you about more like Meshly. I'm actually really things. I've I'm looking for thinking of ways
+
+[19:15:21 - 19:15:22] Scott Davidson: Yeah.
+
+[19:15:25 - 19:15:31] Gautier Mary-Dauphin: to get involved a little bit more to help. Sarah. I mean, she's working like 24/7.
+
+[19:15:31 - 19:16:07] Scott Davidson: Yeah, I know. I know she's it's interesting. Her sister actually lives out this way so I'm trying to, you know, if she comes into town for the holidays or something, gonna see if I can grab her and be helpful because that what she's solving was a big issue at six cents and they may still be going through it actually. But we spent Two or three years with consultants trying to do the Rev rec between sage intact. Which don't you say exactly. And and Salesforce so yeah it's a big problem. So I think there's a there's a lot there's a use case there. I think it could help a lot of companies for sure.
+
+[19:16:07 - 19:16:19] Gautier Mary-Dauphin: Yeah, yeah, not for sure. It's very, very tangible pain point. So yeah, let's see how we can help support the Sarah and Ashley, and be fun to score some wins in that 2026.
+
+[19:16:19 - 19:16:24] Scott Davidson: Yeah, awesome. Cool. Well, thank you so much, and enjoy your holidays and I hope to talk
+
+[19:16:23 - 19:16:26] Gautier Mary-Dauphin: Yeah, thank you Scott's. Yep, bye.
+
+[19:16:26 - 19:16:26] Scott Davidson: Thanks good.
+

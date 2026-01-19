@@ -1,0 +1,105 @@
+{
+  "name": "BusinessWire M&A to Clay (Ultra Simple)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 9 * * *"
+            }
+          ]
+        }
+      },
+      "id": "cron-trigger",
+      "name": "Daily at 9am",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "url": "https://rss.app/feeds/8ejPFjiAXKNMcHfF.xml",
+        "options": {
+          "limit": 100
+        }
+      },
+      "id": "rss-feed",
+      "name": "Read RSS Feed",
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Process all RSS items\nconst items = $input.all();\n\nconst formattedItems = items.map(item => {\n  const rssItem = item.json;\n  return {\n    json: {\n      title: rssItem.title || '',\n      link: rssItem.link || '',\n      pub_date: rssItem.pubDate || rssItem.isoDate || new Date().toISOString(),\n      description: rssItem.contentSnippet || rssItem.description || '',\n      content: rssItem.content || '',\n      creator: rssItem.creator || '',\n      categories: rssItem.categories || [],\n      scraped_at: new Date().toISOString()\n    }\n  };\n});\n\nreturn formattedItems;"
+      },
+      "id": "format-data",
+      "name": "Format RSS Data",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [650, 300]
+    },
+    {
+      "parameters": {
+        "url": "https://api.clay.com/v3/sources/webhook/pull-in-data-from-a-webhook-d68eaa10-bece-4035-b187-335ee94361e4",
+        "authentication": "none",
+        "method": "POST",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($json) }}",
+        "options": {}
+      },
+      "id": "send-to-clay",
+      "name": "Send to Clay",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [850, 300]
+    }
+  ],
+  "connections": {
+    "Daily at 9am": {
+      "main": [
+        [
+          {
+            "node": "Read RSS Feed",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read RSS Feed": {
+      "main": [
+        [
+          {
+            "node": "Format RSS Data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Format RSS Data": {
+      "main": [
+        [
+          {
+            "node": "Send to Clay",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 0,
+  "updatedAt": "2026-01-11T00:00:00.000Z",
+  "versionId": "ultra-simple"
+}

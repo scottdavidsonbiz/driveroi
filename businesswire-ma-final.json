@@ -1,0 +1,152 @@
+{
+  "name": "BusinessWire M&A to Clay (Final - Clean)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 9 * * *"
+            }
+          ]
+        }
+      },
+      "id": "cron-trigger",
+      "name": "Daily at 9am",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "url": "https://rss.app/feeds/8ejPFjiAXKNMcHfF.xml",
+        "options": {}
+      },
+      "id": "rss-feed",
+      "name": "Read RSS Feed",
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1,
+      "position": [450, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Extract acquisition data from RSS feed only\nconst rssItem = $input.item.json;\n\nconst title = rssItem.title || '';\nconst link = rssItem.link || '';\nconst pubDate = rssItem.pubDate || rssItem.isoDate || new Date().toISOString();\nconst description = rssItem.contentSnippet || rssItem.description || '';\nconst content = rssItem.content || '';\n\n// Combine for analysis\nconst combinedText = `${title} ${description} ${content}`;\n\n// Extract buyer and seller from title\nlet buyerName = '';\nlet sellerName = '';\n\n// IMPROVED: More flexible patterns to catch all variations\nconst titlePatterns = [\n  // \"Company X Acquires Company Y\"\n  /^([\\w\\s&.,'-]+?)\\s+Acquires?\\s+([\\w\\s&.,'-]+?)(?:\\s+to|\\s*$)/i,\n  \n  // \"Company X Announces Acquisition of Company Y\" OR \"Company X Announces the Acquisition of Company Y\"\n  /^([\\w\\s&.,'-]+?)\\s+Announces?\\s+(?:the\\s+)?Acquisition\\s+of\\s+([\\w\\s&.,'-]+?)(?:\\s+to|\\s*$)/i,\n  \n  // \"Company X Expands... with Company Y\" (common pattern without \"acquisition\" word)\n  /^([\\w\\s&.,'-]+?)\\s+Expands?.*?\\s+with\\s+([\\w\\s&.,'-]+?)(?:\\s*$)/i,\n  \n  // \"Company X Expands... with Acquisition of Company Y\"\n  /^([\\w\\s&.,'-]+?)\\s+.*?(?:with|through)\\s+(?:the\\s+)?Acquisition\\s+of\\s+([\\w\\s&.,'-]+?)(?:\\s*$)/i,\n  \n  // \"Company X to Acquire Company Y\"\n  /^([\\w\\s&.,'-]+?)\\s+to\\s+Acquire\\s+([\\w\\s&.,'-]+?)(?:\\s*$)/i,\n  \n  // \"Company X Completes Acquisition of Company Y\"\n  /^([\\w\\s&.,'-]+?)\\s+(?:Completes?|Completed)\\s+(?:the\\s+)?Acquisition\\s+of\\s+([\\w\\s&.,'-]+)/i,\n  \n  // \"Company X Signs Agreement to Acquire Company Y\"\n  /^([\\w\\s&.,'-]+?)\\s+Signs?\\s+.*?to\\s+Acquire\\s+([\\w\\s&.,'-]+)/i,\n  \n  // \"Acquisition of Company Y by Company X\" (reversed)\n  /Acquisition\\s+of\\s+([\\w\\s&.,'-]+?)\\s+by\\s+([\\w\\s&.,'-]+)/i,\n  \n  // \"Company X Adds Company Y\" OR \"Company X Adds Company Y to Portfolio\"\n  /^([\\w\\s&.,'-]+?)\\s+(?:Adds?|Adding)\\s+([\\w\\s&.,'-]+?)(?:\\s+to|\\s*$)/i\n];\n\nfor (const pattern of titlePatterns) {\n  const match = pattern.exec(title);\n  if (match) {\n    // Check if pattern is the \"by\" pattern (reversed order)\n    if (pattern.source.includes('by')) {\n      sellerName = match[1].trim();\n      buyerName = match[2].trim();\n    } else {\n      buyerName = match[1].trim();\n      sellerName = match[2].trim();\n    }\n    break;\n  }\n}\n\n// If not found in title, try description (more aggressive patterns)\nif (!buyerName || !sellerName) {\n  const descPatterns = [\n    // \"Company X, ..., announced acquisition of Company Y\"\n    /^([\\w\\s&.,'-]+?)(?:,.*?,)?\\s+(?:announced|announces|today announced).*?(?:acqui(?:red|sition)|purchase)\\s+(?:of\\s+)?([\\w\\s&.,'-]+?)(?:\\.|,|\\s)/i,\n    \n    // \"Company X completed acquisition of Company Y\"\n    /([\\w\\s&.,'-]+?)\\s+(?:completed|completes)\\s+(?:the\\s+)?acquisition\\s+of\\s+([\\w\\s&.,'-]+)/i,\n    \n    // Look in first sentence of description\n    /^([\\w\\s&.,'-]{3,50}?)\\s+(?:has\\s+)?(?:acqui(?:red|ring)|purchased?)\\s+([\\w\\s&.,'-]{3,50}?)(?:,|\\.|\\s)/i\n  ];\n  \n  for (const pattern of descPatterns) {\n    const match = pattern.exec(combinedText);\n    if (match) {\n      buyerName = match[1].trim();\n      sellerName = match[2].trim();\n      break;\n    }\n  }\n}\n\n// Clean company names (remove Inc, LLC, etc.)\nfunction cleanCompanyName(name) {\n  if (!name) return '';\n  return name\n    .replace(/,?\\s+(?:Inc\\.?|LLC|L\\.L\\.C\\.|Ltd\\.?|Limited|Corporation|Corp\\.?|Company|Co\\.?|LP|L\\.P\\.)\\s*$/gi, '')\n    .replace(/^(a|an|the)\\s+/i, '')\n    .trim();\n}\n\nbuyerName = cleanCompanyName(buyerName);\nsellerName = cleanCompanyName(sellerName);\n\n// Extract deal size from description\nconst dealSizePattern = /(?:for|valued\\s+at|worth|transaction\\s+value(?:d)?\\s+at)\\s+(?:approximately\\s+|about\\s+|roughly\\s+)?(?:US)?\\$\\s*([\\d,.]+)\\s*(million|billion|MM|B)/i;\nconst dealSizeMatch = dealSizePattern.exec(combinedText);\nlet dealSize = '';\n\nif (dealSizeMatch) {\n  const amount = dealSizeMatch[1].replace(/,/g, '');\n  const unit = dealSizeMatch[2].toLowerCase();\n  const suffix = (unit.includes('b') || unit === 'b') ? 'B' : 'M';\n  dealSize = `$${amount}${suffix}`;\n}\n\n// Debug: Log what we extracted (visible in n8n execution log)\nconsole.log(`Title: ${title}`);\nconsole.log(`Buyer: ${buyerName}, Seller: ${sellerName}`);\n\nreturn {\n  json: {\n    buyer_name: buyerName,\n    seller_name: sellerName,\n    deal_date: pubDate,\n    deal_size: dealSize || 'Not disclosed',\n    press_release_title: title,\n    press_release_url: link,\n    description: description,\n    scraped_at: new Date().toISOString()\n  }\n};"
+      },
+      "id": "extract-names",
+      "name": "Extract Buyer & Seller Names",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [650, 300]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": false,
+            "leftValue": "",
+            "typeValidation": "loose"
+          },
+          "conditions": [
+            {
+              "id": "condition-1",
+              "leftValue": "={{ $json.buyer_name }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "notEmpty"
+              }
+            },
+            {
+              "id": "condition-2",
+              "leftValue": "={{ $json.seller_name }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "notEmpty"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "filter-has-names",
+      "name": "Filter: Has Both Names",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [850, 300]
+    },
+    {
+      "parameters": {
+        "url": "https://api.clay.com/v3/sources/webhook/pull-in-data-from-a-webhook-d68eaa10-bece-4035-b187-335ee94361e4",
+        "authentication": "none",
+        "method": "POST",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($json) }}",
+        "options": {}
+      },
+      "id": "send-to-clay",
+      "name": "Send to Clay",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [1050, 200]
+    }
+  ],
+  "connections": {
+    "Daily at 9am": {
+      "main": [
+        [
+          {
+            "node": "Read RSS Feed",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read RSS Feed": {
+      "main": [
+        [
+          {
+            "node": "Extract Buyer & Seller Names",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract Buyer & Seller Names": {
+      "main": [
+        [
+          {
+            "node": "Filter: Has Both Names",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter: Has Both Names": {
+      "main": [
+        [
+          {
+            "node": "Send to Clay",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "staticData": null,
+  "tags": [],
+  "triggerCount": 0,
+  "updatedAt": "2026-01-10T00:00:00.000Z",
+  "versionId": "final"
+}

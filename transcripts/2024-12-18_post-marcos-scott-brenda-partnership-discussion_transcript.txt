@@ -1,0 +1,569 @@
+@Brenda [1:52]: That's Hello
+
+@Scott [1:55]: Hello Oh, OK, where
+
+@Brenda [1:57]: Oh my God
+
+@Scott [1:58]: Can you hear me?
+
+@Brenda [1:59]: I need to restart I don't know why the video is coming from a computer. OK, let me see.
+
+@Scott [2:05]: Here, let's, I put this go
+
+@Brenda [2:06]: All right Done.
+
+@Scott [2:09]: Do you want to do a screening
+
+@Brenda [2:13]: It was connected to my farm
+
+@Scott [2:17]: Oh.
+
+@Brenda [2:17]: Anyway
+
+@Scott [2:18]: Like, now I can't even see where you are.
+
+@Brenda [2:20]: You can see me
+
+@Scott [2:23]: I don't know where my huddle screen. I'm not used to using them.
+
+@Brenda [2:27]: Oh I I follow the voice. Yes, I can see you.
+
+@Scott [2:28]: Can you see me Oh, here we go. How do I
+
+@Brenda [2:38]: No.
+
+@Scott [2:48]: Oh boy OK Here we are There we go.
+
+@Brenda [2:55]: Good
+
+@Scott [2:56]: OK. I'm not, I'm not much of a huddler. I've I've never really huddled before.
+
+@Brenda [3:06]: Oh, really? so are you into Microsoft Universe then?
+
+@Scott [3:11]: We use Zoom. And Slack at Sixth Sense. And that was always a point of contention, and then At My current company we use Teams and I hate it, but
+
+@Brenda [3:25]: Yeah, Tim is teams.
+
+@Scott [3:29]: Yeah, teams, unfortunate. I, yeah, I prefer slack for. I mean, I love slack for communication.
+
+@Brenda [3:36]: And OK, Yeah, so to retake the conversation, on and on, on things. I think that I understand that you have done a lot of work. I don't think that
+
+@Brenda [3:54]: I Know how much that takes. And I think that that's maybe why you feel like, hey, poti I doing everything, then like what's your contribution type of thing? May maybe I don't, I don't know. Uh-huh.
+
+@Scott [4:08]: Yeah, and, and. Yeah, no, just to be clear, I don't want it, it's not like the volume of work or anything like that.
+
+@Brenda [4:11]: That's that's I
+
+@Scott [4:17]: I like, I'm not concerned about I already did all this work and blah blah blah blah blah. I'm just trying to say Like, both of us setting up DemandGen,
+
+@Brenda [4:30]: Us.
+
+@Scott [4:33]: With this stack Like I don't, I just don't think that component of it. I don't think the execution of it requires multiple people. Because the bene like let's say we are overflowing with flights, right?
+
+@Scott [4:50]: The benefit of both of us working together is like We would, in that case, is that we would just Double our capacity for the same, like it, it'd be like 1 + 1 equals 2.
+
+@Brenda [5:02]: Mhm.
+
+@Scott [5:02]: Is how I'm thinking about it. Whereas You know, if you handle sales and I handle ops and whatever, whatever it looks like, I see it as more like multi multiplicative, like, you know, 1 + 1 equals 3. but no, setting up
+
+@Scott [5:19]: You know, these workflows are not like It's not rocket science. I mean, it, it took me time and it takes iteration, like I think that's the part that you like with him, It just takes iteration and time, but it's not
+
+@Scott [5:36]: Super complicated, if that's
+
+@Brenda [5:38]: That makes sense
+
+@Scott [5:38]: I'm not, I'm not concerned about that.
+
+@Brenda [5:40]: I think I think that the piece, maybe I can Reframe this on, like in this way. Like I, I guess that the thing that OK, if you're telling me on the technical side, I got us covered. You need to sell.
+
+@Brenda [5:59]: So that's what I'm reading between lines, right? Maybe you can be straight, like you, you can tell because if that is the case then Then I think that I just need to understand
+
+@Brenda [6:16]: And, and again, that's on me, like what
+
+@Scott [6:21]: Yeah
+
+@Brenda [6:21]: What's like, what does that mean like to set up the system and also what is the result of that? All of it?
+
+@Scott [6:27]: Yeah, I hear you.
+
+@Brenda [6:28]: And then after that I kind of start structuring everything. doing like actually doing what they do, which is like the go to market the stra here, right? Like you take these, you take the ICP, like doing all of that.
+
+@Scott [6:31]: Yeah.
+
+@Brenda [6:41]: For us And and then for our clients. So if that is the case and actually we were having like discovering calls with Marcus. I will have used a different type of methodology on like what type of questions we need to be asking, what type of bare minimums we need, like all of that and I will develop that playbook on I think that these are the things that we need to ask and then put that like in a systematic way.
+
+@Scott [7:08]: I hear you. Yeah, yeah, yeah
+
+@Brenda [7:08]: If, if you tell me that that you think that that's like the strength that I can bring to the partnership. Like, I can't focus on that absolutely. I think that what is required on, on my site if, if, if I'm gonna be doing that is I need to understand, like really well what
+
+@Brenda [7:29]: What's feasible. And then with that I can, I can just go with it. And, and, but, but that is not on you, you know, like I, I, I can do it on my own time on like you, you can Share with me some materials or some examples or things like that. And then I
+
+@Brenda [7:46]: Do the strategy for, for us and like IPM and all, all these different types of things. or what do you think like, what do you think that I, actually, what do you think? Like probably when, when you told me that you already had like some thoughts about about it.
+
+@Scott [7:50]: Hm Yeah, I mean
+
+@Brenda [8:05]: It
+
+@Scott [8:05]: I don't know that my thoughts are fully formed per se. I definitely think That would be valuable If we were to structure things that way, but then also kind of I was thinking about it yesterday, like when you said like I don't want to demand gen and or agency, right?
+
+@Scott [8:24]: And I also don't want to demand gen agency. I do think Like there's people, I can send you their names on on like Erik Noslovski and and some people in the lay universe were like That's their thing. They just like They're They do volume like that's their shtick. They do crazy amounts of volume for kind of any industry,
+
+@Scott [8:45]: And then there are people that do Message market fit, so their intent is to They're not saying we're gonna build you pipeline. They're saying we're gonna See what messaging is resonating with the market. So even if it's a failure in terms of building pipeline, we know that this line of messaging does not work.
+
+@Scott [9:06]: So that, you know, and then there's the middle point, which is like, do what we're doing for Marcus, like build me pipeline, you know, that's what I want. So And then that and also you saying Kind of, and maybe I'm
+
+@Scott [9:22]: Assuming I'm understood you correctly, wanting to focus on like one service line to start with. That also makes sense. And I don't want you to feel like, You know, my experiences in RevOps and
+
+@Scott [9:38]: If Like the way I'm thinking about it, OK, let's say we got a client, let's say It's Marcos and he had budget and whatever. And then we realize in 34 months in, like, there's a CRM component to it that we need to, that would be a further engagement.
+
+@Scott [9:55]: Like, what does that look like, you know? Is it Like we hire some, we outsource it, we hire someone, like you just do it, and then how do we split them, you know, like that sort of thing, it's kind of how I'm thinking about it. Even if we don't go to market with that as an offering.
+
+@Scott [10:14]: Publicly, but like we know that we could do that, right? Or I know that you can do that, and then I know that I can do Board reporting and calculations and anything related to that. So, like, if that were to come up in a conversation,
+
+@Scott [10:30]: You're muted
+
+@Brenda [10:43]: I'm pretty sure, can you hear me now? Yes, you can. I'm that you can be like a fractional CFO for a small company that is raising like probably Marcos, that's his goal. He wants to get some traction and then he's going to raise like in the next couple of years, or like probably next year.
+
+@Scott [10:45]: Yes, yes
+
+@Brenda [10:59]: And then he will need a CFO to prepare the data room and do like all of this together and you can do it. Yeah, like almost everything is complimentary, but I think Like I, I hear you, but then it's like what we have in hand right now? Like what's tangible
+
+@Brenda [11:15]: And
+
+@Scott [11:16]: Yes. Yeah
+
+@Brenda [11:18]: And, and I
+
+@Scott [11:19]: And I don't want to boil the ocean. I agree, like, we could do everything, right? But like, I think niing and doing something.
+
+@Brenda [11:22]: I Yeah. I don't know that like that that's on you and if that is a need, I say that I cannot be a CFO.
+
+@Scott [11:27]: What'd you say
+
+@Brenda [11:31]: So, and if that is a need for them, like definitely it's something that you will handle in the same way that if, if they need CRM implementation if they need like data strategy and data hygiene type of thing, that is on me, like I, I, I can do it or like even like setting up a data warehouse and then I pull in.
+
+@Brenda [11:53]: Like migrating of the data there and do some ETL there. that's my expertise. So yeah, I, I predict that I will take that type of like that job and, and maybe if, if I see that right now my at at that moment, my time is more valuable selling but not actually spend a lot of time implementing things. I will definitely look for somebody that is really good at that, that can do it while I'm using my time in
+
+@Brenda [12:23]: A different way. But yeah, like at, at the end, I'm gonna Project manage that. But I, I, I think that right now. Yeah, we, we don't even know if we're there.
+
+@Brenda [12:40]: And
+
+@Scott [12:41]: Yeah For sure For sure No, I agree, I had some, I had
+
+@Brenda [12:50]: Yeah, so on the, on the complimentary side, what
+
+@Scott [12:51]: Quite.
+
+@Brenda [12:55]: Do you Because you have done The work on setting up the system, which is basically developing the product. Or the Engine So what
+
+@Brenda [13:12]: Maybe let's change the question on what do you need from me if like in this partnership.
+
+@Scott [13:20]: Mhm I hear you. Well, I think the thing I'm trying to avoid is Future conflict related to
+
+@Scott [13:39]: But what I'm trying to determine is like Is this more of a referral relationship where like you get a CRM job and they need DemandGen and then I just do that and you do the CR and vice versa like I find a CRM job and you do that, or is it like a
+
+@Scott [13:55]: Is it more like it's actually like a A true partnership, and we can define the partnership today as this scope, but
+
+@Brenda [14:02]: Hmm
+
+@Scott [14:07]: For the Overall like Value of the organization in terms of like end value that is sellable. Having more revenue streams is better than fewer. So that's kind of the, that's just
+
+@Scott [14:23]: The way I was thinking about it. I'm not saying, like, today let's go sell like all these different things, and I don't want you to feel like I'm only doing XYZ I'm just trying to determine, yeah, is it more of like a referral relationship or is it like a partnership relationship, that's all I'm trying to.
+
+@Brenda [14:38]: Oh, that, that makes sense. I don't know. And I think that the, the straight answer is I don't know because right now Like with, we don't have any like actual demand ourselves. So I don't know exactly like how that will look like,
+
+@Scott [14:59]: OK.
+
+@Brenda [15:01]: Like in a referral way, I, I don't think that I can Do things myself without working with you and, and, and probably, I, I think that you can do it without, or maybe I can, I can do it like using other systems and maybe know you, you've been as sufficient, but I think that the strength is in, in working together. So I don't see that. I don't see that as like me, I will, I will give you this lead and then you take it. I, I don't see it in that way. I see it like we get involved together, but then at the same time, I think that right now, it
+
+@Scott [15:23]: So yeah, so let me, so sorry to interrupt you. OK, OK
+
+@Brenda [15:35]: Will be So what I'm trying to define it is, if we will be working together like And, and, and I'm saying the my generation because you say that you want to focus in the demand generation. I think, I think that for based on the thing that I understood from our conversation. It's like people that are doing the my generation play.
+
+@Brenda [15:56]: With using clay or people that are doing sort of like sys systems engineering which is like go to marketinger type of role. And I think that you were really clear saying like right now I want to focus on demand generation. And I think that that is why I'm like, OK, so that, that's what we're gonna test together because like you want to focus on that. I think that I have an edge on that, and not just that like I have received inbounds from people saying like, hey, sell for me and
+
+@Brenda [16:24]: Like the my generation is like in a way like selling for, for people. And and right now I'm, I'm, I'm like one of the, I, I think I told you like one of the companies that I'm consulting for, I'm, I'm, I'm working with the Mandarian generation team in, but in, I'm doing the systems part of it. Somebody's handling like the messaging and sending emails and all of that and I'm just training people, but there is the demand on that.
+
+@Scott [16:28]: OK.
+
+@Brenda [16:53]: So I think that, that I saw the edge and I was like, OK, I'm just going to buy into it and what happens if we make it happen together. And and I think that that's why I'm like trying to be Like focused on, on, on Netflix you
+
+@Scott [17:07]: Period
+
+@Brenda [17:09]: If you think something differently it's fine. And.
+
+@Scott [17:12]: No, no, I, I think The reason I'm choosing that as a starting point is because I think it's the The easiest wedge offer, like, People, everyone wants the man there more demand, you know, so like that's an easy like wedge in.
+
+@Brenda [17:25]: Mhm.
+
+@Scott [17:31]: Clay is also really good at CRM enrichment. And I think that's a Potentially a higher ticket offering. But the demand is very Is Lower or harder to quantify.
+
+@Scott [17:50]: Because What, you know, it's like, it feels administrative when in reality it is going to help you sell faster and better, But it's hard to just like hurt the crone.
+
+@Brenda [17:59]: Yeah, I'm also, I think that we don't know what we don't know. And like that is the other, the other thing like realistically because right now like
+
+@Scott [18:03]: That's true.
+
+@Brenda [18:09]: I'm pretty sure that you also receive a lot of like Linging requests selling you these type of things like I even received Like a linking message of somebody asking like, hey, are you single? Like,
+
+@Brenda [18:25]: I will send, I will send it to you and then I was like, I have a list of of people that that are ready to partner if you want, but I was like, is this India like, you know, arranged partnerships and things like that.
+
+@Scott [18:40]: Yeah, yeah
+
+@Brenda [18:41]: But it's, yeah, like I receive all of that and quite honestly, I don't pay attention to, to almost any of it, like unless I, there is like some
+
+@Scott [18:42]: That is very bizarre Hm
+
+@Brenda [18:52]: Some need on my side and there's like definitely intent and, and I think that that is the thing that we don't know what we don't know because
+
+@Scott [19:01]: Very true
+
+@Brenda [19:02]: There in the system, if it is really easy for us, it's really easy for anyone. And But then I don't know exactly How And that's something that we'll need to discover together on, on, on us but also on other customers, like how do we get from, I'm just sending a bunch of emails and leading requests and people are opening it to actually we're having a minimal meaningful conversation and then
+
+@Brenda [19:33]: That turns into a customer. And I think that needs way more iteration on the strategy that we think of. and that's just something that I have on the demand generation side. there are, there are a couple of like even when I have worked with enterprise companies.
+
+@Scott [19:40]: Yeah
+
+@Brenda [19:50]: And you can have this conversation probably like in a, in a side conversation with somebody doing demand generation for for diligent. You need to Iterate a lot like the people come and request a demo and those are the ones that that actually
+
+@Brenda [20:08]: Book something like when somebody comes to your website and, and request a demo, but, but then after that it's like sort of an attribution and you don't know exactly like how the lead came and you don't know. And things are closed. Slower and, and things like that. So I think that I really want to test the hypothesis, but I know that.
+
+@Brenda [20:30]: Turning Upon a list and a bunch of elites into A meaningful Customer Takes more time and more work than we think.
+
+@Scott [20:44]: That's true, yes
+
+@Brenda [20:45]: And we don't know. We don't know why we don't know right now because we haven't done it.
+
+@Scott [20:48]: Yeah. Yeah That's true, that's, yes, I agree. I agree. Very much agree. I was gonna ask you the same question you asked me, and I don't know that I answered your question, but yeah, what
+
+@Scott [21:08]: In the Assuming, yeah, fixed scope and fixed Deliverables and redefine what those are in the lane of demand gen. What, like, what do you think that I had And what do you think that you add And we'll start there
+
+@Brenda [21:25]: Yeah, so how, how I see, this is mostly like right now, like obviously the the tab right now and then like later. Right now it's like sort of to partnership. So you're You have, you have your
+
+@Brenda [21:43]: Like a lot of the input and when in your play universe, right? And then you see a lot like how people are solving problems for businesses. But then at the same time, your senior enough to cut through the noise and saying like, oh this is just like being busy for being busy and this is like actually a good business case. And I think that that's
+
+@Brenda [22:06]: What's valuable about Having a partnership with you because like you have seen a lot and also you connect that to finance. Which is like the most powerful thing because nothing on the, on like building go to market systems and my generation and recording things and like all, all these different things that everyone wants to use and leverage AI for is not valuable if you actually
+
+@Brenda [22:32]: If you don't book business. So I think that you're tied up with forecasting and with with the numbers is the is the value there. So I think that right now, it's mostly like to partnership on like I think. These systems can be applied in this way and, and I think this can be the result.
+
+@Brenda [22:56]: Like when we're having like this type of conversations. I think when we have a certain type of Like let's say with Marcus, If If we were engaged since the beginning and we say like this is a customer we want to win, probably what I could have done, differently it's like prep for the different calls and then I have a questionnaire like these are the different types of questions that we need and then all that playbook on like
+
+@Brenda [23:24]: Requesting data, preparing better, having a nice proposal. Focusing on closing the the customer, knowing him, like all of these, probably that, that would have been my preparation. And then when we are Working together it's like, OK.
+
+@Brenda [23:41]: You designed the system And I'm comfortable with designing the system as well, but it is. But If we want to divide things like will you design the system but then I package all of that into This is a product
+
+@Scott [23:56]: OK
+
+@Brenda [23:57]: I think that that's how I see it. So what will be is Basically I, we work together into I do them, go to market strategy for that specific product based on all the data that we have.
+
+@Brenda [24:13]: And
+
+@Scott [24:14]: On our product or their product or both.
+
+@Brenda [24:18]: Of both, both
+
+@Scott [24:19]: Yeah. OK
+
+@Brenda [24:20]: I think that the role that that that we're taking the company it can be the same role that we Do for them. Like you can do like the the
+
+@Scott [24:28]: Provide
+
+@Brenda [24:31]: Probably the Yeah, if we just need to deliver a meeting. It's, it's different. Like we don't need to be closing and do all of that, but they will need some
+
+@Brenda [24:47]: Some to partner to say like, hey, I think that your product is better here because of X, Y and Z And
+
+@Scott [24:55]: OK
+
+@Brenda [24:56]: And, and I think that that's the strength that we have. Because we can see strategy, but also we can implement systems and, and that, that was the thing that
+
+@Scott [25:04]: Yeah
+
+@Brenda [25:08]: Sort of We agree on that it was like our strength.
+
+@Scott [25:13]: Yes
+
+@Brenda [25:15]: Yeah, but Yeah, I think that right now it's like a lot of hypothesis on how we're going to work together and probably everything will get messy at some point. And then I'm gonna be running payroll and then you will be selling or something like that. I like the opposite.
+
+@Scott [25:32]: If you want to run payroll, go for it. that's not fun.
+
+@Brenda [25:35]: OK you're I know
+
+@Scott [25:37]: It's not fun. OK, no, I feel a lot. I didn't, I just want to get clear about Division of responsibilities. It's pretty much it, and making sure that we felt like
+
+@Scott [25:57]: We're skating in the same direction, more or less. So yeah, I felt better about that.
+
+@Brenda [26:02]: If now then my let's say you have, you need to build all the, all the back end and the demand side of things. I, I think that right now like we don't need to even like overengineer.
+
+@Brenda [26:21]: I feel heavily that our the first jobs that we will have, like probably the 1st 10 Will be referrals And what we need to do is define the offering. And basically the pricing and packaging for it.
+
+@Scott [26:37]: Yes.
+
+@Brenda [26:37]: And start hitting our networks. That is the thing that I think is going to happen. Like at least for the 1st 10 clients, I might be wrong, but
+
+@Scott [26:53]: Bye. I think, I think there's
+
+@Brenda [26:59]: On like the outbound motion as well with what we have.
+
+@Scott [27:05]: Yeah
+
+@Brenda [27:06]: But I wouldn't expect that to have a lot of results. But then at the same time, I, I wonder like if I don't expect to have a a lot of results like on us like how can we bring results on our clients. So it's like, I don't know, we can try.
+
+@Scott [27:18]: OK Yeah, yeah, I, I think I think there's that, yeah, for sure, and if we get hyperspecific, I think it'll It's more likely that it'll be successful on the outbound side, and if we have a proof point, like, let's say we work with Marcos and blah blah blah, it's like
+
+@Scott [27:38]: We work specifically with finance softwares. They're targeting office of CFO and we got a treasury software, blah blah blah blah, you know, we built. 10X pipeline of our cost, which is above benchmarks, which it's actually not, but what, let's say it was, that would be, you know, we could have messaging there.
+
+@Brenda [27:54]: Mhm.
+
+@Scott [27:56]: I also I think referral, or yeah, even once we get one, having that company refer another one. Will be a source And then I'd like to I think content is a longer term game, but I think that getting inbound content
+
+@Scott [28:16]: Is very
+
+@Brenda [28:17]: Oh, start creating content
+
+@Scott [28:19]: Yeah, because I talked to Both talking to understory, Alex, who They do multimillion dollars for sure. And then, Another GTM person. She said, she said 70% of her business comes from, has seen her, like mentions lifted when they engage with her.
+
+@Brenda [28:40]: Yeah, so
+
+@Scott [28:41]: And the other person, Alex said he was, they were just doing Upwork and they were doing outbound and this, and then when they start doing LinkedIn, did like kind of.
+
+@Brenda [28:49]: You know, on the content side, I agree. I am Fairly good at making content, or I was when I was creating content, like 5 years ago. Even like for the things that I published, like I got paid, which is like for me it was crazy because I was riding a blog.
+
+@Brenda [29:10]: And I make Probably in total like 5K, which is not a lot, but it was a lot from a blog. 5 years ago
+
+@Scott [29:19]: Yeah, that's cool. No, that's all.
+
+@Brenda [29:21]: I think that I need to put up my, I definitely need to start creating content and In, in all the forms, but I think that I have been hesitant right now in like pulling the problem just because I don't have an ICP, you know, it's like sort of, we need to define the offering and then after that, I don't want to be creating content for the fact of creating content like, OK, if our goal is going to be demand generation, then I can create content or not like what is good in the Mandarin? If the goal is going to be go to market engineering, then I can start creating content on that. So I think that that, that's the, the thing.
+
+@Scott [29:40]: Yeah. Sure. Yeah
+
+@Brenda [29:59]: And, and actually like now that you're saying content, I have had conversations with a couple of, of, of women like the women that, that I was like that wanted to partner with me, and they, the, they run rev ups, but they are at the strategy level and they say like, hey, I don't know how to implement anything and I'm like, oh, maybe we don't really want to partner because then that will mean that I'm implementing everything and like I, I do strategy as well.
+
+@Scott [30:00]: Mhm.
+
+@Brenda [30:28]: But that was like, listen, we can do like share content and And they have liked the idea. I don't know where things will, will go up, but But we can definitely create content. I think that the, the, the thing that needs to be defined right now is
+
+@Brenda [30:46]: If that Oh yeah, let me think more on On what like if, if we want to go all in in the clay universe, then we just need to create create like some play playbooks and publish that.
+
+@Brenda [31:10]: In a way Or Yeah, what, what do you think? But I can, I can start working on like on creating content calendar and say like, I think that we need to publish these type of pieces first. And
+
+@Scott [31:26]: Yeah
+
+@Brenda [31:26]: Yeah
+
+@Scott [31:28]: Yeah So, yeah, backing up, offering pricing and packaging, but that needs to happen first. I agree with that. so I think let's do what we were planning on the wedding.
+
+@Brenda [31:38]: At least a high, like in the same way, at this like I think that we want to target this. What
+
+@Scott [31:44]: Yeah.
+
+@Brenda [31:45]: I would like us to target like re, if we want to target somebody. I would like to target Family offices, PE officers, and BCs and then we do the demand generation or Go to marketing engineer or whatever for them. So if we, if you're comfortable with that, I don't know if you're comfortable with that, but if we start targeting this type of, because at the end,
+
+@Brenda [32:12]: They, they already have like a pipeline of people and it's better to be plugged into that universe and have a python of people. So if we want to target somebody, In an outbound motion and also in a content, way. I think that it's better to do that in, in, in that way. But I do you feel OK with it?
+
+@Scott [32:34]: OK Yeah, I, I think there's a strong Like, yeah, built in Like network effect of of being in that in that, and I think it's The only reason I'm
+
+@Scott [32:51]: Like that it would be that and it's kind of what I'm getting at. Like, I definitely think we should test that, that there's like no question. I'm just trying to think like, same thing, early days, we don't know what we don't know. Do we also want to, and maybe the content is just that. Like, Our public facing material is that, but then when we go to do outbound, we say like,
+
+@Scott [33:09]: I mean we can make up whatever the hell we want, you know, we could say, we specialize in like, I'm thinking like about the finance office of the finance software as like a Potential differentiation point just because I can
+
+@Brenda [33:19]: Well, I have seen also a lot happening right now and actually it was the case with two companies that reached out to me. like to, to Sort of work for them. one is the, the, the one with whom I had accompany the interview yesterday. that is a European company that is centering the US market.
+
+@Scott [33:37]: Yeah
+
+@Brenda [33:41]: And now, like actually I had an interview like all the team mostly is based in London and in and in Swit Switzerland and now They're entering the US market and they want, they want to expand here and also they want to expand in Latin America, which is interesting.
+
+@Brenda [34:00]: And there is another company that they do AI workflow. AI workflows for SAP. And also that was a company that was based in Germany.
+
+@Brenda [34:17]: Or is based in Germany, but then a company in the US purchased it and now they're looking for the first rebos higher.
+
+@Scott [34:27]: Hm
+
+@Brenda [34:27]: And then they're trying, they're hiring like people doing the demand generation in the US and things like that. so I think like it's I.
+
+@Brenda [35:03]: Hi again
+
+@Scott [35:04]: OK, sorry, my Where did it go Oh, here I'm
+
+@Brenda [35:10]: You're to me, Brenda
+
+@Scott [35:13]: Yeah. Yeah, I know, I know, I'm sorry
+
+@Brenda [35:16]: I, I, I thought that you, went to a different room.
+
+@Scott [35:22]: I
+
+@Brenda [35:23]: Yeah, I
+
+@Scott [35:23]: Like my Thing refreshed, sorry, yes, AI.
+
+@Brenda [35:25]: It's I do have a Company center in the US is, is a, like something stronger, like the US continues to be a really strong market if we feel that the US is going to help, like other countries are
+
+@Scott [35:32]: Sure.
+
+@Brenda [35:41]: Worse At the moment
+
+@Scott [35:44]: Yeah.
+
+@Brenda [35:45]: I mean, and maybe you don't feel that the US is going to hell like I've
+
+@Scott [35:45]: Yeah.
+
+@Brenda [35:49]: I feel that Right now. It's just a little about 70, that's it. It's just like, I don't know exactly where I stand. A tweet can change everything in one second.
+
+@Scott [35:51]: Oh,
+
+@Brenda [36:00]: But But yeah, I, I, I think that was maybe let's, let's try that and, and see.
+
+@Scott [36:03]: Yeah Yeah. Yeah, I, I, I'm open to, yeah, I think, I think we're at the point where we Test, and I think that
+
+@Scott [36:20]: I mean, that one's a good one. I also think that you
+
+@Brenda [36:20]: And also Rice for the previous company where I was working, like a full-time. Also they purchased an Indian company. And went through the eNA and a German company, for that was doing something really specific. So I think that right now
+
+@Scott [36:30]: Hm.
+
+@Brenda [36:39]: Yeah, other companies are being consolidated and they want to enter the US market like in different ways. I'd probably pitch book will have something on that, like I'm certain.
+
+@Scott [36:47]: Yeah OK
+
+@Brenda [36:53]: Not research
+
+@Scott [36:53]: Yeah, yeah, we can look at, I mean, still intel 6 cents a quart Slintel, which was an Indian company and was first specific. Technology slash Mostly technology, but yeah, then we did a couple aqua hire, M&A deals as well. So Anyways, I think that's a good one, and then I think, yeah, I think
+
+@Scott [37:14]: Our backgrounds will differentiate us. In the family office VC and PE.
+
+@Brenda [37:19]: Mhm. Yeah
+
+@Scott [37:20]: It
+
+@Brenda [37:21]: Yeah, we both have, and we know how, like the type of metrics they want and also like how uneducated in metrics data and, and board reporting, smaller companies are.
+
+@Scott [37:34]: Yeah, yeah, yeah OK, cool. So let's, I mean, sounds like we've done a lot of the work already for tomorrow. But I think, yeah, thinking through the actual Offering And packaging
+
+@Scott [37:52]: And pricing.
+
+@Brenda [37:53]: So basically we have those things. one is the outbound motion, it needs to be like to PE companies, BC, and family offices. And with that, I will Today I will build a list, on, on page book, and I will pass it to you so we can like test IC and all of that. and that is going to be like full outbound, I think. And we need to develop like the language and, and, and ICP all of that like probably it's going to be like managing partners based in the east coast that probably are familiarized with
+
+@Scott [38:11]: But
+
+@Brenda [38:29]: With our companies, right? so it doesn't come out of the blue. And, and then with that we need to develop like the website and, and, and, and all of this. So I think that that is one for the album piece, for, for referrals and all of that. I think that we just need to define the generalized type of services that we offer, which is the demand generation, but it's like building the system and then you do it yourself.
+
+@Scott [38:35]: Yeah.
+
+@Brenda [38:56]: So it could be like for solopreneurs, basically Marcos is like a sort of solo printer like probably he has like a couple of people working with him, but he's working with a lot of like contractors. So let's call like a package for solopreneurs and what we can offer for them, which is we build a system the demand generation engine for you. And then we teach you how to do it.
+
+@Brenda [39:20]: Could be basic and then we can say like mostly in tech, just pen. X and the result is Y. And then it can be for small businesses, I think that we can divide that like sort of in size and and also what's What we can do
+
+@Brenda [39:40]: That needs more discussion between you and me on what's feasible on the, on the back end perspective and how How much hand on that needs, because I imagine that that will require
+
+@Brenda [39:56]: That will require With strategy
+
+@Scott [40:04]: The, the solar preneur level or the next level.
+
+@Brenda [40:07]: But both Because if if they're like testing their ICT
+
+@Scott [40:09]: Yeah.
+
+@Brenda [40:14]: So we can have like a questionnaire of do you have an ICPD find your mouth? Like how many customers have you had?
+
+@Scott [40:21]: Yeah. Yeah, yeah, yeah, yeah, and then, and then we can also ask the question.
+
+@Brenda [40:24]: And if this is telling And and it's different like for a scale up. Than for. For
+
+@Scott [40:34]: Yeah, for sure. And like, do we, then we ask the question, do we even want to serve that? The market that doesn't have an ICB? Yes or no, maybe we do. So yeah, I think, well, the way I've seen some packaging happen is it's
+
+@Scott [40:53]: You know, DIY Done with you and done for you. And then it's based, you know, the pricing is reflective of that. There's also I've seen Volumetric levels of, you know, like you get more volume, you get more
+
+@Scott [41:13]: Whatever, you know, as you as you go up, and then I've also seen Oh shoot, what was the last one?
+
+@Brenda [41:24]: Done for you is They just give you the budget and then you promise something based on that.
+
+@Scott [41:32]: Done for you is just like We just do everything, like it's out, it's end to end, you know, we do the, we set your blah blah blah, da da da da. We, we take, you know, we do a questionnaire, maybe we do an onboarding questionnaire, we get your, and maybe access to your CRM. We analyze it, we figure out what we think the ICP is and da da da da, then we, we run the the tests
+
+@Scott [41:55]: And the outbound campaigning and see what resonates, And then we iterate over. And then we can find it, we can then, then we need to ask ourselves, do we want that to be fixed scope. With a fixed timeline or ongoing recurring.
+
+@Brenda [42:14]: Yeah, I Sorry, I, I wanted to add this and I meant to ask you this as well. I think that a lot of A lot of the work when you're doing outbound and imagination in general is also Google Ads because or adds in general, like the ads universe, like with the racy with the company that I shared with you.
+
+@Brenda [42:37]: They, I just like Slack you that and then I, I got a lot of ads on Instagram and so I think that that is the other thing on To, if we are doing
+
+@Brenda [42:54]: The demand generation, then How do we handle that? Because That's important
+
+@Scott [43:02]: Yeah, I want, I have been thinking about that, and I don't, I never, I have no experience with it. But I've seen a lot. I'll, I'll send you the There's this a webinar I wanted to watch about
+
+@Scott [43:19]: LinkedIn specifically. I think the return on that spend is like the highest there and a lot of people are doing
+
+@Brenda [43:22]: Hm
+
+@Scott [43:29]: Like using content like founder content, as an ad. You can, you know, you can do like a Conversation promotional ad that is literally just a post that you already wrote, and you can boost it.
+
+@Brenda [43:38]: Mhm
+
+@Scott [43:43]: And people are saying that, and that's I think what the webinar was kind of about, and this company Cliboost, they, that's one of they're offering. So I agree, I mean, that's not.
+
+@Brenda [43:51]: Yeah, I know I and analyzing lending ads,
+
+@Scott [43:57]: What was it
+
+@Brenda [43:58]: I have experienced running and analyzing linking apps, I haven't done it for,
+
+@Scott [44:01]: Oh
+
+@Brenda [44:06]: Facebook and Google, I will need to update myself, because I did it before Cha GPT was this strong. And I haven't done it in a while, so I don't know how it is now. Like all the SEO game and I
+
+@Brenda [44:26]: I did it like the old way. I don't know how it or not. So I, I just need to get updated on that.
+
+@Scott [44:29]: Yeah, yeah
+
+@Brenda [44:33]: To be, to be honest, I'm honest, like I don't, I don't want to.
+
+@Scott [44:34]: OK Yeah, yeah, yeah, yeah And I don't, I, I mean, I think we could just offer the LinkedIn piece to start. I mean, And maybe and Meta, I mean, I think it depends on, yeah, so we could
+
+@Brenda [44:48]: Me that, but yes.
+
+@Scott [44:51]: But
+
+@Brenda [44:53]: I say that I hate meta, but yes.
+
+@Scott [44:53]: What was it Yeah, yeah, yeah, I know, but yeah, if we could, you know, whatever, we can figure out all things around that, and then But I, I, I think we have a good Some pieces we just need to like stack together and figure out exactly
+
+@Scott [45:13]: How we want to stack that But yeah, I think doing something beyond just the outbound. Will help It will always help
+
+@Scott [45:31]: But I also think having the the specific ICPs were thinking of targeting also. There's differentiation there. So
+
+@Brenda [45:41]: OK, so let me then, I'm just gonna go for more coffee and then I will start putting all of these in, in a document and Yeah. Takes some time.
+
+@Scott [45:55]: OK, sounds good
+
+@Brenda [45:57]: Things like that So just to wrap up, If I understand correctly, then you're going to be the system, then I need to take care of building ICP on on all the stratammolope. Or this Obviously we will be doing all do there like in the the
+
+@Scott [46:15]: Yeah.
+
+@Brenda [46:17]: And what has first for outbound.
+
+@Scott [46:17]: Yeah. Let's start with that. Let's start with that.
+
+@Brenda [46:22]: And we both feel comfortable with reaching out to companies, And busy companies and then asking for referrals there. If Is it OK for you?
+
+@Scott [46:34]: Yep, yep, very.
+
+@Brenda [46:35]: Like mostly in the US if we want to be like hyper targeted in the US, New York, and DC base. So in the case that They want to meet us for some reason, it's just easier.
+
+@Scott [46:48]: OK. That works And then also not investing in like home service, you know, like, Their investor And and their end investments have to be. In B2BS or something like that, or professional services, something like that.
+
+@Brenda [47:05]: Yeah Yeah.
+
+@Scott [47:06]: OK. OK, cool. yeah, and then whenever, if you want to send a list at any point, I can start folding in Whatever, we can start iterating on the on the list itself. So
+
+@Brenda [47:18]: OK
+
+@Scott [47:19]: Cool, awesome
+
+@Brenda [47:19]: OK
+
+@Scott [47:21]: Time.
+
+@Brenda [47:21]: Doctor Ed
+
+@Scott [47:22]: OK Awesome. Sounds good. Thank you, bye.
+
+@Brenda [47:24]: Tomorrow bye.

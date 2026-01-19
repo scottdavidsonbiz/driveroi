@@ -1,0 +1,357 @@
+---
+title: "Keegan (Voice Brain) x Scott - GTM Strategy Discovery"
+date: 2025-11-24
+type: transcript
+category: [client-discovery, gtm-strategy, revenue-operations]
+use-cases: [govcon-strategy, early-stage-gtm, federal-market-entry]
+personas: [coo, vp-operations]
+participants: [keegan-burchard, scott-davidson]
+client: voice-brain
+lifecycle: validated
+validated-by: [voice-brain-insights, voice-brain-research]
+integrates-with:
+  - content/insights/2025-11-24_10-30_voice-brain-and-drive-roi-intro_insights.md
+  - content/voice-brain-pvp-sled-opportunities.md
+  - content/voice-brain-sled-procurement-research.md
+  - content/voice-brain-email-draft.md
+  - positioning/positioning-update-2024-12-09.md
+tags: [transcript, client-discovery, govcon, public-safety, ai-transcription, federal-sales]
+---
+
+# Keegan (Voice Brain) x Scott - GTM Strategy Discovery
+**Date:** November 24, 2025 (10:30 AM)  
+**Participants:** Keegan Burchard (Voice Brain COO), Scott Davidson  
+**Context:** Discovery for federal/SLED GTM strategy, AI public safety platform
+
+---
+
+[19:00:00 - 19:00:03] Keegan Burchard: Hopefully going to be a little quieter week so I can catch up on a backlog of things to do.
+
+[19:00:03 - 19:00:09] Scott Davidson: Yeah, definitely. Yeah, I think that's the move this week for everybody. Where you located?
+
+[19:00:09 - 19:00:11] Keegan Burchard: I just just outside of Boston.
+
+[19:00:11 - 19:00:14] Scott Davidson: Oh cool. That's very cool.
+
+[19:00:12 - 19:00:15] Keegan Burchard: So yeah, I've been up in Groton Mass.
+
+[19:00:15 - 19:00:20] Scott Davidson: Okay, not I know my brother-in-law's from Newton.
+
+[19:00:20 - 19:00:23] Keegan Burchard: Oh okay. Yeah, not too far away like 35 minutes.
+
+[19:00:22 - 19:00:28] Scott Davidson: Okay, cool. Yeah. Awesome. I love Boston's a lot of fun always have
+
+[19:00:26 - 19:00:31] Keegan Burchard: Yeah, yeah, good, good time of year. Now before it gets too, gray and cold.
+
+[19:00:31 - 19:00:38] Scott Davidson: Crazy. Yeah is um, is the whole team? The whole, some of the teams in DC, right?
+
+[19:00:36 - 19:00:56] Keegan Burchard: No, we're We're all over the place. So our CTO is in Boston. He's actually in Newton and then Tony our CEO and a couple of the other founders are based out in the Bay Area. We got somebody down in Texas somebody in Philly so we're kind of all over the mountain.
+
+[19:00:56 - 19:01:05] Scott Davidson: Gosh. I got you. Okay cool. Yeah. So Some context, I guess is my mom used to work for Tony. Back in the day.
+
+[19:01:05 - 19:01:09] Keegan Burchard: Yeah, I met with her last week at some point.
+
+[19:01:07 - 19:01:10] Scott Davidson: Okay, cool.
+
+[19:01:09 - 19:01:15] Keegan Burchard: Or maybe the week week before whenever she sent. The intro email, I got enough a call with her make 20 minutes before that.
+
+[19:01:15 - 19:01:25] Scott Davidson: Okay, cool. Yeah, how did that? How did that go? She mentioned that you all were talking but I wasn't sure exactly. I assume like government sales but
+
+[19:01:24 - 19:01:57] Keegan Burchard: Yeah. It's it's government sales side and I'm, I can give you kind of an overview of our or go to market motion right now. It's Pretty early so I can kind of walk you through that. But yeah, we were meeting with her Tony and her catching up. We're starting to Try to figure out our best way around the federal market right now. But just
+
+[19:01:45 - 19:01:45] Scott Davidson: Mm-hmm.
+
+[19:01:45 - 19:01:57] Keegan Burchard: kind of I'll give you kind of high level. What we do, where we're going So
+
+[19:01:48 - 19:01:49] Scott Davidson: Yeah.
+
+[19:01:49 - 19:02:38] Keegan Burchard: voice, brain works with public safety agencies, right? So think airports. Police departments, fire department, sheriff's offices, blah. And what we do is we plug know radio handsets and we're providing AI capture transcription alerting search capabilities on top of that. So pretty much anything that said Over the channels we capture is uploaded into our platform. People can go and you can see the entire feed of everything that was said You can do keyword or semantic based alerting and we are finalizing like a chat GPT ask search function so I can just go in and say I need all the records between 12:15 and 12 18. On October 31st related to this arrest and it just builds me the report.
+
+[19:02:38 - 19:02:39] Scott Davidson: The income.
+
+[19:02:39 - 19:03:45] Keegan Burchard: so, our so, Voice frame started. Very small group, Tony myself and a few others actually merged in with an underlying, like database technology that we're working on before that. So I came on board with voice brain of about two months ago. now, what they were going after was very kind of Far-reaching anybody that had a radio they were trying to get in touch with. There was a lot of back and forth with resellers trying to find manufacturers reps of radio hardware things like that. And they're they're going to market motion to kind of stalled hence why we got pulled in. So I've really been trying to make head or tails of what was in the pipeline, what we're going. How's the platform? Shifting? The reason we were talking with your mom, on the federal side is we've recently gotten to create agreements with the Coast Guard and with the TSA. And so, the Create Agreement is effectively, a cooperative research and development contract. It's there's no
+
+[19:03:40 - 19:03:42] Scott Davidson: Okay. Yeah.
+
+[19:03:41 - 19:04:04] Keegan Burchard: money associated with it initially, but it's effectively saying, It's effectively saying, Well, beta test, your product will give you feedback. That was the TSA one, the Coast Guard, one should be signed and finalized on Wednesday, but effectively. That is the Coast Guard saying. We want to use you, We understand that you're super early and we will throw a bunch of resources at you to help build this out. So it's what we want.
+
+[19:04:04 - 19:04:05] Scott Davidson: Mmm.
+
+[19:04:06 - 19:05:15] Keegan Burchard: We're trying to figure out how we can leverage those create agreements to go to the FSIs and say, Hey we're already doing this with the Coast Guard or already doing this with TSA. A bunch of other DHS orgs have contracts out there that reference. Whatever AI transcription radio search. All basically anything we can fall under we already have approval from two DHS orgs to work with us. Like Let's let's sit and talk. So That's where we're starting to look to go. Candidly, I don't come from the federal background. Hence why I was on the call of that with your mom. Because Tony and I are going to try to figure out kind of how we start to approach this, and really getting the second crate assigned with the Coast Guards. What's held us up from doing like bulk outreach around it and then, on
+
+[19:04:53 - 19:04:54] Scott Davidson: Good.
+
+[19:04:55 - 19:06:38] Keegan Burchard: the like, Public Safety, Org side. It's a lot of manual work, right? It's we're going after small or mid-sized police departments. These guys aren't checking their email all that often. They're not really on LinkedIn. So it's a lot of me just calling into them and booking demos that way, but we don't have a very sophisticated go-to-market at the moment. using clarifies our CRM, they are About to roll out a like sequencing tool inside of it. Which I met with them last week. I kind of got like the inside. Look, I'll get the beta test when it is officially live, which they're hoping is going to be in December, but Prior, like the company right before we used hubspot. That's why I ran sequences and calls and grab zoom, info to grab data. I've checked out a couple of like aisdrs, candidly, I have not used clay mostly because we knew this merge was coming. So we're gonna dump money into me just testing messing up with clay because you know, I've heard it's expensive for first time users On that note. We're trying to figure out how to make to go to market motion, a little smoother. Right now, I'm Our SDR. I'm our AER, I'm our AM I'm kind of doing whatever we need to do and
+
+[19:06:09 - 19:06:11] Scott Davidson: Yeah. Yeah.
+
+[19:06:11 - 19:06:43] Keegan Burchard: I'm trying to figure out how to better leverage my time versus just going. Okay cool. I have a hundred police chiefs. I'm just gonna hammer the phone and if I get one then I'll send the email. So I'm trying to figure out how to be a little smarter with it. Especially as we start going after the FSI or trying to find the right contact info for the TSA Procurement officer who's tied to the contract and who's the account manager on the FSI side so we can get in touch. There's it's a lot of manual effort right now, which I'm running out of time for
+
+[19:06:43 - 19:06:51] Scott Davidson: I said, Yeah, yeah, no, that makes total sense. I'm using clarify as well actually for myself and I'm really
+
+[19:06:50 - 19:06:59] Keegan Burchard: I I do really like it the one struggle that I know I've been having with it. Is
+
+[19:06:52 - 19:06:53] Scott Davidson: Yeah.
+
+[19:06:56 - 19:06:59] Keegan Burchard: they're recording functionality, keeps cutting out on me.
+
+[19:06:59 - 19:07:01] Scott Davidson: Really.
+
+[19:07:00 - 19:07:22] Keegan Burchard: Yeah, I've had it cut out on calls, so I've been using granola to transcribe the calls pasting that into clarify, but I'm meeting with their their head of customer success. Next week to basically say, What am I not using in the platform? How do I make it a little bit easier? But I love it. There's been a push internally to say, Hey, we should go back to Hubspot and I'm like, No, absolutely not. I'm not going back to help.
+
+[19:07:22 - 19:07:42] Scott Davidson: Yeah, I've I mean I've worked in Enterprise, so I've only used Salesforce but Yeah, I mean I think Hubspot is like you know part of that legacy. There's I've heard you know, Ateo attio and then clarify has been good, but yeah. I mean I
+
+[19:07:31 - 19:07:35] Keegan Burchard: Yeah. Yep.
+
+[19:07:39 - 19:07:48] Scott Davidson: saw the sequencer thing I was curious about The quantity and the volume that you'd be able to push in there. But maybe if
+
+[19:07:45 - 19:07:55] Keegan Burchard: Yeah, they didn't give me like total insight into that. I think they're still
+
+[19:07:47 - 19:07:48] Scott Davidson: you met with him, you know,
+
+[19:07:52 - 19:08:50] Keegan Burchard: kind of working through it. It seems like it'll be Effectively limited by your email service provider like they're willing to dump whatever you want. It's just when Google gives the big Fu it'll be right. I mean it looks like it'll be relatively straightforward but I gave some feedback on. Like putting manual tasks and things in there. Because right, it was just here, like, just load up emails break it up by a day or two, and we'll push out more emails. And I said, Look, I know you guys aren't doing like a calling tool, right? Everybody's gonna use a different calling tool if they're using one, But I said You guys should have the ability to put in. Even just like a manual task of like Hey go check up on this or go check that versus just pure emailing just from if I'm going to use it as the CRM, They already have the task functionality. Which admittedly Isn't? It isn't great. I get feedback too of.
+
+[19:08:36 - 19:08:38] Scott Davidson: Yeah.
+
+[19:08:40 - 19:08:50] Keegan Burchard: Like I should be able to make a task from a customer object. I don't want to go
+
+[19:08:43 - 19:08:44] Scott Davidson: Hmm.
+
+[19:08:43 - 19:08:50] Keegan Burchard: into tasks and do all that. So there's, there's a couple things that are working
+
+[19:08:45 - 19:08:46] Scott Davidson: Yeah.
+
+[19:08:46 - 19:08:50] Keegan Burchard: on, but I think it's, I think it's pretty good for what it is.
+
+[19:08:50 - 19:09:07] Scott Davidson: Yeah, sure. Cool. So yeah. I mean have you thought about You know, how you want to? Expedite like Is it the market research component? Are you looking to like, Do something in particular about that? Or, you know, how are you thinking about it?
+
+[19:09:07 - 19:10:04] Keegan Burchard: Yeah, candidly. I don't know if I have a perfect concrete plan of how we want to approach that. I think the market research piece is most important mostly, because I think our bottleneck right now, Once we know the contracts, we want to go after. It's not crazy, difficult to manually. Go. Look up like, okay, who on the FSI side and who at the actual like agency side is tied to it, but Finding the right contracts. And honestly if we could expedite who's tied to those contracts, it would make life a lot easier. I don't know if we're at the point where we want to fully automate. Outreach to these people. But at least to build the Even if it's a like, a once a week, pull of like, okay, here's all the new contracts that came down the line that we think maybe tied with what voice brain
+
+[19:10:01 - 19:10:02] Scott Davidson: Yeah.
+
+[19:10:01 - 19:10:04] Keegan Burchard: can do. Here's the people tied to those
+
+[19:10:04 - 19:10:05] Scott Davidson: Hmm.
+
+[19:10:04 - 19:10:25] Keegan Burchard: Get it on a Friday and then Okay, I know Monday morning exactly what I'm going after would be would be useful just from a like a time-saving perspective
+
+[19:10:10 - 19:10:11] Scott Davidson: Yeah. Yeah.
+
+[19:10:14 - 19:10:25] Keegan Burchard: because I think you know this right once you start dealing with some some of the
+
+[19:10:14 - 19:10:16] Scott Davidson: That's it. Yeah.
+
+[19:10:18 - 19:10:25] Keegan Burchard: larger agreements in the back and forth like also in your days half gone before you think you know what you're doing.
+
+[19:10:24 - 19:10:29] Scott Davidson: Yeah, okay. So that's on like primarily the federal side but then on the like
+
+[19:10:25 - 19:10:26] Keegan Burchard: so,
+
+[19:10:28 - 19:10:33] Scott Davidson: public, Safety side. It's just like, it's
+
+[19:10:31 - 19:11:40] Keegan Burchard: I think that the public safety side. It's yeah. On the public safety side, it's it's probably Just bubbling up a mixture of. Just the right contacts. Any news that could be like for example, like we're currently talking with San Francisco PD, And San Francisco PD put out something. It was like six months ago. Like, right before we started talking and oh, we're looking at revamping our whole like radio infrastructure and even though we're not selling them, the radios, that's a good opportunity. That's a good trigger point for us to reach out and say, Hey Hey, well, you're doing that. Here's what we can do, so it's for them. I think it's, it's very similar, it's the account research of, What are they putting out to bid? What is potentially coming down the pipeline? Like, you know, if May or Lori is talking about revamping public safety, orgs in San Francisco? Okay, that's a good trigger for us to go to every public safety work there so I it is a lot of account research. and then just then, tying that into Here, the people you should talk to based on this.
+
+[19:11:40 - 19:11:53] Scott Davidson: Know. and then, All that information, it must be public, right? Is it new sources or are there databases with? Like I know maybe on the federal side, there are but
+
+[19:11:50 - 19:12:10] Keegan Burchard: it's Yeah, on the Federal side there's a lot of databases, a lot of it comes on the public side from what I've seen so far, it is coming out of news sources, right? So like, you know, the San Francisco Gazette. Remember it's called me right
+
+[19:12:04 - 19:12:05] Scott Davidson: Right.
+
+[19:12:04 - 19:12:10] Keegan Burchard: about what Mayor Laura said and then there's I'm still trying to build out of a
+
+[19:12:06 - 19:12:07] Scott Davidson: Right.
+
+[19:12:08 - 19:13:05] Keegan Burchard: total map of like, What is actually and I'll let me log into this and I'll show you like, what is actually being posted. But there's a ton of Try again. Alright, well locked me out but like this sites like public Purchase.com, right? Which is effectively, it's just a website that talks all about the it actually just lists similar to Any of the federal sites this just lists contracts that are out there and it's for it's for everything, it's a, Hey San Jose County needs new traffic lights, like it has all of that. And so it's just trying to figure out what's getting put out there that we could potentially tie to
+
+[19:13:04 - 19:13:07] Scott Davidson: And you okay. Yeah.
+
+[19:13:06 - 19:13:34] Keegan Burchard: And that's where we're starting to like miss stuff like every once in a while like I or somebody else will find something. Like Oh this is great. All the due date was last week. Like, it's, it's things like that. Where, I mean, we don't have the bandwidth to
+
+[19:13:16 - 19:13:18] Scott Davidson: Guys. Yeah.
+
+[19:13:20 - 19:13:38] Keegan Burchard: chase down all. I mean, we're small team. So even if I could get in touch with bid on when the bids, like, I don't even know if we could fulfill all the things that are coming out at once, but being aware of them is A gap for us currently that I'm still trying to figure out how to best fix.
+
+[19:13:38 - 19:13:45] Scott Davidson: I see, I said that makes sense. And then, are you using any data providers today? Like, Do you have
+
+[19:13:45 - 19:13:46] Keegan Burchard: So we currently use Zoom Info.
+
+[19:13:47 - 19:13:47] Scott Davidson: Okay.
+
+[19:13:50 - 19:14:31] Keegan Burchard: Candidly. I think we lapsed with them in, like, two months and I'm starting to look at better ways to get data. I've checked out like Axa actually have a buddy who just joined them. But zoom info's legacy. So we had them at the company that we merged in with voice brain and I don't think we've paid zoom info in like the last three months because we reached out and said, Guys, we we merged, we need you to update the payment things and they just haven't, we've reached out every week. They haven't responded to us, but I still have access. So I'm using it until we get kind of locked out, or they give update what we're paying them. And then
+
+[19:14:28 - 19:14:28] Scott Davidson: Yeah.
+
+[19:14:32 - 19:14:56] Keegan Burchard: Yeah, then I, but I I don't know if I'll keep they're better than like an Apollo in my opinion, but I was looking at some of the, like waterfall tools or using Xa clarify supposedly was coming out with effectively what X is doing. And just saying, Hey, you need to build your list, right? Inside of clarify. But I don't think that's gonna be live for another three to four months, so I'm trying to figure
+
+[19:14:52 - 19:14:54] Scott Davidson: Yeah.
+
+[19:14:54 - 19:14:58] Keegan Burchard: that out. So again, if you're recommendations there, Happy to hear it.
+
+[19:14:58 - 19:15:12] Scott Davidson: so, I think there is some level of misconception around clay and that is if you're just using their credit based system, yes, it is expensive but if you come with
+
+[19:15:09 - 19:15:10] Keegan Burchard: Yep.
+
+[19:15:10 - 19:15:18] Scott Davidson: your own keys and You know, and even shop them out. Like, I mean, zoom info's expensive but
+
+[19:15:17 - 19:15:17] Keegan Burchard: Yeah.
+
+[19:15:18 - 19:15:26] Scott Davidson: You know. I mean even Exxon, they have an API so you can like hook it. You can hook in anything it's basically like an Excel spreadsheet. That's
+
+[19:15:23 - 19:15:23] Keegan Burchard: but,
+
+[19:15:26 - 19:15:44] Scott Davidson: You know. Super connected to like 140 different providers. And then it has like, native integrations with the AI, and everything like that. so, you know, you can Do. Anything and they have a something called a Clayton.
+
+[19:15:44 - 19:15:45] Keegan Burchard: Yep.
+
+[19:15:44 - 19:16:05] Scott Davidson: Which is their AI. internal tool and it can actually go to the Internet and do things so you could
+
+[19:15:50 - 19:15:52] Keegan Burchard: Yep.
+
+[19:15:50 - 19:16:17] Scott Davidson: say like I want you to go to public purchase calm and like Look up the word radio or whatever the word is you know XYZ words, return them and then you can create like formulaic components after that to further narrow it down because maybe it's the word Radioactive or whatever, you know. It's so you can you know you can layer things
+
+[19:16:07 - 19:16:09] Keegan Burchard: Yeah.
+
+[19:16:10 - 19:16:24] Scott Davidson: on post to make sure it's like really refined and then they really have two main Buckets. It's Accounts and people. So once you get the accounts, you can tie
+
+[19:16:22 - 19:16:22] Keegan Burchard: Become.
+
+[19:16:24 - 19:16:47] Scott Davidson: Over to the people. A lot of it is based on LinkedIn presence. But there are a lot of, like, email Waterfall providers that you can just like plug them through and if you know the domain or if it's a public entity and it's just whatever, knock of I suspect I
+
+[19:16:40 - 19:16:42] Keegan Burchard: Yep.
+
+[19:16:41 - 19:16:47] Scott Davidson: haven't tested.govs, but I suspect you'd be able to you know, find the emails
+
+[19:16:45 - 19:16:46] Keegan Burchard: Okay.
+
+[19:16:46 - 19:16:59] Scott Davidson: pretty quickly. Um, so yeah. I mean, the nice thing about Clay is that it's Completely modular and you can basically do whatever you want.
+
+[19:16:55 - 19:17:05] Keegan Burchard: Yeah.
+
+[19:17:00 - 19:17:14] Scott Davidson: Of course, you know, that means there's theoretically more areas that it can break. But I haven't found issues with that. Like, it doesn't really happen.
+
+[19:17:10 - 19:17:11] Keegan Burchard: Okay.
+
+[19:17:14 - 19:17:21] Scott Davidson: You know, you can test like a batch of rows at a time and then assuming it works, you like progress to the next stage.
+
+[19:17:20 - 19:17:21] Keegan Burchard: Okay.
+
+[19:17:24 - 19:17:59] Scott Davidson: Anything of anything else, it might be. And then their email sequencing tools that, you know, their purpose built for that. So they have native integrations with a bunch of those. And that's what I been using. But, you know, you can do. So that's the one other thing about clarify that I wanted to understand from them is They don't have a public API yet or like the MCP. None of the backend stuff is
+
+[19:17:47 - 19:17:57] Keegan Burchard: Yeah.
+
+[19:17:51 - 19:18:09] Scott Davidson: like able to be hooked up. So you wouldn't be able to directly push info in there. You'd have to I don't know. Google sheets it. Or I guess manually. Enter it. But I from what I was watching on their stuff, it sounded like that was coming very soon.
+
+[19:18:09 - 19:18:17] Keegan Burchard: Yeah, I think it is. I don't know for sure, though. I feel like I talked them a few times with like,
+
+[19:18:13 - 19:18:14] Scott Davidson: Yeah.
+
+[19:18:14 - 19:18:17] Keegan Burchard: yeah, it's coming soon but how soon is soon.
+
+[19:18:17 - 19:18:34] Scott Davidson: Yeah. Yeah, it seems like they got a lot going on. So yeah. I mean I think Clay is like a pretty solid like middle where like it can be the brain
+
+[19:18:29 - 19:18:29] Keegan Burchard: Yeah.
+
+[19:18:29 - 19:18:38] Scott Davidson: of operations and then based on like your particular use case in the ways you want to think about it, like You know, it can do as much or as little as you want, really?
+
+[19:18:38 - 19:18:39] Keegan Burchard: Okay.
+
+[19:18:43 - 19:18:51] Scott Davidson: So and you know, I mean, I think you could get away with the there's a $350 a month plan and then
+
+[19:18:48 - 19:18:49] Keegan Burchard: That.
+
+[19:18:51 - 19:19:15] Scott Davidson: you know, the other like the email provider I use is Pretty cheap. I mean, I think it's $500 a year and you get Tons of credits that one and it's pretty good. I think it has really good verification levels. The sequencer. You know, if you're able to use clarify, you clarify, you know, the tool I use is like
+
+[19:19:13 - 19:19:13] Keegan Burchard: Mm-hmm.
+
+[19:19:16 - 19:19:53] Scott Davidson: 70? Yeah, it's ninety seven dollars a month, but it depends on the volume you're doing and all that thing. And the nice thing is you can actually I mean, you could do human in the loop and you can have AI right? The emails based on what it's You know, your positioning statement. What specific like San Francisco's, blah. Hey, it's all San Francisco. PD is Overhauling the radio system like that and then you can send that to the tool instantly and it can create crafted on multi-sequence. Sequences on your behalf.
+
+[19:19:53 - 19:19:54] Keegan Burchard: About.
+
+[19:19:55 - 19:20:17] Scott Davidson: Yeah and then there are phone by verifiers as well that have like AI. There are not a APIs that you can like integrate as well and they probably have a native integration as well with Clay. So yeah. I mean It can be built to your requirements with very little need to sacrifice on exactly the way you want it.
+
+[19:20:18 - 19:20:20] Keegan Burchard: Okay, that's good to know.
+
+[19:20:20 - 19:20:35] Scott Davidson: Yeah. Hmm. So are you all like? Are you thinking about like implementing us a solution or working with someone like Is that something you thought through or you're just kind of like getting information and then seeing how you want to proceed?
+
+[19:20:35 - 19:20:47] Keegan Burchard: Where we're starting to get information right now, it's it definitely something we likely need to do and candidly. It's I'm not going to sit around and try to
+
+[19:20:41 - 19:20:41] Scott Davidson: Yeah.
+
+[19:20:43 - 19:20:47] Keegan Burchard: figure out clay on myself. So we would want to work with somebody.
+
+[19:20:45 - 19:20:46] Scott Davidson: Yeah.
+
+[19:20:49 - 19:21:22] Keegan Burchard: Just timing wise, I don't know. And I got, I gotta kind of sit down with Tony and kind of map this out if this is a before the end of the year thing, or going into Q1 like, you know, spend the next month, just trying to close all the loose ends, get the plan fully in place and Figure out where we want to sync our teeth. I mentioned like the bandwidth. Problem at the moment where we're gonna be bringing on some new hires here soon. So that should from a actual delivery perspective, clear up any of the bottle.
+
+[19:21:19 - 19:21:19] Scott Davidson: Hmm.
+
+[19:21:20 - 19:21:59] Keegan Burchard: Next we have But I also think that we're still trying to figure out. Where to put our focus because at the moment, we even with every all hands on deck, I don't know if we have the bandwidth to go fully after federal and fully after state local. And the processes for each is going to vary. If we go after federal, we need to do Fedramp. That's going to take time money and resources, and if we go up to stay in local,
+
+[19:21:52 - 19:21:54] Scott Davidson: Yes.
+
+[19:21:54 - 19:21:59] Keegan Burchard: we can keep pushing Fedramp off because the Crata gets us around that.
+
+[19:21:58 - 19:21:59] Scott Davidson: Mmm.
+
+[19:21:59 - 19:22:06] Keegan Burchard: But then we're not going to be able to go after the federal system integrators and go after the contracts, if we're not, at least pursuing federal. So
+
+[19:22:06 - 19:22:07] Scott Davidson: That's good.
+
+[19:22:07 - 19:22:16] Keegan Burchard: There still needs to be a bit from a, like, technical and resource roadmap on
+
+[19:22:13 - 19:22:26] Scott Davidson: Yeah. Yeah.
+
+[19:22:15 - 19:22:58] Keegan Burchard: where we want to go. Before I'm before I'm confident to tell Tony, Hey, let's, let's pay for something. Turn it on and just, you know, open the floodgates. So, we're working through that. I'm hoping to have clarity on that by the end of next week. And I think that's Probably my main hurdle before sitting out to work, potentially work with somebody on this. But what's that's cleared up? And we know where we're going,
+
+[19:22:37 - 19:22:39] Scott Davidson: Okay.
+
+[19:22:39 - 19:22:58] Keegan Burchard: like, then I don't have to say, Okay, let's let's run a collegiate for federal and a collegiate for state local. It's okay. Let's go all in on this and move ahead so that that's kind of where we're at. But this was really helpful from a
+
+[19:22:50 - 19:22:51] Scott Davidson: Yeah.
+
+[19:22:53 - 19:22:58] Keegan Burchard: like what we could potentially do.
+
+[19:22:56 - 19:22:59] Scott Davidson: Yeah. For sure.
+
+[19:22:58 - 19:23:02] Keegan Burchard: Which yeah, which would be very helpful for my time.
+
+[19:23:01 - 19:23:30] Scott Davidson: Yeah, yeah, the art of the possible. I mean, you can basically do whatever you want. So I think that's a good way to think about it. Um, and so, that's the other thing that, you know, makes it hard to demo is like, someone wants to say something. It's like it's complete. I can tell you my workflows like a
+
+[19:23:16 - 19:23:21] Keegan Burchard: Yeah, what. Yeah, what do you want to see? Because I can show anything. Yep. No
+
+[19:23:17 - 19:23:30] Scott Davidson: completely bespoke, you know. Yeah, yeah. So like I have one set up for, you
+
+[19:23:19 - 19:23:21] Keegan Burchard: I totally get that.
+
+[19:23:22 - 19:23:30] Scott Davidson: know, go to market engineers kind of like the term. I have one set up like let
+
+[19:23:25 - 19:23:25] Keegan Burchard: Yep.
+
+[19:23:26 - 19:23:37] Scott Davidson: me know every time there's a job and then it automatically creates a video and like send it to something, you know. So it's Kind of do. Whatever. But yeah, that's helpful. Let me know.
+
+[19:23:35 - 19:24:00] Keegan Burchard: Yeah. If you have, if you have a, if you ever recorded demo on like the gtm engineer side, that would be useful for me just to show to Tony of like, Hey, this is what we could do. And if not, I can find time for us after Thanksgiving,
+
+[19:23:45 - 19:23:45] Scott Davidson: Okay.
+
+[19:23:50 - 19:24:00] Keegan Burchard: for like me, you and Tony sit down and just kind of look through that. Whatever kind of works on on your end, if it's recorded. I'm sure it'll be easier for him, but it doesn't matter to me.
+
+[19:24:03 - 19:24:06] Scott Davidson: y'all are busy. I'm happy to do a loom and just You know.
+
+[19:24:06 - 19:24:14] Keegan Burchard: Yeah, that'd be great. Yeah, that I could just show it to him and be like, Hey, watch this one. You can let me know and it'd be good for me to see too.
+
+[19:24:13 - 19:24:21] Scott Davidson: Yeah, that sounds great. Um does it make sense in a handful of weeks to like put a placeholder and just have something or
+
+[19:24:21 - 19:24:39] Keegan Burchard: Yeah, put a throw something on my calendar for. Any time besides twelve to one eastern, the week of the 15th, doesn't matter what day, just throw it in there. It'll be a good placeholder. That'll give us the ability to catch up before the week of Christmas.
+
+[19:24:39 - 19:24:41] Scott Davidson: Okay. Yeah, that's great.
+
+[19:24:41 - 19:24:42] Keegan Burchard: And yeah, we go from there.
+
+[19:24:42 - 19:24:48] Scott Davidson: Okay, great, I'll send you something. Some sort of loom video by like End of Day Wednesday.
+
+[19:24:47 - 19:24:49] Keegan Burchard: Yeah. Perfect. I appreciate it, Scott.
+
+[19:24:49 - 19:24:51] Scott Davidson: So cool talks in. Okay? Thanks, bye.
+
+[19:24:50 - 19:24:50] Keegan Burchard: I'm going.
+

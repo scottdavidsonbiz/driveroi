@@ -1,0 +1,26 @@
+Number,Company,Segment,Industry,Location,Why They Fit,Decision Maker Titles,Priority,CharterUP Market Alignment
+1,Salesforce,Corporate Employee Shuttles,Technology,"San Francisco, CA","70K+ employees, Bay Area HQ, Dreamforce (170K attendees)","VP Workplace Services, Director of Corporate Events",HIGH,Bay Area
+2,Cisco,Corporate Employee Shuttles,Technology,"San Jose, CA","85K employees, Bay Area campus, return-to-office transition","Director of Workplace Resources, VP Real Estate",HIGH,Bay Area
+3,Adobe,Corporate Employee Shuttles,Technology,"San Jose, CA","30K employees, Bay Area campus, sustainability focus","Head of Workplace Experience, Director of Facilities",HIGH,Bay Area
+4,NVIDIA,Corporate Employee Shuttles,Technology,"Santa Clara, CA","30K employees, explosive growth, Bay Area traffic","Director of Facilities, VP Corporate Services",HIGH,Bay Area
+5,Dell Technologies,Corporate Employee Shuttles,Technology,"Austin, TX","120K employees, Austin HQ (CharterUP priority market)","VP Global Real Estate, Director of Workplace",HIGH,Austin
+6,Indeed,Corporate Employee Shuttles,Technology,"Austin, TX","12K employees, Austin HQ, known for employee perks","Head of Workplace, Director of Employee Experience",HIGH,Austin
+7,Citadel,Corporate Employee Shuttles,Financial Services,"Miami, FL","2,600 employees, Miami relocation, premium expectations","Chief Operating Officer, Head of Operations",HIGH,Miami
+8,Blackstone,Corporate Employee Shuttles,Financial Services,"Miami, FL","Growing Miami presence, corporate events, high-touch","Managing Director of Operations, VP Corporate Services",HIGH,Miami
+9,VF Corporation,Corporate Employee Shuttles,Consumer Goods,"Denver, CO","35K employees, Denver HQ (CharterUP hub city)","VP Global Workplace, Director of Facilities",HIGH,Denver
+10,Arrow Electronics,Corporate Employee Shuttles,Technology,"Denver, CO","22K employees, Denver HQ, multi-site operations","Director of Corporate Services, VP HR",HIGH,Denver
+11,Miami-Dade Aviation Dept (MIA),Airport Authorities,Airport Authority,"Miami, FL","World Cup 2026 host, 45M passengers/year, shuttle modernization","Director of Landside Operations, Chief Commercial Officer",HIGH,Miami
+12,Hartsfield-Jackson Atlanta (ATL),Airport Authorities,Airport Authority,"Atlanta, GA","Busiest US airport, 93M passengers/year, shuttle contracts","Director of Ground Transportation, VP Operations",HIGH,Atlanta
+13,Denver International (DEN),Airport Authorities,Airport Authority,"Denver, CO","CharterUP hub city, 70M passengers/year, expansion mode","Director of Transit Services, Chief Commercial Officer",HIGH,Denver
+14,Turner Construction,Construction Workforce,Construction,Nationwide,"Largest US contractor, $20B revenue, massive jobsite workforce","VP of Field Operations, Director of Logistics",HIGH,Nationwide
+15,Bechtel,Construction Workforce,Engineering/Construction,"Reston, VA","55K employees, mega-projects, remote site transportation","Director of Project Services, VP Operations",HIGH,Nationwide
+16,Kiewit,Construction Workforce,Construction,"Omaha, NE","28K employees, infrastructure projects, workforce mobility","Director of Field Operations, VP Human Resources",HIGH,Nationwide
+17,McCarthy Building,Construction Workforce,Construction,"St. Louis, MO","Major commercial contractor, multi-state jobsites","VP of Operations, Director of Project Logistics",HIGH,Nationwide
+18,Hard Rock Stadium,World Cup 2026 / Major Events,Venue,"Miami Gardens, FL","World Cup host venue, 7 matches including quarterfinal","VP of Operations, Director of Event Services",HIGH,Miami
+19,Mercedes-Benz Stadium,World Cup 2026 / Major Events,Venue,"Atlanta, GA","World Cup host venue, CharterUP already has Atlanta page","Director of Stadium Operations, VP Guest Experience",HIGH,Atlanta
+20,SoFi Stadium,World Cup 2026 / Major Events,Venue,"Los Angeles, CA","World Cup host venue, LA market alignment","VP of Event Operations, Director of Transportation",HIGH,Los Angeles
+21,Octagon,World Cup 2026 / Major Events,Sports Marketing,Nationwide,"Global sports agency, World Cup sponsor activations","VP of Event Operations, Director of Client Services",HIGH,Nationwide
+22,Wasserman,World Cup 2026 / Major Events,Sports/Entertainment,"Los Angeles, CA","Major agency, athlete/brand events, LA market","Head of Events, VP of Operations",HIGH,Los Angeles
+23,Maritz,Event Planning,Events/Incentives,"Fenton, MO","Top corporate event firm, Fortune 500 clients, massive volume","VP of Event Operations, Director of Logistics",MEDIUM,Nationwide
+24,George P. Johnson (GPJ),Event Planning,Experiential Marketing,"Auburn Hills, MI","Global event agency, major brand activations","Director of Production, VP Operations",MEDIUM,Nationwide
+25,Freeman,Event Planning,Events/Exhibitions,"Dallas, TX","Largest trade show contractor, 10K+ events/year","VP of Event Logistics, Director of Transportation",MEDIUM,Nationwide

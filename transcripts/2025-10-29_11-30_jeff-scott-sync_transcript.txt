@@ -1,0 +1,475 @@
+---
+title: "Jeff Cohen (IVS) x Scott - Initial Discovery Call"
+date: 2025-10-29
+type: transcript
+category: [client-discovery, gtm-strategy]
+use-cases: [icp-definition, service-model-refinement, early-client-validation]
+personas: [ceo-founder, small-business-owner]
+participants: [jeffrey-cohen, scott-davidson]
+client: ivs-tax-services
+lifecycle: validated
+validated-by: [jeff-insights, positioning-update-2024-12-09]
+integrates-with:
+  - content/insights/2025-10-29_11-30_jeff-scott-sync_insights.md
+  - positioning/positioning-update-2024-12-09.md
+  - .claude/skills/refine-positioning/SKILL.md
+tags: [transcript, client-discovery, property-tax, industrial, early-stage-agency]
+---
+
+# Jeff Cohen (IVS) x Scott - Initial Discovery Call
+**Date:** October 29, 2025 (11:30 AM)  
+**Participants:** Jeffrey Cohen (IVS Tax Services), Scott Davidson  
+**Context:** First discovery call, property tax consulting firm seeking GTM help
+
+---
+
+[19:00:02 - 19:00:08] Jeffrey Cohen: I am doing well. hopefully, you're doing well, I guess based on the information you sent you're
+
+[19:00:02 - 19:00:04] Scott Davidson: Awesome.
+
+[19:00:06 - 19:00:08] Jeffrey Cohen: in, Virginia,
+
+[19:00:08 - 19:00:11] Scott Davidson: I am, I am.
+
+[19:00:08 - 19:00:15] Jeffrey Cohen: We we just started getting a little chilly weather down here, so hopefully you're hitting a little bit of it up there too.
+
+[19:00:15 - 19:00:19] Scott Davidson: Yeah, you're in Austin, right? Yeah.
+
+[19:00:17 - 19:00:28] Jeffrey Cohen: Yes, and the high today is supposed to be 65, which is amazing because it's better than the 80s and 90s and I'm ready. For some cold weather.
+
+[19:00:28 - 19:00:43] Scott Davidson: Yeah, I hear you. I When I was looking at schools, I was deciding between UT and I ended up going to Tulane. So I had my hot very hot summers and hot all the time, but yeah.
+
+[19:00:35 - 19:00:37] Jeffrey Cohen: ah,
+
+[19:00:41 - 19:00:41] Scott Davidson: definitely.
+
+[19:00:41 - 19:00:54] Jeffrey Cohen: Yes, I think it's a little bit muggier in Louisiana, especially in the New Orleans area. Then we have it. It's probably more like Houston but yeah, it's still hot summers, totally get it totally understand.
+
+[19:00:52 - 19:00:59] Scott Davidson: Yeah, yeah, I love Austin though been a handful of times but it's always good.
+
+[19:00:59 - 19:00:59] Jeffrey Cohen: It, it is a great city. I've I've
+
+[19:00:59 - 19:00:59] Scott Davidson: Yeah.
+
+[19:01:13 - 19:01:13] Jeffrey Cohen: I guess twice and Keep coming back. Morning.
+
+[19:01:13 - 19:01:29] Scott Davidson: Nice. That's awesome. That's very cool. Yeah, that's great. Um, so Yeah, I'm glad I'm glad we could connect definitely, you know, saw your information on Reddit. But yeah, I'd love to and read through the entire thread. So I have some contacts there obviously, but love to just kind of like, here in your words. What issues you're saying and you know what you're looking to solve for.
+
+[19:01:26 - 19:02:10] Jeffrey Cohen: Sure. Sure. And and I guess when I sent you email address, I didn't know it looked like I guess and I missed the messages where you asked if I was Jeffrey or Jennifer Jennifer is in the front of the office. I'm in the back this, but I guess that means you went to our website. So, last year at the beast of our current marketing and sales in house person, we completely read it. Our website to try to put a little bit more information out there and make it a little bit more. Accurate to today's. Web languages and and design it had been very dated, I think we previously did
+
+[19:02:06 - 19:02:07] Scott Davidson: Okay.
+
+[19:02:09 - 19:02:18] Jeffrey Cohen: it in. I was here when it was done, but I want to say it was 2009. So and a while,
+
+[19:02:15 - 19:02:16] Scott Davidson: Mmm.
+
+[19:02:18 - 19:02:50] Jeffrey Cohen: So as you may have seen, we are a property tax consultant for we, for the 25 years that we've our 26 years that we've been in business, we have been a for the most part in industrial based. And and um, and and a firm that has specifically worked industrial properties. The main reason for that is our two founding partners, one of, which is still with the company, the other ways, unfortunately, passed away.
+
+[19:02:50 - 19:02:52] Scott Davidson: Sorry to hear that.
+
+[19:02:51 - 19:03:29] Jeffrey Cohen: They came from a background of working, in corporate start I guess between the two of them they were working in the tax departments in Shell in GM in. Where else did Steve work? Trying to think? I think Chevron, I think Steve worked Chevron. I was gonna say it was one
+
+[19:03:15 - 19:03:16] Scott Davidson: Okay.
+
+[19:03:16 - 19:03:29] Jeffrey Cohen: another one of the big oil companies so they they grew the company and when they
+
+[19:03:18 - 19:03:19] Scott Davidson: Okay.
+
+[19:03:21 - 19:03:57] Jeffrey Cohen: decided to leave, they actually left for another consultant firm that they worked for at the time. But then came and said, They weren't happy with the way things were being done there and it wasn't following to some extent the way that corporate done it. So they wanted to build a company with a corporate first mindset meaning, there shouldn't be no surprises to clients meeting. There's always going to be at least two sets of eyes on everything so that if somebody's not going or not willing or able to be in the office and answer a question, there's always going to be someone there that can
+
+[19:03:57 - 19:03:57] Scott Davidson: Yep.
+
+[19:03:57 - 19:05:21] Jeffrey Cohen: So they built the company with that basis and for a very long time, I guess, I joined in 2003, it had been very successful company growing from when I joined. I think, we had 14 employees at our top. We had about 25, But we have struggled post covid becoming stagnant with our current marketer. As I mentioned, like, they have claimed that the marketing business has changed, which I think that's a given it's no longer. It seems just cold calls, just sending out email blasts saying, Hey, this is who we are. We would like the opportunity to work for you but hasn't really come to a determination of how we can make things better. It's always been. I can't get a hold of anybody on the phone. I can't get anybody to return my emails. I know there's a bunch of people on LinkedIn. We just need to blast posts from our page to LinkedIn saying, This is what we're doing. We need to pay more for not. She's, she hasn't mentioned targeted advertising. She's just say, like, whatever it takes to pay Google to be at the top of the page. When somebody says, I'm looking for a property tax consultant, that's what we need to do. So, I've been looking at it more as
+
+[19:05:16 - 19:05:17] Scott Davidson: Right.
+
+[19:05:21 - 19:05:33] Jeffrey Cohen: Excuses, not constructive responses on why we can't sign anything up. We have
+
+[19:05:24 - 19:05:25] Scott Davidson: Right.
+
+[19:05:29 - 19:05:59] Jeffrey Cohen: had meetings with potential clients, a few and then There's been a number of which that I guess, for whatever reason, after we have an initial leading and she follows up that she fails to get initial contact from them to get more. So it has been very stagnant. We over the last few years, we have lost a few clients but we've Brought in enough to basically replace. Those just not grow the way. I feel that
+
+[19:05:57 - 19:05:58] Scott Davidson: Okay.
+
+[19:05:59 - 19:07:04] Jeffrey Cohen: we should and the push that I've seen recently is, um, one of the things that I do in addition to working here is, I am, well, we have a number of people here who are members of the Institute for Professional Syntaxation and they have a certification that they do for the property tax field specifically. So I'm one of the instructors of the classes that they do to basically teach the next generation of property tax professionals. How to Eat Your Job. So with that, I work with a number of people throughout the industry. Challenges, instructing the next generation and through that, You know, we have contour, we have conversations, just how things are going, what's going? And I know that While there are changes in marketing approach. Other companies even similar ones of our size. Not just the big, the Big Four accounting firms are growing their client base. So I'm not sure what they're doing different than us. But obviously, we're just spinning wheels and it's not working.
+
+[19:07:04 - 19:07:05] Scott Davidson: Yeah.
+
+[19:07:05 - 19:07:22] Jeffrey Cohen: so as I mentioned, we don't really have a current go to market strategy because it's been based on on how our founding partner James Garza has seen how He's done things over the years and
+
+[19:07:21 - 19:07:22] Scott Davidson: Yeah.
+
+[19:07:22 - 19:07:28] Jeffrey Cohen: It just doesn't seem to be working right now. So I'm like, What can we do to make things better?
+
+[19:07:28 - 19:07:36] Scott Davidson: Yeah, no definitely. Um So I definitely have a bunch of questions, but maybe I'll just give you a little bit of background for me. So
+
+[19:07:34 - 19:07:35] Jeffrey Cohen: Sure.
+
+[19:07:36 - 19:07:55] Scott Davidson: I started my career in tax as a CPA doing individual and partnership, taxation things like that kind of made my way into real estate. So I worked at Avalon Bay, which is a real estate investment trust so multifamily, but some commercial, as well. Wasn't in the tax department, I worked in finance and then
+
+[19:07:49 - 19:07:53] Jeffrey Cohen: Mm-hmm. Okay.
+
+[19:07:55 - 19:08:25] Scott Davidson: Subsequently made the change into technology and I'm at a different company these days. But this is a side project for now. But shortly, it will be my full-time. So I worked at a company called Sixth Sense, which Is on the OR was at the time on the forefront of the new marketing technology, they kind of invented the term revenue technology and what they do.
+
+[19:08:19 - 19:08:42] Jeffrey Cohen: Okay. Yeah.
+
+[19:08:48 - 19:08:48] Scott Davidson: called
+
+[19:08:58 - 19:08:58] Jeffrey Cohen: Mm-hmm.
+
+[19:09:13 - 19:10:13] Scott Davidson: Intent data, which is, you know. Yeah, you could blast emails out to thousands of people and eventually you will probably get a meeting. But intent is like, are they engaging with our website, our content, our competitors, keywords, etc. So that's kind of the approach that has happened in marketing in the last They formed in 2017, it kind of got really hot right up until shortly after Covid. and now, there's these new Lighter weight tools. That Can be very custom and aren't a complete black box because that's like off the cell. It's cost 40,000 a year minimum. It's black box. You know, you have to work with a consultant, it takes months to implement etc. But now, there are these lighter weight tools that allow you to, like, iterate and do your custom like, what is specifically intent for you. Not You know, a little more broad than or a service provider in the real estate space or something like that. so, I worked there on the go to market. Finance team. But so I work really closely with revenue operations and we did a lot of, like, the planning for, you know how marketing budgets are messaging positioning things like that. So really, I've just taken that background and then using my like finance and data background to do more data-driven Marketing rather than just like let's spray and pray and hope he gets meetings. So yeah, that's a little bit about me and my background and yeah, I mean the
+
+[19:10:05 - 19:10:07] Jeffrey Cohen: Okay.
+
+[19:10:08 - 19:10:19] Scott Davidson: name of the game is definitely, it's definitely changed. So I think there's There's a lot there's you know, you can do anything theoretically, but
+
+[19:10:17 - 19:10:17] Jeffrey Cohen: Yeah.
+
+[19:10:19 - 19:10:56] Scott Davidson: A big thing is looking at what constitutes like high scored account. So, you know, if we were to work together, it would look like what have closed one deals look like in the past. What are similarities to those companies? Are they of a certain size, are they showing like they're expanding or, you know, some pretty whatever the particular characteristics of those companies are and then attempt to target them. More companies that are similar to those or come up with, you know, hypotheses
+
+[19:10:49 - 19:10:51] Jeffrey Cohen: Okay.
+
+[19:10:52 - 19:11:17] Scott Davidson: and then test them. And then we and then iterate that's kind of the the way that, you know, you can determine what's working at a smaller scale and then you then you once you know that the offering and the messaging is working with You know, whatever the segmentation is that's when you can start going. Really hard at it with, you know, thousands of contacts.
+
+[19:11:16 - 19:11:38] Jeffrey Cohen: Okay? What are the things you mentioned and it's just It was a key word that kind of popped out to me because it sounds like something that we are currently. Engaging with is the intent marketing. And so we have been using and I don't know if you're familiar with zoom info.
+
+[19:11:38 - 19:11:39] Scott Davidson: Oh yeah. Oh yeah.
+
+[19:11:38 - 19:13:16] Jeffrey Cohen: okay, so we have been using zoom info for about a year and we have set up specific intent keywords that we were hoping would drive Potential meetings for cut companies that are out there. So we had set up weekly intent meetings or messaging emails to go to myself and early marketer for you know, Fortune 500 companies that are looking for property tax compliance or industrial firms that are looking at. Whether it's valuation, whether it's appeal information for property tax. So she has been coming through some of those. One of the things that's interesting, I guess about it is since we can't really tell and I don't know if this is through info or fault of how intent works and maybe that's led to kind of what you said has moved post. Say 2022. Is that A hell, it could be anybody at the company and they could look for the word property tax appeals, and it could just be a random controller that happens to be looking up. Well, how do I appeal my house? And so then then our our marketing consultant will call them. And then, you know, the VP of Finance or the indirect tax manager will say, You know, we have a concern, current consultant, then we're happy with that but I don't know why we showed up on this list and so at that point you just throws up her hands and it's like, I don't
+
+[19:13:12 - 19:13:14] Scott Davidson: Hmm. Yeah.
+
+[19:13:15 - 19:13:16] Jeffrey Cohen: know what to do.
+
+[19:13:17 - 19:13:35] Scott Davidson: Yeah, yeah. So a couple things Zoom info started as a company that well one I can probably guess how much you're paying with them so I can't imagine it's like uber, you know, it's probably in the tens of thousands I guess. Yeah.
+
+[19:13:29 - 19:13:31] Jeffrey Cohen: Yeah.
+
+[19:13:31 - 19:13:35] Scott Davidson: Because we I mean zoom info is like a primary competitor of six sense.
+
+[19:13:35 - 19:13:40] Jeffrey Cohen: Okay. That's what I assumed based on what you had mentioned and kind of describe
+
+[19:13:35 - 19:13:37] Scott Davidson: Zoom, Infoza publicly.
+
+[19:13:39 - 19:13:40] Jeffrey Cohen: six minutes to be.
+
+[19:13:39 - 19:14:03] Scott Davidson: Yeah yeah. There are they started more focused on like Firmographic information. So, like what size is the company where they located,
+
+[19:13:47 - 19:13:48] Jeffrey Cohen: Yeah.
+
+[19:13:48 - 19:14:03] Scott Davidson: how many offices do they have things like that? Six cents was one of the in the first intent providers, and then zoom info, you know, created their own intent offering to match capabilities because success was winning a lot of business
+
+[19:13:57 - 19:13:58] Jeffrey Cohen: Okay.
+
+[19:14:02 - 19:14:03] Scott Davidson: from them.
+
+[19:14:03 - 19:14:04] Jeffrey Cohen: Gotcha.
+
+[19:14:04 - 19:14:10] Scott Davidson: Intent as a general matter. Yes. Has that issue because it uses IP addresses and
+
+[19:14:09 - 19:14:10] Jeffrey Cohen: Mmm.
+
+[19:14:10 - 19:14:27] Scott Davidson: You might be in an office building with 400 IP, you know, however many IP addresses and you might be Joe, Schmo looking up a property tax. So That's one big problem that these tools have and it's not unique to zoom info. It's yeah, it's a pretty big intent link thing. However,
+
+[19:14:25 - 19:14:25] Jeffrey Cohen: Okay.
+
+[19:14:28 - 19:14:49] Scott Davidson: with these new workflows, what you can do is They're the deanonymization of website traffic is never going to be, it's like 60% accurate and then so you may end up calling someone and they're not the
+
+[19:14:38 - 19:14:39] Jeffrey Cohen: Okay.
+
+[19:14:41 - 19:14:52] Scott Davidson: right person, but you can also then have a workflow after that, where you score the person and lead based on their title and and things like that. Um, so okay,
+
+[19:14:50 - 19:14:51] Jeffrey Cohen: Gotcha.
+
+[19:14:51 - 19:15:08] Scott Davidson: this is the tax manager. I want to talk to that person. It's not you know, the sales rep from whatever. Um, so that's one way to do it and then there's a lot of ways you can do. It's called like social signals. So if other if competitors are posting on
+
+[19:15:30 - 19:17:10] Jeffrey Cohen: In. Okay. Gotcha. Yeah. There are other types of companies that use our services. We don't just Look at Fortune 500 companies. As I said, we tend to handle and it comes in the name, primarily industrial companies. So companies that are in oil and gas service field for Finers, We actually tend to be even though we are a small boutique firm, we represent more refin. Is in the US than most of the larger finding companies own just through the amount of companies that we represent that are in that world Oil field service, refiners pulp and paper chemical process food and beverage manufacturing. So As as James always likes to say, If it's, if it's down and dirty, we'll go there. So, we've started to do a little bit more of commercial property as well.
+
+[19:17:04 - 19:17:04] Scott Davidson: Cool.
+
+[19:17:07 - 19:17:48] Jeffrey Cohen: I don't know if that's Going to be the next thing. I know obviously a lot of that stuff is more cookie cutter and not a specialized because a big box store is a big box store regardless of who the The tenant is if you're evaluating specifically if you're having building based on an income approach it's really not going to matter who the tenants is as long as you have a set vacancy rate and we can determine the market comparables for tenants and Verify a capitalization, right that way when it comes to industrial warehouse,
+
+[19:17:45 - 19:17:52] Scott Davidson: That's that's area, more familiar with sort of interrupting. That's the you know
+
+[19:17:46 - 19:17:48] Jeffrey Cohen: I'm sorry.
+
+[19:17:48 - 19:17:52] Scott Davidson: that's the area more familiar is like Okay let's run a parade on the
+
+[19:17:50 - 19:18:10] Jeffrey Cohen: Yeah. Exactly. Yes, same thing. When it comes to industrial warehousing or commercial
+
+[19:17:52 - 19:17:57] Scott Davidson: Income generation and you know, because we had a lot of the retail.
+
+[19:17:58 - 19:18:10] Jeffrey Cohen: warehousing. Um, there's a lot of them, especially we've noticed, along the, the
+
+[19:17:59 - 19:18:01] Scott Davidson: Okay.
+
+[19:18:03 - 19:18:56] Jeffrey Cohen: Interstate corridors in in Texas, and Louisiana and Oklahoma, that have been going up that Are not really being specialized based on who the tenant is going to be. For the most part, they're going to be similar to all construction. They're going to be steel or aluminum framing and then in space, in storage, whether or not it's going to be a tech distributor that's going inside. It's going to be an Amazon wheelhouse or warehouse. The only thing that we're seeing that seems to be specialized is going to be those cold storage warehouses when it comes to those kinds of things that are built up there. Um, so, Commercial real estate and commercial property is definitely something that we can look towards but historically and based on the knowledge sets that we have. I think we fit best with the industrial sector.
+
+[19:18:55 - 19:19:02] Scott Davidson: Yeah. No, that makes sense and and you don't feel like you're tapped out in the industrial space. It's
+
+[19:19:00 - 19:19:19] Jeffrey Cohen: Oh God, no, I mean, there are so many out there that again, it doesn't just have to be Fortune. 500 companies we've worked with a mom and pop shops, across the way also, so it can be anything from. I mean, heck, I think are smallest
+
+[19:19:13 - 19:19:14] Scott Davidson: Yeah.
+
+[19:19:18 - 19:19:28] Jeffrey Cohen: facility Was. Between real and personal and maybe like $250,000 our largest is 1.5 billion.
+
+[19:19:24 - 19:19:34] Scott Davidson: Quite the ranch. Yeah, okay, cool. Yeah. No that helps. Um,
+
+[19:19:27 - 19:19:32] Jeffrey Cohen: So, Yes.
+
+[19:19:35 - 19:19:40] Scott Davidson: And then you all use a CRM a customer relationship.
+
+[19:19:39 - 19:20:11] Jeffrey Cohen: so we don't use a CRM currently as I said we we do subscribe to zoom info but we're using that amazingly for the contact and potential lead generation we currently have All of the information that we've generated from that from years kind of stored in, to be honest, as a shared Google Sheet that we keep all of the information in and then set callbacks and things like that based on information and and formulas. That we said in that,
+
+[19:20:10 - 19:20:17] Scott Davidson: Right. Okay, okay, that works. Is that something? Is that the process you want to keep intact or
+
+[19:20:17 - 19:20:20] Jeffrey Cohen: not necessarily, I mean,
+
+[19:20:18 - 19:20:19] Scott Davidson: Okay.
+
+[19:20:20 - 19:20:39] Jeffrey Cohen: Right now, it it has worked to keep track of potential companies and potential contacts, but obviously it's not generating the results that we need. So I want to see what's out there, what the costs are and what the potential growth
+
+[19:20:34 - 19:20:35] Scott Davidson: Yeah.
+
+[19:20:37 - 19:20:39] Jeffrey Cohen: possibilities would be from those.
+
+[19:20:38 - 19:21:13] Scott Davidson: yeah, there are a lot of new lightweight, crms that aren't the salesforces that are insanely complicated, so, and, and a lot of them are Yeah, they're just way more intuitive, and they have like work flow capabilities. So If you end a call and this call like for example, this call recording is going to go after it's going to be summarized and give me next steps like and then if
+
+[19:21:06 - 19:21:08] Jeffrey Cohen: Okay.
+
+[19:21:08 - 19:21:13] Scott Davidson: you don't answer me in a week I'm gonna nudge you you know, like it's gonna push me to not you and things like that. So
+
+[19:21:11 - 19:21:21] Jeffrey Cohen: Yeah, I was gonna say I when when I first hit the ball are hit the call. I saw that jump on and I'm like, oh so that means I don't have to hit Gemini and it's going.
+
+[19:21:20 - 19:21:44] Scott Davidson: Yeah, yeah exactly. So you know that there's ways to to use like call integration it can if you want to scrape your emails, lots of workflows so so,
+
+[19:21:29 - 19:21:29] Jeffrey Cohen: Mm-hmm.
+
+[19:21:32 - 19:21:51] Scott Davidson: yeah. And they're not crazy crazy expensive. A lot of them charge like on a per seat basis or like, on a workload basis if they're using a lot of AI. So they're pretty reasonable. So that's helpful and then you don't have any internal like sales and marketing stuff, or you do.
+
+[19:21:51 - 19:21:59] Jeffrey Cohen: we do, we have one internal sales slash marketing director and they're the ones
+
+[19:21:56 - 19:21:57] Scott Davidson: Okay.
+
+[19:21:57 - 19:22:30] Jeffrey Cohen: that their main call and I actually got off the phone with them right before jumping on with you was to do the the reach out when it comes to I guess social media posting on LinkedIn or blog posts that go on to our website. Those all tend to go through either myself or one of our other, two partners, so that we can show up the language and decide how we want it to flow. But that is our main internal marketer.
+
+[19:22:30 - 19:22:38] Scott Davidson: Gotcha. Okay. So they do they do some of like the early calling and qualification and then and
+
+[19:22:35 - 19:22:49] Jeffrey Cohen: Exactly. They do the call patient. They do the calling, and emailing their their main goal is to set up whether it's an in-house meeting a conference call, that kind of thing, so that we can Mostly take it from there and then follow up afterwards.
+
+[19:22:48 - 19:23:03] Scott Davidson: Got. Go. Okay. Sounds good. So, what's, you know, what's your timeline on trying to make a decision about next steps and the direction you want to go?
+
+[19:23:04 - 19:23:27] Jeffrey Cohen: It it's, it's difficult to say because it almost depends on. how long it takes things to get up and running and then Um, the potentialist to see results. And the main reason I say that and it's unfortunate that In some ways that I've taken, as long as I have to, to take the onus, kind of on myself, to to see what else is out. There is
+
+[19:23:26 - 19:23:28] Scott Davidson: Yeah.
+
+[19:23:28 - 19:24:14] Jeffrey Cohen: I mean, as I'm sure, you know, there is a definite text season. So when it comes to signing up business for say, the 2026 tax year, If we don't get people in-house by January, it's going to be very hard to get depending on the state. They're in get the filings done through June and then especially with those states that start doing real property valuations in March, get that it better, get the information, get our boots on the ground and see the properties ourselves, so that we can determine what the issue potentially be to start meeting with the appraisers and set valuation for them. So, I'm kind of
+
+[19:24:08 - 19:24:08] Scott Davidson: Hmm.
+
+[19:24:13 - 19:24:26] Jeffrey Cohen: seeing like, We have a very short window to start looking at the potential and then if we don't hit that window, it kind of gets put unfortunately on the back burner till the second half of next year.
+
+[19:24:26 - 19:24:26] Scott Davidson: I see.
+
+[19:24:27 - 19:24:53] Jeffrey Cohen: basically what I've done so far as we kind of gave our our marketer A. I won't say an ultimatum this year, but we were like, we need to see 400,000 minimum of new business. And we've been trying to give her as much time as we possibly could to get that
+
+[19:24:47 - 19:24:49] Scott Davidson: Okay.
+
+[19:24:49 - 19:24:53] Jeffrey Cohen: new business in and it just hasn't shown up the way I wanted it to.
+
+[19:24:53 - 19:25:02] Scott Davidson: Gotcha. Um, that's awful. Oh, and okay. So what's an average contract value? Look like How many how many deals is 400k?
+
+[19:25:02 - 19:25:03] Jeffrey Cohen: I'm sorry.
+
+[19:25:04 - 19:25:06] Scott Davidson: Like how many deals 400?
+
+[19:25:04 - 19:25:25] Jeffrey Cohen: Okay, it depends totally on the the size of the company that we are potentially bidding out. So there is a current bid that we have for a company that we have that we've met with earlier that has approximately I want to say 30 facilities. No.
+
+[19:25:24 - 19:25:25] Scott Davidson: Hmm.
+
+[19:25:25 - 19:25:55] Jeffrey Cohen: So maybe I think it was 65 accounts between real estate and personal property that we would be rendering and valuing and we would be reviewing tax bills. For that account, was going to be in the 40 to 50 thousand dollar range. But on the same side, there's another potential contract that we have out with a energy generation company for six facilities and that one is in the 90 to 100,000 range. So,
+
+[19:25:54 - 19:25:55] Scott Davidson: Okay.
+
+[19:25:56 - 19:26:02] Jeffrey Cohen: I'd say $400,000 would probably be yeah, eight to ten contracts.
+
+[19:25:56 - 19:26:03] Scott Davidson: 48, Something like that. Okay.
+
+[19:26:03 - 19:26:15] Jeffrey Cohen: I think fifty thousand on an average. If it's especially if it's not a contingent based account is probably like when we put out a flat fee bid, that's
+
+[19:26:08 - 19:26:09] Scott Davidson: Hmm.
+
+[19:26:11 - 19:26:22] Jeffrey Cohen: kind of the range that we would be in and then we would do A potential contingency of you know, 40 to 50% of that plus 20 to 25%.
+
+[19:26:22 - 19:26:28] Scott Davidson: That's it. Okay. And so our companies in this period of time like is this an active bidding?
+
+[19:26:28 - 19:26:29] Jeffrey Cohen: Yes.
+
+[19:26:28 - 19:26:30] Scott Davidson: Time for them, okay.
+
+[19:26:30 - 19:26:45] Jeffrey Cohen: Yes, it is. I know that some have started bidding out as early as late summer, and they're kind of finalizing everything for 2026 so that they can set their budgets, especially the publicly traded ones. They are going to need to set their budgets by
+
+[19:26:45 - 19:26:46] Scott Davidson: Yeah.
+
+[19:26:46 - 19:26:56] Jeffrey Cohen: Usually and of November so that they can start doing quarterly results end of December and have that information in there so it's going to be accrued for their shareholders.
+
+[19:26:56 - 19:27:12] Scott Davidson: Yep. I've lived that life a lot my whole life has been budgeting basically so I know that I know. Yeah I mean I'm in the thick of it at my full-time job right
+
+[19:27:04 - 19:27:05] Jeffrey Cohen: You know.
+
+[19:27:08 - 19:27:25] Scott Davidson: now but yeah I mean I have availability and the way I work is like it would be a sprint up front to
+
+[19:27:16 - 19:27:26] Jeffrey Cohen: Okay.
+
+[19:27:17 - 19:27:36] Scott Davidson: define like the personas the icps, you know, all the segmentation, all that stuff and we could do that very quickly like in a couple weeks. Within a couple. Like it would take a couple weeks and then You can start. it would be my recommendation, would be a mix of like LinkedIn outbound
+
+[19:27:37 - 19:27:42] Jeffrey Cohen: Okay.
+
+[19:27:37 - 19:28:02] Scott Davidson: So that's actually dming you can do automated LinkedIn, dming and I would do that. You get really good reply rates there just because it's you know, you're not landing in someone's inbox and everyone's getting pitched in their emails, but LinkedIn is substantially. You know, more engagement. So if a good reply rate, an email is like 5%, that's really good.
+
+[19:28:00 - 19:28:07] Jeffrey Cohen: Wow.
+
+[19:28:02 - 19:28:22] Scott Davidson: You can get like 25 or 30% in LinkedIn. Now, the problem with LinkedIn is it's it's Very gated on volume because they'll flag you for spam like very low, low volume. So, each individual can do like 25 connections a day. So, based on how
+
+[19:28:16 - 19:28:18] Jeffrey Cohen: Okay.
+
+[19:28:20 - 19:28:45] Scott Davidson: many in folks you have, you can set up like, you can have anyone, you know, anyone on your team set up an account, and they could all send them, and then you would have a unified inbox where you can manage it yourself for week. You know, we can manage it and do the follow-up and things like that there. And then
+
+[19:28:32 - 19:28:33] Jeffrey Cohen: Okay.
+
+[19:28:34 - 19:28:49] Scott Davidson: so I would say that for the highest tier accounts and then the lower tier accounts you still segment them and have personalized messaging and things but that would go to email. And then you can scale it up as it. That's the messaging stuff.
+
+[19:28:47 - 19:29:01] Jeffrey Cohen: That sounds interesting. I saw I think it was another person in the the B2B marketing summer and posted
+
+[19:28:54 - 19:28:54] Scott Davidson: Uh,
+
+[19:28:55 - 19:29:12] Jeffrey Cohen: something similar about, I guess a bot and all that automated. Scouring reddit for posts and dming, but I hadn't seen one about LinkedIn. So that's interesting. Uh-huh.
+
+[19:29:13 - 19:29:54] Scott Davidson: target, you know, we would create an account list and a lead list and then we would go target. Those individuals with outbound messaging. In LinkedIn and then there's also in, there's also signals. So there's a company that looks at signals from Reddit and and LinkedIn. So if you put in the keyword, you know, tax abatement industrial tax abatement or whatever the word is, you know. It will flag the last X period of time, who's been talking about that. And then, you can look at who's engaged with it, read. It's a little harder because it's anonymized, You know, no one really knows, who, who is, but on LinkedIn, you can
+
+[19:29:45 - 19:29:50] Jeffrey Cohen: Exactly.
+
+[19:29:50 - 19:30:05] Scott Davidson: figure out who people are so. And then, I mean, You should. With email or LinkedIn, you should see results quickly. I mean, but at least know, if you're messaging is resonating and you're getting replies.
+
+[19:30:05 - 19:30:06] Jeffrey Cohen: Gotcha.
+
+[19:30:06 - 19:30:22] Scott Davidson: You know, booking the meeting is, I guess another thing and then closing from the book meeting is is also another thing, but it's really just, like, pipeline
+
+[19:30:13 - 19:30:14] Jeffrey Cohen: Yeah.
+
+[19:30:15 - 19:30:40] Scott Davidson: math. Like there's always going to be. It depends on the industry. I'm not, you know, as familiar with comparable rates, but you know, if it's 25% reply rate. Of those 50% are positive that we and then not 80% of those people meeting and then except for down the waterfall and funnel. So,
+
+[19:30:38 - 19:30:38] Jeffrey Cohen: Okay.
+
+[19:30:41 - 19:30:55] Scott Davidson: That's the sort of thing I would I track to on a monthly basis and then that's how I decide wherever we go more or less. So we would do like a month or we do
+
+[19:30:47 - 19:30:49] Jeffrey Cohen: Okay.
+
+[19:30:50 - 19:31:06] Scott Davidson: more frequent to if you need it since you know, you want to do a quick. Cycle Quick cycle times, you know, review on bi-weekly basis, and then like,
+
+[19:30:58 - 19:30:58] Jeffrey Cohen: Yeah.
+
+[19:31:02 - 19:31:06] Scott Davidson: change up the messaging and kind of do it all over again.
+
+[19:31:04 - 19:31:05] Jeffrey Cohen: Okay.
+
+[19:31:07 - 19:31:19] Scott Davidson: so so yeah, that's kind of How I operate and what I'd recommend. But yeah, I'd love to kind of hear your thoughts and What your what your thing?
+
+[19:31:18 - 19:32:03] Jeffrey Cohen: I mean that. That. To some extent meets with what our current marketer has been saying about. Well, as I said, she wouldn't when she says that we need to to have a A bigger participation in LinkedIn. It's more just Getting posts out there because she believes that that is what drives it, it's not. Using it to. Send necessarily like DMS or looking for keywords. It's more like, well, if the name keeps showing up, people are going to recognize it more. And while I believe that there are some truth to that. I think something along, like what you're saying, makes more sense to me.
+
+[19:32:02 - 19:32:03] Scott Davidson: Yep.
+
+[19:32:03 - 19:33:05] Jeffrey Cohen: it's, it's looking for those specific intents and it does drive To some extent. What what we've seen as far as like you said, when companies are looking to change, we use again, internally a lot of Google alerts to determine for Specific industries and market you know, mergers and acquisitions sales. Obviously, as I mentioned whenever we have marketing meetings, we're going to review the 10 case, first to see, if there's any information in there that tells us about the facilities themselves potential issues that they see shortfalls Things that they're putting out to the public is we know these are potential problems so that we can address those in meetings. Those are the kinds of things that I think this kind of automated dming might. Start to shore up that she's not necessarily hitting and I think like that could
+
+[19:33:03 - 19:33:04] Scott Davidson: Yeah.
+
+[19:33:04 - 19:33:05] Jeffrey Cohen: be beneficial.
+
+[19:33:05 - 19:33:09] Scott Davidson: Yeah. Do you have a couple more minutes? I want to be mindful of your time.
+
+[19:33:08 - 19:33:10] Jeffrey Cohen: Yeah, absolutely.
+
+[19:33:09 - 19:33:22] Scott Davidson: Okay. Something you Oh yeah. How long is it taking you to do? Like are you You guys are reading through the 10ks and looking for information like that or what does that look?
+
+[19:33:21 - 19:33:54] Jeffrey Cohen: Yeah, normally when our current marketer sets up the meeting and we actually have the meeting, I'll spend the day or two before that, I will go through the 10K. Our magic partner James Clair. So we'll go through the 10K and then we'll get together and we'll be like, this is what I saw. This is what I think we need to talk about and kind of put our notes together for a day or two before we actually have that meeting. And then so it doesn't take a ton of time, but we
+
+[19:33:45 - 19:33:46] Scott Davidson: see I say,
+
+[19:33:49 - 19:34:10] Jeffrey Cohen: definitely kind of bounce ideas off of each other while we're doing it. I'm But my next thing is like, well, is it going to be worth just pushing something like that into Gemini or Chat GPT and saying, What issues are you seeing related to X? So that it can start to do some of the work for us?
+
+[19:34:09 - 19:34:33] Scott Davidson: Yeah. So that's what exactly where I was gonna go. Is that, um, same thing you
+
+[19:34:12 - 19:34:13] Jeffrey Cohen: Okay.
+
+[19:34:14 - 19:34:33] Scott Davidson: can take if it's a, I mean, any publicly available information, but any cases, you see? Because they're definitely publicly available, you create a fork and 500 or, you know, publicly traded company list and it can automatically go read the 10K and look for, you know, however, we prompted
+
+[19:34:30 - 19:34:32] Jeffrey Cohen: The keywords? Yeah.
+
+[19:34:33 - 19:34:46] Scott Davidson: So all that like account research is also a really good use case, where you can
+
+[19:34:37 - 19:34:38] Jeffrey Cohen: Mm-hmm.
+
+[19:34:39 - 19:35:18] Scott Davidson: kind of have it prepped and that can impact the scoring. So, okay, your score is going to be a 90 if you're talking about property tax issues and You know that will cause us to obviously like prioritize those accounts and then you know, not familiar with other public records type databases but to the extent. Yeah, same thing like mergers and acquisitions like that's a great intense signal as well. Yeah, there's a lot of things like that, that can be You job changes is a big one. So if someone's a new like, VP of tax and You know, I don't know the industrial companies but
+
+[19:35:15 - 19:35:42] Jeffrey Cohen: That is. Yeah, that is definitely something that we look for too. When we know Herman, leave the company or someone goes to a company. Our first my first comments to to our group marketers. Hey, Maybe not the first day, but this is going on here. It might be worth reaching
+
+[19:35:32 - 19:35:34] Scott Davidson: Yeah.
+
+[19:35:35 - 19:35:42] Jeffrey Cohen: out to them. And here's information that we know about that company from sell and sale and, and kind of going from there.
+
+[19:35:42 - 19:35:56] Scott Davidson: Yeah, exactly. Exactly. Yeah, that's a play. I've definitely run even for myself, I just reach out if they started within the last month and they meet certain criteria. So yeah,
+
+[19:35:54 - 19:35:55] Jeffrey Cohen: Yep.
+
+[19:35:55 - 19:36:16] Scott Davidson: that's definitely possible. okay, well, Yeah, I mean, I'd love obviously, the opportunity love to hear. You know what, you think, makes the most sense from next steps. I mean, do you want to give them a lease still till the end of the year and kind of play this until next year or is this meeting here soon?
+
+[19:36:13 - 19:36:52] Jeffrey Cohen: that is well, what what I'm thinking is as far as potential opportunities would be At least letting them. Continue trying to do things but build on top of what they're doing with something like this. So I guess if If based on the conversation that we've had, you could put together a proposal evil of. These are the things we talked about. This is kind of what I'm saying, is potential opportunities. It's something that I could go to my other partners with and we could discuss and see if it's something that we think we can move on.
+
+[19:36:51 - 19:36:58] Scott Davidson: Okay. Okay. Yeah, that sounds great. And then just out of curiosity, when's your zoom info license expire.
+
+[19:36:58 - 19:37:02] Jeffrey Cohen: So we just renewed that in August, so it's a good through mid-year next year.
+
+[19:37:02 - 19:37:29] Scott Davidson: Okay, well you may be able to cancel that so just keep that in mind. Yeah, because a lot some of these tools now like one of the tools that I use it it really it's a data aggregator. So zoom info is one of the hundred available data
+
+[19:37:14 - 19:37:15] Jeffrey Cohen: Okay.
+
+[19:37:18 - 19:37:29] Scott Davidson: providers in there and it's pay as you go. It's not going to be a recurring. I
+
+[19:37:20 - 19:37:21] Jeffrey Cohen: Okay.
+
+[19:37:22 - 19:37:29] Scott Davidson: mean, it's recurring in the sense that we would run the workflows on a recurring basis. But you know,
+
+[19:37:25 - 19:37:31] Jeffrey Cohen: Yeah, but but it's not my annual subscription kind of thing that set on that
+
+[19:37:29 - 19:37:33] Scott Davidson: Yes, you're not. Yeah, you're not locked into 10, 15, 20 thousand dollars a
+
+[19:37:30 - 19:37:34] Jeffrey Cohen: price. Gotcha. Yeah.
+
+[19:37:33 - 19:37:45] Scott Davidson: year. Okay, well yeah, that's great. I think you know I'll have everything I need from my handy-dandy notetaker so I'll be sure to. Yeah, follow up with
+
+[19:37:41 - 19:37:42] Jeffrey Cohen: Okay.
+
+[19:37:44 - 19:37:45] Scott Davidson: that.
+
+[19:37:46 - 19:38:01] Jeffrey Cohen: Okay cool. I appreciate the time Scott. No yeah, any any information that you
+
+[19:37:48 - 19:37:48] Scott Davidson: It. Yeah.
+
+[19:37:51 - 19:38:01] Jeffrey Cohen: can put together? I'm sure would be beneficial to us and give us the opportunity to kind of see what we can do. Is next steps and figure out a way forward.
+
+[19:37:59 - 19:38:06] Scott Davidson: Yeah. Awesome. Sounds Good. Are there any concerns or questions that you feel? I didn't answer
+
+[19:38:06 - 19:38:10] Jeffrey Cohen: Not off the top of my head, if I think of something, I'll shoot you an email,
+
+[19:38:10 - 19:38:10] Scott Davidson: Yep.
+
+[19:38:10 - 19:38:20] Jeffrey Cohen: let you know, but I, I took a few notes. Um, I'll be interested to kind of
+
+[19:38:11 - 19:38:14] Scott Davidson: Sounds good. Okay.
+
+[19:38:14 - 19:38:20] Jeffrey Cohen: compare that to the information that you, you send. And then there might be a few questions from that.
+
+[19:38:19 - 19:38:24] Scott Davidson: Okay. Perfect. Sounds good. Okay, awesome. Okay. Thank you.
+
+[19:38:22 - 19:38:25] Jeffrey Cohen: All right. Great, thank you for the time. All right.
+

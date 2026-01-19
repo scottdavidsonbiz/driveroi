@@ -1,0 +1,525 @@
+---
+title: "Ben Krevalin (PatientFi) x Scott - Clay/Sequencing Setup Discovery"
+date: 2025-10-31
+type: transcript
+category: [client-discovery, revenue-operations]
+use-cases: [revops-infrastructure, lead-enrichment, email-sequencing]
+personas: [enterprise-ae, sales-operations]
+participants: [ben-krevalin, scott-davidson]
+client: patientfi
+lifecycle: validated
+validated-by: [ben-insights, positioning-update-2024-12-09]
+integrates-with:
+  - content/insights/2025-10-31_15-00_scott-ben-clay-sync_insights.md
+  - positioning/positioning-update-2024-12-09.md
+  - .claude/skills/refine-positioning/SKILL.md
+tags: [transcript, client-discovery, healthcare-fintech, clay-implementation, sequencing]
+---
+
+# Ben Krevalin (PatientFi) x Scott - Clay/Sequencing Setup Discovery
+**Date:** October 31, 2025 (3:00 PM)  
+**Participants:** Ben Krevalin (PatientFi Enterprise AE), Scott Davidson  
+**Context:** Early-stage client, $500 budget, Clay + email sequencing setup
+
+---
+
+[19:00:01 - 19:00:08] Scott Davidson: I've been in finance and accounting for 13 years or so. Last five or six. I've been in, go to market finance for software. But I'm
+
+[19:00:07 - 19:00:08] Ben Krevalin: Big shift.
+
+[19:00:08 - 19:00:29] Scott Davidson: Yeah. So I'm taking that and I'm spinning up a Go to market strategy agency with some of my background and the finance side trying to do like ROI driven, that's what the name drive Roi, Roi driven go to market because a lot of people just like, throw together, play tables. And it's like, Who the f*** cares about your clay table, you know, like, like making money. So yeah.
+
+[19:00:24 - 19:00:26] Ben Krevalin: Yeah.
+
+[19:00:29 - 19:00:30] Scott Davidson: What I'm up to.
+
+[19:00:30 - 19:00:38] Ben Krevalin: Cool dude. Good for you. Are you just getting this stood up like where you at? I mean I mean obviously I
+
+[19:00:35 - 19:00:37] Scott Davidson: Yeah, I joined the book here.
+
+[19:00:37 - 19:01:18] Ben Krevalin: posted Well below market ask and, you know, I'm I'll give you a little bit background and happy to share more about, obviously, just I'm trying to do this lean Liam. I'm paying some of this out of pocket. I think, I need to prove the long term roi on this and in order for my company and there's a world of much, my company will never even want to do this. I think, they think, you know, It will work, you know, using a messy CRM and not using a sophisticated text tactical out and continue to drive new business, but that's neither here nor there. So I fully acknowledge I'm asking for A lot for a little amount of money. So just trying to get an understanding is to why you'd want to take this on you seem more advanced than 500 dollars.
+
+[19:01:14 - 19:01:24] Scott Davidson: Yeah. Yeah, I mean yeah I'm early on I'm looking for my first handful of clients so
+
+[19:01:22 - 19:01:23] Ben Krevalin: Okay.
+
+[19:01:22 - 19:01:27] Scott Davidson: really just trying to get exposure. Get a good. Case, study out of it if possible testimonial.
+
+[19:01:26 - 19:01:27] Ben Krevalin: Yep.
+
+[19:01:28 - 19:01:34] Scott Davidson: Will keep it moving, I mean, Yeah. And if there's future opportunity, there's future opportunity and if not, there's not but that's fine.
+
+[19:01:33 - 19:01:45] Ben Krevalin: Yep, cool. Good to know. Again certainly, yeah, not trying to take advantage of anyone. Just it kind of,
+
+[19:01:39 - 19:01:41] Scott Davidson: Yeah.
+
+[19:01:40 - 19:02:21] Ben Krevalin: it is what it is. So, yeah, let me tell you a little bit what I'm working for, and please forgive me for being naive on a lot of this stuff, I'm still learning. So I work for patient Phi and take a fast, growing healthcare, financial technology company. Think buy now pay later for health care. So we do
+
+[19:01:58 - 19:01:58] Scott Davidson: No.
+
+[19:01:59 - 19:02:31] Ben Krevalin: a ton of financing in the following, verticals, like fertility, not covered by insurance. So we provide, you know, a payment plan solution for people to get ivfrees their eggs cosmetic surgery like women getting injectables all the way to like, you know, getting their nose, or their breasts, augmented dental, big market for us as well. And that's obviously what I'm trying to focus on right now. So we have a very messy CRM, we've sugar and we sugar. Yeah, you heard of it.
+
+[19:02:29 - 19:02:30] Scott Davidson: Sugar.
+
+[19:02:30 - 19:02:30] Ben Krevalin: it.
+
+[19:02:31 - 19:02:32] Scott Davidson: I haven't.
+
+[19:02:32 - 19:03:31] Ben Krevalin: Yeah. I wouldn't, if I were you, along in the short of it is, I focus on the enterprise side of the business, so, Every organization as, you know, as a different definition of enterprise, what I'm trying to focus on right now and at least in this kind of first phase of leveraging. These new pieces of technology is finding the term is DSO. Stands for dental service organization, finding dsos with 10 or more locations and getting them to Use patient fine. Scott, it's become a pretty commoditized space. There are a lot of people doing what Patient 5 does, it can give you the list of competitors and trying to find
+
+[19:03:15 - 19:03:16] Scott Davidson: Okay.
+
+[19:03:19 - 19:04:41] Ben Krevalin: unique ways of messaging. Our value proposition to the masses and with the soul, focus of being getting them to book, a meeting with me, and then ultimately getting them to sign up and use patient fine. I, Found 4,230. Accounts in our CRM. A lot of those could be SMB that have less than 10 locations. It's I preface again and I will say it again. It's a messy CRM and the data that's in. There isn't correctly. I'll give you an example. There's a huge DSO that has hundreds of locations. It's called affordable care in our CRM. It says under number of locations. It says one I can't tell you why. I probably three years ago is lazy and didn't change it and so I'm just giving you a sense of kind of what it is. So I'm aware that Clay can enrich and and hopefully score these leads based on what I can provide on what we look for. So I think that's the first really helpful thing that needs to be done and then the second is, and this, what I want to get your, your feedback on and your experience on is, I would like to also leverage whether it be, what's the email program that Clay has now sequence or no?
+
+[19:04:40 - 19:04:46] Scott Davidson: You can use their they have an internal sequencer. I haven't messed around with it too much I use instantly but
+
+[19:04:45 - 19:04:47] Ben Krevalin: Instantly. Okay. See
+
+[19:04:47 - 19:04:49] Scott Davidson: To the same stuff.
+
+[19:04:49 - 19:05:09] Ben Krevalin: So yeah, I mean in I'm kind of a I'm kind of going rogue here. I've been with the company for a while and they're allowing me to do this in expense some of it. So I'm just trying to I'm trying to set myself up for success, so I can reach out to the masses and
+
+[19:05:02 - 19:05:04] Scott Davidson: Yeah.
+
+[19:05:05 - 19:05:27] Ben Krevalin: manage all of this and start using email sequencing. Because right now, I'm literally Opening up a record in sugar, there's no contact information opening up LinkedIn searching people using a free version of Hunter trying to find emails, Okay? I can't find emails, guessing emails, They're about, I mean, it's it's f****** archaic what I'm doing and
+
+[19:05:24 - 19:05:30] Scott Davidson: No, no, that's helpful.
+
+[19:05:27 - 19:05:32] Ben Krevalin: I'll pause for a second because I've been all over the place. Tell me what information I can answer for you.
+
+[19:05:33 - 19:05:40] Scott Davidson: um, so, you're manually doing research to understand their number of locations today is that if the workflow
+
+[19:05:39 - 19:07:14] Ben Krevalin: Yeah, the number of locations part like it's obviously important, right? Like I, you know, There are plenty of lists out there, right? So like I mean I can I can share this list of 4,000, whatever, like we could go out and find right pretty easily like the top 500 DSOS or 300 DSO. It's like in the US, we're on the operating in the US. And, and we could easily figure out like, how many locations they have? That's pretty readily available information. Honestly, Scott, and I'd love to get your feedback on this. Like, I've struggled set, especially sitting with Joe this morning. Like, I struggle. He was like, Okay, like How do how do you score leads right now? Like when you open up an account Ben and you're like, I want to sell to this group. Like What are you looking for? Okay, number of locations is certainly important, right? You know what that what services they're offering right, you know, certainly want to focus on groups that are doing a lot of dental implant work. And I'll explain why like those are high ticket procedures as you can appreciate. We want to finance a lot of volume. So a group that does a lot of dental implant work versus like General dentistry, right? Like that's like six or seven hundred dollars a treatment, like that's not that interesting to us. We don't make a lot of money, the more money we finance, the more money we make. Now, as you can appreciate a
+
+[19:07:00 - 19:07:01] Scott Davidson: Of course.
+
+[19:07:02 - 19:07:14] Ben Krevalin: DSO, there are some dsos out there, like I'll give you some examples. Like, There's a group called Clear Choice. New Via Dental, you may have heard of clear
+
+[19:07:08 - 19:07:09] Scott Davidson: He brings it though.
+
+[19:07:10 - 19:07:52] Ben Krevalin: choice. I saw literally randomly a commercial for them last night. these are like, They all they do is fix people's teeth as you can imagine. Like, I don't know where you go. My dentist like my dentist. Yes, he does general dentistry, right, he does cleanings and s***. Like he also like Can do Invisalign, and he does some cosmetic work. So as you can appreciate, like, when you go to a dso's website and I'd be happy to give you more, you know, names to look at like, it's a variety of services. So, I say all this. Yes. We'd love to focus on dsos that do a lot of implant work. It's kind of tough to score that based on the limited information that's out there. Like because you'll just go to Would be helpful to show you.
+
+[19:07:53 - 19:07:58] Scott Davidson: Sure. Yeah. Oh no.
+
+[19:08:01 - 19:08:16] Ben Krevalin: Let me pull this up. so, Share screen. Okay. Can you see Mortenson family Dental?
+
+[19:08:16 - 19:08:17] Scott Davidson: I can.
+
+[19:08:16 - 19:08:36] Ben Krevalin: Okay, so locations, right? So, that's right there. Services. Jesus. Right? So here implants so they do extraction work right? That's more oral surgeons. Do that right? They do root canals, right? Okay,
+
+[19:08:34 - 19:08:34] Scott Davidson: He?
+
+[19:08:37 - 19:09:17] Ben Krevalin: General dentistry. So, We would never know on this website like until I get them on the phone with maybe their CFO or their VP of finance. Like Yeah Ben actually like we put that we do dental implants like honestly the majority of our revenue comes from You know, General dentistry, right? So I share this just as a nuance, right? I don't think there's unless I'm grossly misunderstanding, what these You know what, Clay and other programs can do. I think this is just kind of the reality of of the world that I'm in, but just wanted you to have a better
+
+[19:09:11 - 19:09:14] Scott Davidson: Yeah. Yeah.
+
+[19:09:14 - 19:09:17] Ben Krevalin: understanding
+
+[19:09:16 - 19:09:24] Scott Davidson: Yeah. No that's helpful. Yeah I mean if it's not publicly available information and you have to make a phone call and you have to make a phone call but
+
+[19:09:23 - 19:09:56] Ben Krevalin: And at the end of the day to Scott, like I right now, it's almost gotten scary my world. Like I'm not filling up my calendar with meetings and it would be a good problem to have to like waste three months talking to groups like that for a half. An hour, ultimately, to find product market, or, you know, not an ideal customer profile for us. That's okay, like on that. We're at the point. Now, we're like, I'm happy to. I just want to arrive at a faster place to get them on
+
+[19:09:51 - 19:10:02] Scott Davidson: For sure. And so is the business model. Do you partner with the the dentistry
+
+[19:09:51 - 19:09:56] Ben Krevalin: the phone for 30 minutes to qualify or disqualify them.
+
+[19:09:59 - 19:10:02] Scott Davidson: organization and an offer through them?
+
+[19:10:02 - 19:10:41] Ben Krevalin: Yeah, so it just some of these are set up, you know, as It management service organizations or they have different setups, but ultimately with a group like that, like we would, we would try to sign a contract with the entity Mortensen Dental Partners, right? And then it would give all of the locations that they own. It's, it's 50 dental offices. Maybe some of the different brand name or some of the same brand. Name the ability to like log into patient fine and then their patients could scan a QR code Fill out, you know, Scott Davidson your address, last for Social, Congrats Scott, you reproof for twenty thousand dollars and you'd have that wallet to be able to spend at that practice.
+
+[19:10:41 - 19:10:48] Scott Davidson: I say, I say okay. Um, And then I saw in the listing something about like who they're currently using as a financing.
+
+[19:10:48 - 19:10:50] Ben Krevalin: Yeah, so I can show you
+
+[19:10:49 - 19:10:53] Scott Davidson: Provider. yes, that like publicly available information,
+
+[19:10:52 - 19:11:09] Ben Krevalin: Yeah, that's yeah. Usually it is Payment options. So yeah, I mean, sometimes they'll show insurance, right? But here payment options, like here's their biggest competitor. Care credit.
+
+[19:11:08 - 19:11:14] Scott Davidson: Okay.
+
+[19:11:09 - 19:11:25] Ben Krevalin: Yep. And I can happily give you a list of others as well. But yeah, most a lot of practices that offer cash health care practices or clinics or organizations, that offer cash pay services will usually have a financing section on their website
+
+[19:11:26 - 19:11:38] Scott Davidson: That's it. Alright. Okay, that makes sense. all right, so Do you want to, like know what my approach would be? Or How do you want to?
+
+[19:11:36 - 19:11:40] Ben Krevalin: Yeah, yeah. Well yeah. We'd love to get your feedback on on all that. Yeah.
+
+[19:11:37 - 19:12:11] Scott Davidson: Yeah. Sure. So there's um this company actually did a demo with today it's called disco like and they help with the account. Finding prior to clay because clay is based on LinkedIn. Primarily and like maybe a dental practice doesn't even have a LinkedIn like Who
+
+[19:11:55 - 19:11:56] Ben Krevalin: Okay.
+
+[19:11:57 - 19:12:11] Scott Davidson: maybe not? You know why, what they necessarily if they're like B to see maybe so
+
+[19:11:59 - 19:12:00] Ben Krevalin: Yeah.
+
+[19:12:01 - 19:12:48] Scott Davidson: this it's just way more comprehensive of like finding accounts basically like if they have a website it's on there. And then you, and I could like, get on a call, we would you thumbs up it? Like, this is perfect. This one's perfect. This one's perfect, or you would give me like, 10 domains of ones that like, look like what you're looking for. We would run that. Assume it like generate you know AI generates an ICP definition we would tweak it or say It's good. Pull that list in. And then I mean you could just straight up use that and and we could like, you know, enrich it with additional information about like go to the website. It could pull in who the character who the provider is the financing provider it could pull in.
+
+[19:12:47 - 19:12:50] Ben Krevalin: What's this program called this technology you're using?
+
+[19:12:50 - 19:13:04] Scott Davidson: You're also yells into right now. it's In, it's a lot of people use it.
+
+[19:13:02 - 19:13:05] Ben Krevalin: So, you would use this instead of clay.
+
+[19:13:05 - 19:13:18] Scott Davidson: No, it it depends if you don't want further enrichment beyond what's there, you can just use this tool it. I believe it has something that's similar to what Clay calls Clayton, which is
+
+[19:13:17 - 19:13:18] Ben Krevalin: Mm-hmm.
+
+[19:13:19 - 19:13:20] Scott Davidson: Going to the website. At least three.
+
+[19:13:19 - 19:13:20] Ben Krevalin: How much is this?
+
+[19:13:22 - 19:13:42] Scott Davidson: Let's see if But it's just on the founder. That is Okay, so it's It's a hundred dollars a month for the starter and you pay 18 cents for like the submission of a query plus $3.50 per record returned.
+
+[19:13:39 - 19:13:41] Ben Krevalin: For.
+
+[19:13:43 - 19:14:46] Scott Davidson: so per 1000 record return, excuse me um But you have to start at the hundred dollars, but all the cost goes towards your queries. so, I mean, I could purchase it and then I could run the queries for you and then if you wanted to do further Clan Richmond, Like going to website and seeing like, look at the locations page, see how many they have. I don't know if disco like has that information. you may be able to get it within disco like, and then, Using the fine who they use, if it's available on their website for financing, that definitely can be done in play, may also be able to be done in Disco Lake but disco like it's just the list. So if you want to send it to Instantly or whatever. Anywhere, I don't you can download it as a CSV. and it has some like webhooks, you can like send it places but I don't know if that was fully meet the need and you would need to enrich it further within clay or not.
+
+[19:14:47 - 19:14:56] Ben Krevalin: Okay. are you keen on using this, or can you
+
+[19:14:56 - 19:15:31] Scott Davidson: You can use clay on like if you already have a list and you want to just like use Clay to do it, you can do it that way. Um, we have to run in all the precursor in Richmond stuff, so like Their website unless it has the website and other things like that. if there's a pre-existing list that you're comfortable with and like, there's no need for just go like And then you could, you just did the enrichments within clay, like use their equation. Have to go scrape, the website for things and pass it to wherever you want.
+
+[19:15:30 - 19:15:32] Ben Krevalin: Yup.
+
+[19:15:31 - 19:15:33] Scott Davidson: so, either way,
+
+[19:15:33 - 19:16:00] Ben Krevalin: Okay. um, yeah, I feel like it makes sense and I can like my friend Joe while back like He kind of already made some tables and clay for this which I can share with you and maybe that gets us closer there if you want to adjust anything. But like I feel like it makes sense. You just start what's In the CRM with these four thousand. And see what's there, right?
+
+[19:16:00 - 19:16:01] Scott Davidson: Yeah. Yeah.
+
+[19:16:01 - 19:16:25] Ben Krevalin: Like, I think. And honestly, it's be good. I don't know if you probably can provide, this be good feedback to like share with my ops team. Like hey, like we went through like because they have no idea like State hasn't been enriched, right? Like they're not really touching it right now
+
+[19:16:19 - 19:16:19] Scott Davidson: Hmm.
+
+[19:16:19 - 19:16:38] Ben Krevalin: it's not a vertical that that anyone outside of me is really focused on the dental vertical. so I think like that could A Be really good useful information for them. Probably helpful as you navigate like what this case, study the best way for you to showcase the success here.
+
+[19:16:36 - 19:16:38] Scott Davidson: Yeah. Yeah.
+
+[19:16:38 - 19:17:19] Ben Krevalin: So yeah walk me through. So you protect your time and obviously you're doing me a solid. Like what? This looks like from a time perspective, like how long you would need like can you be helpful in? Using in getting me, set up for email sequencing. Can you manage some of that is that kind of outside of the scope of what you were thinking like and then like how what a success look like. For you to put together a case study right? And obviously Canada they like I
+
+[19:17:07 - 19:17:08] Scott Davidson: Yeah.
+
+[19:17:08 - 19:17:19] Ben Krevalin: would like to share with my team as well so they understand like Hey this is
+
+[19:17:11 - 19:17:12] Scott Davidson: Yeah.
+
+[19:17:13 - 19:17:19] Ben Krevalin: what happens when you actually leverage things that are really useful outside Copy-pasting emails like a caveman.
+
+[19:17:18 - 19:17:50] Scott Davidson: Right, right. So The sequencing. You know, at that price point like you would, you would purchase the sequencing tool or use clays. I'm not familiar with how it works, but domains are, you can only really sound like 30 to 40 emails from not a domain. But any given email so like Ben Dave whoever's on your team, you can send and you may not want to even f***
+
+[19:17:42 - 19:17:43] Ben Krevalin: Yeah.
+
+[19:17:44 - 19:17:50] Scott Davidson: around with like you personal your account um you can and then so you can buy
+
+[19:17:47 - 19:17:48] Ben Krevalin: Yeah.
+
+[19:17:49 - 19:18:46] Scott Davidson: other domains Those costs. think they're like, $90 a domain one time, or you can purchase them wherever and then you would buy emails for each domain, like five usually four or five per And then you have to warm them up. So you have to warm them up for two weeks so it doesn't look like. They're just like a random spam account from the beginning. You can repurchase these on instantly for $90 a domain and then it's 15 bucks a month per email. I could set I have a bunch of domains and emails so I could like run a batch of them if you want and then I don't know if you're thinking like okay some will certainly like the cream more rice to the top and there's like a batch that I want to. Manually do one on one. I want to do via LinkedIn. I want to like, do you know
+
+[19:18:44 - 19:18:48] Ben Krevalin: Yeah, that's easier. Yeah your spot on. Like I think there's going to be
+
+[19:18:45 - 19:18:46] Scott Davidson: call
+
+[19:18:51 - 19:19:06] Ben Krevalin: How do I phrase this? Yes, you're spot on right. I think there's gonna be some high value targets that I'm like I want to request on LinkedIn. First tag them in something. Send a manual email,
+
+[19:19:03 - 19:19:04] Scott Davidson: Yeah.
+
+[19:19:04 - 19:19:18] Ben Krevalin: like, Use the CRM but like, honestly, at this point and perhaps, maybe this is naive of me to say like there's so much opportunity out there and I just want to fill up the calendar to show that this works that like
+
+[19:19:18 - 19:19:19] Scott Davidson: Yeah.
+
+[19:19:19 - 19:19:22] Ben Krevalin: I'm kind of down for spray and pray.
+
+[19:19:22 - 19:19:22] Scott Davidson: Yeah.
+
+[19:19:22 - 19:19:55] Ben Krevalin: I don't know what your thoughts are on that. I mean, I think like, Yeah, I I think I think once the data is enriched in clay and there's some sort of scoring mechanism which obviously love your collaboration on. Like I think that cool like I want to take like these 50 or these a hundred and like, everything else. Like I want to f****** hit all of these with these and if we get the buy different domains to do so and here's three or four different email copies and we're gonna email them on this day, whatever. Like and then let that let's sit back and see what happens. Right. Maybe I'm oversimplifying this
+
+[19:19:56 - 19:20:31] Scott Davidson: No, you're not oversimplifying it at all. I mean, I think that's. Yeah. And there are like automated LinkedIn outreach tools as well, which are really interesting. So you basically can do like sequences in LinkedIn too if you wanted to or you can just do it manually. I mean it's really whatever. in terms of, like, Gooping it I think we should do. Grab the CSV list from the CRM. Enrich them all.
+
+[19:20:31 - 19:20:32] Ben Krevalin: oh,
+
+[19:20:34 - 19:21:05] Scott Davidson: And then maybe. You take the top X or yeah, we can come up with scoring methodology. Maybe maybe we did that we score. And that's probably where I want to be. Like, for this particular scope, I can and I can set you up like, we can do a call and I'll like, set you up with instantly just like you do and I'll like do it with you because I've done it
+
+[19:20:52 - 19:20:53] Ben Krevalin: Yeah.
+
+[19:20:54 - 19:21:05] Scott Davidson: already, so I'd be happy to do it or set you. There's a 14 day free time trial
+
+[19:20:56 - 19:20:57] Ben Krevalin: Okay.
+
+[19:21:00 - 19:21:31] Scott Davidson: of, hey, reach, which is the LinkedIn automation like you can just do that yourself if you want and Can tell you like, I can show you how to do it. So, Yeah. And and even if you I don't know if we can, I don't know that sugar but if there's a way to push back or just re-upload the CSV, you may be able to like overwrite the existing records, but that's probably what I'd like put in like this phase one and then if you wanted to do additional because I can help with the copy too of the first,
+
+[19:21:27 - 19:21:39] Ben Krevalin: Add on now. I get I'm and I'm not. Yes. Let me make Yeah, let me make very, I'm not trying to say like our under for $500. Can you do all this s*** like manage the pipeline for me and do all the emails? I get it, I get it. Um,
+
+[19:21:37 - 19:21:40] Scott Davidson: Yeah, right.
+
+[19:21:39 - 19:22:20] Ben Krevalin: Maybe maybe start to think about like, Hey Ben, this is the initial scope of this project for 500. How long this is, what this wall take you, what success looks like. So we're aligned on. Because candidly, like the biggest upside for you, here is I get I suspect that testimonial for me, I'd be happy to even give you like a video testimonial and, and whatever it. But like, let's be really defined on what success looks like for both of us or maybe think about that over the weekend, put pen to paper. Um,
+
+[19:22:06 - 19:22:09] Scott Davidson: Sure. Yeah.
+
+[19:22:09 - 19:22:35] Ben Krevalin: and then if I could trouble you because you're, you're learning this about me, I'm not the most tech savvy, but I would love to get an understanding of, Hey, Ben I could also for Four weeks or six weeks. Manage and help you run this instantly and it would be X number of dollars and that's something. I Would see a lot of value in right now. So maybe
+
+[19:22:34 - 19:22:37] Scott Davidson: Okay. think through though,
+
+[19:22:37 - 19:22:52] Ben Krevalin: if you can hook me up on that great I get it's outside the 500 dollar scope so maybe think about that as well and and we could potentially loop that into the
+
+[19:22:40 - 19:22:43] Scott Davidson: Yeah. Okay.
+
+[19:22:44 - 19:22:52] Ben Krevalin: proposal because I think that could also be a very interesting part of not only your case study but the data that I bring back to the team
+
+[19:22:51 - 19:22:54] Scott Davidson: Yeah. Yeah.
+
+[19:22:52 - 19:23:04] Ben Krevalin: and I'm just new to that s*** and I just think if I have hand holding the beginning, it hand-holding is helpful but if someone's like managing it for me with me like I'm gonna see more success
+
+[19:23:04 - 19:23:06] Scott Davidson: For sure. Um,
+
+[19:23:05 - 19:23:08] Ben Krevalin: I don't know if that's something you'd be interested in doing, but like that's
+
+[19:23:08 - 19:23:12] Scott Davidson: Oh, for sure. It's a totally. I mean Yeah, of course I would be um,
+
+[19:23:09 - 19:23:11] Ben Krevalin: Cool. Okay.
+
+[19:23:13 - 19:23:39] Scott Davidson: Yeah, so I and I think so. Yeah, given that I think it'd be helpful to understand like If we were not to run, The outbound campaigns up front, but just do what ICP scoring. Like, Here's the best list. Maybe send it back to the CRM. Like What would success look like for you for that? And Is that sufficient like within the scope of, you know the 500 or were you thinking about something else, you know?
+
+[19:23:38 - 19:24:09] Ben Krevalin: Yeah, yeah. I mean I think this the scoring is obviously really important. What I, what my feet, not my fear. What my small concern is that like There's also much information. We have to score like I showed you 90% of it. How many locations do you have? Do? They use another financing partner? Do they have implants listed on their website? You know that. Okay, so you could start talking about how many doctors do they
+
+[19:24:05 - 19:24:05] Scott Davidson: Hmm.
+
+[19:24:06 - 19:25:02] Ben Krevalin: have? Well, here's the thing. Like It's not. All weighted equally and let me give you an example. You could have a hundred location DSO. That has 300 dentists. Stay with me for a second and you have another hundred location DSO that has a hundred dentists. Now. I might be willing to hear the argument from someone else. It's a Ben that 300 provider. They're doing more financing. They have 300 providers. But if 90% of their business is general dentistry. In 70% of this business is, is implants. They're objectively doing more right, you know, how many teeth cleanings it would take to equal. Be fixing one mouth, which costs 50 or 60,000 dollars. So, I'm kind of torn. We don't really know
+
+[19:24:58 - 19:24:59] Scott Davidson: Right.
+
+[19:25:00 - 19:25:06] Ben Krevalin: what. We don't really know if that makes sense. And that's kind of one nuance
+
+[19:25:03 - 19:25:04] Scott Davidson: I got you.
+
+[19:25:05 - 19:25:50] Ben Krevalin: there that I think just my business. Patient, financing consumer lending and healthcare, it's f****** weird. So I along with an answer the the lead scoring is important but honestly like And it'd be great to give that data back to my team. Hey, here's 4,000 records. The data was wrong, affordable. Care was showing this and we cleaned it all up and we enriched it and we have a better lead scoring system. I don't know if maybe my team would think that's 20% of or 40%. If you asked my senior vice president sales, he's going great. I don't really f****** care. Did you book more meetings? Right like Did people respond? So I'm talking out loud
+
+[19:25:41 - 19:25:44] Scott Davidson: Of course. Of course.
+
+[19:25:44 - 19:25:50] Ben Krevalin: here. I think I think the managing of this instantly stuff is important and the outbound. Yes.
+
+[19:25:49 - 19:25:59] Scott Davidson: I got you. Um, I got you. Yeah, no, I am obviously. That's like the Action item after that actually built pipeline, right?
+
+[19:25:57 - 19:25:58] Ben Krevalin: Yeah. Yeah.
+
+[19:25:59 - 19:26:10] Scott Davidson: Okay, that's helpful. What is the average like? What are the average contract values look like, or how exactly are they scope? Does it like a annual agreement or yeah?
+
+[19:26:13 - 19:26:52] Ben Krevalin: It's, you know, when you sell, you know, contract value for like other tech platforms, whether it be cyber security or, you know, an AI implementation, right? It's like, Okay, it's gonna be, you know, hundred thousand dollar a year contract, right? And I see that's a big case. We look at funded volume, right. know, that DSO, I might have a first meeting with them and say, Hey, how much, you know, of your revenue comes from people that use consumer financing. Right. So you know a patient fire or a care credit or some bit. And they might say, we do 10 million dollars a year in consumer financing. You know, you've probably heard of the Aspen Group, right? Aspen Dental.
+
+[19:26:52 - 19:26:52] Scott Davidson: Mm-hmm.
+
+[19:26:52 - 19:27:13] Ben Krevalin: That's like one of the biggest dsos. They have like thousands of locations. They do a billion and consumer financing. A 10 location DSO might do. Three million dollars in financing a year seven. It just so we look at that's what we look at because, yeah, we look at funded volumes. What's called
+
+[19:27:09 - 19:27:24] Scott Davidson: Okay. I see and so are there. No other. Well, I guess two questions one. What if they already have a provider? Are they only purchasing if they don't have a provider already?
+
+[19:27:24 - 19:27:39] Ben Krevalin: No. Yeah, great question. A lot of these dsos have already. They definitely have
+
+[19:27:25 - 19:27:25] Scott Davidson: Okay.
+
+[19:27:30 - 19:28:01] Ben Krevalin: care credit and they probably have one or two other options, so they already have three options. So what we're calling on them is to say, Hey and we can talk about messaging and probably be helpful. Like, Hey, you're using these three lenders, right? That's creating operational. Inefficiencies, for all of, like the treatment coordinators, who are like, Oh, someone needs financing. It's for general dentistry. I guess I should use this lender and then if it's for a mouth case, well, this lender lends more and sometimes they approve, And there's different fees involved, and it creates chaos and
+
+[19:27:59 - 19:27:59] Scott Davidson: Hmm.
+
+[19:28:02 - 19:28:17] Ben Krevalin: All you can share more about the value prop for patient 5 but it's like Hey when you use patient by makes it easier for your staff, you're gonna approve more patience right? And that's gonna lead to higher rates of case acceptance. Meaning the patients that decide to actually move forward with treatment.
+
+[19:28:21 - 19:28:29] Scott Davidson: So there may not be other intense signals. Beyond the ones we talked about like that, if
+
+[19:28:27 - 19:29:09] Ben Krevalin: Right? Like Yeah. I mean I guess I mean, you know, at least from my perspective, right? Like a practice, opening up a new location, right? It's certainly an intense signal and it is for, you know, if you're growing right, you need more financing. With that being said, devs after here for a second, like a practice, like an odd that mortensen, right? They could do a s*** on a consumer financing and have not had a new deal in their pipeline to practice buying two years. Like that doesn't mean we don't want the business, right? Like they could steadily be doing 10 million dollars, twenty million dollars, 30 million dollars a year with their existing locations and have no emana strategy in place to go buy or consolidate more practices. So,
+
+[19:29:09 - 19:29:10] Scott Davidson: Okay.
+
+[19:29:09 - 19:29:17] Ben Krevalin: Sorry, I'm kind of over sharing. Yeah, I'm trying. I've tried, and this is what
+
+[19:29:10 - 19:29:12] Scott Davidson: No, no.
+
+[19:29:13 - 19:29:17] Ben Krevalin: I've struggled with. Like, I tried to find more intense signals, I guess that's one.
+
+[19:29:18 - 19:29:21] Scott Davidson: does having a new CFO a new
+
+[19:29:18 - 19:29:41] Ben Krevalin: It's certainly, I guess. Yeah, yeah. New CFO is good, right? So, you know, new hiring You know, new new partnerships right. If they, you know, if they, I think, if they buy another practice, if they partnered up with someone, I don't really yeah, I'm I can certainly continue to give it some thought and I have I just
+
+[19:29:40 - 19:29:42] Scott Davidson: Yeah.
+
+[19:29:41 - 19:29:42] Ben Krevalin: Yeah, it's kind of tough.
+
+[19:29:43 - 19:30:01] Scott Davidson: Okay, no, no, those are all helpful. But yeah, I think that's kind of what it would look like, as we'd Come up with some waiting and scoring and Trying to get something that looks and you can refine it. We can refine it over time. Like, you know, maybe it's, hey, this one seems to your resonating more
+
+[19:29:53 - 19:29:54] Ben Krevalin: Yeah.
+
+[19:29:56 - 19:30:01] Scott Davidson: than others and having the Big Data and the CRM in the first place. Help with
+
+[19:29:57 - 19:29:57] Ben Krevalin: Yeah.
+
+[19:30:00 - 19:30:01] Scott Davidson: that, you know?
+
+[19:30:01 - 19:30:02] Ben Krevalin: Yeah.
+
+[19:30:02 - 19:30:19] Scott Davidson: Like, then you start looking out. Okay what deals up progressing like they have this in common. Versus the that in common. So yeah. Okay. So what the next steps look like? What do you need from me? Yeah, all that.
+
+[19:30:17 - 19:31:14] Ben Krevalin: um, Per just, and I know you've already given it to me, right? And it's obviously basic a nature, but I think it's kind of multi-pronged, right? This, this first step is, Hey, let's take the data that Ben already has some sugar. Let's throw it into clay. Let's get it cleaned up. Let's, let's create some sort of lead scoring, right? And How we want to kind of track and measure that. And then I think a A An outbound. Sprint. You know, and that's measured out over. Four weeks with four different messaging once a week. A guy, I'm kind of a I'm,
+
+[19:30:59 - 19:31:00] Scott Davidson: Yeah.
+
+[19:30:59 - 19:31:14] Ben Krevalin: I don't know what, I don't know, right? I've gotten I've been in this business
+
+[19:31:01 - 19:31:02] Scott Davidson: Yeah.
+
+[19:31:02 - 19:31:20] Ben Krevalin: for coming up on six years just with sheer brute force. I've been successful picking up the f****** phone and sending emails and sending LinkedIn messages. So this is all new new to me. I defer to you on on what you think, success could look like.
+
+[19:31:21 - 19:31:48] Scott Davidson: I mean, really good reply rates and emails 5%, um, but that's like really good. So it depends what you're like, offer would be. Um, and usually, you might not be able to find, like a message market fit for at least a thousand emails, maybe two. So, with 4000 total like you may have to just hit them again and x amount of time or just LinkedIn, the top X amount and or do multiple approaching pick up the phone, one week, the next week, you do the LinkedIn.
+
+[19:31:48 - 19:31:48] Ben Krevalin: Yeah.
+
+[19:31:48 - 19:31:55] Scott Davidson: Etc, and then email the bottom 3,000 or however you want to run it. So
+
+[19:31:53 - 19:31:53] Ben Krevalin: Yeah.
+
+[19:31:56 - 19:32:10] Scott Davidson: Yeah. That's that's probably the approach I recommend, I just don't know if you're going to be able to make, I don't know if a sample size of like smaller than a thousand is not useful.
+
+[19:32:09 - 19:32:11] Ben Krevalin: Say that again.
+
+[19:32:10 - 19:32:18] Scott Davidson: I don't know, if a sample size of smaller than a thousand is like super do in email is super duper useful, just because
+
+[19:32:18 - 19:32:20] Ben Krevalin: What do you mean smaller than a thousand?
+
+[19:32:21 - 19:32:29] Scott Davidson: Like if we're gonna test one set of messaging with, let's say it's three
+
+[19:32:23 - 19:32:24] Ben Krevalin: Yeah.
+
+[19:32:24 - 19:32:29] Scott Davidson: messages. The first one is whatever. The second one is this, and the third one's
+
+[19:32:25 - 19:32:25] Ben Krevalin: Yeah.
+
+[19:32:27 - 19:32:29] Scott Davidson: like a breakup, you know.
+
+[19:32:29 - 19:32:30] Ben Krevalin: Yeah.
+
+[19:32:29 - 19:32:35] Scott Davidson: You won't know if the subject, whatever that string of messaging is like useful.
+
+[19:32:35 - 19:32:36] Ben Krevalin: Yeah.
+
+[19:32:35 - 19:32:42] Scott Davidson: Or working. With less than a thousand. Leads being sent that message.
+
+[19:32:42 - 19:32:45] Ben Krevalin: Got it, got it.
+
+[19:32:44 - 19:32:50] Scott Davidson: And maybe there's different personas. Maybe the CFO is one and maybe like the head dental I don't even know is another group
+
+[19:32:49 - 19:32:56] Ben Krevalin: CFO VP of Finance people in operations. I think we can get creative there to
+
+[19:32:52 - 19:32:55] Scott Davidson: Okay. Okay.
+
+[19:32:54 - 19:32:56] Ben Krevalin: increase. Yeah, um
+
+[19:32:58 - 19:32:59] Scott Davidson: Yeah, that makes sense.
+
+[19:32:58 - 19:33:05] Ben Krevalin: Yeah, maybe over the weekend. Think about like In and here, do you want to take my cell down? Are you a texter?
+
+[19:33:04 - 19:33:06] Scott Davidson: Yeah, sure.
+
+[19:33:06 - 19:33:08] Ben Krevalin: Cool. 413 cool.
+
+[19:33:08 - 19:33:08] Scott Davidson: Mm-hmm.
+
+[19:33:09 - 19:33:15] Ben Krevalin: 530. 8678. What's your you have a website?
+
+[19:33:13 - 19:33:18] Scott Davidson: Okay. It's pending.
+
+[19:33:17 - 19:33:43] Ben Krevalin: Oh good. Think you have a lot of information now and let me know what more information you need put together kind of both proposals. I think the big, the big key thing here is like You're doing me a solid. Let me know what you need from me. What? I don't want
+
+[19:33:38 - 19:33:38] Scott Davidson: Okay.
+
+[19:33:38 - 19:33:54] Ben Krevalin: to happen. I don't think this will happen. This has happened. It's kind of working on this MVP and guys like I want to do this initial scope and there's like we were not aligned. Thank you friend, we're not aligned on. Deliverables. And it just like,
+
+[19:33:54 - 19:33:55] Scott Davidson: Yeah.
+
+[19:33:55 - 19:34:41] Ben Krevalin: It was a little bit misleading, what he was actually willing to do for the first scope and it just ended up costing me a lot more and like I just don't want that happen now. So I just want to be really clear about what you can set me up with right and I get this multi-prong that if that means the instantly in the email, you know, outbound approaches. Obviously, it's own separate thing that's fine, just put a price tag on. I'll see if we can work through that. And then how long You can help me out for right. And this is like an eight week, you know, thing and we're gonna measure success by x, y, and Z. And at the end if you've done a B and C, right? We could do a case study, right and not be happy to again, give you a written testimonial. A video testimony. I want to share that with my team and then who knows it's future holds, so just kind of a start date and, you know, a calendar approach to this on, you know, on how we could go about this.
+
+[19:34:38 - 19:34:44] Scott Davidson: Okay. Sounds good and you yeah, that sounds great. And it sounds like
+
+[19:34:40 - 19:34:43] Ben Krevalin: How's that sound to you? Okay.
+
+[19:34:44 - 19:34:50] Scott Davidson: You're like ready to go? Like you want to kind of get this moving? As quickly as possible.
+
+[19:34:47 - 19:35:00] Ben Krevalin: I'm ready to rock. I'd love to talk through just because I I can tell you're good, not only with the tech stock but with Messaging and you obviously know sales, I think, you know sales, it's okay, no.
+
+[19:34:59 - 19:35:07] Scott Davidson: From a strategy and financial, you know, I haven't been a seller but my mom's
+
+[19:35:01 - 19:35:03] Ben Krevalin: Yeah, yeah, there you go.
+
+[19:35:03 - 19:35:07] Scott Davidson: the seller. My sister was a seller. I'm in the world, so I get it.
+
+[19:35:04 - 19:35:44] Ben Krevalin: Hell yeah. Um, yeah, would love another time to Just give you a little bit more background on patient, financing and consumer lending. And then tell you what I'm thinking for messaging and get your feedback on what you think could be stronger, what you think, and come up with that and then yes, I think. I probably would want my boss to just weigh in on what I'm thinking about sending and then Yeah, I'm ready to rock. I mean my goal here Scott is like I would love to. Get this cute up and make outreach. Just set myself up to have a strong 2026.
+
+[19:35:44 - 19:35:57] Scott Davidson: I see. Okay. No, that's great. That makes sense. Oh, and I guess that leads me to one last question, Are you okay on time? Sorry, I'm like taking all your time. What are the deal cycles like lengthwise look like?
+
+[19:35:57 - 19:36:09] Ben Krevalin: With a 10 location DSO. It could be. two weeks to six weeks, eight weeks with a 100 Location, DSO. It could be six months to a year.
+
+[19:36:10 - 19:36:11] Scott Davidson: Yeah, that makes sense.
+
+[19:36:11 - 19:36:12] Ben Krevalin: Just depends.
+
+[19:36:12 - 19:36:25] Scott Davidson: Gotcha. Okay, that makes sense. Um, Do you want to find time like early next week and we can kind of like, I'll send you a bulleted list. I'll try and put a price tag on the ongoing outbound
+
+[19:36:24 - 19:36:42] Ben Krevalin: And then also any other costs that I would potentially need to incur. I know like there's clay credits and if there's a cheap way to do it, like if there's think like if they're if you can give me in the proposal like Ben, like here's the cheap way to do it, right? Here's the my recommendation, maybe long term like that would be really helpful.
+
+[19:36:42 - 19:36:42] Scott Davidson: oh,
+
+[19:36:43 - 19:37:00] Ben Krevalin: And then Yeah, get just put something together, right? I'm easy on the presentation and of it and then Let's get rocking and rolling and just text me next week when you're ready to meet, and we'll find time. What haven't? I asked you?
+
+[19:37:04 - 19:37:05] Scott Davidson: Question.
+
+[19:37:05 - 19:37:11] Ben Krevalin: And is, am I? Am I tried in? Am I Are you coming? Are you comfortable putting something together?
+
+[19:37:12 - 19:37:42] Scott Davidson: Yeah. Yeah. I mean, I think. Yeah. No, I think I know what you're looking for. I have a good sense of it. I think you have a pretty good understanding of like, The infrastructure that goes into the Outreach components. I You know, I mean if you're Ops team wanted to do automated enrichment in the
+
+[19:37:34 - 19:37:34] Ben Krevalin: oh,
+
+[19:37:37 - 19:37:47] Scott Davidson: future, that's like a whole other can of worms but it's usually a good kind of worms to open at some point. But no, I think, I think that's a how about you any anything I didn't answer?
+
+[19:37:45 - 19:38:27] Ben Krevalin: Okay. No, I don't want to. First of all, I appreciate your you're good. Launch your website and you're gonna have clients, they're gonna pay you thousands of dollars some day. So hopefully This is within reason of what you can do with the price tag is certainly not trying to take advantage. That being said, if you transparent from Joe's post like this this is what I can do. So um, put it in the proposal. What success could look like? And we can ideate on that together and and within a reasonable time period that allows some ramp up period and Yeah, just what I just want to be clearly aligned so we understand outcomes
+
+[19:38:25 - 19:38:26] Scott Davidson: Yeah, for sure.
+
+[19:38:26 - 19:38:27] Ben Krevalin: here.
+
+[19:38:26 - 19:38:34] Scott Davidson: For sure, sounds good. Yeah, it should not take me very long early next week should be ready to go. So,
+
+[19:38:33 - 19:38:37] Ben Krevalin: Cool. This text just text me or just text me your
+
+[19:38:36 - 19:38:38] Scott Davidson: Yeah.
+
+[19:38:37 - 19:38:56] Ben Krevalin: Your name and then I'll save your contact and yeah, follow up with me early next week. Let's get something scheduled and we'll go from there. I'm getting hit up by. I'll show my card, I've gotten hit up, I like 10 people and as you can
+
+[19:38:49 - 19:38:51] Scott Davidson: Okay, I bet you.
+
+[19:38:50 - 19:39:04] Ben Krevalin: imagine, like, I've happy to do so, and, and you're great or taking 40 minutes to do this, like, I got a good feeling so so put something together sooner than later for me. So I don't have to go meet with the other people that I don't want to be with.
+
+[19:39:04 - 19:39:07] Scott Davidson: Yeah, yeah, there's a wide range of skill set. I'll tell you that much.
+
+[19:39:08 - 19:39:13] Ben Krevalin: I, I believe you're pro and you and you reached out first, so let's let's make something happen.
+
+[19:39:12 - 19:39:18] Scott Davidson: Cool awesome. Enjoy DC. Hope you have fun. What part of you see. Are you staying in
+
+[19:39:16 - 19:39:20] Ben Krevalin: Awesome. My friend, Joe lives in Capitol Hill.
+
+[19:39:20 - 19:39:22] Scott Davidson: Okay, very cool.
+
+[19:39:21 - 19:39:34] Ben Krevalin: Yeah, so I've been here for a couple days. My brother moved here recently, and
+
+[19:39:22 - 19:39:23] Scott Davidson: Nice.
+
+[19:39:24 - 19:39:34] Ben Krevalin: then I live in New York City, so heading back to New York tomorrow, going home for a little gonna come all over the place right now, but the life of working
+
+[19:39:30 - 19:39:31] Scott Davidson: It's nice.
+
+[19:39:32 - 19:39:34] Ben Krevalin: remotely has this perks.
+
+[19:39:34 - 19:39:36] Scott Davidson: Very good. Well, yeah.
+
+[19:39:35 - 19:39:38] Ben Krevalin: Yeah. Really dude. Great to meet you. Thank you for your time. I appreciate
+
+[19:39:38 - 19:39:39] Scott Davidson: Yeah, of course.
+
+[19:39:38 - 19:39:51] Ben Krevalin: everything. If you're if you're going over things over the weekend and you have questions just I'm happy to send you examples and I can send you more competitors. So as you start to think of things just don't hesitate to reach out, I'll look out for your text and we'll chat next week.
+
+[19:39:51 - 19:39:55] Scott Davidson: Very good. Sounds great. Okay, thanks. Good. Okay.
+
+[19:39:52 - 19:39:54] Ben Krevalin: Awesome. Great to be Scott. Talk to you soon. Have a good weekend.
+

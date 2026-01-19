@@ -1,0 +1,343 @@
+---
+title: "Miguel (Sandra) x Scott - Discovery Call"
+date: 2025-11-14
+type: transcript
+category: [client-discovery, gtm-strategy]
+use-cases: [early-client-validation, finance-space-discovery]
+personas: [finance-operations, director]
+participants: [miguel-morales, scott-davidson]
+client: sandra-unknown
+lifecycle: emergent
+integrates-with:
+  - content/insights/2025-11-14_10-30_sandra-scott-next-steps_insights.md
+  - positioning/positioning-update-2024-12-09.md
+tags: [transcript, client-discovery, finance-software, early-exploration]
+---
+
+# Miguel (Sandra) x Scott - Discovery Call
+**Date:** November 14, 2025 (10:30 AM)  
+**Participants:** Miguel Morales, Scott Davidson  
+**Context:** Early discovery call, finance space
+
+---
+
+[19:04:58 - 19:08:13] Scott Davidson: Maybe. You can hear their place, you throw that cannot. I can yes. Hey Dan
+
+[19:08:09 - 19:08:19] Miguel Morales: Hey, Scott, can you hear me? Wait, why can I hear you? I think I'm I think my thing is muted. Hello, can you hear me? Okay.
+
+[19:08:18 - 19:08:20] Scott Davidson: I can't hear you.
+
+[19:08:19 - 19:08:22] Miguel Morales: Sorry, my thing was was muted.
+
+[19:08:21 - 19:08:24] Scott Davidson: Okay. How are you doing?
+
+[19:08:25 - 19:08:36] Miguel Morales: Good fast and furious. Got a lot, a lot going on with end of year, but try my best to like balance it all, you know, all all good things. How about you? How's your week going?
+
+[19:08:36 - 19:08:48] Scott Davidson: Good. Good. Can't complain. It's also busy. Yeah, end of Year Classic. Everybody's trying to get things done before the holidays. So Just trying to. You know, plots are but it's all good.
+
+[19:08:48 - 19:08:52] Miguel Morales: Yeah, and remind me again. You said you're in the finance space, right?
+
+[19:08:52 - 19:09:00] Scott Davidson: Yeah. Yeah. So, you know, annual planning for budgeting, for next year we
+
+[19:08:58 - 19:08:59] Miguel Morales: Oh my gosh.
+
+[19:09:00 - 19:09:04] Scott Davidson: You know, hit our numbers and don't spend too much money classic.
+
+[19:09:03 - 19:09:09] Miguel Morales: Yeah. That's always the game. Have you read that book profit first?
+
+[19:09:09 - 19:09:12] Scott Davidson: Mm-hmm.
+
+[19:09:10 - 19:09:25] Miguel Morales: well the the whole concept of it is to figure out, you know, what that profit is that you're wanting for the year and then just kind of reverse engineer it and do backwards math for your spend now, easier said,
+
+[19:09:23 - 19:09:43] Scott Davidson: Yeah. Yeah, it's, it's similar, sounds similar. There's a concept called zero-based budgeting which is Start you have to start every single year from zero and then like even if you spend X amount last year, you have to justify each piece of spend. It can be a little cumbersome if it's a really big company but yeah, you make it work. so,
+
+[19:09:43 - 19:09:48] Miguel Morales: Yeah. Is there like a particular formula that you guys follow? Is that the one that you guys follow?
+
+[19:09:49 - 19:10:07] Scott Davidson: No, it's very complex. I mean, we're Multi hundred million dollar AR revenue companies. So in every single geography so there's, you know, we take a different approach, payroll, their software costs. There's Contractor costs, there's
+
+[19:10:07 - 19:10:09] Miguel Morales: Yeah.
+
+[19:10:08 - 19:10:27] Scott Davidson: All the different. So it totally depends on what the area of spend is. But yeah, there's definitely Patterns to you know, like payroll here is the same as payroll I've ever done at any other company. It's pretty straightforward, but
+
+[19:10:24 - 19:10:29] Miguel Morales: Yeah. And what company is it that you that you're with?
+
+[19:10:29 - 19:10:34] Scott Davidson: Diligent. It's a, it's A.
+
+[19:10:31 - 19:10:32] Miguel Morales: I'm having.
+
+[19:10:34 - 19:10:57] Scott Davidson: It's like a governance risk and compliance software company they do. A lot of work around board. Materials. So you kind of think of that like docusign but for board materials. So a lot like publicly traded companies and large nonprofits and things, they use the plot.
+
+[19:10:55 - 19:10:58] Miguel Morales: Oh, like for you for like due diligence.
+
+[19:10:58 - 19:11:34] Scott Davidson: We also have due diligence that's that's in the compliance bucket but boards is more for like quarterly board meetings. You can send the all the legal material that's required and then sign off make commentary on board materials. And then there's also like some Ways for to help like the administrative like legal you know general counsel and things like that. So those are kind of like the types of people that we target and then we have risk and audit. So that's like chief risk officers and things like that. And then completes, which is doing a lot of the
+
+[19:11:30 - 19:11:32] Miguel Morales: Yeah.
+
+[19:11:34 - 19:11:37] Scott Davidson: Compliance.
+
+[19:11:36 - 19:11:41] Miguel Morales: Sure. Okay, cool. And then you kind of deal with the finance piece of that.
+
+[19:11:37 - 19:11:55] Scott Davidson: I support the risking on IT business unit and post sales, so Like customer success organization. But I've supported sales marketing and
+
+[19:11:49 - 19:11:50] Miguel Morales: Okay.
+
+[19:11:52 - 19:11:55] Scott Davidson: customer success for the last like five or six years.
+
+[19:11:55 - 19:12:03] Miguel Morales: Okay, okay, when you said that, that you've supported sales and marketing, walk
+
+[19:11:57 - 19:11:57] Scott Davidson: Yeah.
+
+[19:12:01 - 19:12:03] Miguel Morales: me through what that looks like.
+
+[19:12:03 - 19:13:03] Scott Davidson: yeah, so like what's the capacity of what's the quota capacity of individuals and then how do we Look at attainment, historical attainment of your quota. And then rent, look at how you know, and if there's a gap, then we need to hire reps. And if we need to hire reps, how long does it take to ramp them? How can we increase, you know, Make the ramp time quicker, How can we look at increasing conversion rates, Things like that, tame, and entertainment, and then downstream from that,
+
+[19:12:36 - 19:12:37] Miguel Morales: Mmm.
+
+[19:12:40 - 19:13:24] Scott Davidson: there's usually business development representatives in software, There's solution, engineers, so people that are like a little more technical demoing the product and things. So really just like building the staffing models for those motions and budgeting the full, full piano budget, for those groups, marketing then is How much are you going to spend on marketing to how much pipeline coverage? Do you need to hit the bookings targets? and there's some rules of thumbs there for, you know, you want to multiple of Three to five decks but it depends on your historical data. And then how much do
+
+[19:13:19 - 19:13:28] Miguel Morales: To hit those targets. Yeah, absolutely. Okay, cool.
+
+[19:13:19 - 19:13:28] Scott Davidson: we need to spend to in programming people, to hit the pipeline targets? Yeah.
+
+[19:13:28 - 19:13:57] Miguel Morales: So I I know that that we jumped off jumped on a little bit late, but just wanted to kind of give you an update on our end. So I, you know, I'm trying to push my team, meaning our CFO Mike and Michelle for like a final direction. So that we
+
+[19:13:45 - 19:13:45] Scott Davidson: Hmm.
+
+[19:13:46 - 19:14:58] Miguel Morales: can, you know, give you a an update if we're gonna be moving forward or not with like the dashboard. And I think the the biggest I guess back and forth is just the The industry knowledge, right? They're kind of stuck on. Marshall Michelle. on you know working with somebody that already has the industry knowledge because they think that they can you know go faster and I just want to be very you know transparent so I told them, You know, hey, I'm getting on with Scott, you know, we need to get to a final place. You know, what, what message do you guys want me to deliver? And they said, You know, for us to give them till Tuesday next week to make like a final decision. So just wanted to be, you know, super, super clear about that because I I feel, you know, comfortable that you can build these things out for us. I think you can get us there for sure, but I think they're struggling with the industry knowledge piece, you know? So
+
+[19:15:03 - 19:15:04] Scott Davidson: That's fair.
+
+[19:15:04 - 19:15:11] Miguel Morales: I just realized I signed in under my, brother's Google user. Yeah.
+
+[19:15:10 - 19:15:29] Scott Davidson: Yeah. I mean if it would be helpful for them I'm happy to like make a time-bound guarantee that like it'll get done by Next time. I'm yeah like I'm confident that I can do it. I I switch industries three times already in my career so like
+
+[19:15:26 - 19:15:59] Miguel Morales: Yeah. Yeah. Or you know what? You know what may help if you're open to it? because I think Michelle is like, I don't have a lot of bandwidth to Like explain, what I what I what I need is like, her her big pushback, right?
+
+[19:15:47 - 19:15:48] Scott Davidson: Hmm.
+
+[19:15:48 - 19:16:17] Miguel Morales: She's like, I want to work with somebody that knows the industry. So if I tell them I need xyz they could just go and and produce it. And it's, and it's, and it's right where in her mind. And maybe there's some truth to it. She feels that she would have to kind of walk you through a lot more because you don't have the background in order to bring back a product. That that it that That's what's needed. I don't know. I explained that well.
+
+[19:16:17 - 19:16:20] Scott Davidson: Yeah. No, that makes sense. I mean
+
+[19:16:19 - 19:16:26] Miguel Morales: I don't know how to get her over that hurdle because I really think that that's like the main like tug of war, you know?
+
+[19:16:25 - 19:16:49] Scott Davidson: Yeah. Yeah. I mean again, if if she's able to just record herself doing it once, It would be, I would be able to get it. Probably all the way, but at least 90 something percent of the way. And we could do like asynchronous I would just ping her and ask her some clarification questions, you know, I
+
+[19:16:44 - 19:16:54] Miguel Morales: Yeah. Yeah, because that's thing. I think she's afraid that it's gonna suck up a lot
+
+[19:16:47 - 19:16:49] Scott Davidson: wouldn't meet in
+
+[19:16:49 - 19:16:54] Miguel Morales: of her time like you know, and I get her hesitation
+
+[19:16:54 - 19:17:02] Scott Davidson: Yeah, I Yeah, of course, I'm gonna say, I don't think it will. I don't think it will.
+
+[19:17:00 - 19:17:02] Miguel Morales: Right, right. Yeah.
+
+[19:17:00 - 19:17:08] Scott Davidson: I've, you know, Done. Plenty of building of this sort of type of thing before.
+
+[19:17:07 - 19:17:08] Miguel Morales: Yeah.
+
+[19:17:09 - 19:17:10] Scott Davidson: so,
+
+[19:17:10 - 19:17:11] Miguel Morales: Now.
+
+[19:17:10 - 19:17:11] Scott Davidson: Yeah.
+
+[19:17:11 - 19:17:20] Miguel Morales: so that that's like on the on the, on the clinical dashboards we use a CRM called, Trella Trella, Health,
+
+[19:17:20 - 19:17:22] Scott Davidson: Okay.
+
+[19:17:21 - 19:17:40] Miguel Morales: Which is where, like, our client, you know, referral data and our client. Just like where our clients stuff is is that and we're ready to go into like
+
+[19:17:35 - 19:17:37] Scott Davidson: Yeah. Mm-hmm.
+
+[19:17:40 - 19:17:54] Miguel Morales: business planning. This is why I asked about like what you did on the sale side,
+
+[19:17:44 - 19:17:45] Scott Davidson: Yeah.
+
+[19:17:44 - 19:18:05] Miguel Morales: we're getting ready to go into our business planning on for 2020 five. I'm sorry. 2026. And I wonder if there could be some and I'm switching gears to sales and marketing. This is separate from you know Michelle in the clinical dashboards
+
+[19:18:01 - 19:18:04] Scott Davidson: Yeah. Yeah.
+
+[19:18:06 - 19:18:17] Miguel Morales: I wonder if there could be any synergy. To help us kind of like map out, you know, client growth.
+
+[19:18:16 - 19:18:24] Scott Davidson: yeah, I mean I'm looking at the trello health right now. Just trying to see
+
+[19:18:24 - 19:18:34] Miguel Morales: Yeah, travel health, they're specific to our industry to, to the help home, health industry, and they give us, we pay for data.
+
+[19:18:30 - 19:18:31] Scott Davidson: All right.
+
+[19:18:35 - 19:19:16] Miguel Morales: and they give us information on what clients have like the most like Medicare business, which is like our biggest payer And where where we could use some help on that side, is taking all of like the data. And figuring out what clients. In our, in the geography that we serve what clients are. We already capturing market, share, and how much and then what clients are we not that we need to
+
+[19:19:07 - 19:19:08] Scott Davidson: Hmm.
+
+[19:19:08 - 19:19:16] Miguel Morales: focus on for our our targets and our roadmap for 2025. And it's very like
+
+[19:19:15 - 19:19:15] Scott Davidson: Hmm.
+
+[19:19:17 - 19:19:27] Miguel Morales: Data. I don't wanna say data intensive but nobody on the team has bandwidth to because we're doing our day-to-day to to sit back and say, Hey,
+
+[19:19:24 - 19:19:26] Scott Davidson: Yeah.
+
+[19:19:28 - 19:19:51] Miguel Morales: Our company is capturing market share from x Y and Z part of the market, but, hey, there's like this whole other part of the market where we may not have a sales rep or We may have a self-rep next to this other opportunity account. Or target. But we're not like we need to assign it to. Somebody, does that make sense?
+
+[19:19:50 - 19:19:59] Scott Davidson: Yes. So Yes, very much makes sense. I mean that's a lot of yeah I do that. That's what I do as well. So um
+
+[19:19:59 - 19:20:12] Miguel Morales: So maybe, you know, despite Michelle's Whatever feelings, or decision, maybe that's another area. That's another area
+
+[19:20:04 - 19:20:14] Scott Davidson: Yeah.
+
+[19:20:09 - 19:20:35] Miguel Morales: where we have a need that perhaps, you can also help us fulfill because my goal like, we know, we know financially and from a target stance, where we want to go like we're doing today, a hundred and eighty, nine new patient and missions. We want to go to 250, but in order to get to 250, we almost need to do this other layer of exercise which is the one I'm describing to know.
+
+[19:20:34 - 19:20:35] Scott Davidson: Right.
+
+[19:20:36 - 19:20:48] Miguel Morales: What clients do we need to target since we have access to the data? To hit or exceed that goal of 250 20.
+
+[19:20:46 - 19:20:53] Scott Davidson: You're right. And and the refers are clinicians, hospitals prep, any types of practices like that.
+
+[19:20:52 - 19:20:57] Miguel Morales: Yeah, so it would be physicians hospitals and nursing homes.
+
+[19:20:57 - 19:21:01] Scott Davidson: Okay, so this is the go to market motion today.
+
+[19:20:58 - 19:20:59] Miguel Morales: Yeah.
+
+[19:21:02 - 19:21:09] Scott Davidson: You research it you call the people and try and pitch them on working with you all had, like what is the go to market motion? Look like
+
+[19:21:08 - 19:21:32] Miguel Morales: Sure, that's a good question. So we have access to the data. So we research the data to see who's got the patient population that we're looking to target. And then from there we call and try to set up a meeting or a lunch, preferably like a lunch presentation or a breakfast meeting to then convey the value. And then
+
+[19:21:30 - 19:21:30] Scott Davidson: M.
+
+[19:21:31 - 19:21:59] Miguel Morales: parallel parallel to getting those meetings on the books we have sales team members throughout different sectors of Orlando and Brevard. We service four county, so we have sales reps. In each of the four counties that are also
+
+[19:21:48 - 19:21:49] Scott Davidson: Never.
+
+[19:21:49 - 19:22:11] Miguel Morales: targeting would be targeting these clients to get, you know, a meeting. So we can't secure meetings, telephonically. Sometimes we secure meetings in person, but, The Roi. I mean, it's easier to try to call and get a meeting on the books, but we do both. We do both is what I'm saying.
+
+[19:22:08 - 19:22:08] Scott Davidson: Mm-hmm.
+
+[19:22:12 - 19:22:13] Miguel Morales: Yeah.
+
+[19:22:13 - 19:22:25] Scott Davidson: So is the constraint, what? What are the constraints that are, what might prevent Growth, is it time to target all these accounts is it?
+
+[19:22:22 - 19:22:58] Miguel Morales: Yeah. The constraint is a couple things not having enough bodies on the ground targeting so we were trying to grow our sales team, but before we do that, I was just talking to our business development lead. Before we do that, we need to have a clear like territory structure on who we want them to target, right? And that's the, that's the piece where we have the data, but but nobody kind of connecting the dots and building out the Building out the the territories and the clients that we need to hyper focus on.
+
+[19:22:58 - 19:23:25] Scott Davidson: Yeah, so I mean, this is can be a very long discussion but there's a couple ways, you know, there's There's outbound which you're doing it sounds like imbound, which maybe there's inbound. And then there's A new-ish type of concept called account based marketing, which it sounds like, is what you're attempting to do. It's defining the accounts. Explicit accounts that we want to target. Yeah, so
+
+[19:23:23 - 19:23:33] Miguel Morales: Correct. Yeah. Which works really effective in our business, right? And I already we already have and pay for the industry data. To tell us what what accounts?
+
+[19:23:33 - 19:23:34] Scott Davidson: Okay.
+
+[19:23:34 - 19:23:38] Miguel Morales: Of the, the opportunity patients that we're looking for.
+
+[19:23:38 - 19:23:39] Scott Davidson: Okay.
+
+[19:23:39 - 19:24:51] Miguel Morales: Where I need help for. For growth plan for 2026 is in taking like the Big Data list of accounts. Let me tell my eleven, that I'll be right on, hold on. um, Um, all right. Sorry about that. And we may need a two-point a 2.0 to this, but but go ahead. You were saying account based market.
+
+[19:24:50 - 19:24:59] Scott Davidson: Well no, you're you were saying that you you have a list that you need somehow to be prioritized. I think the data, okay.
+
+[19:24:57 - 19:25:14] Miguel Morales: Yeah. Yes have access to the data by geography and we have our our, you know, our four counties broken up by like 11 regions within those four counties. But
+
+[19:25:09 - 19:25:10] Scott Davidson: Better.
+
+[19:25:09 - 19:25:22] Miguel Morales: now we need to pair up the opportunity accounts. With those regions because they're like, in two separate places, I don't know,
+
+[19:25:19 - 19:25:20] Scott Davidson: I said,
+
+[19:25:19 - 19:25:22] Miguel Morales: it's making sense and we may need. We make
+
+[19:25:21 - 19:25:25] Scott Davidson: Yeah, yeah. It's like account. It's territory carving. Yeah.
+
+[19:25:24 - 19:25:32] Miguel Morales: Yeah. Yeah, exactly, exactly. So we need to take the data that we pay for that
+
+[19:25:26 - 19:25:27] Scott Davidson: Yeah.
+
+[19:25:29 - 19:25:39] Miguel Morales: has the opportunity clients and like Extrapolate by territory, where the opportunity clients are. Yeah, exactly. And
+
+[19:25:37 - 19:25:41] Scott Davidson: I said, So there's that. Yeah. And then other things that I've
+
+[19:25:40 - 19:25:55] Miguel Morales: Do some backwards math to figure out, Okay. If we want to you know capture
+
+[19:25:44 - 19:25:45] Scott Davidson: Yeah.
+
+[19:25:44 - 19:26:10] Miguel Morales: business from those then how do I How many reps are we going to need on the team? In addition to the team that we have today and is a team that we have today focused on the right? Right. And if not how do we kind of slowly start to pivot them? Focus them on
+
+[19:25:56 - 19:25:59] Scott Davidson: Yeah, right. So
+
+[19:26:00 - 19:26:10] Miguel Morales: the right clients and then add more team members as the as our current team members start to hit or exceed goals. Does that make sense? I know it's a lot.
+
+[19:26:07 - 19:26:33] Scott Davidson: I see, yes, yeah yeah. So that's like capacity planning. So it would be it's
+
+[19:26:09 - 19:26:13] Miguel Morales: Yes. Right.
+
+[19:26:13 - 19:26:33] Scott Davidson: territory carving account prioritization, moving into capacity planning so that
+
+[19:26:17 - 19:26:18] Miguel Morales: Correct.
+
+[19:26:17 - 19:26:41] Scott Davidson: Erodization can happen. Like we would or me in that a sales or development would have a conversation about like, what constitutes your ideal customer profile. And then I could create like a scoring using AI using scoring mechanism. We can ingest the data, it would automatically score and then you can route You can do routing based on territories and based on score, like we only want the top 10 opportunities to start with and then.
+
+[19:26:41 - 19:26:41] Miguel Morales: Right.
+
+[19:26:42 - 19:26:45] Scott Davidson: There's lots of ways to structure it.
+
+[19:26:43 - 19:27:09] Miguel Morales: Yes. Yeah, exactly. Because because there's more opportunity clients. And we can, then we can obviously have bandwidth and plus, you don't want to go out and
+
+[19:26:48 - 19:26:49] Scott Davidson: Yeah.
+
+[19:26:52 - 19:27:09] Miguel Morales: like knock on everybody's door. So how do we like How do we, You know synthesize that. So I like it. Yeah but I do have to run Scott but maybe we can all. I'll
+
+[19:26:59 - 19:27:03] Scott Davidson: Right. Yeah.
+
+[19:27:03 - 19:27:38] Miguel Morales: press Michelle and Mike for a final answer on the dashboard and then on the sales piece. Maybe we can, we can like flush it out further, I'm happy to Jump on and you do like a screen share show you trellis. Show you the data kind of give you a visual into the CRM, just to see if if you can help us with that,
+
+[19:27:26 - 19:27:28] Scott Davidson: Okay.
+
+[19:27:30 - 19:27:38] Miguel Morales: you know, and then obviously of Michelle wants to do the dashboards, you know, it would be it would be like two separate projects.
+
+[19:27:38 - 19:27:51] Scott Davidson: Yeah. Okay. And then I know you also mentioned the, there was like that, sorting auto email, that's like a workflow automation that can be done. And then something you also mentioned about phone, In, you know, onboarding automation.
+
+[19:27:49 - 19:28:07] Miguel Morales: Yes. yeah, we're using this this person stuff called Lucy Lucy, which is through through He's like a little animal. Um, Thinkific no nothing, I think.
+
+[19:28:05 - 19:28:05] Scott Davidson: Hmm.
+
+[19:28:09 - 19:28:24] Miguel Morales: I'll get who makes Lucy Lucy AI because we are missing a lot of calls from
+
+[19:28:12 - 19:28:13] Scott Davidson: Okay.
+
+[19:28:16 - 19:28:24] Miguel Morales: customers. And I don't know if Lucy has if Lucy is enough to fix that problem or
+
+[19:28:21 - 19:28:21] Scott Davidson: Hmm.
+
+[19:28:22 - 19:28:33] Miguel Morales: not. But anyways, Um, maybe we can jump back on. And talk about the the sales piece on.
+
+[19:28:31 - 19:28:34] Scott Davidson: Okay, yeah, that's a good time or day.
+
+[19:28:35 - 19:28:53] Miguel Morales: On, let's see. 17th, I'm full. What about Tuesday's? What about? Tuesday. Afternoon. Or, or Wednesday.
+
+[19:28:53 - 19:28:56] Scott Davidson: Tuesday.
+
+[19:28:56 - 19:28:59] Miguel Morales: Oh wait, wait, am I looking at the right week? Yeah, I am
+
+[19:28:59 - 19:29:03] Scott Davidson: The 18th. Yeah, I knew the afternoon of the 18th sometime.
+
+[19:29:06 - 19:29:19] Miguel Morales: Okay. Tuesday. Yeah, Tuesday. I'm in one of our markets for a lunch meeting at 12, but then I'm back in Orlando like, at around like, 3 pm eastern,
+
+[19:29:19 - 19:29:24] Scott Davidson: Other. Okay, let's do that 3 pm Tuesday, I'll send it.
+
+[19:29:22 - 19:29:34] Miguel Morales: Yeah, and I'm sending it right now. Trella Overview, Overview Sales. I'll tell I'll title
+
+[19:29:28 - 19:29:28] Scott Davidson: Okay.
+
+[19:29:30 - 19:29:57] Miguel Morales: at Trella Overview sales just so you can kind of see What we're working with there and like what are what the needs are. because right now, I'm trying to figure out how do I Yeah, anyways, we can dive deeper on on Tuesday. Okay, I just sent it Scott and
+
+[19:29:53 - 19:29:55] Scott Davidson: Awesome.
+
+[19:29:53 - 19:29:57] Miguel Morales: then hopefully by then I'll have an answer from the Micah Michelle piece.
+
+[19:29:57 - 19:29:58] Scott Davidson: Okay, sounds great.
+
+[19:29:58 - 19:30:00] Miguel Morales: Awesome. We'll have a good weekend ahead.
+
+[19:29:59 - 19:30:02] Scott Davidson: Yeah. You too. You too ox
+
+[19:30:01 - 19:30:01] Miguel Morales: All right, bye.
+

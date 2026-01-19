@@ -1,0 +1,3472 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.800 --> 00:00:02.950 align:start position:0%
+ 
+Hey<00:00:01.120><c> everybody,</c><00:00:01.760><c> I</c><00:00:02.000><c> have</c><00:00:02.159><c> had</c><00:00:02.320><c> a</c><00:00:02.480><c> lot</c><00:00:02.639><c> of</c>
+
+00:00:02.950 --> 00:00:02.960 align:start position:0%
+Hey everybody, I have had a lot of
+ 
+
+00:00:02.960 --> 00:00:06.710 align:start position:0%
+Hey everybody, I have had a lot of
+requests<00:00:03.840><c> recently</c><00:00:04.960><c> to</c><00:00:05.440><c> go</c><00:00:05.680><c> over</c><00:00:06.080><c> how</c><00:00:06.319><c> we</c>
+
+00:00:06.710 --> 00:00:06.720 align:start position:0%
+requests recently to go over how we
+ 
+
+00:00:06.720 --> 00:00:10.070 align:start position:0%
+requests recently to go over how we
+structure<00:00:08.000><c> a</c><00:00:08.960><c> basic</c><00:00:09.360><c> go</c><00:00:09.599><c> to</c><00:00:09.760><c> market</c>
+
+00:00:10.070 --> 00:00:10.080 align:start position:0%
+structure a basic go to market
+ 
+
+00:00:10.080 --> 00:00:12.310 align:start position:0%
+structure a basic go to market
+infrastructure<00:00:10.800><c> setup</c>
+
+00:00:12.310 --> 00:00:12.320 align:start position:0%
+infrastructure setup
+ 
+
+00:00:12.320 --> 00:00:14.070 align:start position:0%
+infrastructure setup
+and
+
+00:00:14.070 --> 00:00:14.080 align:start position:0%
+and
+ 
+
+00:00:14.080 --> 00:00:16.150 align:start position:0%
+and
+I<00:00:14.320><c> think</c><00:00:14.480><c> for</c><00:00:14.639><c> a</c><00:00:14.719><c> while</c><00:00:15.040><c> our</c><00:00:15.360><c> main</c><00:00:15.839><c> value</c>
+
+00:00:16.150 --> 00:00:16.160 align:start position:0%
+I think for a while our main value
+ 
+
+00:00:16.160 --> 00:00:18.950 align:start position:0%
+I think for a while our main value
+proposition<00:00:16.720><c> was</c><00:00:17.119><c> to</c><00:00:17.359><c> do</c><00:00:18.400><c> just</c><00:00:18.640><c> do</c><00:00:18.800><c> it</c>
+
+00:00:18.950 --> 00:00:18.960 align:start position:0%
+proposition was to do just do it
+ 
+
+00:00:18.960 --> 00:00:21.029 align:start position:0%
+proposition was to do just do it
+ourselves<00:00:19.520><c> right</c><00:00:20.160><c> and</c><00:00:20.400><c> we've</c><00:00:20.640><c> seen</c><00:00:20.800><c> that</c>
+
+00:00:21.029 --> 00:00:21.039 align:start position:0%
+ourselves right and we've seen that
+ 
+
+00:00:21.039 --> 00:00:23.109 align:start position:0%
+ourselves right and we've seen that
+especially<00:00:21.600><c> for</c>
+
+00:00:23.109 --> 00:00:23.119 align:start position:0%
+especially for
+ 
+
+00:00:23.119 --> 00:00:25.990 align:start position:0%
+especially for
+horizontal<00:00:23.920><c> software</c><00:00:24.960><c> or</c><00:00:25.519><c> software</c>
+
+00:00:25.990 --> 00:00:26.000 align:start position:0%
+horizontal software or software
+ 
+
+00:00:26.000 --> 00:00:27.990 align:start position:0%
+horizontal software or software
+platforms<00:00:26.400><c> that</c><00:00:26.880><c> almost</c><00:00:27.199><c> anyone</c><00:00:27.519><c> can</c><00:00:27.680><c> use</c><00:00:27.760><c> or</c>
+
+00:00:27.990 --> 00:00:28.000 align:start position:0%
+platforms that almost anyone can use or
+ 
+
+00:00:28.000 --> 00:00:30.310 align:start position:0%
+platforms that almost anyone can use or
+a<00:00:28.160><c> large</c><00:00:28.320><c> segment</c><00:00:28.640><c> of</c><00:00:28.720><c> the</c><00:00:28.880><c> market</c><00:00:29.119><c> can</c>
+
+00:00:30.310 --> 00:00:30.320 align:start position:0%
+a large segment of the market can
+ 
+
+00:00:30.320 --> 00:00:32.709 align:start position:0%
+a large segment of the market can
+uh<00:00:30.880><c> just</c><00:00:31.279><c> going</c><00:00:31.519><c> and</c><00:00:31.760><c> sending</c><00:00:32.079><c> emails</c><00:00:32.480><c> for</c>
+
+00:00:32.709 --> 00:00:32.719 align:start position:0%
+uh just going and sending emails for
+ 
+
+00:00:32.719 --> 00:00:36.709 align:start position:0%
+uh just going and sending emails for
+clients<00:00:33.600><c> alongside</c><00:00:34.239><c> 10</c><00:00:34.559><c> or</c><00:00:34.800><c> 20</c><00:00:35.520><c> BDRs</c><00:00:36.239><c> does</c><00:00:36.480><c> not</c>
+
+00:00:36.709 --> 00:00:36.719 align:start position:0%
+clients alongside 10 or 20 BDRs does not
+ 
+
+00:00:36.719 --> 00:00:38.389 align:start position:0%
+clients alongside 10 or 20 BDRs does not
+work<00:00:36.880><c> very</c><00:00:37.200><c> well.</c><00:00:37.760><c> They're</c><00:00:38.079><c> account</c>
+
+00:00:38.389 --> 00:00:38.399 align:start position:0%
+work very well. They're account
+ 
+
+00:00:38.399 --> 00:00:40.549 align:start position:0%
+work very well. They're account
+executives<00:00:39.040><c> own</c><00:00:39.280><c> a</c><00:00:39.520><c> huge</c><00:00:39.840><c> portion</c><00:00:40.160><c> of</c><00:00:40.320><c> the</c>
+
+00:00:40.549 --> 00:00:40.559 align:start position:0%
+executives own a huge portion of the
+ 
+
+00:00:40.559 --> 00:00:42.549 align:start position:0%
+executives own a huge portion of the
+market.<00:00:41.360><c> There's</c><00:00:41.600><c> a</c><00:00:41.760><c> lot</c><00:00:41.840><c> of</c><00:00:42.000><c> stepping</c><00:00:42.320><c> on</c>
+
+00:00:42.549 --> 00:00:42.559 align:start position:0%
+market. There's a lot of stepping on
+ 
+
+00:00:42.559 --> 00:00:45.830 align:start position:0%
+market. There's a lot of stepping on
+feet.<00:00:43.760><c> And</c><00:00:43.920><c> so</c><00:00:44.160><c> lately,</c><00:00:44.640><c> we've</c><00:00:44.960><c> been</c><00:00:45.120><c> having</c><00:00:45.520><c> a</c>
+
+00:00:45.830 --> 00:00:45.840 align:start position:0%
+feet. And so lately, we've been having a
+ 
+
+00:00:45.840 --> 00:00:48.950 align:start position:0%
+feet. And so lately, we've been having a
+lot<00:00:45.920><c> of</c><00:00:46.160><c> success</c><00:00:47.280><c> with</c><00:00:47.760><c> helping</c><00:00:48.160><c> companies</c>
+
+00:00:48.950 --> 00:00:48.960 align:start position:0%
+lot of success with helping companies
+ 
+
+00:00:48.960 --> 00:00:49.990 align:start position:0%
+lot of success with helping companies
+set<00:00:49.120><c> up</c><00:00:49.280><c> their</c><00:00:49.520><c> go</c><00:00:49.680><c> to</c><00:00:49.760><c> market</c>
+
+00:00:49.990 --> 00:00:50.000 align:start position:0%
+set up their go to market
+ 
+
+00:00:50.000 --> 00:00:51.190 align:start position:0%
+set up their go to market
+infrastructure,<00:00:50.640><c> their</c><00:00:50.800><c> outbound</c>
+
+00:00:51.190 --> 00:00:51.200 align:start position:0%
+infrastructure, their outbound
+ 
+
+00:00:51.200 --> 00:00:52.790 align:start position:0%
+infrastructure, their outbound
+infrastructure,<00:00:51.760><c> their</c><00:00:52.000><c> revenue</c>
+
+00:00:52.790 --> 00:00:52.800 align:start position:0%
+infrastructure, their revenue
+ 
+
+00:00:52.800 --> 00:00:55.110 align:start position:0%
+infrastructure, their revenue
+infrastructure.<00:00:54.000><c> And</c><00:00:54.160><c> I</c><00:00:54.320><c> generally</c><00:00:54.719><c> partner</c>
+
+00:00:55.110 --> 00:00:55.120 align:start position:0%
+infrastructure. And I generally partner
+ 
+
+00:00:55.120 --> 00:00:57.750 align:start position:0%
+infrastructure. And I generally partner
+with<00:00:56.320><c> people</c><00:00:56.559><c> who</c><00:00:56.719><c> are</c><00:00:56.879><c> much</c><00:00:57.120><c> more</c><00:00:57.280><c> skilled</c><00:00:57.600><c> on</c>
+
+00:00:57.750 --> 00:00:57.760 align:start position:0%
+with people who are much more skilled on
+ 
+
+00:00:57.760 --> 00:00:59.430 align:start position:0%
+with people who are much more skilled on
+the<00:00:57.920><c> HubSpot</c><00:00:58.480><c> side</c><00:00:58.640><c> of</c><00:00:58.800><c> things.</c><00:00:59.039><c> But</c><00:00:59.199><c> I</c><00:00:59.359><c> think</c>
+
+00:00:59.430 --> 00:00:59.440 align:start position:0%
+the HubSpot side of things. But I think
+ 
+
+00:00:59.440 --> 00:01:02.150 align:start position:0%
+the HubSpot side of things. But I think
+I<00:00:59.680><c> can</c><00:00:59.760><c> at</c><00:00:59.840><c> least</c><00:01:00.160><c> explain</c><00:01:01.199><c> the</c><00:01:01.520><c> basics</c><00:01:01.840><c> of</c><00:01:02.000><c> how</c>
+
+00:01:02.150 --> 00:01:02.160 align:start position:0%
+I can at least explain the basics of how
+ 
+
+00:01:02.160 --> 00:01:04.549 align:start position:0%
+I can at least explain the basics of how
+it<00:01:02.320><c> works.</c><00:01:02.559><c> I</c><00:01:02.719><c> can</c><00:01:02.800><c> do</c><00:01:02.960><c> the</c><00:01:03.199><c> basic</c><00:01:04.000><c> HubSpot</c>
+
+00:01:04.549 --> 00:01:04.559 align:start position:0%
+it works. I can do the basic HubSpot
+ 
+
+00:01:04.559 --> 00:01:07.270 align:start position:0%
+it works. I can do the basic HubSpot
+enrichment.<00:01:05.600><c> But</c><00:01:06.400><c> this</c><00:01:06.560><c> is</c><00:01:06.640><c> the</c><00:01:06.799><c> full</c><00:01:06.960><c> go</c><00:01:07.119><c> to</c>
+
+00:01:07.270 --> 00:01:07.280 align:start position:0%
+enrichment. But this is the full go to
+ 
+
+00:01:07.280 --> 00:01:08.870 align:start position:0%
+enrichment. But this is the full go to
+market<00:01:07.600><c> architecture.</c><00:01:08.159><c> What</c><00:01:08.240><c> do</c><00:01:08.400><c> I</c><00:01:08.560><c> include</c>
+
+00:01:08.870 --> 00:01:08.880 align:start position:0%
+market architecture. What do I include
+ 
+
+00:01:08.880 --> 00:01:13.109 align:start position:0%
+market architecture. What do I include
+in<00:01:09.119><c> that?</c><00:01:09.920><c> That</c><00:01:10.240><c> is</c><00:01:10.960><c> sending</c><00:01:11.360><c> infrastructure.</c>
+
+00:01:13.109 --> 00:01:13.119 align:start position:0%
+in that? That is sending infrastructure.
+ 
+
+00:01:13.119 --> 00:01:15.670 align:start position:0%
+in that? That is sending infrastructure.
+That's<00:01:13.439><c> clay</c><00:01:13.760><c> tables.</c><00:01:14.960><c> That's</c><00:01:15.200><c> stuff</c><00:01:15.439><c> going</c>
+
+00:01:15.670 --> 00:01:15.680 align:start position:0%
+That's clay tables. That's stuff going
+ 
+
+00:01:15.680 --> 00:01:17.109 align:start position:0%
+That's clay tables. That's stuff going
+in<00:01:15.840><c> and</c><00:01:16.000><c> out</c><00:01:16.080><c> of</c><00:01:16.159><c> HubSpot.</c><00:01:16.880><c> Those</c>
+
+00:01:17.109 --> 00:01:17.119 align:start position:0%
+in and out of HubSpot. Those
+ 
+
+00:01:17.119 --> 00:01:19.270 align:start position:0%
+in and out of HubSpot. Those
+automations.<00:01:18.159><c> There's</c><00:01:18.560><c> lead</c><00:01:18.799><c> routing</c>
+
+00:01:19.270 --> 00:01:19.280 align:start position:0%
+automations. There's lead routing
+ 
+
+00:01:19.280 --> 00:01:21.190 align:start position:0%
+automations. There's lead routing
+automations.
+
+00:01:21.190 --> 00:01:21.200 align:start position:0%
+automations.
+ 
+
+00:01:21.200 --> 00:01:23.109 align:start position:0%
+automations.
+And<00:01:21.439><c> then</c><00:01:21.680><c> finally,</c><00:01:22.080><c> there's</c><00:01:22.479><c> copywriting</c>
+
+00:01:23.109 --> 00:01:23.119 align:start position:0%
+And then finally, there's copywriting
+ 
+
+00:01:23.119 --> 00:01:26.070 align:start position:0%
+And then finally, there's copywriting
+and<00:01:23.280><c> and</c><00:01:23.600><c> context</c><00:01:24.000><c> generation.</c><00:01:25.040><c> Um,</c><00:01:25.759><c> I</c><00:01:25.920><c> guess</c>
+
+00:01:26.070 --> 00:01:26.080 align:start position:0%
+and and context generation. Um, I guess
+ 
+
+00:01:26.080 --> 00:01:29.590 align:start position:0%
+and and context generation. Um, I guess
+I<00:01:26.320><c> would</c><00:01:26.560><c> put</c><00:01:26.960><c> copywriting</c><00:01:27.759><c> into</c><00:01:28.159><c> like</c><00:01:29.280><c> a</c>
+
+00:01:29.590 --> 00:01:29.600 align:start position:0%
+I would put copywriting into like a
+ 
+
+00:01:29.600 --> 00:01:31.910 align:start position:0%
+I would put copywriting into like a
+general<00:01:30.240><c> prospect</c><00:01:30.880><c> intelligence</c><00:01:31.520><c> system</c>
+
+00:01:31.910 --> 00:01:31.920 align:start position:0%
+general prospect intelligence system
+ 
+
+00:01:31.920 --> 00:01:33.830 align:start position:0%
+general prospect intelligence system
+because<00:01:32.159><c> we</c><00:01:32.400><c> use</c><00:01:32.640><c> the</c><00:01:32.880><c> prospect</c><00:01:33.360><c> intelligence</c>
+
+00:01:33.830 --> 00:01:33.840 align:start position:0%
+because we use the prospect intelligence
+ 
+
+00:01:33.840 --> 00:01:36.630 align:start position:0%
+because we use the prospect intelligence
+system<00:01:34.159><c> to</c><00:01:35.280><c> generate</c><00:01:35.840><c> information</c><00:01:36.159><c> that</c><00:01:36.400><c> lets</c>
+
+00:01:36.630 --> 00:01:36.640 align:start position:0%
+system to generate information that lets
+ 
+
+00:01:36.640 --> 00:01:38.710 align:start position:0%
+system to generate information that lets
+us<00:01:36.799><c> do</c><00:01:36.960><c> the</c><00:01:37.119><c> copywriting.</c>
+
+00:01:38.710 --> 00:01:38.720 align:start position:0%
+us do the copywriting.
+ 
+
+00:01:38.720 --> 00:01:41.270 align:start position:0%
+us do the copywriting.
+And<00:01:38.880><c> I</c><00:01:39.040><c> would</c><00:01:39.200><c> also</c><00:01:39.439><c> put</c><00:01:39.600><c> like</c><00:01:40.400><c> AI</c><00:01:40.799><c> replies</c>
+
+00:01:41.270 --> 00:01:41.280 align:start position:0%
+And I would also put like AI replies
+ 
+
+00:01:41.280 --> 00:01:43.670 align:start position:0%
+And I would also put like AI replies
+into<00:01:41.840><c> the</c><00:01:42.159><c> lead</c><00:01:42.400><c> routing</c><00:01:42.799><c> section.</c><00:01:43.280><c> So,</c><00:01:43.439><c> we'll</c>
+
+00:01:43.670 --> 00:01:43.680 align:start position:0%
+into the lead routing section. So, we'll
+ 
+
+00:01:43.680 --> 00:01:45.350 align:start position:0%
+into the lead routing section. So, we'll
+get<00:01:43.840><c> there.</c><00:01:44.079><c> I</c><00:01:44.240><c> don't</c><00:01:44.400><c> want</c><00:01:44.479><c> to</c><00:01:44.720><c> explain</c><00:01:45.040><c> too</c>
+
+00:01:45.350 --> 00:01:45.360 align:start position:0%
+get there. I don't want to explain too
+ 
+
+00:01:45.360 --> 00:01:48.789 align:start position:0%
+get there. I don't want to explain too
+much<00:01:45.680><c> before,</c><00:01:46.799><c> but</c><00:01:47.280><c> I</c><00:01:47.520><c> do</c><00:01:47.759><c> want</c><00:01:47.920><c> to</c><00:01:48.159><c> explain</c>
+
+00:01:48.789 --> 00:01:48.799 align:start position:0%
+much before, but I do want to explain
+ 
+
+00:01:48.799 --> 00:01:52.149 align:start position:0%
+much before, but I do want to explain
+how<00:01:49.360><c> we</c><00:01:49.600><c> do</c><00:01:49.920><c> fit</c><00:01:50.240><c> these</c><00:01:50.880><c> GTM</c><00:01:51.520><c> infrastructure</c>
+
+00:01:52.149 --> 00:01:52.159 align:start position:0%
+how we do fit these GTM infrastructure
+ 
+
+00:01:52.159 --> 00:01:55.190 align:start position:0%
+how we do fit these GTM infrastructure
+setups<00:01:52.640><c> in</c><00:01:52.960><c> just</c><00:01:53.200><c> three</c><00:01:53.439><c> months.</c><00:01:54.399><c> Um,</c>
+
+00:01:55.190 --> 00:01:55.200 align:start position:0%
+setups in just three months. Um,
+ 
+
+00:01:55.200 --> 00:01:57.270 align:start position:0%
+setups in just three months. Um,
+something<00:01:55.600><c> interesting</c><00:01:55.920><c> to</c><00:01:56.159><c> note</c><00:01:56.399><c> is</c><00:01:56.640><c> that</c>
+
+00:01:57.270 --> 00:01:57.280 align:start position:0%
+something interesting to note is that
+ 
+
+00:01:57.280 --> 00:01:59.910 align:start position:0%
+something interesting to note is that
+the<00:01:57.520><c> bottlenecks</c><00:01:58.159><c> are</c><00:01:58.399><c> almost</c><00:01:58.799><c> never</c><00:01:59.280><c> on</c><00:01:59.600><c> our</c>
+
+00:01:59.910 --> 00:01:59.920 align:start position:0%
+the bottlenecks are almost never on our
+ 
+
+00:01:59.920 --> 00:02:02.469 align:start position:0%
+the bottlenecks are almost never on our
+side.<00:02:01.360><c> There</c><00:02:01.520><c> are</c><00:02:01.759><c> so</c><00:02:01.920><c> many</c><00:02:02.079><c> things</c><00:02:02.240><c> to</c>
+
+00:02:02.469 --> 00:02:02.479 align:start position:0%
+side. There are so many things to
+ 
+
+00:02:02.479 --> 00:02:03.749 align:start position:0%
+side. There are so many things to
+consider<00:02:02.719><c> and</c><00:02:02.960><c> that's</c><00:02:03.119><c> why</c><00:02:03.280><c> it's</c><00:02:03.520><c> so</c>
+
+00:02:03.749 --> 00:02:03.759 align:start position:0%
+consider and that's why it's so
+ 
+
+00:02:03.759 --> 00:02:06.069 align:start position:0%
+consider and that's why it's so
+important<00:02:04.560><c> to</c><00:02:04.880><c> have</c><00:02:05.040><c> a</c><00:02:05.200><c> good</c><00:02:05.439><c> discovery</c><00:02:05.920><c> and</c>
+
+00:02:06.069 --> 00:02:06.079 align:start position:0%
+important to have a good discovery and
+ 
+
+00:02:06.079 --> 00:02:08.790 align:start position:0%
+important to have a good discovery and
+audit<00:02:06.399><c> phase</c><00:02:06.719><c> within</c><00:02:06.960><c> the</c><00:02:07.119><c> first</c><00:02:07.360><c> month.</c><00:02:08.640><c> Now,</c>
+
+00:02:08.790 --> 00:02:08.800 align:start position:0%
+audit phase within the first month. Now,
+ 
+
+00:02:08.800 --> 00:02:09.990 align:start position:0%
+audit phase within the first month. Now,
+a<00:02:08.959><c> lot</c><00:02:09.039><c> of</c><00:02:09.119><c> companies</c><00:02:09.360><c> are</c><00:02:09.520><c> looking</c><00:02:09.679><c> to</c><00:02:09.840><c> get</c>
+
+00:02:09.990 --> 00:02:10.000 align:start position:0%
+a lot of companies are looking to get
+ 
+
+00:02:10.000 --> 00:02:11.990 align:start position:0%
+a lot of companies are looking to get
+started<00:02:10.239><c> really</c><00:02:10.560><c> fast</c><00:02:11.120><c> and</c><00:02:11.360><c> they</c><00:02:11.599><c> skip</c><00:02:11.840><c> that</c>
+
+00:02:11.990 --> 00:02:12.000 align:start position:0%
+started really fast and they skip that
+ 
+
+00:02:12.000 --> 00:02:13.589 align:start position:0%
+started really fast and they skip that
+and<00:02:12.239><c> it</c><00:02:12.400><c> actually</c><00:02:12.720><c> ends</c><00:02:12.959><c> up</c><00:02:13.120><c> making</c><00:02:13.360><c> things</c>
+
+00:02:13.589 --> 00:02:13.599 align:start position:0%
+and it actually ends up making things
+ 
+
+00:02:13.599 --> 00:02:16.229 align:start position:0%
+and it actually ends up making things
+take<00:02:13.840><c> longer.</c><00:02:14.319><c> So,</c><00:02:14.959><c> what</c><00:02:15.200><c> are</c><00:02:15.280><c> some</c><00:02:15.520><c> common</c>
+
+00:02:16.229 --> 00:02:16.239 align:start position:0%
+take longer. So, what are some common
+ 
+
+00:02:16.239 --> 00:02:18.150 align:start position:0%
+take longer. So, what are some common
+instances<00:02:16.800><c> that</c><00:02:17.040><c> we've</c><00:02:17.360><c> seen</c><00:02:17.520><c> or</c><00:02:17.840><c> problems</c>
+
+00:02:18.150 --> 00:02:18.160 align:start position:0%
+instances that we've seen or problems
+ 
+
+00:02:18.160 --> 00:02:20.470 align:start position:0%
+instances that we've seen or problems
+that<00:02:18.319><c> we've</c><00:02:18.640><c> seen</c><00:02:19.680><c> uh</c><00:02:19.840><c> working</c><00:02:20.160><c> with</c><00:02:20.319><c> our</c>
+
+00:02:20.470 --> 00:02:20.480 align:start position:0%
+that we've seen uh working with our
+ 
+
+00:02:20.480 --> 00:02:22.550 align:start position:0%
+that we've seen uh working with our
+partners?<00:02:21.360><c> Like</c><00:02:21.520><c> we've</c><00:02:21.760><c> had</c><00:02:21.920><c> random</c><00:02:22.239><c> ones</c>
+
+00:02:22.550 --> 00:02:22.560 align:start position:0%
+partners? Like we've had random ones
+ 
+
+00:02:22.560 --> 00:02:25.190 align:start position:0%
+partners? Like we've had random ones
+where<00:02:22.800><c> like</c><00:02:23.840><c> gong</c><00:02:24.319><c> calls</c><00:02:24.720><c> have</c><00:02:24.959><c> been</c>
+
+00:02:25.190 --> 00:02:25.200 align:start position:0%
+where like gong calls have been
+ 
+
+00:02:25.200 --> 00:02:28.790 align:start position:0%
+where like gong calls have been
+disconnected<00:02:25.920><c> for</c><00:02:26.239><c> like</c><00:02:26.560><c> three</c><00:02:26.800><c> years.</c><00:02:27.680><c> So,</c>
+
+00:02:28.790 --> 00:02:28.800 align:start position:0%
+disconnected for like three years. So,
+ 
+
+00:02:28.800 --> 00:02:30.470 align:start position:0%
+disconnected for like three years. So,
+we<00:02:29.040><c> have</c><00:02:29.120><c> to</c><00:02:29.200><c> go</c><00:02:29.360><c> in</c><00:02:29.520><c> and</c><00:02:29.680><c> manually</c><00:02:30.080><c> associate</c>
+
+00:02:30.470 --> 00:02:30.480 align:start position:0%
+we have to go in and manually associate
+ 
+
+00:02:30.480 --> 00:02:31.910 align:start position:0%
+we have to go in and manually associate
+them<00:02:30.640><c> and</c><00:02:30.800><c> that</c><00:02:30.959><c> ends</c><00:02:31.120><c> up</c><00:02:31.280><c> making</c><00:02:31.440><c> the</c><00:02:31.599><c> close</c>
+
+00:02:31.910 --> 00:02:31.920 align:start position:0%
+them and that ends up making the close
+ 
+
+00:02:31.920 --> 00:02:33.750 align:start position:0%
+them and that ends up making the close
+loss<00:02:32.239><c> campaigns</c><00:02:32.640><c> take</c><00:02:32.879><c> longer.</c><00:02:33.519><c> And</c>
+
+00:02:33.750 --> 00:02:33.760 align:start position:0%
+loss campaigns take longer. And
+ 
+
+00:02:33.760 --> 00:02:35.830 align:start position:0%
+loss campaigns take longer. And
+basically<00:02:34.080><c> what</c><00:02:34.239><c> I'm</c><00:02:34.400><c> take</c><00:02:34.720><c> say</c><00:02:35.200><c> is</c><00:02:35.440><c> like</c>
+
+00:02:35.830 --> 00:02:35.840 align:start position:0%
+basically what I'm take say is like
+ 
+
+00:02:35.840 --> 00:02:38.229 align:start position:0%
+basically what I'm take say is like
+there<00:02:36.160><c> are</c><00:02:36.400><c> a</c><00:02:36.720><c> set</c><00:02:36.959><c> of</c><00:02:37.280><c> fundamental</c><00:02:37.840><c> go</c><00:02:38.080><c> to</c>
+
+00:02:38.229 --> 00:02:38.239 align:start position:0%
+there are a set of fundamental go to
+ 
+
+00:02:38.239 --> 00:02:40.150 align:start position:0%
+there are a set of fundamental go to
+market<00:02:38.560><c> motions</c><00:02:38.879><c> that</c><00:02:39.200><c> most</c><00:02:39.440><c> companies</c><00:02:39.920><c> want</c>
+
+00:02:40.150 --> 00:02:40.160 align:start position:0%
+market motions that most companies want
+ 
+
+00:02:40.160 --> 00:02:44.070 align:start position:0%
+market motions that most companies want
+to<00:02:40.319><c> do</c><00:02:41.440><c> and</c><00:02:42.480><c> those</c><00:02:42.800><c> generally</c><00:02:43.280><c> if</c><00:02:43.519><c> I</c><00:02:43.680><c> if</c><00:02:43.840><c> it</c><00:02:44.000><c> was</c>
+
+00:02:44.070 --> 00:02:44.080 align:start position:0%
+to do and those generally if I if it was
+ 
+
+00:02:44.080 --> 00:02:45.750 align:start position:0%
+to do and those generally if I if it was
+just<00:02:44.239><c> dependent</c><00:02:44.560><c> on</c><00:02:44.640><c> me</c><00:02:44.879><c> would</c><00:02:45.040><c> take</c><00:02:45.280><c> like</c><00:02:45.519><c> a</c>
+
+00:02:45.750 --> 00:02:45.760 align:start position:0%
+just dependent on me would take like a
+ 
+
+00:02:45.760 --> 00:02:49.190 align:start position:0%
+just dependent on me would take like a
+month<00:02:46.160><c> right</c><00:02:46.879><c> but</c><00:02:47.440><c> the</c><00:02:47.920><c> purpose</c><00:02:48.400><c> of</c><00:02:48.640><c> a</c><00:02:48.800><c> goto</c>
+
+00:02:49.190 --> 00:02:49.200 align:start position:0%
+month right but the purpose of a goto
+ 
+
+00:02:49.200 --> 00:02:51.110 align:start position:0%
+month right but the purpose of a goto
+market<00:02:49.519><c> infrastructure</c>
+
+00:02:51.110 --> 00:02:51.120 align:start position:0%
+market infrastructure
+ 
+
+00:02:51.120 --> 00:02:53.830 align:start position:0%
+market infrastructure
+is<00:02:51.519><c> to</c><00:02:51.920><c> involve</c><00:02:52.640><c> the</c><00:02:52.959><c> partner</c><00:02:53.280><c> company</c><00:02:53.599><c> who</c>
+
+00:02:53.830 --> 00:02:53.840 align:start position:0%
+is to involve the partner company who
+ 
+
+00:02:53.840 --> 00:02:55.350 align:start position:0%
+is to involve the partner company who
+you're<00:02:54.000><c> setting</c><00:02:54.239><c> this</c><00:02:54.400><c> up</c><00:02:54.560><c> for</c><00:02:54.800><c> and</c><00:02:55.120><c> teach</c>
+
+00:02:55.350 --> 00:02:55.360 align:start position:0%
+you're setting this up for and teach
+ 
+
+00:02:55.360 --> 00:02:57.670 align:start position:0%
+you're setting this up for and teach
+them<00:02:55.519><c> how</c><00:02:55.680><c> to</c><00:02:55.840><c> use</c><00:02:56.000><c> it</c><00:02:56.640><c> and</c><00:02:56.800><c> so</c><00:02:57.040><c> generally</c><00:02:57.440><c> that</c>
+
+00:02:57.670 --> 00:02:57.680 align:start position:0%
+them how to use it and so generally that
+ 
+
+00:02:57.680 --> 00:02:59.430 align:start position:0%
+them how to use it and so generally that
+takes<00:02:57.840><c> about</c><00:02:58.080><c> 3</c><00:02:58.319><c> months.</c><00:02:58.480><c> So</c><00:02:58.640><c> I've</c><00:02:58.879><c> scoped</c><00:02:59.280><c> it</c>
+
+00:02:59.430 --> 00:02:59.440 align:start position:0%
+takes about 3 months. So I've scoped it
+ 
+
+00:02:59.440 --> 00:03:02.470 align:start position:0%
+takes about 3 months. So I've scoped it
+out<00:02:59.599><c> here</c><00:03:00.000><c> kind</c><00:03:00.239><c> of</c><00:03:00.959><c> you</c><00:03:01.120><c> know</c><00:03:01.519><c> accurately</c><00:03:02.080><c> as</c>
+
+00:03:02.470 --> 00:03:02.480 align:start position:0%
+out here kind of you know accurately as
+ 
+
+00:03:02.480 --> 00:03:04.630 align:start position:0%
+out here kind of you know accurately as
+like<00:03:03.120><c> first</c><00:03:03.360><c> month</c><00:03:03.599><c> is</c><00:03:03.840><c> discovery</c><00:03:04.159><c> and</c><00:03:04.319><c> audit</c>
+
+00:03:04.630 --> 00:03:04.640 align:start position:0%
+like first month is discovery and audit
+ 
+
+00:03:04.640 --> 00:03:07.750 align:start position:0%
+like first month is discovery and audit
+phase.<00:03:05.599><c> Um</c>
+
+00:03:07.750 --> 00:03:07.760 align:start position:0%
+phase. Um
+ 
+
+00:03:07.760 --> 00:03:09.350 align:start position:0%
+phase. Um
+second<00:03:08.080><c> month</c><00:03:08.400><c> or</c><00:03:08.560><c> I</c><00:03:08.720><c> should</c><00:03:08.800><c> say</c><00:03:08.959><c> month</c><00:03:09.200><c> one</c>
+
+00:03:09.350 --> 00:03:09.360 align:start position:0%
+second month or I should say month one
+ 
+
+00:03:09.360 --> 00:03:11.589 align:start position:0%
+second month or I should say month one
+as<00:03:09.519><c> I'm</c><00:03:09.680><c> calling</c><00:03:09.840><c> it</c><00:03:10.080><c> here</c><00:03:10.640><c> is</c><00:03:10.959><c> infrastructure</c>
+
+00:03:11.589 --> 00:03:11.599 align:start position:0%
+as I'm calling it here is infrastructure
+ 
+
+00:03:11.599 --> 00:03:14.309 align:start position:0%
+as I'm calling it here is infrastructure
+setup<00:03:12.000><c> and</c><00:03:12.319><c> where</c><00:03:12.480><c> like</c><00:03:12.640><c> a</c><00:03:12.879><c> majority</c><00:03:13.920><c> of</c><00:03:14.080><c> the</c>
+
+00:03:14.309 --> 00:03:14.319 align:start position:0%
+setup and where like a majority of the
+ 
+
+00:03:14.319 --> 00:03:17.350 align:start position:0%
+setup and where like a majority of the
+intense<00:03:14.720><c> work</c><00:03:14.959><c> happens</c><00:03:15.440><c> and</c><00:03:15.680><c> then</c><00:03:16.159><c> month</c><00:03:16.560><c> two</c>
+
+00:03:17.350 --> 00:03:17.360 align:start position:0%
+intense work happens and then month two
+ 
+
+00:03:17.360 --> 00:03:18.869 align:start position:0%
+intense work happens and then month two
+we're<00:03:17.599><c> setting</c><00:03:17.840><c> things</c><00:03:18.000><c> up</c><00:03:18.159><c> for</c><00:03:18.319><c> the</c><00:03:18.480><c> future</c>
+
+00:03:18.869 --> 00:03:18.879 align:start position:0%
+we're setting things up for the future
+ 
+
+00:03:18.879 --> 00:03:22.309 align:start position:0%
+we're setting things up for the future
+doing<00:03:19.200><c> education</c><00:03:19.840><c> and</c><00:03:20.080><c> things</c><00:03:20.239><c> like</c><00:03:20.480><c> that.</c><00:03:21.599><c> So</c>
+
+00:03:22.309 --> 00:03:22.319 align:start position:0%
+doing education and things like that. So
+ 
+
+00:03:22.319 --> 00:03:24.550 align:start position:0%
+doing education and things like that. So
+by<00:03:22.560><c> all</c><00:03:22.720><c> means</c><00:03:23.040><c> I'm</c><00:03:23.360><c> not</c><00:03:23.599><c> the</c><00:03:23.840><c> expert</c><00:03:24.159><c> of</c><00:03:24.319><c> all</c>
+
+00:03:24.550 --> 00:03:24.560 align:start position:0%
+by all means I'm not the expert of all
+ 
+
+00:03:24.560 --> 00:03:27.110 align:start position:0%
+by all means I'm not the expert of all
+experts.<00:03:25.200><c> Other</c><00:03:25.519><c> people</c><00:03:25.760><c> might</c><00:03:26.080><c> structure</c>
+
+00:03:27.110 --> 00:03:27.120 align:start position:0%
+experts. Other people might structure
+ 
+
+00:03:27.120 --> 00:03:29.110 align:start position:0%
+experts. Other people might structure
+their<00:03:27.840><c> infrastructure</c><00:03:28.480><c> setups</c><00:03:28.879><c> for</c>
+
+00:03:29.110 --> 00:03:29.120 align:start position:0%
+their infrastructure setups for
+ 
+
+00:03:29.120 --> 00:03:31.030 align:start position:0%
+their infrastructure setups for
+companies<00:03:29.360><c> in</c><00:03:29.599><c> different</c><00:03:29.840><c> ways</c><00:03:30.480><c> or</c><00:03:30.799><c> they</c>
+
+00:03:31.030 --> 00:03:31.040 align:start position:0%
+companies in different ways or they
+ 
+
+00:03:31.040 --> 00:03:33.830 align:start position:0%
+companies in different ways or they
+might<00:03:31.200><c> be</c><00:03:31.680><c> focused</c><00:03:32.239><c> more</c><00:03:32.560><c> on</c><00:03:32.879><c> the</c><00:03:33.040><c> the</c><00:03:33.440><c> revenue</c>
+
+00:03:33.830 --> 00:03:33.840 align:start position:0%
+might be focused more on the the revenue
+ 
+
+00:03:33.840 --> 00:03:36.309 align:start position:0%
+might be focused more on the the revenue
+architecture<00:03:34.400><c> than</c><00:03:34.720><c> the</c><00:03:35.599><c> um</c><00:03:35.680><c> go</c><00:03:35.920><c> to</c><00:03:36.080><c> market</c>
+
+00:03:36.309 --> 00:03:36.319 align:start position:0%
+architecture than the um go to market
+ 
+
+00:03:36.319 --> 00:03:38.309 align:start position:0%
+architecture than the um go to market
+architecture.<00:03:37.120><c> At</c><00:03:37.440><c> the</c><00:03:37.599><c> end</c><00:03:37.760><c> of</c><00:03:37.840><c> the</c><00:03:37.920><c> day</c><00:03:38.159><c> it</c>
+
+00:03:38.309 --> 00:03:38.319 align:start position:0%
+architecture. At the end of the day it
+ 
+
+00:03:38.319 --> 00:03:40.869 align:start position:0%
+architecture. At the end of the day it
+all<00:03:38.560><c> sort</c><00:03:38.720><c> of</c><00:03:38.799><c> feeds</c><00:03:39.200><c> into</c><00:03:39.440><c> each</c><00:03:39.680><c> other.</c><00:03:40.640><c> So</c>
+
+00:03:40.869 --> 00:03:40.879 align:start position:0%
+all sort of feeds into each other. So
+ 
+
+00:03:40.879 --> 00:03:42.309 align:start position:0%
+all sort of feeds into each other. So
+let's<00:03:41.040><c> just</c><00:03:41.280><c> talk</c><00:03:41.360><c> about</c><00:03:41.519><c> the</c><00:03:41.760><c> steps</c><00:03:41.920><c> here.</c><00:03:42.159><c> So</c>
+
+00:03:42.309 --> 00:03:42.319 align:start position:0%
+let's just talk about the steps here. So
+ 
+
+00:03:42.319 --> 00:03:44.710 align:start position:0%
+let's just talk about the steps here. So
+discovery<00:03:42.720><c> phase</c><00:03:43.120><c> super</c><00:03:43.360><c> important</c>
+
+00:03:44.710 --> 00:03:44.720 align:start position:0%
+discovery phase super important
+ 
+
+00:03:44.720 --> 00:03:47.589 align:start position:0%
+discovery phase super important
+expectation<00:03:45.519><c> setting</c><00:03:46.480><c> what</c><00:03:47.120><c> does</c><00:03:47.360><c> a</c>
+
+00:03:47.589 --> 00:03:47.599 align:start position:0%
+expectation setting what does a
+ 
+
+00:03:47.599 --> 00:03:50.550 align:start position:0%
+expectation setting what does a
+successful<00:03:48.159><c> engagement</c><00:03:48.799><c> looks</c><00:03:49.040><c> like?</c><00:03:50.159><c> And</c>
+
+00:03:50.550 --> 00:03:50.560 align:start position:0%
+successful engagement looks like? And
+ 
+
+00:03:50.560 --> 00:03:53.509 align:start position:0%
+successful engagement looks like? And
+I've<00:03:50.799><c> had</c><00:03:50.959><c> to</c><00:03:51.120><c> do</c><00:03:51.200><c> a</c><00:03:51.360><c> lot</c><00:03:51.440><c> of</c><00:03:51.519><c> work</c><00:03:51.680><c> here</c>
+
+00:03:53.509 --> 00:03:53.519 align:start position:0%
+I've had to do a lot of work here
+ 
+
+00:03:53.519 --> 00:03:56.309 align:start position:0%
+I've had to do a lot of work here
+because<00:03:54.720><c> generally</c><00:03:55.280><c> I</c><00:03:55.440><c> I</c><00:03:55.760><c> understood</c><00:03:56.080><c> that</c>
+
+00:03:56.309 --> 00:03:56.319 align:start position:0%
+because generally I I understood that
+ 
+
+00:03:56.319 --> 00:03:59.589 align:start position:0%
+because generally I I understood that
+companies<00:03:56.720><c> would</c><00:03:56.959><c> understand</c>
+
+00:03:59.589 --> 00:03:59.599 align:start position:0%
+companies would understand
+ 
+
+00:03:59.599 --> 00:04:01.750 align:start position:0%
+companies would understand
+that<00:03:59.840><c> go</c><00:04:00.080><c> to</c><00:04:00.239><c> market</c><00:04:00.640><c> motions</c><00:04:01.280><c> especially</c>
+
+00:04:01.750 --> 00:04:01.760 align:start position:0%
+that go to market motions especially
+ 
+
+00:04:01.760 --> 00:04:03.270 align:start position:0%
+that go to market motions especially
+setting<00:04:02.080><c> things</c><00:04:02.239><c> up</c><00:04:02.480><c> well</c><00:04:02.640><c> for</c><00:04:02.799><c> the</c><00:04:03.040><c> future</c>
+
+00:04:03.270 --> 00:04:03.280 align:start position:0%
+setting things up well for the future
+ 
+
+00:04:03.280 --> 00:04:06.630 align:start position:0%
+setting things up well for the future
+and<00:04:03.599><c> and</c><00:04:04.159><c> fixing</c><00:04:04.720><c> years</c><00:04:05.760><c> of</c><00:04:06.080><c> mistakes</c><00:04:06.480><c> and</c>
+
+00:04:06.630 --> 00:04:06.640 align:start position:0%
+and and fixing years of mistakes and
+ 
+
+00:04:06.640 --> 00:04:08.630 align:start position:0%
+and and fixing years of mistakes and
+inefficiencies<00:04:07.519><c> would</c><00:04:07.760><c> take</c><00:04:07.920><c> more</c><00:04:08.159><c> than</c><00:04:08.319><c> like</c>
+
+00:04:08.630 --> 00:04:08.640 align:start position:0%
+inefficiencies would take more than like
+ 
+
+00:04:08.640 --> 00:04:11.910 align:start position:0%
+inefficiencies would take more than like
+18<00:04:09.040><c> or</c><00:04:09.519><c> or</c><00:04:09.920><c> 30</c><00:04:10.159><c> days</c><00:04:10.959><c> um</c><00:04:11.120><c> before</c><00:04:11.439><c> we</c><00:04:11.599><c> started</c>
+
+00:04:11.910 --> 00:04:11.920 align:start position:0%
+18 or or 30 days um before we started
+ 
+
+00:04:11.920 --> 00:04:13.509 align:start position:0%
+18 or or 30 days um before we started
+seeing<00:04:12.159><c> like</c><00:04:12.400><c> considerable</c><00:04:13.040><c> pipeline</c>
+
+00:04:13.509 --> 00:04:13.519 align:start position:0%
+seeing like considerable pipeline
+ 
+
+00:04:13.519 --> 00:04:16.310 align:start position:0%
+seeing like considerable pipeline
+generation.<00:04:14.640><c> But</c><00:04:15.280><c> this</c><00:04:15.519><c> is</c><00:04:15.680><c> super</c><00:04:15.920><c> important.</c>
+
+00:04:16.310 --> 00:04:16.320 align:start position:0%
+generation. But this is super important.
+ 
+
+00:04:16.320 --> 00:04:17.749 align:start position:0%
+generation. But this is super important.
+Set<00:04:16.479><c> the</c><00:04:16.639><c> expectation</c><00:04:16.959><c> that</c><00:04:17.199><c> like,</c><00:04:17.359><c> hey,</c><00:04:17.600><c> the</c>
+
+00:04:17.749 --> 00:04:17.759 align:start position:0%
+Set the expectation that like, hey, the
+ 
+
+00:04:17.759 --> 00:04:19.670 align:start position:0%
+Set the expectation that like, hey, the
+first<00:04:17.919><c> 30</c><00:04:18.160><c> days,</c><00:04:18.400><c> we're</c><00:04:18.639><c> not</c><00:04:18.799><c> expecting</c><00:04:19.199><c> to</c><00:04:19.440><c> do</c>
+
+00:04:19.670 --> 00:04:19.680 align:start position:0%
+first 30 days, we're not expecting to do
+ 
+
+00:04:19.680 --> 00:04:21.590 align:start position:0%
+first 30 days, we're not expecting to do
+anything<00:04:20.160><c> other</c><00:04:20.479><c> than</c><00:04:20.720><c> get</c><00:04:20.959><c> to</c><00:04:21.120><c> know</c><00:04:21.199><c> you</c><00:04:21.440><c> and</c>
+
+00:04:21.590 --> 00:04:21.600 align:start position:0%
+anything other than get to know you and
+ 
+
+00:04:21.600 --> 00:04:25.030 align:start position:0%
+anything other than get to know you and
+your<00:04:21.759><c> systems.</c><00:04:22.960><c> Month</c><00:04:23.440><c> two</c><00:04:24.000><c> is</c><00:04:24.320><c> where</c><00:04:24.800><c> the</c>
+
+00:04:25.030 --> 00:04:25.040 align:start position:0%
+your systems. Month two is where the
+ 
+
+00:04:25.040 --> 00:04:27.749 align:start position:0%
+your systems. Month two is where the
+sending<00:04:25.840><c> and</c><00:04:26.000><c> the</c><00:04:26.160><c> pipeline</c><00:04:26.639><c> generation</c><00:04:27.199><c> will</c>
+
+00:04:27.749 --> 00:04:27.759 align:start position:0%
+sending and the pipeline generation will
+ 
+
+00:04:27.759 --> 00:04:30.150 align:start position:0%
+sending and the pipeline generation will
+ideally<00:04:28.320><c> happen,</c><00:04:29.120><c> but</c><00:04:29.360><c> we've</c><00:04:29.600><c> seen</c><00:04:29.759><c> it</c><00:04:30.000><c> take</c>
+
+00:04:30.150 --> 00:04:30.160 align:start position:0%
+ideally happen, but we've seen it take
+ 
+
+00:04:30.160 --> 00:04:32.550 align:start position:0%
+ideally happen, but we've seen it take
+as<00:04:30.400><c> long</c><00:04:30.560><c> as</c><00:04:30.880><c> 6</c><00:04:31.040><c> months.</c><00:04:31.440><c> Like</c><00:04:31.680><c> a</c><00:04:31.840><c> good</c><00:04:32.160><c> story</c>
+
+00:04:32.550 --> 00:04:32.560 align:start position:0%
+as long as 6 months. Like a good story
+ 
+
+00:04:32.560 --> 00:04:36.230 align:start position:0%
+as long as 6 months. Like a good story
+from<00:04:33.360><c> one</c><00:04:33.520><c> of</c><00:04:33.600><c> my</c><00:04:33.840><c> engineers</c><00:04:34.320><c> who</c><00:04:34.560><c> used</c><00:04:34.800><c> to</c><00:04:35.040><c> be</c>
+
+00:04:36.230 --> 00:04:36.240 align:start position:0%
+from one of my engineers who used to be
+ 
+
+00:04:36.240 --> 00:04:39.510 align:start position:0%
+from one of my engineers who used to be
+an<00:04:36.479><c> SDR</c><00:04:36.960><c> at</c><00:04:37.199><c> a</c><00:04:37.440><c> large</c><00:04:37.759><c> multinational</c><00:04:38.639><c> company</c>
+
+00:04:39.510 --> 00:04:39.520 align:start position:0%
+an SDR at a large multinational company
+ 
+
+00:04:39.520 --> 00:04:41.909 align:start position:0%
+an SDR at a large multinational company
+was<00:04:39.840><c> put</c><00:04:40.000><c> in</c><00:04:40.240><c> charge</c><00:04:40.880><c> of</c><00:04:41.120><c> finding</c><00:04:41.440><c> outbound</c>
+
+00:04:41.909 --> 00:04:41.919 align:start position:0%
+was put in charge of finding outbound
+ 
+
+00:04:41.919 --> 00:04:44.390 align:start position:0%
+was put in charge of finding outbound
+motions<00:04:42.479><c> that</c><00:04:42.800><c> worked.</c>
+
+00:04:44.390 --> 00:04:44.400 align:start position:0%
+motions that worked.
+ 
+
+00:04:44.400 --> 00:04:46.469 align:start position:0%
+motions that worked.
+Month<00:04:44.720><c> one,</c><00:04:45.360><c> nothing.</c><00:04:45.759><c> Month</c><00:04:46.000><c> two,</c><00:04:46.240><c> nothing.</c>
+
+00:04:46.469 --> 00:04:46.479 align:start position:0%
+Month one, nothing. Month two, nothing.
+ 
+
+00:04:46.479 --> 00:04:48.310 align:start position:0%
+Month one, nothing. Month two, nothing.
+Month<00:04:46.720><c> three,</c><00:04:46.960><c> nothing.</c><00:04:47.199><c> On</c><00:04:47.280><c> and</c><00:04:47.440><c> on</c><00:04:47.520><c> and</c><00:04:47.759><c> on.</c>
+
+00:04:48.310 --> 00:04:48.320 align:start position:0%
+Month three, nothing. On and on and on.
+ 
+
+00:04:48.320 --> 00:04:50.390 align:start position:0%
+Month three, nothing. On and on and on.
+Month<00:04:48.720><c> nine,</c><00:04:49.040><c> they</c><00:04:49.280><c> cracked</c><00:04:49.600><c> it</c><00:04:49.759><c> and</c><00:04:50.080><c> started</c>
+
+00:04:50.390 --> 00:04:50.400 align:start position:0%
+Month nine, they cracked it and started
+ 
+
+00:04:50.400 --> 00:04:53.350 align:start position:0%
+Month nine, they cracked it and started
+making<00:04:50.639><c> the</c><00:04:50.880><c> company</c><00:04:51.120><c> millions</c><00:04:51.520><c> of</c><00:04:51.759><c> dollars.</c>
+
+00:04:53.350 --> 00:04:53.360 align:start position:0%
+making the company millions of dollars.
+ 
+
+00:04:53.360 --> 00:04:56.230 align:start position:0%
+making the company millions of dollars.
+So,<00:04:54.639><c> I'm</c><00:04:54.880><c> not</c><00:04:55.040><c> saying</c><00:04:55.280><c> that</c><00:04:55.440><c> outbound</c><00:04:55.840><c> motions</c>
+
+00:04:56.230 --> 00:04:56.240 align:start position:0%
+So, I'm not saying that outbound motions
+ 
+
+00:04:56.240 --> 00:04:59.110 align:start position:0%
+So, I'm not saying that outbound motions
+have<00:04:56.400><c> to</c><00:04:56.639><c> take</c><00:04:56.800><c> that</c><00:04:57.040><c> long.</c><00:04:57.840><c> But</c><00:04:58.639><c> you</c><00:04:58.880><c> probably</c>
+
+00:04:59.110 --> 00:04:59.120 align:start position:0%
+have to take that long. But you probably
+ 
+
+00:04:59.120 --> 00:05:01.189 align:start position:0%
+have to take that long. But you probably
+didn't<00:04:59.360><c> crack</c><00:04:59.680><c> ads</c><00:05:00.080><c> on</c><00:05:00.240><c> your</c><00:05:00.400><c> first</c><00:05:00.639><c> campaign.</c>
+
+00:05:01.189 --> 00:05:01.199 align:start position:0%
+didn't crack ads on your first campaign.
+ 
+
+00:05:01.199 --> 00:05:03.350 align:start position:0%
+didn't crack ads on your first campaign.
+You<00:05:01.440><c> probably</c><00:05:02.240><c> didn't</c><00:05:02.560><c> develop</c><00:05:02.960><c> your</c><00:05:03.120><c> other</c>
+
+00:05:03.350 --> 00:05:03.360 align:start position:0%
+You probably didn't develop your other
+ 
+
+00:05:03.360 --> 00:05:05.189 align:start position:0%
+You probably didn't develop your other
+channels<00:05:03.759><c> in</c><00:05:04.080><c> one</c><00:05:04.320><c> month</c><00:05:04.479><c> or</c><00:05:04.639><c> two</c><00:05:04.800><c> months.</c><00:05:05.040><c> I'm</c>
+
+00:05:05.189 --> 00:05:05.199 align:start position:0%
+channels in one month or two months. I'm
+ 
+
+00:05:05.199 --> 00:05:07.189 align:start position:0%
+channels in one month or two months. I'm
+not<00:05:05.360><c> saying</c><00:05:05.440><c> the</c><00:05:05.680><c> pipeline</c><00:05:06.160><c> generation</c><00:05:06.800><c> can't</c>
+
+00:05:07.189 --> 00:05:07.199 align:start position:0%
+not saying the pipeline generation can't
+ 
+
+00:05:07.199 --> 00:05:08.870 align:start position:0%
+not saying the pipeline generation can't
+happen<00:05:07.520><c> in</c><00:05:07.680><c> the</c><00:05:07.840><c> first</c><00:05:08.080><c> month</c><00:05:08.240><c> or</c><00:05:08.479><c> the</c><00:05:08.639><c> second</c>
+
+00:05:08.870 --> 00:05:08.880 align:start position:0%
+happen in the first month or the second
+ 
+
+00:05:08.880 --> 00:05:11.189 align:start position:0%
+happen in the first month or the second
+month,<00:05:09.600><c> but</c><00:05:09.759><c> I</c><00:05:09.919><c> like</c><00:05:10.080><c> to</c><00:05:10.240><c> temper</c><00:05:10.639><c> expectations</c>
+
+00:05:11.189 --> 00:05:11.199 align:start position:0%
+month, but I like to temper expectations
+ 
+
+00:05:11.199 --> 00:05:13.749 align:start position:0%
+month, but I like to temper expectations
+here.<00:05:11.600><c> So</c><00:05:12.479><c> we</c><00:05:12.720><c> evaluate</c><00:05:13.120><c> the</c><00:05:13.199><c> team</c><00:05:13.440><c> structure.</c>
+
+00:05:13.749 --> 00:05:13.759 align:start position:0%
+here. So we evaluate the team structure.
+ 
+
+00:05:13.759 --> 00:05:16.150 align:start position:0%
+here. So we evaluate the team structure.
+Who<00:05:13.919><c> are</c><00:05:14.000><c> we</c><00:05:14.160><c> going</c><00:05:14.240><c> to</c><00:05:14.320><c> be</c><00:05:14.400><c> working</c><00:05:14.560><c> with?</c><00:05:15.759><c> Who</c>
+
+00:05:16.150 --> 00:05:16.160 align:start position:0%
+Who are we going to be working with? Who
+ 
+
+00:05:16.160 --> 00:05:18.629 align:start position:0%
+Who are we going to be working with? Who
+is<00:05:17.280><c> like</c><00:05:17.680><c> we're</c><00:05:17.919><c> going</c><00:05:18.000><c> to</c><00:05:18.080><c> leave</c><00:05:18.320><c> at</c><00:05:18.479><c> some</c>
+
+00:05:18.629 --> 00:05:18.639 align:start position:0%
+is like we're going to leave at some
+ 
+
+00:05:18.639 --> 00:05:20.310 align:start position:0%
+is like we're going to leave at some
+point<00:05:18.880><c> like</c><00:05:19.120><c> Stellar</c><00:05:19.520><c> Growth</c><00:05:19.759><c> or</c><00:05:19.919><c> whatever</c>
+
+00:05:20.310 --> 00:05:20.320 align:start position:0%
+point like Stellar Growth or whatever
+ 
+
+00:05:20.320 --> 00:05:21.990 align:start position:0%
+point like Stellar Growth or whatever
+company<00:05:21.199><c> that</c><00:05:21.440><c> is</c><00:05:21.600><c> setting</c><00:05:21.759><c> up</c><00:05:21.840><c> the</c>
+
+00:05:21.990 --> 00:05:22.000 align:start position:0%
+company that is setting up the
+ 
+
+00:05:22.000 --> 00:05:23.110 align:start position:0%
+company that is setting up the
+infrastructure.<00:05:22.479><c> We'll</c><00:05:22.639><c> leave</c><00:05:22.800><c> at</c><00:05:22.960><c> some</c>
+
+00:05:23.110 --> 00:05:23.120 align:start position:0%
+infrastructure. We'll leave at some
+ 
+
+00:05:23.120 --> 00:05:25.990 align:start position:0%
+infrastructure. We'll leave at some
+point.<00:05:24.080><c> Who</c><00:05:24.400><c> is</c><00:05:24.720><c> going</c><00:05:24.880><c> to</c><00:05:25.120><c> own</c><00:05:25.360><c> these</c><00:05:25.680><c> things</c>
+
+00:05:25.990 --> 00:05:26.000 align:start position:0%
+point. Who is going to own these things
+ 
+
+00:05:26.000 --> 00:05:29.270 align:start position:0%
+point. Who is going to own these things
+going<00:05:26.400><c> forward?</c><00:05:26.800><c> And</c><00:05:27.039><c> that</c><00:05:27.280><c> colors</c><00:05:27.759><c> a</c><00:05:28.080><c> lot</c><00:05:29.039><c> of</c>
+
+00:05:29.270 --> 00:05:29.280 align:start position:0%
+going forward? And that colors a lot of
+ 
+
+00:05:29.280 --> 00:05:32.310 align:start position:0%
+going forward? And that colors a lot of
+how<00:05:29.520><c> we</c><00:05:29.759><c> do</c><00:05:29.919><c> this</c><00:05:30.160><c> setup</c><00:05:30.800><c> because</c>
+
+00:05:32.310 --> 00:05:32.320 align:start position:0%
+how we do this setup because
+ 
+
+00:05:32.320 --> 00:05:35.110 align:start position:0%
+how we do this setup because
+oneoff<00:05:32.960><c> niche</c><00:05:33.440><c> campaigns</c><00:05:34.080><c> that</c><00:05:34.400><c> require</c><00:05:34.880><c> like</c>
+
+00:05:35.110 --> 00:05:35.120 align:start position:0%
+oneoff niche campaigns that require like
+ 
+
+00:05:35.120 --> 00:05:36.870 align:start position:0%
+oneoff niche campaigns that require like
+an<00:05:35.360><c> insane</c><00:05:35.680><c> amount</c><00:05:35.919><c> of</c><00:05:36.080><c> technical</c><00:05:36.479><c> knowledge</c>
+
+00:05:36.870 --> 00:05:36.880 align:start position:0%
+an insane amount of technical knowledge
+ 
+
+00:05:36.880 --> 00:05:39.110 align:start position:0%
+an insane amount of technical knowledge
+might<00:05:37.120><c> not</c><00:05:37.280><c> be</c><00:05:37.440><c> possible.</c>
+
+00:05:39.110 --> 00:05:39.120 align:start position:0%
+might not be possible.
+ 
+
+00:05:39.120 --> 00:05:41.350 align:start position:0%
+might not be possible.
+And<00:05:39.360><c> so</c><00:05:40.160><c> I'm</c><00:05:40.400><c> always</c><00:05:40.639><c> asking</c><00:05:40.960><c> when</c><00:05:41.199><c> I'm</c>
+
+00:05:41.350 --> 00:05:41.360 align:start position:0%
+And so I'm always asking when I'm
+ 
+
+00:05:41.360 --> 00:05:42.469 align:start position:0%
+And so I'm always asking when I'm
+setting<00:05:41.600><c> something</c><00:05:41.759><c> up,</c><00:05:42.000><c> who</c><00:05:42.240><c> is</c><00:05:42.320><c> going</c><00:05:42.400><c> to</c>
+
+00:05:42.469 --> 00:05:42.479 align:start position:0%
+setting something up, who is going to
+ 
+
+00:05:42.479 --> 00:05:44.310 align:start position:0%
+setting something up, who is going to
+own<00:05:42.720><c> this?</c><00:05:43.199><c> How</c><00:05:43.360><c> can</c><00:05:43.520><c> I</c><00:05:43.600><c> teach</c><00:05:43.840><c> them</c><00:05:43.919><c> to</c><00:05:44.000><c> own</c><00:05:44.160><c> it</c>
+
+00:05:44.310 --> 00:05:44.320 align:start position:0%
+own this? How can I teach them to own it
+ 
+
+00:05:44.320 --> 00:05:46.710 align:start position:0%
+own this? How can I teach them to own it
+properly?<00:05:45.120><c> We</c><00:05:45.360><c> do</c><00:05:45.600><c> not</c><00:05:45.840><c> want</c><00:05:46.080><c> something</c><00:05:46.479><c> just</c>
+
+00:05:46.710 --> 00:05:46.720 align:start position:0%
+properly? We do not want something just
+ 
+
+00:05:46.720 --> 00:05:48.469 align:start position:0%
+properly? We do not want something just
+randomly<00:05:47.199><c> breaking</c><00:05:47.520><c> after</c><00:05:47.840><c> six</c><00:05:48.080><c> months</c><00:05:48.240><c> and</c>
+
+00:05:48.469 --> 00:05:48.479 align:start position:0%
+randomly breaking after six months and
+ 
+
+00:05:48.479 --> 00:05:50.790 align:start position:0%
+randomly breaking after six months and
+them<00:05:48.720><c> them</c><00:05:48.960><c> having</c><00:05:49.199><c> to</c><00:05:49.360><c> redo</c><00:05:49.680><c> everything.</c>
+
+00:05:50.790 --> 00:05:50.800 align:start position:0%
+them them having to redo everything.
+ 
+
+00:05:50.800 --> 00:05:52.390 align:start position:0%
+them them having to redo everything.
+Setting<00:05:51.120><c> goals</c><00:05:51.360><c> and</c><00:05:51.520><c> expectations.</c><00:05:52.080><c> We</c><00:05:52.240><c> kind</c>
+
+00:05:52.390 --> 00:05:52.400 align:start position:0%
+Setting goals and expectations. We kind
+ 
+
+00:05:52.400 --> 00:05:55.189 align:start position:0%
+Setting goals and expectations. We kind
+of<00:05:52.479><c> already</c><00:05:52.720><c> talked</c><00:05:53.039><c> about</c><00:05:53.199><c> this.</c><00:05:54.000><c> Um</c><00:05:54.960><c> what</c>
+
+00:05:55.189 --> 00:05:55.199 align:start position:0%
+of already talked about this. Um what
+ 
+
+00:05:55.199 --> 00:05:57.189 align:start position:0%
+of already talked about this. Um what
+are<00:05:55.280><c> the</c><00:05:55.360><c> KPIs</c><00:05:55.919><c> for</c><00:05:56.080><c> success?</c><00:05:56.639><c> Generally,</c>
+
+00:05:57.189 --> 00:05:57.199 align:start position:0%
+are the KPIs for success? Generally,
+ 
+
+00:05:57.199 --> 00:05:59.909 align:start position:0%
+are the KPIs for success? Generally,
+really<00:05:57.520><c> early</c><00:05:57.759><c> on</c><00:05:58.000><c> it</c><00:05:58.240><c> looks</c><00:05:58.400><c> like</c><00:05:59.520><c> have</c><00:05:59.680><c> we</c>
+
+00:05:59.909 --> 00:05:59.919 align:start position:0%
+really early on it looks like have we
+ 
+
+00:05:59.919 --> 00:06:02.230 align:start position:0%
+really early on it looks like have we
+met<00:06:00.160><c> with</c><00:06:00.320><c> all</c><00:06:00.479><c> the</c><00:06:00.639><c> stakeholders?</c><00:06:01.840><c> Do</c><00:06:02.000><c> we</c>
+
+00:06:02.230 --> 00:06:02.240 align:start position:0%
+met with all the stakeholders? Do we
+ 
+
+00:06:02.240 --> 00:06:03.670 align:start position:0%
+met with all the stakeholders? Do we
+understand<00:06:02.639><c> what</c><00:06:02.800><c> we</c><00:06:02.960><c> want</c><00:06:03.039><c> to</c><00:06:03.120><c> do?</c><00:06:03.360><c> Do</c><00:06:03.520><c> we</c>
+
+00:06:03.670 --> 00:06:03.680 align:start position:0%
+understand what we want to do? Do we
+ 
+
+00:06:03.680 --> 00:06:05.189 align:start position:0%
+understand what we want to do? Do we
+have<00:06:03.759><c> a</c><00:06:03.919><c> good</c><00:06:04.000><c> scope</c><00:06:04.240><c> that</c><00:06:04.479><c> everybody</c><00:06:04.800><c> agrees</c>
+
+00:06:05.189 --> 00:06:05.199 align:start position:0%
+have a good scope that everybody agrees
+ 
+
+00:06:05.199 --> 00:06:07.110 align:start position:0%
+have a good scope that everybody agrees
+with?<00:06:05.759><c> And</c><00:06:05.919><c> then</c><00:06:06.080><c> later</c><00:06:06.319><c> on</c><00:06:06.479><c> it's</c><00:06:06.720><c> like</c><00:06:06.960><c> how</c>
+
+00:06:07.110 --> 00:06:07.120 align:start position:0%
+with? And then later on it's like how
+ 
+
+00:06:07.120 --> 00:06:08.629 align:start position:0%
+with? And then later on it's like how
+many<00:06:07.360><c> positive</c><00:06:07.759><c> replies</c><00:06:08.080><c> are</c><00:06:08.240><c> we</c><00:06:08.400><c> getting?</c>
+
+00:06:08.629 --> 00:06:08.639 align:start position:0%
+many positive replies are we getting?
+ 
+
+00:06:08.639 --> 00:06:11.749 align:start position:0%
+many positive replies are we getting?
+how<00:06:08.800><c> many</c><00:06:08.960><c> meetings</c><00:06:09.280><c> are</c><00:06:09.440><c> we</c><00:06:09.600><c> getting?</c><00:06:10.960><c> Um</c>
+
+00:06:11.749 --> 00:06:11.759 align:start position:0%
+how many meetings are we getting? Um
+ 
+
+00:06:11.759 --> 00:06:13.749 align:start position:0%
+how many meetings are we getting? Um
+what<00:06:12.000><c> is</c><00:06:12.160><c> working?</c><00:06:12.560><c> What</c><00:06:12.720><c> is</c><00:06:12.880><c> not?</c><00:06:13.360><c> At</c><00:06:13.440><c> the</c><00:06:13.680><c> end</c>
+
+00:06:13.749 --> 00:06:13.759 align:start position:0%
+what is working? What is not? At the end
+ 
+
+00:06:13.759 --> 00:06:15.830 align:start position:0%
+what is working? What is not? At the end
+of<00:06:13.840><c> the</c><00:06:13.919><c> day,</c><00:06:14.160><c> the</c><00:06:14.319><c> the</c><00:06:14.720><c> threemonth</c><00:06:15.360><c> GTM</c>
+
+00:06:15.830 --> 00:06:15.840 align:start position:0%
+of the day, the the threemonth GTM
+ 
+
+00:06:15.840 --> 00:06:17.510 align:start position:0%
+of the day, the the threemonth GTM
+infrastructure<00:06:16.319><c> goal</c><00:06:16.560><c> is</c><00:06:16.720><c> just</c><00:06:16.880><c> to</c><00:06:17.120><c> find</c><00:06:17.280><c> out</c>
+
+00:06:17.510 --> 00:06:17.520 align:start position:0%
+infrastructure goal is just to find out
+ 
+
+00:06:17.520 --> 00:06:20.390 align:start position:0%
+infrastructure goal is just to find out
+what<00:06:17.759><c> is</c><00:06:18.000><c> working</c><00:06:18.240><c> and</c><00:06:18.400><c> what</c><00:06:18.560><c> is</c><00:06:18.720><c> resonating.</c>
+
+00:06:20.390 --> 00:06:20.400 align:start position:0%
+what is working and what is resonating.
+ 
+
+00:06:20.400 --> 00:06:21.990 align:start position:0%
+what is working and what is resonating.
+And
+
+00:06:21.990 --> 00:06:22.000 align:start position:0%
+And
+ 
+
+00:06:22.000 --> 00:06:23.909 align:start position:0%
+And
+that's<00:06:22.319><c> going</c><00:06:22.400><c> to</c><00:06:22.479><c> pay</c><00:06:22.720><c> dividends</c><00:06:23.199><c> for</c><00:06:23.360><c> you.</c>
+
+00:06:23.909 --> 00:06:23.919 align:start position:0%
+that's going to pay dividends for you.
+ 
+
+00:06:23.919 --> 00:06:26.309 align:start position:0%
+that's going to pay dividends for you.
+If<00:06:24.080><c> you're</c><00:06:24.240><c> a</c><00:06:24.400><c> SAS</c><00:06:24.720><c> company</c><00:06:24.880><c> and</c><00:06:25.120><c> you</c><00:06:25.280><c> find</c><00:06:25.440><c> out</c>
+
+00:06:26.309 --> 00:06:26.319 align:start position:0%
+If you're a SAS company and you find out
+ 
+
+00:06:26.319 --> 00:06:28.950 align:start position:0%
+If you're a SAS company and you find out
+this<00:06:27.039><c> thing,</c><00:06:27.520><c> these</c><00:06:28.000><c> three</c><00:06:28.240><c> things</c><00:06:28.560><c> maybe</c>
+
+00:06:28.950 --> 00:06:28.960 align:start position:0%
+this thing, these three things maybe
+ 
+
+00:06:28.960 --> 00:06:30.309 align:start position:0%
+this thing, these three things maybe
+that<00:06:29.199><c> you</c><00:06:29.360><c> thought</c><00:06:29.520><c> would</c><00:06:29.759><c> really</c><00:06:29.919><c> resonate</c>
+
+00:06:30.309 --> 00:06:30.319 align:start position:0%
+that you thought would really resonate
+ 
+
+00:06:30.319 --> 00:06:33.510 align:start position:0%
+that you thought would really resonate
+with<00:06:30.479><c> the</c><00:06:30.639><c> market</c><00:06:31.520><c> don't,</c><00:06:32.319><c> then</c><00:06:32.960><c> we</c><00:06:33.199><c> can</c><00:06:33.360><c> move</c>
+
+00:06:33.510 --> 00:06:33.520 align:start position:0%
+with the market don't, then we can move
+ 
+
+00:06:33.520 --> 00:06:35.670 align:start position:0%
+with the market don't, then we can move
+on<00:06:33.680><c> and</c><00:06:33.919><c> do</c><00:06:34.080><c> something</c><00:06:34.319><c> else.</c><00:06:34.960><c> and</c><00:06:35.199><c> you're</c><00:06:35.360><c> not</c>
+
+00:06:35.670 --> 00:06:35.680 align:start position:0%
+on and do something else. and you're not
+ 
+
+00:06:35.680 --> 00:06:37.590 align:start position:0%
+on and do something else. and you're not
+you're<00:06:35.919><c> never</c><00:06:36.160><c> going</c><00:06:36.240><c> to</c><00:06:36.319><c> spend</c><00:06:36.560><c> money</c><00:06:36.800><c> on</c><00:06:37.120><c> on</c>
+
+00:06:37.590 --> 00:06:37.600 align:start position:0%
+you're never going to spend money on on
+ 
+
+00:06:37.600 --> 00:06:39.270 align:start position:0%
+you're never going to spend money on on
+doing<00:06:37.759><c> it</c><00:06:37.919><c> if</c><00:06:38.080><c> you</c><00:06:38.240><c> did</c><00:06:38.400><c> it</c><00:06:38.560><c> properly</c><00:06:38.960><c> ever</c>
+
+00:06:39.270 --> 00:06:39.280 align:start position:0%
+doing it if you did it properly ever
+ 
+
+00:06:39.280 --> 00:06:41.510 align:start position:0%
+doing it if you did it properly ever
+again<00:06:40.319><c> or</c><00:06:40.560><c> you'll</c><00:06:40.800><c> lean</c><00:06:41.039><c> into</c><00:06:41.280><c> what's</c>
+
+00:06:41.510 --> 00:06:41.520 align:start position:0%
+again or you'll lean into what's
+ 
+
+00:06:41.520 --> 00:06:44.150 align:start position:0%
+again or you'll lean into what's
+working.<00:06:42.240><c> And</c><00:06:42.479><c> so</c><00:06:42.800><c> there</c><00:06:43.039><c> is</c><00:06:43.680><c> this</c><00:06:43.840><c> is</c><00:06:44.000><c> the</c>
+
+00:06:44.150 --> 00:06:44.160 align:start position:0%
+working. And so there is this is the
+ 
+
+00:06:44.160 --> 00:06:45.749 align:start position:0%
+working. And so there is this is the
+toughest<00:06:44.479><c> part</c><00:06:44.639><c> of</c><00:06:44.800><c> any</c><00:06:45.039><c> engagement</c><00:06:45.360><c> is</c><00:06:45.600><c> like</c>
+
+00:06:45.749 --> 00:06:45.759 align:start position:0%
+toughest part of any engagement is like
+ 
+
+00:06:45.759 --> 00:06:48.550 align:start position:0%
+toughest part of any engagement is like
+goals<00:06:45.919><c> and</c><00:06:46.080><c> expectations.</c><00:06:47.360><c> Um</c><00:06:47.840><c> sales</c><00:06:48.319><c> really</c>
+
+00:06:48.550 --> 00:06:48.560 align:start position:0%
+goals and expectations. Um sales really
+ 
+
+00:06:48.560 --> 00:06:50.950 align:start position:0%
+goals and expectations. Um sales really
+wants<00:06:48.960><c> their</c><00:06:49.280><c> teams</c><00:06:49.759><c> to</c><00:06:50.160><c> have</c><00:06:50.639><c> full</c>
+
+00:06:50.950 --> 00:06:50.960 align:start position:0%
+wants their teams to have full
+ 
+
+00:06:50.960 --> 00:06:53.590 align:start position:0%
+wants their teams to have full
+calendars.<00:06:52.240><c> Leadership</c><00:06:52.880><c> really</c><00:06:53.199><c> wants</c><00:06:53.440><c> to</c>
+
+00:06:53.590 --> 00:06:53.600 align:start position:0%
+calendars. Leadership really wants to
+ 
+
+00:06:53.600 --> 00:06:55.270 align:start position:0%
+calendars. Leadership really wants to
+make<00:06:53.840><c> money</c><00:06:54.240><c> and</c><00:06:54.479><c> they're</c><00:06:54.720><c> investing</c><00:06:55.039><c> a</c><00:06:55.199><c> lot</c>
+
+00:06:55.270 --> 00:06:55.280 align:start position:0%
+make money and they're investing a lot
+ 
+
+00:06:55.280 --> 00:06:56.230 align:start position:0%
+make money and they're investing a lot
+of<00:06:55.360><c> money</c><00:06:55.520><c> into</c><00:06:55.680><c> this</c><00:06:55.840><c> G</c><00:06:56.000><c> team</c>
+
+00:06:56.230 --> 00:06:56.240 align:start position:0%
+of money into this G team
+ 
+
+00:06:56.240 --> 00:06:58.629 align:start position:0%
+of money into this G team
+infrastructure,<00:06:56.800><c> right?</c><00:06:57.600><c> So</c><00:06:58.080><c> yeah,</c><00:06:58.400><c> once</c>
+
+00:06:58.629 --> 00:06:58.639 align:start position:0%
+infrastructure, right? So yeah, once
+ 
+
+00:06:58.639 --> 00:06:59.830 align:start position:0%
+infrastructure, right? So yeah, once
+we've<00:06:58.880><c> met</c><00:06:58.960><c> with</c><00:06:59.120><c> all</c><00:06:59.199><c> the</c><00:06:59.360><c> stakeholders,</c><00:06:59.680><c> we</c>
+
+00:06:59.830 --> 00:06:59.840 align:start position:0%
+we've met with all the stakeholders, we
+ 
+
+00:06:59.840 --> 00:07:01.749 align:start position:0%
+we've met with all the stakeholders, we
+move<00:06:59.919><c> into</c><00:07:00.080><c> the</c><00:07:00.240><c> audit</c><00:07:00.479><c> phase.</c><00:07:01.440><c> See</c><00:07:01.680><c> what</c>
+
+00:07:01.749 --> 00:07:01.759 align:start position:0%
+move into the audit phase. See what
+ 
+
+00:07:01.759 --> 00:07:03.830 align:start position:0%
+move into the audit phase. See what
+they've<00:07:01.919><c> done</c><00:07:02.080><c> in</c><00:07:02.240><c> the</c><00:07:02.400><c> past.</c><00:07:02.960><c> Audit</c><00:07:03.280><c> the</c><00:07:03.360><c> CRM.</c>
+
+00:07:03.830 --> 00:07:03.840 align:start position:0%
+they've done in the past. Audit the CRM.
+ 
+
+00:07:03.840 --> 00:07:05.350 align:start position:0%
+they've done in the past. Audit the CRM.
+How<00:07:03.919><c> bad</c><00:07:04.080><c> is</c><00:07:04.160><c> it?</c><00:07:04.400><c> How</c><00:07:04.560><c> many</c><00:07:04.720><c> contacts</c><00:07:05.120><c> are</c><00:07:05.199><c> in</c>
+
+00:07:05.350 --> 00:07:05.360 align:start position:0%
+How bad is it? How many contacts are in
+ 
+
+00:07:05.360 --> 00:07:07.270 align:start position:0%
+How bad is it? How many contacts are in
+there?<00:07:06.160><c> What</c><00:07:06.319><c> do</c><00:07:06.479><c> you</c><00:07:06.639><c> guys</c><00:07:06.800><c> think</c><00:07:07.039><c> your</c>
+
+00:07:07.270 --> 00:07:07.280 align:start position:0%
+there? What do you guys think your
+ 
+
+00:07:07.280 --> 00:07:08.950 align:start position:0%
+there? What do you guys think your
+target<00:07:07.599><c> area</c><00:07:07.840><c> market</c><00:07:08.080><c> size</c><00:07:08.319><c> is?</c><00:07:08.560><c> We'll</c><00:07:08.720><c> do</c><00:07:08.800><c> a</c>
+
+00:07:08.950 --> 00:07:08.960 align:start position:0%
+target area market size is? We'll do a
+ 
+
+00:07:08.960 --> 00:07:10.550 align:start position:0%
+target area market size is? We'll do a
+little<00:07:09.039><c> bit</c><00:07:09.199><c> of</c><00:07:09.280><c> back</c><00:07:09.440><c> and</c><00:07:09.599><c> forth</c><00:07:09.759><c> with</c><00:07:09.919><c> AI</c><00:07:10.319><c> to</c>
+
+00:07:10.550 --> 00:07:10.560 align:start position:0%
+little bit of back and forth with AI to
+ 
+
+00:07:10.560 --> 00:07:12.390 align:start position:0%
+little bit of back and forth with AI to
+kind<00:07:10.720><c> of</c><00:07:10.800><c> understand</c><00:07:11.680><c> your</c><00:07:11.919><c> business</c><00:07:12.160><c> a</c>
+
+00:07:12.390 --> 00:07:12.400 align:start position:0%
+kind of understand your business a
+ 
+
+00:07:12.400 --> 00:07:13.670 align:start position:0%
+kind of understand your business a
+little<00:07:12.479><c> bit.</c><00:07:12.639><c> We'll</c><00:07:12.880><c> also</c><00:07:13.120><c> look</c><00:07:13.280><c> through</c><00:07:13.520><c> your</c>
+
+00:07:13.670 --> 00:07:13.680 align:start position:0%
+little bit. We'll also look through your
+ 
+
+00:07:13.680 --> 00:07:15.749 align:start position:0%
+little bit. We'll also look through your
+sales<00:07:13.919><c> calls.</c><00:07:14.319><c> Like</c><00:07:14.479><c> I</c><00:07:14.720><c> will</c><00:07:14.960><c> physically</c><00:07:15.440><c> look</c>
+
+00:07:15.749 --> 00:07:15.759 align:start position:0%
+sales calls. Like I will physically look
+ 
+
+00:07:15.759 --> 00:07:17.189 align:start position:0%
+sales calls. Like I will physically look
+through<00:07:16.000><c> them</c><00:07:16.319><c> rather</c><00:07:16.639><c> than</c><00:07:16.800><c> just</c><00:07:16.960><c> feeding</c>
+
+00:07:17.189 --> 00:07:17.199 align:start position:0%
+through them rather than just feeding
+ 
+
+00:07:17.199 --> 00:07:19.430 align:start position:0%
+through them rather than just feeding
+them<00:07:17.360><c> to</c><00:07:17.520><c> AI.</c><00:07:18.560><c> And</c><00:07:18.800><c> we'll</c><00:07:18.960><c> come</c><00:07:19.120><c> up</c><00:07:19.199><c> with</c><00:07:19.280><c> a</c>
+
+00:07:19.430 --> 00:07:19.440 align:start position:0%
+them to AI. And we'll come up with a
+ 
+
+00:07:19.440 --> 00:07:21.110 align:start position:0%
+them to AI. And we'll come up with a
+scope<00:07:19.680><c> that</c><00:07:19.840><c> everyone</c><00:07:20.080><c> agrees</c><00:07:20.400><c> with.</c><00:07:20.960><c> We</c>
+
+00:07:21.110 --> 00:07:21.120 align:start position:0%
+scope that everyone agrees with. We
+ 
+
+00:07:21.120 --> 00:07:23.189 align:start position:0%
+scope that everyone agrees with. We
+decide<00:07:21.360><c> to</c><00:07:21.520><c> work</c><00:07:21.680><c> together.</c><00:07:22.319><c> Great.</c><00:07:22.960><c> We've</c>
+
+00:07:23.189 --> 00:07:23.199 align:start position:0%
+decide to work together. Great. We've
+ 
+
+00:07:23.199 --> 00:07:26.390 align:start position:0%
+decide to work together. Great. We've
+done<00:07:23.360><c> all</c><00:07:23.599><c> that</c><00:07:23.840><c> ground</c><00:07:24.160><c> work.</c><00:07:24.720><c> we</c><00:07:25.039><c> on</c><00:07:25.280><c> board</c>
+
+00:07:26.390 --> 00:07:26.400 align:start position:0%
+done all that ground work. we on board
+ 
+
+00:07:26.400 --> 00:07:27.670 align:start position:0%
+done all that ground work. we on board
+and<00:07:26.639><c> we</c><00:07:26.800><c> start</c><00:07:26.880><c> to</c><00:07:27.039><c> reserve</c><00:07:27.280><c> the</c><00:07:27.440><c> email</c>
+
+00:07:27.670 --> 00:07:27.680 align:start position:0%
+and we start to reserve the email
+ 
+
+00:07:27.680 --> 00:07:29.029 align:start position:0%
+and we start to reserve the email
+infrastructure<00:07:28.160><c> which</c><00:07:28.319><c> is</c><00:07:28.479><c> super</c><00:07:28.720><c> important</c>
+
+00:07:29.029 --> 00:07:29.039 align:start position:0%
+infrastructure which is super important
+ 
+
+00:07:29.039 --> 00:07:31.749 align:start position:0%
+infrastructure which is super important
+because<00:07:30.080><c> I'm</c><00:07:30.479><c> going</c><00:07:30.560><c> to</c><00:07:30.639><c> say</c><00:07:30.800><c> this</c><00:07:31.520><c> going</c>
+
+00:07:31.749 --> 00:07:31.759 align:start position:0%
+because I'm going to say this going
+ 
+
+00:07:31.759 --> 00:07:35.189 align:start position:0%
+because I'm going to say this going
+forward<00:07:32.720><c> is</c><00:07:32.960><c> that</c><00:07:33.840><c> companies</c><00:07:34.319><c> must</c><00:07:34.639><c> wait</c><00:07:34.880><c> 30</c>
+
+00:07:35.189 --> 00:07:35.199 align:start position:0%
+forward is that companies must wait 30
+ 
+
+00:07:35.199 --> 00:07:38.309 align:start position:0%
+forward is that companies must wait 30
+days<00:07:35.360><c> to</c><00:07:35.599><c> send</c><00:07:36.479><c> that</c><00:07:36.800><c> serves</c><00:07:37.199><c> two</c><00:07:37.360><c> purposes</c>
+
+00:07:38.309 --> 00:07:38.319 align:start position:0%
+days to send that serves two purposes
+ 
+
+00:07:38.319 --> 00:07:40.950 align:start position:0%
+days to send that serves two purposes
+one<00:07:39.599><c> we</c><00:07:39.840><c> decide</c><00:07:40.080><c> what's</c><00:07:40.400><c> really</c><00:07:40.560><c> important</c><00:07:40.800><c> in</c>
+
+00:07:40.950 --> 00:07:40.960 align:start position:0%
+one we decide what's really important in
+ 
+
+00:07:40.960 --> 00:07:43.589 align:start position:0%
+one we decide what's really important in
+terms<00:07:41.120><c> of</c><00:07:41.280><c> outcome</c><00:07:42.319><c> and</c><00:07:42.479><c> then</c><00:07:42.720><c> number</c><00:07:42.960><c> two</c><00:07:43.360><c> we</c>
+
+00:07:43.589 --> 00:07:43.599 align:start position:0%
+terms of outcome and then number two we
+ 
+
+00:07:43.599 --> 00:07:46.550 align:start position:0%
+terms of outcome and then number two we
+don't<00:07:43.759><c> get</c><00:07:43.919><c> any</c><00:07:44.639><c> uh</c><00:07:44.960><c> like</c><00:07:45.680><c> virgin</c><00:07:46.080><c> domain</c>
+
+00:07:46.550 --> 00:07:46.560 align:start position:0%
+don't get any uh like virgin domain
+ 
+
+00:07:46.560 --> 00:07:48.790 align:start position:0%
+don't get any uh like virgin domain
+flags<00:07:47.199><c> from</c>
+
+00:07:48.790 --> 00:07:48.800 align:start position:0%
+flags from
+ 
+
+00:07:48.800 --> 00:07:51.189 align:start position:0%
+flags from
+um<00:07:49.680><c> like</c><00:07:49.919><c> it</c><00:07:50.080><c> just</c><00:07:50.240><c> allows</c><00:07:50.479><c> us</c><00:07:50.639><c> to</c><00:07:50.720><c> fully</c><00:07:51.039><c> use</c>
+
+00:07:51.189 --> 00:07:51.199 align:start position:0%
+um like it just allows us to fully use
+ 
+
+00:07:51.199 --> 00:07:53.350 align:start position:0%
+um like it just allows us to fully use
+the<00:07:51.440><c> infrastructure</c><00:07:52.000><c> if</c><00:07:52.080><c> if</c><00:07:52.400><c> you're</c><00:07:52.560><c> sending</c>
+
+00:07:53.350 --> 00:07:53.360 align:start position:0%
+the infrastructure if if you're sending
+ 
+
+00:07:53.360 --> 00:07:54.629 align:start position:0%
+the infrastructure if if you're sending
+from<00:07:53.599><c> a</c><00:07:53.840><c> new</c><00:07:53.919><c> infrastructure</c><00:07:54.240><c> ffstruure</c><00:07:54.560><c> and</c>
+
+00:07:54.629 --> 00:07:54.639 align:start position:0%
+from a new infrastructure ffstruure and
+ 
+
+00:07:54.639 --> 00:07:56.869 align:start position:0%
+from a new infrastructure ffstruure and
+the<00:07:54.800><c> domains</c><00:07:55.120><c> are</c><00:07:55.199><c> only</c><00:07:55.360><c> like</c><00:07:55.520><c> two</c><00:07:55.680><c> weeks</c><00:07:55.840><c> old,</c>
+
+00:07:56.869 --> 00:07:56.879 align:start position:0%
+the domains are only like two weeks old,
+ 
+
+00:07:56.879 --> 00:07:58.309 align:start position:0%
+the domains are only like two weeks old,
+you're<00:07:57.120><c> going</c><00:07:57.120><c> to</c><00:07:57.280><c> get</c><00:07:57.440><c> higher</c><00:07:57.680><c> bounce</c><00:07:57.919><c> rates.</c>
+
+00:07:58.309 --> 00:07:58.319 align:start position:0%
+you're going to get higher bounce rates.
+ 
+
+00:07:58.319 --> 00:08:00.710 align:start position:0%
+you're going to get higher bounce rates.
+You're<00:07:58.479><c> not</c><00:07:58.639><c> going</c><00:07:58.639><c> to</c><00:07:58.800><c> get</c><00:07:58.960><c> to</c><00:07:59.199><c> utilize</c><00:07:59.759><c> the</c>
+
+00:08:00.710 --> 00:08:00.720 align:start position:0%
+You're not going to get to utilize the
+ 
+
+00:08:00.720 --> 00:08:03.830 align:start position:0%
+You're not going to get to utilize the
+infrastructure<00:08:01.520><c> as</c><00:08:01.759><c> well</c><00:08:01.919><c> as</c><00:08:02.160><c> possible.</c><00:08:03.520><c> If</c>
+
+00:08:03.830 --> 00:08:03.840 align:start position:0%
+infrastructure as well as possible. If
+ 
+
+00:08:03.840 --> 00:08:05.990 align:start position:0%
+infrastructure as well as possible. If
+there<00:08:04.000><c> is</c><00:08:04.160><c> like</c><00:08:04.319><c> an</c><00:08:04.560><c> event</c><00:08:05.120><c> or</c><00:08:05.440><c> something</c>
+
+00:08:05.990 --> 00:08:06.000 align:start position:0%
+there is like an event or something
+ 
+
+00:08:06.000 --> 00:08:08.710 align:start position:0%
+there is like an event or something
+highly<00:08:06.879><c> impactful,</c><00:08:07.919><c> there</c><00:08:08.160><c> might</c><00:08:08.400><c> be</c><00:08:08.479><c> an</c>
+
+00:08:08.710 --> 00:08:08.720 align:start position:0%
+highly impactful, there might be an
+ 
+
+00:08:08.720 --> 00:08:10.070 align:start position:0%
+highly impactful, there might be an
+opportunity<00:08:09.199><c> to</c><00:08:09.440><c> use</c><00:08:09.599><c> generic</c>
+
+00:08:10.070 --> 00:08:10.080 align:start position:0%
+opportunity to use generic
+ 
+
+00:08:10.080 --> 00:08:11.749 align:start position:0%
+opportunity to use generic
+infrastructure,<00:08:10.639><c> but</c><00:08:10.879><c> I</c><00:08:11.120><c> would</c><00:08:11.280><c> discourage</c>
+
+00:08:11.749 --> 00:08:11.759 align:start position:0%
+infrastructure, but I would discourage
+ 
+
+00:08:11.759 --> 00:08:14.469 align:start position:0%
+infrastructure, but I would discourage
+it.<00:08:13.120><c> So</c><00:08:13.360><c> then</c><00:08:13.599><c> we</c><00:08:13.840><c> move</c><00:08:13.919><c> on</c><00:08:14.080><c> to</c><00:08:14.160><c> market</c>
+
+00:08:14.469 --> 00:08:14.479 align:start position:0%
+it. So then we move on to market
+ 
+
+00:08:14.479 --> 00:08:16.230 align:start position:0%
+it. So then we move on to market
+research.<00:08:14.879><c> This</c><00:08:14.960><c> is</c><00:08:15.039><c> the</c><00:08:15.280><c> period</c><00:08:15.520><c> in</c><00:08:15.680><c> which</c><00:08:16.160><c> if</c>
+
+00:08:16.230 --> 00:08:16.240 align:start position:0%
+research. This is the period in which if
+ 
+
+00:08:16.240 --> 00:08:18.390 align:start position:0%
+research. This is the period in which if
+it<00:08:16.479><c> hasn't</c><00:08:16.720><c> been</c><00:08:16.800><c> done</c><00:08:17.039><c> already,</c><00:08:17.919><c> I</c><00:08:18.240><c> am</c>
+
+00:08:18.390 --> 00:08:18.400 align:start position:0%
+it hasn't been done already, I am
+ 
+
+00:08:18.400 --> 00:08:19.830 align:start position:0%
+it hasn't been done already, I am
+understanding<00:08:18.800><c> your</c><00:08:19.039><c> business.</c><00:08:19.360><c> My</c><00:08:19.520><c> team</c><00:08:19.680><c> is</c>
+
+00:08:19.830 --> 00:08:19.840 align:start position:0%
+understanding your business. My team is
+ 
+
+00:08:19.840 --> 00:08:21.510 align:start position:0%
+understanding your business. My team is
+understanding<00:08:20.240><c> your</c><00:08:20.479><c> business.</c><00:08:21.199><c> You</c><00:08:21.440><c> are</c>
+
+00:08:21.510 --> 00:08:21.520 align:start position:0%
+understanding your business. You are
+ 
+
+00:08:21.520 --> 00:08:23.189 align:start position:0%
+understanding your business. You are
+feeding<00:08:21.840><c> us</c><00:08:22.080><c> documentation</c><00:08:22.639><c> that</c><00:08:22.879><c> will</c><00:08:23.039><c> help</c>
+
+00:08:23.189 --> 00:08:23.199 align:start position:0%
+feeding us documentation that will help
+ 
+
+00:08:23.199 --> 00:08:26.469 align:start position:0%
+feeding us documentation that will help
+us<00:08:23.440><c> understand</c><00:08:23.759><c> your</c><00:08:24.000><c> business</c><00:08:24.960><c> and</c><00:08:26.160><c> not</c>
+
+00:08:26.469 --> 00:08:26.479 align:start position:0%
+us understand your business and not
+ 
+
+00:08:26.479 --> 00:08:28.710 align:start position:0%
+us understand your business and not
+because<00:08:26.720><c> we</c><00:08:26.960><c> don't</c><00:08:27.120><c> trust</c><00:08:27.360><c> you</c><00:08:28.240><c> but</c><00:08:28.479><c> we</c><00:08:28.639><c> want</c>
+
+00:08:28.710 --> 00:08:28.720 align:start position:0%
+because we don't trust you but we want
+ 
+
+00:08:28.720 --> 00:08:30.950 align:start position:0%
+because we don't trust you but we want
+to<00:08:28.879><c> verify.</c><00:08:29.759><c> We</c><00:08:30.000><c> will</c><00:08:30.240><c> go</c><00:08:30.400><c> through</c><00:08:30.639><c> market</c>
+
+00:08:30.950 --> 00:08:30.960 align:start position:0%
+to verify. We will go through market
+ 
+
+00:08:30.960 --> 00:08:33.670 align:start position:0%
+to verify. We will go through market
+research<00:08:31.440><c> with</c><00:08:31.759><c> AI</c><00:08:32.240><c> the</c><00:08:32.399><c> best</c><00:08:32.560><c> AI</c><00:08:32.880><c> models</c><00:08:33.440><c> that</c>
+
+00:08:33.670 --> 00:08:33.680 align:start position:0%
+research with AI the best AI models that
+ 
+
+00:08:33.680 --> 00:08:35.190 align:start position:0%
+research with AI the best AI models that
+are<00:08:33.839><c> available.</c><00:08:34.240><c> This</c><00:08:34.399><c> changes</c><00:08:34.719><c> from</c><00:08:34.880><c> time</c><00:08:34.959><c> to</c>
+
+00:08:35.190 --> 00:08:35.200 align:start position:0%
+are available. This changes from time to
+ 
+
+00:08:35.200 --> 00:08:38.630 align:start position:0%
+are available. This changes from time to
+time.<00:08:36.399><c> We</c><00:08:36.640><c> will</c><00:08:37.360><c> decide</c><00:08:37.680><c> how</c><00:08:37.919><c> to</c><00:08:38.000><c> segment</c><00:08:38.399><c> your</c>
+
+00:08:38.630 --> 00:08:38.640 align:start position:0%
+time. We will decide how to segment your
+ 
+
+00:08:38.640 --> 00:08:39.750 align:start position:0%
+time. We will decide how to segment your
+verticals<00:08:39.120><c> especially</c><00:08:39.360><c> if</c><00:08:39.519><c> you're</c><00:08:39.599><c> a</c>
+
+00:08:39.750 --> 00:08:39.760 align:start position:0%
+verticals especially if you're a
+ 
+
+00:08:39.760 --> 00:08:41.029 align:start position:0%
+verticals especially if you're a
+horizontal<00:08:40.159><c> SAS.</c><00:08:40.560><c> This</c><00:08:40.719><c> is</c><00:08:40.800><c> really</c>
+
+00:08:41.029 --> 00:08:41.039 align:start position:0%
+horizontal SAS. This is really
+ 
+
+00:08:41.039 --> 00:08:45.190 align:start position:0%
+horizontal SAS. This is really
+important.<00:08:42.000><c> Um</c><00:08:42.800><c> we'll</c><00:08:43.120><c> go</c><00:08:43.279><c> through</c>
+
+00:08:45.190 --> 00:08:45.200 align:start position:0%
+important. Um we'll go through
+ 
+
+00:08:45.200 --> 00:08:50.230 align:start position:0%
+important. Um we'll go through
+ICP<00:08:46.480><c> uh</c><00:08:47.519><c> ICP</c><00:08:48.399><c> um</c><00:08:49.040><c> documentation.</c><00:08:49.839><c> Basically,</c>
+
+00:08:50.230 --> 00:08:50.240 align:start position:0%
+ICP uh ICP um documentation. Basically,
+ 
+
+00:08:50.240 --> 00:08:52.389 align:start position:0%
+ICP uh ICP um documentation. Basically,
+who<00:08:50.399><c> is</c><00:08:50.560><c> your</c><00:08:50.720><c> who</c><00:08:50.959><c> is</c><00:08:51.040><c> your</c><00:08:51.200><c> ICP?</c><00:08:52.080><c> These</c>
+
+00:08:52.389 --> 00:08:52.399 align:start position:0%
+who is your who is your ICP? These
+ 
+
+00:08:52.399 --> 00:08:53.670 align:start position:0%
+who is your who is your ICP? These
+documents<00:08:52.800><c> are</c><00:08:52.959><c> going</c><00:08:52.959><c> to</c><00:08:53.120><c> be</c><00:08:53.200><c> the</c><00:08:53.360><c> foundation</c>
+
+00:08:53.670 --> 00:08:53.680 align:start position:0%
+documents are going to be the foundation
+ 
+
+00:08:53.680 --> 00:08:56.550 align:start position:0%
+documents are going to be the foundation
+for<00:08:53.920><c> the</c><00:08:54.080><c> future.</c><00:08:55.519><c> What</c><00:08:55.680><c> is</c><00:08:55.760><c> your</c><00:08:56.080><c> target</c><00:08:56.320><c> area</c>
+
+00:08:56.550 --> 00:08:56.560 align:start position:0%
+for the future. What is your target area
+ 
+
+00:08:56.560 --> 00:08:58.230 align:start position:0%
+for the future. What is your target area
+market?<00:08:56.880><c> Like,</c><00:08:57.120><c> who</c><00:08:57.360><c> is</c><00:08:57.519><c> the</c><00:08:57.680><c> ideal</c><00:08:58.000><c> person</c>
+
+00:08:58.230 --> 00:08:58.240 align:start position:0%
+market? Like, who is the ideal person
+ 
+
+00:08:58.240 --> 00:08:59.350 align:start position:0%
+market? Like, who is the ideal person
+you<00:08:58.399><c> want</c><00:08:58.560><c> to</c><00:08:58.640><c> work</c><00:08:58.720><c> with?</c><00:08:58.959><c> What</c><00:08:59.120><c> are</c><00:08:59.200><c> the</c>
+
+00:08:59.350 --> 00:08:59.360 align:start position:0%
+you want to work with? What are the
+ 
+
+00:08:59.360 --> 00:09:01.509 align:start position:0%
+you want to work with? What are the
+ideal<00:08:59.680><c> personas?</c><00:09:00.640><c> Some</c><00:09:00.880><c> companies</c><00:09:01.279><c> have</c>
+
+00:09:01.509 --> 00:09:01.519 align:start position:0%
+ideal personas? Some companies have
+ 
+
+00:09:01.519 --> 00:09:03.750 align:start position:0%
+ideal personas? Some companies have
+already<00:09:01.760><c> done</c><00:09:01.920><c> this.</c><00:09:02.640><c> I</c><00:09:02.880><c> like</c><00:09:03.120><c> to</c><00:09:03.360><c> at</c><00:09:03.360><c> least</c>
+
+00:09:03.750 --> 00:09:03.760 align:start position:0%
+already done this. I like to at least
+ 
+
+00:09:03.760 --> 00:09:06.710 align:start position:0%
+already done this. I like to at least
+add<00:09:04.000><c> to</c><00:09:04.160><c> it.</c><00:09:04.480><c> I'm</c><00:09:04.720><c> like,</c><00:09:05.440><c> hold</c><00:09:05.680><c> on.</c><00:09:06.000><c> I</c><00:09:06.160><c> I</c><00:09:06.560><c> get</c>
+
+00:09:06.710 --> 00:09:06.720 align:start position:0%
+add to it. I'm like, hold on. I I get
+ 
+
+00:09:06.720 --> 00:09:09.430 align:start position:0%
+add to it. I'm like, hold on. I I get
+that<00:09:06.959><c> you</c><00:09:07.200><c> think</c><00:09:07.440><c> you</c><00:09:07.680><c> know</c><00:09:08.320><c> what</c><00:09:08.640><c> you</c><00:09:08.800><c> know.</c>
+
+00:09:09.430 --> 00:09:09.440 align:start position:0%
+that you think you know what you know.
+ 
+
+00:09:09.440 --> 00:09:10.710 align:start position:0%
+that you think you know what you know.
+We're<00:09:09.680><c> going</c><00:09:09.760><c> to</c><00:09:09.839><c> go</c><00:09:10.000><c> through</c><00:09:10.240><c> every</c><00:09:10.480><c> single</c>
+
+00:09:10.710 --> 00:09:10.720 align:start position:0%
+We're going to go through every single
+ 
+
+00:09:10.720 --> 00:09:12.790 align:start position:0%
+We're going to go through every single
+one<00:09:10.880><c> of</c><00:09:10.959><c> your</c><00:09:11.200><c> best</c><00:09:11.440><c> customers,</c><00:09:12.399><c> all</c><00:09:12.560><c> your</c>
+
+00:09:12.790 --> 00:09:12.800 align:start position:0%
+one of your best customers, all your
+ 
+
+00:09:12.800 --> 00:09:15.030 align:start position:0%
+one of your best customers, all your
+customers,<00:09:13.680><c> your</c><00:09:13.920><c> best</c><00:09:14.080><c> sales</c><00:09:14.399><c> calls,</c><00:09:14.800><c> all</c>
+
+00:09:15.030 --> 00:09:15.040 align:start position:0%
+customers, your best sales calls, all
+ 
+
+00:09:15.040 --> 00:09:17.750 align:start position:0%
+customers, your best sales calls, all
+your<00:09:15.200><c> sales</c><00:09:15.519><c> calls,</c><00:09:15.839><c> your</c><00:09:16.080><c> turn</c><00:09:16.399><c> customers.</c>
+
+00:09:17.750 --> 00:09:17.760 align:start position:0%
+your sales calls, your turn customers.
+ 
+
+00:09:17.760 --> 00:09:19.509 align:start position:0%
+your sales calls, your turn customers.
+um<00:09:18.080><c> anything</c><00:09:18.399><c> that</c><00:09:18.560><c> we</c><00:09:18.720><c> can</c><00:09:18.800><c> get</c><00:09:18.880><c> our</c><00:09:19.040><c> hands</c><00:09:19.279><c> on</c>
+
+00:09:19.509 --> 00:09:19.519 align:start position:0%
+um anything that we can get our hands on
+ 
+
+00:09:19.519 --> 00:09:22.389 align:start position:0%
+um anything that we can get our hands on
+and<00:09:19.839><c> put</c><00:09:20.000><c> that</c><00:09:20.160><c> through</c><00:09:20.320><c> a</c><00:09:20.560><c> context</c><00:09:20.959><c> model</c><00:09:22.080><c> to</c>
+
+00:09:22.389 --> 00:09:22.399 align:start position:0%
+and put that through a context model to
+ 
+
+00:09:22.399 --> 00:09:24.230 align:start position:0%
+and put that through a context model to
+understand<00:09:22.800><c> what</c><00:09:23.040><c> is</c><00:09:23.200><c> going</c><00:09:23.279><c> on</c><00:09:23.519><c> there.</c><00:09:24.000><c> While</c>
+
+00:09:24.230 --> 00:09:24.240 align:start position:0%
+understand what is going on there. While
+ 
+
+00:09:24.240 --> 00:09:26.150 align:start position:0%
+understand what is going on there. While
+we're<00:09:24.480><c> doing</c><00:09:24.560><c> this,</c><00:09:24.959><c> okay,</c><00:09:25.519><c> so</c><00:09:25.680><c> this</c><00:09:25.839><c> is</c><00:09:25.920><c> in</c>
+
+00:09:26.150 --> 00:09:26.160 align:start position:0%
+we're doing this, okay, so this is in
+ 
+
+00:09:26.160 --> 00:09:29.350 align:start position:0%
+we're doing this, okay, so this is in
+tandem.<00:09:27.040><c> We</c><00:09:27.360><c> are</c><00:09:27.519><c> setting</c><00:09:27.839><c> up</c><00:09:28.320><c> signals</c><00:09:29.040><c> that</c>
+
+00:09:29.350 --> 00:09:29.360 align:start position:0%
+tandem. We are setting up signals that
+ 
+
+00:09:29.360 --> 00:09:31.590 align:start position:0%
+tandem. We are setting up signals that
+will<00:09:29.519><c> pay</c><00:09:29.680><c> off</c><00:09:29.920><c> dividends</c><00:09:30.320><c> for</c><00:09:30.480><c> the</c><00:09:30.640><c> future.</c>
+
+00:09:31.590 --> 00:09:31.600 align:start position:0%
+will pay off dividends for the future.
+ 
+
+00:09:31.600 --> 00:09:33.430 align:start position:0%
+will pay off dividends for the future.
+So<00:09:32.080><c> website</c><00:09:32.480><c> visitors</c><00:09:32.880><c> is</c><00:09:33.120><c> like</c>
+
+00:09:33.430 --> 00:09:33.440 align:start position:0%
+So website visitors is like
+ 
+
+00:09:33.440 --> 00:09:36.230 align:start position:0%
+So website visitors is like
+non-negotiable.<00:09:34.480><c> It's</c><00:09:34.720><c> really</c><00:09:35.040><c> helpful</c><00:09:35.440><c> for</c>
+
+00:09:36.230 --> 00:09:36.240 align:start position:0%
+non-negotiable. It's really helpful for
+ 
+
+00:09:36.240 --> 00:09:39.110 align:start position:0%
+non-negotiable. It's really helpful for
+um<00:09:36.399><c> attribution.</c><00:09:37.760><c> Um,</c><00:09:38.320><c> if</c><00:09:38.640><c> somebody</c><00:09:38.880><c> comes</c>
+
+00:09:39.110 --> 00:09:39.120 align:start position:0%
+um attribution. Um, if somebody comes
+ 
+
+00:09:39.120 --> 00:09:41.430 align:start position:0%
+um attribution. Um, if somebody comes
+and<00:09:39.279><c> visits</c><00:09:39.519><c> the</c><00:09:39.920><c> website</c><00:09:40.240><c> for</c><00:09:40.399><c> the</c><00:09:40.560><c> campaign</c>
+
+00:09:41.430 --> 00:09:41.440 align:start position:0%
+and visits the website for the campaign
+ 
+
+00:09:41.440 --> 00:09:44.389 align:start position:0%
+and visits the website for the campaign
+because<00:09:42.560><c> website</c><00:09:42.959><c> visitor</c><00:09:43.839><c> identification</c>
+
+00:09:44.389 --> 00:09:44.399 align:start position:0%
+because website visitor identification
+ 
+
+00:09:44.399 --> 00:09:48.150 align:start position:0%
+because website visitor identification
+is<00:09:44.640><c> not</c><00:09:44.800><c> perfect,</c><00:09:45.920><c> you</c><00:09:46.160><c> will</c><00:09:46.480><c> probably</c>
+
+00:09:48.150 --> 00:09:48.160 align:start position:0%
+is not perfect, you will probably
+ 
+
+00:09:48.160 --> 00:09:50.710 align:start position:0%
+is not perfect, you will probably
+multiply<00:09:48.720><c> that</c><00:09:48.959><c> number</c><00:09:49.120><c> by</c><00:09:49.360><c> 2</c><00:09:49.519><c> to</c><00:09:49.760><c> 5x</c><00:09:50.399><c> to</c><00:09:50.560><c> see</c>
+
+00:09:50.710 --> 00:09:50.720 align:start position:0%
+multiply that number by 2 to 5x to see
+ 
+
+00:09:50.720 --> 00:09:53.509 align:start position:0%
+multiply that number by 2 to 5x to see
+who<00:09:50.959><c> how</c><00:09:51.200><c> many</c><00:09:51.440><c> people</c><00:09:52.399><c> are</c><00:09:52.959><c> visiting</c><00:09:53.279><c> your</c>
+
+00:09:53.509 --> 00:09:53.519 align:start position:0%
+who how many people are visiting your
+ 
+
+00:09:53.519 --> 00:09:55.670 align:start position:0%
+who how many people are visiting your
+website<00:09:53.760><c> from</c><00:09:54.000><c> the</c><00:09:54.160><c> campaign.</c><00:09:55.200><c> And</c><00:09:55.440><c> we're</c>
+
+00:09:55.670 --> 00:09:55.680 align:start position:0%
+website from the campaign. And we're
+ 
+
+00:09:55.680 --> 00:09:57.110 align:start position:0%
+website from the campaign. And we're
+also<00:09:55.920><c> setting</c><00:09:56.160><c> up</c><00:09:56.320><c> things</c><00:09:56.480><c> like</c><00:09:56.640><c> outbound</c>
+
+00:09:57.110 --> 00:09:57.120 align:start position:0%
+also setting up things like outbound
+ 
+
+00:09:57.120 --> 00:09:58.790 align:start position:0%
+also setting up things like outbound
+sync<00:09:57.440><c> that</c><00:09:57.680><c> automatically</c><00:09:58.240><c> sync</c><00:09:58.480><c> with</c><00:09:58.640><c> your</c>
+
+00:09:58.790 --> 00:09:58.800 align:start position:0%
+sync that automatically sync with your
+ 
+
+00:09:58.800 --> 00:10:00.470 align:start position:0%
+sync that automatically sync with your
+CRM
+
+00:10:00.470 --> 00:10:00.480 align:start position:0%
+CRM
+ 
+
+00:10:00.480 --> 00:10:02.949 align:start position:0%
+CRM
+to<00:10:00.800><c> know</c><00:10:01.440><c> people</c><00:10:01.760><c> who</c><00:10:02.000><c> you</c><00:10:02.160><c> sent</c><00:10:02.320><c> to,</c><00:10:02.560><c> are</c><00:10:02.800><c> they</c>
+
+00:10:02.949 --> 00:10:02.959 align:start position:0%
+to know people who you sent to, are they
+ 
+
+00:10:02.959 --> 00:10:04.630 align:start position:0%
+to know people who you sent to, are they
+coming<00:10:03.120><c> in</c><00:10:03.279><c> through</c><00:10:03.440><c> other</c><00:10:03.680><c> channels?</c><00:10:04.399><c> That</c>
+
+00:10:04.630 --> 00:10:04.640 align:start position:0%
+coming in through other channels? That
+ 
+
+00:10:04.640 --> 00:10:07.430 align:start position:0%
+coming in through other channels? That
+attribution<00:10:05.200><c> is</c><00:10:05.519><c> huge.</c><00:10:06.399><c> Often</c><00:10:06.959><c> we've</c><00:10:07.279><c> seen</c>
+
+00:10:07.430 --> 00:10:07.440 align:start position:0%
+attribution is huge. Often we've seen
+ 
+
+00:10:07.440 --> 00:10:09.190 align:start position:0%
+attribution is huge. Often we've seen
+that<00:10:07.760><c> campaigns</c><00:10:08.160><c> that</c><00:10:08.320><c> would</c><00:10:08.480><c> have</c><00:10:08.640><c> otherwise</c>
+
+00:10:09.190 --> 00:10:09.200 align:start position:0%
+that campaigns that would have otherwise
+ 
+
+00:10:09.200 --> 00:10:11.670 align:start position:0%
+that campaigns that would have otherwise
+be<00:10:09.440><c> considered</c><00:10:09.839><c> a</c><00:10:10.080><c> failure</c><00:10:10.399><c> by</c><00:10:10.720><c> reply</c><00:10:11.120><c> rate</c>
+
+00:10:11.670 --> 00:10:11.680 align:start position:0%
+be considered a failure by reply rate
+ 
+
+00:10:11.680 --> 00:10:13.509 align:start position:0%
+be considered a failure by reply rate
+were<00:10:11.920><c> actually</c><00:10:12.320><c> successful</c><00:10:12.880><c> in</c><00:10:13.200><c> driving</c>
+
+00:10:13.509 --> 00:10:13.519 align:start position:0%
+were actually successful in driving
+ 
+
+00:10:13.519 --> 00:10:14.949 align:start position:0%
+were actually successful in driving
+traffic<00:10:13.839><c> to</c><00:10:14.000><c> the</c><00:10:14.160><c> website</c><00:10:14.399><c> and</c><00:10:14.640><c> getting</c>
+
+00:10:14.949 --> 00:10:14.959 align:start position:0%
+traffic to the website and getting
+ 
+
+00:10:14.959 --> 00:10:18.230 align:start position:0%
+traffic to the website and getting
+interest.<00:10:15.920><c> As</c><00:10:16.160><c> I</c><00:10:16.320><c> always</c><00:10:16.560><c> say,</c><00:10:17.200><c> at</c><00:10:17.920><c> bare</c>
+
+00:10:18.230 --> 00:10:18.240 align:start position:0%
+interest. As I always say, at bare
+ 
+
+00:10:18.240 --> 00:10:20.790 align:start position:0%
+interest. As I always say, at bare
+minimum,<00:10:18.880><c> cold</c><00:10:19.200><c> email</c><00:10:20.000><c> sent</c><00:10:20.240><c> to</c><00:10:20.399><c> your</c><00:10:20.560><c> target</c>
+
+00:10:20.790 --> 00:10:20.800 align:start position:0%
+minimum, cold email sent to your target
+ 
+
+00:10:20.800 --> 00:10:24.069 align:start position:0%
+minimum, cold email sent to your target
+area<00:10:21.120><c> market.</c><00:10:21.839><c> Um</c><00:10:22.399><c> maybe</c><00:10:22.640><c> less</c><00:10:22.959><c> targeted</c><00:10:23.680><c> is</c><00:10:23.920><c> a</c>
+
+00:10:24.069 --> 00:10:24.079 align:start position:0%
+area market. Um maybe less targeted is a
+ 
+
+00:10:24.079 --> 00:10:26.550 align:start position:0%
+area market. Um maybe less targeted is a
+private<00:10:24.320><c> ads</c><00:10:24.720><c> network</c><00:10:25.440><c> and</c><00:10:25.760><c> you</c><00:10:25.920><c> know</c><00:10:26.240><c> great</c>
+
+00:10:26.550 --> 00:10:26.560 align:start position:0%
+private ads network and you know great
+ 
+
+00:10:26.560 --> 00:10:31.030 align:start position:0%
+private ads network and you know great
+like<00:10:26.640><c> Erin</c><00:10:26.959><c> Oas</c><00:10:27.600><c> said</c><00:10:27.760><c> this.</c><00:10:28.880><c> Um</c><00:10:29.519><c> everybody</c>
+
+00:10:31.030 --> 00:10:31.040 align:start position:0%
+like Erin Oas said this. Um everybody
+ 
+
+00:10:31.040 --> 00:10:34.870 align:start position:0%
+like Erin Oas said this. Um everybody
+at<00:10:31.279><c> minimum</c><00:10:31.760><c> can</c><00:10:32.000><c> use</c><00:10:32.160><c> it</c><00:10:33.040><c> like</c><00:10:33.360><c> that.</c><00:10:33.839><c> Okay.</c>
+
+00:10:34.870 --> 00:10:34.880 align:start position:0%
+at minimum can use it like that. Okay.
+ 
+
+00:10:34.880 --> 00:10:36.630 align:start position:0%
+at minimum can use it like that. Okay.
+So<00:10:35.040><c> what</c><00:10:35.200><c> are</c><00:10:35.360><c> some</c><00:10:35.519><c> other</c><00:10:35.680><c> important</c><00:10:35.920><c> signals</c>
+
+00:10:36.630 --> 00:10:36.640 align:start position:0%
+So what are some other important signals
+ 
+
+00:10:36.640 --> 00:10:40.470 align:start position:0%
+So what are some other important signals
+we<00:10:36.800><c> can</c><00:10:37.120><c> So</c><00:10:37.279><c> the</c><00:10:37.600><c> signals</c><00:10:38.079><c> that</c><00:10:38.399><c> are</c><00:10:39.519><c> top</c><00:10:39.839><c> down</c>
+
+00:10:40.470 --> 00:10:40.480 align:start position:0%
+we can So the signals that are top down
+ 
+
+00:10:40.480 --> 00:10:42.069 align:start position:0%
+we can So the signals that are top down
+are<00:10:40.880><c> when</c><00:10:41.120><c> you</c><00:10:41.279><c> already</c><00:10:41.519><c> have</c><00:10:41.600><c> a</c><00:10:41.839><c> company</c>
+
+00:10:42.069 --> 00:10:42.079 align:start position:0%
+are when you already have a company
+ 
+
+00:10:42.079 --> 00:10:44.069 align:start position:0%
+are when you already have a company
+list.<00:10:42.720><c> Signals</c><00:10:43.040><c> that</c><00:10:43.200><c> are</c><00:10:43.360><c> bottom</c><00:10:43.600><c> up</c><00:10:43.839><c> are</c>
+
+00:10:44.069 --> 00:10:44.079 align:start position:0%
+list. Signals that are bottom up are
+ 
+
+00:10:44.079 --> 00:10:45.590 align:start position:0%
+list. Signals that are bottom up are
+when<00:10:44.240><c> you're</c><00:10:44.480><c> adding</c><00:10:44.720><c> to</c><00:10:44.880><c> your</c><00:10:45.040><c> TAM</c><00:10:45.440><c> because</c>
+
+00:10:45.590 --> 00:10:45.600 align:start position:0%
+when you're adding to your TAM because
+ 
+
+00:10:45.600 --> 00:10:47.990 align:start position:0%
+when you're adding to your TAM because
+of<00:10:45.680><c> the</c><00:10:45.839><c> signal.</c><00:10:46.720><c> And</c><00:10:47.120><c> so</c><00:10:47.360><c> right</c><00:10:47.680><c> what</c><00:10:47.839><c> we're</c>
+
+00:10:47.990 --> 00:10:48.000 align:start position:0%
+of the signal. And so right what we're
+ 
+
+00:10:48.000 --> 00:10:49.430 align:start position:0%
+of the signal. And so right what we're
+doing<00:10:48.160><c> here</c><00:10:48.320><c> is</c><00:10:48.560><c> we're</c><00:10:48.720><c> doing</c><00:10:48.959><c> bottom</c><00:10:49.279><c> up.</c>
+
+00:10:49.430 --> 00:10:49.440 align:start position:0%
+doing here is we're doing bottom up.
+ 
+
+00:10:49.440 --> 00:10:50.870 align:start position:0%
+doing here is we're doing bottom up.
+We're<00:10:49.600><c> adding</c><00:10:49.760><c> to</c><00:10:49.920><c> our</c><00:10:50.079><c> TAM</c><00:10:50.399><c> from</c><00:10:50.640><c> these</c>
+
+00:10:50.870 --> 00:10:50.880 align:start position:0%
+We're adding to our TAM from these
+ 
+
+00:10:50.880 --> 00:10:53.430 align:start position:0%
+We're adding to our TAM from these
+signals.<00:10:51.440><c> Website</c><00:10:51.839><c> visitors,</c>
+
+00:10:53.430 --> 00:10:53.440 align:start position:0%
+signals. Website visitors,
+ 
+
+00:10:53.440 --> 00:10:56.949 align:start position:0%
+signals. Website visitors,
+ICP<00:10:53.920><c> job</c><00:10:54.160><c> changes</c><00:10:55.279><c> and</c><00:10:55.600><c> hires</c><00:10:56.240><c> at</c><00:10:56.480><c> a</c><00:10:56.640><c> smaller</c>
+
+00:10:56.949 --> 00:10:56.959 align:start position:0%
+ICP job changes and hires at a smaller
+ 
+
+00:10:56.959 --> 00:10:59.829 align:start position:0%
+ICP job changes and hires at a smaller
+list.<00:10:57.279><c> We'll</c><00:10:57.440><c> go</c><00:10:57.600><c> into</c><00:10:57.839><c> what</c><00:10:58.079><c> we</c><00:10:58.240><c> do</c><00:10:59.360><c> when</c><00:10:59.600><c> we</c>
+
+00:10:59.829 --> 00:10:59.839 align:start position:0%
+list. We'll go into what we do when we
+ 
+
+00:10:59.839 --> 00:11:02.069 align:start position:0%
+list. We'll go into what we do when we
+map<00:11:00.079><c> the</c><00:11:00.240><c> whole</c><00:11:00.399><c> TAM</c><00:11:00.720><c> out.</c><00:11:01.279><c> Um</c><00:11:01.600><c> and</c><00:11:01.760><c> then</c>
+
+00:11:02.069 --> 00:11:02.079 align:start position:0%
+map the whole TAM out. Um and then
+ 
+
+00:11:02.079 --> 00:11:04.870 align:start position:0%
+map the whole TAM out. Um and then
+specific<00:11:02.640><c> really</c><00:11:02.959><c> specific</c><00:11:03.519><c> niche.</c><00:11:04.320><c> um</c>
+
+00:11:04.870 --> 00:11:04.880 align:start position:0%
+specific really specific niche. um
+ 
+
+00:11:04.880 --> 00:11:07.269 align:start position:0%
+specific really specific niche. um
+signals<00:11:05.279><c> like</c><00:11:05.519><c> let's</c><00:11:05.839><c> say</c><00:11:06.800><c> companies</c><00:11:07.040><c> that</c>
+
+00:11:07.269 --> 00:11:07.279 align:start position:0%
+signals like let's say companies that
+ 
+
+00:11:07.279 --> 00:11:09.269 align:start position:0%
+signals like let's say companies that
+are<00:11:07.440><c> sponsoring</c><00:11:07.839><c> clinical</c><00:11:08.240><c> trials</c><00:11:08.880><c> that</c><00:11:09.200><c> are</c>
+
+00:11:09.269 --> 00:11:09.279 align:start position:0%
+are sponsoring clinical trials that are
+ 
+
+00:11:09.279 --> 00:11:12.069 align:start position:0%
+are sponsoring clinical trials that are
+not<00:11:09.519><c> in</c><00:11:09.760><c> institutions</c><00:11:10.959><c> are</c><00:11:11.120><c> your</c><00:11:11.279><c> ICP</c><00:11:11.760><c> we</c><00:11:12.000><c> can</c>
+
+00:11:12.069 --> 00:11:12.079 align:start position:0%
+not in institutions are your ICP we can
+ 
+
+00:11:12.079 --> 00:11:14.630 align:start position:0%
+not in institutions are your ICP we can
+do<00:11:12.240><c> that</c><00:11:12.560><c> using</c><00:11:13.200><c> clinical</c><00:11:13.600><c> trials.gov</c>
+
+00:11:14.630 --> 00:11:14.640 align:start position:0%
+do that using clinical trials.gov
+ 
+
+00:11:14.640 --> 00:11:16.710 align:start position:0%
+do that using clinical trials.gov
+Okay,<00:11:15.440><c> really</c><00:11:15.760><c> important</c><00:11:16.079><c> stuff.</c><00:11:16.399><c> TAM</c>
+
+00:11:16.710 --> 00:11:16.720 align:start position:0%
+Okay, really important stuff. TAM
+ 
+
+00:11:16.720 --> 00:11:19.670 align:start position:0%
+Okay, really important stuff. TAM
+mapping.<00:11:17.519><c> Who</c><00:11:17.839><c> are</c><00:11:18.240><c> your</c><00:11:18.480><c> best</c><00:11:18.720><c> customers?</c>
+
+00:11:19.670 --> 00:11:19.680 align:start position:0%
+mapping. Who are your best customers?
+ 
+
+00:11:19.680 --> 00:11:21.269 align:start position:0%
+mapping. Who are your best customers?
+What<00:11:19.920><c> verticals</c><00:11:20.320><c> do</c><00:11:20.480><c> you</c><00:11:20.560><c> want</c><00:11:20.640><c> to</c><00:11:20.720><c> target?</c>
+
+00:11:21.269 --> 00:11:21.279 align:start position:0%
+What verticals do you want to target?
+ 
+
+00:11:21.279 --> 00:11:22.630 align:start position:0%
+What verticals do you want to target?
+What<00:11:21.360><c> do</c><00:11:21.519><c> you</c><00:11:21.600><c> want</c><00:11:21.680><c> to</c><00:11:21.760><c> prioritize?</c><00:11:22.399><c> Let's</c>
+
+00:11:22.630 --> 00:11:22.640 align:start position:0%
+What do you want to prioritize? Let's
+ 
+
+00:11:22.640 --> 00:11:24.630 align:start position:0%
+What do you want to prioritize? Let's
+map<00:11:22.880><c> this</c><00:11:23.040><c> out</c><00:11:23.200><c> as</c><00:11:23.440><c> best</c><00:11:23.600><c> we</c><00:11:23.839><c> can.</c><00:11:24.399><c> We're</c>
+
+00:11:24.630 --> 00:11:24.640 align:start position:0%
+map this out as best we can. We're
+ 
+
+00:11:24.640 --> 00:11:27.430 align:start position:0%
+map this out as best we can. We're
+aiming<00:11:24.959><c> for</c><00:11:25.279><c> like</c><00:11:25.519><c> 80%.</c><00:11:26.880><c> Okay?</c><00:11:27.120><c> We're</c><00:11:27.360><c> not</c>
+
+00:11:27.430 --> 00:11:27.440 align:start position:0%
+aiming for like 80%. Okay? We're not
+ 
+
+00:11:27.440 --> 00:11:30.150 align:start position:0%
+aiming for like 80%. Okay? We're not
+going<00:11:27.519><c> to</c><00:11:27.600><c> aim</c><00:11:27.839><c> for</c><00:11:28.000><c> 100%</c><00:11:29.279><c> of</c><00:11:29.600><c> your</c><00:11:29.839><c> target</c>
+
+00:11:30.150 --> 00:11:30.160 align:start position:0%
+going to aim for 100% of your target
+ 
+
+00:11:30.160 --> 00:11:32.069 align:start position:0%
+going to aim for 100% of your target
+area<00:11:30.399><c> market</c><00:11:30.720><c> in</c><00:11:30.959><c> these</c><00:11:31.200><c> in</c><00:11:31.360><c> these</c><00:11:31.600><c> 12</c><00:11:31.760><c> months.</c>
+
+00:11:32.069 --> 00:11:32.079 align:start position:0%
+area market in these in these 12 months.
+ 
+
+00:11:32.079 --> 00:11:34.150 align:start position:0%
+area market in these in these 12 months.
+It's<00:11:32.240><c> just</c><00:11:32.399><c> not</c><00:11:32.640><c> feasible.</c><00:11:33.519><c> I</c><00:11:33.760><c> think</c><00:11:33.839><c> the</c>
+
+00:11:34.150 --> 00:11:34.160 align:start position:0%
+It's just not feasible. I think the
+ 
+
+00:11:34.160 --> 00:11:39.030 align:start position:0%
+It's just not feasible. I think the
+people<00:11:34.800><c> who</c><00:11:35.279><c> who</c><00:11:35.680><c> spend</c><00:11:36.160><c> time</c><00:11:36.959><c> doing</c><00:11:37.680><c> 100%</c>
+
+00:11:39.030 --> 00:11:39.040 align:start position:0%
+people who who spend time doing 100%
+ 
+
+00:11:39.040 --> 00:11:41.670 align:start position:0%
+people who who spend time doing 100%
+target<00:11:39.440><c> market</c><00:11:39.680><c> or</c><00:11:39.839><c> ICP</c><00:11:40.320><c> map,</c><00:11:41.360><c> they're</c>
+
+00:11:41.670 --> 00:11:41.680 align:start position:0%
+target market or ICP map, they're
+ 
+
+00:11:41.680 --> 00:11:43.829 align:start position:0%
+target market or ICP map, they're
+wasting<00:11:41.920><c> their</c><00:11:42.160><c> time.</c><00:11:42.720><c> We</c><00:11:42.959><c> are</c><00:11:43.120><c> going</c><00:11:43.360><c> for</c><00:11:43.600><c> the</c>
+
+00:11:43.829 --> 00:11:43.839 align:start position:0%
+wasting their time. We are going for the
+ 
+
+00:11:43.839 --> 00:11:46.949 align:start position:0%
+wasting their time. We are going for the
+8020<00:11:44.399><c> here.</c><00:11:44.800><c> Okay.</c><00:11:45.519><c> We're</c><00:11:45.760><c> also</c><00:11:46.000><c> pulling</c><00:11:46.240><c> in</c>
+
+00:11:46.949 --> 00:11:46.959 align:start position:0%
+8020 here. Okay. We're also pulling in
+ 
+
+00:11:46.959 --> 00:11:49.110 align:start position:0%
+8020 here. Okay. We're also pulling in
+uh<00:11:47.279><c> we're</c><00:11:47.600><c> at</c><00:11:47.760><c> this</c><00:11:48.000><c> point</c><00:11:48.480><c> um</c><00:11:48.720><c> getting</c><00:11:48.959><c> ready</c>
+
+00:11:49.110 --> 00:11:49.120 align:start position:0%
+uh we're at this point um getting ready
+ 
+
+00:11:49.120 --> 00:11:50.790 align:start position:0%
+uh we're at this point um getting ready
+to<00:11:49.279><c> launch</c><00:11:49.519><c> the</c><00:11:49.680><c> close</c><00:11:49.920><c> loss</c><00:11:50.240><c> campaign</c><00:11:50.560><c> by</c>
+
+00:11:50.790 --> 00:11:50.800 align:start position:0%
+to launch the close loss campaign by
+ 
+
+00:11:50.800 --> 00:11:53.829 align:start position:0%
+to launch the close loss campaign by
+analyzing<00:11:52.160><c> um</c><00:11:52.399><c> sales</c><00:11:52.720><c> calls</c><00:11:53.040><c> and</c><00:11:53.200><c> and</c><00:11:53.519><c> lost</c>
+
+00:11:53.829 --> 00:11:53.839 align:start position:0%
+analyzing um sales calls and and lost
+ 
+
+00:11:53.839 --> 00:11:55.750 align:start position:0%
+analyzing um sales calls and and lost
+customers.
+
+00:11:55.750 --> 00:11:55.760 align:start position:0%
+customers.
+ 
+
+00:11:55.760 --> 00:11:58.470 align:start position:0%
+customers.
+Um<00:11:56.160><c> we</c><00:11:56.560><c> are</c><00:11:56.800><c> doing</c><00:11:57.360><c> we're</c><00:11:57.680><c> taking</c><00:11:57.839><c> the</c><00:11:58.079><c> founder</c>
+
+00:11:58.470 --> 00:11:58.480 align:start position:0%
+Um we are doing we're taking the founder
+ 
+
+00:11:58.480 --> 00:12:00.870 align:start position:0%
+Um we are doing we're taking the founder
+especially<00:11:58.800><c> founder</c><00:11:59.440><c> sales</c><00:12:00.240><c> we're</c><00:12:00.720><c> looking</c>
+
+00:12:00.870 --> 00:12:00.880 align:start position:0%
+especially founder sales we're looking
+ 
+
+00:12:00.880 --> 00:12:02.550 align:start position:0%
+especially founder sales we're looking
+at<00:12:01.040><c> the</c><00:12:01.279><c> LinkedIn</c><00:12:01.680><c> followers</c><00:12:02.000><c> and</c><00:12:02.160><c> likes</c><00:12:02.399><c> and</c>
+
+00:12:02.550 --> 00:12:02.560 align:start position:0%
+at the LinkedIn followers and likes and
+ 
+
+00:12:02.560 --> 00:12:03.990 align:start position:0%
+at the LinkedIn followers and likes and
+things<00:12:02.720><c> like</c><00:12:02.800><c> that.</c><00:12:03.040><c> We're</c><00:12:03.200><c> doing</c><00:12:03.680><c> preparing</c>
+
+00:12:03.990 --> 00:12:04.000 align:start position:0%
+things like that. We're doing preparing
+ 
+
+00:12:04.000 --> 00:12:06.150 align:start position:0%
+things like that. We're doing preparing
+a<00:12:04.240><c> social</c><00:12:04.480><c> campaign</c><00:12:05.279><c> and</c><00:12:05.519><c> then</c><00:12:05.680><c> we're</c><00:12:05.920><c> also</c>
+
+00:12:06.150 --> 00:12:06.160 align:start position:0%
+a social campaign and then we're also
+ 
+
+00:12:06.160 --> 00:12:07.750 align:start position:0%
+a social campaign and then we're also
+analyzing<00:12:06.639><c> your</c><00:12:06.880><c> competitors</c><00:12:07.440><c> potentially</c>
+
+00:12:07.750 --> 00:12:07.760 align:start position:0%
+analyzing your competitors potentially
+ 
+
+00:12:07.760 --> 00:12:09.829 align:start position:0%
+analyzing your competitors potentially
+pulling<00:12:08.079><c> your</c><00:12:08.240><c> competitor</c><00:12:08.639><c> followers</c><00:12:09.040><c> for</c>
+
+00:12:09.829 --> 00:12:09.839 align:start position:0%
+pulling your competitor followers for
+ 
+
+00:12:09.839 --> 00:12:12.310 align:start position:0%
+pulling your competitor followers for
+better<00:12:10.160><c> campaign</c><00:12:10.639><c> at</c><00:12:10.800><c> the</c><00:12:10.959><c> same</c><00:12:11.120><c> time.</c><00:12:12.079><c> This</c>
+
+00:12:12.310 --> 00:12:12.320 align:start position:0%
+better campaign at the same time. This
+ 
+
+00:12:12.320 --> 00:12:13.670 align:start position:0%
+better campaign at the same time. This
+is<00:12:12.480><c> all</c><00:12:12.720><c> happening</c><00:12:13.040><c> towards</c><00:12:13.360><c> the</c><00:12:13.440><c> end</c><00:12:13.600><c> of</c>
+
+00:12:13.670 --> 00:12:13.680 align:start position:0%
+is all happening towards the end of
+ 
+
+00:12:13.680 --> 00:12:15.590 align:start position:0%
+is all happening towards the end of
+month<00:12:13.920><c> one.</c><00:12:14.720><c> We</c><00:12:14.959><c> are</c><00:12:15.120><c> looking</c><00:12:15.279><c> at</c><00:12:15.440><c> your</c>
+
+00:12:15.590 --> 00:12:15.600 align:start position:0%
+month one. We are looking at your
+ 
+
+00:12:15.600 --> 00:12:17.030 align:start position:0%
+month one. We are looking at your
+inbound.<00:12:16.079><c> Do</c><00:12:16.240><c> you</c><00:12:16.320><c> have</c><00:12:16.480><c> demo</c><00:12:16.800><c> form</c>
+
+00:12:17.030 --> 00:12:17.040 align:start position:0%
+inbound. Do you have demo form
+ 
+
+00:12:17.040 --> 00:12:19.670 align:start position:0%
+inbound. Do you have demo form
+abandoners?<00:12:17.920><c> Do</c><00:12:18.160><c> you</c><00:12:18.399><c> have</c><00:12:18.800><c> optins</c><00:12:19.279><c> that</c><00:12:19.519><c> are</c>
+
+00:12:19.670 --> 00:12:19.680 align:start position:0%
+abandoners? Do you have optins that are
+ 
+
+00:12:19.680 --> 00:12:22.629 align:start position:0%
+abandoners? Do you have optins that are
+not<00:12:20.320><c> um</c><00:12:21.120><c> that</c><00:12:21.360><c> are</c><00:12:21.519><c> not</c><00:12:21.680><c> being</c><00:12:21.920><c> sent</c><00:12:22.079><c> to?</c><00:12:22.399><c> What</c>
+
+00:12:22.629 --> 00:12:22.639 align:start position:0%
+not um that are not being sent to? What
+ 
+
+00:12:22.639 --> 00:12:23.990 align:start position:0%
+not um that are not being sent to? What
+what<00:12:22.800><c> are</c><00:12:22.959><c> you</c><00:12:23.120><c> doing</c><00:12:23.200><c> to</c><00:12:23.360><c> follow</c><00:12:23.600><c> up?</c><00:12:23.839><c> That</c>
+
+00:12:23.990 --> 00:12:24.000 align:start position:0%
+what are you doing to follow up? That
+ 
+
+00:12:24.000 --> 00:12:27.030 align:start position:0%
+what are you doing to follow up? That
+kind<00:12:24.079><c> of</c><00:12:24.240><c> thing.</c><00:12:25.279><c> Great.</c><00:12:26.480><c> Getting</c><00:12:26.720><c> ready</c><00:12:26.880><c> to</c>
+
+00:12:27.030 --> 00:12:27.040 align:start position:0%
+kind of thing. Great. Getting ready to
+ 
+
+00:12:27.040 --> 00:12:28.310 align:start position:0%
+kind of thing. Great. Getting ready to
+launch<00:12:27.279><c> this.</c><00:12:27.760><c> Going</c><00:12:28.000><c> through</c><00:12:28.160><c> our</c>
+
+00:12:28.310 --> 00:12:28.320 align:start position:0%
+launch this. Going through our
+ 
+
+00:12:28.320 --> 00:12:31.670 align:start position:0%
+launch this. Going through our
+checklists.<00:12:29.680><c> Finally,</c><00:12:30.800><c> we're</c><00:12:31.040><c> putting</c><00:12:31.440><c> we're</c>
+
+00:12:31.670 --> 00:12:31.680 align:start position:0%
+checklists. Finally, we're putting we're
+ 
+
+00:12:31.680 --> 00:12:34.310 align:start position:0%
+checklists. Finally, we're putting we're
+coming<00:12:31.920><c> up</c><00:12:32.079><c> with</c><00:12:32.800><c> prompts</c><00:12:33.440><c> in</c><00:12:33.600><c> clay</c><00:12:33.920><c> and</c><00:12:34.160><c> other</c>
+
+00:12:34.310 --> 00:12:34.320 align:start position:0%
+coming up with prompts in clay and other
+ 
+
+00:12:34.320 --> 00:12:36.629 align:start position:0%
+coming up with prompts in clay and other
+tools<00:12:34.800><c> that</c><00:12:35.040><c> will</c><00:12:35.200><c> do</c><00:12:35.440><c> your</c><00:12:36.320><c> deep</c>
+
+00:12:36.629 --> 00:12:36.639 align:start position:0%
+tools that will do your deep
+ 
+
+00:12:36.639 --> 00:12:38.150 align:start position:0%
+tools that will do your deep
+qualification.<00:12:37.600><c> What</c><00:12:37.760><c> is</c><00:12:37.920><c> deep</c>
+
+00:12:38.150 --> 00:12:38.160 align:start position:0%
+qualification. What is deep
+ 
+
+00:12:38.160 --> 00:12:40.949 align:start position:0%
+qualification. What is deep
+qualification?<00:12:38.800><c> This</c><00:12:39.040><c> is</c><00:12:39.279><c> like</c><00:12:40.160><c> a</c><00:12:40.399><c> holy</c><00:12:40.639><c> grail</c>
+
+00:12:40.949 --> 00:12:40.959 align:start position:0%
+qualification? This is like a holy grail
+ 
+
+00:12:40.959 --> 00:12:43.110 align:start position:0%
+qualification? This is like a holy grail
+type<00:12:41.279><c> prompt</c><00:12:42.079><c> that</c><00:12:42.399><c> will</c><00:12:42.560><c> take</c><00:12:42.720><c> any</c><00:12:42.959><c> company</c>
+
+00:12:43.110 --> 00:12:43.120 align:start position:0%
+type prompt that will take any company
+ 
+
+00:12:43.120 --> 00:12:46.069 align:start position:0%
+type prompt that will take any company
+or<00:12:43.360><c> any</c><00:12:43.600><c> person.</c><00:12:44.560><c> Put</c><00:12:44.800><c> it</c><00:12:45.120><c> through</c><00:12:45.600><c> put</c><00:12:45.839><c> the</c>
+
+00:12:46.069 --> 00:12:46.079 align:start position:0%
+or any person. Put it through put the
+ 
+
+00:12:46.079 --> 00:12:48.230 align:start position:0%
+or any person. Put it through put the
+metrics<00:12:46.720><c> every</c><00:12:46.959><c> single</c><00:12:47.200><c> metrics</c><00:12:47.760><c> that</c><00:12:48.079><c> we</c>
+
+00:12:48.230 --> 00:12:48.240 align:start position:0%
+metrics every single metrics that we
+ 
+
+00:12:48.240 --> 00:12:51.910 align:start position:0%
+metrics every single metrics that we
+have<00:12:48.720><c> through</c><00:12:50.000><c> and</c><00:12:50.240><c> qualify</c><00:12:50.639><c> the</c><00:12:50.880><c> company</c><00:12:51.600><c> and</c>
+
+00:12:51.910 --> 00:12:51.920 align:start position:0%
+have through and qualify the company and
+ 
+
+00:12:51.920 --> 00:12:54.310 align:start position:0%
+have through and qualify the company and
+do<00:12:52.160><c> some</c><00:12:52.399><c> scoring.</c><00:12:52.959><c> Okay,</c><00:12:53.440><c> scoring</c><00:12:53.839><c> is</c><00:12:54.079><c> only</c>
+
+00:12:54.310 --> 00:12:54.320 align:start position:0%
+do some scoring. Okay, scoring is only
+ 
+
+00:12:54.320 --> 00:12:56.550 align:start position:0%
+do some scoring. Okay, scoring is only
+important<00:12:55.200><c> if</c><00:12:55.440><c> you're</c><00:12:55.680><c> limited</c><00:12:55.920><c> by</c><00:12:56.160><c> your</c><00:12:56.320><c> team</c>
+
+00:12:56.550 --> 00:12:56.560 align:start position:0%
+important if you're limited by your team
+ 
+
+00:12:56.560 --> 00:12:59.110 align:start position:0%
+important if you're limited by your team
+size<00:12:56.880><c> I</c><00:12:57.040><c> would</c><00:12:57.120><c> say</c><00:12:57.760><c> or</c><00:12:58.000><c> by</c><00:12:58.240><c> your</c><00:12:58.480><c> channels.</c>
+
+00:12:59.110 --> 00:12:59.120 align:start position:0%
+size I would say or by your channels.
+ 
+
+00:12:59.120 --> 00:13:01.350 align:start position:0%
+size I would say or by your channels.
+And<00:12:59.279><c> ideally,</c><00:12:59.839><c> we</c><00:13:00.399><c> set</c><00:13:00.560><c> up</c><00:13:00.720><c> enough</c><00:13:00.959><c> LinkedIn</c>
+
+00:13:01.350 --> 00:13:01.360 align:start position:0%
+And ideally, we set up enough LinkedIn
+ 
+
+00:13:01.360 --> 00:13:02.949 align:start position:0%
+And ideally, we set up enough LinkedIn
+profiles<00:13:01.680><c> and</c><00:13:01.839><c> enough</c><00:13:02.000><c> inboxes</c><00:13:02.560><c> where</c><00:13:02.720><c> we're</c>
+
+00:13:02.949 --> 00:13:02.959 align:start position:0%
+profiles and enough inboxes where we're
+ 
+
+00:13:02.959 --> 00:13:05.350 align:start position:0%
+profiles and enough inboxes where we're
+not<00:13:03.040><c> really</c><00:13:03.279><c> limited</c><00:13:04.240><c> by</c><00:13:04.639><c> how</c><00:13:04.880><c> much</c><00:13:05.040><c> we</c><00:13:05.200><c> can</c>
+
+00:13:05.350 --> 00:13:05.360 align:start position:0%
+not really limited by how much we can
+ 
+
+00:13:05.360 --> 00:13:07.350 align:start position:0%
+not really limited by how much we can
+send.<00:13:05.920><c> Okay?</c><00:13:06.399><c> But</c><00:13:06.560><c> that's</c><00:13:06.800><c> not</c><00:13:06.959><c> always</c><00:13:07.200><c> the</c>
+
+00:13:07.350 --> 00:13:07.360 align:start position:0%
+send. Okay? But that's not always the
+ 
+
+00:13:07.360 --> 00:13:08.629 align:start position:0%
+send. Okay? But that's not always the
+case.
+
+00:13:08.629 --> 00:13:08.639 align:start position:0%
+case.
+ 
+
+00:13:08.639 --> 00:13:10.550 align:start position:0%
+case.
+Then<00:13:08.880><c> we're</c><00:13:09.120><c> we're</c><00:13:09.120><c> we're</c><00:13:09.600><c> we're</c><00:13:10.399><c> saying</c>
+
+00:13:10.550 --> 00:13:10.560 align:start position:0%
+Then we're we're we're we're saying
+ 
+
+00:13:10.560 --> 00:13:12.870 align:start position:0%
+Then we're we're we're we're saying
+hello<00:13:10.800><c> to</c><00:13:10.959><c> your</c><00:13:11.200><c> town,</c><00:13:11.600><c> okay?</c><00:13:11.920><c> We're</c><00:13:12.480><c> we're</c>
+
+00:13:12.870 --> 00:13:12.880 align:start position:0%
+hello to your town, okay? We're we're
+ 
+
+00:13:12.880 --> 00:13:15.030 align:start position:0%
+hello to your town, okay? We're we're
+not<00:13:13.200><c> every</c><00:13:13.519><c> single</c><00:13:13.920><c> campaign</c><00:13:14.320><c> that</c><00:13:14.560><c> we</c><00:13:14.800><c> launch</c>
+
+00:13:15.030 --> 00:13:15.040 align:start position:0%
+not every single campaign that we launch
+ 
+
+00:13:15.040 --> 00:13:17.430 align:start position:0%
+not every single campaign that we launch
+is<00:13:15.279><c> going</c><00:13:15.440><c> to</c><00:13:15.680><c> be</c><00:13:16.399><c> the</c><00:13:16.720><c> most</c><00:13:16.959><c> targeted</c>
+
+00:13:17.430 --> 00:13:17.440 align:start position:0%
+is going to be the most targeted
+ 
+
+00:13:17.440 --> 00:13:18.710 align:start position:0%
+is going to be the most targeted
+campaign<00:13:17.839><c> of</c><00:13:18.000><c> all</c><00:13:18.160><c> time.</c><00:13:18.399><c> They're</c><00:13:18.560><c> all</c><00:13:18.639><c> going</c>
+
+00:13:18.710 --> 00:13:18.720 align:start position:0%
+campaign of all time. They're all going
+ 
+
+00:13:18.720 --> 00:13:19.910 align:start position:0%
+campaign of all time. They're all going
+to<00:13:18.800><c> be</c><00:13:18.880><c> creative</c><00:13:19.279><c> campaigns.</c><00:13:19.760><c> There's</c><00:13:19.920><c> going</c>
+
+00:13:19.910 --> 00:13:19.920 align:start position:0%
+to be creative campaigns. There's going
+ 
+
+00:13:19.920 --> 00:13:21.990 align:start position:0%
+to be creative campaigns. There's going
+to<00:13:20.000><c> be</c><00:13:20.079><c> a</c><00:13:20.240><c> creative</c><00:13:20.480><c> angle</c><00:13:20.720><c> to</c><00:13:20.880><c> them,</c><00:13:21.519><c> but</c><00:13:21.760><c> we</c>
+
+00:13:21.990 --> 00:13:22.000 align:start position:0%
+to be a creative angle to them, but we
+ 
+
+00:13:22.000 --> 00:13:24.150 align:start position:0%
+to be a creative angle to them, but we
+want<00:13:22.160><c> to</c><00:13:22.320><c> start,</c><00:13:23.360><c> especially</c><00:13:23.680><c> if</c><00:13:23.839><c> you're</c><00:13:24.000><c> a</c>
+
+00:13:24.150 --> 00:13:24.160 align:start position:0%
+want to start, especially if you're a
+ 
+
+00:13:24.160 --> 00:13:26.150 align:start position:0%
+want to start, especially if you're a
+new<00:13:24.320><c> startup,</c><00:13:25.200><c> letting</c><00:13:25.519><c> people</c><00:13:25.760><c> know</c><00:13:25.920><c> you</c>
+
+00:13:26.150 --> 00:13:26.160 align:start position:0%
+new startup, letting people know you
+ 
+
+00:13:26.160 --> 00:13:28.150 align:start position:0%
+new startup, letting people know you
+exist.<00:13:26.560><c> Okay?</c><00:13:26.880><c> If</c><00:13:27.040><c> we</c><00:13:27.120><c> get</c><00:13:27.279><c> positive</c><00:13:27.680><c> replies,</c>
+
+00:13:28.150 --> 00:13:28.160 align:start position:0%
+exist. Okay? If we get positive replies,
+ 
+
+00:13:28.160 --> 00:13:29.750 align:start position:0%
+exist. Okay? If we get positive replies,
+great.<00:13:28.399><c> We</c><00:13:28.560><c> have</c><00:13:28.720><c> interviews,</c><00:13:29.360><c> we</c><00:13:29.600><c> get</c>
+
+00:13:29.750 --> 00:13:29.760 align:start position:0%
+great. We have interviews, we get
+ 
+
+00:13:29.760 --> 00:13:32.069 align:start position:0%
+great. We have interviews, we get
+feedback,<00:13:30.720><c> we</c><00:13:30.880><c> push</c><00:13:31.200><c> them</c><00:13:31.360><c> to</c><00:13:31.600><c> someone</c><00:13:31.920><c> who</c>
+
+00:13:32.069 --> 00:13:32.079 align:start position:0%
+feedback, we push them to someone who
+ 
+
+00:13:32.079 --> 00:13:34.790 align:start position:0%
+feedback, we push them to someone who
+can<00:13:32.240><c> handle</c><00:13:32.480><c> that.</c><00:13:33.360><c> If</c><00:13:33.600><c> not,</c><00:13:34.160><c> we're</c><00:13:34.480><c> following</c>
+
+00:13:34.790 --> 00:13:34.800 align:start position:0%
+can handle that. If not, we're following
+ 
+
+00:13:34.800 --> 00:13:38.389 align:start position:0%
+can handle that. If not, we're following
+up<00:13:35.279><c> or</c><00:13:36.160><c> yeah,</c><00:13:36.399><c> after</c><00:13:36.639><c> two</c><00:13:36.880><c> emails</c><00:13:38.000><c> for</c><00:13:38.160><c> these</c>
+
+00:13:38.389 --> 00:13:38.399 align:start position:0%
+up or yeah, after two emails for these
+ 
+
+00:13:38.399 --> 00:13:40.710 align:start position:0%
+up or yeah, after two emails for these
+bulk<00:13:38.720><c> campaigns,</c><00:13:39.120><c> we</c><00:13:39.360><c> are</c><00:13:39.760><c> stopping.</c><00:13:40.480><c> We</c>
+
+00:13:40.710 --> 00:13:40.720 align:start position:0%
+bulk campaigns, we are stopping. We
+ 
+
+00:13:40.720 --> 00:13:42.949 align:start position:0%
+bulk campaigns, we are stopping. We
+don't<00:13:40.880><c> want</c><00:13:41.040><c> to.</c><00:13:42.000><c> There's</c><00:13:42.320><c> no</c><00:13:42.480><c> reason.</c><00:13:42.800><c> All</c>
+
+00:13:42.949 --> 00:13:42.959 align:start position:0%
+don't want to. There's no reason. All
+ 
+
+00:13:42.959 --> 00:13:44.550 align:start position:0%
+don't want to. There's no reason. All
+we're<00:13:43.120><c> trying</c><00:13:43.200><c> to</c><00:13:43.360><c> do</c><00:13:43.440><c> is</c><00:13:43.600><c> say</c><00:13:43.760><c> hello.</c><00:13:44.079><c> So,</c><00:13:44.320><c> two</c>
+
+00:13:44.550 --> 00:13:44.560 align:start position:0%
+we're trying to do is say hello. So, two
+ 
+
+00:13:44.560 --> 00:13:46.470 align:start position:0%
+we're trying to do is say hello. So, two
+emails,
+
+00:13:46.470 --> 00:13:46.480 align:start position:0%
+emails,
+ 
+
+00:13:46.480 --> 00:13:49.990 align:start position:0%
+emails,
+add<00:13:46.800><c> company</c><00:13:47.200><c> level</c><00:13:47.440><c> TAM</c><00:13:47.839><c> to</c><00:13:48.079><c> the</c><00:13:48.240><c> CRM.</c>
+
+00:13:49.990 --> 00:13:50.000 align:start position:0%
+add company level TAM to the CRM.
+ 
+
+00:13:50.000 --> 00:13:51.269 align:start position:0%
+add company level TAM to the CRM.
+This<00:13:50.160><c> is</c><00:13:50.240><c> where</c><00:13:50.399><c> we're</c><00:13:50.560><c> starting</c><00:13:50.800><c> to</c><00:13:50.959><c> enrich</c>
+
+00:13:51.269 --> 00:13:51.279 align:start position:0%
+This is where we're starting to enrich
+ 
+
+00:13:51.279 --> 00:13:54.470 align:start position:0%
+This is where we're starting to enrich
+the<00:13:51.440><c> CRM.</c><00:13:52.720><c> Okay,</c><00:13:53.519><c> we're</c><00:13:53.760><c> putting</c><00:13:54.079><c> all</c><00:13:54.240><c> this</c>
+
+00:13:54.470 --> 00:13:54.480 align:start position:0%
+the CRM. Okay, we're putting all this
+ 
+
+00:13:54.480 --> 00:13:55.990 align:start position:0%
+the CRM. Okay, we're putting all this
+work<00:13:54.720><c> and</c><00:13:54.959><c> all</c><00:13:55.040><c> these</c><00:13:55.279><c> look</c><00:13:55.440><c> alikes</c><00:13:55.760><c> and</c><00:13:55.920><c> all</c>
+
+00:13:55.990 --> 00:13:56.000 align:start position:0%
+work and all these look alikes and all
+ 
+
+00:13:56.000 --> 00:13:57.990 align:start position:0%
+work and all these look alikes and all
+this<00:13:56.240><c> stuff</c><00:13:56.399><c> we</c><00:13:56.639><c> found</c><00:13:57.199><c> from</c><00:13:57.519><c> all</c><00:13:57.760><c> these</c>
+
+00:13:57.990 --> 00:13:58.000 align:start position:0%
+this stuff we found from all these
+ 
+
+00:13:58.000 --> 00:14:00.550 align:start position:0%
+this stuff we found from all these
+sources<00:13:58.480><c> into</c><00:13:58.800><c> your</c><00:13:58.959><c> TAM</c><00:13:59.440><c> using</c><00:13:59.839><c> a</c><00:14:00.160><c> rubric</c>
+
+00:14:00.550 --> 00:14:00.560 align:start position:0%
+sources into your TAM using a rubric
+ 
+
+00:14:00.560 --> 00:14:02.629 align:start position:0%
+sources into your TAM using a rubric
+that<00:14:00.720><c> we</c><00:14:00.880><c> come</c><00:14:01.040><c> up</c><00:14:01.120><c> with</c><00:14:01.360><c> together.</c><00:14:02.240><c> Super</c>
+
+00:14:02.629 --> 00:14:02.639 align:start position:0%
+that we come up with together. Super
+ 
+
+00:14:02.639 --> 00:14:05.910 align:start position:0%
+that we come up with together. Super
+important.<00:14:03.839><c> That</c><00:14:04.240><c> is</c><00:14:04.800><c> I</c><00:14:05.040><c> would</c><00:14:05.199><c> say</c><00:14:05.360><c> that</c><00:14:05.600><c> this</c>
+
+00:14:05.910 --> 00:14:05.920 align:start position:0%
+important. That is I would say that this
+ 
+
+00:14:05.920 --> 00:14:07.509 align:start position:0%
+important. That is I would say that this
+is<00:14:06.079><c> like</c><00:14:06.560><c> this</c><00:14:06.800><c> is</c><00:14:06.880><c> a</c><00:14:07.040><c> little</c><00:14:07.199><c> compressed.</c>
+
+00:14:07.509 --> 00:14:07.519 align:start position:0%
+is like this is a little compressed.
+ 
+
+00:14:07.519 --> 00:14:10.790 align:start position:0%
+is like this is a little compressed.
+It's<00:14:07.680><c> like</c><00:14:07.760><c> a</c><00:14:07.920><c> twoe</c><00:14:08.240><c> process</c><00:14:08.639><c> minimum.</c><00:14:09.920><c> Great.</c>
+
+00:14:10.790 --> 00:14:10.800 align:start position:0%
+It's like a twoe process minimum. Great.
+ 
+
+00:14:10.800 --> 00:14:15.350 align:start position:0%
+It's like a twoe process minimum. Great.
+We<00:14:11.040><c> have</c><00:14:11.199><c> your</c><00:14:11.360><c> TAM</c><00:14:12.399><c> in</c><00:14:12.959><c> your</c><00:14:14.160><c> CRM</c><00:14:14.639><c> now.</c><00:14:15.040><c> And</c><00:14:15.199><c> in</c>
+
+00:14:15.350 --> 00:14:15.360 align:start position:0%
+We have your TAM in your CRM now. And in
+ 
+
+00:14:15.360 --> 00:14:19.030 align:start position:0%
+We have your TAM in your CRM now. And in
+Clay,<00:14:15.680><c> we</c><00:14:15.839><c> can</c><00:14:16.000><c> use</c><00:14:16.160><c> it.</c><00:14:16.959><c> Now</c><00:14:17.199><c> we</c><00:14:17.519><c> go</c><00:14:17.760><c> top</c><00:14:18.079><c> down.</c>
+
+00:14:19.030 --> 00:14:19.040 align:start position:0%
+Clay, we can use it. Now we go top down.
+ 
+
+00:14:19.040 --> 00:14:22.310 align:start position:0%
+Clay, we can use it. Now we go top down.
+We<00:14:19.360><c> have</c><00:14:20.399><c> your</c><00:14:20.639><c> TAM</c><00:14:21.040><c> to</c><00:14:21.279><c> find</c><00:14:21.519><c> new</c><00:14:21.760><c> hires.</c><00:14:22.160><c> We</c>
+
+00:14:22.310 --> 00:14:22.320 align:start position:0%
+We have your TAM to find new hires. We
+ 
+
+00:14:22.320 --> 00:14:24.790 align:start position:0%
+We have your TAM to find new hires. We
+have<00:14:22.399><c> your</c><00:14:22.560><c> TAM</c><00:14:22.880><c> to</c><00:14:23.120><c> find</c><00:14:23.760><c> job</c><00:14:24.079><c> changes.</c><00:14:24.639><c> We</c>
+
+00:14:24.790 --> 00:14:24.800 align:start position:0%
+have your TAM to find job changes. We
+ 
+
+00:14:24.800 --> 00:14:28.470 align:start position:0%
+have your TAM to find job changes. We
+can<00:14:24.959><c> monitor</c><00:14:25.440><c> for</c><00:14:25.680><c> all</c><00:14:25.920><c> the</c><00:14:27.040><c> um</c><00:14:27.600><c> like</c><00:14:28.000><c> customer</c>
+
+00:14:28.470 --> 00:14:28.480 align:start position:0%
+can monitor for all the um like customer
+ 
+
+00:14:28.480 --> 00:14:30.150 align:start position:0%
+can monitor for all the um like customer
+support<00:14:28.880><c> hiring</c><00:14:29.360><c> signals</c><00:14:29.680><c> that</c><00:14:29.839><c> you</c><00:14:30.000><c> were</c>
+
+00:14:30.150 --> 00:14:30.160 align:start position:0%
+support hiring signals that you were
+ 
+
+00:14:30.160 --> 00:14:31.750 align:start position:0%
+support hiring signals that you were
+looking<00:14:30.320><c> for</c><00:14:30.560><c> before.</c>
+
+00:14:31.750 --> 00:14:31.760 align:start position:0%
+looking for before.
+ 
+
+00:14:31.760 --> 00:14:35.269 align:start position:0%
+looking for before.
+So<00:14:32.959><c> now</c><00:14:33.600><c> we</c><00:14:33.839><c> have</c><00:14:34.000><c> a</c><00:14:34.160><c> a</c><00:14:34.399><c> nice</c><00:14:34.639><c> loop</c><00:14:34.959><c> going,</c>
+
+00:14:35.269 --> 00:14:35.279 align:start position:0%
+So now we have a a nice loop going,
+ 
+
+00:14:35.279 --> 00:14:36.629 align:start position:0%
+So now we have a a nice loop going,
+right?<00:14:35.440><c> We're</c><00:14:35.680><c> adding</c><00:14:35.839><c> to</c><00:14:36.000><c> the</c><00:14:36.079><c> TAM.</c><00:14:36.480><c> We're</c>
+
+00:14:36.629 --> 00:14:36.639 align:start position:0%
+right? We're adding to the TAM. We're
+ 
+
+00:14:36.639 --> 00:14:39.189 align:start position:0%
+right? We're adding to the TAM. We're
+monitoring<00:14:37.040><c> the</c><00:14:37.199><c> TAM.</c>
+
+00:14:39.189 --> 00:14:39.199 align:start position:0%
+monitoring the TAM.
+ 
+
+00:14:39.199 --> 00:14:41.990 align:start position:0%
+monitoring the TAM.
+Uh<00:14:39.440><c> let</c><00:14:39.600><c> me</c><00:14:39.680><c> just</c><00:14:39.839><c> get</c><00:14:40.000><c> rid</c><00:14:40.079><c> of</c><00:14:40.240><c> this.</c><00:14:41.360><c> And</c>
+
+00:14:41.990 --> 00:14:42.000 align:start position:0%
+Uh let me just get rid of this. And
+ 
+
+00:14:42.000 --> 00:14:44.150 align:start position:0%
+Uh let me just get rid of this. And
+yeah,<00:14:42.399><c> then</c><00:14:42.639><c> we're</c><00:14:43.279><c> I</c><00:14:43.600><c> mean</c><00:14:43.760><c> for</c><00:14:44.000><c> this</c>
+
+00:14:44.150 --> 00:14:44.160 align:start position:0%
+yeah, then we're I mean for this
+ 
+
+00:14:44.160 --> 00:14:45.509 align:start position:0%
+yeah, then we're I mean for this
+customer,<00:14:44.560><c> this</c><00:14:44.720><c> was</c><00:14:44.800><c> a</c><00:14:44.959><c> little</c><00:14:45.120><c> different.</c>
+
+00:14:45.509 --> 00:14:45.519 align:start position:0%
+customer, this was a little different.
+ 
+
+00:14:45.519 --> 00:14:47.030 align:start position:0%
+customer, this was a little different.
+LinkedIn<00:14:45.839><c> outreach</c><00:14:46.240><c> happened</c><00:14:46.560><c> later</c><00:14:46.800><c> because</c>
+
+00:14:47.030 --> 00:14:47.040 align:start position:0%
+LinkedIn outreach happened later because
+ 
+
+00:14:47.040 --> 00:14:50.150 align:start position:0%
+LinkedIn outreach happened later because
+of<00:14:47.199><c> the</c><00:14:47.360><c> trust</c><00:14:47.680><c> factor.</c><00:14:48.079><c> They</c><00:14:48.399><c> really</c><00:14:48.880><c> really</c>
+
+00:14:50.150 --> 00:14:50.160 align:start position:0%
+of the trust factor. They really really
+ 
+
+00:14:50.160 --> 00:14:51.590 align:start position:0%
+of the trust factor. They really really
+I<00:14:50.320><c> I</c><00:14:50.720><c> really</c><00:14:50.959><c> think</c><00:14:51.040><c> that</c><00:14:51.199><c> in</c><00:14:51.360><c> terms</c><00:14:51.519><c> of</c>
+
+00:14:51.590 --> 00:14:51.600 align:start position:0%
+I I really think that in terms of
+ 
+
+00:14:51.600 --> 00:14:53.590 align:start position:0%
+I I really think that in terms of
+outreach,<00:14:52.079><c> like</c><00:14:52.240><c> you</c><00:14:52.480><c> you</c><00:14:52.880><c> people</c><00:14:53.199><c> are</c><00:14:53.360><c> more</c>
+
+00:14:53.590 --> 00:14:53.600 align:start position:0%
+outreach, like you you people are more
+ 
+
+00:14:53.600 --> 00:14:55.990 align:start position:0%
+outreach, like you you people are more
+careful<00:14:54.079><c> and</c><00:14:54.320><c> and</c><00:14:54.480><c> it</c><00:14:54.639><c> hurts</c><00:14:54.959><c> revenue</c><00:14:55.839><c> than</c>
+
+00:14:55.990 --> 00:14:56.000 align:start position:0%
+careful and and it hurts revenue than
+ 
+
+00:14:56.000 --> 00:14:58.710 align:start position:0%
+careful and and it hurts revenue than
+they<00:14:56.160><c> need</c><00:14:56.320><c> to</c><00:14:56.480><c> be.</c><00:14:57.440><c> No</c><00:14:57.680><c> one</c><00:14:57.839><c> remembers</c><00:14:58.160><c> a</c><00:14:58.399><c> cold</c>
+
+00:14:58.710 --> 00:14:58.720 align:start position:0%
+they need to be. No one remembers a cold
+ 
+
+00:14:58.720 --> 00:15:01.269 align:start position:0%
+they need to be. No one remembers a cold
+DM<00:14:59.199><c> that</c><00:14:59.440><c> they</c><00:14:59.680><c> got</c><00:14:59.920><c> like</c><00:15:00.480><c> three</c><00:15:00.720><c> weeks</c><00:15:00.880><c> ago.</c>
+
+00:15:01.269 --> 00:15:01.279 align:start position:0%
+DM that they got like three weeks ago.
+ 
+
+00:15:01.279 --> 00:15:04.230 align:start position:0%
+DM that they got like three weeks ago.
+Okay,<00:15:02.000><c> for</c><00:15:02.160><c> the</c><00:15:02.320><c> most</c><00:15:02.480><c> part,</c><00:15:03.519><c> um,</c><00:15:03.760><c> we</c><00:15:04.079><c> are</c>
+
+00:15:04.230 --> 00:15:04.240 align:start position:0%
+Okay, for the most part, um, we are
+ 
+
+00:15:04.240 --> 00:15:05.990 align:start position:0%
+Okay, for the most part, um, we are
+doing<00:15:04.480><c> things</c><00:15:04.720><c> like</c><00:15:04.880><c> prioritizing</c><00:15:05.760><c> and</c>
+
+00:15:05.990 --> 00:15:06.000 align:start position:0%
+doing things like prioritizing and
+ 
+
+00:15:06.000 --> 00:15:08.069 align:start position:0%
+doing things like prioritizing and
+bucketing<00:15:06.959><c> our</c><00:15:07.279><c> lead</c><00:15:07.440><c> list.</c><00:15:07.760><c> We</c><00:15:07.920><c> don't</c><00:15:08.000><c> want</c>
+
+00:15:08.069 --> 00:15:08.079 align:start position:0%
+bucketing our lead list. We don't want
+ 
+
+00:15:08.079 --> 00:15:09.910 align:start position:0%
+bucketing our lead list. We don't want
+to<00:15:08.240><c> send</c><00:15:08.560><c> like</c><00:15:08.720><c> say</c><00:15:08.959><c> we</c><00:15:09.120><c> have</c><00:15:09.199><c> a</c><00:15:09.440><c> huge</c><00:15:09.680><c> company</c>
+
+00:15:09.910 --> 00:15:09.920 align:start position:0%
+to send like say we have a huge company
+ 
+
+00:15:09.920 --> 00:15:11.590 align:start position:0%
+to send like say we have a huge company
+that<00:15:10.160><c> has</c><00:15:10.320><c> tons</c><00:15:10.560><c> of</c><00:15:10.720><c> people</c><00:15:10.880><c> that</c><00:15:11.120><c> are</c><00:15:11.279><c> good</c><00:15:11.440><c> to</c>
+
+00:15:11.590 --> 00:15:11.600 align:start position:0%
+that has tons of people that are good to
+ 
+
+00:15:11.600 --> 00:15:13.269 align:start position:0%
+that has tons of people that are good to
+work<00:15:11.760><c> with</c><00:15:11.920><c> us.</c><00:15:12.240><c> We</c><00:15:12.480><c> don't</c><00:15:12.639><c> want</c><00:15:12.800><c> to</c><00:15:12.880><c> send</c><00:15:13.040><c> to</c>
+
+00:15:13.269 --> 00:15:13.279 align:start position:0%
+work with us. We don't want to send to
+ 
+
+00:15:13.279 --> 00:15:14.949 align:start position:0%
+work with us. We don't want to send to
+all<00:15:13.360><c> of</c><00:15:13.440><c> them</c><00:15:13.600><c> at</c><00:15:13.760><c> once.</c><00:15:14.399><c> So,</c><00:15:14.560><c> we</c><00:15:14.800><c> are</c>
+
+00:15:14.949 --> 00:15:14.959 align:start position:0%
+all of them at once. So, we are
+ 
+
+00:15:14.959 --> 00:15:16.550 align:start position:0%
+all of them at once. So, we are
+bucketing<00:15:15.440><c> and</c><00:15:15.680><c> launching</c><00:15:16.079><c> some</c><00:15:16.240><c> of</c><00:15:16.399><c> those</c>
+
+00:15:16.550 --> 00:15:16.560 align:start position:0%
+bucketing and launching some of those
+ 
+
+00:15:16.560 --> 00:15:19.110 align:start position:0%
+bucketing and launching some of those
+campaigns<00:15:16.959><c> in</c><00:15:17.199><c> LinkedIn</c><00:15:18.160><c> and</c><00:15:18.320><c> and</c><00:15:18.720><c> then</c><00:15:18.880><c> we're</c>
+
+00:15:19.110 --> 00:15:19.120 align:start position:0%
+campaigns in LinkedIn and and then we're
+ 
+
+00:15:19.120 --> 00:15:21.030 align:start position:0%
+campaigns in LinkedIn and and then we're
+also<00:15:19.440><c> like</c><00:15:19.760><c> se</c><00:15:20.079><c> segmenting</c><00:15:20.560><c> them</c><00:15:20.720><c> out,</c>
+
+00:15:21.030 --> 00:15:21.040 align:start position:0%
+also like se segmenting them out,
+ 
+
+00:15:21.040 --> 00:15:24.230 align:start position:0%
+also like se segmenting them out,
+stepping<00:15:21.360><c> them</c><00:15:21.600><c> out</c><00:15:21.760><c> for</c><00:15:22.320><c> cold</c><00:15:22.639><c> email.</c>
+
+00:15:24.230 --> 00:15:24.240 align:start position:0%
+stepping them out for cold email.
+ 
+
+00:15:24.240 --> 00:15:26.310 align:start position:0%
+stepping them out for cold email.
+Um,<00:15:24.800><c> we're</c><00:15:25.040><c> planning</c><00:15:25.199><c> a</c><00:15:25.360><c> reenrichment.</c><00:15:26.079><c> How</c>
+
+00:15:26.310 --> 00:15:26.320 align:start position:0%
+Um, we're planning a reenrichment. How
+ 
+
+00:15:26.320 --> 00:15:28.949 align:start position:0%
+Um, we're planning a reenrichment. How
+often<00:15:26.560><c> do</c><00:15:26.800><c> we</c><00:15:26.959><c> want</c><00:15:27.120><c> to</c><00:15:27.680><c> refresh</c><00:15:28.079><c> the</c><00:15:28.240><c> signals</c>
+
+00:15:28.949 --> 00:15:28.959 align:start position:0%
+often do we want to refresh the signals
+ 
+
+00:15:28.959 --> 00:15:33.509 align:start position:0%
+often do we want to refresh the signals
+that<00:15:29.279><c> we</c><00:15:29.440><c> set</c><00:15:29.600><c> up?</c><00:15:30.079><c> Like</c><00:15:30.639><c> M&amp;A</c><00:15:31.760><c> funding</c><00:15:33.120><c> um</c>
+
+00:15:33.509 --> 00:15:33.519 align:start position:0%
+that we set up? Like M&amp;A funding um
+ 
+
+00:15:33.519 --> 00:15:36.790 align:start position:0%
+that we set up? Like M&amp;A funding um
+probably<00:15:34.560><c> every</c><00:15:35.040><c> like</c><00:15:35.680><c> 60</c><00:15:35.920><c> to</c><00:15:36.079><c> 90</c><00:15:36.320><c> days</c><00:15:36.480><c> if</c><00:15:36.720><c> the</c>
+
+00:15:36.790 --> 00:15:36.800 align:start position:0%
+probably every like 60 to 90 days if the
+ 
+
+00:15:36.800 --> 00:15:40.150 align:start position:0%
+probably every like 60 to 90 days if the
+CRM<00:15:37.199><c> is</c><00:15:37.360><c> huge.</c><00:15:38.560><c> Um</c><00:15:39.199><c> we</c><00:15:39.519><c> already</c><00:15:39.760><c> kind</c><00:15:39.920><c> of</c><00:15:40.000><c> did</c>
+
+00:15:40.150 --> 00:15:40.160 align:start position:0%
+CRM is huge. Um we already kind of did
+ 
+
+00:15:40.160 --> 00:15:41.430 align:start position:0%
+CRM is huge. Um we already kind of did
+the<00:15:40.320><c> step</c><00:15:40.480><c> I</c><00:15:40.639><c> already</c><00:15:40.800><c> mentioned</c><00:15:41.040><c> the</c><00:15:41.120><c> step</c><00:15:41.360><c> to</c>
+
+00:15:41.430 --> 00:15:41.440 align:start position:0%
+the step I already mentioned the step to
+ 
+
+00:15:41.440 --> 00:15:42.949 align:start position:0%
+the step I already mentioned the step to
+find<00:15:41.680><c> essential</c><00:15:42.000><c> data</c><00:15:42.320><c> to</c><00:15:42.399><c> find</c><00:15:42.560><c> the</c><00:15:42.720><c> data</c>
+
+00:15:42.949 --> 00:15:42.959 align:start position:0%
+find essential data to find the data
+ 
+
+00:15:42.959 --> 00:15:45.430 align:start position:0%
+find essential data to find the data
+sources<00:15:43.839><c> that</c><00:15:44.160><c> generally</c><00:15:44.560><c> happens</c><00:15:44.800><c> in</c><00:15:45.040><c> like</c><00:15:45.199><c> a</c>
+
+00:15:45.430 --> 00:15:45.440 align:start position:0%
+sources that generally happens in like a
+ 
+
+00:15:45.440 --> 00:15:48.150 align:start position:0%
+sources that generally happens in like a
+master<00:15:45.839><c> sheet.</c><00:15:46.560><c> Okay.</c>
+
+00:15:48.150 --> 00:15:48.160 align:start position:0%
+master sheet. Okay.
+ 
+
+00:15:48.160 --> 00:15:50.389 align:start position:0%
+master sheet. Okay.
+And<00:15:48.399><c> then</c><00:15:48.639><c> we're</c><00:15:48.880><c> planning</c><00:15:49.199><c> retargeting</c>
+
+00:15:50.389 --> 00:15:50.399 align:start position:0%
+And then we're planning retargeting
+ 
+
+00:15:50.399 --> 00:15:52.389 align:start position:0%
+And then we're planning retargeting
+possibly<00:15:51.120><c> Stella</c><00:15:51.440><c> growth</c><00:15:52.000><c> won't</c><00:15:52.160><c> be</c><00:15:52.240><c> there</c>
+
+00:15:52.389 --> 00:15:52.399 align:start position:0%
+possibly Stella growth won't be there
+ 
+
+00:15:52.399 --> 00:15:54.870 align:start position:0%
+possibly Stella growth won't be there
+for<00:15:52.560><c> that.</c><00:15:52.880><c> Okay.</c><00:15:53.839><c> But</c><00:15:54.000><c> we're</c><00:15:54.240><c> setting</c><00:15:54.480><c> up</c><00:15:54.639><c> all</c>
+
+00:15:54.870 --> 00:15:54.880 align:start position:0%
+for that. Okay. But we're setting up all
+ 
+
+00:15:54.880 --> 00:15:56.550 align:start position:0%
+for that. Okay. But we're setting up all
+this<00:15:55.120><c> stuff</c><00:15:55.279><c> so</c><00:15:55.519><c> that</c><00:15:55.680><c> the</c><00:15:56.240><c> this</c>
+
+00:15:56.550 --> 00:15:56.560 align:start position:0%
+this stuff so that the this
+ 
+
+00:15:56.560 --> 00:15:58.629 align:start position:0%
+this stuff so that the this
+infrastructure<00:15:57.199><c> can</c><00:15:57.440><c> run</c><00:15:57.600><c> without</c><00:15:57.920><c> us.</c>
+
+00:15:58.629 --> 00:15:58.639 align:start position:0%
+infrastructure can run without us.
+ 
+
+00:15:58.639 --> 00:16:01.350 align:start position:0%
+infrastructure can run without us.
+Positive<00:15:59.120><c> reply</c><00:15:59.440><c> comes</c><00:15:59.680><c> in</c><00:16:00.560><c> from</c><00:16:00.800><c> an</c><00:16:00.959><c> automate</c>
+
+00:16:01.350 --> 00:16:01.360 align:start position:0%
+Positive reply comes in from an automate
+ 
+
+00:16:01.360 --> 00:16:04.069 align:start position:0%
+Positive reply comes in from an automate
+automated<00:16:01.920><c> campaign.</c>
+
+00:16:04.069 --> 00:16:04.079 align:start position:0%
+automated campaign.
+ 
+
+00:16:04.079 --> 00:16:06.870 align:start position:0%
+automated campaign.
+Um<00:16:05.279><c> double</c><00:16:05.600><c> check</c><00:16:05.680><c> that</c><00:16:05.920><c> they're</c><00:16:06.079><c> qualified,</c>
+
+00:16:06.870 --> 00:16:06.880 align:start position:0%
+Um double check that they're qualified,
+ 
+
+00:16:06.880 --> 00:16:08.710 align:start position:0%
+Um double check that they're qualified,
+which<00:16:07.279><c> surprisingly</c><00:16:07.839><c> is</c><00:16:08.079><c> something</c><00:16:08.240><c> that</c><00:16:08.399><c> I</c>
+
+00:16:08.710 --> 00:16:08.720 align:start position:0%
+which surprisingly is something that I
+ 
+
+00:16:08.720 --> 00:16:11.430 align:start position:0%
+which surprisingly is something that I
+recommend<00:16:09.120><c> doing.</c><00:16:09.920><c> I</c><00:16:10.399><c> recommend</c><00:16:11.040><c> honestly</c>
+
+00:16:11.430 --> 00:16:11.440 align:start position:0%
+recommend doing. I recommend honestly
+ 
+
+00:16:11.440 --> 00:16:14.710 align:start position:0%
+recommend doing. I recommend honestly
+for<00:16:11.759><c> larger</c><00:16:12.160><c> SAS</c><00:16:12.560><c> companies</c><00:16:13.040><c> to</c><00:16:14.079><c> do</c><00:16:14.320><c> most</c><00:16:14.560><c> of</c>
+
+00:16:14.710 --> 00:16:14.720 align:start position:0%
+for larger SAS companies to do most of
+ 
+
+00:16:14.720 --> 00:16:16.790 align:start position:0%
+for larger SAS companies to do most of
+the<00:16:14.880><c> qualification</c><00:16:15.440><c> on</c><00:16:15.680><c> the</c><00:16:15.759><c> back</c><00:16:16.000><c> end,</c><00:16:16.399><c> but</c><00:16:16.639><c> I</c>
+
+00:16:16.790 --> 00:16:16.800 align:start position:0%
+the qualification on the back end, but I
+ 
+
+00:16:16.800 --> 00:16:20.310 align:start position:0%
+the qualification on the back end, but I
+can<00:16:16.880><c> talk</c><00:16:17.040><c> about</c><00:16:17.199><c> that</c><00:16:17.440><c> later.</c><00:16:18.639><c> Um</c><00:16:20.000><c> route</c>
+
+00:16:20.310 --> 00:16:20.320 align:start position:0%
+can talk about that later. Um route
+ 
+
+00:16:20.320 --> 00:16:21.829 align:start position:0%
+can talk about that later. Um route
+things<00:16:20.560><c> properly.</c><00:16:20.959><c> Save</c><00:16:21.199><c> this</c><00:16:21.360><c> in</c><00:16:21.519><c> a</c><00:16:21.600><c> clay</c>
+
+00:16:21.829 --> 00:16:21.839 align:start position:0%
+things properly. Save this in a clay
+ 
+
+00:16:21.839 --> 00:16:24.310 align:start position:0%
+things properly. Save this in a clay
+table.
+
+00:16:24.310 --> 00:16:24.320 align:start position:0%
+table.
+ 
+
+00:16:24.320 --> 00:16:26.870 align:start position:0%
+table.
+um<00:16:24.560><c> update</c><00:16:24.880><c> it</c><00:16:24.959><c> in</c><00:16:25.120><c> HubSpot,</c><00:16:26.160><c> enrich</c><00:16:26.639><c> phone</c>
+
+00:16:26.870 --> 00:16:26.880 align:start position:0%
+um update it in HubSpot, enrich phone
+ 
+
+00:16:26.880 --> 00:16:29.749 align:start position:0%
+um update it in HubSpot, enrich phone
+numbers,<00:16:27.680><c> push</c><00:16:28.000><c> over</c><00:16:28.240><c> to</c><00:16:29.040><c> a</c><00:16:29.279><c> Slack</c><00:16:29.600><c> channel</c>
+
+00:16:29.749 --> 00:16:29.759 align:start position:0%
+numbers, push over to a Slack channel
+ 
+
+00:16:29.759 --> 00:16:31.749 align:start position:0%
+numbers, push over to a Slack channel
+for<00:16:29.920><c> the</c><00:16:30.079><c> VDRS.</c><00:16:30.639><c> Okay,</c><00:16:31.199><c> I</c><00:16:31.440><c> think</c><00:16:31.519><c> that's</c>
+
+00:16:31.749 --> 00:16:31.759 align:start position:0%
+for the VDRS. Okay, I think that's
+ 
+
+00:16:31.759 --> 00:16:34.470 align:start position:0%
+for the VDRS. Okay, I think that's
+basically<00:16:32.000><c> all</c><00:16:32.160><c> I</c><00:16:32.399><c> have</c><00:16:32.480><c> time</c><00:16:32.639><c> for</c><00:16:32.880><c> today.</c><00:16:33.920><c> Um</c>
+
+00:16:34.470 --> 00:16:34.480 align:start position:0%
+basically all I have time for today. Um
+ 
+
+00:16:34.480 --> 00:16:36.470 align:start position:0%
+basically all I have time for today. Um
+I've<00:16:34.720><c> got</c><00:16:34.880><c> a</c><00:16:35.040><c> lot</c><00:16:35.120><c> of</c><00:16:35.199><c> skitso</c><00:16:35.920><c> uh</c>
+
+00:16:36.470 --> 00:16:36.480 align:start position:0%
+I've got a lot of skitso uh
+ 
+
+00:16:36.480 --> 00:16:39.030 align:start position:0%
+I've got a lot of skitso uh
+whiteboarding<00:16:37.120><c> here,</c><00:16:37.839><c> but</c><00:16:38.320><c> uh</c><00:16:38.560><c> this</c><00:16:38.800><c> is</c><00:16:38.880><c> just</c>
+
+00:16:39.030 --> 00:16:39.040 align:start position:0%
+whiteboarding here, but uh this is just
+ 
+
+00:16:39.040 --> 00:16:40.870 align:start position:0%
+whiteboarding here, but uh this is just
+one<00:16:39.360><c> example</c><00:16:39.680><c> of</c><00:16:39.839><c> how</c><00:16:40.000><c> you</c><00:16:40.160><c> can</c><00:16:40.240><c> do</c><00:16:40.399><c> GTM</c>
+
+00:16:40.870 --> 00:16:40.880 align:start position:0%
+one example of how you can do GTM
+ 
+
+00:16:40.880 --> 00:16:42.230 align:start position:0%
+one example of how you can do GTM
+infrastructure.<00:16:41.519><c> I</c><00:16:41.680><c> hope</c><00:16:41.759><c> you</c><00:16:41.920><c> found</c><00:16:42.079><c> it</c>
+
+00:16:42.230 --> 00:16:42.240 align:start position:0%
+infrastructure. I hope you found it
+ 
+
+00:16:42.240 --> 00:16:44.880 align:start position:0%
+infrastructure. I hope you found it
+useful.
+

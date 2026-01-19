@@ -1,0 +1,590 @@
+[19:00:14 - 19:00:17] Bryan Ilg: There we go. Unmute helps. How are you?
+
+[19:00:18 - 19:00:18] Scott: Hey, how you doing?
+
+[19:00:21 - 19:00:21] Bryan Ilg: Off.
+
+[19:00:22 - 19:00:22] Scott: Can you hear me?
+
+[19:00:22 - 19:00:25] Bryan Ilg: I can. Sorry, all sorts of mutes and headphones and all the fun stuff. I can.
+
+[19:00:28 - 19:00:29] Scott: All good. How you doing?
+
+[19:00:30 - 19:00:39] Bryan Ilg: Yeah, I'm doing well, doing well. I I just went out and had coffee with somebody and then grabbed lunch and just sitting down. Oh my God.
+
+[19:00:38 - 19:00:40] Scott: Nice are you. Are you in the city?
+
+[19:00:42 - 19:00:46] Bryan Ilg: I'm over here off Patterson, near 218 in Paterson. Over there.
+
+[19:00:48 - 19:00:50] Scott: OK. I don't know what 218 is because I.
+
+[19:00:49 - 19:00:49] Bryan Ilg: Yep.
+
+[19:00:52 - 19:00:53] Scott: Just don't know is that Param.
+
+[19:00:55 - 19:00:58] Bryan Ilg: No, it's all the way over here. By on the West End so.
+
+[19:00:59 - 19:00:59] Scott: Oh.
+
+[19:01:01 - 19:01:03] Bryan Ilg: Yeah, if you were thinking like Capital One campus.
+
+[19:01:03 - 19:01:03] Scott: Yeah.
+
+[19:01:05 - 19:01:16] Bryan Ilg: I'm about that that north-south kind of part of the loop. I'm. I'm just like a exit or two South of West Creek. So end of the day it's crazy.
+
+[19:01:15 - 19:01:15] Scott: Oh.
+
+[19:01:17 - 19:01:20] Bryan Ilg: Yeah. So where where? Where are you based?
+
+[19:01:19 - 19:01:23] Scott: Nice. I mean, we're in Short Pump.
+
+[19:01:24 - 19:01:27] Bryan Ilg: OK. I was just up at foxtail, coffee or whatever.
+
+[19:01:27 - 19:01:27] Scott: OK.
+
+[19:01:28 - 19:01:30] Bryan Ilg: So yeah, nice.
+
+[19:01:30 - 19:01:33] Scott: Yeah, yeah, yeah. We're north of there.
+
+[19:01:32 - 19:01:33] Bryan Ilg: OK. Yeah, right over.
+
+[19:01:33 - 19:01:50] Scott: But yeah, same East West Ness. Nice. That's awesome. I went to they had a monthly AI and RVA, or what's their group call AIAI ready RVA. Yeah.
+
+[19:01:47 - 19:01:48] Bryan Ilg: AI ready rva.
+
+[19:01:51 - 19:01:54] Scott: So I went to the meeting with will. The wills were there.
+
+[19:01:52 - 19:01:52] Bryan Ilg: Yeah.
+
+[19:01:54 - 19:01:55] Scott: It was good. It was good.
+
+[19:01:55 - 19:01:55] Bryan Ilg: Yeah. How was that?
+
+[19:01:56 - 19:02:09] Scott: It was like a nice intro. I think I want to reach out and you know, see how I can get more involved. I think there's an event for marketing and creative like at the end of the month. So I might try and go to that one.
+
+[19:02:09 - 19:02:29] Bryan Ilg: OK, that's what's up. Honestly, that's what I was just meeting with somebody about Foxtel. Was AI ready and some governance stuff? So yeah. I had a couple other business things, but I I ended up having like 20-5 different conversations I can have so I can try to keep it to about 10. But.
+
+[19:02:29 - 19:02:33] Scott: That's awesome. You're you're all over the place like that.
+
+[19:02:33 - 19:03:00] Bryan Ilg: Dude, I want to not be, but I think for the sake of. Everything is all happening at once like I have to like. I have pretty dynamic conversations so but trying to really drill it. Which I guess kind of, it might be a nice little segue into some of the stuff we were talking about with customer profiles and outreach and those types of things. So yeah.
+
+[19:02:58 - 19:02:58] Scott: Yeah.
+
+[19:03:01 - 19:03:23] Bryan Ilg: How do you wanna structure this? We kinda did the meet and greet kind of this what we do, blah blah blah. I threw like 50 things at you. You I understand. Generally you're you're driving, you know, brand messaging and drove up in those types of things. But maybe I'll let you set the table and I'll fill the content, yeah.
+
+[19:03:23 - 19:03:34] Scott: Sure. Yeah. I mean, I'd love to know. You know, what are your areas of priority like which? Which business are you? Might this resonate with?
+
+[19:03:32 - 19:03:32] Bryan Ilg: Yeah.
+
+[19:03:34 - 19:03:53] Scott: And yeah, that sort of thing. And for some context, we do some Rev op stuff too on the back end like CRM, HubSpot, we do like board reporting and also just go to market. Reporting you know, so like health of pipeline staging.
+
+[19:03:51 - 19:03:53] Bryan Ilg: Yep, well.
+
+[19:03:55 - 19:03:56] Scott: Things like medic, things like that.
+
+[19:03:59 - 19:04:03] Bryan Ilg: OK. So yeah, let's let's focus, Brian.
+
+[19:04:03 - 19:04:03] Scott: Hmm.
+
+[19:04:04 - 19:04:26] Bryan Ilg: That's the right starting spot. So I feel like. For the most part, there's there's. I don't wanna say it. I think the target profile that I talked to the most are like IT and info people, info info security or.
+
+[19:04:25 - 19:04:25] Scott: Mm-hmm.
+
+[19:04:27 - 19:04:30] Bryan Ilg: CIOs. Those types of folks.
+
+[19:04:31 - 19:04:31] Scott: Yeah, yeah.
+
+[19:04:33 - 19:04:58] Bryan Ilg: They are the responsible person within organization for the movement of data through the company and the technology that moves that data. So I sell the hardware that starts the connectivity to allow stuff to roll through so I can sell fiber. I can sell all that. So they IT. People typically are the ones who are making those types of bandwidth decisions for whatever.
+
+[19:04:59 - 19:04:59] Scott: Right.
+
+[19:05:00 - 19:05:12] Bryan Ilg: Is happening within the organization, right? So once we have connectivity and networking equipment and you know the compliance activities around those, it kind of shifts into.
+
+[19:05:01 - 19:05:01] Scott: Right.
+
+[19:05:14 - 19:05:28] Bryan Ilg: A CIO. Who's gonna kind of manage how that information moves through the organization? I don't know if they're really making the decisions on like who? Well, they they act. Doesn't really matter. They manage the movement of the information as to what, when and where.
+
+[19:05:30 - 19:05:30] Scott: Right.
+
+[19:05:33 - 19:05:38] Bryan Ilg: And in a lot of capacities, they also are having a lot of heavy handedness into AI.
+
+[19:05:38 - 19:05:38] Scott: Right.
+
+[19:05:40 - 19:05:51] Bryan Ilg: And the governance of it, because CIO's also really manage governance of, you know, the traditional governance things, cybersecurity, data security, although that can also be like a Seeso.
+
+[19:05:52 - 19:05:52] Scott: Mm-hmm.
+
+[19:05:54 - 19:06:11] Bryan Ilg: So. Then there's like all these new roles with AI and AI governance or compliance. So maybe what I'm gonna do is I'm gonna spin this around on you and say. Kind of a systematic approach or I have like a system that I can sell and the system kind of traverses all the way from the very you know connection all the way to the compliance activities of what happens on the connection and then the equipment to facilitate the. I sell.
+
+[19:06:17 - 19:06:17] Scott: Mm-hmm.
+
+[19:06:31 - 19:06:34] Bryan Ilg: Movement of that information. So there are.
+
+[19:06:33 - 19:06:33] Scott: Right.
+
+[19:06:35 - 19:06:55] Bryan Ilg: Typically. It is that CIO who kinda sits at the top. But then that kinda like scatters and fractures into all those kind of like IT people do manage things that are outside of traditional it. And and all those. So that's kind of been the challenge for me.
+
+[19:06:56 - 19:06:56] Scott: Hmm.
+
+[19:06:58 - 19:07:35] Bryan Ilg: So I don't know if you do like. Here's one customer profile. We're gonna drill and kill. Or if it's like, hey, here's a. Customer profile that for like a 500 or 1000 person organization like yeah, they pretty much all have a CIO. So we're just gonna stay there versus if you go down into like kind of a mid market size company we'll call sub 500 bid market to maybe 200 to 205 hundred is like you know we're gonna target IT people. We're gonna talk you know. And kind of like that broad stroke of like, here's a a bucket of titles that.
+
+[19:07:35 - 19:07:36] Scott: Yes, yes.
+
+[19:07:36 - 19:07:42] Bryan Ilg: Take those responsibilities on, but you get the you get the challenge there.
+
+[19:07:41 - 19:07:41] Scott: Yep.
+
+[19:07:43 - 19:07:45] Bryan Ilg: So I don't know.
+
+[19:07:44 - 19:07:44] Scott: Yeah, yeah.
+
+[19:07:46 - 19:07:50] Bryan Ilg: That's a kind of the wheel the the the part of the business that I'm trying to speak to.
+
+[19:07:50 - 19:08:41] Scott: I see. Yeah. Yeah, yeah, yeah. No, that. I mean that totally makes sense. So yeah, I mean, we definitely focus on. The strategy component first. So like what you're talking about? The ICP and the personas associated with the account types. And then yeah, like, you know, when I was at 6th sense, the CIO would have been responsible for all of that. But he had AVP of it. That when we when we opened an office in London, they made, they did an upgrade to the entire infrastructure. And I'm sure they were both, you know, so there's buying committees, so you have to map the buying committee. There's the economic buyer and the you know multi decision makers. You have to kind of go across all of those folks and it's kind of just getting into the account. And of course, those deals take longer and all that sort of stuff, so.
+
+[19:08:32 - 19:08:32] Bryan Ilg: Yep.
+
+[19:08:43 - 19:08:58] Scott: Yeah, I mean we we definitely would do that sort of work the segmentation. And then scoring account and lead scoring. Within. Relevant to each sub you know subset of customers.
+
+[19:09:00 - 19:09:00] Bryan Ilg: Yeah.
+
+[19:09:01 - 19:09:02] Scott: Potential customers.
+
+[19:09:03 - 19:10:00] Bryan Ilg: Do you think so? The other side. The other side of the coin is I do like broad SMB stuff like high volume transactional things for a new business owner who and this is just the dichotomy and literally like I can throw a net anywhere and sell something to somebody. It's it's annoying to me. But like the other side is like I'm a new business owner, I need Internet for my business and a new new smartphone. Like that's good business for me too, to go grab so. Like what is easier to drive leads towards? Might even be the right question. Like what is kind of the ideal segmentation? That you guys focus on is it hyper specific one title and like or is it kind of a broad kind of horizon?
+
+[19:09:53 - 19:09:53] Scott: Yeah.
+
+[19:10:02 - 19:10:04] Bryan Ilg: Approach to like new business owners, you know?
+
+[19:10:06 - 19:10:40] Scott: Yeah, I mean. I would I mean, so the way I've historically thought about it is. And it's different because these are kind of different businesses potentially or semi you know different use cases for different businesses but. Looking at customer acquisition costs and then? Mapping that against, I mean in your case it's a one time transaction. It sounds like so. You can do some level of like profitability analysis and understand what's worthwhile or not.
+
+[19:10:40 - 19:10:40] Bryan Ilg: Mm-hmm.
+
+[19:10:41 - 19:11:17] Scott: So maybe with the new business owner you have a trigger. That's like there's a filing with. The state for a new LLC or something like that. And you just have like an always on outbound campaign that's running to those people. And maybe the persona for that in that case is the owner and it's light touch. You're just. It's either strictly inbound and we could you could qualify the inbound leads that hit your website or whatever or like your LinkedIn posts or any of those things, and then have an always on outbound with probably substantial volume because there's lots of people starting businesses and.
+
+[19:11:07 - 19:11:07] Bryan Ilg: Yep.
+
+[19:11:18 - 19:11:46] Scott: Then you can do. You know a separate. Motion for the enterprise. Type sale, which is going to be, you know, substantially longer. Buying committee. You could do ABM motion where you're like identifying. These are the 100 counts I want to penetrate. And doing a lot of different things across. You know I'm not. We're not really doing like paid media. But I know some folks that do paid media.
+
+[19:11:47 - 19:11:49] Bryan Ilg: What are you the best at? You think?
+
+[19:11:51 - 19:12:14] Scott: I think we're, we're really good at the data like using the data to inform. The strategy, because we both have lived in the Office of CFO, her backgrounds in Rev OPS and mine is in OPS and finance. So we can look at it with the lens of. How much are you spending to acquire the customer and and what are you getting out of it?
+
+[19:12:13 - 19:12:16] Bryan Ilg: Yeah. OK. That's good.
+
+[19:12:17 - 19:12:46] Scott: I think we're pretty solid at the copywriting and and the. The outbound you know go to market component. We're not like sellers. But we can. We're definitely good at identifying like, hey, there's a gap in. Your qualification from stage two to three, where you had the initial meeting, you qualified them and then. Vendor of Choices Stage 3 or you know whatever defining what the staging is and then seeing where there's gaps in the process.
+
+[19:12:47 - 19:12:47] Bryan Ilg: OK.
+
+[19:12:49 - 19:13:28] Scott: So at a place like sixth Sense, where we had four segments and. We would look at, you know, they have very different like you mentioned. Like a deal cycle for SMB is 60 days. And then if we were short, we can do forecasting and yeah, at the beginning of the quarter for short term forecasts, we know that demand Gen. we called it demand Gen. but paid media is going to bring you the most quickly. So we would like funnel money there versus. Where even though it had a higher cost of acquisition versus like this always on outbound motion. So I think it's really like the.
+
+[19:13:27 - 19:13:27] Bryan Ilg: Sure.
+
+[19:13:31 - 19:13:39] Scott: We're positioning ourselves as like we do strategy and we do execution because many either just do execution and don't understand the strategy or.
+
+[19:13:36 - 19:13:57] Bryan Ilg: OK. Should we start with should? All right. So starting with strategy then. Is the the profile kind of where we wanna hit? All right, so. What I want to do, I want to figure out how to drive customers to deploy dynamics.
+
+[19:13:58 - 19:13:58] Scott: OK.
+
+[19:13:59 - 19:14:21] Bryan Ilg: I think that's the the biggest net I can cast. It's SMB focused, I could. I could probably. Within SMB, I could focus in typically on like blue collar type businesses, service based businesses. They use a lot of connectivity solutions.
+
+[19:14:21 - 19:14:21] Scott: Hmm.
+
+[19:14:23 - 19:14:33] Bryan Ilg: Think mobile workforce tablets in the field phones on. You know, drivers, connected vehicles. Plumbers HVAC's, electricians like construction.
+
+[19:14:36 - 19:14:36] Scott: Yep.
+
+[19:14:37 - 19:14:39] Bryan Ilg: Any sort of mobile something or others?
+
+[19:14:39 - 19:14:39] Scott: Right.
+
+[19:14:41 - 19:15:39] Bryan Ilg: So maybe that's like the. Let's focus there. Or even like. I like franchises too. Those tend to have good. So you know what? Yeah. What I would love to be able to figure out is a nice little. Consistent lead Gen. For those types of opportunities. And we're and we're what we're selling there is. Better. Better Business Internet solutions. You know, whether it's, you know, 5G or fiber connection or satellite connection. I literally can sell all of that. So I think Better Business Internet. Actually sounds pretty legit. Terms like copy or like a campaign.
+
+[19:15:40 - 19:15:43] Scott: Right. And I think you mentioned pricing, right, like you have.
+
+[19:15:41 - 19:15:51] Bryan Ilg: And then. We have great pricing on hardware, so we subsidized we we we would actually have the carrier itself.
+
+[19:15:43 - 19:15:43] Scott: A.
+
+[19:15:52 - 19:16:02] Bryan Ilg: So if I was talking to to you and you're like, I don't even know if ATT team mobile Verizon's better, I'd say OK. Well, we're gonna focus on signal first because you can save 5 bucks with the signal. Might suck.
+
+[19:16:01 - 19:16:01] Scott: Hmm.
+
+[19:16:05 - 19:16:20] Bryan Ilg: So we can represent all connectivity solutions providers. We would go with AT&T for like fiber, but if we needed to, we have Comcast and all those other people. I could tap in, but it's not really like the goal.
+
+[19:16:21 - 19:16:21] Scott: Right.
+
+[19:16:22 - 19:16:34] Bryan Ilg: So. Yeah, but I think if you're Better Business Internet, something along those lines, but that's that's a super competitive. Online category.
+
+[19:16:33 - 19:16:33] Scott: Thank you.
+
+[19:16:36 - 19:16:44] Bryan Ilg: Right. You know, and we don't have the budgets to go compete because in that sense we would be out there competing against those carriers.
+
+[19:16:36 - 19:16:46] Scott: Yep. Yeah.
+
+[19:16:47 - 19:17:30] Bryan Ilg: So typically what ends up happening in the space is everyone just leans on trying to go grab carrier Rep attention. It's 'cause. They have the marketing spend out there. They're driving those leads to them and then we just kinda sit off to the back and wait for a lead to come over. But we need to get more. Like I wanna be able to draw in certain people so. When I think about those types of companies that are are nice for us like. Like. Yeah, like I I could sit and probably I should probably sit in noodle on that a little bit more, but. You know. It say that's the strategic goal we're at.
+
+[19:17:30 - 19:17:30] Scott: No.
+
+[19:17:31 - 19:17:44] Bryan Ilg: I could say, hey, I have these solutions which enable these types of services to be new revenue drivers in the organization, Connected solutions help you know, mobile processing, you know immediate transaction you know.
+
+[19:17:45 - 19:17:45] Scott: Hmm.
+
+[19:17:46 - 19:17:59] Bryan Ilg: New new service, you know, revenue streams on on, on site or something along those lines. Typically the the main like oh I I put a tablet in my field and now I can collect money faster. It's like the value of that.
+
+[19:17:58 - 19:17:59] Scott: OK, OK.
+
+[19:18:02 - 19:18:07] Bryan Ilg: But I yeah, like we're facilitating software to be used so.
+
+[19:18:10 - 19:18:11] Scott: Gotcha. And.
+
+[19:18:10 - 19:18:23] Bryan Ilg: It it it gets, it gets a little messy, but at the end of the day, we're. That's kind of the space we're selling into and people get that tablet once they determine that they want to take payment out in the field, so.
+
+[19:18:18 - 19:18:28] Scott: Right. Yeah, that's an interesting.
+
+[19:18:28 - 19:18:28] Bryan Ilg: You know.
+
+[19:18:29 - 19:18:31] Scott: Yeah. So like that would be a hypothesis maybe, right?
+
+[19:18:32 - 19:18:32] Bryan Ilg: Sure.
+
+[19:18:32 - 19:19:00] Scott: Like the hypothesis is. They're growing X percent or they open the second location, or they just hired someone and maybe they're ready to add field payments because, yeah, they're clearly growing. And yeah, that might be just a hypothesis we make. But then sorry, one question was how? Are you or would you differentiate yourself versus? The carriers is it higher touch service?
+
+[19:19:01 - 19:19:04] Bryan Ilg: Yeah, we have. We have better.
+
+[19:19:02 - 19:19:03] Scott: More in depth.
+
+[19:19:07 - 19:19:17] Bryan Ilg: We have Better Business networking equipment. So what we specifically bring to the table from a value perspective is you're not gonna use the the consumer grade devices that they give you.
+
+[19:19:18 - 19:19:18] Scott: Hmm.
+
+[19:19:19 - 19:19:47] Bryan Ilg: You're gonna get business grade or enterprise grade equipment? Which? Minimum value that that brings is better connectivity options, better better throughput, better signal. Ingestion because we have better antennas, we have better. You know, devices generally and then we also offer a lot of services around it.
+
+[19:19:43 - 19:19:43] Scott: Right.
+
+[19:19:47 - 19:20:04] Bryan Ilg: So when you get a device from a carrier it you know they do limited. Provisioning. We can deliver a device like out-of-the-box like ready to be installed or we can actually install it for you as well. So we have all those things.
+
+[19:20:05 - 19:20:06] Scott: OK. And is it just local?
+
+[19:20:09 - 19:20:12] Bryan Ilg: No, we can do that pretty much anywhere.
+
+[19:20:13 - 19:20:18] Scott: OK. So you don't want to cheat on geographic limitations necessarily.
+
+[19:20:14 - 19:20:31] Bryan Ilg: So we can, yeah, we can. Right. We can do that. We can do that. Nationally, we have installed partners all over the place and then it's, you know, the provisioning would happen local and ship over ready to go device.
+
+[19:20:31 - 19:20:37] Scott: OK. And then what's like an average order value?
+
+[19:20:38 - 19:21:04] Bryan Ilg: It's good question so. I'm putting together something right now. This would be for an antenna and. A. What is this one device? So what is this? In terms of like total revenue or do you want like gross margin?
+
+[19:21:06 - 19:21:06] Scott: I guess both.
+
+[19:21:08 - 19:21:27] Bryan Ilg: OK. So this would probably be closer. To. Probably around like 550 bucks. Total revenue. And costs on like margin on that? I'm trying to quick math here.
+
+[19:21:28 - 19:21:28] Scott: Mm-hmm.
+
+[19:21:34 - 19:21:41] Bryan Ilg: Oh my gosh, shouldn't I would say we're making probably like. 200 on that.
+
+[19:21:44 - 19:21:47] Scott: OK. So less than 50% larger because it's hardware?
+
+[19:21:45 - 19:21:45] Bryan Ilg: Yeah.
+
+[19:21:48 - 19:21:48] Scott: And.
+
+[19:21:51 - 19:21:54] Bryan Ilg: Yeah, we shoot for like 3035%. That's good for us.
+
+[19:21:57 - 19:22:02] Scott: And then do you have a, do you have a sales team today or any, is it like what's the structure of the work today?
+
+[19:22:07 - 19:22:12] Bryan Ilg: Diane, over here. Just something at the back of my throat. Weird.
+
+[19:22:12 - 19:22:12] Scott: Oh man.
+
+[19:22:14 - 19:22:18] Bryan Ilg: So we're a small group. There's four of us, technically 5, but.
+
+[19:22:17 - 19:22:17] Scott: OK.
+
+[19:22:22 - 19:22:27] Bryan Ilg: Yeah. How we would pay that out? So it's a volume game clearly.
+
+[19:22:28 - 19:22:28] Scott: Right.
+
+[19:22:31 - 19:22:54] Bryan Ilg: And yeah, we typically are looking for. Like a seller that would come work for us should expect to make some around. 100 grand. Once we can get that sort of pipeline in, that's historically what we've been able to do. And at one, you know the last company I was at that did this, they were doing somewhere between like 50 and 60 million a year and. Total revenue.
+
+[19:22:55 - 19:22:55] Scott: Wow, OK.
+
+[19:22:58 - 19:23:15] Bryan Ilg: Yeah. So they didn't. And truthfully, they had zero direct customer motion. This was all through channel. So all the leads they got were on the carrier reps. So that was like the primary customer was like a Verizon AB2B Rep.
+
+[19:23:13 - 19:23:13] Scott: Hmm.
+
+[19:23:16 - 19:23:21] Bryan Ilg: So how we would treat that is, hey, each carrier Rep has X amount of quota.
+
+[19:23:16 - 19:23:16] Scott: Hmm.
+
+[19:23:24 - 19:24:17] Bryan Ilg: We want X amount of that quota to come through us 'cause they have to use partners and our customer acquisition costs was like we go out and like. We'd fly, go meet them in person, buy them lunch, take them out for drinks and. So that motion works, and we'll do that. Call them twice a month. The. The thing is, is those carriers are like, well, don't just sit and I don't wanna pay you and pay my Rep for the same deal. Like what are you doing to drive opportunities in? We don't even have to be very good at this, Scott. We just have to look the part because the game I just told you what the game is. But if we can, if we can legitimately be driving opportunities in that accelerates all of the stuff we're trying to do. And protects us a little bit if there's any carrier program shifts, which that certainly happens.
+
+[19:24:16 - 19:24:23] Scott: Hmm. So the channel partners or sorry you are the channel partner they.
+
+[19:24:20 - 19:24:23] Bryan Ilg: But like. Yep.
+
+[19:24:25 - 19:24:32] Scott: They prefer that you're like, let's say you drive some level of awareness in business and all that good stuff. Then they prioritize you even more.
+
+[19:24:31 - 19:24:31] Bryan Ilg: Yep.
+
+[19:24:32 - 19:24:33] Scott: Is that the the game?
+
+[19:24:34 - 19:24:42] Bryan Ilg: Yep. So the more if you can bring them business, they're gonna give you it back 510 times over.
+
+[19:24:43 - 19:24:43] Scott: I see.
+
+[19:24:45 - 19:25:03] Bryan Ilg: They have to use us anyway, so like to ATT has like one business Internet router. It legitimately doesn't have hookups for antennas. So if you are doing business in a machine shop somewhere and you wanna use connectivity because you can't get fiber to the machine, shop in your backyard, you put that device in there and all of a sudden the metal.
+
+[19:24:57 - 19:24:57] Scott: Hmm.
+
+[19:25:06 - 19:25:08] Bryan Ilg: Building has blocked all the signal. You got one MB down.
+
+[19:25:07 - 19:25:07] Scott: Mm-hmm.
+
+[19:25:08 - 19:25:33] Bryan Ilg: Well, it's a super simple solution to take a drill pop through the wall, run an antenna on the outside of your building and into the device. And now you get 200 megabyte down, because that's your cellular signal. That's something I sell all day long. So, but, and that's something that a AT&T Rep couldn't unless they had someone like me and that would that would result in a lost, it's called, you know, churn.
+
+[19:25:22 - 19:25:30] Scott: Hmm. Hmm.
+
+[19:25:35 - 19:25:46] Bryan Ilg: Your finance person, so result in churn and that's not good for anybody on those, you know, major carriers. That's like the one metric they care about. Customer satisfaction is not #1.
+
+[19:25:44 - 19:25:45] Scott: Sure. Yeah, yeah.
+
+[19:25:47 - 19:25:48] Bryan Ilg: Believe it or not, it's churn.
+
+[19:25:49 - 19:25:51] Scott: I believe I believe that.
+
+[19:25:50 - 19:25:50] Bryan Ilg: We, we.
+
+[19:25:52 - 19:25:53] Scott: Trust me, I believe that.
+
+[19:25:54 - 19:25:54] Bryan Ilg: Yeah.
+
+[19:25:55 - 19:26:01] Scott: And I worked. Oh God, yeah. I supported customer success. So yeah, churn was a big topic of.
+
+[19:26:01 - 19:26:05] Bryan Ilg: Yeah, you know, it's an indirect like if they if they don't leave, they like you.
+
+[19:26:05 - 19:26:14] Scott: Yeah. And so is someone going out and servicing the the shop in that case like, are you procuring the services or are they just doing it themselves?
+
+[19:26:06 - 19:26:42] Bryan Ilg: Not that they're independent. So like a lot of times in that type of scenario, we would be able to, if they wanted to install, we would just contract it out truthfully. So we again we have partners all over the place, you know, like I met someone at Hogs Head who does, you know, 60 mile radius around Richmond install. I'm like, OK. You're my guy, 'cause. You have a whole team. So he'll do a lot of that work for us and then whatever the rates are, we just kind of mark that up.
+
+[19:26:39 - 19:26:39] Scott: Yeah.
+
+[19:26:44 - 19:26:51] Bryan Ilg: You know, 20% typically and it's it's not like the primary revenue, it's the facilitate the the device out and then yeah.
+
+[19:26:49 - 19:27:00] Scott: Yeah. Yep. Yep, Yep. Yep. OK. Gotcha. OK. Sounds good. And are you? That makes sense. Do you have a CRM today? Are you tracking in any way?
+
+[19:27:04 - 19:27:18] Bryan Ilg: Orly. And it's just 'cause. I'm not like, I can't. I I we're not doing so much volume that it, like blows me away. HubSpot is what we have and I I use it haphazardly, but I use the free like 2 license thing they got.
+
+[19:27:10 - 19:27:10] Scott: Gotcha.
+
+[19:27:19 - 19:27:44] Bryan Ilg: That's nice. And it's, you know, quality. So I don't know if we want to grow into that. I will say that we we have our own system where like orders go in and we can do a lot of tracking that way. So I would say that maybe we would. It's not a CRM but. But yeah, I'll get overwhelmed quickly.
+
+[19:27:41 - 19:27:41] Scott: Yeah.
+
+[19:27:45 - 19:27:48] Bryan Ilg: I just cuz I know how this will go once it goes.
+
+[19:27:49 - 19:28:06] Scott: I see. OK. And. And so in terms of. Like current monthly volume in terms of like number of transactions and then? Where you're looking to get to what is kind of what does that look like?
+
+[19:28:07 - 19:28:15] Bryan Ilg: Yeah. So we. Right now transactions are are low, but we're just kinda like just now getting into this AT&T channel.
+
+[19:28:15 - 19:28:15] Scott: Mm-hmm.
+
+[19:28:17 - 19:28:28] Bryan Ilg: And at the same time, we're already into more senior leadership like ear, and they're excited about the platform we have. So we're gonna have good traction within the carrier reps.
+
+[19:28:29 - 19:28:29] Scott: Mm-hmm.
+
+[19:28:29 - 19:29:14] Bryan Ilg: They wanna promote our ordering portal, so we have a whole ordering portal for carry reps to just go in and click and add and ship. Right. So that's going to be nice. I just personally want to be able to drive business back in. I can sell so much more when I'm taking charge of the deal rather than receiving like this is what I was able to offer them for free. Can you discount it more? Versus me owning that opportunity, but. Yeah. So with that kinda current future state future state, we expect a lot of volume. We're we're officially launching this into AT&T on Monday.
+
+[19:29:14 - 19:29:15] Scott: Well, wasn't.
+
+[19:29:16 - 19:29:37] Bryan Ilg: And then. We'll have, like some teams that are like beta tests with support from leadership and then that'll go into a much larger. So I'd say in the next call it 60 days like I expect to see a lot of volume. So if that's 10 orders a day. That would be, I think, realistic.
+
+[19:29:38 - 19:29:39] Scott: Wow. Yeah, that's substantial.
+
+[19:29:40 - 19:30:00] Bryan Ilg: Yeah. So. Yeah, like this week, this week I've gotten 3 leads. From. Like 3 sales people and I, I mean, I'm just hitting people up on LinkedIn. So we we're just kind of getting it going like it'll pick up.
+
+[19:29:59 - 19:30:00] Scott: Gotcha. OK.
+
+[19:30:01 - 19:30:01] Bryan Ilg: Yeah.
+
+[19:30:01 - 19:30:21] Scott: No, that's awesome. Yeah. I mean, I think this type of. Buyer persona is really good for volume. Volume, like high volume outbound because even if you get whatever the standard 2 to 4% reply rate.
+
+[19:30:13 - 19:30:13] Bryan Ilg: OK. Yeah.
+
+[19:30:23 - 19:30:28] Scott: On, you know, thousands and thousands of emails, you can still probably do pretty well.
+
+[19:30:29 - 19:30:36] Bryan Ilg: And then you know, the other thing is there's also a lot of market development funds that are available in this space.
+
+[19:30:37 - 19:30:37] Scott: Hmm.
+
+[19:30:38 - 19:30:59] Bryan Ilg: So. You know, this might be a an interesting thing that we could work on together, but if we get a little bit of traction and we put together like a legitimate plan to go after segments, I can go back to specific OEMs. So think you know I just got one right here. Here's a router, right?
+
+[19:31:00 - 19:31:00] Scott: Mm-hmm.
+
+[19:31:03 - 19:31:31] Bryan Ilg: That OEM and other OEM's want our volume once we can produce it, but they just want to move product and they they have funds available to us to put together campaigns and stuff. So you know, I would be able to, you know, if we could come up with like a this is an approach. This is what we expect. It's really calculated, measured. I could go in and ask for. Market development funds to invest. Into something like that, so it wouldn't even be money out of my pocket.
+
+[19:31:31 - 19:31:31] Scott: Hmm.
+
+[19:31:33 - 19:31:42] Bryan Ilg: So that might even be a really interesting way that like I. Get cash and you get cash and it doesn't come from my bank account.
+
+[19:31:43 - 19:31:43] Scott: That's sweet, man.
+
+[19:31:44 - 19:32:07] Bryan Ilg: So that might be and and that's like that's available through quite a few thing like you know they all have like market caps, so like Verizon allows for. It's like $50,000 in annual market development funds for like their top tier partners and like. I can't remember how much it's like. It's not like, you know, $20.00 a month in like Co-op bucks or something like that.
+
+[19:32:08 - 19:32:08] Scott: OK.
+
+[19:32:09 - 19:32:25] Bryan Ilg: So we're getting there, but. Well, well organized campaigns that are tied back to financial results that are measured are typically the that's the baseline that they need to justify allocating those dollars.
+
+[19:32:27 - 19:32:28] Scott: Yep. Yep, Yep. Yep. Yeah.
+
+[19:32:27 - 19:32:29] Bryan Ilg: So that could be something of you know.
+
+[19:32:32 - 19:32:57] Scott: Yeah. No, that makes a lot of sense. Yeah, I think testing the different segmentation with some level of volume is and it doesn't need to be substantial. It's probably a good way to. Understand. And in terms of customer acquisition costs, cold outbound is pretty low.
+
+[19:32:56 - 19:32:56] Bryan Ilg: Yeah.
+
+[19:32:59 - 19:33:09] Scott: So OK. That's. Yeah, that's. So yeah, what are your thoughts on like how to proceed? Like what are you? What exactly are you looking to?
+
+[19:33:09 - 19:34:07] Bryan Ilg: Well, yeah. I mean, you know, I think for me, what I'm really wanting to do is because I had a call right before this with my partners. I'm like, I really want to start getting. Just a basic motion in place. For generating leads. Truthfully, like we don't have any sort of paper clips or any sort of paid. I have a pretty OK following. On LinkedIn and that's getting us. Notice and eyeballs within like the B2B sellers, but we really don't have any sort of like formal approach for online. So we're starting from scratch in that sense. But I think LinkedIn we can go connect with businesses. So I would say that LinkedIn. Feels like a good place to go after some folks.
+
+[19:34:09 - 19:34:09] Scott: OK.
+
+[19:34:10 - 19:34:22] Bryan Ilg: Like businesses are on LinkedIn, you know, promoting like all those people who were just talking about, you know, service companies are there promoting business services. You know, they're trying to get commercial contracts and all that stuff.
+
+[19:34:11 - 19:34:11] Scott: Yeah.
+
+[19:34:22 - 19:35:01] Bryan Ilg: So you know, if there's like some lightweight LinkedIn approaches. Or something along those lines like that might be interesting. Or if you have other ideas or you know some suggestions, recommendations like that'll be helpful. And then like I said, I would really wanna take that. And and push that into some of these OEMs because we have some good sizzle right now for lack of a better term. And you know, if it makes sense on the connected solutions, great. You know, I've always thought the do you want some AI? You know, like we got all that too. Is interesting for a lot of people SMB specifically.
+
+[19:34:59 - 19:34:59] Scott: Yeah.
+
+[19:35:03 - 19:35:04] Bryan Ilg: So, but yeah, I mean I think.
+
+[19:35:06 - 19:35:07] Scott: So sorry. Just so I understand.
+
+[19:35:08 - 19:35:16] Bryan Ilg: Yeah, like recommendation from you in terms of some of that is kinda I guess where that was flowing and and that's kinda where I I would see maybe some opportunity, but yeah go ahead.
+
+[19:35:08 - 19:35:23] Scott: So pushing them to OEMs. OK. So when you say, push him to OEM, you mean they procure directly through the OEM or they're procuring through use, OK.
+
+[19:35:23 - 19:35:36] Bryan Ilg: Nope, we would. We would be the sales entity. The OEM provides market development funds to us to generate the opportunity and and we would just go out, yeah.
+
+[19:35:34 - 19:35:42] Scott: Right. Oh, you're saying, sorry to interrupt you. You're saying provide them the metrics on what we're producing.
+
+[19:35:41 - 19:35:59] Bryan Ilg: Yeah, the OEM ultimately wants like, OK. Well, we gave you 5 grand to do a thing. So that's, you know, in order to get the money, you got to have the plan. What was the result? And then there's a show me what you did with it at the end. Yep, yeah. It's generally the two steps.
+
+[19:35:57 - 19:36:35] Scott: I gotcha. Gotcha. OK. I see. OK. Yeah, Lincoln there is. There are tools for automated outbound. The one constraint of LinkedIn is that your volume is limited because you can only make. 25 Connection request a day or something like that and per person plus. 40 messages or something like that. So you know, if you're talking, if you're Tam is home service companies in the US that's like hundreds of thousands, you know, so we'd have to get really particular about.
+
+[19:36:26 - 19:36:37] Bryan Ilg: Yeah. OK.
+
+[19:36:37 - 19:37:06] Scott: What is a tier one account within that Tam? So if you're saying it's multi state home service company. Is that blah blah blah. You know, whatever you define it to be, those are the ones you're gonna wanna push through LinkedIn, and then you can push the others through. E-mail is gonna is your volume. You know the crank for the volume. But yeah, LinkedIn is just gonna be constrained by the number of.
+
+[19:37:08 - 19:37:11] Bryan Ilg: I didn't really think about that, but yeah, they do.
+
+[19:37:08 - 19:37:09] Scott: Accounts you can have.
+
+[19:37:08 - 19:37:14] Bryan Ilg: It's good to know. They do clamp you down, don't they?
+
+[19:37:14 - 19:37:30] Scott: Yeah. And then there's inbound. So there are tools where, let's say you're posting and you have a following and you're getting likes or any type of engagement on your post. You can scrape those, enrich them, understand if they're good fits or not good fits, and then action them.
+
+[19:37:32 - 19:39:17] Bryan Ilg: OK. Well, yeah. I you know what I got to call somebody. They just sent me a text but. What? I guess what I'm thinking here is. You know, treat me like. Treat me like customer. What? What makes sense for a good next step in terms of getting me organized to do this? I'm clearly coming at you from kind of like a broad have a broad need. You know, I I have my LinkedIn play. I have the channel motion play like I'm gonna. I'm gonna be able to drive that. I'm really looking for is some expertise to help develop. Direct. Customer plan. And I think if we keep it, you know focused on on maybe some of those service businesses. I might. I can see what I can do from like a market Development Fund, you know, perspective. 'Cause I could take that and then go try to grab cash and say, OK, we're actually gonna that group of people pep link routers is willing to give us X amount of dollars to run that campaign. To drive that in, but I can shop that same kind of recommendation proposal to multiple folks, and even I think there's some money from like the carriers themselves. So, you know, I think that's I think that's how we can get some cash rolling into this. Because otherwise you know, it'd probably just get into a situation where we're waiting on some of those sales to come through from the channel to produce the revenues to then do the campaign. I would like to try to accelerate it.
+
+[19:39:16 - 19:39:16] Scott: Right.
+
+[19:39:20 - 19:39:52] Bryan Ilg: That's the fastest path I can see it getting accelerated. Is the MDF stuff. So yeah, I mean, even if it's broad. To start, we can focus it and then. So I I think this is probably gonna take a couple of meetings, but at the end of the day, like what I would need is something to go back to the an OEM or an OEM to or with rather and say hey, I've been working on this, we. Doing all this, you know, direct to consumer. Approaching campaign and here's the plan. So.
+
+[19:39:53 - 19:39:53] Scott: OK.
+
+[19:39:54 - 19:39:56] Bryan Ilg: If is there anything that you would need more?
+
+[19:39:55 - 19:40:01] Scott: OK, so you need a. You need like a framework of a business business case basically.
+
+[19:40:02 - 19:40:25] Bryan Ilg: Yeah, I suppose. And then just kind of like what is the? Approach. Everybody always wants. You know, that's what we're trying to do. Aroach and this is how much it costs, and I think that typically gets, you know, people to say, oh, Yep, that's logical. It makes sense. And here's the approach. It's a real whatever. And this is what we want to see at the end of it.
+
+[19:40:26 - 19:40:28] Scott: I see. OK, got it.
+
+[19:40:28 - 19:40:48] Bryan Ilg: So I don't know if you want to don't spend like a million years on it or anything like that. Just something something basic. Let me go shop it. Just get a sniff test so I don't want to like burn a bunch of your time, but that would be super helpful and just to kind of like start the conversation with some of the OEMs and then I can start to see what's real. Maybe that's the move.
+
+[19:40:51 - 19:40:58] Scott: That sounds great. Yeah. No, that sounds good. Yeah, I'll definitely get on that. I'll chat with Brenda about it. She may have some additional ideas.
+
+[19:40:59 - 19:40:59] Bryan Ilg: OK.
+
+[19:41:00 - 19:41:00] Scott: But yeah, I think that makes sense.
+
+[19:41:03 - 19:41:03] Bryan Ilg: Awesome. Awesome.
+
+[19:41:03 - 19:41:03] Scott: Hmm.
+
+[19:41:04 - 19:41:05] Bryan Ilg: Well, I appreciate your time.
+
+[19:41:06 - 19:41:06] Scott: Yeah, my quest.
+
+[19:41:09 - 19:41:18] Bryan Ilg: Well, I mean, just hit me up when you know, next week sometime or whenever you have a chance to to run through it and have your conversations. But I'm not in a super rush.
+
+[19:41:16 - 19:41:16] Scott: OK.
+
+[19:41:17 - 19:41:26] Bryan Ilg: I have a million things going on always. So when it comes through, it'll come through. But it's not like I'm, you know, Earth's spread into the ground or something over here.
+
+[19:41:29 - 19:41:32] Scott: But let's see. Maybe we get something scheduled just to add it on the calendar.
+
+[19:41:32 - 19:41:33] Bryan Ilg: Yep. No, that's cool. I appreciate that.
+
+[19:41:35 - 19:41:50] Scott: OK. Let's see here. Calendar. You want to do sometime on Wednesday.
+
+[19:41:53 - 19:41:54] Bryan Ilg: What is Wednesday looking like?
+
+[19:41:54 - 19:41:56] Scott: Afternoon, maybe. Or Thursday.
+
+[19:42:00 - 19:42:13] Bryan Ilg: In the afternoon looks currently. Open. Yeah. Why don't we do anytime after 1:00 on Wednesday is open for me.
+
+[19:42:15 - 19:42:19] Scott: OK, let's do. Let's do 1:00.
+
+[19:42:20 - 19:42:21] Bryan Ilg: OK, that sounds like a plan.
+
+[19:42:21 - 19:42:25] Scott: Sweet. OK. Well, thank you so much. No, this was super helpful.
+
+[19:42:26 - 19:42:45] Bryan Ilg: Yeah, absolutely. And yeah, I'd, I'd love to figure out a way to to make it all work I. Like I said it. It's absolutely something that I'm desiring, which is a a direct motion. So like. I did it. It was just like 15 years ago. Last time I had to put one of these together so. Yeah.
+
+[19:42:45 - 19:42:48] Scott: OK. Yeah. No, we'll do it, I think.
+
+[19:42:47 - 19:42:48] Bryan Ilg: Yeah, the channel Gain's way different.
+
+[19:42:50 - 19:42:51] Scott: Yeah, yeah, yeah.
+
+[19:42:51 - 19:42:51] Bryan Ilg: Yeah.
+
+[19:42:52 - 19:42:56] Scott: I think there's a solid case for. You can run substantial volume of this stuff so.
+
+[19:42:57 - 19:43:08] Bryan Ilg: Sweet. Yeah, and it we're we're trying to take it as a customer ordering portal where customers just go to the site and buy stuff and it's easy and it's pre packed and baked.
+
+[19:42:57 - 19:43:08] Scott: Yeah, I think there's a good use case for it. Awesome. And did you all develop that?
+
+[19:43:09 - 19:43:10] Bryan Ilg: So yeah.
+
+[19:43:11 - 19:43:13] Scott: Well, that doesn't very cool.
+
+[19:43:12 - 19:43:25] Bryan Ilg: Yeah, if you want to check it out, it's called. Let's see which one should I send you to? You could even create an account. It's called the channelos.com. I'll just put it in the slack.
+
+[19:43:26 - 19:43:28] Scott: OK. Thechannelos.com.
+
+[19:43:31 - 19:43:31] Bryan Ilg: Yeah, there's a.
+
+[19:43:31 - 19:43:31] Scott: OK.
+
+[19:43:33 - 19:43:36] Bryan Ilg: There's a little like tutorial in the bottom corner you can watch.
+
+[19:43:37 - 19:43:37] Scott: OK.
+
+[19:43:38 - 19:43:44] Bryan Ilg: But it'll just kind of, or you gotta, like, make an account out. And like, I don't think we have it like restricted but.
+
+[19:43:46 - 19:43:46] Scott: OK, cool.
+
+[19:43:47 - 19:43:59] Bryan Ilg: Yeah, if you walked, if you could throw, it's like 5 or 6 minute long. Tutorial video and it kind of demonstrates how you can like use the tooling and stuff behind and and pick and build solutions and stuff like that.
+
+[19:43:59 - 19:44:00] Scott: OK. Very good.
+
+[19:44:02 - 19:44:02] Bryan Ilg: Cool.
+
+[19:44:04 - 19:44:06] Scott: Very good. I'll. Yeah have a good weekend see ya
+
+[19:44:05 - 19:44:06] Bryan Ilg: All right, my man. Appreciate you have a good weekend.
+

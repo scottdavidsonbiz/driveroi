@@ -1,0 +1,178 @@
+[19:02:16 - 19:02:17] Brenda Hali: Hi Scott.
+
+[19:02:17 - 19:02:18] Scott Davidson: Hey, good morning.
+
+[19:02:18 - 19:02:19] Brenda Hali: How are you doing?
+
+[19:02:20 - 19:02:21] Scott Davidson: Again, how are you?
+
+[19:02:21 - 19:02:51] Brenda Hali: Good. I'm responding at the earlier message that you, so, Yeah, but basically I I think like overall my thoughts are and I think that I need to do more research on the Clay universe because I know that you're like there like there's a reason why you went to the book coming all of that. So maybe there is a misunderstanding on my part on. So for me, please just another tool, right? Like cool.
+
+[19:02:50 - 19:02:51] Scott Davidson: Up. Yeah.
+
+[19:02:52 - 19:03:28] Brenda Hali: Where there could be excel my right excel. So I like, I understand probably then same time, I, I don't know. Like I don't know how much effort, I don't know what is even possible, like the result that that system has and I think that that's all investment that you have done on like developing the system. But then at the why Maybe you feel that you're doing everything but but I don't know what that everything is and what is the result of it? And
+
+[19:03:28 - 19:03:30] Scott Davidson: Yeah. I,
+
+[19:03:42 - 19:04:02] Brenda Hali: test it, like that is the thing. And then after that a lot of it iteration will be needed and and probably even now we we start doing things in play. product like basically, it's a food product but then I'm like, Okay, we need to Yeah, and I definitely don't want you to feel in that way like you're building a implementations probably if it's more like an agency then the tool doesn't if it is no super niche, if it is not just like Hey I am an expert in doing play matter like the tool is like
+
+[19:04:02 - 19:04:03] Scott Davidson: Agree.
+
+[19:04:04 - 19:04:11] Brenda Hali: Computer excel, but but yeah, maybe we can have a different conversation on that if you want.
+
+[19:04:18 - 19:04:40] Scott Davidson: Yeah yeah I'm just trying to think about it from like a bit kind of what I said about like the overlap versus the complementary because yeah, I mean you could learn play and it's not like rocket science. But just, yeah, I was just thinking about it from like a either a server like horizontally from a service offering perspective or vertically from A like you handle sales and marketing and I handle that whatever you know, like there's different ways to Split.
+
+[19:04:41 - 19:04:43] Brenda Hali: Like to be working together. Yeah.
+
+[19:04:42 - 19:05:08] Scott Davidson: yeah, so like we can either split the like The internal, like whoever delivers, I mean, delivering the thing. Once it's productized in a way like it's not That part is not hard. it's just more like, yeah, like if it becomes an agency or a Or like a business that we're building, then then it'll start to become more
+
+[19:05:07 - 19:05:20] Brenda Hali: It's going to be different. Yeah and I think that you can tell me your
+
+[19:05:07 - 19:05:11] Scott Davidson: than just the delivery. Yeah.
+
+[19:05:11 - 19:05:47] Brenda Hali: preference because we can do, we can go like different ways. One is if we both recommend is we definitely take it. I I need to understand the Clay Universe way want to be operating and have the same knowledge. So probably what I will better so I can sell it better and I understand like what's possible things like that. And and then probably you need to like take something like revenue architecture. I think that is the best way where you can understand like, so we can talk about like, Volumetrics it, highly
+
+[19:05:48 - 19:05:49] Scott Davidson: Yeah, woman.
+
+[19:05:49 - 19:05:57] Marcos Barrabés: I Brenda's got apologies. I was not sure if it was on my fault. I was
+
+[19:05:50 - 19:05:50] Scott Davidson: I'm not.
+
+[19:05:59 - 19:06:05] Marcos Barrabés: One day late to share what I had to share. So apologies. I'm not sure if you could make it or not.
+
+[19:06:12 - 19:07:55] Scott Davidson: the documentation or anything, but after talking about it and like, looking at the cost structure, I think we can We can propose like what I think would be the best. Ford or, or you can paths for there's decisions. So, Basically. To like, have any sort of meaningful? Outcome. You need like us. You're gonna need a certain amount of volume. And to have that volume. the minimum amount you could spend is, 500 bucks a month, basically. Or around there. So On tools. so, with that said, number of hours monthly and we could do work asynchronously and just try and get My recommendation would be, we could we could work together and then limit the it done that way. But we would need to limit the engagement hours to around like 10 a month until things start to check up and we can reassess budget and then you can add tools and add workflows So that would be like our proposal for working with us. There are other people in like my community, the community is wherein that, you know, are in other countries and would probably be able to do more handle, you know, more hands-on with the same infrastructure. So, You know, it's really like up to you and what you want to do. So, you're muted. You're muted. You're muted.
+
+[19:08:03 - 19:08:15] Marcos Barrabés: Sorry, could you explain that again? Please because I'm not sure if I followed. So, how how do you propose to to work together in terms of? High looks in practice and also from a budget point of view.
+
+[19:08:13 - 19:09:26] Scott Davidson: Yeah. Yes, so if we want to stick within your budget constraints, it would basically mean we would want to limit the just the Amount that we are involved. So we would, we would still, you know, basically limit our hours per month to 10 hours per month of Working on your project specifically so we could like create documentation and have it be so that you actually like Do the implementation and do the copywriting and do you know, we would give you the frameworks and the our you like, how to set this up, how to set that up. I would, I could start the recommendations and the strategies and things within that time, band and tell clay table and show you how to add things like, things like that. and we could just like take it as it comes, whatever you need to do within that that time frame is how I would suggest if you want to work with us, specifically providers that we could recommend you to within our communities that were If you want more of a hands-on approach, then I think going with like other involved in. with could be a good approach to
+
+[19:09:28 - 19:09:33] Marcos Barrabés: so, I don't understand this providers, the dimensions of TV,
+
+[19:09:29 - 19:09:37] Scott Davidson: So, it's really what you Oh, like just other other companies that do outbound services.
+
+[19:09:38 - 19:09:44] Marcos Barrabés: but,
+
+[19:09:38 - 19:09:47] Scott Davidson: With other service providers. Instead of us. Not like not using us.
+
+[19:09:45 - 19:09:47] Marcos Barrabés: But why? So
+
+[19:09:48 - 19:09:56] Scott Davidson: not use, not use Brenda and I but use like, I can recommend you to someone else in the community that I work with. That I work in.
+
+[19:09:57 - 19:09:58] Marcos Barrabés: and the reason is,
+
+[19:10:02 - 19:10:07] Scott Davidson: Because they have they might be able to give you more of a more hours or more of a hands-on approach if that's what you're after.
+
+[19:10:18 - 19:10:24] Marcos Barrabés: So just to make clear that I understand. So the your point is that the budget is too low. So I'm for that budget. You prefer to refer me to someone else.
+
+[19:10:26 - 19:10:52] Scott Davidson: Or work with us, in a limited scope. Where we Will work within a 10 hour a month. Maximum allocation of work. best practices and things like that. But like I won't set up your email and So we can you know we'll send you will you'll be using our frameworks and our instantly I'll show you how to do it and then you. It's difference.
+
+[19:10:58 - 19:12:00] Marcos Barrabés: Okay. Well I'm with possible to maybe, you know, resume formation that I share with you. I'm not sure if any difference or not but at least you have more context than before. Can you like again re-adapt the the initial proposal that you shared and basically so I understand You know, like Brenda you said, You know, previous meeting, you know, for this how you saturate and then what's included in each of them in terms of budget, this is what we can do for this other budget. This is what we can do. So it's like two different plants or three different plants. I know it's up to you Building plus. Execution. or just building or you know, just for me to understand what's covered in terms of deliverables and how how you see this working in practice, you know, from
+
+[19:11:55 - 19:12:02] Scott Davidson: No. yeah, that means
+
+[19:12:05 - 19:12:11] Marcos Barrabés: That's something that if you can share that with me, maybe that, that will be more clear to me. Okay.
+
+[19:12:11 - 19:12:12] Scott Davidson: Okay. Okay. Yeah, that makes sense.
+
+[19:12:13 - 19:12:26] Marcos Barrabés: Like, I'm I understand that budget might be too low for you. The point is I don't see how you know, again my feedback from our previous sessions, still remains right like 
+
+[19:12:35 - 19:12:35] Scott Davidson: Yeah.
+
+[19:12:37 - 19:12:44] Marcos Barrabés: I was not expecting like two products that get consumed within a few days like
+
+[19:12:38 - 19:12:38] Scott Davidson: Yeah.
+
+[19:12:38 - 19:12:46] Marcos Barrabés: to campaigns for campaigns. You know that I'm why I really need is to build a system first and then executed. Hydrated.
+
+[19:12:46 - 19:12:47] Scott Davidson: 
+
+[19:12:54 - 19:13:06] Marcos Barrabés: you given my current budget but also given any other budget that you think it's, That that's what I need. And, you know, my what I'd like to understand is how you know, aligned with what you can. Give to a company like Treasury hub. How that looks like.
+
+[19:13:11 - 19:14:10] Scott Davidson: basically it's It's not consumable and it's not. It would be on a recurring basis. and we could set up like, The. The basic underlying infrastructure. and then take like, at like, let's say the budget was 4 or 5,000, like everything that you sent with all those intense signals, all the various would just do that all and I would set it up with an instantly, it would be All the various icps and all the like, I would set up everything for you. Like I end-to-end. We would do it all in the case, where it's a lower budget, it would be. I set up one of them. Show you how to, you know, record myself doing it and then you would do the rest of it. Basically. And ask me questions and I would handle it. Asynchronously and as long any I expect that that would fit within
+
+[19:14:11 - 19:14:11] Marcos Barrabés: Okay.
+
+[19:14:13 - 19:14:40] Scott Davidson: The time frame like in the first month, it would probably be like setting up an account list showing you how to purchase the domains and more them up. and then, then you would go implement the thing. So a bit, mostly you doing the actual the next month we could look at the stats, I can make you some recommendations You know giving you some resources on copy and then you could you would test it execution work. Versus. We would do some but it would be much lighter. Touch. is the
+
+[19:14:41 - 19:15:00] Marcos Barrabés: Yeah. Okay. Okay. through it. And yeah, we try to give you some reply next week. Maybe not early Sounds good. So yeah, please is the if you can share that and then let me go next week then it's well, I keep you posted.
+
+[19:15:03 - 19:15:11] Scott Davidson: Yep. That sounds good. Okay. Well yeah, very good. Well, I'll go back and clean up the proposal like spring and make it a little clearer. So that you can compare.
+
+[19:15:12 - 19:15:47] Marcos Barrabés: Okay, excellent. If you can be in the in the especially with the clay part of the you, you can think of what your particularly thinking of in terms of at least what you can, what you will include, like three specific in terms of because I know with clay, you can, you know, the sky is the limit, you can do anything the, you know, the first few months the basics and then How you, how you see, evolving. Right. And
+
+[19:15:47 - 19:15:49] Scott Davidson: Okay, okay, yeah, yeah, yeah, that makes sense.
+
+[19:15:59 - 19:16:06] Marcos Barrabés: low budget plan with the higher end budget and what each of them includes and And if you can yeah like basically come back as you did in the email but now from more plan kind of free currency perspective like compare the. Let's say the
+
+[19:16:03 - 19:16:03] Scott Davidson: Okay.
+
+[19:16:05 - 19:16:08] Marcos Barrabés: what they do not include That will help.
+
+[19:16:08 - 19:16:17] Scott Davidson: Okay. Yeah, that makes sense. Yep, I'll get on it and I'll send it over. I should be able to send it over by the end of day tomorrow.
+
+[19:16:20 - 19:16:30] Marcos Barrabés: Cool. Do you have any questions? For me, regarding what I shared or Any other? That you need.
+
+[19:16:33 - 19:16:48] Scott Davidson: um, Phoenix. No. I don't think so. Do you have anything Brenda?
+
+[19:16:51 - 19:17:31] Brenda Hali: Yeah, so let's say that we will run a pilot with you for the next three months. site. So if that is the case, and why would you prioritize like from all your probably we don't want to have the full budget initially, until we start testing Also, to understand your ICP and the results and and all of these you know, like like and have these pilot not just on the engine side but also on the campaign ICP that you shared? So we can we can tell you like Hey if we engage we build the system but also in the next three months let's run the pilot based on what your preference are
+
+[19:17:30 - 19:17:39] Marcos Barrabés: Here and are you looking into a country, specific prioritization, or
+
+[19:17:30 - 19:18:01] Brenda Hali: preferences. Are Yeah, could be country. Specifically a system type of revenue. case that you're proving something specific. So it can be like certain industry, In organizations that you're looking for or certain type of organizations in the certain size or certain country or the combination of all of them.
+
+[19:18:08 - 19:18:53] Marcos Barrabés: Look. I I know from my name which was the Technographic Technographic point of view. I'm not sure how you see that is but if we can prioritize based on the ERP that they use, For example, netsuite, in particular that's definitely something that I would prioritize that's with companies using that sweet any industry in the Size, but between me to see but they are not using netsuite. And from a country perspective, I, I would definitely prioritize. I mean run this first with Mexico and Ghana.
+
+[19:18:55 - 19:18:57] Brenda Hali: Okay. Understood.
+
+[19:18:58 - 19:20:41] Scott Davidson: Yeah, and yeah, that's helpful because the way I yeah, the way to think about You know, each. like similar to what Brenda's saying. So if we know like if we would set up that Table more or less or each set of campaigns is like it's testing a hypothesis initial hypothesis net suite in Nigeria and Mexico our recording and, you know are coaching you would be able to and maybe a couple other criteria and then, you know, you would hope bend with go to the next hypothesis, which might be They have sage intact and they're in Kenya, you know, whatever it is. Um, but question about like, okay, how do I add intense signal around? They just raised template would be, it would be more or less of a template. And then if you had a money. Like that would be, you know, that would take me 30 minutes to an hour. And that would that would be like an easy. We fold that in as we go. So that's kind of how I would think about it. Like we set up one or two primary hypotheses and then we iterate. Yeah, over over time. Versus with a larger budget, it would be. We set them all up at once and we just run them. Concurrently Because that will take it'll take a long time to set up each one. In, if we did it all at once, it would be many, many hours. But if we set up one or two, Iterate upon it, and then continue to add them over time. It's a little easier for us to handle that, that volume or the bandwidth that would require.
+
+[19:20:42 - 19:20:49] Marcos Barrabés: Okay cool. Yeah, so definitely netsuite as an ERP and and countries Mexico and
+
+[19:20:44 - 19:20:44] Scott Davidson: but,
+
+[19:20:49 - 19:20:49] Marcos Barrabés: Ghana.
+
+[19:20:50 - 19:20:50] Scott Davidson: Okay.
+
+[19:20:51 - 19:21:00] Brenda Hali: Yeah, and then the next question is when when do you aim to start this? So it's the beginning of the year. Or.
+
+[19:21:04 - 19:21:15] Marcos Barrabés: My plan currently is to start in. January. Okay, I'm waiting for a few things to be confirmed.
+
+[19:21:11 - 19:21:11] Brenda Hali: You know.
+
+[19:21:19 - 19:23:27] Marcos Barrabés: Different dimensions, not just budget, but also like resources etc. But this is something that it's going to be driven by myself. So, I just need some resources to do other stuff. So those hours are, you know, liberated for me to focus on this. So yeah, my plan is January, worst, case scenario. We are looking to first week of February but in, it's also true that. Yeah. They generally like, for example, I know, I know. It's not going to be until the 12th of January that I'm fully like business as you shall business hours. Let's say because I'll be working but, you know, it's know, if we start we can, we can start of course. But let's say the normal back not gonna be ordinary business hours so it's gonna be a bit but I still, you to business office hours, he's gonna be 12 January. so yeah, I mean to answer your question the sooner the better because in the end this It's not pressing a button and then you get started, you know, getting the qualified lead. So the sooner we start the better, that's my my plan, but realistically now with Christmas vacation and everything in between, probably it's gonna be there 12th of January or somewhere around the 19th 26th of January. I know not see these getting started before the class of January so they gave green light for Tesla January. You know anything, we can prepare before that. Great. But yeah, let's let's, I'm flexible. I'm just saying that, you know, before the terms of January, it's gonna be difficult. But I'll keep you informed, you know, if we end up deciding that we we want to start working together. I'll keep you posted. So yeah.
+
+[19:23:30 - 19:23:30] Scott Davidson: Okay.
+
+[19:23:37 - 19:23:43] Brenda Hali: the information. In the case that we run a pilot, what that information is going to be and it will analyze everything and then we'll come back with a different Perfect. So we're gonna work on the proposal. Then thank you so much for sharing proposals.
+
+[19:23:44 - 19:23:45] Marcos Barrabés: Excellent.
+
+[19:23:45 - 19:23:58] Scott Davidson: yeah, and I did have one question that I don't know if it was addressed in the email, but, um, What's the Is? It seat based and What's your average selling price? Like How is
+
+[19:23:56 - 19:24:04] Marcos Barrabés: Ah yeah, so average currently average ticket is 20k.
+
+[19:23:57 - 19:23:58] Scott Davidson: it priced the software?
+
+[19:24:08 - 19:24:39] Marcos Barrabés: A year. 12 months. Okay. probably West Africa is that average ticket might be lower and then Mexico. I Average, Ah, we might have to, you know, maybe makes what I'm saying is, that think that's, that's okay, so far that it's really in a bit higher than that. So yeah, let's say 20k a year. That's the That's the average ticket.
+
+[19:24:40 - 19:24:50] Scott Davidson: That's helpful. Um, Okay, yep. So we'll get to it on the proposal side and turn something around
+
+[19:24:48 - 19:24:54] Marcos Barrabés: I said, Thank you so much and thanks for the short notice and
+
+[19:24:50 - 19:24:53] Scott Davidson: quickly. So Great. Okay.
+
+[19:24:58 - 19:25:15] Marcos Barrabés: Yeah, let me I'll give you feedback as soon as a guy if not today probably. But definitely right to send it before before the weekend Monday is. Okay. So just take your Over the weekend. I'll have a look at this and otherwise, I mean, don't feel
+
+[19:25:14 - 19:25:16] Scott Davidson: Yeah, sounds good.
+
+[19:25:15 - 19:25:15] Marcos Barrabés: time.
+
+[19:25:17 - 19:25:19] Scott Davidson: Great, thank you. Bye.
+
+[19:25:18 - 19:25:18] Brenda Hali: Thank you.
+
+[19:25:19 - 19:25:20] Scott Davidson: Thanks, you too.
+
+[19:25:19 - 19:25:22] Marcos Barrabés: Have a nice day. Take care. I,
+
