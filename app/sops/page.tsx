@@ -9,6 +9,24 @@ const sops = [
     category: 'Client Setup',
     description: 'Set up new email domains and inboxes for client outbound campaigns.',
   },
+  {
+    slug: 'clay-email-finding-waterfall',
+    title: 'Clay Email Finding Waterfall',
+    category: 'Lead Enrichment',
+    description: 'Find verified email addresses using AnyMailFinder API + Clay Find People fallback.',
+  },
+  {
+    slug: 'clay-to-instantly-campaign-push',
+    title: 'Clay to Instantly Campaign Push',
+    category: 'Campaign Setup',
+    description: 'Push enriched leads from Clay into Instantly campaigns with proper field mapping.',
+  },
+  {
+    slug: 'instantly-sequence-setup',
+    title: 'Instantly Email Sequence Setup',
+    category: 'Campaign Setup',
+    description: 'Create email sequences with variables, variants, and proper timing.',
+  },
 ]
 
 export default function SOPsPage() {
