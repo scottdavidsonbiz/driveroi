@@ -23,6 +23,10 @@ const pageTitles: Record<string, { title: string; description?: string; action?:
     title: 'Leads',
     description: 'View and manage enriched leads'
   },
+  '/deliverability': {
+    title: 'Domain Deliverability',
+    description: 'Monitor sending domain health and bounce rates'
+  },
   '/sops': {
     title: 'SOPs',
     description: 'Standard operating procedures and playbooks'

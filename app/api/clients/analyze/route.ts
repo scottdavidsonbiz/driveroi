@@ -66,7 +66,18 @@ async function analyzeWithClaude(
     .map((m) => `--- ${m.filename || m.type} ---\n${m.content}`)
     .join('\n\n')
 
+  // Get current date for context
+  const today = new Date()
+  const currentDate = today.toLocaleDateString('en-US', {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  })
+
   const prompt = `You are helping build an Ideal Customer Profile (ICP) for a sales outreach campaign.
+
+Today's date: ${currentDate}
 
 Client: ${name}
 Website: ${website || 'Not provided'}
@@ -90,8 +101,10 @@ Based on this information, extract and create:
 
 4. **Email Angles**: 2-3 different approaches for cold outreach, each with:
    - Name: Short descriptive name for the angle
-   - Subject: Email subject line
+   - Subject: Email subject line (lowercase, casual)
    - Preview: First 1-2 sentences of the email
+
+   IMPORTANT: Any date references should be current (we are in ${today.getFullYear()}). Do not reference past years.
 
 Return your response as JSON in this exact format:
 {

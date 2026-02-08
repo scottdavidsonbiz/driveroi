@@ -8,13 +8,15 @@ import {
   Users,
   FileText,
   Settings,
-  Database
+  Database,
+  Activity
 } from 'lucide-react'
 
 const navigation = [
   { name: 'Dashboard', href: '/', icon: LayoutDashboard },
   { name: 'Clients', href: '/clients', icon: Users },
   { name: 'Leads', href: '/leads', icon: Database },
+  { name: 'Deliverability', href: '/deliverability', icon: Activity },
   { name: 'SOPs', href: '/sops', icon: FileText },
 ]
 

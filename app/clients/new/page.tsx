@@ -53,6 +53,7 @@ export default function NewClientPage() {
   const router = useRouter()
   const [currentStep, setCurrentStep] = useState(1)
   const [isAnalyzing, setIsAnalyzing] = useState(false)
+  const [isSaving, setIsSaving] = useState(false)
   const [data, setData] = useState<ClientIntakeData>({
     name: '',
     website: '',
@@ -109,9 +110,35 @@ export default function NewClientPage() {
         setIsAnalyzing(false)
       }
     } else if (currentStep === 4) {
-      // Save client and redirect
-      // TODO: Save to Supabase when connected
-      router.push('/clients')
+      // Save client to Supabase
+      setIsSaving(true)
+      try {
+        const response = await fetch('/api/clients', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            name: data.name,
+            website: data.website,
+            industry: data.industry,
+            materials: data.materials,
+            analysis: data.analysis,
+          }),
+        })
+
+        const result = await response.json()
+
+        if (result.success) {
+          router.push('/clients')
+        } else {
+          console.error('Failed to create client:', result.error)
+          alert('Failed to create client. Please try again.')
+        }
+      } catch (error) {
+        console.error('Error creating client:', error)
+        alert('An error occurred. Please try again.')
+      } finally {
+        setIsSaving(false)
+      }
     } else {
       setCurrentStep(prev => prev + 1)
     }
@@ -201,13 +228,18 @@ export default function NewClientPage() {
 
         <Button
           onClick={handleNext}
-          disabled={!canProceed() || isAnalyzing}
+          disabled={!canProceed() || isAnalyzing || isSaving}
           className={currentStep === 4 ? 'gradient-accent border-0' : ''}
         >
           {isAnalyzing ? (
             <>
               <Loader2 className="mr-2 h-4 w-4 animate-spin" />
               Analyzing...
+            </>
+          ) : isSaving ? (
+            <>
+              <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+              Creating...
             </>
           ) : currentStep === 4 ? (
             <>
