@@ -21,6 +21,7 @@
 | `icp-research` | Ideal customer profile research | Trustap ICP analysis |
 | `lead-magnet` | Lead generation deliverables | 25 target accounts |
 | `research` | Market research and competitive analysis | SLED procurement research |
+| `work-product` | Proof-of-concept deliverables for prospects | GovEagle account scoring POC |
 
 ---
 
@@ -37,6 +38,7 @@
 | `icp-definition` | Ideal customer profile work | Trustap ICP, Beekeeper mid-market |
 | `service-model` | How we deliver services | Build→Run→Prove→Handoff |
 | `sales-enablement` | Tools for sales conversations | Lead magnets, case studies |
+| `account-scoring` | Data-driven account identification and prioritization | GovEagle USASpending scoring |
 
 ---
 
@@ -79,6 +81,11 @@
 | `professional-services` | IVS Tax, consulting firms |
 | `construction` | Construction software (vertical SaaS focus) |
 | `hospitality` | Hotels, restaurants (frontline workforce) |
+| `govtech` | Government technology, federal contracting |
+| `devtools` | Developer tools, frameworks, open-source/open-core |
+| `insurance` | Insurance software and platforms |
+| `logistics` | Supply chain, warehouse, logistics software |
+| `education` | K-12, higher education |
 
 ---
 
@@ -95,6 +102,12 @@
 | `gautier` | Discovery | Environmental/Data | Early-stage SaaS |
 | `ben-patientfi` | Low priority | Fintech | Budget constraints |
 | `treasury-hub` | Discovery (no transcript) | Fintech | LatAm/Africa expansion |
+| `matt-crawford` | Lost (ghosting) | Field Services | Positioning mismatch, execution vs strategy |
+| `bryan-ilg` | Nurturing | Telecom/Channel | MDF funding, LLC formation triggers |
+| `colin-uren` | Peer/Network | Construction Software | Clay bootcamp, similar ICP |
+| `goveagle` | Prospect (work product delivered) | GovTech/AI | Account scoring POC, USASpending API, personalization at scale |
+| `911cellular` | Prospect (lead magnet + outreach delivered) | Public Safety | Panic buttons, Alyssa's Law compliance, K-12/healthcare/higher-ed verticals, trigger-based targeting |
+| `vaadin` | Prospect (lead magnet + outreach delivered) | SaaS/DevTools | Java web framework (open-core), Swing modernization, 25 target accounts across finserv/insurance/industrial |
 
 ---
 
@@ -566,6 +579,8 @@ key-topics: [main-discussion-points]
 **Last Updated:** December 16, 2024  
 **Next Review:** January 15, 2025  
 **Maintained by:** Scott Davidson & Brenda Hali
+
+
 
 
 

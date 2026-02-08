@@ -104,6 +104,78 @@ Send 24 hours before meeting OR as a standalone async update.
 
 ---
 
+## Off-Week Email Report (No Meeting Weeks)
+
+**Purpose:** Keep clients informed between bi-weekly meetings with a short async update.
+
+**When to Send:** Thursday or Friday of non-meeting weeks
+
+**Format:** Short email (not a doc) - easy to read on mobile
+
+### Template
+
+```
+Subject: [Client Name] Weekly Update - [Date]
+
+Hi [Name],
+
+Quick update on where things stand this week.
+
+**Progress:**
+- [Bullet 1 - what shipped or moved forward]
+- [Bullet 2]
+- [Bullet 3]
+
+**Status Check:**
+- Email warm-up: [X days remaining / Ready to send]
+- LinkedIn cadence: [Active - X connections this week / Paused]
+- Campaign status: [Pre-launch / Active / Optimizing]
+
+**Metrics (if campaigns live):**
+- Emails sent: X
+- Open rate: X%
+- Reply rate: X%
+- Meetings booked: X
+
+**Next Steps:**
+- [What's happening next week]
+
+**Needs Your Input (if any):**
+- [Quick question or decision needed]
+
+Let me know if you have questions. Otherwise, talk next [meeting day].
+
+—[Your name]
+```
+
+### Pre-Launch Phase Template (Infrastructure Building)
+
+```
+Subject: [Client Name] Update - [Date]
+
+Hi [Name],
+
+Quick update while we're building out infrastructure.
+
+**This Week:**
+- [Infrastructure item completed]
+- [Progress on setup]
+
+**Countdown to Launch:**
+- Email warm-up: [X days remaining]
+- LinkedIn: [Status]
+- Target list: [Ready / In progress]
+- Copy: [Approved / Needs review]
+
+**On Track For:** [Target launch date]
+
+No action needed from you this week. Will have [specific item] ready for review at our next call.
+
+—[Your name]
+```
+
+---
+
 ## Red Flags to Watch For
 
 - Client stops responding to async updates

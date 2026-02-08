@@ -6,8 +6,9 @@
 
 **Owner:** [Team Member Name]
 
-**Last Updated:** January 19, 2026
+**Last Updated:** January 20, 2026
 
+**Loom:** https://www.loom.com/share/ad34dcd82c704ef3a31fba095ff4e9ee
 ---
 
 ## Prerequisites

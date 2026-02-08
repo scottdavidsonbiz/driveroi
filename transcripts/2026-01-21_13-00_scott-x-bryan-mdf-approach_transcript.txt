@@ -1,0 +1,542 @@
+[19:00:05 - 19:00:10] Scott Davidson: Here we're going good so far. Are you ready for the snow or ice or whatever?
+
+[19:00:08 - 19:00:08] Bryan Ilg: What?
+
+[19:00:09 - 19:00:10] Scott Davidson: It's gonna be
+
+[19:00:11 - 19:00:18] Bryan Ilg: Oh no, not at all. I mean, I just bought a loaf of bread so that's make it
+
+[19:00:13 - 19:00:17] Scott Davidson: Yeah. Yeah.
+
+[19:00:18 - 19:00:33] Bryan Ilg: through the The events now, I got a I got to get prepared this. What is it? Like, I saw like five to eight inches or something like that on Weather.com. But I've heard like two feet. It's, it's chaos like everyone's going nuts.
+
+[19:00:31 - 19:00:41] Scott Davidson: Yeah. Yeah, it sounds like it's becoming more. Less snow more ice and yeah, but I've heard five to eight, too. Some like that.
+
+[19:00:40 - 19:00:44] Bryan Ilg: In ice ice sucks. Like there's just no way to
+
+[19:00:43 - 19:00:43] Scott Davidson: Yeah.
+
+[19:00:44 - 19:00:51] Bryan Ilg: Shifted. If it's turned shift in the ice and I'm definitely gonna Take it a little more serious. But yeah, the snow is
+
+[19:00:50 - 19:00:50] Scott Davidson: Yeah.
+
+[19:00:53 - 19:01:06] Bryan Ilg: It's, it's gonna make we'll be all right with the snow. you you sent me something and I tried to look at it while I was On a call slightly.
+
+[19:01:06 - 19:01:21] Scott Davidson: It's all good. you can look at it here because I think If I remember last time the takeaway was to Build out a one-pager for the MDF program that you could. Shop.
+
+[19:01:23 - 19:01:35] Bryan Ilg: Yes, what email did you send the stuff to me this morning? Babble. Or deployed.
+
+[19:01:38 - 19:01:39] Scott Davidson: Deployed.
+
+[19:01:41 - 19:02:11] Bryan Ilg: All right, that's gonna answer why I couldn't find it. I'm pulling up here. so, yeah, so the the idea was to Yeah, I think you got like the right customer profile target market. um, Yeah, we want to connect with these folks, to be able to sell them technology. Probably Internet first.
+
+[19:02:15 - 19:02:15] Scott Davidson: Okay.
+
+[19:02:16 - 19:02:31] Bryan Ilg: Before we get into, all the fun ai bits and pieces, just because But yeah. I didn't get a chance to really digest, this super Hard.
+
+[19:02:31 - 19:02:31] Scott Davidson: Sure.
+
+[19:02:32 - 19:02:41] Bryan Ilg: But yeah, let me walk through it and then I did get MDF rules.
+
+[19:02:40 - 19:02:41] Scott Davidson: Mmm.
+
+[19:02:42 - 19:03:07] Bryan Ilg: and they're like, Less sexy than I thought from this one. Vendor so typically how it works is you get Like all OEMs. So the manufacturers of product they have their own kind of market developments. So I have Some other meetings on this, but yeah. This will help me, kind of frame it out.
+
+[19:03:06 - 19:03:12] Scott Davidson: But it's at the same way where Do they give it up front? Or is it as a result of
+
+[19:03:17 - 19:03:28] Bryan Ilg: they all have like slightly different variants, some of them will give you some upfront, some as like submit the bill and reimburse you And then hybrids. So
+
+[19:03:29 - 19:03:30] Scott Davidson: Good.
+
+[19:03:29 - 19:03:29] Bryan Ilg: Yeah.
+
+[19:03:32 - 19:03:55] Scott Davidson: Um, okay, so let's go through this, I guess. And yeah, let me know if anything needs to change. I think I created a couple versions that were like one that's a lot longer but I didn't know if this one pager would be sufficient, but Basically. Yeah. So I wrote that, we'd be targeting.
+
+[19:03:55 - 19:03:58] Bryan Ilg: Oh, okay. I'm just gonna get the shared screen.
+
+[19:04:00 - 19:04:33] Scott Davidson: Smb. Service businesses. With five to fifty employees, you know, feel let me know if you want me to change any of those. Market size is huge and there's yeah. so we're going to maybe take a couple different angles here with Like, I know you mentioned the field payments. If they have multi-look, if they're opening up a new location, maybe.
+
+[19:04:33 - 19:04:34] Bryan Ilg: Yep.
+
+[19:04:33 - 19:04:44] Scott Davidson: and then if they have like a fleet or mobile workforce, We could do LinkedIn, but we could also just stick to email.
+
+[19:04:46 - 19:05:00] Bryan Ilg: How much? Let me ask you just like marketing. Question if you will like what is your experience? Kind of running these campaigns or as you just more on the that's your business partners. Strength, right.
+
+[19:05:02 - 19:05:19] Scott Davidson: um, I mean I we both are I build out The systems primarily her backgrounds in like revenue operations. So and sales and marketing operations. So she's A lot of that work, too. Mine is definitely more.
+
+[19:05:21 - 19:05:23] Bryan Ilg: In there, sure.
+
+[19:05:21 - 19:05:40] Scott Davidson: Finance focused. But I'm the one who would build out like the This part of it. So like the triggers to Then find the contact information, etc, and push it. Into the sequencing tool and all the all that bit of it would be me.
+
+[19:05:43 - 19:05:54] Bryan Ilg: Um, okay, no, that's good to know. I was just curious on that because I'm getting like medium to okay at writing copy.
+
+[19:05:53 - 19:05:57] Scott Davidson: Mother. Yeah.
+
+[19:05:57 - 19:06:33] Bryan Ilg: so I was just curious like how it all works on that side but I will say like the sequencing of it is I can think through quite a bit but actually building it out is. understand. I don't have the X experience kind of in these. It's kind of where like it gets a little bit of a challenge so I don't Like a LinkedIn outreach campaign. Like How do you like it? Probably sit down and figure that out over time but I would be a ton of trial and error, right? so I'm just gonna figure out all those
+
+[19:06:31 - 19:06:31] Scott Davidson: Yeah.
+
+[19:06:33 - 19:06:34] Bryan Ilg: Angles.
+
+[19:06:36 - 19:06:41] Scott Davidson: Yeah, so LinkedIn typically like you want substantially shorter and conversate more conversational.
+
+[19:06:42 - 19:06:42] Bryan Ilg: Yeah.
+
+[19:06:51 - 19:06:59] Scott Davidson: And then um, like you're limited by volume because of the account, you know caps today. Um, so I would say that for like really high on how many connections you can make a day and how many messages you can send
+
+[19:06:57 - 19:06:58] Bryan Ilg: Work.
+
+[19:07:02 - 19:07:34] Scott Davidson: What, whatever we deem or believe is high intent and maybe we develop that via email because email, you can just do such high volume. That you can start to like it's good for like testing different hypotheses. Quickly. Um, test different things in terms of number of follow-ups, you know? So yeah, I mean you could write the copy. I can write anyone you know, we could What pain point are we talking about pain points or value or you know exactly those those bits. So that parts, you know, Flexible.
+
+[19:07:37 - 19:07:52] Bryan Ilg: Okay. Well, yeah. And interrupt like the main the main course with like weird little questions. I I'm trying to break that habit. I'm really not great at it. Okay, why don't we run through this? And I'll say some questions. I always
+
+[19:07:54 - 19:08:09] Scott Davidson: No, I I definitely welcome the questions. I, I just put some numbers here. I mean, it's hard to know exactly what Will work out. Just you know, every industry is different and I haven't done
+
+[19:08:07 - 19:08:07] Bryan Ilg: Right.
+
+[19:08:07 - 19:08:09] Scott Davidson: specific industry before but
+
+[19:08:12 - 19:08:43] Bryan Ilg: Help me. So with that in mind, help me understand kind of where your your logic was coming from because that'll help me sharpen it maybe a little bit. and then, you know, again, the goal here for me is to be able to explain it in a way for Either AT&T or an OEM of hardware or combination of the two to say, listen. Um, you guys want partners like us out there generating business,
+
+[19:08:43 - 19:08:44] Scott Davidson: Right.
+
+[19:08:46 - 19:08:58] Bryan Ilg: and you have these programs and we want to put together something that's interesting and sharp And that will be the best opportunity to drive up like new leads in.
+
+[19:09:01 - 19:09:01] Scott Davidson: 
+
+[19:09:02 - 19:09:07] Bryan Ilg: Because that's ultimately what they want from us in these market development funds, right? That's
+
+[19:09:08 - 19:09:09] Scott Davidson: Yeah.
+
+[19:09:09 - 19:09:09] Bryan Ilg: Would be the thing.
+
+[19:09:10 - 19:09:40] Scott Davidson: It. Yeah, the idea is like we will be testing different hypotheses of what. What gets the highest reply rates, and positive reply rates? Um, and then Assuming we, well once we do land on, whatever that is, we start shifting the volume in that direction. A good good is like one in 200. Positive reply is good.
+
+[19:09:40 - 19:09:40] Bryan Ilg: You know.
+
+[19:09:42 - 19:10:01] Scott Davidson: But that's with more. I would expect, I mean, I would expect us to be on the good range because The buying cycle is substantially quicker than like a large enterprise B2B sale. and there's so many, you know,
+
+[19:10:00 - 19:10:10] Bryan Ilg: Yeah. What would be helpful to understand there like the sales cycle? I could I can explain what is common.
+
+[19:10:10 - 19:10:10] Scott Davidson: Okay.
+
+[19:10:12 - 19:10:20] Bryan Ilg: so, and, and this is The challenge is more getting the lead than closing the lead clearly.
+
+[19:10:19 - 19:10:20] Scott Davidson: Hmm.
+
+[19:10:28 - 19:10:59] Bryan Ilg: But what we're really trying to do is catch people at the right moment within their like business ownership. Because if you think about buying, I've thought about this quite a bit since our last call, because I was chaos. My brain. So, what I want to be able to do is identify when somebody is You know. Starting a business or buying certain things that indicate when they're starting a business. So the ones that I've come up with are like They're buying a new sign for their store.
+
+[19:11:08 - 19:11:09] Scott Davidson: Hmm.
+
+[19:11:09 - 19:11:41] Bryan Ilg: infrastructure. People generally buy Internet like they set up bank accounts and And the reason is we're selling really kind of like foundational level they do it one time and as long as it doesn't, totally screw them over. They don't switch. But those events that the triggers and the events that cause a switch are. I've starting a new location or I'm moving out of my house into a brick and mortar or moved my business from point A to point B, like physical location. Or I'm I've added a new line of revenue. I found these new opportunities, so
+
+[19:11:39 - 19:11:39] Scott Davidson: Hmm.
+
+[19:11:43 - 19:12:05] Bryan Ilg: I really do think there's a timing component to the sale. Car dealership stuff comes to mind a lot. I want to pop a mind but I also don't I don't have car dealership budget. So I want to be more like precise And then I'm gonna, hopefully go try to get the car dealership about budget from this MDF. So
+
+[19:12:07 - 19:12:08] Scott Davidson: That's it.
+
+[19:12:09 - 19:12:24] Bryan Ilg: Does that does that kind of? Thought logic at least kind of track from your side of like, when we're selling the stuff and when we might go find a client because I do want it to be. Effective. And I think that story,
+
+[19:12:30 - 19:12:30] Scott Davidson: Yeah.
+
+[19:12:33 - 19:12:39] Bryan Ilg: Sold the right way to get some marketing funds. Like, people will say yes, to because it's like, it's sharp. And that's what I think. Everyone just looking for is a sharp narrative that they can make sense to
+
+[19:12:39 - 19:12:57] Scott Davidson: And so, I think that's a I think that's a good narrative that we can. Yeah, like starting start LLC formation is really easy intense signal that we can like set up and have as always on
+
+[19:12:59 - 19:12:59] Bryan Ilg: Okay.
+
+[19:13:02 - 19:13:17] Scott Davidson: A. New, a new location is. Also possible. The whether or not they're coming from somewhere to another place. That's a little bit harder.
+
+[19:13:18 - 19:13:24] Bryan Ilg: Yeah. leave off like where they're coming from and that it's that would make you
+
+[19:13:23 - 19:13:23] Scott Davidson: Yeah.
+
+[19:13:26 - 19:13:26] Bryan Ilg: but,
+
+[19:13:35 - 19:13:45] Scott Davidson: news sites and things like that, that would help identify newer businesses. Yeah, so like we might find like we could scrape like commercial real estate Those might be on, you know, those might be a little bit larger, but or we could just look up developments that are like In progress and we can see who they're releasing up to. That's the way to do that.
+
+[19:13:46 - 19:13:46] Bryan Ilg: I,
+
+[19:13:47 - 19:14:07] Scott Davidson: but starting is a really good one and I actually got a message from someone when we created RLC And copy was horrible. And I, I reached out and I was like, Hey, how'd you find my information? You said LLC formation and he said It's working great. and even with the copy, that was Not yeah.
+
+[19:14:11 - 19:14:19] Bryan Ilg: profile. so, as I've thought through this, it's more of a timing sale than a specific
+
+[19:14:18 - 19:14:18] Scott Davidson: Yeah.
+
+[19:14:19 - 19:14:20] Bryan Ilg: Everybody needs Internet.
+
+[19:14:22 - 19:14:22] Scott Davidson: Yeah.
+
+[19:14:22 - 19:14:27] Bryan Ilg: so it's like, you know, you throw a rock in a lake, you hit a customer but it's
+
+[19:14:25 - 19:14:26] Scott Davidson: Right.
+
+[19:14:27 - 19:14:41] Bryan Ilg: like How do you get them at the right time to buy? So, I would love big accounts, I love little account, so I love them all. You know, they all pay this just the quantity.
+
+[19:14:44 - 19:14:44] Scott Davidson: Yeah.
+
+[19:14:45 - 19:15:11] Bryan Ilg: but yeah, you know, I think that If that's possible to kind of like, Structure. It more of like we're gonna do demand gen around these events that are strong indicators of potential switching, or the establishment of Connectivity Services.
+
+[19:15:11 - 19:15:12] Scott Davidson: Okay.
+
+[19:15:13 - 19:15:24] Bryan Ilg: Those are. Like that feels like the sharpest way to Like time out when to hit a customer.
+
+[19:15:24 - 19:15:25] Scott Davidson: Okay.
+
+[19:15:26 - 19:15:41] Bryan Ilg: um, so, I know that like, kind of switches it, but it certainly is like, You're still gonna have. A ton of, you know, I don't know what the volume of this stuff gets to at that point but
+
+[19:15:43 - 19:15:50] Scott Davidson: Yeah, that's a good question. I'm curious about. like daily because it you know not just any
+
+[19:15:50 - 19:15:52] Bryan Ilg: I can tell you the quotas that some of these sellers have
+
+[19:15:52 - 19:15:53] Scott Davidson: Yeah.
+
+[19:15:53 - 19:15:55] Bryan Ilg: You know, like a sales manager at AT&T.
+
+[19:15:56 - 19:15:57] Scott Davidson: Yeah.
+
+[19:15:56 - 19:16:26] Bryan Ilg: Is somewhere between eight and call eight sales reps underneath them and they have a quota for um, quota of five. What are called fixed wireless activations, which would be like Now, they probably have 16 people underneath them. So they, they all have a primary Internet or a failover Internet. So, I think we would be targeting primary first.
+
+[19:16:28 - 19:16:29] Scott Davidson: 
+
+[19:16:30 - 19:16:36] Bryan Ilg: With this motion and that want to have the primary connection. So that's new business establishment, and
+
+[19:16:47 - 19:16:53] Scott Davidson: um, 40 A month is what they
+
+[19:16:53 - 19:16:53] Bryan Ilg: From there.
+
+[19:17:05 - 19:17:05] Scott Davidson: 
+
+[19:17:06 - 19:18:12] Bryan Ilg: Yeah, that probably that would be the right starting point. But yes, you're looking at 40 per market and
+
+[19:18:10 - 19:18:10] Scott Davidson: Hmm.
+
+[19:18:15 - 19:18:17] Bryan Ilg: A month. yeah, so and that's gonna be
+
+[19:18:30 - 19:18:54] Scott Davidson: Yeah. And are you saying that for the 48 times 3? Are you saying that for them to consider it? An effective program, they need to hit that volume or you just suggesting that you may be able to hit that volume.
+
+[19:18:53 - 19:18:54] Bryan Ilg: You know, the beautiful part about what we do is we sell for all of the carriers.
+
+[19:18:57 - 19:18:58] Scott Davidson: For them, but for a whole team, right?
+
+[19:19:08 - 19:19:08] Bryan Ilg: so times that by, like,
+
+[19:19:19 - 19:19:19] Scott Davidson: Okay.
+
+[19:19:21 - 19:19:44] Bryan Ilg: Three, if you're looking at Verizon T-Mobile AT&T, but we're not paying attention to is the Comcast the Xfinity. So, like, you're getting Hundreds and hundreds of new activations, a month, across the whole gamut of. Of these services providers. And I can't believe that I'm now just thinking of it and all these other smart telco marketing people aren't also doing similar things. that I really want to have is that I can get you pricing for all the three major T-Mobile Verizon AT&T, and I could even toss in Starlink, The hook. tele We know you're setting up a business or something's happened.
+
+[19:19:39 - 19:19:39] Scott Davidson: 
+
+[19:19:39 - 19:20:27] Bryan Ilg: Work with deployed dynamic and we will get you kind of like a curated list of so, it's like, hey Internet options from these carriers around these services. so I could, I could kind of, think about if I'm a new business or I'm an Things that they may want to consider from like a solution set. expanding business, what are some basic So I feel like I got it a lot more organized in terms of what the sale is and That's their current quota. So, You know. kind of where I think we might want to go. So yeah. For yep. Per month per team. Yeah, it depends on each team and it's a high churn kind of turnover industry, so it's probably just call it. It's probably about a hundred activations per And that's so like the sales manager over Richmond Virginia probably for AT&T is likely team per month. trying to get somewhere around a hundred new line activations across Like a dedicated circuit a shared circuit, or a 5g connection. T-Mobile at the very similar quota and you have all the other carriers like a Now, you also have the same. effort going in by Verizon with probably a very similar quota the same with Xfinity's huge here, right? Do they all have these like quotas? So if you were thinking about it, you know, they're probably competing for it's a finite market. Got to be somewhere around. Five, six, seven hundred new line activations in. Richmond every month at a minimum. That's happening. So you know, from our standpoint, if we get 10% of that, I'm filling up an entire teams quota. Like they're
+
+[19:20:26 - 19:20:28] Scott Davidson: Right, with substantially less resources.
+
+[19:20:31 - 19:20:42] Bryan Ilg: Yeah, and I just want to hit the like if I just super focused on the switch on the customer side. Like I think I can meet them. and I can be hyper focused on it and then Yeah like I said,
+
+[19:20:49 - 19:20:50] Scott Davidson: Right.
+
+[19:20:50 - 19:20:58] Bryan Ilg: whatever you get. When you move in it, just go to our website, fill in what you Hey, don't talk to each one of the people who put a coupon in the book or do, and then we'll spit out Quotes.
+
+[19:20:58 - 19:21:03] Scott Davidson: Yeah. And that. Okay, so wait a couple questions one.
+
+[19:21:02 - 19:21:04] Bryan Ilg: Yes, I just rambled for a bit.
+
+[19:21:05 - 19:21:10] Scott Davidson: No, no, no. This is helpful. Um, you're not geographically constrained, right? Besides you the US.
+
+[19:21:11 - 19:21:13] Bryan Ilg: No, I knew whatever.
+
+[19:21:12 - 19:21:22] Scott Davidson: Okay. Okay, so that's cool. And then I looked at the The site you sent me and I believe that was more for Channel, right? Like those weren't
+
+[19:21:24 - 19:21:26] Bryan Ilg: To put dynamics itself.
+
+[19:21:25 - 19:21:27] Scott Davidson: The. No, it was I think it was Channel OS.
+
+[19:21:28 - 19:21:39] Bryan Ilg: Oh yeah. So that is like an ordering portal. so, That, that will evolve into kind of a self-service portal for an end customer.
+
+[19:21:39 - 19:21:39] Scott Davidson: Okay.
+
+[19:21:51 - 19:21:57] Bryan Ilg: what options we've curated for you that do these things and then it, So this motion would be Hey don't go to the carrier websites and try to put this all together yourself. Go to channel OS, build your own customer profile and see
+
+[19:21:55 - 19:21:59] Scott Davidson: Okay, so we would direct them there. If we got positive interest,
+
+[19:22:00 - 19:22:05] Bryan Ilg: yeah, I think, I think that would be maybe a future state and current state
+
+[19:22:03 - 19:22:03] Scott Davidson: Over.
+
+[19:22:04 - 19:22:07] Bryan Ilg: would be like, You know.
+
+[19:22:14 - 19:22:14] Scott Davidson: Hmm.
+
+[19:22:15 - 19:22:19] Bryan Ilg: Submit information to a form and we'll send it back to and, you know, we'll do the hunting and get it back to you in like three days because I'll just call everybody and be like, Hey, I got a guy who's once this or that and
+
+[19:22:18 - 19:22:20] Scott Davidson: Okay.
+
+[19:22:19 - 19:22:22] Bryan Ilg: You know, so it's Yeah.
+
+[19:22:22 - 19:22:34] Scott Davidson: Gotcha. Okay. Yeah. I mean definitely, the LLC formation is A We can just set up a trigger around that, and then we'd have to obviously
+
+[19:22:31 - 19:22:45] Bryan Ilg: Right. Yeah.
+
+[19:22:33 - 19:22:49] Scott Davidson: filter, because I assume there are. my cell phone, you know, have a business line but if we look at like 50 I'm sure you know the service businesses like me operating from my house like I'm using there's a way to
+
+[19:22:53 - 19:22:53] Bryan Ilg: Yeah.
+
+[19:22:55 - 19:22:58] Scott Davidson: Okay, it's a physical location. It's a bakery or it's a car dealership. Like it's something that very clearly has a business line.
+
+[19:23:00 - 19:23:10] Bryan Ilg: And then the other side of that would be is at some point. You grow says takes off. You have 10 people that work for you and you're like, I want to work in the office together. So be that new location or you want to get a sign.
+
+[19:23:10 - 19:23:11] Scott Davidson: Yeah.
+
+[19:23:11 - 19:23:12] Bryan Ilg: That's kind of the growth.
+
+[19:23:14 - 19:23:14] Scott Davidson: Yeah.
+
+[19:23:14 - 19:23:14] Bryan Ilg: so,
+
+[19:23:15 - 19:23:34] Scott Davidson: I'm sure there's a way to think through. Lee signings, I would just need to Think about the data source like where we get that information? But I'm Sure, it's possible. In fact, co-star, might be a good data source.
+
+[19:23:34 - 19:23:36] Bryan Ilg: Mmm, I'm going there tonight.
+
+[19:23:35 - 19:23:38] Scott Davidson: so, Sorry.
+
+[19:23:44 - 19:23:50] Bryan Ilg: There's a product. So, AI ready RVA has a event going on there tonight. I'm gonna pop over. It's for product. It's like a new cohort for. Yeah. So
+
+[19:23:48 - 19:23:50] Scott Davidson: Oh, I saw the
+
+[19:23:51 - 19:23:55] Bryan Ilg: Yeah. But anyways, at the Costar building. So maybe I'll bump into somebody and
+
+[19:23:55 - 19:23:58] Scott Davidson: No. Yeah, I mean, I know.
+
+[19:23:57 - 19:23:58] Bryan Ilg: Find out.
+
+[19:24:02 - 19:24:09] Scott Davidson: I'm sure they have people. You know, I used to that's where my early career was in real estate and multifamily and They would call.
+
+[19:24:15 - 19:24:22] Bryan Ilg: Yeah.
+
+[19:24:16 - 19:24:22] Scott Davidson: Us the broker all the time and say What did the building sell for? You know, what was the land Square footage like up. So they have people just doing that all day and they definitely have an office division, that's doing that for Leasing, I'm sure.
+
+[19:24:23 - 19:24:26] Bryan Ilg: Because they'd be like rent.com is their thing too, right?
+
+[19:24:24 - 19:24:29] Scott Davidson: so, Yeah, they own a bunch now. Yeah.
+
+[19:24:32 - 19:24:36] Bryan Ilg: Yeah, they're a powerhouse. I didn't know who the hell they were and then I I heard I'm like, Oh it's that's who that is. Okay, yeah.
+
+[19:24:41 - 19:25:08] Scott Davidson: Yeah. Yeah. They're big. They're big and then there's another one. I know I can't I'll find it. I can't remember the name of it, I'll stop my head but I think it's specifically for office leasing Um it's like something spaces, 42 spaces, something like that. So that would be a good data source as well. Um, okay. So then Is your suggestion that we or that I go and refine the MDF, documentation. And then,
+
+[19:25:13 - 19:25:17] Bryan Ilg: figure out, well, not trying to figure out I'm having a meeting with one of the I don't want you to do like a ton of extra work because like I'm trying to OEM marketing people on Friday.
+
+[19:25:18 - 19:25:18] Scott Davidson: Over.
+
+[19:25:20 - 19:25:28] Bryan Ilg: I got the I got the MDF from one of the router OEMs since I'm talking to the other one that we're like big proponents of
+
+[19:25:29 - 19:25:29] Scott Davidson: Mmm.
+
+[19:25:31 - 19:26:09] Bryan Ilg: But I'm trying to get that MDF. To. Let me get the story a little bit tighter, but I do think that, like, if you're telling me that Let me be a sales guy and sell the dream of like, Yeah, I talked to demand Gen company. That can do this, it's roughly 30 grand, and like, that's what I'm looking to secure and this is when we're gonna go meet the the customer. And that's what we're ultimately trying to achieve. I'm trying to package up AT&T and PEP link or AT&T catalyst and like that, just kind of keeps the work off of your plate and I can sell the the story first.
+
+[19:26:09 - 19:26:09] Scott Davidson: Yeah.
+
+[19:26:14 - 19:26:19] Bryan Ilg: Because I do think that one I want to do this because I I was talking to my cousin who's in signs. Like he works for fast signs, right?
+
+[19:26:17 - 19:26:20] Scott Davidson: Okay. Oh yeah.
+
+[19:26:21 - 19:26:36] Bryan Ilg: Is the graphic designer down there and I'm like, Hey man, like you talk to like new businesses, he's like all the time. He's like it's a huge part of like what we do he goes and it's not the only thing but like it's it's a lot. Nice.
+
+[19:26:36 - 19:26:38] Scott Davidson: There's that's a good. Yeah, that would be a great.
+
+[19:26:38 - 19:26:50] Bryan Ilg: so, Yeah like I'm like I should just go make little partnerships with sign companies and put little referral nuggets in their ear and like hey if you got anybody like I'll give you a 50 bucks, you know? And also acquisition, so there's like,
+
+[19:26:49 - 19:26:49] Scott Davidson: I mean.
+
+[19:26:50 - 19:27:37] Bryan Ilg: Efforts in that end which are like super analog. But the other side of this too is like We can figure out a little bit, how to do this. And like show how to do it. No one's really great at this in this space. and like, point in case, My former company based out of Richmond. They do 20-ish thousand activations a month with Verizon Um, yeah, I know they do good work you but they literally cannot generate their own leads. Almost 90, something percent of that is just inbound traffic from Verizon. They have no f****** what they have. I mean,
+
+[19:27:37 - 19:27:38] Scott Davidson: Well, that's crazy.
+
+[19:27:38 - 19:27:50] Bryan Ilg: So many new customers. Every single month and they have no idea how to get them on their own. Not that, they really need them at this point. But then also, they don't even know how to go back and sell into them.
+
+[19:27:51 - 19:27:51] Scott Davidson: Mmm.
+
+[19:27:52 - 19:28:12] Bryan Ilg: so, like I know they're looking for that. Like they're looking for a way to sell back into their own client base. I don't know, like I anymore, but they're sitting on a gold mine and they're just kind of dumb. Yeah, they're a little flakies, the problem. And that's why I don't work there Yeah.
+
+[19:28:13 - 19:28:16] Scott Davidson: So you would like consider productizing it type vibe.
+
+[19:28:13 - 19:28:24] Bryan Ilg: Put that. Well yeah, like I feel like if we can sort it out then it puts me out in front of a lot of people and then there's gonna be a lot of people want to know how I
+
+[19:28:21 - 19:28:22] Scott Davidson: Yeah.
+
+[19:28:23 - 19:28:24] Bryan Ilg: do it.
+
+[19:28:24 - 19:28:25] Scott Davidson: Yeah.
+
+[19:28:38 - 19:28:43] Bryan Ilg: introduction to you with them if we can sort it out but it's just I mean if you And if I have like a I'm really focused on AT&T I really care about Verizon but like that would be like an opportunity. I mean hell I could even make an
+
+[19:28:39 - 19:28:39] Scott Davidson: 
+
+[19:28:42 - 19:28:49] Bryan Ilg: look it up it's called Connected Solutions group. But they're like real. Weird to work with. I just be honest with you, feel free to reach out to them.
+
+[19:28:50 - 19:28:57] Scott Davidson: Okay. Yeah. But I mean like even so we could even create a list of sign
+
+[19:28:52 - 19:28:54] Bryan Ilg: They're go figure.
+
+[19:28:57 - 19:29:01] Scott Davidson: companies. for example, and then you we could reach out and say
+
+[19:28:59 - 19:28:59] Bryan Ilg: Yeah.
+
+[19:29:02 - 19:29:04] Scott Davidson: Want to make extra fit, easy revenue, you know?
+
+[19:29:05 - 19:29:06] Bryan Ilg: yeah, like
+
+[19:29:06 - 19:29:08] Scott Davidson: Convert your existing revenue for free or whatever.
+
+[19:29:14 - 19:29:32] Bryan Ilg: the marketing department here. Like, I was up early because I got told I had to Yeah. So you know, however, we can put it together. I just, I'll be honest. I am be on a 9 am call and I had to put a presentation together. So I'm like Okay I'll build the whole damn thing so I did. It's great. That's done. I don't do it again, but like, that's kind of how it all gets done. so any like,
+
+[19:29:31 - 19:29:31] Scott Davidson: Hmm.
+
+[19:29:34 - 19:29:40] Bryan Ilg: however we can figure something out like I'm trying to do that because it's like a big Burden for me to carry.
+
+[19:29:42 - 19:29:42] Scott Davidson: Yeah.
+
+[19:29:56 - 19:30:01] Bryan Ilg: And like, I feel like it's just a matter of time till we crack through. Like I have a second team meeting this afternoon. So like the stuff's happening at AT&T that I want to, but I want to be able to say, Listen, we're doing all the stuff that you expect, but we're really making this investment, but we need your help to get off the ground because I'm where the darling, right now,
+
+[19:30:02 - 19:30:03] Scott Davidson: Hmm.
+
+[19:30:02 - 19:30:16] Bryan Ilg: I have like a little bit of leverage, so if I just seem like I'm competent They're saying yes, so that's the opportunity. It's a little bit of like a leverage sale but that I'm just being honest with you.
+
+[19:30:16 - 19:30:16] Scott Davidson: Yeah.
+
+[19:30:21 - 19:30:25] Bryan Ilg: But yeah. Like I want to figure out how to do this because I think if you we can figure out this little cocktail of when we to go grab people.
+
+[19:30:24 - 19:30:35] Scott Davidson: Hmm.
+
+[19:30:27 - 19:30:50] Bryan Ilg: One thing that we've Toyed around with is we have our whole ordering platform so we can see who's in and out of this platform all the time. You know, we want to be able to say, Oh, you order stuff and like here's a little budget. We're gonna pump your market. And that's how I get the sales manager buy into force, their team onto my platform.
+
+[19:30:52 - 19:30:58] Scott Davidson: So, I get in a customer who's already engaging in the platform like a
+
+[19:30:52 - 19:30:52] Bryan Ilg: So, we're
+
+[19:30:57 - 19:30:58] Scott Davidson: retargeting them is everything.
+
+[19:30:58 - 19:31:06] Bryan Ilg: No, think think a benefit of the carrier teams who send leads to us.
+
+[19:31:06 - 19:31:07] Scott Davidson: Okay.
+
+[19:31:14 - 19:31:22] Bryan Ilg: Raleigh, right? I can compete. I can make them compete for where we're putting
+
+[19:31:15 - 19:31:15] Scott Davidson: Yeah.
+
+[19:31:17 - 19:31:22] Bryan Ilg: So if all of Richmond, so, if I'm like, I've Richmond, I have Knoxville, I have our spend.
+
+[19:31:21 - 19:31:22] Scott Davidson: Mmm.
+
+[19:31:23 - 19:32:31] Bryan Ilg: To generate new leads. To create a little bit of a flywheel and to like, really say, Hey my guy down in Raleigh, like, you know, he put me on the team call. First, he's pushing deals my way, we're closing them. that just amplifies the outputs. And then, you know, they're so limited in what We our whole thing as we take and reinvest the winds back into the team because they can do. But we, we don't have those Real. So this is like, Trying to figure out. How do I get step one off and move forward but like, This grows over time. So what we're trying I'm trying to get like the railroad first ones in but once they're going it comes a machine. So that's tracks. Kind of like this is where I'm going. I'm gonna start putting the the I might be early but I know the ideas are sound and the logic sound and this is a Viable like way to like really kind of dominate the AT&T space and probably all the carriers. So
+
+[19:32:30 - 19:32:34] Scott Davidson: You. Yeah, no. Okay. Yeah.
+
+[19:32:33 - 19:32:48] Bryan Ilg: That's what I'm trying to get to. And I also don't want to like, abuse your time because I'd, you know. trying to be creative and like, I don't f****** mind selling telco people, the I don't have like, a flush bank account right at the moment to pay, but I'm dream like,
+
+[19:32:50 - 19:32:50] Scott Davidson: Yeah.
+
+[19:32:50 - 19:32:51] Bryan Ilg: The ruthless man.
+
+[19:32:51 - 19:32:54] Scott Davidson: I believe that very much though,
+
+[19:32:53 - 19:32:56] Bryan Ilg: Yeah, like it's a it's a crazy world, but they're not.
+
+[19:32:55 - 19:32:56] Scott Davidson: Yeah.
+
+[19:32:59 - 19:32:59] Bryan Ilg: One of her.
+
+[19:33:03 - 19:33:04] Scott Davidson: Hmm.
+
+[19:33:03 - 19:33:11] Bryan Ilg: They're just very like singular, focus. So like if you can hammer that focus, which looks light up lines and compete. Willing to spend money and that's good.
+
+[19:33:11 - 19:33:22] Scott Davidson: Yeah, yeah, now that's smart. Okay well yeah I mean keep me posted it sounds like it might be A handful a bit of weeks until we maybe progress or
+
+[19:33:20 - 19:33:54] Bryan Ilg: Yeah, let's let's I'll reach out if I get like good signal but I think this is been good enough for me to Validate the concept to go sell the vision and start getting the dominoes kind of stacked up. and honestly, I could Can I white label you? All right. That's kind of interesting.
+
+[19:33:54 - 19:33:55] Scott Davidson: yeah, I mean
+
+[19:33:55 - 19:34:07] Bryan Ilg: All right, welcome to the team. Unofficially officially but yeah that's the Maybe that's something I could do with the other company. Hmm.
+
+[19:34:07 - 19:34:11] Scott Davidson: yeah, I mean Forget work something out on that front, you know?
+
+[19:34:10 - 19:34:30] Bryan Ilg: Let me. space, so it's like, Yeah. Like if you do all the work and we put like, five ten Yeah, for sure, like, we're very cool with like the wholesale distribution points on it and we just like, make the connection and like, They don't know. Cool. Like we it's the distribution game.
+
+[19:34:28 - 19:34:38] Scott Davidson: Yeah. Yeah, I mean you can literally white label some of the like actual tooling that we have like you could put your logo on, for example.
+
+[19:34:36 - 19:34:39] Bryan Ilg: Yeah. Okay, that's what's up.
+
+[19:34:40 - 19:34:51] Scott Davidson: Yeah, I I'm almost positive. I know you can create like, a workspaces and they have like agency, like plans
+
+[19:34:49 - 19:34:49] Bryan Ilg: Nice.
+
+[19:34:50 - 19:34:51] Scott Davidson: and things like that. So,
+
+[19:34:55 - 19:35:01] Bryan Ilg: Do you do? I I just found this software called Perspective.co, It's like a website, it's all click funnel stuff. It's like Social Media, Click Funnel,
+
+[19:35:01 - 19:35:02] Scott Davidson: Oh, okay.
+
+[19:35:04 - 19:35:09] Bryan Ilg: Drag and drop and look pretty easy to do, like 50 bucks a month or whatever. I don't have enough social media cook in.
+
+[19:35:09 - 19:35:10] Scott Davidson: Hmm.
+
+[19:35:20 - 19:35:27] Bryan Ilg: like that's nothing terrible but I'm nowhere else. So I was thinking How could I And I got good LinkedIn, you got just shy a 10,000 followers on LinkedIn. So or could I use that? But I think that's like a instagram tiktok type. Thing.
+
+[19:35:28 - 19:35:36] Scott Davidson: yeah, and you can You can scrape likes and followers and activate them somehow.
+
+[19:35:34 - 19:35:34] Bryan Ilg: Yeah.
+
+[19:35:37 - 19:35:40] Scott Davidson: But yeah, you're calling that one.
+
+[19:35:45 - 19:35:49] Bryan Ilg: it seems easy and they have like agency models. So that's a pop into my head All good, all good. I just take a look at it, if that's anything in your world,
+
+[19:35:48 - 19:35:49] Scott Davidson: Mmm.
+
+[19:35:49 - 19:35:49] Bryan Ilg: there. But
+
+[19:35:50 - 19:35:50] Scott Davidson: Okay.
+
+[19:35:51 - 19:36:04] Bryan Ilg: Either way, man. Yeah, I can let you go. I know a few minutes past and I think Yeah. Why don't we? Middle, maybe middle of February unless something happens beforehand that way. You know.
+
+[19:36:03 - 19:36:04] Scott Davidson: Okay.
+
+[19:36:04 - 19:36:11] Bryan Ilg: I don't want to. Get on and be like, Yeah, I had some conversations but nothing's happened so but I'll let you know.
+
+[19:36:11 - 19:36:15] Scott Davidson: Yeah. Um, do you want to put something just out of it now? Or you wanna?
+
+[19:36:16 - 19:36:18] Bryan Ilg: Yeah, we can. I mean Wednesdays are fine. I like Wednesdays.
+
+[19:36:18 - 19:36:22] Scott Davidson: Other. Should we just do the 11th at the same time?
+
+[19:36:27 - 19:36:28] Bryan Ilg: Yeah, that's fine.
+
+[19:36:29 - 19:36:32] Scott Davidson: Okay, sweet. Sounds good.
+
+[19:36:33 - 19:36:41] Bryan Ilg: Yeah, that works perfect. Okay, awesome. Well I appreciate the conversation and Again it out with me, man.
+
+[19:36:39 - 19:36:42] Scott Davidson: Yeah. Absolutely.
+
+[19:36:43 - 19:37:03] Bryan Ilg: Do you? Trying to think like, how are like new leads coming in for you right now? Yeah. Okay.
+
+[19:37:06 - 19:37:12] Scott Davidson: So, we're doing we're running this, these programs, like for ourselves. Um, right now we're we're the trying to get the branding right on LinkedIn before campaigns actually just started yesterday for LinkedIn, but a lot of them are,
+
+[19:37:08 - 19:37:08] Bryan Ilg: Nice.
+
+[19:37:08 - 19:37:12] Scott Davidson: we've gone heavily in the LinkedIn, but we're just starting that up. So like the it's either a referral or this outbound
+
+[19:37:14 - 19:37:34] Bryan Ilg: Do you? Okay. information. So, whatever. I'll just tell people, I help people. Do I have the name of your business, right? Well, I have your contact all these like new fancy things. So I'll I can find any opportunities will let
+
+[19:37:32 - 19:37:32] Scott Davidson: Yeah.
+
+[19:37:32 - 19:37:34] Bryan Ilg: But anyways I'm talking a bunch of product people tonight, so I'm sure there's
+
+[19:37:34 - 19:37:36] Scott Davidson: Okay, that'd be amazing. I'll be amazing.
+
+[19:37:34 - 19:37:37] Bryan Ilg: you know. oh, Man.
+
+[19:37:38 - 19:37:39] Scott Davidson: Sweet. Yeah. Thanks so much.
+
+[19:37:38 - 19:37:40] Bryan Ilg: Works. Yes, Scott, take it easy.
+
+[19:37:40 - 19:37:40] Scott Davidson: Bye.
+
