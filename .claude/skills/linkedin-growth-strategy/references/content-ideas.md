@@ -144,6 +144,24 @@ Structure your content around 4-6 core topics you want to be known for:
 3. **Find gaps:** What's everyone saying? What's missing?
 4. **Add unique angle:** How can you say it differently/better?
 
+## Post Length Guidelines
+
+**Optimal length:** 1,300-2,000 characters for feed posts
+
+**Why this matters:**
+- Under 1,300 characters often lacks enough substance to engage
+- Over 2,000 characters risks getting truncated and losing readers
+- LinkedIn's algorithm tends to favor posts in this range for engagement
+
+**Character count by post type:**
+- **Quick takes:** 800-1,200 characters (acceptable for punchy observations)
+- **Standard posts:** 1,300-2,000 characters (optimal range)
+- **Deep dives:** 2,000-3,000 characters (use sparingly, ensure every word earns its place)
+
+**Practical tip:** Write first, then edit ruthlessly. Most first drafts are 20-30% too long.
+
+---
+
 ## Engagement Boosters
 
 - **Ask questions:** End posts with thought-provoking questions
@@ -151,6 +169,8 @@ Structure your content around 4-6 core topics you want to be known for:
 - **Use line breaks:** Make posts scannable
 - **First comment:** Add additional context in first comment
 - **Reply to everyone:** Engage with all comments in first 2 hours
+
+
 
 
 
