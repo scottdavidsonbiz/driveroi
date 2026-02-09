@@ -11,6 +11,7 @@ export interface Client {
   name: string
   website: string | null
   industry: string | null
+  status: 'client' | 'prospect' | 'internal' | 'churned'
   created_at: string
   updated_at: string
 }

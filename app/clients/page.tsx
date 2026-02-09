@@ -6,11 +6,14 @@ import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Loader2 } from 'lucide-react'
 
+type ClientStatus = 'client' | 'prospect' | 'internal' | 'churned'
+
 interface ClientWithICP {
   id: string
   name: string
   website: string | null
   industry: string | null
+  status: ClientStatus
   created_at: string
   client_icp: {
     buyer_persona: string | null
@@ -18,10 +21,25 @@ interface ClientWithICP {
   } | null
 }
 
+const STATUS_COLORS: Record<ClientStatus, string> = {
+  client: 'bg-green-100 text-green-700',
+  prospect: 'bg-yellow-100 text-yellow-700',
+  internal: 'bg-gray-100 text-gray-700',
+  churned: 'bg-red-100 text-red-700',
+}
+
+const FILTER_OPTIONS: { label: string; value: ClientStatus | 'all' }[] = [
+  { label: 'All', value: 'all' },
+  { label: 'Clients', value: 'client' },
+  { label: 'Prospects', value: 'prospect' },
+  { label: 'Internal', value: 'internal' },
+]
+
 export default function ClientsPage() {
   const [clients, setClients] = useState<ClientWithICP[]>([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
+  const [filter, setFilter] = useState<ClientStatus | 'all'>('all')
 
   useEffect(() => {
     async function fetchClients() {
@@ -44,6 +62,10 @@ export default function ClientsPage() {
 
     fetchClients()
   }, [])
+
+  const filtered = filter === 'all'
+    ? clients
+    : clients.filter(c => c.status === filter)
 
   if (loading) {
     return (
@@ -85,8 +107,25 @@ export default function ClientsPage() {
 
   return (
     <div className="page-enter">
+      {/* Filter tabs */}
+      <div className="flex gap-2 mb-4">
+        {FILTER_OPTIONS.map(opt => (
+          <button
+            key={opt.value}
+            onClick={() => setFilter(opt.value)}
+            className={`px-3 py-1 text-sm rounded-md transition-colors ${
+              filter === opt.value
+                ? 'bg-primary text-primary-foreground'
+                : 'bg-muted text-muted-foreground hover:bg-muted/80'
+            }`}
+          >
+            {opt.label}
+          </button>
+        ))}
+      </div>
+
       <div className="grid gap-4">
-        {clients.map((client, index) => (
+        {filtered.map((client, index) => (
           <Link key={client.id} href={`/clients/${client.id}`}>
             <Card
               className="card-hover cursor-pointer"
@@ -101,7 +140,7 @@ export default function ClientsPage() {
                     <div>
                       <div className="flex items-center gap-2">
                         <h3 className="font-semibold">{client.name}</h3>
-                        <StatusBadge hasICP={!!client.client_icp} />
+                        <StatusBadge status={client.status} />
                       </div>
                       <p className="text-sm text-muted-foreground">
                         {client.industry || 'No industry set'}
@@ -117,22 +156,22 @@ export default function ClientsPage() {
             </Card>
           </Link>
         ))}
+        {filtered.length === 0 && (
+          <Card>
+            <CardContent className="py-8 text-center">
+              <p className="text-muted-foreground">No {filter} clients found</p>
+            </CardContent>
+          </Card>
+        )}
       </div>
     </div>
   )
 }
 
-function StatusBadge({ hasICP }: { hasICP: boolean }) {
-  if (hasICP) {
-    return (
-      <Badge variant="secondary" className="bg-green-100 text-green-700">
-        ICP Ready
-      </Badge>
-    )
-  }
+function StatusBadge({ status }: { status: ClientStatus }) {
   return (
-    <Badge variant="secondary" className="bg-yellow-100 text-yellow-700">
-      Needs Setup
+    <Badge variant="secondary" className={STATUS_COLORS[status] || STATUS_COLORS.prospect}>
+      {status}
     </Badge>
   )
 }

@@ -1,16 +1,25 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { supabase } from '@/lib/supabase'
 
-// GET /api/clients - List all clients
-export async function GET() {
+// GET /api/clients - List all clients, optionally filtered by ?status=client
+export async function GET(request: NextRequest) {
   try {
-    const { data: clients, error } = await supabase
+    const { searchParams } = new URL(request.url)
+    const status = searchParams.get('status')
+
+    let query = supabase
       .from('clients')
       .select(`
         *,
         client_icp (*)
       `)
       .order('created_at', { ascending: false })
+
+    if (status) {
+      query = query.eq('status', status)
+    }
+
+    const { data: clients, error } = await query
 
     if (error) {
       console.error('[Clients API] Error fetching clients:', error)

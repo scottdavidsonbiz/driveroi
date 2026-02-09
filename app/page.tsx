@@ -1,18 +1,114 @@
+'use client'
+
+import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-import { Plus, ArrowRight } from 'lucide-react'
+import { Plus, ArrowRight, Loader2 } from 'lucide-react'
+
+interface DashboardStats {
+  activeClients: number
+  totalLeadsContacted: number
+  totalEmailsSent: number
+  totalReplies: number
+  totalMeetings: number
+  totalConnectionsSent: number
+  totalConnectionsAccepted: number
+  totalOpened: number
+}
+
+interface ClientSummary {
+  id: string
+  name: string
+  industry: string | null
+  status: string
+  campaignCount: number
+  totalSent: number
+  totalReplies: number
+  meetings: number
+}
+
+interface DashboardData {
+  stats: DashboardStats
+  clients: ClientSummary[]
+}
 
 export default function Dashboard() {
+  const [data, setData] = useState<DashboardData | null>(null)
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState<string | null>(null)
+
+  useEffect(() => {
+    async function fetchDashboard() {
+      try {
+        const res = await fetch('/api/dashboard')
+        const json = await res.json()
+        if (json.error) {
+          setError(json.error)
+        } else {
+          setData(json)
+        }
+      } catch (err) {
+        setError('Failed to load dashboard')
+        console.error(err)
+      } finally {
+        setLoading(false)
+      }
+    }
+    fetchDashboard()
+  }, [])
+
+  if (loading) {
+    return (
+      <div className="page-enter">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8 stagger-children">
+          {[...Array(4)].map((_, i) => (
+            <Card key={i} className="card-hover">
+              <CardContent className="pt-5">
+                <div className="h-4 w-24 bg-muted rounded animate-pulse mb-2" />
+                <div className="h-8 w-16 bg-muted rounded animate-pulse" />
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+        <div className="flex items-center justify-center py-8">
+          <Loader2 className="h-6 w-6 animate-spin text-muted-foreground" />
+        </div>
+      </div>
+    )
+  }
+
+  if (error) {
+    return (
+      <div className="page-enter">
+        <Card>
+          <CardContent className="py-8 text-center">
+            <p className="text-destructive">{error}</p>
+          </CardContent>
+        </Card>
+      </div>
+    )
+  }
+
+  const stats = data!.stats
+  const clients = data!.clients
+
+  const openRate = stats.totalEmailsSent > 0
+    ? ((stats.totalOpened / stats.totalEmailsSent) * 100).toFixed(0)
+    : '0'
+  const replyRate = stats.totalEmailsSent > 0
+    ? ((stats.totalReplies / stats.totalEmailsSent) * 100).toFixed(1)
+    : '0'
+
   return (
     <div className="page-enter">
       {/* Quick Stats */}
       <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8 stagger-children">
-        <StatCard label="Active Clients" value="3" change="+1 this month" />
-        <StatCard label="Leads Enriched" value="1,247" change="+312 this week" />
-        <StatCard label="Emails Sent" value="4,892" change="49% open rate" />
-        <StatCard label="Meetings Booked" value="23" change="+6 this week" />
+        <StatCard label="Active Clients" value={String(stats.activeClients)} />
+        <StatCard label="Leads Contacted" value={stats.totalLeadsContacted.toLocaleString()} />
+        <StatCard label="Emails Sent" value={stats.totalEmailsSent.toLocaleString()} />
+        <StatCard label="Meetings Booked" value={String(stats.totalMeetings)} />
       </div>
 
       {/* Clients Section */}
@@ -27,35 +123,29 @@ export default function Dashboard() {
           </Button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 stagger-children">
-          <ClientCard
-            name="IVS"
-            industry="Property Tax Assessment"
-            status="active"
-            campaigns={3}
-            meetings={12}
-            href="/clients/ivs"
-          />
-          <ClientCard
-            name="CharterUP"
-            industry="Charter Bus Marketplace"
-            status="setup"
-            campaigns={1}
-            meetings={0}
-            href="/clients/charterup"
-          />
-          <ClientCard
-            name="WithCoverage"
-            industry="Commercial Insurance"
-            status="new"
-            campaigns={0}
-            meetings={0}
-            href="/clients/withcoverage"
-          />
-        </div>
+        {clients.length === 0 ? (
+          <Card>
+            <CardContent className="py-8 text-center">
+              <p className="text-muted-foreground">No active clients yet</p>
+            </CardContent>
+          </Card>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 stagger-children">
+            {clients.map(client => (
+              <ClientCard
+                key={client.id}
+                name={client.name}
+                industry={client.industry || 'No industry set'}
+                campaigns={client.campaignCount}
+                meetings={client.meetings}
+                href={`/clients/${client.id}`}
+              />
+            ))}
+          </div>
+        )}
       </div>
 
-      {/* Quick Actions */}
+      {/* Quick Actions + This Week */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <Card className="card-hover">
           <CardHeader className="pb-2">
@@ -78,25 +168,33 @@ export default function Dashboard() {
 
         <Card className="card-hover">
           <CardHeader className="pb-2">
-            <CardTitle className="text-base">This Week</CardTitle>
+            <CardTitle className="text-base">Totals</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="space-y-3 text-sm">
               <div className="flex justify-between">
                 <span className="text-muted-foreground">Emails sent</span>
-                <span className="font-medium">1,247</span>
+                <span className="font-medium">{stats.totalEmailsSent.toLocaleString()}</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-muted-foreground">Open rate</span>
-                <span className="font-medium">49%</span>
+                <span className="font-medium">{openRate}%</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-muted-foreground">Reply rate</span>
-                <span className="font-medium">4.1%</span>
+                <span className="font-medium">{replyRate}%</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-muted-foreground">Meetings booked</span>
-                <span className="font-medium text-primary">6</span>
+                <span className="font-medium text-primary">{stats.totalMeetings}</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-muted-foreground">LinkedIn connections sent</span>
+                <span className="font-medium">{stats.totalConnectionsSent.toLocaleString()}</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="text-muted-foreground">LinkedIn accepted</span>
+                <span className="font-medium">{stats.totalConnectionsAccepted.toLocaleString()}</span>
               </div>
             </div>
           </CardContent>
@@ -131,32 +229,24 @@ function StatCard({
 function ClientCard({
   name,
   industry,
-  status,
   campaigns,
   meetings,
   href
 }: {
   name: string
   industry: string
-  status: 'active' | 'setup' | 'new'
   campaigns: number
   meetings: number
   href: string
 }) {
-  const statusColors = {
-    active: 'bg-green-100 text-green-700',
-    setup: 'bg-yellow-100 text-yellow-700',
-    new: 'bg-blue-100 text-blue-700'
-  }
-
   return (
     <Link href={href}>
       <Card className="card-hover cursor-pointer h-full">
         <CardContent className="pt-5">
           <div className="flex items-start justify-between mb-2">
             <h3 className="font-semibold text-lg">{name}</h3>
-            <Badge variant="secondary" className={statusColors[status]}>
-              {status}
+            <Badge variant="secondary" className="bg-green-100 text-green-700">
+              client
             </Badge>
           </div>
           <p className="text-sm text-muted-foreground mb-4">{industry}</p>
