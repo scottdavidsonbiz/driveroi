@@ -306,14 +306,12 @@ function buildMetricsSnapshot(stats: any[]) {
       campaign_id: s.campaign_id,
       campaign_name: s.campaign_name,
       emailsSent: s.sent || 0,
-      emailsOpened: s.opened || 0,
       replied: s.replied || 0,
       bounced: s.bounced || 0,
       meetings: s.meetings || 0,
     })),
     totals: {
       emailsSent: instantlyStats.reduce((sum, s) => sum + (s.sent || 0), 0),
-      emailsOpened: instantlyStats.reduce((sum, s) => sum + (s.opened || 0), 0),
       replied: instantlyStats.reduce((sum, s) => sum + (s.replied || 0), 0),
       bounced: instantlyStats.reduce((sum, s) => sum + (s.bounced || 0), 0),
       meetings: instantlyStats.reduce((sum, s) => sum + (s.meetings || 0), 0),
@@ -328,7 +326,6 @@ function buildMetricsSnapshot(stats: any[]) {
       connectionsSent: heyreach.totals.connectionsSent,
       connectionsAccepted: heyreach.totals.connectionsAccepted,
       emailsSent: instantly.totals.emailsSent,
-      emailsOpened: instantly.totals.emailsOpened,
       totalReplies: heyreach.totals.messageReplies + instantly.totals.replied,
       meetings: instantly.totals.meetings,
     },
@@ -384,10 +381,11 @@ ${currentMetrics.heyreach.campaigns.map((c: any) =>
 Email (Instantly):
 ${currentMetrics.instantly.campaigns.length > 0
   ? currentMetrics.instantly.campaigns.map((c: any) =>
-    `  - ${c.campaign_name}: ${c.emailsSent} sent, ${c.emailsOpened} opened, ${c.replied} replied, ${c.meetings} meetings`
+    `  - ${c.campaign_name}: ${c.emailsSent} sent, ${c.replied} replied, ${c.bounced} bounced, ${c.meetings} meetings`
   ).join('\n')
   : '  No email campaigns active yet'}
   Totals: ${currentMetrics.instantly.totals.emailsSent} emails sent, ${currentMetrics.instantly.totals.replied} replies, ${currentMetrics.instantly.totals.meetings} meetings
+Note: Open tracking is intentionally disabled in Instantly. Do not comment on open rates or lack of open data.
 
 ${deltaContext}
 
@@ -479,7 +477,6 @@ async function writeMarkdownUpdate(
 | Connections Sent | ${t.connectionsSent} | ${d(t.connectionsSent, prevTotals?.connectionsSent)} |
 | Connections Accepted | ${t.connectionsAccepted} | ${d(t.connectionsAccepted, prevTotals?.connectionsAccepted)} |
 | Emails Sent | ${t.emailsSent} | ${d(t.emailsSent, prevTotals?.emailsSent)} |
-| Emails Opened | ${t.emailsOpened} | ${d(t.emailsOpened, prevTotals?.emailsOpened)} |
 | Total Replies | ${t.totalReplies} | ${d(t.totalReplies, prevTotals?.totalReplies)} |
 | Meetings | ${t.meetings} | ${d(t.meetings, prevTotals?.meetings)} |
 
@@ -500,10 +497,10 @@ ${metrics.heyreach.campaigns.map((c: any) =>
   if (metrics.instantly.campaigns.length > 0) {
     md += `### Email (Instantly)
 
-| Campaign | Sent | Opened | Replied | Bounced | Meetings |
-|----------|------|--------|---------|---------|----------|
+| Campaign | Sent | Replied | Bounced | Meetings |
+|----------|------|---------|---------|----------|
 ${metrics.instantly.campaigns.map((c: any) =>
-  `| ${c.campaign_name} | ${c.emailsSent} | ${c.emailsOpened} | ${c.replied} | ${c.bounced} | ${c.meetings} |`
+  `| ${c.campaign_name} | ${c.emailsSent} | ${c.replied} | ${c.bounced} | ${c.meetings} |`
 ).join('\n')}
 
 `

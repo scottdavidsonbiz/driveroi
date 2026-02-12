@@ -104,7 +104,6 @@ interface ClientUpdateRecord {
       connectionsSent: number
       connectionsAccepted: number
       emailsSent: number
-      emailsOpened: number
       totalReplies: number
       meetings: number
     }
@@ -605,13 +604,6 @@ export default function ClientDetailPage() {
               </Card>
               <Card>
                 <CardContent className="pt-4 pb-3 px-4">
-                  <p className="text-2xl font-bold">{currTotals.emailsOpened}</p>
-                  <p className="text-xs text-muted-foreground">Opened</p>
-                  <DeltaBadge current={currTotals.emailsOpened} previous={prevTotals?.emailsOpened} />
-                </CardContent>
-              </Card>
-              <Card>
-                <CardContent className="pt-4 pb-3 px-4">
                   <p className="text-2xl font-bold">{currTotals.totalReplies}</p>
                   <p className="text-xs text-muted-foreground">Replies</p>
                   <DeltaBadge current={currTotals.totalReplies} previous={prevTotals?.totalReplies} />
@@ -640,7 +632,7 @@ export default function ClientDetailPage() {
                       <th className="text-left p-3 text-xs font-medium text-muted-foreground">Platform</th>
                       <th className="text-left p-3 text-xs font-medium text-muted-foreground">Campaign</th>
                       <th className="text-right p-3 text-xs font-medium text-muted-foreground">Sent</th>
-                      <th className="text-right p-3 text-xs font-medium text-muted-foreground">Accepted/Opened</th>
+                      <th className="text-right p-3 text-xs font-medium text-muted-foreground">Accepted</th>
                       <th className="text-right p-3 text-xs font-medium text-muted-foreground">Replies</th>
                       <th className="text-right p-3 text-xs font-medium text-muted-foreground">Rate</th>
                     </tr>
@@ -667,7 +659,7 @@ export default function ClientDetailPage() {
                         </td>
                         <td className="p-3 text-sm">{c.campaign_name}</td>
                         <td className="p-3 text-sm text-right">{c.emailsSent}</td>
-                        <td className="p-3 text-sm text-right">{c.emailsOpened}</td>
+                        <td className="p-3 text-sm text-right">—</td>
                         <td className="p-3 text-sm text-right">{c.replied}</td>
                         <td className="p-3 text-sm text-right">
                           {c.emailsSent > 0 ? ((c.replied / c.emailsSent) * 100).toFixed(1) : '0.0'}%
