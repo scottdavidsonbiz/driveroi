@@ -119,15 +119,20 @@ export async function POST(
     const periodStart = previousUpdate?.period_end ||
       new Date(Date.now() - 7 * 24 * 60 * 60 * 1000).toISOString().split('T')[0]
 
-    // 7. Write markdown file
-    const markdownPath = await writeMarkdownUpdate(
-      client.name,
-      periodEnd,
-      metricsSnapshot,
-      previousSnapshot,
-      narrative,
-      recommendations
-    )
+    // 7. Write markdown file (best-effort — Vercel has read-only filesystem)
+    let markdownPath: string | null = null
+    try {
+      markdownPath = await writeMarkdownUpdate(
+        client.name,
+        periodEnd,
+        metricsSnapshot,
+        previousSnapshot,
+        narrative,
+        recommendations
+      )
+    } catch (fsErr) {
+      console.warn('[Updates API] Could not write markdown file (expected on Vercel):', fsErr)
+    }
 
     // 8. Insert client_updates record
     const { data: update, error: insertError } = await supabase
@@ -179,9 +184,13 @@ export async function DELETE(
       .single()
 
     if (update?.markdown_path) {
-      const filePath = path.join(process.cwd(), update.markdown_path)
-      if (fs.existsSync(filePath)) {
-        fs.unlinkSync(filePath)
+      try {
+        const filePath = path.join(process.cwd(), update.markdown_path)
+        if (fs.existsSync(filePath)) {
+          fs.unlinkSync(filePath)
+        }
+      } catch (fsErr) {
+        console.warn('[Updates API] Could not delete markdown file:', fsErr)
       }
     }
 
@@ -246,14 +255,18 @@ export async function PATCH(
         .single()
 
       if (client) {
-        await writeMarkdownUpdate(
-          client.name,
-          data.period_end,
-          data.metrics_snapshot,
-          data.previous_snapshot,
-          data.narrative,
-          data.recommendations
-        )
+        try {
+          await writeMarkdownUpdate(
+            client.name,
+            data.period_end,
+            data.metrics_snapshot,
+            data.previous_snapshot,
+            data.narrative,
+            data.recommendations
+          )
+        } catch (fsErr) {
+          console.warn('[Updates API] Could not re-write markdown file:', fsErr)
+        }
       }
     }
 
