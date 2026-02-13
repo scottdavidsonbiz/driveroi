@@ -31,7 +31,18 @@ import {
   Save,
   Sparkles,
   ExternalLink,
+  Calendar,
 } from 'lucide-react'
+
+type DateRange = '7d' | '14d' | '30d' | 'all'
+
+interface RangeStats {
+  current: any
+  previous: any | null
+  current_date: string | null
+  previous_date: string | null
+  range: string
+}
 
 interface ClientDetail {
   id: string
@@ -173,6 +184,29 @@ export default function ClientDetailPage() {
   const [creatingCampaigns, setCreatingCampaigns] = useState(false)
   const [createCampaignStatus, setCreateCampaignStatus] = useState('')
   const [createdCampaigns, setCreatedCampaigns] = useState<{ id: string; name: string }[]>([])
+  // Date range filtering
+  const [dateRange, setDateRange] = useState<DateRange>('7d')
+  const [rangeStats, setRangeStats] = useState<RangeStats | null>(null)
+  const [loadingRange, setLoadingRange] = useState(false)
+
+  const fetchRangeStats = useCallback(async (range: DateRange) => {
+    setLoadingRange(true)
+    try {
+      const res = await fetch(`/api/clients/${params.id}/stats?range=${range}`)
+      const data = await res.json()
+      if (!res.ok) {
+        console.error('Failed to fetch range stats:', data.error)
+        setRangeStats(null)
+      } else {
+        setRangeStats(data)
+      }
+    } catch (err) {
+      console.error('Failed to fetch range stats:', err)
+      setRangeStats(null)
+    } finally {
+      setLoadingRange(false)
+    }
+  }, [params.id])
 
   const handleDeleteUpdate = async (updateId: string) => {
     if (!confirm('Delete this update? The markdown file will also be removed.')) return
@@ -382,8 +416,9 @@ export default function ClientDetailPage() {
     if (params.id) {
       fetchClient()
       fetchUpdates()
+      fetchRangeStats(dateRange)
     }
-  }, [params.id, fetchClient, fetchUpdates])
+  }, [params.id, fetchClient, fetchUpdates, fetchRangeStats, dateRange])
 
   const handleGenerateUpdate = async () => {
     setGenerating(true)
@@ -417,6 +452,7 @@ export default function ClientDetailPage() {
       // Refresh data
       await fetchClient()
       await fetchUpdates()
+      await fetchRangeStats(dateRange)
 
       setTimeout(() => setGenerateStatus(''), 3000)
     } catch (err) {
@@ -473,8 +509,10 @@ export default function ClientDetailPage() {
 
   const icp = Array.isArray(client.client_icp) ? client.client_icp[0] : client.client_icp ?? null
   const latestUpdate = client.latest_update
-  const prevTotals = latestUpdate?.previous_snapshot?.totals
-  const currTotals = latestUpdate?.metrics_snapshot?.totals
+  // Use rangeStats for metrics cards + campaign table when available, fallback to latestUpdate
+  const currTotals = rangeStats?.current?.totals ?? latestUpdate?.metrics_snapshot?.totals
+  const prevTotals = rangeStats?.previous?.totals ?? (rangeStats ? null : latestUpdate?.previous_snapshot?.totals)
+  const metricsSource = rangeStats?.current ?? latestUpdate?.metrics_snapshot
 
   return (
     <div className="page-enter space-y-6">
@@ -571,6 +609,42 @@ export default function ClientDetailPage() {
             </div>
           </div>
 
+          {/* Date Range Toggle */}
+          {(currTotals || latestUpdate) && (
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                {(['7d', '14d', '30d', 'all'] as DateRange[]).map((r) => (
+                  <Button
+                    key={r}
+                    variant={dateRange === r ? 'default' : 'outline'}
+                    size="sm"
+                    className={dateRange === r ? 'gradient-accent text-white' : ''}
+                    onClick={() => setDateRange(r)}
+                  >
+                    {r === 'all' ? 'All Time' : r.toUpperCase()}
+                  </Button>
+                ))}
+                {loadingRange && <Loader2 className="h-4 w-4 animate-spin text-muted-foreground ml-2" />}
+              </div>
+              {rangeStats?.current_date && (
+                <p className="text-xs text-muted-foreground flex items-center gap-1">
+                  <Calendar className="h-3 w-3" />
+                  {rangeStats.previous_date ? (
+                    <>
+                      Comparing {new Date(rangeStats.current_date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
+                      {' vs '}
+                      {new Date(rangeStats.previous_date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
+                    </>
+                  ) : (
+                    <>
+                      As of {new Date(rangeStats.current_date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}
+                    </>
+                  )}
+                </p>
+              )}
+            </div>
+          )}
+
           {/* Metrics Cards */}
           {currTotals && (
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-3">
@@ -620,7 +694,7 @@ export default function ClientDetailPage() {
           )}
 
           {/* Campaign Breakdown */}
-          {latestUpdate?.metrics_snapshot && (
+          {metricsSource && (
             <Card>
               <CardHeader>
                 <CardTitle className="text-sm font-medium">Campaign Breakdown</CardTitle>
@@ -638,7 +712,7 @@ export default function ClientDetailPage() {
                     </tr>
                   </thead>
                   <tbody>
-                    {latestUpdate.metrics_snapshot.heyreach.campaigns.map((c: any, i: number) => (
+                    {metricsSource.heyreach.campaigns.map((c: any, i: number) => (
                       <tr key={`hr-${i}`} className="border-b last:border-0">
                         <td className="p-3">
                           <Badge variant="outline" className="text-xs">HeyReach</Badge>
@@ -652,7 +726,7 @@ export default function ClientDetailPage() {
                         </td>
                       </tr>
                     ))}
-                    {latestUpdate.metrics_snapshot.instantly.campaigns.map((c: any, i: number) => (
+                    {metricsSource.instantly.campaigns.map((c: any, i: number) => (
                       <tr key={`inst-${i}`} className="border-b last:border-0">
                         <td className="p-3">
                           <Badge variant="outline" className="text-xs">Instantly</Badge>
