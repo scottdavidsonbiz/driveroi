@@ -53,8 +53,9 @@ async function renderSlideToSvg(
 }
 
 function svgToPng(svg: string): Uint8Array {
+  // Render at 2x resolution for crisp logos and text in the PDF
   const resvg = new Resvg(svg, {
-    fitTo: { mode: 'width', value: SLIDE_WIDTH },
+    fitTo: { mode: 'width', value: SLIDE_WIDTH * 2 },
   })
   const pngData = resvg.render()
   return pngData.asPng()
