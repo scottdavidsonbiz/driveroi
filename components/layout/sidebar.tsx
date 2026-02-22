@@ -9,7 +9,8 @@ import {
   FileText,
   Settings,
   Database,
-  Activity
+  Activity,
+  Presentation
 } from 'lucide-react'
 
 const navigation = [
@@ -17,6 +18,7 @@ const navigation = [
   { name: 'Clients', href: '/clients', icon: Users },
   { name: 'Leads', href: '/leads', icon: Database },
   { name: 'Deliverability', href: '/deliverability', icon: Activity },
+  { name: 'Carousel', href: '/carousel', icon: Presentation },
   { name: 'SOPs', href: '/sops', icon: FileText },
 ]
 
