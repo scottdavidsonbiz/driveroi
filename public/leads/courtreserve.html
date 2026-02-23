@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ICP Target List — Prepared for CourtReserve</title>
+<style>
+  :root {
+    --purple: #8B7FD4;
+    --purple-light: #f0eef9;
+    --purple-dark: #6b5fb4;
+    --text: #1a1a1a;
+    --text-secondary: #6b7280;
+    --border: #e5e7eb;
+    --bg: #ffffff;
+    --bg-alt: #f9fafb;
+    --success: #059669;
+    --amber: #d97706;
+    --amber-bg: #fffbeb;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg-alt);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    background: var(--bg);
+    min-height: 100vh;
+  }
+
+  .header {
+    padding: 40px 48px 32px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .logo {
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    color: var(--text);
+    display: inline-block;
+    margin-bottom: 24px;
+  }
+
+  .logo span {
+    position: relative;
+  }
+
+  .logo span::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--purple);
+    border-radius: 2px;
+  }
+
+  .header h1 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 4px;
+  }
+
+  .header .subtitle {
+    font-size: 15px;
+    color: var(--text-secondary);
+  }
+
+  .stats {
+    display: flex;
+    gap: 0;
+    padding: 0 48px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .stat {
+    flex: 1;
+    padding: 20px 0;
+    text-align: center;
+    border-right: 1px solid var(--border);
+  }
+
+  .stat:last-child { border-right: none; }
+
+  .stat-value {
+    font-size: 28px;
+    font-weight: 800;
+    color: var(--text);
+  }
+
+  .stat-label {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-secondary);
+    margin-top: 2px;
+  }
+
+  .stat-sublabel {
+    font-size: 11px;
+    color: var(--text-secondary);
+    margin-top: 2px;
+  }
+
+  .intro {
+    padding: 28px 48px;
+    border-bottom: 1px solid var(--border);
+    text-align: center;
+  }
+
+  .intro p {
+    font-size: 15px;
+    color: var(--text-secondary);
+    max-width: 680px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  .table-section {
+    padding: 0 48px;
+  }
+
+  .company-group {
+    border-bottom: 1px solid var(--border);
+  }
+
+  .company-header {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    padding: 20px 0 8px;
+  }
+
+  .company-name {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text);
+  }
+
+  .company-location {
+    font-size: 13px;
+    color: var(--text-secondary);
+  }
+
+  .company-domain {
+    font-size: 13px;
+    color: var(--purple);
+    margin-left: auto;
+    text-decoration: none;
+  }
+
+  .company-domain:hover { text-decoration: underline; }
+
+  .contacts-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 16px;
+  }
+
+  .contacts-table th {
+    text-align: left;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-secondary);
+    padding: 6px 12px 6px 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .contacts-table td {
+    padding: 10px 12px 10px 0;
+    font-size: 14px;
+    vertical-align: middle;
+  }
+
+  .contacts-table tr:not(:last-child) td {
+    border-bottom: 1px solid #f3f4f6;
+  }
+
+  .contact-name {
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .contact-title {
+    color: var(--text-secondary);
+    font-size: 13px;
+  }
+
+  .contact-location {
+    color: var(--text-secondary);
+    font-size: 13px;
+  }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 12px;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .badge-linkedin {
+    background: #f0f0f0;
+    color: #0077b5;
+  }
+
+  .badge-linkedin:hover { background: #e0e0e0; }
+
+  .badge-email {
+    background: #ecfdf5;
+    color: var(--success);
+  }
+
+  .badge-email a {
+    color: var(--success);
+    text-decoration: none;
+  }
+
+  .badge-email a:hover { text-decoration: underline; }
+
+  .badge-inferred {
+    background: var(--amber-bg);
+    color: var(--amber);
+  }
+
+  .badge-inferred a {
+    color: var(--amber);
+    text-decoration: none;
+  }
+
+  .badge-inferred a:hover { text-decoration: underline; }
+
+  .badges {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+
+  .legend {
+    padding: 16px 48px;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 12px;
+    color: var(--text-secondary);
+  }
+
+  .legend-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+  }
+
+  .legend-dot-verified { background: #ecfdf5; border: 1px solid var(--success); }
+  .legend-dot-inferred { background: var(--amber-bg); border: 1px solid var(--amber); }
+
+  .cta-section {
+    padding: 48px;
+    text-align: center;
+    background: var(--purple-light);
+  }
+
+  .cta-section h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 8px;
+  }
+
+  .cta-section p {
+    font-size: 15px;
+    color: var(--text-secondary);
+    max-width: 520px;
+    margin: 0 auto 24px;
+    line-height: 1.7;
+  }
+
+  .cta-button {
+    display: inline-block;
+    background: var(--purple);
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 12px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+
+  .cta-button:hover { background: var(--purple-dark); }
+
+  .footer {
+    padding: 24px 48px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer-logo {
+    font-size: 16px;
+    font-weight: 800;
+    color: var(--text);
+  }
+
+  .footer-logo span {
+    position: relative;
+  }
+
+  .footer-logo span::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--purple);
+    border-radius: 2px;
+  }
+
+  .footer-text {
+    font-size: 13px;
+    color: var(--text-secondary);
+  }
+
+  .footer-text a {
+    color: var(--purple);
+    text-decoration: none;
+  }
+
+  @media (max-width: 640px) {
+    .header, .intro, .table-section, .cta-section, .footer, .legend { padding-left: 24px; padding-right: 24px; }
+    .stats { padding: 0 24px; flex-wrap: wrap; }
+    .stat { min-width: 50%; }
+    .company-header { flex-wrap: wrap; }
+    .company-domain { margin-left: 0; }
+    .contacts-table { font-size: 13px; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <div class="logo">Drive<span>ROI</span></div>
+    <h1>ICP Target List</h1>
+    <div class="subtitle">Prepared for CourtReserve &mdash; February 2026</div>
+  </div>
+
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-value">18</div>
+      <div class="stat-label">Accounts</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">48</div>
+      <div class="stat-label">Decision Makers</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">40</div>
+      <div class="stat-label">Emails</div>
+      <div class="stat-sublabel">24 verified, 16 inferred</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">14</div>
+      <div class="stat-label">States</div>
+    </div>
+  </div>
+
+  <div class="intro">
+    <p>These accounts were identified using firmographic data, technology signals, and semantic matching against CourtReserve's ideal customer profile: independent tennis clubs, racquet facilities, country clubs, pickleball venues, and athletic clubs across the US. Key contacts were selected based on decision-making authority for operations and technology purchases.</p>
+  </div>
+
+  <div class="legend">
+    <div class="legend-item"><div class="legend-dot legend-dot-verified"></div> Verified email</div>
+    <div class="legend-item"><div class="legend-dot legend-dot-inferred"></div> Inferred from company pattern</div>
+  </div>
+
+  <div class="table-section">
+
+    <!-- Athletic Club Alabama -->
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Athletic Club Alabama</div>
+        <div class="company-location">Huntsville, AL</div>
+        <a class="company-domain" href="https://athleticclubalabama.com" target="_blank">athleticclubalabama.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Alex R.</td>
+            <td class="contact-title">Co-Owner</td>
+            <td class="contact-location">Austin, TX</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/alex-rafiee-33095886/" target="_blank">LinkedIn</a></td>
+          </tr>
+          <tr>
+            <td class="contact-name">Brighton Jones</td>
+            <td class="contact-title">Assistant General Manager</td>
+            <td class="contact-location">Madison, AL</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/brighton-jones-2a9018154/" target="_blank">LinkedIn</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Ballantyne Country Club -->
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Ballantyne Country Club</div>
+        <div class="company-location">Charlotte, NC</div>
+        <a class="company-domain" href="https://ballantyneclub.com" target="_blank">ballantyneclub.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Matthew Saggio</td>
+            <td class="contact-title">General Manager</td>
+            <td class="contact-location">Charlotte, NC</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/matthew-saggio-34202374/" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:msaggio@ballantyneclub.com">msaggio@ballantyneclub.com</a></span></td>
+          </tr>
+          <tr>
+            <td class="contact-name">Len Simmonds</td>
+            <td class="contact-title">Outside Operations Manager</td>
+            <td class="contact-location">Matthews, NC</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/lensimmonds/" target="_blank">LinkedIn</a><span class="badge badge-inferred"><a href="mailto:lsimmonds@ballantyneclub.com">lsimmonds@ballantyneclub.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Bonita Bay Club -->
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Bonita Bay Club</div>
+        <div class="company-location">Bonita Springs, FL</div>
+        <a class="company-domain" href="https://bonitabayclub.net" target="_blank">bonitabayclub.net</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Frederick Fung</td>
+            <td class="contact-title">CEO &amp; General Manager</td>
+            <td class="contact-location">Bonita Springs, FL</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/frederick-fung-b1277420/" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:fredf@bonitabayclub.net">fredf@bonitabayclub.net</a></span></td>
+          </tr>
+          <tr>
+            <td class="contact-name">Joseph Elwell</td>
+            <td class="contact-title">Assistant General Manager</td>
+            <td class="contact-location">Naples, FL</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/joseph-elwell-989b0654/" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:joeelwell@bonitabayclub.net">joeelwell@bonitabayclub.net</a></span></td>
+          </tr>
+          <tr>
+            <td class="contact-name">Scott Manard</td>
+            <td class="contact-title">Clubhouse Operations Manager</td>
+            <td class="contact-location">Naples, FL</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/scott-manard/" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:scottm@bonitabayclub.net">scottm@bonitabayclub.net</a></span></td>
+          </tr>
+          <tr>
+            <td class="contact-name">Sam Ross</td>
+            <td class="contact-title">Outside Operations</td>
+            <td class="contact-location">Fort Myers, FL</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/sam-ross-47b140137/" target="_blank">LinkedIn</a></td>
+          </tr>
+          <tr>
+            <td class="contact-name">Jimmy Lusk</td>
+            <td class="contact-title">Outside Operations Services</td>
+            <td class="contact-location">Fort Myers, FL</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/jimmy-lusk-608ab5103/" target="_blank">LinkedIn</a></td>
+          </tr>
+          <tr>
+            <td class="contact-name">Michael Ramos</td>
+            <td class="contact-title">Outside Operations</td>
+            <td class="contact-location">Naples, FL</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/michael-ramos-000a337b/" target="_blank">LinkedIn</a></td>
+          </tr>
+          <tr>
+            <td class="contact-name">Claude Salaun</td>
+            <td class="contact-title">Outside Operations</td>
+            <td class="contact-location">Bonita Springs, FL</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/claude-salaun-409779206/" target="_blank">LinkedIn</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Elite Sports Clubs -->
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Elite Sports Clubs</div>
+        <div class="company-location">Milwaukee, WI</div>
+        <a class="company-domain" href="https://eliteclubs.com" target="_blank">eliteclubs.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Tom Karrels</td>
+            <td class="contact-title">Owner</td>
+            <td class="contact-location">Germantown, WI</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/tom-karrels-b6b3387/" target="_blank">LinkedIn</a><span class="badge badge-inferred"><a href="mailto:tomkarrels@eliteclubs.com">tomkarrels@eliteclubs.com</a></span></td>
+          </tr>
+          <tr>
+            <td class="contact-name">Greg Bowler</td>
+            <td class="contact-title">General Manager</td>
+            <td class="contact-location">Milwaukee, WI</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/greg-bowler-a9baa83b/" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:gregbowler@eliteclubs.com">gregbowler@eliteclubs.com</a></span></td>
+          </tr>
+          <tr>
+            <td class="contact-name">Christy Beckmann</td>
+            <td class="contact-title">Operations Manager</td>
+            <td class="contact-location">Brookfield, WI</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/christy-beckmann-86384b33/" target="_blank">LinkedIn</a><span class="badge badge-inferred"><a href="mailto:christybeckmann@eliteclubs.com">christybeckmann@eliteclubs.com</a></span></td>
+          </tr>
+          <tr>
+            <td class="contact-name">David Pentek</td>
+            <td class="contact-title">Operations Manager</td>
+            <td class="contact-location">Mequon, WI</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/david-pentek-9a6ba7203/" target="_blank">LinkedIn</a><span class="badge badge-inferred"><a href="mailto:davidpentek@eliteclubs.com">davidpentek@eliteclubs.com</a></span></td>
+          </tr>
+          <tr>
+            <td class="contact-name">Andrea Engel</td>
+            <td class="contact-title">General Manager</td>
+            <td class="contact-location">Brookfield, WI</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/andrea-engel-72999a321/" target="_blank">LinkedIn</a><span class="badge badge-inferred"><a href="mailto:andreaengel@eliteclubs.com">andreaengel@eliteclubs.com</a></span></td>
+          </tr>
+          <tr>
+            <td class="contact-name">Judy Pink</td>
+            <td class="contact-title">Operations Manager</td>
+            <td class="contact-location">Milwaukee, WI</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/judy-pink-99435a37/" target="_blank">LinkedIn</a><span class="badge badge-inferred"><a href="mailto:judypink@eliteclubs.com">judypink@eliteclubs.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Griffin Club Los Angeles -->
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Griffin Club Los Angeles</div>
+        <div class="company-location">Los Angeles, CA</div>
+        <a class="company-domain" href="https://griffinclubla.com" target="_blank">griffinclubla.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Ryan Wingo</td>
+            <td class="contact-title">General Manager</td>
+            <td class="contact-location">Los Angeles, CA</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/ryanwingo/" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:ryan@griffinclubla.com">ryan@griffinclubla.com</a></span></td>
+          </tr>
+          <tr>
+            <td class="contact-name">Khalil McDonald</td>
+            <td class="contact-title">Client Services &amp; Operations</td>
+            <td class="contact-location">Los Angeles, CA</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/khalil-mcdonald-a96362302/" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:khalil@griffinclubla.com">khalil@griffinclubla.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Hollow Rock Racquet & Swim Club -->
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Hollow Rock Racquet &amp; Swim Club</div>
+        <div class="company-location">Durham, NC</div>
+        <a class="company-domain" href="https://hollowrock.com" target="_blank">hollowrock.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Michael Polasek</td>
+            <td class="contact-title">General Manager</td>
+            <td class="contact-location">Durham, NC</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/michael-polasek-b412b269/" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:michael@hollowrock.com">michael@hollowrock.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- La Valle Coastal Club -->
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">La Valle Coastal Club</div>
+        <div class="company-location">Rancho Santa Fe, CA</div>
+        <a class="company-domain" href="https://lavallecoastalclub.com" target="_blank">lavallecoastalclub.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Fernando Fry</td>
+            <td class="contact-title">General Manager</td>
+            <td class="contact-location">San Diego, CA</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/fernando-fry-a2557084/" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:fernando.fry@lavallecoastalclub.com">fernando.fry@lavallecoastalclub.com</a></span></td>
+          </tr>
+          <tr>
+            <td class="contact-name">Dustin Irwin, PGA/CMAA</td>
+            <td class="contact-title">Assistant General Manager</td>
+            <td class="contact-location">Carlsbad, CA</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/dustin-irwin-pga-86968a6/" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:dustin.irwin@lavallecoastalclub.com">dustin.irwin@lavallecoastalclub.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Lifetime Activities -->
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Lifetime Activities</div>
+        <div class="company-location">Walnut Creek, CA</div>
+        <a class="company-domain" href="https://lifetimeactivities.com" target="_blank">lifetimeactivities.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Dana Gill</td>
+            <td class="contact-title">Founder &amp; CEO</td>
+            <td class="contact-location">Santa Clara, CA</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/dana-gill-7aa03a7/" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:danag@lifetimeactivities.com">danag@lifetimeactivities.com</a></span></td>
+          </tr>
+          <tr>
+            <td class="contact-name">Betsy Kemp</td>
+            <td class="contact-title">General Manager</td>
+            <td class="contact-location">San Francisco, CA</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/betsy-kemp-999621a/" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:betsyk@lifetimeactivities.com">betsyk@lifetimeactivities.com</a></span></td>
+          </tr>
+          <tr>
+            <td class="contact-name">Oliver Leopold</td>
+            <td class="contact-title">General Manager</td>
+            <td class="contact-location">San Jose, CA</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/oliver-leopold-31354139/" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:oliverl@lifetimeactivities.com">oliverl@lifetimeactivities.com</a></span></td>
+          </tr>
+          <tr>
+            <td class="contact-name">Aryahna Mencimer</td>
+            <td class="contact-title">Operations Coordinator</td>
+            <td class="contact-location">Santa Clara, CA</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/aryahna-mencimer-59a7b8125/" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:aryahnam@lifetimeactivities.com">aryahnam@lifetimeactivities.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Luxury Pickleball -->
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Luxury Pickleball</div>
+        <div class="company-location">La Jolla, CA</div>
+        <a class="company-domain" href="https://luxurypickleball.com" target="_blank">luxurypickleball.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Robert Bobbett</td>
+            <td class="contact-title">Co-Founder</td>
+            <td class="contact-location">Scottsdale, AZ</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/robertbobbett/" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:robert@luxurypickleball.com">robert@luxurypickleball.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Pinehurst Country Club -->
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Pinehurst Country Club</div>
+        <div class="company-location">Denver, CO</div>
+        <a class="company-domain" href="https://pinehurstcountryclub.com" target="_blank">pinehurstcountryclub.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Trey Bayliss, CCM</td>
+            <td class="contact-title">General Manager / CEO</td>
+            <td class="contact-location">Denver, CO</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/trey-bayliss-ccm-84693247/" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:tbayliss@pinehurstcountryclub.com">tbayliss@pinehurstcountryclub.com</a></span></td>
+          </tr>
+          <tr>
+            <td class="contact-name">Alexander Raimondi, CCM</td>
+            <td class="contact-title">Interim COO/GM Consultant</td>
+            <td class="contact-location">Aurora, CO</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/alexander-raimondi-ccm-cce-cam-176b731b8/" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:araimondi@pinehurstcountryclub.com">araimondi@pinehurstcountryclub.com</a></span></td>
+          </tr>
+          <tr>
+            <td class="contact-name">Stephen Harjehausen</td>
+            <td class="contact-title">Entrepreneur</td>
+            <td class="contact-location">Denver, CO</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/steve-harjehausen-10b0ba72/" target="_blank">LinkedIn</a><span class="badge badge-inferred"><a href="mailto:sharjehausen@pinehurstcountryclub.com">sharjehausen@pinehurstcountryclub.com</a></span></td>
+          </tr>
+          <tr>
+            <td class="contact-name">Karen Puffett</td>
+            <td class="contact-title">Director of Event Operations</td>
+            <td class="contact-location">Denver, CO</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/karen-puffett-70b2451a8/" target="_blank">LinkedIn</a><span class="badge badge-inferred"><a href="mailto:kpuffett@pinehurstcountryclub.com">kpuffett@pinehurstcountryclub.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Shaker Heights Country Club -->
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Shaker Heights Country Club</div>
+        <div class="company-location">Shaker Heights, OH</div>
+        <a class="company-domain" href="https://shakerheightscc.org" target="_blank">shakerheightscc.org</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Henry Wise</td>
+            <td class="contact-title">General Manager</td>
+            <td class="contact-location">Cleveland, OH</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/henry-wise-09227891/" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:henryw@shakerheightscc.org">henryw@shakerheightscc.org</a></span></td>
+          </tr>
+          <tr>
+            <td class="contact-name">Amanda Wilson, CCM</td>
+            <td class="contact-title">Assistant General Manager</td>
+            <td class="contact-location">Beachwood, OH</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/amanda-tidwell/" target="_blank">LinkedIn</a><span class="badge badge-inferred"><a href="mailto:amandaw@shakerheightscc.org">amandaw@shakerheightscc.org</a></span></td>
+          </tr>
+          <tr>
+            <td class="contact-name">Ryan Jalics</td>
+            <td class="contact-title">Outside Operations / Caddie</td>
+            <td class="contact-location">Cleveland, OH</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/ryan-jalics-060073356/" target="_blank">LinkedIn</a><span class="badge badge-inferred"><a href="mailto:ryanj@shakerheightscc.org">ryanj@shakerheightscc.org</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Sports Mall -->
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Sports Mall</div>
+        <div class="company-location">Murray, UT</div>
+        <a class="company-domain" href="https://sportsmallgroup.com" target="_blank">sportsmallgroup.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Tammy Ostler</td>
+            <td class="contact-title">Co-Owner</td>
+            <td class="contact-location">Midvale, UT</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/tammy-tran-48109914a/" target="_blank">LinkedIn</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- The Adirondack Club -->
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">The Adirondack Club</div>
+        <div class="company-location">Franklin, MA</div>
+        <a class="company-domain" href="https://adirondackclub.com" target="_blank">adirondackclub.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Richard Hinrichs</td>
+            <td class="contact-title">Operations Director</td>
+            <td class="contact-location">Franklin, MA</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/richard-hinrichs-01571732/" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:rhinrichs@adirondackclub.com">rhinrichs@adirondackclub.com</a></span></td>
+          </tr>
+          <tr>
+            <td class="contact-name">Alexandra Conroy, CPA</td>
+            <td class="contact-title">Financial Operations Director</td>
+            <td class="contact-location">Franklin, MA</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/alexandra-conroy-cpa-14a22766/" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:alexandra@adirondackclub.com">alexandra@adirondackclub.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- The Atlantic Club -->
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">The Atlantic Club</div>
+        <div class="company-location">Manasquan, NJ</div>
+        <a class="company-domain" href="https://theatlanticclub.com" target="_blank">theatlanticclub.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Patricia Laus</td>
+            <td class="contact-title">CEO / Owner</td>
+            <td class="contact-location">Manasquan, NJ</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/patlaus/" target="_blank">LinkedIn</a><span class="badge badge-inferred"><a href="mailto:patricial@theatlanticclub.com">patricial@theatlanticclub.com</a></span></td>
+          </tr>
+          <tr>
+            <td class="contact-name">Rick Laus</td>
+            <td class="contact-title">Director of Operations</td>
+            <td class="contact-location">Middletown, NJ</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/rick-rick-laus-815a2347/" target="_blank">LinkedIn</a><span class="badge badge-inferred"><a href="mailto:rickl@theatlanticclub.com">rickl@theatlanticclub.com</a></span></td>
+          </tr>
+          <tr>
+            <td class="contact-name">Paul Pena</td>
+            <td class="contact-title">Operations Manager</td>
+            <td class="contact-location">New York Metro</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/paul-pena-7296bb35/" target="_blank">LinkedIn</a><span class="badge badge-inferred"><a href="mailto:paulp@theatlanticclub.com">paulp@theatlanticclub.com</a></span></td>
+          </tr>
+          <tr>
+            <td class="contact-name">Julia Curtis</td>
+            <td class="contact-title">Operations Manager</td>
+            <td class="contact-location">Monmouth County, NJ</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/julia-curtis-ab232a261/" target="_blank">LinkedIn</a><span class="badge badge-inferred"><a href="mailto:juliac@theatlanticclub.com">juliac@theatlanticclub.com</a></span></td>
+          </tr>
+          <tr>
+            <td class="contact-name">David Wolf</td>
+            <td class="contact-title">Events Coordinator / Weekend Manager</td>
+            <td class="contact-location">Savannah, GA</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/david-wolf-03a2ab2a/" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:davidw@theatlanticclub.com">davidw@theatlanticclub.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- The Paseo Club -->
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">The Paseo Club</div>
+        <div class="company-location">Valencia, CA</div>
+        <a class="company-domain" href="https://thepaseoclub.com" target="_blank">thepaseoclub.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Ryan Garcia-Agcaoili</td>
+            <td class="contact-title">Operations Manager</td>
+            <td class="contact-location">Valencia, CA</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/ryan-garcia-agcaoili/" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:ryan@thepaseoclub.com">ryan@thepaseoclub.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- The River Club -->
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">The River Club</div>
+        <div class="company-location">Suwanee, GA</div>
+        <a class="company-domain" href="https://theriverclub-ga.com" target="_blank">theriverclub-ga.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Andrew Deyo</td>
+            <td class="contact-title">General Manager</td>
+            <td class="contact-location">Dallas, GA</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/andrew-deyo-a06b8246/" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:adeyo@theriverclub-ga.com">adeyo@theriverclub-ga.com</a></span></td>
+          </tr>
+          <tr>
+            <td class="contact-name">Corey Chrzanowski</td>
+            <td class="contact-title">Member Services &amp; Operations Supervisor</td>
+            <td class="contact-location">Suwanee, GA</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/corey-chrzanowski-223685230/" target="_blank">LinkedIn</a><span class="badge badge-inferred"><a href="mailto:cchrzanowski@theriverclub-ga.com">cchrzanowski@theriverclub-ga.com</a></span></td>
+          </tr>
+          <tr>
+            <td class="contact-name">John Hurley</td>
+            <td class="contact-title">General Manager</td>
+            <td class="contact-location">United States</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/john-hurley-3b033b41/" target="_blank">LinkedIn</a><span class="badge badge-inferred"><a href="mailto:jhurley@theriverclub-ga.com">jhurley@theriverclub-ga.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- The Villages Golf & Country Club -->
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">The Villages Golf &amp; Country Club</div>
+        <div class="company-location">San Jose, CA</div>
+        <a class="company-domain" href="https://thevillagesgcc.com" target="_blank">thevillagesgcc.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">George Arnold, CCM, CCE</td>
+            <td class="contact-title">Clubhouse Operations Manager</td>
+            <td class="contact-location">Santa Barbara, CA</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/garnoldccm/" target="_blank">LinkedIn</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Tucson Racquet & Fitness Club -->
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Tucson Racquet &amp; Fitness Club</div>
+        <div class="company-location">Tucson, AZ</div>
+        <a class="company-domain" href="https://tucsonracquetclub.com" target="_blank">tucsonracquetclub.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Gretchen Schantz</td>
+            <td class="contact-title">General Manager</td>
+            <td class="contact-location">Tucson, AZ</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/gretchen-schantz-7755b2263/" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:gschantz@tucsonracquetclub.com">gschantz@tucsonracquetclub.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-section">
+    <h2>This is a sample of what we can build.</h2>
+    <p>We source the accounts, find the right people, and give your BDR a list they can actually work. Let's talk about building pipeline for CourtReserve.</p>
+    <a class="cta-button" href="https://cal.com/driveroi/30min" target="_blank">Schedule a Call &rarr;</a>
+  </div>
+
+  <div class="footer">
+    <div class="footer-logo">Drive<span>ROI</span></div>
+    <div class="footer-text"><a href="https://driveroi.com">driveroi.com</a></div>
+  </div>
+
+</div>
+</body>
+</html>
