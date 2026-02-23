@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 import { CATEGORIES } from '@/lib/audit/questions'
 import {
   scoreAudit,
@@ -71,8 +72,14 @@ export default function AuditPage() {
     <div className="mx-auto max-w-2xl px-4 py-8 sm:py-12">
       {/* Header */}
       <div className="mb-8 text-center">
-        <div className="mb-4 text-sm font-semibold uppercase tracking-wider text-purple-600">
-          DriveROI
+        <div className="mb-4 flex justify-center">
+          <Image
+            src="/logo-dark.png"
+            alt="DriveROI"
+            width={160}
+            height={40}
+            priority
+          />
         </div>
         {phase === 'results' ? (
           <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">
@@ -105,8 +112,9 @@ export default function AuditPage() {
             </div>
             <div className="h-2 rounded-full bg-muted">
               <div
-                className="h-2 rounded-full bg-purple-600 transition-all duration-300"
+                className="h-2 rounded-full transition-all duration-300"
                 style={{
+                  backgroundColor: '#8B5CF6',
                   width: `${((categoryIndex + 1) / CATEGORIES.length) * 100}%`,
                 }}
               />
@@ -136,9 +144,14 @@ export default function AuditPage() {
                         onClick={() => handleAnswer(question.id, option.score)}
                         className={`w-full rounded-lg border-2 px-4 py-3 text-left text-sm transition-all ${
                           isSelected
-                            ? 'border-purple-600 bg-purple-50 text-purple-900'
-                            : 'border-border hover:border-purple-300 hover:bg-muted/50'
+                            ? 'border-border hover:bg-muted/50'
+                            : 'border-border hover:bg-muted/50'
                         }`}
+                        style={
+                          isSelected
+                            ? { borderColor: '#8B5CF6', backgroundColor: '#F5F3FF', color: '#3B0764' }
+                            : undefined
+                        }
                       >
                         {option.label}
                       </button>
@@ -164,7 +177,8 @@ export default function AuditPage() {
               type="button"
               onClick={handleNext}
               disabled={!allQuestionsAnswered}
-              className="ml-auto rounded-lg bg-purple-600 px-6 py-2.5 text-sm font-medium text-white transition-colors hover:bg-purple-700 disabled:opacity-40 disabled:cursor-not-allowed"
+              className="ml-auto rounded-lg px-6 py-2.5 text-sm font-medium text-white transition-opacity disabled:opacity-40 disabled:cursor-not-allowed"
+              style={{ backgroundColor: '#8B5CF6' }}
             >
               {categoryIndex < CATEGORIES.length - 1
                 ? 'Next Category'
@@ -251,7 +265,8 @@ export default function AuditPage() {
               <button
                 type="submit"
                 disabled={submitting || !name || !email}
-                className="ml-auto rounded-lg bg-purple-600 px-6 py-2.5 text-sm font-medium text-white transition-colors hover:bg-purple-700 disabled:opacity-40 disabled:cursor-not-allowed"
+                className="ml-auto rounded-lg px-6 py-2.5 text-sm font-medium text-white transition-opacity disabled:opacity-40 disabled:cursor-not-allowed"
+                style={{ backgroundColor: '#8B5CF6' }}
               >
                 {submitting ? 'Calculating...' : 'Get My Score'}
               </button>
@@ -334,19 +349,23 @@ export default function AuditPage() {
           )}
 
           {/* CTA */}
-          <div className="rounded-xl bg-purple-600 p-6 text-center text-white sm:p-8">
+          <div
+            className="rounded-xl p-6 text-center text-white sm:p-8"
+            style={{ backgroundColor: '#8B5CF6' }}
+          >
             <h3 className="text-lg font-semibold sm:text-xl">
               Want help closing these gaps?
             </h3>
-            <p className="mt-2 text-sm text-purple-100">
+            <p className="mt-2 text-sm" style={{ color: '#E9E5FF' }}>
               Book a free 30-minute GTM strategy call. We&apos;ll walk through
               your results and map out a plan.
             </p>
             <a
-              href="https://calendly.com/driveroi/gtm-strategy"
+              href="https://cal.com/driveroi/30min"
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-4 inline-block rounded-lg bg-white px-8 py-3 text-sm font-semibold text-purple-700 transition-colors hover:bg-purple-50"
+              className="mt-4 inline-block rounded-lg bg-white px-8 py-3 text-sm font-semibold transition-colors hover:bg-gray-50"
+              style={{ color: '#6D28D9' }}
             >
               Book a Strategy Call
             </a>
