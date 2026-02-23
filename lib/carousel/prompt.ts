@@ -82,15 +82,15 @@ Generate 4-6 content cards. Each card has a type:
 
 - **insight**: A headline with supporting body text. Use for key points.
   - headline: Max 8 words, bold claim
-  - body: Max 25 words, supporting detail
+  - body: 2-3 sentences (40-60 words). Expand on the headline with real detail. This is a full paragraph on a slide, not a caption.
 
 - **step**: A numbered action item. Use for how-to or process content.
   - number: Sequential (1, 2, 3...)
   - title: Max 6 words
-  - description: Max 20 words
+  - description: 2-3 sentences (30-50 words). Give enough detail that the reader understands what to do.
 
 - **takeaway**: A standalone bold statement. Use for memorable quotes or conclusions.
-  - text: Max 12 words, punchy
+  - text: Max 15 words, punchy and quotable
 
 Mix card types. Don't use all the same type. If the user didn't provide stats, don't use stat cards. Prefer insight, step, and takeaway cards when working from general ideas.
 

@@ -1,17 +1,19 @@
-import { BRAND, SLIDE_WIDTH, SLIDE_HEIGHT } from "./brand";
+import { BRAND, SLIDE_WIDTH, SLIDE_HEIGHT, FOOTER_HEIGHT } from "./brand";
 import type { Card } from "./types";
 
-// Base container shared by all slides
+// ── Shared layout components ──────────────────────────────────────────
+
 function SlideContainer({ children }: { children: React.ReactNode }) {
   return (
     <div
       style={{
         width: SLIDE_WIDTH,
         height: SLIDE_HEIGHT,
-        backgroundColor: BRAND.BLACK,
+        backgroundColor: BRAND.CREAM,
         display: "flex",
         flexDirection: "column",
         position: "relative",
+        overflow: "hidden",
       }}
     >
       {children}
@@ -19,8 +21,14 @@ function SlideContainer({ children }: { children: React.ReactNode }) {
   );
 }
 
-// Logo footer shared by content slides
-function LogoFooter({ logoBase64 }: { logoBase64: string }) {
+/** Dark footer bar with logo left + navigation right */
+function FooterBar({
+  logoBase64,
+  navLabel,
+}: {
+  logoBase64: string;
+  navLabel?: string;
+}) {
   return (
     <div
       style={{
@@ -28,32 +36,119 @@ function LogoFooter({ logoBase64 }: { logoBase64: string }) {
         bottom: 0,
         left: 0,
         right: 0,
-        height: 60,
+        height: FOOTER_HEIGHT,
+        backgroundColor: BRAND.BLACK,
         display: "flex",
         alignItems: "center",
-        paddingLeft: 80,
+        justifyContent: "space-between",
+        paddingLeft: 60,
+        paddingRight: 60,
       }}
     >
-      <img src={logoBase64} height={20} />
+      <div style={{ display: "flex", alignItems: "center" }}>
+        <img src={logoBase64} height={24} />
+      </div>
+      {navLabel ? (
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            fontFamily: BRAND.FONT_HEADLINE,
+            fontSize: 22,
+            fontWeight: 700,
+            color: BRAND.WHITE,
+          }}
+        >
+          {navLabel}
+          <span style={{ marginLeft: 12, fontSize: 24 }}>{"→"}</span>
+        </div>
+      ) : null}
     </div>
   );
 }
 
-// Purple accent bar (top or bottom)
-function AccentBar({ position }: { position: "top" | "bottom" }) {
+/** Section label at top-left (e.g., "STEP 1", "INSIGHT 2") */
+function SectionLabel({ text }: { text: string }) {
+  return (
+    <div
+      style={{
+        fontFamily: BRAND.FONT_HEADLINE,
+        fontSize: 20,
+        fontWeight: 700,
+        color: BRAND.GRAY_600,
+        textTransform: "uppercase",
+        letterSpacing: 3,
+      }}
+    >
+      {text}
+    </div>
+  );
+}
+
+/** Decorative purple circle - positioned absolutely */
+function DecoCircle({
+  size,
+  top,
+  left,
+  right,
+  bottom,
+  opacity,
+}: {
+  size: number;
+  top?: number;
+  left?: number;
+  right?: number;
+  bottom?: number;
+  opacity?: number;
+}) {
+  const posStyle: Record<string, number> = {};
+  if (top !== undefined) posStyle.top = top;
+  if (left !== undefined) posStyle.left = left;
+  if (right !== undefined) posStyle.right = right;
+  if (bottom !== undefined) posStyle.bottom = bottom;
+
   return (
     <div
       style={{
         position: "absolute",
-        [position]: 0,
-        left: 0,
-        right: 0,
-        height: 6,
+        width: size,
+        height: size,
+        borderRadius: size / 2,
         backgroundColor: BRAND.PURPLE,
+        opacity: opacity ?? 0.08,
+        ...posStyle,
       }}
     />
   );
 }
+
+/** Pill-shaped button */
+function PillButton({ text }: { text: string }) {
+  return (
+    <div
+      style={{
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        backgroundColor: BRAND.BLACK,
+        color: BRAND.WHITE,
+        fontFamily: BRAND.FONT_HEADLINE,
+        fontSize: 24,
+        fontWeight: 700,
+        paddingLeft: 40,
+        paddingRight: 40,
+        paddingTop: 18,
+        paddingBottom: 18,
+        borderRadius: 50,
+      }}
+    >
+      {text}
+      <span style={{ marginLeft: 14, fontSize: 26 }}>{"→"}</span>
+    </div>
+  );
+}
+
+// ── Slide types ───────────────────────────────────────────────────────
 
 export function TitleSlide({
   title,
@@ -66,47 +161,91 @@ export function TitleSlide({
 }) {
   return (
     <SlideContainer>
-      <AccentBar position="top" />
-      {/* Logo top-left */}
-      <img
-        src={logoBase64}
-        style={{ position: "absolute", top: 40, left: 80, height: 48 }}
-      />
-      {/* Content centered */}
+      <DecoCircle size={300} top={-80} right={-80} opacity={0.06} />
+      <DecoCircle size={180} bottom={140} left={-60} opacity={0.05} />
+
       <div
         style={{
           display: "flex",
-          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "space-between",
+          paddingTop: 50,
+          paddingRight: 60,
+          paddingBottom: 0,
+          paddingLeft: 60,
+        }}
+      >
+        <img src={logoBase64} height={36} />
+      </div>
+
+      <div
+        style={{
+          display: "flex",
           justifyContent: "center",
-          flex: 1,
-          padding: 80,
+          marginTop: 80,
         }}
       >
         <div
           style={{
             fontFamily: BRAND.FONT_HEADLINE,
-            fontSize: 56,
+            fontSize: 18,
             fontWeight: 700,
-            color: BRAND.WHITE,
-            lineHeight: 1.15,
+            color: BRAND.PURPLE,
+            textTransform: "uppercase",
+            letterSpacing: 4,
+          }}
+        >
+          {"GUIDE"}
+        </div>
+      </div>
+
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+          flex: 1,
+          paddingLeft: 70,
+          paddingRight: 70,
+        }}
+      >
+        <div
+          style={{
+            fontFamily: BRAND.FONT_HEADLINE,
+            fontSize: 64,
+            fontWeight: 700,
+            color: BRAND.BLACK,
+            lineHeight: 1.1,
+            textAlign: "center",
           }}
         >
           {title}
         </div>
-        {subtitle && (
+        {subtitle ? (
           <div
             style={{
               fontFamily: BRAND.FONT_BODY,
-              fontSize: 32,
-              color: BRAND.GRAY_400,
-              marginTop: 24,
+              fontSize: 28,
+              color: BRAND.GRAY_600,
+              marginTop: 20,
+              textAlign: "center",
             }}
           >
             {subtitle}
           </div>
-        )}
+        ) : null}
       </div>
-      <AccentBar position="bottom" />
+
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          paddingBottom: 70,
+        }}
+      >
+        <PillButton text="Learn how" />
+      </div>
     </SlideContainer>
   );
 }
@@ -115,13 +254,18 @@ export function StatSlide({
   value,
   label,
   logoBase64,
+  navLabel,
 }: {
   value: string;
   label: string;
   logoBase64: string;
+  navLabel?: string;
 }) {
   return (
     <SlideContainer>
+      <DecoCircle size={400} top={-150} right={-150} opacity={0.06} />
+      <DecoCircle size={120} bottom={140} left={60} opacity={0.04} />
+
       <div
         style={{
           display: "flex",
@@ -129,14 +273,16 @@ export function StatSlide({
           justifyContent: "center",
           alignItems: "center",
           flex: 1,
+          paddingBottom: FOOTER_HEIGHT,
         }}
       >
         <div
           style={{
             fontFamily: BRAND.FONT_HEADLINE,
-            fontSize: 96,
+            fontSize: 120,
             fontWeight: 700,
             color: BRAND.PURPLE,
+            lineHeight: 1,
           }}
         >
           {value}
@@ -145,16 +291,20 @@ export function StatSlide({
           style={{
             fontFamily: BRAND.FONT_BODY,
             fontSize: 28,
-            color: BRAND.GRAY_400,
-            marginTop: 16,
+            color: BRAND.GRAY_600,
+            marginTop: 20,
             textTransform: "uppercase",
             letterSpacing: 3,
+            textAlign: "center",
+            paddingLeft: 80,
+            paddingRight: 80,
           }}
         >
           {label}
         </div>
       </div>
-      <LogoFooter logoBase64={logoBase64} />
+
+      <FooterBar logoBase64={logoBase64} navLabel={navLabel} />
     </SlideContainer>
   );
 }
@@ -163,74 +313,70 @@ export function InsightSlide({
   headline,
   body,
   logoBase64,
+  sectionLabel,
+  navLabel,
 }: {
   headline: string;
   body: string;
   logoBase64: string;
+  sectionLabel?: string;
+  navLabel?: string;
 }) {
   return (
     <SlideContainer>
+      <DecoCircle size={240} top={-60} right={-60} opacity={0.05} />
+
       <div
         style={{
           display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
+          flexDirection: "column",
+          justifyContent: "flex-start",
           flex: 1,
+          paddingTop: 60,
+          paddingLeft: 70,
+          paddingRight: 70,
+          paddingBottom: FOOTER_HEIGHT + 30,
         }}
       >
+        {sectionLabel ? <SectionLabel text={sectionLabel} /> : null}
+
         <div
           style={{
-            display: "flex",
-            flexDirection: "row",
-            alignItems: "stretch",
-            width: 860,
+            fontFamily: BRAND.FONT_HEADLINE,
+            fontSize: 48,
+            fontWeight: 700,
+            color: BRAND.BLACK,
+            lineHeight: 1.15,
+            marginTop: sectionLabel ? 16 : 0,
           }}
         >
-          {/* Purple accent bar */}
-          <div
-            style={{
-              width: 6,
-              backgroundColor: BRAND.PURPLE,
-              borderRadius: 3,
-              marginRight: 40,
-              flexShrink: 0,
-            }}
-          />
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-            }}
-          >
-            <div
-              style={{
-                fontFamily: BRAND.FONT_HEADLINE,
-                fontSize: 40,
-                fontWeight: 700,
-                color: BRAND.WHITE,
-                lineHeight: 1.2,
-                marginBottom: body ? 20 : 0,
-              }}
-            >
-              {headline}
-            </div>
-            {body && (
-              <div
-                style={{
-                  fontFamily: BRAND.FONT_BODY,
-                  fontSize: 28,
-                  color: BRAND.GRAY_400,
-                  lineHeight: 1.5,
-                }}
-              >
-                {body}
-              </div>
-            )}
-          </div>
+          {headline}
+        </div>
+
+        <div
+          style={{
+            width: 60,
+            height: 5,
+            backgroundColor: BRAND.PURPLE,
+            borderRadius: 3,
+            marginTop: 30,
+            marginBottom: 30,
+          }}
+        />
+
+        <div
+          style={{
+            fontFamily: BRAND.FONT_BODY,
+            fontSize: 26,
+            color: BRAND.GRAY_600,
+            lineHeight: 1.6,
+          }}
+        >
+          {body}
         </div>
       </div>
-      <LogoFooter logoBase64={logoBase64} />
+
+      <FooterBar logoBase64={logoBase64} navLabel={navLabel} />
     </SlideContainer>
   );
 }
@@ -240,81 +386,69 @@ export function StepSlide({
   title,
   description,
   logoBase64,
+  navLabel,
 }: {
   number: number;
   title: string;
   description: string;
   logoBase64: string;
+  navLabel?: string;
 }) {
   return (
     <SlideContainer>
+      <DecoCircle size={200} bottom={FOOTER_HEIGHT + 40} right={-60} opacity={0.05} />
+
       <div
         style={{
           display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
+          flexDirection: "column",
+          justifyContent: "flex-start",
           flex: 1,
+          paddingTop: 60,
+          paddingLeft: 70,
+          paddingRight: 70,
+          paddingBottom: FOOTER_HEIGHT + 30,
         }}
       >
-        <div style={{ display: "flex", alignItems: "flex-start", width: 860 }}>
-          {/* Numbered circle */}
-          <div
-            style={{
-              width: 80,
-              height: 80,
-              borderRadius: 40,
-              backgroundColor: BRAND.PURPLE,
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              flexShrink: 0,
-              marginRight: 36,
-            }}
-          >
-            <span
-              style={{
-                fontFamily: BRAND.FONT_HEADLINE,
-                fontSize: 32,
-                fontWeight: 700,
-                color: BRAND.WHITE,
-              }}
-            >
-              {String(number).padStart(2, "0")}
-            </span>
-          </div>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-            }}
-          >
-            <div
-              style={{
-                fontFamily: BRAND.FONT_HEADLINE,
-                fontSize: 38,
-                fontWeight: 700,
-                color: BRAND.WHITE,
-                lineHeight: 1.2,
-                marginBottom: 14,
-              }}
-            >
-              {title}
-            </div>
-            <div
-              style={{
-                fontFamily: BRAND.FONT_BODY,
-                fontSize: 26,
-                color: BRAND.GRAY_400,
-                lineHeight: 1.5,
-              }}
-            >
-              {description}
-            </div>
-          </div>
+        <SectionLabel text={`Step ${number}`} />
+
+        <div
+          style={{
+            fontFamily: BRAND.FONT_HEADLINE,
+            fontSize: 48,
+            fontWeight: 700,
+            color: BRAND.BLACK,
+            lineHeight: 1.15,
+            marginTop: 16,
+          }}
+        >
+          {title}
+        </div>
+
+        <div
+          style={{
+            width: 60,
+            height: 5,
+            backgroundColor: BRAND.PURPLE,
+            borderRadius: 3,
+            marginTop: 30,
+            marginBottom: 30,
+          }}
+        />
+
+        <div
+          style={{
+            fontFamily: BRAND.FONT_BODY,
+            fontSize: 26,
+            color: BRAND.GRAY_600,
+            lineHeight: 1.6,
+          }}
+        >
+          {description}
         </div>
       </div>
-      <LogoFooter logoBase64={logoBase64} />
+
+      <FooterBar logoBase64={logoBase64} navLabel={navLabel} />
     </SlideContainer>
   );
 }
@@ -322,59 +456,60 @@ export function StepSlide({
 export function TakeawaySlide({
   text,
   logoBase64,
+  navLabel,
 }: {
   text: string;
   logoBase64: string;
+  navLabel?: string;
 }) {
   return (
     <SlideContainer>
+      <DecoCircle size={350} top={-120} left={-120} opacity={0.06} />
+      <DecoCircle size={180} bottom={FOOTER_HEIGHT + 60} right={-40} opacity={0.04} />
+
       <div
         style={{
           display: "flex",
-          alignItems: "center",
+          flexDirection: "column",
+          alignItems: "flex-start",
           justifyContent: "center",
           flex: 1,
+          paddingTop: 60,
+          paddingLeft: 70,
+          paddingRight: 70,
+          paddingBottom: FOOTER_HEIGHT + 30,
         }}
       >
+        <SectionLabel text="Key takeaway" />
+
         <div
           style={{
-            display: "flex",
-            flexDirection: "row",
-            alignItems: "stretch",
-            width: 860,
+            fontFamily: BRAND.FONT_HEADLINE,
+            fontSize: 80,
+            fontWeight: 700,
+            color: BRAND.PURPLE,
+            lineHeight: 0.8,
+            marginTop: 20,
+            marginBottom: 10,
           }}
         >
-          <div
-            style={{
-              width: 6,
-              backgroundColor: BRAND.PURPLE,
-              borderRadius: 3,
-              marginRight: 40,
-              flexShrink: 0,
-            }}
-          />
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-            }}
-          >
-            <div
-              style={{
-                fontFamily: BRAND.FONT_HEADLINE,
-                fontSize: 40,
-                fontWeight: 700,
-                color: BRAND.WHITE,
-                lineHeight: 1.2,
-              }}
-            >
-              {text}
-            </div>
-          </div>
+{"\u201C"}
+        </div>
+
+        <div
+          style={{
+            fontFamily: BRAND.FONT_HEADLINE,
+            fontSize: 44,
+            fontWeight: 700,
+            color: BRAND.BLACK,
+            lineHeight: 1.25,
+          }}
+        >
+          {text}
         </div>
       </div>
-      <LogoFooter logoBase64={logoBase64} />
+
+      <FooterBar logoBase64={logoBase64} navLabel={navLabel} />
     </SlideContainer>
   );
 }
@@ -386,7 +521,22 @@ export function CTASlide({
 }) {
   return (
     <SlideContainer>
-      <AccentBar position="top" />
+      <DecoCircle size={300} top={-100} left={-100} opacity={0.06} />
+      <DecoCircle size={200} bottom={-60} right={-60} opacity={0.05} />
+
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          paddingTop: 50,
+          paddingRight: 60,
+          paddingBottom: 0,
+          paddingLeft: 60,
+        }}
+      >
+        <img src={logoBase64} height={36} />
+      </div>
+
       <div
         style={{
           display: "flex",
@@ -394,38 +544,87 @@ export function CTASlide({
           alignItems: "center",
           justifyContent: "center",
           flex: 1,
+          paddingLeft: 70,
+          paddingRight: 70,
         }}
       >
-        <img src={logoBase64} style={{ height: 72, marginBottom: 32 }} />
-        {/* Divider */}
+        <div
+          style={{
+            fontFamily: BRAND.FONT_HEADLINE,
+            fontSize: 18,
+            fontWeight: 700,
+            color: BRAND.PURPLE,
+            textTransform: "uppercase",
+            letterSpacing: 4,
+            marginBottom: 30,
+          }}
+        >
+          {"Want to build a system?"}
+        </div>
+
+        <div
+          style={{
+            fontFamily: BRAND.FONT_HEADLINE,
+            fontSize: 56,
+            fontWeight: 700,
+            color: BRAND.BLACK,
+            lineHeight: 1.1,
+            textAlign: "center",
+          }}
+        >
+          {"Let's make your pipeline predictable"}
+        </div>
+
         <div
           style={{
             width: 60,
-            height: 4,
+            height: 5,
             backgroundColor: BRAND.PURPLE,
-            borderRadius: 2,
-            marginBottom: 32,
+            borderRadius: 3,
+            marginTop: 40,
+            marginBottom: 40,
           }}
         />
-        <div
-          style={{
-            fontFamily: BRAND.FONT_BODY,
-            fontSize: 28,
-            color: BRAND.GRAY_400,
-          }}
-        >
-          driveroi.ai
-        </div>
+
+        <PillButton text="driveroi.ai" />
       </div>
-      <AccentBar position="bottom" />
     </SlideContainer>
   );
+}
+
+// ── Card navigation helpers ───────────────────────────────────────────
+
+function getNavLabel(cards: Card[], index: number): string | undefined {
+  if (index >= cards.length - 1) return undefined; // last card, no nav
+  const next = cards[index + 1];
+  switch (next.type) {
+    case "stat": return "Next";
+    case "insight": return "Next";
+    case "step": return "Next step";
+    case "takeaway": return "Takeaway";
+  }
+}
+
+function getSectionLabel(card: Card, index: number): string | undefined {
+  switch (card.type) {
+    case "insight": return `Insight ${index + 1}`;
+    case "step": return undefined; // StepSlide handles its own label
+    case "stat": return undefined;
+    case "takeaway": return undefined; // TakeawaySlide handles its own label
+  }
 }
 
 /**
  * Renders a card to its corresponding satori JSX element.
  */
-export function renderCard(card: Card, logoBase64: string) {
+export function renderCard(
+  card: Card,
+  logoBase64: string,
+  cards: Card[],
+  cardIndex: number,
+) {
+  const navLabel = getNavLabel(cards, cardIndex);
+
   switch (card.type) {
     case "stat":
       return (
@@ -433,6 +632,7 @@ export function renderCard(card: Card, logoBase64: string) {
           value={card.value}
           label={card.label}
           logoBase64={logoBase64}
+          navLabel={navLabel}
         />
       );
     case "insight":
@@ -441,6 +641,8 @@ export function renderCard(card: Card, logoBase64: string) {
           headline={card.headline}
           body={card.body}
           logoBase64={logoBase64}
+          sectionLabel={getSectionLabel(card, cardIndex)}
+          navLabel={navLabel}
         />
       );
     case "step":
@@ -450,11 +652,16 @@ export function renderCard(card: Card, logoBase64: string) {
           title={card.title}
           description={card.description}
           logoBase64={logoBase64}
+          navLabel={navLabel}
         />
       );
     case "takeaway":
       return (
-        <TakeawaySlide text={card.text} logoBase64={logoBase64} />
+        <TakeawaySlide
+          text={card.text}
+          logoBase64={logoBase64}
+          navLabel={navLabel}
+        />
       );
   }
 }

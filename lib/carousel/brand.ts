@@ -2,6 +2,7 @@ export const BRAND = {
   // Colors
   BLACK: "#0A0A0A",
   WHITE: "#FFFFFF",
+  CREAM: "#F7F3EE",
   PURPLE: "#8B5CF6",
   LIGHT_PURPLE: "#C4B5FD",
   DARK_PURPLE: "#6D28D9",
@@ -20,3 +21,6 @@ export const BRAND = {
 // Slide dimensions (1080x1080 for LinkedIn carousel)
 export const SLIDE_WIDTH = 1080;
 export const SLIDE_HEIGHT = 1080;
+
+// Footer bar height
+export const FOOTER_HEIGHT = 90;

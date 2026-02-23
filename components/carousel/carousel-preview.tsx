@@ -5,9 +5,10 @@ import type { CarouselData, Card } from '@/lib/carousel/types'
 const BRAND = {
   BLACK: "#0A0A0A",
   WHITE: "#FFFFFF",
+  CREAM: "#F7F3EE",
   PURPLE: "#8B5CF6",
   GRAY_400: "#A3A3A3",
-  GRAY_800: "#262626",
+  GRAY_600: "#525252",
 }
 
 function MiniSlide({ children, label }: { children: React.ReactNode; label: string }) {
@@ -15,7 +16,7 @@ function MiniSlide({ children, label }: { children: React.ReactNode; label: stri
     <div className="flex-shrink-0 w-[270px]">
       <div
         className="w-[270px] h-[270px] rounded-lg overflow-hidden relative"
-        style={{ backgroundColor: BRAND.BLACK }}
+        style={{ backgroundColor: BRAND.CREAM }}
       >
         {children}
       </div>
@@ -24,17 +25,36 @@ function MiniSlide({ children, label }: { children: React.ReactNode; label: stri
   )
 }
 
+/** Mini footer bar matching the real slide footer */
+function MiniFooter({ navLabel }: { navLabel?: string }) {
+  return (
+    <div
+      className="absolute bottom-0 left-0 right-0 h-[22px] flex items-center justify-between px-4"
+      style={{ backgroundColor: BRAND.BLACK }}
+    >
+      <span className="text-[8px] font-bold text-white">driveROI</span>
+      {navLabel && (
+        <span className="text-[8px] font-bold text-white">{navLabel} →</span>
+      )}
+    </div>
+  )
+}
+
 function TitlePreview({ title, subtitle }: { title: string; subtitle?: string }) {
   return (
     <MiniSlide label="Title">
-      <div className="absolute top-0 left-0 right-0 h-[2px]" style={{ backgroundColor: BRAND.PURPLE }} />
-      <div className="p-6 flex flex-col justify-center h-full">
-        <p className="text-white font-bold text-sm leading-tight">{title}</p>
+      <div className="p-5 flex flex-col items-center justify-center h-full text-center">
+        <span className="text-[8px] font-bold uppercase tracking-widest" style={{ color: BRAND.PURPLE }}>
+          GUIDE
+        </span>
+        <p className="font-bold text-sm leading-tight mt-2" style={{ color: BRAND.BLACK }}>{title}</p>
         {subtitle && (
-          <p className="text-xs mt-2" style={{ color: BRAND.GRAY_400 }}>{subtitle}</p>
+          <p className="text-[10px] mt-1.5" style={{ color: BRAND.GRAY_600 }}>{subtitle}</p>
         )}
+        <div className="mt-3 px-3 py-1.5 rounded-full text-[9px] font-bold text-white" style={{ backgroundColor: BRAND.BLACK }}>
+          Learn how →
+        </div>
       </div>
-      <div className="absolute bottom-0 left-0 right-0 h-[2px]" style={{ backgroundColor: BRAND.PURPLE }} />
     </MiniSlide>
   )
 }
@@ -42,24 +62,27 @@ function TitlePreview({ title, subtitle }: { title: string; subtitle?: string })
 function StatPreview({ value, label }: { value: string; label: string }) {
   return (
     <MiniSlide label="Stat">
-      <div className="flex flex-col items-center justify-center h-full">
+      <div className="flex flex-col items-center justify-center h-full pb-[22px]">
         <p className="font-bold text-2xl" style={{ color: BRAND.PURPLE }}>{value}</p>
-        <p className="text-[10px] mt-1 uppercase tracking-wider" style={{ color: BRAND.GRAY_400 }}>{label}</p>
+        <p className="text-[9px] mt-1 uppercase tracking-wider text-center px-4" style={{ color: BRAND.GRAY_600 }}>{label}</p>
       </div>
+      <MiniFooter navLabel="Next" />
     </MiniSlide>
   )
 }
 
-function InsightPreview({ headline, body }: { headline: string; body: string }) {
+function InsightPreview({ headline, body, index }: { headline: string; body: string; index: number }) {
   return (
     <MiniSlide label="Insight">
-      <div className="flex items-center h-full px-6">
-        <div className="w-[2px] self-stretch mr-4 rounded" style={{ backgroundColor: BRAND.PURPLE }} />
-        <div>
-          <p className="text-white font-bold text-xs leading-tight">{headline}</p>
-          {body && <p className="text-[10px] mt-1.5 leading-snug" style={{ color: BRAND.GRAY_400 }}>{body}</p>}
-        </div>
+      <div className="flex flex-col justify-start h-full p-5 pb-[28px]">
+        <span className="text-[8px] font-bold uppercase tracking-wider" style={{ color: BRAND.GRAY_600 }}>
+          Insight {index + 1}
+        </span>
+        <p className="font-bold text-xs leading-tight mt-1" style={{ color: BRAND.BLACK }}>{headline}</p>
+        <div className="w-4 h-[2px] rounded my-2" style={{ backgroundColor: BRAND.PURPLE }} />
+        <p className="text-[9px] leading-snug" style={{ color: BRAND.GRAY_600 }}>{body}</p>
       </div>
+      <MiniFooter navLabel="Next" />
     </MiniSlide>
   )
 }
@@ -67,18 +90,15 @@ function InsightPreview({ headline, body }: { headline: string; body: string }) 
 function StepPreview({ number, title, description }: { number: number; title: string; description: string }) {
   return (
     <MiniSlide label={`Step ${number}`}>
-      <div className="flex items-center h-full px-5">
-        <div
-          className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 mr-3"
-          style={{ backgroundColor: BRAND.PURPLE }}
-        >
-          <span className="text-white text-xs font-bold">{String(number).padStart(2, '0')}</span>
-        </div>
-        <div>
-          <p className="text-white font-bold text-xs">{title}</p>
-          <p className="text-[10px] mt-1 leading-snug" style={{ color: BRAND.GRAY_400 }}>{description}</p>
-        </div>
+      <div className="flex flex-col justify-start h-full p-5 pb-[28px]">
+        <span className="text-[8px] font-bold uppercase tracking-wider" style={{ color: BRAND.GRAY_600 }}>
+          Step {number}
+        </span>
+        <p className="font-bold text-xs leading-tight mt-1" style={{ color: BRAND.BLACK }}>{title}</p>
+        <div className="w-4 h-[2px] rounded my-2" style={{ backgroundColor: BRAND.PURPLE }} />
+        <p className="text-[9px] leading-snug" style={{ color: BRAND.GRAY_600 }}>{description}</p>
       </div>
+      <MiniFooter navLabel="Next step" />
     </MiniSlide>
   )
 }
@@ -86,10 +106,14 @@ function StepPreview({ number, title, description }: { number: number; title: st
 function TakeawayPreview({ text }: { text: string }) {
   return (
     <MiniSlide label="Takeaway">
-      <div className="flex items-center h-full px-6">
-        <div className="w-[2px] self-stretch mr-4 rounded" style={{ backgroundColor: BRAND.PURPLE }} />
-        <p className="text-white font-bold text-xs leading-tight">{text}</p>
+      <div className="flex flex-col justify-center h-full p-5 pb-[28px]">
+        <span className="text-[8px] font-bold uppercase tracking-wider" style={{ color: BRAND.GRAY_600 }}>
+          Key takeaway
+        </span>
+        <span className="text-lg font-bold leading-none mt-1" style={{ color: BRAND.PURPLE }}>&ldquo;</span>
+        <p className="font-bold text-xs leading-tight" style={{ color: BRAND.BLACK }}>{text}</p>
       </div>
+      <MiniFooter />
     </MiniSlide>
   )
 }
@@ -97,12 +121,18 @@ function TakeawayPreview({ text }: { text: string }) {
 function CTAPreview() {
   return (
     <MiniSlide label="CTA">
-      <div className="absolute top-0 left-0 right-0 h-[2px]" style={{ backgroundColor: BRAND.PURPLE }} />
-      <div className="flex flex-col items-center justify-center h-full">
-        <div className="w-8 h-[2px] mb-3" style={{ backgroundColor: BRAND.PURPLE }} />
-        <p className="text-xs" style={{ color: BRAND.GRAY_400 }}>driveroi.ai</p>
+      <div className="flex flex-col items-center justify-center h-full text-center p-5">
+        <span className="text-[8px] font-bold uppercase tracking-widest" style={{ color: BRAND.PURPLE }}>
+          Want to build a system?
+        </span>
+        <p className="font-bold text-xs leading-tight mt-2" style={{ color: BRAND.BLACK }}>
+          Let&apos;s make your pipeline predictable
+        </p>
+        <div className="w-4 h-[2px] rounded my-2" style={{ backgroundColor: BRAND.PURPLE }} />
+        <div className="px-3 py-1.5 rounded-full text-[9px] font-bold text-white" style={{ backgroundColor: BRAND.BLACK }}>
+          driveroi.ai →
+        </div>
       </div>
-      <div className="absolute bottom-0 left-0 right-0 h-[2px]" style={{ backgroundColor: BRAND.PURPLE }} />
     </MiniSlide>
   )
 }
@@ -112,7 +142,7 @@ function renderCardPreview(card: Card, index: number) {
     case 'stat':
       return <StatPreview key={index} value={card.value} label={card.label} />
     case 'insight':
-      return <InsightPreview key={index} headline={card.headline} body={card.body} />
+      return <InsightPreview key={index} headline={card.headline} body={card.body} index={index} />
     case 'step':
       return <StepPreview key={index} number={card.number} title={card.title} description={card.description} />
     case 'takeaway':

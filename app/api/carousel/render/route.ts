@@ -81,8 +81,8 @@ export async function POST(request: NextRequest) {
         subtitle: carousel.subtitle,
         logoBase64: logo,
       }),
-      ...carousel.cards.map((card) =>
-        renderCard(card, logo) as React.ReactElement
+      ...carousel.cards.map((card, index) =>
+        renderCard(card, logo, carousel.cards, index) as React.ReactElement
       ),
       React.createElement(CTASlide, { logoBase64: logo }),
     ]
