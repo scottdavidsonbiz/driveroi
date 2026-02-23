@@ -82,3 +82,29 @@ export interface Lead {
   raw_data: Record<string, unknown> | null
   created_at: string
 }
+
+export interface Task {
+  id: string
+  clarify_id: string
+  title: string
+  status: string
+  priority: string
+  due_date: string | null
+  assignee_email: string | null
+  deal_name: string | null
+  clarify_url: string | null
+  synced_at: string
+  created_at: string
+}
+
+export interface AuditSubmission {
+  id: string
+  name: string
+  email: string
+  company: string | null
+  answers: Record<string, number>
+  category_scores: Record<string, number>
+  total_score: number
+  score_tier: string
+  created_at: string
+}
