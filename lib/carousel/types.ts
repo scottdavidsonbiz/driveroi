@@ -46,3 +46,20 @@ export interface CarouselGenerateResponse {
   postCopy: string;
   carousel: CarouselData;
 }
+
+export interface HookOption {
+  hook: string;
+  angle: string;
+}
+
+export interface HooksGenerateResponse {
+  hooks: HookOption[];
+}
+
+export interface SlideRegenerateRequest {
+  carousel: CarouselData;
+  postCopy: string;
+  slideIndex: number;
+  feedback?: string;
+  voice?: VoiceTone;
+}

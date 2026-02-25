@@ -5,11 +5,19 @@ import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Textarea } from '@/components/ui/textarea'
 import { Input } from '@/components/ui/input'
-import { Loader2, Sparkles, Download, Copy, RefreshCw } from 'lucide-react'
+import { Loader2, Sparkles, Download, Copy, RefreshCw, Zap } from 'lucide-react'
 import { CarouselPreview } from '@/components/carousel/carousel-preview'
-import type { CarouselData, CarouselGenerateResponse, VoiceTone, CTAStyle } from '@/lib/carousel/types'
+import type {
+  CarouselData,
+  CarouselGenerateResponse,
+  VoiceTone,
+  CTAStyle,
+  HookOption,
+  HooksGenerateResponse,
+  Card as SlideCard,
+} from '@/lib/carousel/types'
 
-const CTA_OPTIONS: { value: CTAStyle; label: string }[] = [
+const CTA_OPTIONS: Array<{ value: CTAStyle; label: string }> = [
   { value: 'none', label: 'No CTA' },
   { value: 'dm', label: 'DM me' },
   { value: 'book', label: 'Book a call' },
@@ -22,6 +30,12 @@ export default function CarouselPage() {
   const [voice, setVoice] = useState<VoiceTone>('professional')
   const [cta, setCta] = useState<CTAStyle>('none')
   const [ctaCustom, setCtaCustom] = useState('')
+
+  // Hook selection step
+  const [hookOptions, setHookOptions] = useState<HookOption[] | null>(null)
+  const [isGeneratingHooks, setIsGeneratingHooks] = useState(false)
+
+  // Results
   const [postCopy, setPostCopy] = useState('')
   const [carousel, setCarousel] = useState<CarouselData | null>(null)
   const [isGenerating, setIsGenerating] = useState(false)
@@ -29,8 +43,41 @@ export default function CarouselPage() {
   const [copied, setCopied] = useState(false)
   const [error, setError] = useState<string | null>(null)
 
-  async function handleGenerate() {
+  async function handleGenerateHooks() {
     if (!idea.trim()) return
+    setIsGeneratingHooks(true)
+    setError(null)
+    setHookOptions(null)
+
+    try {
+      const res = await fetch('/api/carousel/hooks', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ idea: idea.trim() }),
+      })
+
+      if (!res.ok) {
+        const data = await res.json()
+        throw new Error(data.error || 'Failed to generate hooks')
+      }
+
+      const data: HooksGenerateResponse = await res.json()
+      setHookOptions(data.hooks)
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Something went wrong')
+    } finally {
+      setIsGeneratingHooks(false)
+    }
+  }
+
+  function handleSelectHook(hookOption: HookOption) {
+    setHook(hookOption.hook)
+    setHookOptions(null)
+    // Auto-generate with selected hook
+    handleGenerateWithHook(hookOption.hook)
+  }
+
+  async function handleGenerateWithHook(selectedHook: string) {
     setIsGenerating(true)
     setError(null)
 
@@ -40,7 +87,7 @@ export default function CarouselPage() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           idea: idea.trim(),
-          hook: hook.trim() || undefined,
+          hook: selectedHook || undefined,
           voice,
           cta,
           ctaCustom: cta === 'none' ? undefined : ctaCustom.trim() || undefined,
@@ -60,6 +107,10 @@ export default function CarouselPage() {
     } finally {
       setIsGenerating(false)
     }
+  }
+
+  async function handleGenerate() {
+    handleGenerateWithHook(hook.trim())
   }
 
   async function handleDownloadPDF() {
@@ -112,6 +163,13 @@ export default function CarouselPage() {
     }
   }
 
+  function handleUpdateCard(index: number, card: SlideCard) {
+    if (!carousel) return
+    const newCards = [...carousel.cards]
+    newCards[index] = card
+    setCarousel({ ...carousel, cards: newCards })
+  }
+
   const hasResults = postCopy && carousel
 
   return (
@@ -135,15 +193,57 @@ export default function CarouselPage() {
             <label className="text-sm font-medium mb-2 block">
               Hook / angle <span className="text-muted-foreground font-normal">(optional)</span>
             </label>
-            <Input
-              placeholder={'e.g., "Founders blame the hire when it\'s an infrastructure problem"'}
-              value={hook}
-              onChange={(e) => setHook(e.target.value)}
-            />
+            <div className="flex gap-2">
+              <Input
+                placeholder={"Set your angle, or generate options below"}
+                value={hook}
+                onChange={(e) => setHook(e.target.value)}
+                className="flex-1"
+              />
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={handleGenerateHooks}
+                disabled={isGeneratingHooks || !idea.trim()}
+                className="whitespace-nowrap"
+              >
+                {isGeneratingHooks ? (
+                  <Loader2 className="mr-1.5 h-3.5 w-3.5 animate-spin" />
+                ) : (
+                  <Zap className="mr-1.5 h-3.5 w-3.5" />
+                )}
+                Get hooks
+              </Button>
+            </div>
             <p className="text-xs text-muted-foreground mt-1">
-              Set the specific take you want to lead with. Leave blank to let it generate one.
+              Set your own angle, or click &ldquo;Get hooks&rdquo; for 3 options to choose from.
             </p>
           </div>
+
+          {/* Hook Options */}
+          {hookOptions && (
+            <div className="space-y-2">
+              <label className="text-sm font-medium block">Pick a hook</label>
+              {hookOptions.map((opt, i) => (
+                <button
+                  key={i}
+                  type="button"
+                  onClick={() => handleSelectHook(opt)}
+                  className="w-full text-left p-3 rounded-md border hover:border-primary hover:bg-muted/50 transition-colors"
+                >
+                  <p className="text-sm font-medium">{opt.hook}</p>
+                  <p className="text-xs text-muted-foreground mt-0.5">{opt.angle}</p>
+                </button>
+              ))}
+              <button
+                type="button"
+                onClick={() => setHookOptions(null)}
+                className="text-xs text-muted-foreground hover:text-foreground"
+              >
+                Dismiss
+              </button>
+            </div>
+          )}
 
           <div className="grid grid-cols-2 gap-4">
             <div>
@@ -196,7 +296,7 @@ export default function CarouselPage() {
                 Custom CTA text <span className="text-muted-foreground font-normal">(optional)</span>
               </label>
               <Input
-                placeholder={`Override default "${CTA_OPTIONS.find(o => o.value === cta)?.label}" with your own text`}
+                placeholder={`Override default with your own text`}
                 value={ctaCustom}
                 onChange={(e) => setCtaCustom(e.target.value)}
               />
@@ -261,8 +361,16 @@ export default function CarouselPage() {
           {/* Slide Previews */}
           <Card>
             <CardContent className="pt-6">
-              <label className="text-sm font-medium mb-3 block">Carousel Slides</label>
-              <CarouselPreview carousel={carousel} />
+              <div className="flex items-center justify-between mb-3">
+                <label className="text-sm font-medium">Carousel Slides</label>
+                <p className="text-xs text-muted-foreground">Hover slides to edit or regenerate</p>
+              </div>
+              <CarouselPreview
+                carousel={carousel}
+                postCopy={postCopy}
+                voice={voice}
+                onUpdateCard={handleUpdateCard}
+              />
             </CardContent>
           </Card>
 
@@ -291,7 +399,7 @@ export default function CarouselPage() {
               disabled={isGenerating}
             >
               <RefreshCw className="mr-2 h-4 w-4" />
-              Regenerate
+              Regenerate All
             </Button>
           </div>
         </>
