@@ -4,12 +4,24 @@ import { useState } from 'react'
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Textarea } from '@/components/ui/textarea'
+import { Input } from '@/components/ui/input'
 import { Loader2, Sparkles, Download, Copy, RefreshCw } from 'lucide-react'
 import { CarouselPreview } from '@/components/carousel/carousel-preview'
-import type { CarouselData, CarouselGenerateResponse } from '@/lib/carousel/types'
+import type { CarouselData, CarouselGenerateResponse, VoiceTone, CTAStyle } from '@/lib/carousel/types'
+
+const CTA_OPTIONS: { value: CTAStyle; label: string }[] = [
+  { value: 'none', label: 'No CTA' },
+  { value: 'dm', label: 'DM me' },
+  { value: 'book', label: 'Book a call' },
+  { value: 'follow', label: 'Follow for more' },
+]
 
 export default function CarouselPage() {
   const [idea, setIdea] = useState('')
+  const [hook, setHook] = useState('')
+  const [voice, setVoice] = useState<VoiceTone>('professional')
+  const [cta, setCta] = useState<CTAStyle>('none')
+  const [ctaCustom, setCtaCustom] = useState('')
   const [postCopy, setPostCopy] = useState('')
   const [carousel, setCarousel] = useState<CarouselData | null>(null)
   const [isGenerating, setIsGenerating] = useState(false)
@@ -26,7 +38,13 @@ export default function CarouselPage() {
       const res = await fetch('/api/carousel/generate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ idea: idea.trim() }),
+        body: JSON.stringify({
+          idea: idea.trim(),
+          hook: hook.trim() || undefined,
+          voice,
+          cta,
+          ctaCustom: cta === 'none' ? undefined : ctaCustom.trim() || undefined,
+        }),
       })
 
       if (!res.ok) {
@@ -82,8 +100,7 @@ export default function CarouselPage() {
       await navigator.clipboard.writeText(postCopy)
       setCopied(true)
       setTimeout(() => setCopied(false), 2000)
-    } catch {
-      // Fallback for non-secure contexts
+    } catch (_err) {
       const textarea = document.createElement('textarea')
       textarea.value = postCopy
       document.body.appendChild(textarea)
@@ -101,17 +118,91 @@ export default function CarouselPage() {
     <div className="space-y-6">
       {/* Input */}
       <Card>
-        <CardContent className="pt-6">
-          <label className="text-sm font-medium mb-2 block">
-            Post idea
-          </label>
-          <Textarea
-            placeholder="Enter your post idea, rough concept, or raw thoughts..."
-            value={idea}
-            onChange={(e) => setIdea(e.target.value)}
-            rows={4}
-            className="mb-4"
-          />
+        <CardContent className="pt-6 space-y-4">
+          <div>
+            <label className="text-sm font-medium mb-2 block">
+              Post idea
+            </label>
+            <Textarea
+              placeholder="Enter your post idea, rough concept, or raw thoughts..."
+              value={idea}
+              onChange={(e) => setIdea(e.target.value)}
+              rows={4}
+            />
+          </div>
+
+          <div>
+            <label className="text-sm font-medium mb-2 block">
+              Hook / angle <span className="text-muted-foreground font-normal">(optional)</span>
+            </label>
+            <Input
+              placeholder={'e.g., "Founders blame the hire when it\'s an infrastructure problem"'}
+              value={hook}
+              onChange={(e) => setHook(e.target.value)}
+            />
+            <p className="text-xs text-muted-foreground mt-1">
+              Set the specific take you want to lead with. Leave blank to let it generate one.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-2 gap-4">
+            <div>
+              <label className="text-sm font-medium mb-2 block">Voice</label>
+              <div className="flex rounded-md border overflow-hidden">
+                <button
+                  type="button"
+                  onClick={() => setVoice('professional')}
+                  className={`flex-1 px-3 py-2 text-sm transition-colors ${
+                    voice === 'professional'
+                      ? 'bg-primary text-primary-foreground'
+                      : 'bg-background hover:bg-muted'
+                  }`}
+                >
+                  Professional
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setVoice('conversational')}
+                  className={`flex-1 px-3 py-2 text-sm transition-colors border-l ${
+                    voice === 'conversational'
+                      ? 'bg-primary text-primary-foreground'
+                      : 'bg-background hover:bg-muted'
+                  }`}
+                >
+                  Conversational
+                </button>
+              </div>
+            </div>
+
+            <div>
+              <label className="text-sm font-medium mb-2 block">CTA</label>
+              <select
+                value={cta}
+                onChange={(e) => setCta(e.target.value as CTAStyle)}
+                className="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              >
+                {CTA_OPTIONS.map((opt) => (
+                  <option key={opt.value} value={opt.value}>
+                    {opt.label}
+                  </option>
+                ))}
+              </select>
+            </div>
+          </div>
+
+          {cta !== 'none' && (
+            <div>
+              <label className="text-sm font-medium mb-2 block">
+                Custom CTA text <span className="text-muted-foreground font-normal">(optional)</span>
+              </label>
+              <Input
+                placeholder={`Override default "${CTA_OPTIONS.find(o => o.value === cta)?.label}" with your own text`}
+                value={ctaCustom}
+                onChange={(e) => setCtaCustom(e.target.value)}
+              />
+            </div>
+          )}
+
           <Button
             onClick={handleGenerate}
             disabled={isGenerating || !idea.trim()}

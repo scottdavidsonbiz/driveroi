@@ -1,12 +1,23 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { buildCarouselPrompt } from '@/lib/carousel/prompt'
-import type { CarouselGenerateResponse } from '@/lib/carousel/types'
+import type { CarouselGenerateResponse, CarouselGenerateOptions } from '@/lib/carousel/types'
 
 export async function POST(request: NextRequest) {
   try {
-    const { idea } = await request.json()
+    const body = await request.json()
 
-    if (!idea || typeof idea !== 'string') {
+    // Support both old format { idea } and new format with options
+    const options: CarouselGenerateOptions = typeof body.idea === 'string'
+      ? {
+          idea: body.idea,
+          hook: body.hook,
+          cta: body.cta,
+          ctaCustom: body.ctaCustom,
+          voice: body.voice,
+        }
+      : body
+
+    if (!options.idea || typeof options.idea !== 'string') {
       return NextResponse.json(
         { error: 'Post idea is required' },
         { status: 400 }
@@ -21,7 +32,7 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    const prompt = buildCarouselPrompt(idea)
+    const prompt = buildCarouselPrompt(options)
 
     const response = await fetch('https://api.anthropic.com/v1/messages', {
       method: 'POST',

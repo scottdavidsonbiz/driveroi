@@ -30,6 +30,18 @@ export interface CarouselData {
   cards: Card[];
 }
 
+export type VoiceTone = "professional" | "conversational";
+
+export type CTAStyle = "dm" | "book" | "follow" | "none";
+
+export interface CarouselGenerateOptions {
+  idea: string;
+  hook?: string;
+  cta?: CTAStyle;
+  ctaCustom?: string;
+  voice?: VoiceTone;
+}
+
 export interface CarouselGenerateResponse {
   postCopy: string;
   carousel: CarouselData;
