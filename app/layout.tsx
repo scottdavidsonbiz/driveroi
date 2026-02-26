@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Figtree } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/next'
 import { Shell } from '@/components/layout'
 import './globals.css'
 
@@ -23,6 +24,7 @@ export default function RootLayout({
     <html lang="en" className={figtree.variable}>
       <body className="min-h-screen font-sans">
         <Shell>{children}</Shell>
+        <Analytics />
       </body>
     </html>
   )
