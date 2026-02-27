@@ -48,7 +48,6 @@ export async function POST(request: NextRequest) {
 
     // Slack notification
     const webhookUrl = process.env.SLACK_WEBHOOK_URL
-    let slackStatus = 'no_webhook_url'
     if (webhookUrl) {
       const tierLabel = getTierLabel(scoreTier)
       const categoryLines = CATEGORIES.map((cat) => {
@@ -82,14 +81,12 @@ export async function POST(request: NextRequest) {
 
       try {
         await postToSlack(webhookUrl, blocks)
-        slackStatus = 'sent'
       } catch (err) {
-        slackStatus = `error: ${err instanceof Error ? err.message : String(err)}`
         console.error('[Audit API] Slack error:', err)
       }
     }
 
-    return NextResponse.json({ success: true, id: data.id, slack: slackStatus })
+    return NextResponse.json({ success: true, id: data.id })
   } catch (error) {
     console.error('[Audit API] Error:', error)
     const message = error instanceof Error ? error.message : 'Unknown error'
