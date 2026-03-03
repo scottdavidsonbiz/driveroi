@@ -30,6 +30,9 @@
   .logo span::after { content: ''; position: absolute; bottom: -2px; left: 0; right: 0; height: 4px; background: var(--purple); border-radius: 2px; }
   .header h1 { font-size: 22px; font-weight: 700; color: var(--text); margin-bottom: 4px; }
   .header .subtitle { font-size: 15px; color: var(--text-secondary); }
+  .header-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; }
+  .cta-button-sm { display: inline-block; background: var(--purple); color: white; font-size: 14px; font-weight: 600; padding: 10px 24px; border-radius: 8px; text-decoration: none; transition: background 0.2s; white-space: nowrap; }
+  .cta-button-sm:hover { background: var(--purple-dark); }
   .stats { display: flex; gap: 0; padding: 0 48px; border-bottom: 1px solid var(--border); }
   .stat { flex: 1; padding: 20px 0; text-align: center; border-right: 1px solid var(--border); }
   .stat:last-child { border-right: none; }
@@ -90,7 +93,10 @@
 <body>
 <div class="container">
   <div class="header">
-    <div class="logo">Drive<span>ROI</span></div>
+    <div class="header-row">
+      <div class="logo">Drive<span>ROI</span></div>
+      <a class="cta-button-sm" href="https://cal.com/driveroi/30min" target="_blank">Book a Call &rarr;</a>
+    </div>
     <h1>ICP Target List</h1>
     <div class="subtitle">Prepared for Poplar &mdash; March 2026</div>
   </div>
