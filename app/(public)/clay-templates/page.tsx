@@ -141,9 +141,8 @@ function TemplateCard({ template, index }: { template: Template; index: number }
               </span>
             </div>
             <h3
-              className="text-xl font-normal"
+              className="text-xl font-semibold"
               style={{
-                fontFamily: "'Instrument Serif', serif",
                 color: '#E8E6E3',
                 letterSpacing: '-0.01em',
               }}
@@ -375,18 +374,17 @@ export default function ClayTemplatesPage() {
           </div>
 
           <h1
-            className="hero-title mb-6"
+            className="hero-title mb-6 font-bold"
             style={{
-              fontFamily: "'Instrument Serif', serif",
               fontSize: 'clamp(2.5rem, 5vw, 3.5rem)',
               lineHeight: 1.1,
-              letterSpacing: '-0.02em',
+              letterSpacing: '-0.03em',
               color: '#E8E6E3',
             }}
           >
             Clay Templates
             <br />
-            <span style={{ fontStyle: 'italic', color: 'rgba(232, 230, 227, 0.5)' }}>
+            <span className="font-light" style={{ color: 'rgba(232, 230, 227, 0.45)' }}>
               Crawl, Walk, Run
             </span>
           </h1>
@@ -403,26 +401,15 @@ export default function ClayTemplatesPage() {
             href="https://cal.com/driveroi/30min"
             target="_blank"
             rel="noopener noreferrer"
-            className="hero-cta group inline-flex items-center gap-2 rounded-sm border px-6 py-3 text-sm font-medium tracking-wide transition-all duration-200"
+            className="hero-cta group inline-flex items-center gap-2 rounded-lg px-6 py-3 text-sm font-semibold transition-all duration-200 hover:opacity-90"
             style={{
-              borderColor: 'rgba(232, 230, 227, 0.2)',
-              color: '#E8E6E3',
-              fontFamily: "'JetBrains Mono', monospace",
-              fontSize: '0.75rem',
-              letterSpacing: '0.05em',
-              textTransform: 'uppercase' as const,
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.borderColor = 'rgba(232, 230, 227, 0.5)'
-              e.currentTarget.style.backgroundColor = 'rgba(232, 230, 227, 0.05)'
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.borderColor = 'rgba(232, 230, 227, 0.2)'
-              e.currentTarget.style.backgroundColor = 'transparent'
+              background: 'linear-gradient(135deg, #814ac8 0%, #9f5de8 100%)',
+              color: '#fff',
+              boxShadow: '0 0 20px rgba(129, 74, 200, 0.3)',
             }}
           >
-            Want these built for you?
-            <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
+            Want these built for you? Book a call
+            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
           </a>
         </div>
 
@@ -509,10 +496,8 @@ export default function ClayTemplatesPage() {
               }}
             >
               <p
-                className="text-lg"
+                className="text-lg font-semibold"
                 style={{
-                  fontFamily: "'Instrument Serif', serif",
-                  fontStyle: 'italic',
                   color: 'rgba(232, 230, 227, 0.25)',
                 }}
               >
@@ -521,8 +506,7 @@ export default function ClayTemplatesPage() {
               <p
                 className="mx-auto mt-3 max-w-md text-xs leading-relaxed"
                 style={{
-                  color: 'rgba(232, 230, 227, 0.15)',
-                  fontFamily: "'JetBrains Mono', monospace",
+                  color: 'rgba(232, 230, 227, 0.2)',
                 }}
               >
                 Clay table blueprints for Sales, Marketing, and Customer Success &mdash;
@@ -541,16 +525,15 @@ export default function ClayTemplatesPage() {
           }}
         >
           <h3
-            className="mb-3 text-2xl"
+            className="mb-3 text-2xl font-bold"
             style={{
-              fontFamily: "'Instrument Serif', serif",
               color: '#E8E6E3',
-              letterSpacing: '-0.01em',
+              letterSpacing: '-0.02em',
             }}
           >
             These are the blueprints.
             <br />
-            <span style={{ fontStyle: 'italic', color: 'rgba(232, 230, 227, 0.5)' }}>
+            <span className="font-light" style={{ color: 'rgba(232, 230, 227, 0.45)' }}>
               We build the machine.
             </span>
           </h3>
@@ -565,26 +548,15 @@ export default function ClayTemplatesPage() {
             href="https://cal.com/driveroi/30min"
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex items-center gap-2 rounded-sm border px-6 py-3 text-sm font-medium tracking-wide transition-all duration-200"
+            className="group inline-flex items-center gap-2 rounded-lg px-6 py-3 text-sm font-semibold transition-all duration-200 hover:opacity-90"
             style={{
-              borderColor: 'rgba(232, 230, 227, 0.2)',
-              color: '#E8E6E3',
-              fontFamily: "'JetBrains Mono', monospace",
-              fontSize: '0.75rem',
-              letterSpacing: '0.05em',
-              textTransform: 'uppercase' as const,
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.borderColor = 'rgba(232, 230, 227, 0.5)'
-              e.currentTarget.style.backgroundColor = 'rgba(232, 230, 227, 0.05)'
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.borderColor = 'rgba(232, 230, 227, 0.2)'
-              e.currentTarget.style.backgroundColor = 'transparent'
+              background: 'linear-gradient(135deg, #814ac8 0%, #9f5de8 100%)',
+              color: '#fff',
+              boxShadow: '0 0 20px rgba(129, 74, 200, 0.3)',
             }}
           >
             Book a strategy call
-            <ArrowRight className="h-3.5 w-3.5 transition-transform group-hover:translate-x-1" />
+            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
           </a>
         </div>
 
@@ -594,10 +566,8 @@ export default function ClayTemplatesPage() {
             className="text-xs"
             style={{
               color: 'rgba(232, 230, 227, 0.15)',
-              fontFamily: "'JetBrains Mono', monospace",
-              fontSize: '0.6rem',
-              letterSpacing: '0.05em',
-              textTransform: 'uppercase' as const,
+              fontSize: '0.7rem',
+              letterSpacing: '0.03em',
             }}
           >
             &copy; {new Date().getFullYear()} DriveROI &mdash; Signal-to-pipeline infrastructure built on Clay

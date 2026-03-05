@@ -15,7 +15,7 @@ export default function ClayTemplatesLayout({
     <>
       {/* eslint-disable-next-line @next/next/no-page-custom-font */}
       <link
-        href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap"
         rel="stylesheet"
       />
       <div className="min-h-screen" style={{ backgroundColor: '#0A0A0B', color: '#E8E6E3' }}>
