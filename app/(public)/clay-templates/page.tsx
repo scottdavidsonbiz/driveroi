@@ -526,8 +526,7 @@ export default function ClayTemplatesPage() {
             className="hero-subtitle mb-8 max-w-lg text-base leading-relaxed"
             style={{ color: 'rgba(232, 230, 227, 0.45)' }}
           >
-            Production-ready Clay table blueprints for Sales, Marketing, and Customer Success.
-            Each one includes the table schema, a video walkthrough, and a step-by-step SOP.
+            Clay workflows for Signals &amp; Intent, CRM Enrichment, Inbound Routing, ABM, and more &mdash; at every level of complexity.
           </p>
 
           <a
