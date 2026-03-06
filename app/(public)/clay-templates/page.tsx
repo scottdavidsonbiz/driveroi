@@ -111,7 +111,7 @@ const TEMPLATES: Template[] = [
     sharedTableUrl: 'https://app.clay.com/shared-table/share_0tbhtyoV4fMEH7eQGew',
     sculptorPrompt: `Find people who recently changed jobs into compliance officer, privacy officer, or HIPAA officer roles at healthcare organizations in the United States.\n\nFilter to job changes in the last 6 months. Include titles like: Compliance Officer, Chief Compliance Officer, Privacy Officer, HIPAA Officer, Director of Compliance, VP of Compliance, Compliance Manager.`,
     sculptorPromptTemplate: `Find people who recently changed jobs into [TARGET ROLES] at [ORGANIZATION TYPE] in [GEOGRAPHY].\n\nFilter to job changes in the last [TIMEFRAME] months. Include titles like: [TITLE 1], [TITLE 2], [TITLE 3], ...`,
-    formulaExample: `// Segment Classification (Formula column)\n{{Employee Count}} >= 200 ? "Mid-Market" : {{Employee Count}} >= 1 ? "SMB" : "Unknown"`,
+    formulaExample: `// Segment Classification (Formula column)\n["2-10 employees","11-50 employees","51-200 employees"]?.includes(({{Size}}||"")?.toLowerCase())?"SMB":["201-500 employees","501-1,000 employees"]?.includes(({{Size}}||"")?.toLowerCase())?"MM":"ignore"`,
     columns: [
       { name: 'Full Name', type: 'Signal', source: 'Clay People Source (Sculptor)' },
       { name: 'Job Title', type: 'Signal', source: 'Clay People Source (Sculptor)' },
