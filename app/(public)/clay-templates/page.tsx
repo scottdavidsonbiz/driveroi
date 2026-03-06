@@ -25,6 +25,8 @@ interface Template {
   sopUrl?: string
   sculptorPrompt?: string
   sculptorPromptTemplate?: string
+  claygentPrompt?: string
+  formulaExample?: string
   sharedTableUrl?: string
   keyBenefit: string
 }
@@ -83,6 +85,79 @@ const TEMPLATES: Template[] = [
       { name: 'HQ Location', type: 'Enrichment', source: 'Enrich Company (native)' },
       { name: 'Work Email', type: 'Enrichment', source: 'Find Work Email (native workflow)' },
       { name: 'Email Status', type: 'Enrichment', source: 'Find Work Email (native workflow)' },
+    ],
+  },
+  {
+    id: 'funding-signal-pipeline',
+    tier: 'run',
+    title: 'Funding Signal Pipeline — BusinessWire to Contacts',
+    useCase: 'Signals & Intent',
+    problem: 'Seed and Series A companies are your best buyers — they just got funded and need to build their GTM fast. But by the time funding news hits your CRM, your competitors have already reached out.',
+    description: 'Monitor BusinessWire for funding announcements via RSS, use Claygent to classify each article (Seed vs. Series A) and extract the funded company\'s domain, generate a personalized pain point hook based on round type, then find founders and revenue leaders at each company. Runs continuously — new funding hits your table automatically.',
+    timeToValue: '2-3 hours to build, then runs on autopilot',
+    keyBenefit: 'Automatically detect Seed and Series A funding, extract the company, and find decision-makers — before your competitors see the news.',
+    sharedTableUrl: 'https://app.clay.com/shared-table/share_0tbgfqf2QzhMsKdswb4',
+    claygentPrompt: `## CONTEXT
+You are analyzing Business Wire articles to identify seed and Series A fundraising announcements. The goal is to classify each article and extract the domain of the company that received the investment.
+
+## TASK
+Visit the provided Business Wire article URL. Determine if the article is about a seed round or Series A round of funding. If it qualifies, extract the website domain of the company that raised the round.
+
+## INPUT
+Article URL: {{article_url}}
+
+## QUALIFYING CRITERIA
+**QUALIFIES:**
+- Seed round / seed funding / seed investment
+- Pre-seed round (classify as "Seed")
+- Series A round / Series A funding / Series A investment
+
+**DOES NOT QUALIFY:**
+- Series B, Series C, or any later-stage round
+- Debt financing, venture debt, or credit facilities
+- Grants or government funding
+- Acquisitions or mergers
+- Partnerships, product launches, or hiring announcements
+- IPOs or SPACs
+- Any article not about fundraising
+
+## OUTPUT FORMAT
+Return your response as JSON:
+
+{
+  "round_type": "Seed" or "Series A" or null,
+  "qualifies": true or false,
+  "company_name": "Name of company that raised" or null,
+  "company_domain": "company.com" or null,
+  "amount_raised": "$XM" or null,
+  "reasoning": "one sentence explanation"
+}
+
+## INSTRUCTIONS
+1. Visit the article URL and read the full content
+2. Determine if the article announces a Seed or Series A funding round
+3. If it does NOT qualify, set qualifies to false and return null for all other fields
+4. If it qualifies, identify the company that RECEIVED the investment (not the investors)
+5. Find the company's website domain in the article body, boilerplate/about section, or contact info. Return just the root domain (e.g. acme.com)
+6. If you cannot find a specific field, return null - do not guess`,
+    formulaExample: `!{{Seed/Series A Extraction}}?.roundType ? ""
+: {{Seed/Series A Extraction}}?.roundType?.toLowerCase() === "seed"
+  ? "You probably need to validate 1-2 acquisition channels fast before burn creeps up"
+: {{Seed/Series A Extraction}}?.roundType?.toLowerCase() === "series a"
+  ? "You probably need to turn what's working into something repeatable"
+: ""`,
+    columns: [
+      { name: 'Article Title', type: 'Signal', source: 'RSS Source (via rss.app)' },
+      { name: 'Article URL', type: 'Signal', source: 'RSS Source (via rss.app)' },
+      { name: 'Published Date', type: 'Signal', source: 'RSS Source (via rss.app)' },
+      { name: 'Round Type', type: 'AI Column', source: 'Claygent — "Seed" or "Series A"' },
+      { name: 'Qualifies', type: 'AI Column', source: 'Claygent — true/false' },
+      { name: 'Company Name', type: 'AI Column', source: 'Claygent — extracted from article' },
+      { name: 'Company Domain', type: 'AI Column', source: 'Claygent — extracted from article' },
+      { name: 'Amount Raised', type: 'AI Column', source: 'Claygent — "$XM"' },
+      { name: 'Pain Point Hook', type: 'Formula', source: 'Round-specific messaging based on stage' },
+      { name: 'Founder / CEO', type: 'Enrichment', source: 'Find People (native)' },
+      { name: 'Revenue Leader', type: 'Enrichment', source: 'Find People (native)' },
     ],
   },
 ]
@@ -326,6 +401,64 @@ function TemplateCard({ template, index }: { template: Template; index: number }
                   </div>
                 </div>
               )}
+            </div>
+          )}
+
+          {/* Claygent Prompt */}
+          {template.claygentPrompt && (
+            <div>
+              <div className="mb-3 flex items-center justify-between">
+                <h4
+                  className="text-xs font-semibold uppercase tracking-widest"
+                  style={{ color: 'rgba(232, 230, 227, 0.35)', fontFamily: "'JetBrains Mono', monospace", fontSize: '0.6rem' }}
+                >
+                  Claygent Prompt
+                </h4>
+                <CopyButton text={template.claygentPrompt} />
+              </div>
+              <div
+                className="max-h-64 overflow-y-auto rounded-lg border p-4"
+                style={{
+                  borderColor: 'rgba(192, 132, 252, 0.15)',
+                  backgroundColor: 'rgba(192, 132, 252, 0.03)',
+                  fontFamily: "'JetBrains Mono', monospace",
+                  fontSize: '0.7rem',
+                  lineHeight: 1.7,
+                  color: 'rgba(232, 230, 227, 0.55)',
+                  whiteSpace: 'pre-wrap',
+                }}
+              >
+                {template.claygentPrompt}
+              </div>
+            </div>
+          )}
+
+          {/* Formula Example */}
+          {template.formulaExample && (
+            <div>
+              <div className="mb-3 flex items-center justify-between">
+                <h4
+                  className="text-xs font-semibold uppercase tracking-widest"
+                  style={{ color: 'rgba(232, 230, 227, 0.35)', fontFamily: "'JetBrains Mono', monospace", fontSize: '0.6rem' }}
+                >
+                  Formula — Pain Point Hook
+                </h4>
+                <CopyButton text={template.formulaExample} />
+              </div>
+              <div
+                className="rounded-lg border p-4"
+                style={{
+                  borderColor: 'rgba(251, 191, 36, 0.15)',
+                  backgroundColor: 'rgba(251, 191, 36, 0.03)',
+                  fontFamily: "'JetBrains Mono', monospace",
+                  fontSize: '0.7rem',
+                  lineHeight: 1.7,
+                  color: 'rgba(232, 230, 227, 0.5)',
+                  whiteSpace: 'pre-wrap',
+                }}
+              >
+                {template.formulaExample}
+              </div>
             </div>
           )}
 
