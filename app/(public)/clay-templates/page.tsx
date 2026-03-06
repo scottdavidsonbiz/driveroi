@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
-import { ChevronDown, ChevronUp, Play, FileText, ExternalLink, ArrowRight } from 'lucide-react'
+import { ChevronDown, ChevronUp, Play, FileText, ExternalLink, ArrowRight, Copy, Check, Table2 } from 'lucide-react'
 
 type Tier = 'crawl' | 'walk' | 'run'
 
@@ -23,6 +23,9 @@ interface Template {
   columns: ClayColumn[]
   loomUrl?: string
   sopUrl?: string
+  sculptorPrompt?: string
+  sculptorPromptTemplate?: string
+  sharedTableUrl?: string
   keyBenefit: string
 }
 
@@ -56,8 +59,33 @@ const TIER_CONFIG: Record<Tier, {
   },
 }
 
-// Templates will be added after review — keep empty for now
-const TEMPLATES: Template[] = []
+const TEMPLATES: Template[] = [
+  {
+    id: 'job-change-signal',
+    tier: 'walk',
+    title: 'Job Change Signal Detection',
+    useCase: 'Signals & Intent',
+    problem: 'Someone at your target persona just changed jobs. ZoomInfo or your CRM might catch it days later — if at all. By then, the window to reach them while they\'re evaluating new tools is closing.',
+    description: 'Use Clay Sculptor to find people who recently changed into your target roles, then enrich with native Clay company data and work email. No outside vendors needed. Sculptor builds the table in minutes — you add two enrichment columns and you\'re live.',
+    timeToValue: '< 1 hour',
+    keyBenefit: 'Detect job changes into your target persona, enrich with company data and verified email — using only native Clay tools.',
+    sculptorPrompt: `Find people who recently changed jobs into compliance officer, privacy officer, or HIPAA officer roles at healthcare organizations in the United States.\n\nFilter to job changes in the last 6 months. Include titles like: Compliance Officer, Chief Compliance Officer, Privacy Officer, HIPAA Officer, Director of Compliance, VP of Compliance, Compliance Manager.`,
+    sculptorPromptTemplate: `Find people who recently changed jobs into [TARGET ROLES] at [ORGANIZATION TYPE] in [GEOGRAPHY].\n\nFilter to job changes in the last [TIMEFRAME] months. Include titles like: [TITLE 1], [TITLE 2], [TITLE 3], ...`,
+    sharedTableUrl: 'https://app.clay.com/shared-table/share_0tbfovgTkycVgkqKNDe',
+    columns: [
+      { name: 'Full Name', type: 'Signal', source: 'Clay People Source (Sculptor)' },
+      { name: 'Job Title', type: 'Signal', source: 'Clay People Source (Sculptor)' },
+      { name: 'Company Name', type: 'Signal', source: 'Clay People Source (Sculptor)' },
+      { name: 'Company Domain', type: 'Signal', source: 'Clay People Source (Sculptor)' },
+      { name: 'LinkedIn URL', type: 'Signal', source: 'Clay People Source (Sculptor)' },
+      { name: 'Company Size', type: 'Enrichment', source: 'Enrich Company (native)' },
+      { name: 'Industry', type: 'Enrichment', source: 'Enrich Company (native)' },
+      { name: 'HQ Location', type: 'Enrichment', source: 'Enrich Company (native)' },
+      { name: 'Work Email', type: 'Enrichment', source: 'Find Work Email (native workflow)' },
+      { name: 'Email Status', type: 'Enrichment', source: 'Find Work Email (native workflow)' },
+    ],
+  },
+]
 
 function ColumnTypeTag({ type }: { type: string }) {
   const colors: Record<string, { bg: string; text: string }> = {
@@ -84,6 +112,27 @@ function ColumnTypeTag({ type }: { type: string }) {
     >
       {type}
     </span>
+  )
+}
+
+function CopyButton({ text }: { text: string }) {
+  const [copied, setCopied] = useState(false)
+  return (
+    <button
+      onClick={() => {
+        navigator.clipboard.writeText(text)
+        setCopied(true)
+        setTimeout(() => setCopied(false), 2000)
+      }}
+      className="inline-flex items-center gap-1.5 rounded px-2.5 py-1 text-xs font-medium transition-colors"
+      style={{
+        backgroundColor: copied ? 'rgba(52, 211, 153, 0.15)' : 'rgba(255,255,255,0.06)',
+        color: copied ? '#34D399' : 'rgba(232, 230, 227, 0.5)',
+      }}
+    >
+      {copied ? <Check className="h-3 w-3" /> : <Copy className="h-3 w-3" />}
+      {copied ? 'Copied' : 'Copy'}
+    </button>
   )
 }
 
@@ -223,6 +272,90 @@ function TemplateCard({ template, index }: { template: Template; index: number }
               </table>
             </div>
           </div>
+
+          {/* Sculptor Prompt */}
+          {template.sculptorPrompt && (
+            <div>
+              <div className="mb-3 flex items-center justify-between">
+                <h4
+                  className="text-xs font-semibold uppercase tracking-widest"
+                  style={{ color: 'rgba(232, 230, 227, 0.35)', fontFamily: "'JetBrains Mono', monospace", fontSize: '0.6rem' }}
+                >
+                  Sculptor Prompt — Example
+                </h4>
+                <CopyButton text={template.sculptorPrompt} />
+              </div>
+              <div
+                className="rounded-lg border p-4"
+                style={{
+                  borderColor: 'rgba(255,255,255,0.06)',
+                  backgroundColor: 'rgba(0,0,0,0.3)',
+                  fontFamily: "'JetBrains Mono', monospace",
+                  fontSize: '0.75rem',
+                  lineHeight: 1.7,
+                  color: 'rgba(232, 230, 227, 0.6)',
+                  whiteSpace: 'pre-wrap',
+                }}
+              >
+                {template.sculptorPrompt}
+              </div>
+              {template.sculptorPromptTemplate && (
+                <div className="mt-3">
+                  <div className="mb-2 flex items-center justify-between">
+                    <h4
+                      className="text-xs font-semibold uppercase tracking-widest"
+                      style={{ color: 'rgba(232, 230, 227, 0.25)', fontFamily: "'JetBrains Mono', monospace", fontSize: '0.55rem' }}
+                    >
+                      Reusable Template — Fill in the brackets
+                    </h4>
+                    <CopyButton text={template.sculptorPromptTemplate} />
+                  </div>
+                  <div
+                    className="rounded-lg border p-4"
+                    style={{
+                      borderColor: 'rgba(251, 191, 36, 0.15)',
+                      backgroundColor: 'rgba(251, 191, 36, 0.03)',
+                      fontFamily: "'JetBrains Mono', monospace",
+                      fontSize: '0.75rem',
+                      lineHeight: 1.7,
+                      color: 'rgba(232, 230, 227, 0.45)',
+                      whiteSpace: 'pre-wrap',
+                    }}
+                  >
+                    {template.sculptorPromptTemplate}
+                  </div>
+                </div>
+              )}
+            </div>
+          )}
+
+          {/* Shared Table Link */}
+          {template.sharedTableUrl && (
+            <a
+              href={template.sharedTableUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 rounded-lg border p-4 transition-colors"
+              style={{ borderColor: 'rgba(255,255,255,0.06)', backgroundColor: 'rgba(0,0,0,0.15)' }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderColor = `${tier.color}33`
+                e.currentTarget.style.backgroundColor = tier.glowColor
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderColor = 'rgba(255,255,255,0.06)'
+                e.currentTarget.style.backgroundColor = 'rgba(0,0,0,0.15)'
+              }}
+            >
+              <Table2 className="h-4 w-4 flex-shrink-0" style={{ color: tier.color }} />
+              <div className="flex-1">
+                <p className="text-sm font-medium" style={{ color: '#E8E6E3' }}>View Shared Clay Table</p>
+                <p className="text-xs" style={{ color: 'rgba(232, 230, 227, 0.35)' }}>
+                  Open this template in Clay to see the live table structure
+                </p>
+              </div>
+              <ExternalLink className="h-3.5 w-3.5 flex-shrink-0" style={{ color: 'rgba(232, 230, 227, 0.3)' }} />
+            </a>
+          )}
 
           {/* Loom + SOP row */}
           <div className="grid gap-4 sm:grid-cols-2">
