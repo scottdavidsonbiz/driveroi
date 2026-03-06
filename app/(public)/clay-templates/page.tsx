@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Image from 'next/image'
-import { ChevronDown, ChevronUp, Play, FileText, ExternalLink, ArrowRight, Copy, Check, Table2 } from 'lucide-react'
+import { ChevronDown, ChevronUp, Play, FileText, ExternalLink, ArrowRight, Copy, Check, Table2, Download, Terminal } from 'lucide-react'
 
 type Tier = 'crawl' | 'walk' | 'run'
 
@@ -576,6 +576,258 @@ function TemplateCard({ template, index }: { template: Template; index: number }
   )
 }
 
+const CLAYGENT_SKILL_CONTENT = `# Claygent Prompt Writer
+
+## Metadata
+- **Name:** claygent-prompt-writer
+- **Description:** Creates optimized Claygent prompts for Clay.com workflows. Handles research, categorization, data extraction, and qualification use cases with JSON output.
+- **Invocation:** /claygent or "write a claygent prompt"
+
+---
+
+## Instructions
+
+When the user asks you to write a Claygent prompt, follow this process:
+
+### Step 1: Gather Requirements
+
+Ask the user for:
+1. **Use case:** What are you trying to accomplish? (research, categorization, qualification, data extraction)
+2. **Data source:** What input will Claygent receive? (URL, company name, LinkedIn profile, etc.)
+3. **Desired outputs:** What specific fields/information do you need returned?
+4. **Qualifying/disqualifying criteria:** (if applicable) What makes something a yes vs. no?
+5. **Examples:** Can you share 2-3 example inputs and what the ideal output would look like?
+
+If the user provides most of this upfront, skip redundant questions.
+
+---
+
+### Step 2: Write the Prompt Using This Structure
+
+All Claygent prompts should follow this template:
+
+\\\`\\\`\\\`
+## CONTEXT
+[Explain what this prompt does and why - helps the AI understand the goal]
+
+## TASK
+[Clear, specific instructions on what the AI should do]
+
+## INPUT
+[Describe what data the AI will receive - use {{column_name}} syntax for Clay variables]
+
+## QUALIFYING CRITERIA (if applicable)
+**QUALIFIES:**
+- [Criterion 1]
+- [Criterion 2]
+
+**DOES NOT QUALIFY:**
+- [Criterion 1]
+- [Criterion 2]
+
+## OUTPUT FORMAT
+Return your response as JSON with the following structure:
+
+{
+  "field_1": "description of what goes here",
+  "field_2": "description of what goes here",
+  "field_3": "description of what goes here"
+}
+
+## INSTRUCTIONS
+1. [Step 1]
+2. [Step 2]
+3. [Step 3]
+4. If you cannot find the information, return null for that field - do not guess.
+
+## EXAMPLES
+
+**Input:** [Example input 1]
+**Output:**
+{
+  "field_1": "example value",
+  "field_2": "example value",
+  "field_3": "example value"
+}
+\\\`\\\`\\\`
+
+---
+
+### Step 3: Apply Claygent Best Practices
+
+**Clarity & Structure:**
+- Use clear section headers (##) to organize the prompt
+- Number your instructions for step-by-step tasks
+- Be explicit about output format - Claygent performs better with structure
+
+**JSON Output:**
+- Always specify the exact JSON schema you want returned
+- Use \\\`null\\\` for missing values, not empty strings or "N/A"
+- Keep field names lowercase with underscores (snake_case)
+- Include 2-3 examples showing the expected JSON output
+
+**Avoiding Hallucination:**
+- Tell Claygent to return \\\`null\\\` if information cannot be found
+- Ask for source URLs when possible to verify accuracy
+- For boolean/qualification prompts, require explicit criteria
+
+**Few-Shot Prompting:**
+- Always include 2-3 examples covering different scenarios
+- Include at least one "negative" example (doesn't qualify, info not found)
+- Keep example JSON clean - no markdown formatting inside the JSON
+
+**Model-Specific Tips:**
+- For data extraction and formatting: Neon model works well
+- For complex reasoning and research: GPT-4 or Claude works better
+
+**Source Specification:**
+- If the data should come from a specific source (Google, LinkedIn, the provided URL), say so explicitly
+- For URL-based research, tell it to extract from "the page at {{url}}" not to search the web
+
+---
+
+### Step 4: Deliver the Prompt
+
+Provide:
+1. The complete Claygent prompt (in a code block for easy copy/paste)
+2. Recommended AI model (Neon, GPT-4, or Claude)
+3. Expected output fields (so they know what columns to create in Clay)
+4. Any notes on edge cases or limitations
+
+---
+
+## Common Use Case Templates
+
+### 1. URL Research / Data Extraction
+- Extract specific fields from a webpage
+- Works best with: Neon model
+- Key: Specify exactly which page element contains the data
+
+### 2. Categorization / Qualification
+- Determine if something meets criteria (yes/no)
+- Works best with: GPT-4 or Claude (needs reasoning)
+- Key: Explicit qualifying/disqualifying criteria with examples
+
+### 3. Web Research (no URL provided)
+- Find information about a company/person via search
+- Works best with: GPT-4 or Claude
+- Key: Specify which sources to prioritize (LinkedIn, company website, news)
+
+### 4. Multi-Step Research
+- Chain multiple research tasks together
+- Works best with: GPT-4 or Claude
+- Key: Number your steps clearly, specify what to do if step fails
+`
+
+function ClaygentSkillSection() {
+  const [copied, setCopied] = useState(false)
+  const [expanded, setExpanded] = useState(false)
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(CLAYGENT_SKILL_CONTENT)
+    setCopied(true)
+    setTimeout(() => setCopied(false), 3000)
+  }
+
+  return (
+    <div className="mt-20 mb-0">
+      <div className="mb-6">
+        <div className="flex items-center gap-2 mb-2">
+          <Terminal className="h-4 w-4" style={{ color: '#C084FC' }} />
+          <span
+            className="text-xs font-semibold uppercase tracking-widest"
+            style={{ color: '#C084FC', fontFamily: "'JetBrains Mono', monospace", fontSize: '0.65rem' }}
+          >
+            Bonus
+          </span>
+        </div>
+        <h2
+          className="text-2xl font-bold mb-2"
+          style={{ color: '#E8E6E3', letterSpacing: '-0.02em' }}
+        >
+          Claygent Prompt Writer
+          <span className="font-light" style={{ color: 'rgba(232, 230, 227, 0.45)' }}>
+            {' '}— AI Skill
+          </span>
+        </h2>
+        <p className="text-sm leading-relaxed max-w-lg" style={{ color: 'rgba(232, 230, 227, 0.45)' }}>
+          Drop this file into your Claude Code <code className="text-xs px-1.5 py-0.5 rounded" style={{ backgroundColor: 'rgba(255,255,255,0.06)', fontFamily: "'JetBrains Mono', monospace" }}>.claude/skills/claygent-prompt-writer/</code> directory.
+          Say <code className="text-xs px-1.5 py-0.5 rounded" style={{ backgroundColor: 'rgba(255,255,255,0.06)', fontFamily: "'JetBrains Mono', monospace" }}>/claygent</code> and it writes production-ready Claygent prompts with structured JSON output, few-shot examples, and best practices baked in.
+        </p>
+      </div>
+
+      <div
+        className="rounded-lg border overflow-hidden"
+        style={{ borderColor: 'rgba(192, 132, 252, 0.2)', backgroundColor: 'rgba(192, 132, 252, 0.03)' }}
+      >
+        <div className="flex items-center justify-between px-5 py-3 border-b" style={{ borderColor: 'rgba(255,255,255,0.06)' }}>
+          <span
+            className="text-xs font-medium"
+            style={{ color: 'rgba(232, 230, 227, 0.4)', fontFamily: "'JetBrains Mono', monospace", fontSize: '0.7rem' }}
+          >
+            SKILL.md
+          </span>
+          <div className="flex items-center gap-2">
+            <button
+              onClick={() => setExpanded(!expanded)}
+              className="inline-flex items-center gap-1.5 rounded px-2.5 py-1 text-xs font-medium transition-colors"
+              style={{
+                backgroundColor: 'rgba(255,255,255,0.06)',
+                color: 'rgba(232, 230, 227, 0.5)',
+              }}
+            >
+              {expanded ? <ChevronUp className="h-3 w-3" /> : <ChevronDown className="h-3 w-3" />}
+              {expanded ? 'Collapse' : 'Preview'}
+            </button>
+            <button
+              onClick={handleCopy}
+              className="inline-flex items-center gap-1.5 rounded px-2.5 py-1 text-xs font-medium transition-colors"
+              style={{
+                backgroundColor: copied ? 'rgba(52, 211, 153, 0.15)' : 'rgba(192, 132, 252, 0.15)',
+                color: copied ? '#34D399' : '#C084FC',
+              }}
+            >
+              {copied ? <Check className="h-3 w-3" /> : <Download className="h-3 w-3" />}
+              {copied ? 'Copied to clipboard' : 'Copy SKILL.md'}
+            </button>
+          </div>
+        </div>
+
+        {expanded && (
+          <div
+            className="px-5 py-4 max-h-96 overflow-y-auto"
+            style={{
+              fontFamily: "'JetBrains Mono', monospace",
+              fontSize: '0.7rem',
+              lineHeight: 1.7,
+              color: 'rgba(232, 230, 227, 0.5)',
+              whiteSpace: 'pre-wrap',
+            }}
+          >
+            {CLAYGENT_SKILL_CONTENT}
+          </div>
+        )}
+
+        {!expanded && (
+          <div className="px-5 py-4">
+            <p className="text-xs" style={{ color: 'rgba(232, 230, 227, 0.3)', fontFamily: "'JetBrains Mono', monospace", fontSize: '0.65rem' }}>
+              Covers 4 use case templates: URL Research, Categorization, Web Research, Multi-Step Research.
+              Includes prompt structure, JSON output best practices, model recommendations, and few-shot examples.
+            </p>
+          </div>
+        )}
+      </div>
+
+      <div className="mt-4">
+        <p className="text-xs leading-relaxed" style={{ color: 'rgba(232, 230, 227, 0.25)' }}>
+          <strong style={{ color: 'rgba(232, 230, 227, 0.35)' }}>Setup:</strong>{' '}
+          Create <code className="px-1 py-0.5 rounded" style={{ backgroundColor: 'rgba(255,255,255,0.04)', fontFamily: "'JetBrains Mono', monospace" }}>.claude/skills/claygent-prompt-writer/SKILL.md</code> in your project, paste the contents, and invoke with <code className="px-1 py-0.5 rounded" style={{ backgroundColor: 'rgba(255,255,255,0.04)', fontFamily: "'JetBrains Mono', monospace" }}>/claygent</code> in Claude Code.
+        </p>
+      </div>
+    </div>
+  )
+}
+
 export default function ClayTemplatesPage() {
   const [activeCategory, setActiveCategory] = useState<UseCase>('All')
 
@@ -837,6 +1089,9 @@ export default function ClayTemplatesPage() {
             </div>
           )}
         </div>
+
+        {/* Bonus: Claygent Prompt Writer Skill */}
+        <ClaygentSkillSection />
 
         {/* Bottom CTA */}
         <div
