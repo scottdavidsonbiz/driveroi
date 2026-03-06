@@ -6,6 +6,18 @@ import { ChevronDown, ChevronUp, Play, FileText, ExternalLink, ArrowRight, Copy,
 
 type Tier = 'crawl' | 'walk' | 'run'
 
+const USE_CASE_CATEGORIES = [
+  'All',
+  'Signals & Intent',
+  'CRM Enrichment',
+  'Inbound Enrichment & Routing',
+  'ABM',
+  'AI Outbound',
+  'Account Research & Scoring',
+] as const
+
+type UseCase = (typeof USE_CASE_CATEGORIES)[number]
+
 interface ClayColumn {
   name: string
   type: string
@@ -43,28 +55,28 @@ const TIER_CONFIG: Record<Tier, {
     number: '01',
     color: '#34D399',
     glowColor: 'rgba(52, 211, 153, 0.15)',
-    description: 'Fix what\'s broken. Clean what\'s dirty. Live in days, not weeks.',
+    description: 'One signal, one table, one destination. Detect + enrich.',
   },
   walk: {
     label: 'Walk',
     number: '02',
     color: '#FBBF24',
     glowColor: 'rgba(251, 191, 36, 0.15)',
-    description: 'Signal-based workflows. Enrich, score, and route automatically.',
+    description: 'Add scoring, conditional logic, and routing. Multiple outputs.',
   },
   run: {
     label: 'Run',
     number: '03',
     color: '#F97316',
     glowColor: 'rgba(249, 115, 22, 0.15)',
-    description: 'Multi-table orchestration. ABM, multi-channel, time-based motions.',
+    description: 'Multi-table orchestration with time-based triggers and multi-channel output.',
   },
 }
 
 const TEMPLATES: Template[] = [
   {
     id: 'job-change-signal',
-    tier: 'walk',
+    tier: 'crawl',
     title: 'Job Change Signal Detection',
     useCase: 'Signals & Intent',
     problem: 'Someone at your target persona just changed jobs. ZoomInfo or your CRM might catch it days later — if at all. By then, the window to reach them while they\'re evaluating new tools is closing.',
@@ -565,6 +577,12 @@ function TemplateCard({ template, index }: { template: Template; index: number }
 }
 
 export default function ClayTemplatesPage() {
+  const [activeCategory, setActiveCategory] = useState<UseCase>('All')
+
+  const filteredTemplates = activeCategory === 'All'
+    ? TEMPLATES
+    : TEMPLATES.filter((t) => t.useCase === activeCategory)
+
   return (
     <>
       <style jsx global>{`
@@ -746,10 +764,47 @@ export default function ClayTemplatesPage() {
         {/* Divider */}
         <div className="mb-12" style={{ height: '1px', background: 'linear-gradient(to right, transparent, rgba(255,255,255,0.08), transparent)' }} />
 
+        {/* Category Filters */}
+        <div className="mb-8 flex flex-wrap gap-2">
+          {USE_CASE_CATEGORIES.map((cat) => {
+            const isActive = activeCategory === cat
+            const count = cat === 'All' ? TEMPLATES.length : TEMPLATES.filter((t) => t.useCase === cat).length
+            return (
+              <button
+                key={cat}
+                onClick={() => setActiveCategory(cat)}
+                className="inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-xs font-medium transition-all duration-200"
+                style={{
+                  fontFamily: "'JetBrains Mono', monospace",
+                  fontSize: '0.65rem',
+                  backgroundColor: isActive ? 'rgba(255,255,255,0.1)' : 'rgba(255,255,255,0.03)',
+                  color: isActive ? '#E8E6E3' : 'rgba(232, 230, 227, 0.35)',
+                  borderWidth: '1px',
+                  borderStyle: 'solid',
+                  borderColor: isActive ? 'rgba(255,255,255,0.15)' : 'rgba(255,255,255,0.06)',
+                }}
+              >
+                {cat}
+                {count > 0 && cat !== 'All' && (
+                  <span
+                    className="inline-flex h-4 w-4 items-center justify-center rounded-full text-[0.55rem]"
+                    style={{
+                      backgroundColor: isActive ? 'rgba(255,255,255,0.12)' : 'rgba(255,255,255,0.06)',
+                      color: isActive ? '#E8E6E3' : 'rgba(232, 230, 227, 0.25)',
+                    }}
+                  >
+                    {count}
+                  </span>
+                )}
+              </button>
+            )
+          })}
+        </div>
+
         {/* Templates */}
         <div className="space-y-3">
-          {TEMPLATES.length > 0 ? (
-            TEMPLATES.map((template, i) => (
+          {filteredTemplates.length > 0 ? (
+            filteredTemplates.map((template, i) => (
               <TemplateCard key={template.id} template={template} index={i} />
             ))
           ) : (
@@ -766,7 +821,7 @@ export default function ClayTemplatesPage() {
                   color: 'rgba(232, 230, 227, 0.25)',
                 }}
               >
-                Templates launching soon
+                {activeCategory === 'All' ? 'Templates launching soon' : `${activeCategory} templates coming soon`}
               </p>
               <p
                 className="mx-auto mt-3 max-w-md text-xs leading-relaxed"
@@ -774,8 +829,10 @@ export default function ClayTemplatesPage() {
                   color: 'rgba(232, 230, 227, 0.2)',
                 }}
               >
-                Clay table blueprints for Sales, Marketing, and Customer Success &mdash;
-                each with a video walkthrough and step-by-step SOP.
+                {activeCategory === 'All'
+                  ? <>Clay table blueprints with video walkthroughs and step-by-step SOPs.</>
+                  : <>More templates for this category are on the way. Check back soon.</>
+                }
               </p>
             </div>
           )}
