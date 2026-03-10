@@ -10,7 +10,8 @@ import {
   Settings,
   Database,
   Activity,
-  Presentation
+  Presentation,
+  PenSquare
 } from 'lucide-react'
 
 const navigation = [
@@ -20,6 +21,7 @@ const navigation = [
   { name: 'Deliverability', href: '/deliverability', icon: Activity },
   { name: 'Carousel', href: '/carousel', icon: Presentation },
   { name: 'SOPs', href: '/sops', icon: FileText },
+  { name: 'Content', href: '/content', icon: PenSquare },
 ]
 
 export function Sidebar() {

@@ -27,9 +27,33 @@ const pageTitles: Record<string, { title: string; description?: string; action?:
     title: 'Domain Deliverability',
     description: 'Monitor sending domain health and bounce rates'
   },
+  '/carousel': {
+    title: 'Carousel',
+    description: 'Generate branded LinkedIn carousel posts'
+  },
   '/sops': {
     title: 'SOPs',
     description: 'Standard operating procedures and playbooks'
+  },
+  '/content': {
+    title: 'Content',
+    description: 'LinkedIn content planning and analytics',
+  },
+  '/content/ideas': {
+    title: 'Ideas',
+    description: 'Content idea backlog',
+  },
+  '/content/themes': {
+    title: 'Themes',
+    description: 'Weekly content themes',
+  },
+  '/content/performance': {
+    title: 'Performance',
+    description: 'LinkedIn post analytics',
+  },
+  '/content/engagers': {
+    title: 'Engagers',
+    description: 'ICP engagement from LinkedIn posts',
   },
   '/settings': {
     title: 'Settings',
