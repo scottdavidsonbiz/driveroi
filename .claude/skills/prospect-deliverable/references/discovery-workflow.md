@@ -1,98 +1,166 @@
 # Discovery Workflow
 
-Step-by-step guide for finding ICP accounts using DiscoLike and web search.
+Step-by-step guide for finding ICP accounts using DiscoLike, Exa, and web search.
 
 ## Step 1: Research the Prospect
 
 Before running discovery, understand the prospect's product and ICP:
 
-1. Visit their website + case studies page
-2. Identify: what they sell, who buys it, what size companies, what verticals
-3. Note any existing customers (exclude from the list)
-4. Check for recent news (funding, hiring BDRs = strong buying signal)
+1. `extract-website-text` on their domain (DiscoLike cached content)
+2. `business-profile` for firmographics (employees, industry, location)
+3. Web search for case studies, customers, recent funding/hiring news
+4. Identify: what they sell, who buys it, what size companies, what verticals
+5. Note existing customers (exclude from list)
 
-## Step 2: DiscoLike Discovery
+## Step 2: Account Discovery
+
+### DiscoLike Path (B2B, services, logistics, SaaS)
 
 Run `plan-discovery-query` first with a natural language description of the ICP.
 
 Then run `discover-similar-companies` with:
 - `icp_text`: cleaned description from the plan
-- `phrase_match`: 3-5 key terms (e.g., "tennis", "pickleball", "racquet")
+- `domain`: 3-5 seed domains of known good-fit companies
 - `category`: relevant industry categories
 - `country`: ["US"] (or as appropriate)
 - `employee_range`: match the prospect's typical customer size
 - `negate_domain`: the prospect itself + known competitors/customers
+- `negate_category`: exclude SOFTWARE, SAAS, MEDIA if looking for operators/end users
 - `fields`: ["domain", "name", "address", "social_urls", "employees", "similarity"]
-- `max_records`: 100
+- `max_records`: 60-100
 
-Run a second query with `offset=50` or `offset=100` for more results.
+Run 2+ queries with different angles to cover segments.
 
-Run a second discovery with different `icp_text` angle (e.g., "private country club with tennis" vs "independent pickleball facility") to catch different segments.
+### Exa Path (DTC, ecommerce, consumer brands)
 
-## Step 3: Web Search for Additional Accounts
+DiscoLike's database skews B2B and returns spam/affiliate sites for consumer verticals. Use Exa instead.
 
-DiscoLike won't find everything. Supplement with web searches:
-- "[vertical] clubs [region] list 2025 2026"
-- "independent [vertical] facilities United States"
+**`findSimilar`** — best when you have a seed company:
+```bash
+curl -X POST "https://api.exa.ai/findSimilar" \
+  -H "x-api-key: $EXA_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "url": "https://seed-company.com",
+    "numResults": 30,
+    "category": "company",
+    "excludeDomains": ["shopify.com","amazon.com","linkedin.com","instagram.com","facebook.com","twitter.com","tiktok.com","youtube.com","reddit.com","medium.com"],
+    "contents": {"text": {"maxCharacters": 100}}
+  }'
+```
+
+Run 3-4 `findSimilar` calls with different seed URLs across verticals (e.g., one home goods brand, one apparel brand, one beauty brand).
+
+**`search`** — best for conceptual/funding-based queries:
+```bash
+curl -X POST "https://api.exa.ai/search" \
+  -H "x-api-key: $EXA_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "query": "Series A funded direct-to-consumer brand selling...",
+    "type": "auto",
+    "category": "company",
+    "numResults": 30,
+    "contents": {"text": {"maxCharacters": 100}}
+  }'
+```
+
+### Web Search Supplement
+
+Neither tool finds everything. Supplement with web searches:
+- "[vertical] companies [region] list 2025 2026"
+- "top [vertical] brands US mid-market"
 - Industry association directories
 
-## Step 4: Filter Results
+## Step 3: Filter Results
 
 Remove from the list:
 - The prospect itself
-- Known customers of the prospect (check case studies, check if their domain appears in social_urls of results)
-- Software/SaaS companies (competitors, not customers)
-- Parks/recreation districts (government, not private clubs)
-- HOAs and residential communities
+- Known customers of the prospect
+- Competitors to the prospect (software/SaaS companies if prospect is SaaS)
+- Media, publications, review sites, affiliate sites
+- Government entities
 - Non-US results
-- Industry associations and nonprofits (unless they operate facilities)
-- Large enterprise chains (201+ employees) unless specifically relevant
+- Companies too small (under 10 employees) unless specifically relevant
+- Marketplace/platform companies (Shopify stores, Amazon sellers)
 
-## Step 5: Output CSV for Clay
+## Step 4: Output Account CSV
 
 Save results to `data/{prospect-slug}-icp-list.csv` with columns:
 ```
-domain,club_name,city,state,linkedin_company_url
+domain,company_name,city,state,linkedin_company_url
 ```
 
-Extract LinkedIn company URLs from the `social_urls` field (look for linkedin.com/company/ URLs).
+Extract LinkedIn company URLs from DiscoLike `social_urls` field or construct from known company names.
 
-## Step 6: Clay Enrichment (Manual)
+**Minimum: 25 accounts.** If under 25 after filtering, run additional discovery queries or broaden criteria.
 
-User imports the CSV into Clay and runs their contact enrichment table.
-Clay finds decision-maker contacts with LinkedIn profiles and emails.
-User exports the enriched CSV and provides it back.
+## Step 5: Contact Enrichment
 
-Expected Clay export columns:
+### Primary: DiscoLike `search-contacts` (MCP)
+
+Search contacts in batches of up to 10 domains:
 ```
-Club Name, Domain, First Name, Last Name, Full Name, Job Title,
-Location, Company Domain, LinkedIn Profile, Valid Email
+filters:
+  domain: [batch of domains]
+  title: [keywords matching prospect's buyer persona]
+  seniority: ["executive", "vp", "director"]
+  has_email: true
+  results_by_company: 1
+fields: ["name", "title", "domain", "email", "email_validated", "social_urls", "company_name"]
 ```
+
+**Title keywords by prospect type:**
+- SEO/marketing tool → "marketing", "growth", "seo", "digital", "brand"
+- Sales tool → "sales", "revenue", "business development"
+- Operations tool → "operations", "supply chain", "logistics"
+- HR/people tool → "people", "hr", "talent"
+- Finance tool → "finance", "accounting", "cfo"
+- General → "marketing", "growth", "ceo"
+
+### Fallback: Anymailfinder
+
+For domains where DiscoLike found no contact:
+```typescript
+import { findDecisionMaker } from '../lib/anymailfinder'
+// Valid categories: ceo, engineering, finance, hr, it, logistics, marketing, operations, buyer, sales
+const result = await findDecisionMaker(domain, ['marketing', 'ceo'])
+```
+
+### Last Resort: Manual
+
+If both tools miss a domain:
+- Web search for "[company] CEO" or "[company] Head of Marketing"
+- Check LinkedIn company page for leadership
+- Infer email from known company pattern (e.g., first@domain.com)
+
+## Step 6: Assemble Enriched CSV
+
+Output format for `generate-deliverable.py`:
+```
+Club Name,Domain,First Name,Last Name,Full Name,Job Title,Location,LinkedIn Profile,Valid Email
+```
+
+Parse full names into first/last. Build location from city + state. Extract LinkedIn `/in/` URLs from social_urls arrays.
 
 ## Step 7: Generate Deliverable
 
-Run the generation script:
 ```bash
 python .claude/skills/prospect-deliverable/scripts/generate-deliverable.py \
-    --csv path/to/clay-export.csv \
+    --csv data/{slug}-enriched.csv \
     --prospect "ProspectName" \
     --cal-link "https://cal.com/driveroi/30min" \
-    --output public/leads/prospect-slug.html
+    --output public/leads/{slug}.html
 ```
 
-The script automatically:
-- Parses the Clay CSV
-- Removes non-US contacts
-- Detects email patterns per company
-- Infers emails for contacts without them
-- Generates the branded HTML page
+Review the output. Ensure CTA button appears at top of page (add manually if the generator doesn't include it — edit the HTML to add `<a href="https://cal.com/driveroi/30min" class="cta-button">Book a Call to Build This Out</a>` inside the `.header` div).
 
 ## Step 8: Deploy
 
 ```bash
-git add public/leads/prospect-slug.html
+git add public/leads/{slug}.html
 git commit -m "Add [Prospect] ICP deliverable page"
 git push
 ```
 
-Live at: `driveroi.vercel.app/leads/prospect-slug.html`
+Live at: `driveroi.vercel.app/leads/{slug}.html`
