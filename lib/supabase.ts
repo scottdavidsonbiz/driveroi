@@ -108,3 +108,68 @@ export interface AuditSubmission {
   score_tier: string
   created_at: string
 }
+
+export interface ContentIdea {
+  id: string
+  created_by: string
+  title: string
+  notes: string | null
+  status: 'idea' | 'planned' | 'in_progress' | 'published' | 'archived'
+  priority: number
+  theme_tag: string | null
+  created_at: string
+  updated_at: string
+}
+
+export interface ContentTheme {
+  id: string
+  name: string
+  description: string | null
+  start_date: string | null
+  end_date: string | null
+  status: 'upcoming' | 'active' | 'completed'
+  created_at: string
+}
+
+export interface ContentPost {
+  id: string
+  theme_id: string | null
+  idea_id: string | null
+  author: string
+  content_type: 'thought_leadership' | 'tactical'
+  funnel_stage: 'top' | 'middle' | 'bottom' | null
+  post_text: string | null
+  linkedin_url: string | null
+  status: 'draft' | 'ready' | 'published'
+  published_at: string | null
+  created_at: string
+}
+
+export interface LinkedInMetric {
+  id: string
+  post_id: string | null
+  author: string
+  post_text: string | null
+  published_at: string | null
+  impressions: number
+  reactions: number
+  comments: number
+  reposts: number
+  clicks: number
+  engagement_rate: number
+  new_followers: number
+  imported_at: string
+}
+
+export interface PostEngager {
+  id: string
+  post_id: string
+  linkedin_url: string | null
+  name: string | null
+  title: string | null
+  company: string | null
+  domain: string | null
+  email: string | null
+  enriched_at: string | null
+  created_at: string
+}
