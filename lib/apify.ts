@@ -7,8 +7,7 @@ function getApiKey(): string {
 }
 
 // LinkedIn Post Likers/Commenters actor
-// Replace ACTOR_ID with the actual actor ID from your Apify account
-const LINKEDIN_POST_SCRAPER_ACTOR = 'curious_coder/linkedin-post-likers-and-commenters'
+const LINKEDIN_POST_SCRAPER_ACTOR = 'd5ib8ypLiKOuB8y8Q'
 
 export async function scrapePostEngagers(postUrl: string, webhookUrl: string) {
   const res = await fetch(
