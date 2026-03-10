@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ICP Target List — Prepared for FancyAI</title>
+<style>
+  :root {
+    --purple: #8B7FD4;
+    --purple-light: #f0eef9;
+    --purple-dark: #6b5fb4;
+    --text: #1a1a1a;
+    --text-secondary: #6b7280;
+    --border: #e5e7eb;
+    --bg: #ffffff;
+    --bg-alt: #f9fafb;
+    --success: #059669;
+    --amber: #d97706;
+    --amber-bg: #fffbeb;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: var(--text); background: var(--bg-alt); line-height: 1.6; -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 960px; margin: 0 auto; background: var(--bg); min-height: 100vh; }
+  .header { padding: 40px 48px 32px; border-bottom: 1px solid var(--border); }
+  .logo { font-size: 28px; font-weight: 900; letter-spacing: -0.5px; color: var(--text); display: inline-block; margin-bottom: 24px; }
+  .logo span { position: relative; }
+  .logo span::after { content: ''; position: absolute; bottom: -2px; left: 0; right: 0; height: 4px; background: var(--purple); border-radius: 2px; }
+  .header h1 { font-size: 22px; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+  .header .subtitle { font-size: 15px; color: var(--text-secondary); }
+  .stats { display: flex; gap: 0; padding: 0 48px; border-bottom: 1px solid var(--border); }
+  .stat { flex: 1; padding: 20px 0; text-align: center; border-right: 1px solid var(--border); }
+  .stat:last-child { border-right: none; }
+  .stat-value { font-size: 28px; font-weight: 800; color: var(--text); }
+  .stat-label { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-secondary); margin-top: 2px; }
+  .stat-sublabel { font-size: 11px; color: var(--text-secondary); margin-top: 2px; }
+  .intro { padding: 28px 48px; border-bottom: 1px solid var(--border); text-align: center; }
+  .intro p { font-size: 15px; color: var(--text-secondary); max-width: 680px; margin: 0 auto; line-height: 1.7; }
+  .legend { padding: 16px 48px; border-bottom: 1px solid var(--border); display: flex; gap: 20px; align-items: center; }
+  .legend-item { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--text-secondary); }
+  .legend-dot { width: 10px; height: 10px; border-radius: 3px; }
+  .legend-dot-verified { background: #ecfdf5; border: 1px solid var(--success); }
+  .legend-dot-inferred { background: var(--amber-bg); border: 1px solid var(--amber); }
+  .table-section { padding: 0 48px; }
+  .company-group { border-bottom: 1px solid var(--border); }
+  .company-header { display: flex; align-items: baseline; gap: 12px; padding: 20px 0 8px; }
+  .company-name { font-size: 16px; font-weight: 700; color: var(--text); }
+  .company-location { font-size: 13px; color: var(--text-secondary); }
+  .company-domain { font-size: 13px; color: var(--purple); margin-left: auto; text-decoration: none; }
+  .company-domain:hover { text-decoration: underline; }
+  .contacts-table { width: 100%; border-collapse: collapse; margin-bottom: 16px; }
+  .contacts-table th { text-align: left; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-secondary); padding: 6px 12px 6px 0; border-bottom: 1px solid var(--border); }
+  .contacts-table td { padding: 10px 12px 10px 0; font-size: 14px; vertical-align: middle; }
+  .contacts-table tr:not(:last-child) td { border-bottom: 1px solid #f3f4f6; }
+  .contact-name { font-weight: 600; color: var(--text); }
+  .contact-title { color: var(--text-secondary); font-size: 13px; }
+  .contact-location { color: var(--text-secondary); font-size: 13px; }
+  .badge { display: inline-flex; align-items: center; gap: 4px; font-size: 12px; padding: 3px 8px; border-radius: 4px; font-weight: 500; text-decoration: none; }
+  .badge-linkedin { background: #f0f0f0; color: #0077b5; }
+  .badge-linkedin:hover { background: #e0e0e0; }
+  .badge-email { background: #ecfdf5; color: var(--success); }
+  .badge-email a { color: var(--success); text-decoration: none; }
+  .badge-email a:hover { text-decoration: underline; }
+  .badge-inferred { background: var(--amber-bg); color: var(--amber); }
+  .badge-inferred a { color: var(--amber); text-decoration: none; }
+  .badge-inferred a:hover { text-decoration: underline; }
+  .badges { display: flex; gap: 6px; flex-wrap: wrap; }
+  .cta-section { padding: 48px; text-align: center; background: var(--purple-light); }
+  .cta-section h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 8px; }
+  .cta-section p { font-size: 15px; color: var(--text-secondary); max-width: 520px; margin: 0 auto 24px; line-height: 1.7; }
+  .cta-button { display: inline-block; background: var(--purple); color: white; font-size: 15px; font-weight: 600; padding: 12px 32px; border-radius: 8px; text-decoration: none; transition: background 0.2s; }
+  .cta-button:hover { background: var(--purple-dark); }
+  .footer { padding: 24px 48px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+  .footer-logo { font-size: 16px; font-weight: 800; color: var(--text); }
+  .footer-logo span { position: relative; }
+  .footer-logo span::after { content: ''; position: absolute; bottom: -1px; left: 0; right: 0; height: 3px; background: var(--purple); border-radius: 2px; }
+  .footer-text { font-size: 13px; color: var(--text-secondary); }
+  .footer-text a { color: var(--purple); text-decoration: none; }
+  @media (max-width: 640px) {
+    .header, .intro, .table-section, .cta-section, .footer, .legend { padding-left: 24px; padding-right: 24px; }
+    .stats { padding: 0 24px; flex-wrap: wrap; }
+    .stat { min-width: 50%; }
+    .company-header { flex-wrap: wrap; }
+    .company-domain { margin-left: 0; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="logo">Drive<span>ROI</span></div>
+    <h1>ICP Target List</h1>
+    <div class="subtitle">Prepared for FancyAI &mdash; March 2026</div>
+  </div>
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-value">25</div>
+      <div class="stat-label">Accounts</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">25</div>
+      <div class="stat-label">Decision Makers</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">25</div>
+      <div class="stat-label">Emails</div>
+      
+    </div>
+    <div class="stat">
+      <div class="stat-value">5</div>
+      <div class="stat-label">States</div>
+    </div>
+  </div>
+  <div class="intro">
+    <p>These accounts were identified using firmographic data, technology signals, and semantic matching against FancyAI's ideal customer profile. Key contacts were selected based on decision-making authority for operations and technology purchases.</p>
+  </div>
+  
+  <div class="table-section">
+
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Aurate New York</div>
+        <div class="company-location">New York, NY</div>
+        <a class="company-domain" href="https://auratenewyork.com" target="_blank">auratenewyork.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Rachelle Balagtas</td>
+            <td class="contact-title">Senior Brand and Partnerships Manager</td>
+            <td class="contact-location">New York, NY</td>
+            <td class="badges"><span class="badge badge-email"><a href="mailto:rachelle@auratenewyork.com">rachelle@auratenewyork.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Burrow</div>
+        <div class="company-location">New York, NY</div>
+        <a class="company-domain" href="https://burrow.com" target="_blank">burrow.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Mark Simmons</td>
+            <td class="contact-title">Executive Vice President, Marketing</td>
+            <td class="contact-location">New York, NY</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/mcsimmons" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:mark.simmons@burrow.com">mark.simmons@burrow.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Caraway Home</div>
+        <div class="company-location">New York, NY</div>
+        <a class="company-domain" href="https://carawayhome.com" target="_blank">carawayhome.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Kyle Turadek</td>
+            <td class="contact-title">Senior Director, Growth &amp; Ecommerce</td>
+            <td class="contact-location">New York, NY</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/kyle-turadek" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:kyle@carawayhome.com">kyle@carawayhome.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Credo Beauty</div>
+        <div class="company-location">San Francisco, CA</div>
+        <a class="company-domain" href="https://credobeauty.com" target="_blank">credobeauty.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Lydia Kandel</td>
+            <td class="contact-title">VP of Marketing and Digital</td>
+            <td class="contact-location">San Francisco, CA</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/lydia-kandel-446062a" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:lydia@credobeauty.com">lydia@credobeauty.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Curology</div>
+        <div class="company-location">San Diego, CA</div>
+        <a class="company-domain" href="https://curology.com" target="_blank">curology.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Nicole Landberg</td>
+            <td class="contact-title">Head of Growth</td>
+            <td class="contact-location">San Diego, CA</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/nicolelandberg" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:nicole.landberg@curology.com">nicole.landberg@curology.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">DIBS Beauty</div>
+        <div class="company-location">Dallas, TX</div>
+        <a class="company-domain" href="https://dibsbeauty.com" target="_blank">dibsbeauty.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Abby Perlman</td>
+            <td class="contact-title">Vice President of Brand Marketing</td>
+            <td class="contact-location">Dallas, TX</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/abbyperlman" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:abby@dibsbeauty.com">abby@dibsbeauty.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Drunk Elephant</div>
+        <div class="company-location">Houston, TX</div>
+        <a class="company-domain" href="https://drunkelephant.com" target="_blank">drunkelephant.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Erin Bushey Manahan</td>
+            <td class="contact-title">Global Brand Communications</td>
+            <td class="contact-location">Houston, TX</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/erin-bushey-manahan" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:emanahan@drunkelephant.com">emanahan@drunkelephant.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Halfdays</div>
+        <div class="company-location">Denver, CO</div>
+        <a class="company-domain" href="https://halfdays.com" target="_blank">halfdays.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Alicia Moore</td>
+            <td class="contact-title">VP of Marketing</td>
+            <td class="contact-location">Denver, CO</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/aliciagentilemoore" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:alicia@halfdays.com">alicia@halfdays.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Happy Head</div>
+        <div class="company-location">San Diego, CA</div>
+        <a class="company-domain" href="https://happyhead.com" target="_blank">happyhead.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Nate Jeo</td>
+            <td class="contact-title">VP Growth Marketing</td>
+            <td class="contact-location">San Diego, CA</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/nate-jeo" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:nate@happyhead.com">nate@happyhead.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">HexClad Cookware</div>
+        <div class="company-location">Los Angeles, CA</div>
+        <a class="company-domain" href="https://hexclad.com" target="_blank">hexclad.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Julie Lawson</td>
+            <td class="contact-title">Director of Product Marketing</td>
+            <td class="contact-location">Los Angeles, CA</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/julie-lawson-mba" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:julie.lawson@hexclad.com">julie.lawson@hexclad.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Hill House Home</div>
+        <div class="company-location">New York, NY</div>
+        <a class="company-domain" href="https://hillhousehome.com" target="_blank">hillhousehome.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Carrie Haynes</td>
+            <td class="contact-title">Growth Marketing Manager</td>
+            <td class="contact-location">New York, NY</td>
+            <td class="badges"><span class="badge badge-email"><a href="mailto:chaynes@hillhousehome.com">chaynes@hillhousehome.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Little Spoon</div>
+        <div class="company-location">New York, NY</div>
+        <a class="company-domain" href="https://littlespoon.com" target="_blank">littlespoon.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Megan Lohuis</td>
+            <td class="contact-title">Senior Performance Marketing Director</td>
+            <td class="contact-location">New York, NY</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/megan-lohuis" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:megan.lohuis@littlespoon.com">megan.lohuis@littlespoon.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Made In Cookware</div>
+        <div class="company-location">Austin, TX</div>
+        <a class="company-domain" href="https://madeincookware.com" target="_blank">madeincookware.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Don Smolik</td>
+            <td class="contact-title">Director of Lifecycle Marketing</td>
+            <td class="contact-location">Austin, TX</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/don-smolik-a7064699" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:don@madeincookware.com">don@madeincookware.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Maiden Home</div>
+        <div class="company-location">New York, NY</div>
+        <a class="company-domain" href="https://maidenhome.com" target="_blank">maidenhome.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Danielle Chin</td>
+            <td class="contact-title">Senior Director, Brand Marketing</td>
+            <td class="contact-location">New York, NY</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/danielleleeannchin" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:danielle@maidenhome.com">danielle@maidenhome.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Maude</div>
+        <div class="company-location">New York, NY</div>
+        <a class="company-domain" href="https://getmaude.com" target="_blank">getmaude.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Matthew Caulfield</td>
+            <td class="contact-title">Marketing Director</td>
+            <td class="contact-location">New York, NY</td>
+            <td class="badges"><span class="badge badge-email"><a href="mailto:matthew@getmaude.com">matthew@getmaude.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Misen</div>
+        <div class="company-location">New York, NY</div>
+        <a class="company-domain" href="https://misen.com" target="_blank">misen.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Omar Rada</td>
+            <td class="contact-title">CEO &amp; Co-Founder</td>
+            <td class="contact-location">New York, NY</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/omarrada" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:omar@misen.com">omar@misen.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Odele Beauty</div>
+        <div class="company-location">Minneapolis, MN</div>
+        <a class="company-domain" href="https://odelebeauty.com" target="_blank">odelebeauty.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Morgan Wagner</td>
+            <td class="contact-title">Director - Integrated Marketing</td>
+            <td class="contact-location">Minneapolis, MN</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/morgan-wagner-9ba66442" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:morgan.wagner@odelebeauty.com">morgan.wagner@odelebeauty.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Otherland</div>
+        <div class="company-location">New York, NY</div>
+        <a class="company-domain" href="https://otherland.com" target="_blank">otherland.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Abigail Cook Stone</td>
+            <td class="contact-title">Founder &amp; CEO</td>
+            <td class="contact-location">New York, NY</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/alphagail" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:abigail@otherland.com">abigail@otherland.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Our Place</div>
+        <div class="company-location">Los Angeles, CA</div>
+        <a class="company-domain" href="https://fromourplace.com" target="_blank">fromourplace.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Danielle Hoo</td>
+            <td class="contact-title">Director of Digital Product</td>
+            <td class="contact-location">Los Angeles, CA</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/danielle-hoo" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:danielle@fromourplace.com">danielle@fromourplace.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Outdoor Voices</div>
+        <div class="company-location">Austin, TX</div>
+        <a class="company-domain" href="https://outdoorvoices.com" target="_blank">outdoorvoices.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Courtney Chavez</td>
+            <td class="contact-title">Creative Marketing Manager</td>
+            <td class="contact-location">Austin, TX</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/courtney-chavez-501727116" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:courtney.chavez@outdoorvoices.com">courtney.chavez@outdoorvoices.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Partake Brewing</div>
+        <div class="company-location">Brooklyn, NY</div>
+        <a class="company-domain" href="https://drinkpartake.com" target="_blank">drinkpartake.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Ashley Meston</td>
+            <td class="contact-title">CMO</td>
+            <td class="contact-location">Brooklyn, NY</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://ca.linkedin.com/in/ashley-meston-608753a" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:ashley@drinkpartake.com">ashley@drinkpartake.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Primary</div>
+        <div class="company-location">New York, NY</div>
+        <a class="company-domain" href="https://primary.com" target="_blank">primary.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Madeline Seyler</td>
+            <td class="contact-title">Growth Marketing Director</td>
+            <td class="contact-location">New York, NY</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/madelineseyler" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:mseyler@primary.com">mseyler@primary.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Ten Thousand</div>
+        <div class="company-location">New York, NY</div>
+        <a class="company-domain" href="https://tenthousand.cc" target="_blank">tenthousand.cc</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Patrick Gleason</td>
+            <td class="contact-title">SEM &amp; Digital Marketing Manager</td>
+            <td class="contact-location">New York, NY</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/patrickbgleason" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:patrick@tenthousand.cc">patrick@tenthousand.cc</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Thrive Market</div>
+        <div class="company-location">Los Angeles, CA</div>
+        <a class="company-domain" href="https://thrivemarket.com" target="_blank">thrivemarket.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Sara Merrill</td>
+            <td class="contact-title">Director of Member Growth Messaging Strategy</td>
+            <td class="contact-location">Los Angeles, CA</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/saradentmerrill" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:sara.merrill@thrivemarket.com">sara.merrill@thrivemarket.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">kencko</div>
+        <div class="company-location">New York, NY</div>
+        <a class="company-domain" href="https://kencko.com" target="_blank">kencko.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Diogo Nunes Alves</td>
+            <td class="contact-title">Director of Brand</td>
+            <td class="contact-location">New York, NY</td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/diogo-nunes-alves" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:diogo@kencko.com">diogo@kencko.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="cta-section">
+    <h2>This is a sample of what we can build.</h2>
+    <p>We source the accounts, find the right people, and give your team a list they can actually work. Let's talk about building pipeline for FancyAI.</p>
+    <a class="cta-button" href="https://cal.com/driveroi/30min" target="_blank">Schedule a Call &rarr;</a>
+  </div>
+  <div class="footer">
+    <div class="footer-logo">Drive<span>ROI</span></div>
+    <div class="footer-text"><a href="https://driveroi.ai">driveroi.ai</a></div>
+  </div>
+</div>
+</body>
+</html>
