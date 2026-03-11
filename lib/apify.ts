@@ -17,7 +17,7 @@ export interface ApifyEngager {
 }
 
 // Runs actor synchronously and returns dataset items directly
-export async function scrapePostEngagers(postUrl: string): Promise<ApifyEngager[]> {
+async function runScraper(postUrl: string, type: string): Promise<ApifyEngager[]> {
   const token = getApiKey()
 
   const res = await fetch(
@@ -28,8 +28,8 @@ export async function scrapePostEngagers(postUrl: string): Promise<ApifyEngager[
       body: JSON.stringify({
         url: postUrl,
         start: 0,
-        iterations: 5,
-        type: 'commenters',
+        iterations: 10,
+        type,
       }),
     }
   )
@@ -40,4 +40,24 @@ export async function scrapePostEngagers(postUrl: string): Promise<ApifyEngager[
   }
 
   return res.json()
+}
+
+// Scrape both likers and commenters, dedupe by profile URL
+export async function scrapePostEngagers(postUrl: string): Promise<ApifyEngager[]> {
+  const [commenters, likers] = await Promise.all([
+    runScraper(postUrl, 'commenters'),
+    runScraper(postUrl, 'likers'),
+  ])
+
+  const seen = new Set<string>()
+  const combined: ApifyEngager[] = []
+  for (const engager of [...commenters, ...likers]) {
+    const key = engager.profileUrl || engager.name || JSON.stringify(engager)
+    if (!seen.has(key)) {
+      seen.add(key)
+      combined.push(engager)
+    }
+  }
+
+  return combined
 }

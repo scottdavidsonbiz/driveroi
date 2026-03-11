@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { scrapePostEngagers } from '@/lib/apify'
 
-export const maxDuration = 60 // Allow up to 60s for Apify sync run
+export const maxDuration = 120 // Allow up to 120s for two parallel Apify sync runs
 
 export async function POST(request: NextRequest) {
   try {
