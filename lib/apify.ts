@@ -7,7 +7,7 @@ function getApiKey(): string {
 }
 
 // LinkedIn Post Likers/Commenters actor
-const LINKEDIN_POST_SCRAPER_ACTOR = 'd5ib8ypLiKOuB8y8Q'
+const LINKEDIN_POST_SCRAPER_ACTOR = 'scraping_solutions~linkedin-posts-engagers-likers-and-commenters-no-cookies'
 
 export async function scrapePostEngagers(postUrl: string, webhookUrl: string) {
   const res = await fetch(
