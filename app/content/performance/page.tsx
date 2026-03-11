@@ -3,10 +3,12 @@
 import { useEffect, useState, useCallback } from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Loader2, Upload, TrendingUp, MessageSquare, Eye, MousePointer } from 'lucide-react'
+import { Loader2, Upload, TrendingUp, MessageSquare, Eye, MousePointer, Search } from 'lucide-react'
+import { Input } from '@/components/ui/input'
 import {
   LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend
 } from 'recharts'
+import * as XLSX from 'xlsx'
 import type { LinkedInMetric } from '@/lib/supabase'
 
 export default function PerformancePage() {
@@ -15,6 +17,9 @@ export default function PerformancePage() {
   const [importing, setImporting] = useState(false)
   const [importResult, setImportResult] = useState<string | null>(null)
   const [filterAuthor, setFilterAuthor] = useState<string>('all')
+  const [scrapeUrl, setScrapeUrl] = useState('')
+  const [scraping, setScraping] = useState(false)
+  const [scrapeResult, setScrapeResult] = useState<string | null>(null)
 
   const fetchMetrics = useCallback(async () => {
     const res = await fetch('/api/content/metrics')
@@ -25,6 +30,77 @@ export default function PerformancePage() {
 
   useEffect(() => { fetchMetrics() }, [fetchMetrics])
 
+  function parseLinkedInXlsx(buffer: ArrayBuffer): Record<string, string>[] {
+    const wb = XLSX.read(buffer, { type: 'array' })
+
+    // Parse TOP POSTS sheet — two side-by-side tables: engagements (cols 0-2) and impressions (cols 4-6)
+    const topPosts = wb.Sheets['TOP POSTS']
+    if (!topPosts) return []
+    const rows: unknown[][] = XLSX.utils.sheet_to_json(topPosts, { header: 1 })
+
+    // Find the header row (contains "Post URL")
+    const headerIdx = rows.findIndex(r => r[0] === 'Post URL')
+    if (headerIdx < 0) return []
+
+    const postMap: Record<string, { date: string; engagements: string; impressions: string }> = {}
+
+    for (let i = headerIdx + 1; i < rows.length; i++) {
+      const r = rows[i]
+      if (!r || !r[0]) continue
+      // Left table: engagements
+      const engUrl = String(r[0] || '')
+      if (engUrl.includes('linkedin.com')) {
+        if (!postMap[engUrl]) postMap[engUrl] = { date: '', engagements: '0', impressions: '0' }
+        postMap[engUrl].date = String(r[1] || '')
+        postMap[engUrl].engagements = String(r[2] || '0')
+      }
+      // Right table: impressions (cols 4-6)
+      const impUrl = String(r[4] || '')
+      if (impUrl.includes('linkedin.com')) {
+        if (!postMap[impUrl]) postMap[impUrl] = { date: '', engagements: '0', impressions: '0' }
+        if (!postMap[impUrl].date) postMap[impUrl].date = String(r[5] || '')
+        postMap[impUrl].impressions = String(r[6] || '0')
+      }
+    }
+
+    // Parse FOLLOWERS sheet for daily new followers
+    const followersSheet = wb.Sheets['FOLLOWERS']
+    const followerMap: Record<string, string> = {}
+    if (followersSheet) {
+      const fRows: unknown[][] = XLSX.utils.sheet_to_json(followersSheet, { header: 1 })
+      for (const r of fRows) {
+        if (r && r[0] && String(r[0]).includes('/')) {
+          followerMap[String(r[0])] = String(r[1] || '0')
+        }
+      }
+    }
+
+    return Object.entries(postMap).map(([url, data]) => ({
+      'Post URL': url,
+      'Date': data.date,
+      'Impressions': data.impressions,
+      'Engagements': data.engagements,
+      'Reactions': '0',
+      'Comments': '0',
+      'Reposts': '0',
+      'Clicks': '0',
+      'Engagement rate': '0',
+      'New followers': followerMap[data.date] || '0',
+    }))
+  }
+
+  function parseCsvText(text: string): Record<string, string>[] {
+    const lines = text.split('\n').filter(l => l.trim())
+    if (lines.length < 2) return []
+    const headers = lines[0].split(',').map(h => h.trim().replace(/^"/, '').replace(/"$/, ''))
+    return lines.slice(1).map(line => {
+      const values = line.split(',').map(v => v.trim().replace(/^"/, '').replace(/"$/, ''))
+      const record: Record<string, string> = {}
+      headers.forEach((h, i) => { record[h] = values[i] || '' })
+      return record
+    })
+  }
+
   async function handleFileUpload(e: React.ChangeEvent<HTMLInputElement>) {
     const file = e.target.files?.[0]
     if (!file) return
@@ -32,23 +108,21 @@ export default function PerformancePage() {
     setImporting(true)
     setImportResult(null)
 
-    const text = await file.text()
-    const lines = text.split('\n').filter(l => l.trim())
-    if (lines.length < 2) {
-      setImportResult('CSV has no data rows')
+    let records: Record<string, string>[]
+    if (file.name.endsWith('.xlsx') || file.name.endsWith('.xls')) {
+      const buffer = await file.arrayBuffer()
+      records = parseLinkedInXlsx(buffer)
+    } else {
+      const text = await file.text()
+      records = parseCsvText(text)
+    }
+
+    if (records.length === 0) {
+      setImportResult('No post data found in file')
       setImporting(false)
       return
     }
 
-    const headers = lines[0].split(',').map(h => h.trim().replace(/^"/, '').replace(/"$/, ''))
-    const records = lines.slice(1).map(line => {
-      const values = line.split(',').map(v => v.trim().replace(/^"/, '').replace(/"$/, ''))
-      const record: Record<string, string> = {}
-      headers.forEach((h, i) => { record[h] = values[i] || '' })
-      return record
-    })
-
-    // Prompt for author — simple approach
     const author = prompt('Who is this data for? (scott or brenda)', 'scott')
     if (!author) { setImporting(false); return }
 
@@ -66,6 +140,29 @@ export default function PerformancePage() {
       fetchMetrics()
     }
     setImporting(false)
+  }
+
+  async function handleScrape() {
+    if (!scrapeUrl.trim()) return
+    setScraping(true)
+    setScrapeResult(null)
+    try {
+      const res = await fetch('/api/content/scrape', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ post_url: scrapeUrl.trim() }),
+      })
+      const data = await res.json()
+      if (data.error) {
+        setScrapeResult(`Error: ${data.error}`)
+      } else {
+        setScrapeResult(`Scrape started (run ${data.run_id})`)
+        setScrapeUrl('')
+      }
+    } catch (err) {
+      setScrapeResult(`Failed to start scrape`)
+    }
+    setScraping(false)
   }
 
   const filtered = filterAuthor === 'all' ? metrics : metrics.filter(m => m.author === filterAuthor)
@@ -131,10 +228,26 @@ export default function PerformancePage() {
             <label className="cursor-pointer">
               {importing ? <Loader2 className="h-4 w-4 animate-spin mr-1" /> : <Upload className="h-4 w-4 mr-1" />}
               Import CSV
-              <input type="file" accept=".csv" onChange={handleFileUpload} className="hidden" />
+              <input type="file" accept=".csv,.xlsx,.xls" onChange={handleFileUpload} className="hidden" />
             </label>
           </Button>
         </div>
+      </div>
+
+      {/* Scrape engagers */}
+      <div className="flex items-center gap-2">
+        <Input
+          placeholder="Paste LinkedIn post URL to scrape engagers..."
+          value={scrapeUrl}
+          onChange={(e) => setScrapeUrl(e.target.value)}
+          onKeyDown={(e) => e.key === 'Enter' && handleScrape()}
+          className="flex-1 h-8 text-xs"
+        />
+        <Button size="sm" variant="outline" disabled={scraping || !scrapeUrl.trim()} onClick={handleScrape}>
+          {scraping ? <Loader2 className="h-4 w-4 animate-spin mr-1" /> : <Search className="h-4 w-4 mr-1" />}
+          Scrape Engagers
+        </Button>
+        {scrapeResult && <span className="text-xs text-muted-foreground whitespace-nowrap">{scrapeResult}</span>}
       </div>
 
       {/* Summary cards */}

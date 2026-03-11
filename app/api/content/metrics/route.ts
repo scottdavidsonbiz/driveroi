@@ -36,18 +36,27 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'records array and author are required' }, { status: 400 })
     }
 
-    const rows = records.map((r: Record<string, string>) => ({
-      author,
-      post_text: r['Post text'] || r['post_text'] || r['Content'] || null,
-      published_at: r['Date'] || r['date'] || r['Published date'] || null,
-      impressions: parseInt(r['Impressions'] || r['impressions'] || '0') || 0,
-      reactions: parseInt(r['Reactions'] || r['reactions'] || r['Likes'] || '0') || 0,
-      comments: parseInt(r['Comments'] || r['comments'] || '0') || 0,
-      reposts: parseInt(r['Reposts'] || r['reposts'] || r['Shares'] || '0') || 0,
-      clicks: parseInt(r['Clicks'] || r['clicks'] || '0') || 0,
-      engagement_rate: parseFloat(r['Engagement rate'] || r['engagement_rate'] || '0') || 0,
-      new_followers: parseInt(r['New followers'] || r['new_followers'] || r['Followers'] || '0') || 0,
-    }))
+    const rows = records.map((r: Record<string, string>) => {
+      const impressions = parseInt(r['Impressions'] || r['impressions'] || '0') || 0
+      const engagements = parseInt(r['Engagements'] || r['engagements'] || '0') || 0
+      const reactions = parseInt(r['Reactions'] || r['reactions'] || r['Likes'] || '0') || 0
+      const comments = parseInt(r['Comments'] || r['comments'] || '0') || 0
+      const engRate = parseFloat(r['Engagement rate'] || r['engagement_rate'] || '0')
+      const computedRate = engRate || (impressions > 0 ? parseFloat(((engagements / impressions) * 100).toFixed(2)) : 0)
+
+      return {
+        author,
+        post_text: r['Post text'] || r['post_text'] || r['Content'] || r['Post URL'] || null,
+        published_at: r['Date'] || r['date'] || r['Published date'] || r['Post publish date'] || null,
+        impressions,
+        reactions: reactions || engagements,
+        comments,
+        reposts: parseInt(r['Reposts'] || r['reposts'] || r['Shares'] || '0') || 0,
+        clicks: parseInt(r['Clicks'] || r['clicks'] || '0') || 0,
+        engagement_rate: computedRate,
+        new_followers: parseInt(r['New followers'] || r['new_followers'] || r['Followers'] || '0') || 0,
+      }
+    })
 
     const { data, error } = await supabase
       .from('linkedin_metrics')
