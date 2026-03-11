@@ -13,13 +13,15 @@ export async function scrapePostEngagers(postUrl: string, webhookUrl: string) {
   const token = getApiKey()
 
   // Start the actor run — POST body IS the input directly
-  const webhooksParam = encodeURIComponent(JSON.stringify([{
+  // Webhooks must be base64-encoded JSON array per Apify docs
+  const webhooksJson = JSON.stringify([{
     eventTypes: ['ACTOR.RUN.SUCCEEDED'],
     requestUrl: webhookUrl,
-  }]))
+  }])
+  const webhooksBase64 = Buffer.from(webhooksJson).toString('base64')
 
   const res = await fetch(
-    `${APIFY_BASE_URL}/acts/${LINKEDIN_POST_SCRAPER_ACTOR}/runs?token=${token}&webhooks=${webhooksParam}`,
+    `${APIFY_BASE_URL}/acts/${LINKEDIN_POST_SCRAPER_ACTOR}/runs?token=${token}&webhooks=${webhooksBase64}`,
     {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
