@@ -3,8 +3,7 @@
 import { useEffect, useState, useCallback } from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Loader2, Upload, TrendingUp, MessageSquare, Eye, MousePointer, Search } from 'lucide-react'
-import { Input } from '@/components/ui/input'
+import { Loader2, Upload, TrendingUp, Eye, MousePointer, Search } from 'lucide-react'
 import {
   LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend
 } from 'recharts'
@@ -17,7 +16,7 @@ export default function PerformancePage() {
   const [importing, setImporting] = useState(false)
   const [importResult, setImportResult] = useState<string | null>(null)
   const [filterAuthor, setFilterAuthor] = useState<string>('all')
-  const [scrapeUrl, setScrapeUrl] = useState('')
+  const [selectedPosts, setSelectedPosts] = useState<Set<string>>(new Set())
   const [scraping, setScraping] = useState(false)
   const [scrapeResult, setScrapeResult] = useState<string | null>(null)
 
@@ -142,26 +141,47 @@ export default function PerformancePage() {
     setImporting(false)
   }
 
-  async function handleScrape() {
-    if (!scrapeUrl.trim()) return
+  function togglePost(id: string) {
+    setSelectedPosts(prev => {
+      const next = new Set(prev)
+      if (next.has(id)) next.delete(id)
+      else next.add(id)
+      return next
+    })
+  }
+
+  function toggleAllPosts() {
+    const linkPosts = filtered.filter(m => m.post_text?.includes('linkedin.com'))
+    if (selectedPosts.size === linkPosts.length) {
+      setSelectedPosts(new Set())
+    } else {
+      setSelectedPosts(new Set(linkPosts.map(m => m.id)))
+    }
+  }
+
+  async function handleScrapeSelected() {
+    const posts = filtered.filter(m => selectedPosts.has(m.id) && m.post_text?.includes('linkedin.com'))
+    if (posts.length === 0) return
     setScraping(true)
     setScrapeResult(null)
-    try {
-      const res = await fetch('/api/content/scrape', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ post_url: scrapeUrl.trim() }),
-      })
-      const data = await res.json()
-      if (data.error) {
-        setScrapeResult(`Error: ${data.error}`)
-      } else {
-        setScrapeResult(`Scrape started (run ${data.run_id})`)
-        setScrapeUrl('')
+    let started = 0
+    let errors = 0
+    for (const post of posts) {
+      try {
+        const res = await fetch('/api/content/scrape', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ post_url: post.post_text }),
+        })
+        const data = await res.json()
+        if (data.error) errors++
+        else started++
+      } catch {
+        errors++
       }
-    } catch (err) {
-      setScrapeResult(`Failed to start scrape`)
     }
+    setScrapeResult(`Started ${started} scrape${started !== 1 ? 's' : ''}${errors ? `, ${errors} failed` : ''}`)
+    setSelectedPosts(new Set())
     setScraping(false)
   }
 
@@ -173,7 +193,6 @@ export default function PerformancePage() {
   // Summary stats
   const totalImpressions = filtered.reduce((s, m) => s + m.impressions, 0)
   const totalReactions = filtered.reduce((s, m) => s + m.reactions, 0)
-  const totalComments = filtered.reduce((s, m) => s + m.comments, 0)
   const avgEngagement = filtered.length > 0
     ? (filtered.reduce((s, m) => s + m.engagement_rate, 0) / filtered.length).toFixed(2)
     : '0'
@@ -234,24 +253,8 @@ export default function PerformancePage() {
         </div>
       </div>
 
-      {/* Scrape engagers */}
-      <div className="flex items-center gap-2">
-        <Input
-          placeholder="Paste LinkedIn post URL to scrape engagers..."
-          value={scrapeUrl}
-          onChange={(e) => setScrapeUrl(e.target.value)}
-          onKeyDown={(e) => e.key === 'Enter' && handleScrape()}
-          className="flex-1 h-8 text-xs"
-        />
-        <Button size="sm" variant="outline" disabled={scraping || !scrapeUrl.trim()} onClick={handleScrape}>
-          {scraping ? <Loader2 className="h-4 w-4 animate-spin mr-1" /> : <Search className="h-4 w-4 mr-1" />}
-          Scrape Engagers
-        </Button>
-        {scrapeResult && <span className="text-xs text-muted-foreground whitespace-nowrap">{scrapeResult}</span>}
-      </div>
-
       {/* Summary cards */}
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-3 gap-4">
         <Card>
           <CardContent className="pt-4 pb-3">
             <div className="flex items-center gap-2 text-muted-foreground mb-1"><Eye className="h-4 w-4" /><span className="text-xs font-medium uppercase">Impressions</span></div>
@@ -262,12 +265,6 @@ export default function PerformancePage() {
           <CardContent className="pt-4 pb-3">
             <div className="flex items-center gap-2 text-muted-foreground mb-1"><TrendingUp className="h-4 w-4" /><span className="text-xs font-medium uppercase">Avg Engagement</span></div>
             <div className="text-2xl font-bold">{avgEngagement}%</div>
-          </CardContent>
-        </Card>
-        <Card>
-          <CardContent className="pt-4 pb-3">
-            <div className="flex items-center gap-2 text-muted-foreground mb-1"><MessageSquare className="h-4 w-4" /><span className="text-xs font-medium uppercase">Comments</span></div>
-            <div className="text-2xl font-bold">{totalComments}</div>
           </CardContent>
         </Card>
         <Card>
@@ -304,9 +301,9 @@ export default function PerformancePage() {
             </CardContent>
           </Card>
 
-          {/* Reactions vs comments */}
+          {/* Engagements */}
           <Card>
-            <CardHeader className="pb-2"><CardTitle className="text-sm font-medium">Reactions vs Comments</CardTitle></CardHeader>
+            <CardHeader className="pb-2"><CardTitle className="text-sm font-medium">Engagements by Post</CardTitle></CardHeader>
             <CardContent>
               <ResponsiveContainer width="100%" height={200}>
                 <BarChart data={chartData}>
@@ -314,9 +311,7 @@ export default function PerformancePage() {
                   <XAxis dataKey="date" className="text-xs" />
                   <YAxis className="text-xs" />
                   <Tooltip />
-                  <Legend />
-                  <Bar dataKey="reactions" fill="#8B7FD4" />
-                  <Bar dataKey="comments" fill="#6b5fb4" />
+                  <Bar dataKey="reactions" fill="#8B7FD4" name="Engagements" />
                 </BarChart>
               </ResponsiveContainer>
             </CardContent>
@@ -342,33 +337,71 @@ export default function PerformancePage() {
 
           {/* Posts table */}
           <Card>
-            <CardHeader className="pb-2"><CardTitle className="text-sm font-medium">All Posts</CardTitle></CardHeader>
+            <CardHeader className="pb-2 flex flex-row items-center justify-between">
+              <CardTitle className="text-sm font-medium">All Posts</CardTitle>
+              <div className="flex items-center gap-2">
+                {scrapeResult && <span className="text-xs text-muted-foreground">{scrapeResult}</span>}
+                {selectedPosts.size > 0 && (
+                  <Button size="sm" variant="outline" disabled={scraping} onClick={handleScrapeSelected}>
+                    {scraping ? <Loader2 className="h-4 w-4 animate-spin mr-1" /> : <Search className="h-4 w-4 mr-1" />}
+                    Scrape {selectedPosts.size} Post{selectedPosts.size !== 1 ? 's' : ''}
+                  </Button>
+                )}
+              </div>
+            </CardHeader>
             <CardContent>
               <div className="overflow-x-auto">
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b text-left text-muted-foreground">
+                      <th className="py-2 pr-2 font-medium w-8">
+                        <input
+                          type="checkbox"
+                          checked={selectedPosts.size > 0 && selectedPosts.size === filtered.filter(m => m.post_text?.includes('linkedin.com')).length}
+                          onChange={toggleAllPosts}
+                          className="rounded"
+                        />
+                      </th>
                       <th className="py-2 pr-4 font-medium">Date</th>
                       <th className="py-2 pr-4 font-medium">Post</th>
                       <th className="py-2 pr-4 font-medium text-right">Impressions</th>
                       <th className="py-2 pr-4 font-medium text-right">Engagement</th>
-                      <th className="py-2 pr-4 font-medium text-right">Reactions</th>
-                      <th className="py-2 font-medium text-right">Comments</th>
+                      <th className="py-2 font-medium text-right">Engagements</th>
                     </tr>
                   </thead>
                   <tbody>
-                    {[...filtered].sort((a, b) => b.impressions - a.impressions).map(m => (
-                      <tr key={m.id} className="border-b last:border-0">
-                        <td className="py-2 pr-4 text-xs text-muted-foreground whitespace-nowrap">
-                          {m.published_at ? new Date(m.published_at).toLocaleDateString() : '—'}
-                        </td>
-                        <td className="py-2 pr-4 max-w-[300px] truncate">{m.post_text?.slice(0, 80) || '—'}</td>
-                        <td className="py-2 pr-4 text-right">{m.impressions.toLocaleString()}</td>
-                        <td className="py-2 pr-4 text-right">{m.engagement_rate}%</td>
-                        <td className="py-2 pr-4 text-right">{m.reactions}</td>
-                        <td className="py-2 text-right">{m.comments}</td>
-                      </tr>
-                    ))}
+                    {[...filtered].sort((a, b) => b.impressions - a.impressions).map(m => {
+                      const isLinkedIn = m.post_text?.includes('linkedin.com')
+                      return (
+                        <tr key={m.id} className={`border-b last:border-0 ${selectedPosts.has(m.id) ? 'bg-muted/50' : ''}`}>
+                          <td className="py-2 pr-2">
+                            {isLinkedIn ? (
+                              <input
+                                type="checkbox"
+                                checked={selectedPosts.has(m.id)}
+                                onChange={() => togglePost(m.id)}
+                                className="rounded"
+                              />
+                            ) : null}
+                          </td>
+                          <td className="py-2 pr-4 text-xs text-muted-foreground whitespace-nowrap">
+                            {m.published_at ? new Date(m.published_at).toLocaleDateString() : '—'}
+                          </td>
+                          <td className="py-2 pr-4 max-w-[300px] truncate">
+                            {isLinkedIn ? (
+                              <a href={m.post_text!} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                                {m.published_at ? new Date(m.published_at).toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) + ' post' : 'View post'}
+                              </a>
+                            ) : (
+                              m.post_text?.slice(0, 80) || '—'
+                            )}
+                          </td>
+                          <td className="py-2 pr-4 text-right">{m.impressions.toLocaleString()}</td>
+                          <td className="py-2 pr-4 text-right">{m.engagement_rate}%</td>
+                          <td className="py-2 text-right">{m.reactions}</td>
+                        </tr>
+                      )
+                    })}
                   </tbody>
                 </table>
               </div>
