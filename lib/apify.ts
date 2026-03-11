@@ -9,19 +9,19 @@ function getApiKey(): string {
 // LinkedIn Post Likers/Commenters actor
 const LINKEDIN_POST_SCRAPER_ACTOR = 'scraping_solutions~linkedin-posts-engagers-likers-and-commenters-no-cookies'
 
-export async function scrapePostEngagers(postUrl: string, webhookUrl: string) {
+export interface ApifyEngager {
+  profileUrl?: string
+  name?: string
+  headline?: string
+  [key: string]: unknown
+}
+
+// Runs actor synchronously and returns dataset items directly
+export async function scrapePostEngagers(postUrl: string): Promise<ApifyEngager[]> {
   const token = getApiKey()
 
-  // Start the actor run — POST body IS the input directly
-  // Webhooks must be base64-encoded JSON array per Apify docs
-  const webhooksJson = JSON.stringify([{
-    eventTypes: ['ACTOR.RUN.SUCCEEDED'],
-    requestUrl: webhookUrl,
-  }])
-  const webhooksBase64 = Buffer.from(webhooksJson).toString('base64')
-
   const res = await fetch(
-    `${APIFY_BASE_URL}/acts/${LINKEDIN_POST_SCRAPER_ACTOR}/runs?token=${token}&webhooks=${webhooksBase64}`,
+    `${APIFY_BASE_URL}/acts/${LINKEDIN_POST_SCRAPER_ACTOR}/run-sync-get-dataset-items?token=${token}`,
     {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },

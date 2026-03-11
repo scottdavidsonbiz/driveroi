@@ -164,7 +164,7 @@ export default function PerformancePage() {
     if (posts.length === 0) return
     setScraping(true)
     setScrapeResult(null)
-    let started = 0
+    let totalEngagers = 0
     let errors = 0
     for (const post of posts) {
       try {
@@ -175,12 +175,12 @@ export default function PerformancePage() {
         })
         const data = await res.json()
         if (data.error) errors++
-        else started++
+        else totalEngagers += data.engagers_found || 0
       } catch {
         errors++
       }
     }
-    setScrapeResult(`Started ${started} scrape${started !== 1 ? 's' : ''}${errors ? `, ${errors} failed` : ''}`)
+    setScrapeResult(`Found ${totalEngagers} engager${totalEngagers !== 1 ? 's' : ''}, pushed to Clay${errors ? ` (${errors} failed)` : ''}`)
     setSelectedPosts(new Set())
     setScraping(false)
   }

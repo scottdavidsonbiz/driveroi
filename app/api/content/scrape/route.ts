@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { scrapePostEngagers } from '@/lib/apify'
 
+export const maxDuration = 60 // Allow up to 60s for Apify sync run
+
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
@@ -10,19 +12,36 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'post_url is required' }, { status: 400 })
     }
 
-    // The webhook URL where Apify sends results
-    // This goes to Clay first for enrichment, not directly to our engagers endpoint
     const clayWebhookUrl = process.env.CLAY_ENGAGER_WEBHOOK_URL
     if (!clayWebhookUrl) {
       return NextResponse.json({ error: 'CLAY_ENGAGER_WEBHOOK_URL not configured' }, { status: 500 })
     }
 
-    const result = await scrapePostEngagers(post_url, clayWebhookUrl)
+    // Run actor synchronously — returns dataset items directly
+    const engagers = await scrapePostEngagers(post_url)
+
+    // Forward each engager to Clay for enrichment
+    let pushed = 0
+    for (const engager of engagers) {
+      try {
+        await fetch(clayWebhookUrl, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            ...engager,
+            source_post_url: post_url,
+          }),
+        })
+        pushed++
+      } catch (e) {
+        console.error('[Content Scrape API] Failed to push engager to Clay:', e)
+      }
+    }
 
     return NextResponse.json({
       success: true,
-      run_id: result.data?.id,
-      message: 'Scrape started. Results will arrive via Clay webhook once enriched.',
+      engagers_found: engagers.length,
+      pushed_to_clay: pushed,
     })
   } catch (error) {
     console.error('[Content Scrape API] Error:', error)
