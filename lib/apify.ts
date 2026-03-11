@@ -17,7 +17,10 @@ export async function scrapePostEngagers(postUrl: string, webhookUrl: string) {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         input: {
-          postUrls: [postUrl],
+          url: postUrl,
+          start: 0,
+          iterations: 5,
+          type: 'commenters',
         },
         webhooks: [
           {
