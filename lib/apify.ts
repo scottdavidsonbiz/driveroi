@@ -10,24 +10,24 @@ function getApiKey(): string {
 const LINKEDIN_POST_SCRAPER_ACTOR = 'scraping_solutions~linkedin-posts-engagers-likers-and-commenters-no-cookies'
 
 export async function scrapePostEngagers(postUrl: string, webhookUrl: string) {
+  const token = getApiKey()
+
+  // Start the actor run — POST body IS the input directly
+  const webhooksParam = encodeURIComponent(JSON.stringify([{
+    eventTypes: ['ACTOR.RUN.SUCCEEDED'],
+    requestUrl: webhookUrl,
+  }]))
+
   const res = await fetch(
-    `${APIFY_BASE_URL}/acts/${LINKEDIN_POST_SCRAPER_ACTOR}/runs?token=${getApiKey()}`,
+    `${APIFY_BASE_URL}/acts/${LINKEDIN_POST_SCRAPER_ACTOR}/runs?token=${token}&webhooks=${webhooksParam}`,
     {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        input: {
-          url: postUrl,
-          start: 0,
-          iterations: 5,
-          type: 'commenters',
-        },
-        webhooks: [
-          {
-            eventTypes: ['ACTOR.RUN.SUCCEEDED'],
-            requestUrl: webhookUrl,
-          },
-        ],
+        url: postUrl,
+        start: 0,
+        iterations: 5,
+        type: 'commenters',
       }),
     }
   )
