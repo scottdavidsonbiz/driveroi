@@ -55,6 +55,20 @@ Read the provided material completely. Identify:
 - **Supporting evidence** - What real data or experience backs this up?
 - **Audience relevance** - Why would a B2B founder/decision maker care?
 
+### Step 1.5: Read Performance Brief
+
+Before generating content, read the performance brief at `content/linkedin-performance-brief.md`.
+
+Use it to:
+- **Bias hook selection** toward styles with higher ICP scores
+- **Prefer topics/formats** that attract Tier 1-2 engagers
+- **Avoid patterns** listed in the "What to Avoid" section
+- **Calibrate length** based on what's worked (if the brief says short posts outperform, keep it tight)
+
+The brief is guidance, not a straitjacket. If the input material calls for a format that hasn't performed well yet, write it anyway — but note the deviation. New formats need testing.
+
+If the brief doesn't exist yet or has low confidence, proceed normally and note that performance data is limited.
+
 ### Step 2: Extract Takeaways
 
 Pull out 3-5 concrete takeaways:
