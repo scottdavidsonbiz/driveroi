@@ -185,6 +185,8 @@ export default function PerformancePage() {
     setScraping(true)
     setScrapeResult(null)
     let totalEngagers = 0
+    let totalInserted = 0
+    let totalSkipped = 0
     let errors = 0
     for (const post of posts) {
       try {
@@ -195,12 +197,20 @@ export default function PerformancePage() {
         })
         const data = await res.json()
         if (data.error) errors++
-        else totalEngagers += data.engagers_found || 0
+        else {
+          totalEngagers += data.engagers_found || 0
+          totalInserted += data.inserted || 0
+          totalSkipped += data.skipped_existing || 0
+        }
       } catch {
         errors++
       }
     }
-    setScrapeResult(`Found ${totalEngagers} engager${totalEngagers !== 1 ? 's' : ''}, pushed to Clay${errors ? ` (${errors} failed)` : ''}`)
+    const parts = [`Found ${totalEngagers} engager${totalEngagers !== 1 ? 's' : ''}`]
+    if (totalInserted > 0) parts.push(`${totalInserted} new`)
+    if (totalSkipped > 0) parts.push(`${totalSkipped} already known`)
+    if (errors > 0) parts.push(`${errors} failed`)
+    setScrapeResult(parts.join(', '))
     setSelectedPosts(new Set())
     setScraping(false)
   }

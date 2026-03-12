@@ -171,5 +171,6 @@ export interface PostEngager {
   domain: string | null
   email: string | null
   enriched_at: string | null
+  icp_status: string | null
   created_at: string
 }
