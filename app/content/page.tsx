@@ -7,6 +7,7 @@ import { Input } from '@/components/ui/input'
 import { Badge } from '@/components/ui/badge'
 import { Loader2, Plus, GripVertical, ChevronDown, ChevronUp } from 'lucide-react'
 import type { ContentIdea } from '@/lib/supabase'
+import { PerformanceInsightsPanel } from '@/components/content/performance-insights-panel'
 
 const STATUS_OPTIONS = ['idea', 'planned', 'in_progress', 'published', 'archived'] as const
 const STATUS_COLORS: Record<string, string> = {
@@ -94,7 +95,8 @@ export default function IdeasPage() {
   }
 
   return (
-    <div className="space-y-4">
+    <div className="flex gap-6">
+    <div className="flex-1 min-w-0 space-y-4">
       {/* Quick-add bar */}
       <form onSubmit={handleAdd} className="flex gap-2">
         <Input
@@ -207,6 +209,13 @@ export default function IdeasPage() {
           </Card>
         )}
       </div>
+    </div>
+    {/* Sidebar — performance insights */}
+    <div className="hidden lg:block w-80 flex-shrink-0">
+      <div className="sticky top-4">
+        <PerformanceInsightsPanel />
+      </div>
+    </div>
     </div>
   )
 }
