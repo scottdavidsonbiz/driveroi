@@ -1263,7 +1263,7 @@ export function PerformanceInsightsPanel() {
       <CardContent className="space-y-3">
         {/* ICP Quality headline */}
         <div className="flex items-center justify-between">
-          <span className="text-sm">ICP Quality: <span className="font-semibold">{t12pct.toFixed(0)}%</span> Tier 1-2</span>
+          <span className="text-sm">ICP Quality: <span className="font-semibold">{t12pct.toFixed(0)}%</span> Buyer + Influencer</span>
           <span className="flex items-center gap-1 text-xs text-muted-foreground">
             <TrendIcon className="h-3 w-3" />
             {TREND_LABELS[brief.icp_insights.icp_trend]}
