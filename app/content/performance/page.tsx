@@ -3,7 +3,7 @@
 import { useEffect, useState, useCallback } from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Loader2, Upload, TrendingUp, Eye, MousePointer, Search } from 'lucide-react'
+import { Loader2, Upload, TrendingUp, Eye, MousePointer, Search, RefreshCw } from 'lucide-react'
 import {
   LineChart, Line, BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend
 } from 'recharts'
@@ -19,6 +19,26 @@ export default function PerformancePage() {
   const [selectedPosts, setSelectedPosts] = useState<Set<string>>(new Set())
   const [scraping, setScraping] = useState(false)
   const [scrapeResult, setScrapeResult] = useState<string | null>(null)
+  const [briefRefreshing, setBriefRefreshing] = useState(false)
+  const [briefResult, setBriefResult] = useState<string | null>(null)
+
+  async function handleRefreshBrief() {
+    setBriefRefreshing(true)
+    setBriefResult(null)
+    try {
+      const res = await fetch('/api/content/brief', { method: 'POST' })
+      const data = await res.json()
+      if (data.error) {
+        setBriefResult(`Error: ${data.error}`)
+      } else {
+        setBriefResult(`Brief regenerated (${data.brief?.sample_size?.total_posts || 0} posts, ${data.brief?.sample_size?.posts_with_engager_data || 0} with engagers)`)
+      }
+    } catch {
+      setBriefResult('Failed to regenerate brief')
+    } finally {
+      setBriefRefreshing(false)
+    }
+  }
 
   const fetchMetrics = useCallback(async () => {
     const res = await fetch('/api/content/metrics')
@@ -242,6 +262,11 @@ export default function PerformancePage() {
         </select>
 
         <div className="flex items-center gap-2">
+          {briefResult && <span className="text-xs text-muted-foreground">{briefResult}</span>}
+          <Button size="sm" variant="outline" disabled={briefRefreshing} onClick={handleRefreshBrief}>
+            {briefRefreshing ? <Loader2 className="h-4 w-4 animate-spin mr-1" /> : <RefreshCw className="h-4 w-4 mr-1" />}
+            Refresh Brief
+          </Button>
           {importResult && <span className="text-xs text-muted-foreground">{importResult}</span>}
           <Button size="sm" variant="outline" disabled={importing} asChild>
             <label className="cursor-pointer">
