@@ -82,11 +82,26 @@ interface ClassifiedEngager {
 
 1. All rows from `linkedin_metrics` (post-level performance)
 2. All rows from `post_engagers` (enriched profiles with titles)
-3. Engagers are linked to metrics via `post_id` on `post_engagers` joining to `post_id` on `linkedin_metrics`
+
+### Linking Metrics to Engagers
+
+Both `linkedin_metrics` and `post_engagers` have a `post_id` FK to `content_posts`, but in practice `post_id` is often NULL:
+- The CSV import handler never sets `post_id` on `linkedin_metrics` rows
+- The Clay webhook only includes `post_id` if the Apify scrape was triggered from a known post
+
+**Matching strategy:** The brief generator links metrics to engagers through `content_posts` as the join table. When `post_id` is NULL on a metrics row, the generator attempts to match by:
+1. **LinkedIn URL match:** If `linkedin_metrics.post_text` contains a LinkedIn post URL, match it against `content_posts.linkedin_url`
+2. **Date + text match:** If `post_text` is actual content (not a URL), fuzzy-match against `content_posts.post_text` within a 2-day window of `published_at`
+
+If neither match succeeds, the metrics row is included in reach analysis but excluded from ICP scoring (no engager data to score against).
+
+**Post URL detection:** `post_text` values containing `linkedin.com/feed/update` are treated as URLs, not content text. The generator uses this to route matching logic and to skip hook classification for URL-only rows.
 
 ### Per-Post ICP Score
 
-For each post that has engager data:
+The unit of analysis is a `content_posts` row that has both:
+- At least one linked `linkedin_metrics` row (for reach data)
+- At least one linked `post_engagers` row (for ICP scoring)
 
 ```
 icp_score = sum(engager_tier_weights) / total_engagers_for_post
@@ -94,6 +109,7 @@ icp_score = sum(engager_tier_weights) / total_engagers_for_post
 
 - Range: 0.0 (no ICP engagement) to 3.0 (every engager is a buyer)
 - Posts with no engager data get `icp_score: null` (not zero — absence of data is different from bad data)
+- Posts with no metrics data are excluded entirely (can't compute reach)
 
 ### Brief Structure (JSON)
 
@@ -146,7 +162,7 @@ interface PostSummary {
 }
 
 interface HookPattern {
-  style: string             // "question-list", "contrarian", "data-led", "story", "direct"
+  style: string             // "question-list", "contrarian", "data-led", "story", "direct", "observation"
   avg_icp_score: number | null
   avg_impressions: number
   sample_size: number
@@ -177,6 +193,13 @@ interface FormatPattern {
 
 When confidence is "low", the brief still generates but `patterns` and `avoid` sections include explicit caveats (e.g., "Based on 3 posts with engager data. Treat as directional, not conclusive.").
 
+### ICP Trend Calculation
+
+`icp_trend` compares the average ICP score of the most recent 5 posts (with engager data) against the previous 5. If fewer than 10 posts have engager data, `icp_trend = "insufficient_data"`. Otherwise:
+- Delta > +0.3 → "improving"
+- Delta < -0.3 → "declining"
+- Else → "stable"
+
 ### Markdown Output
 
 The generator also writes a human-readable version to `content/linkedin-performance-brief.md`. This is what the `linkedin-content-creator` skill reads. Structure:
@@ -206,7 +229,9 @@ The generator also writes a human-readable version to `content/linkedin-performa
 
 ### Hook Style Classification
 
-The generator classifies hooks into styles by pattern matching on the first line of `post_text`:
+The generator classifies hooks into styles by pattern matching on the first line of `post_text`.
+
+**Prerequisite:** Only rows where `post_text` contains actual content (not a LinkedIn URL) are classified. Rows where `post_text` matches `linkedin.com/feed/update` are skipped for hook analysis. For these URL-only rows, the generator attempts to resolve the actual post text from `content_posts.post_text` via the join described above. If no text is available, the post gets `hook_style: null`.
 
 | Style | Detection Pattern |
 |-------|-------------------|
@@ -227,7 +252,7 @@ This is heuristic, not ML. Good enough for pattern detection at current scale.
 
 ### GET /api/content/brief
 
-Returns the current performance brief as JSON. If none exists yet, generates one on the fly.
+Computes the brief fresh on every request (two Supabase queries + local math — fast enough for an internal tool with one user). No caching layer. Returns the brief as JSON.
 
 **Response:** `{ brief: PerformanceBrief }`
 
@@ -395,3 +420,4 @@ None. All existing tables (`linkedin_metrics`, `post_engagers`) already have the
 - Automated engager scraping (manual trigger is fine)
 - Company-level ICP filtering (e.g., by company size) — title tier is the starting point
 - Direct LinkedIn API integration
+- Unifying the `linkedin-performance` skill's local JSON store (`content/linkedin-performance-data.json`) with the Supabase `linkedin_metrics` table. The skill's JSON file and the app's database will coexist for now. The brief generator reads from Supabase only. The skill's Log mode continues writing to its JSON file (useful for quick CLI logging). A future migration could consolidate these, but it's not blocking.
