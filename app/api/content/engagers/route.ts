@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { supabase } from '@/lib/supabase'
+import { generateAndStoreBrief } from '@/lib/performance-brief'
 
 export async function GET() {
   try {
@@ -65,6 +66,13 @@ export async function POST(request: NextRequest) {
           console.error('[Content Engagers API] Slack error:', slackErr)
         }
       }
+    }
+
+    // Regenerate performance brief after engager insertion
+    try {
+      await generateAndStoreBrief()
+    } catch (briefErr) {
+      console.error('[Content Engagers API] Brief regeneration error:', briefErr)
     }
 
     return NextResponse.json({ inserted: data?.length || 0 })

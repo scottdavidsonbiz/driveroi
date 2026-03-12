@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { supabase } from '@/lib/supabase'
+import { generateAndStoreBrief } from '@/lib/performance-brief'
 
 export async function GET(request: NextRequest) {
   try {
@@ -66,6 +67,13 @@ export async function POST(request: NextRequest) {
     if (error) {
       console.error('[Content Metrics API] Error importing:', error)
       return NextResponse.json({ error: error.message }, { status: 500 })
+    }
+
+    // Regenerate performance brief after import
+    try {
+      await generateAndStoreBrief()
+    } catch (briefErr) {
+      console.error('[Content Metrics API] Brief regeneration error:', briefErr)
     }
 
     return NextResponse.json({ imported: data?.length || 0 })
