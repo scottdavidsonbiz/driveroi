@@ -201,6 +201,11 @@ export default function PerformancePage() {
           totalEngagers += data.engagers_found || 0
           totalInserted += data.inserted || 0
           totalSkipped += data.skipped_existing || 0
+          // Log raw Apify fields for debugging
+          if (data._debug_raw_fields) {
+            console.log('[Scrape Debug] Raw Apify fields:', data._debug_raw_fields)
+            console.log('[Scrape Debug] Sample engager:', data._debug_sample)
+          }
         }
       } catch {
         errors++
