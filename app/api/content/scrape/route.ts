@@ -41,9 +41,9 @@ export async function POST(request: NextRequest) {
     const normalized = engagers.map(e => {
       const raw = e as Record<string, unknown>
       return {
-        linkedinUrl: getField(raw, 'profileUrl', 'profile_url', 'linkedInUrl', 'linkedin_url', 'profileLink', 'link', 'url'),
-        name: getField(raw, 'name', 'fullName', 'full_name', 'Name'),
-        headline: getField(raw, 'headline', 'tagline', 'Headline', 'title', 'Title', 'subtitle', 'description'),
+        linkedinUrl: getField(raw, 'url_profile', 'profileUrl', 'profile_url', 'linkedInUrl', 'linkedin_url'),
+        name: getField(raw, 'name', 'fullName', 'full_name'),
+        headline: getField(raw, 'subtitle', 'headline', 'tagline'),
       }
     })
 

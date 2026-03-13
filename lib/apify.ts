@@ -10,8 +10,11 @@ function getApiKey(): string {
 const LINKEDIN_POST_SCRAPER_ACTOR = 'scraping_solutions~linkedin-posts-engagers-likers-and-commenters-no-cookies'
 
 export interface ApifyEngager {
-  profileUrl?: string
+  url_profile?: string
   name?: string
+  subtitle?: string
+  // Legacy field names (kept for safety)
+  profileUrl?: string
   headline?: string
   [key: string]: unknown
 }
@@ -52,7 +55,7 @@ export async function scrapePostEngagers(postUrl: string): Promise<ApifyEngager[
   const seen = new Set<string>()
   const combined: ApifyEngager[] = []
   for (const engager of [...commenters, ...likers]) {
-    const key = engager.profileUrl || engager.name || JSON.stringify(engager)
+    const key = engager.url_profile || engager.profileUrl || engager.name || JSON.stringify(engager)
     if (!seen.has(key)) {
       seen.add(key)
       combined.push(engager)
