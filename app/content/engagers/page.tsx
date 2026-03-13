@@ -7,13 +7,26 @@ import { Button } from '@/components/ui/button'
 import { Loader2, ExternalLink, Mail, ThumbsUp, ThumbsDown, Filter } from 'lucide-react'
 import type { PostEngager } from '@/lib/supabase'
 
-type QualFilter = 'all' | 'qualified' | 'disqualified' | 'unreviewed'
+const TIER_LABELS: Record<number, string> = {
+  3: 'Buyer',
+  2: 'Influencer',
+  1: 'Adjacent',
+  0: 'Non-ICP',
+}
+
+const TIER_COLORS: Record<number, string> = {
+  3: 'bg-emerald-100 text-emerald-700',
+  2: 'bg-blue-100 text-blue-700',
+  1: 'bg-yellow-100 text-yellow-700',
+  0: 'bg-gray-100 text-gray-500',
+}
+
+type TierFilter = 'icp' | 'all' | 'qualified' | 'disqualified'
 
 export default function EngagersPage() {
   const [engagers, setEngagers] = useState<PostEngager[]>([])
   const [loading, setLoading] = useState(true)
-  const [filter, setFilter] = useState<QualFilter>('all')
-  // Track qualification status locally (keyed by engager id)
+  const [filter, setFilter] = useState<TierFilter>('icp')
   const [qualStatus, setQualStatus] = useState<Record<string, 'qualified' | 'disqualified'>>({})
   const [saving, setSaving] = useState<string | null>(null)
 
@@ -23,7 +36,6 @@ export default function EngagersPage() {
     const list: PostEngager[] = data.engagers || []
     setEngagers(list)
 
-    // Load existing qualification status
     const statusMap: Record<string, 'qualified' | 'disqualified'> = {}
     for (const eng of list) {
       if (eng.icp_status === 'qualified' || eng.icp_status === 'disqualified') {
@@ -38,7 +50,6 @@ export default function EngagersPage() {
 
   async function handleQualify(id: string, status: 'qualified' | 'disqualified') {
     setSaving(id)
-    // Toggle: if already set to this status, remove it
     const newStatus = qualStatus[id] === status ? undefined : status
 
     try {
@@ -65,18 +76,24 @@ export default function EngagersPage() {
   }
 
   const filtered = engagers.filter(eng => {
-    if (filter === 'all') return true
+    if (filter === 'icp') return (eng.icp_tier ?? 0) >= 1
     if (filter === 'qualified') return qualStatus[eng.id] === 'qualified'
     if (filter === 'disqualified') return qualStatus[eng.id] === 'disqualified'
-    if (filter === 'unreviewed') return !qualStatus[eng.id]
-    return true
+    return true // 'all'
+  })
+
+  // Sort: highest tier first, then by name
+  const sorted = [...filtered].sort((a, b) => {
+    const tierDiff = (b.icp_tier ?? 0) - (a.icp_tier ?? 0)
+    if (tierDiff !== 0) return tierDiff
+    return (a.name || '').localeCompare(b.name || '')
   })
 
   const counts = {
+    icp: engagers.filter(e => (e.icp_tier ?? 0) >= 1).length,
     all: engagers.length,
     qualified: engagers.filter(e => qualStatus[e.id] === 'qualified').length,
     disqualified: engagers.filter(e => qualStatus[e.id] === 'disqualified').length,
-    unreviewed: engagers.filter(e => !qualStatus[e.id]).length,
   }
 
   if (loading) {
@@ -99,27 +116,33 @@ export default function EngagersPage() {
   return (
     <div className="space-y-3">
       {/* Filter bar */}
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2 flex-wrap">
         <Filter className="h-4 w-4 text-muted-foreground" />
-        {(['all', 'unreviewed', 'qualified', 'disqualified'] as QualFilter[]).map(f => (
+        {([
+          { key: 'icp' as TierFilter, label: 'Tier 1+' },
+          { key: 'all' as TierFilter, label: 'All' },
+          { key: 'qualified' as TierFilter, label: 'Qualified' },
+          { key: 'disqualified' as TierFilter, label: 'Disqualified' },
+        ]).map(f => (
           <Button
-            key={f}
+            key={f.key}
             size="sm"
-            variant={filter === f ? 'default' : 'outline'}
-            onClick={() => setFilter(f)}
+            variant={filter === f.key ? 'default' : 'outline'}
+            onClick={() => setFilter(f.key)}
             className="text-xs h-7"
           >
-            {f === 'all' ? 'All' : f === 'unreviewed' ? 'Unreviewed' : f === 'qualified' ? 'Qualified' : 'Disqualified'}
-            <span className="ml-1 text-[10px] opacity-70">({counts[f]})</span>
+            {f.label}
+            <span className="ml-1 text-[10px] opacity-70">({counts[f.key]})</span>
           </Button>
         ))}
       </div>
 
-      <p className="text-sm text-muted-foreground">{filtered.length} engager{filtered.length !== 1 ? 's' : ''}</p>
+      <p className="text-sm text-muted-foreground">{sorted.length} engager{sorted.length !== 1 ? 's' : ''}</p>
 
-      {filtered.map(eng => {
+      {sorted.map(eng => {
         const status = qualStatus[eng.id]
         const isSaving = saving === eng.id
+        const tier = eng.icp_tier ?? 0
 
         return (
           <Card
@@ -142,9 +165,12 @@ export default function EngagersPage() {
                     ) : (
                       <span className="font-medium text-sm">{eng.name || 'Unknown'}</span>
                     )}
+                    <Badge className={`text-[10px] ${TIER_COLORS[tier] || TIER_COLORS[0]}`}>
+                      {TIER_LABELS[tier] || 'Non-ICP'}
+                    </Badge>
                     {eng.company && <Badge variant="outline" className="text-xs">{eng.company}</Badge>}
-                    {status === 'qualified' && <Badge className="bg-emerald-100 text-emerald-700 text-[10px]">ICP</Badge>}
-                    {status === 'disqualified' && <Badge className="bg-red-100 text-red-700 text-[10px]">Not ICP</Badge>}
+                    {status === 'qualified' && <Badge className="bg-emerald-500 text-white text-[10px]">ICP ✓</Badge>}
+                    {status === 'disqualified' && <Badge className="bg-red-500 text-white text-[10px]">Not ICP</Badge>}
                   </div>
                   <p className="text-xs text-muted-foreground mt-0.5">
                     {eng.title || 'No title'}
@@ -152,7 +178,6 @@ export default function EngagersPage() {
                   </p>
                 </div>
                 <div className="flex items-center gap-1">
-                  {/* Qualify/Disqualify buttons */}
                   <Button
                     size="sm"
                     variant="ghost"
@@ -190,6 +215,14 @@ export default function EngagersPage() {
           </Card>
         )
       })}
+
+      {sorted.length === 0 && (
+        <Card>
+          <CardContent className="py-8 text-center">
+            <p className="text-sm text-muted-foreground">No engagers match this filter.</p>
+          </CardContent>
+        </Card>
+      )}
     </div>
   )
 }

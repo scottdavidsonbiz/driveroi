@@ -172,5 +172,6 @@ export interface PostEngager {
   email: string | null
   enriched_at: string | null
   icp_status: string | null
+  icp_tier: number | null
   created_at: string
 }

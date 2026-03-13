@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { scrapePostEngagers } from '@/lib/apify'
 import { supabase } from '@/lib/supabase'
 import { parseHeadline } from '@/lib/parse-headline'
+import { classifyEngagerTier } from '@/lib/icp-tiers'
 import { generateAndStoreBrief } from '@/lib/performance-brief'
 
 export const maxDuration = 120 // Allow up to 120s for two parallel Apify sync runs
@@ -100,8 +101,9 @@ export async function POST(request: NextRequest) {
         continue
       }
 
-      // Parse headline for title + company
+      // Parse headline for title + company, compute ICP tier
       const { title, company } = parseHeadline(engager.headline)
+      const { tier } = classifyEngagerTier(title)
 
       newRows.push({
         post_id: post_id || null,
@@ -111,6 +113,7 @@ export async function POST(request: NextRequest) {
         company,
         domain: null,
         email: null,
+        icp_tier: tier,
         enriched_at: new Date().toISOString(),
       })
     }
