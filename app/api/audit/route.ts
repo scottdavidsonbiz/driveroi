@@ -1,17 +1,16 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { supabase } from '@/lib/supabase'
-import { postToSlack } from '@/lib/slack'
 import { CATEGORIES } from '@/lib/audit/questions'
-import { getTier, getTierLabel, getCategoryTier, getCategoryTierLabel } from '@/lib/audit/scoring'
+import { getTier } from '@/lib/audit/scoring'
 
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
-    const { name, email, company, answers } = body
+    const { answers } = body
 
-    if (!name || !email || !answers) {
+    if (!answers) {
       return NextResponse.json(
-        { error: 'name, email, and answers are required' },
+        { error: 'answers are required' },
         { status: 400 }
       )
     }
@@ -30,9 +29,6 @@ export async function POST(request: NextRequest) {
     const { data, error } = await supabase
       .from('audit_submissions')
       .insert({
-        name,
-        email,
-        company: company || null,
         answers,
         category_scores: categoryScores,
         total_score: totalScore,
@@ -44,46 +40,6 @@ export async function POST(request: NextRequest) {
     if (error) {
       console.error('[Audit API] Supabase error:', error)
       return NextResponse.json({ error: error.message }, { status: 500 })
-    }
-
-    // Slack notification
-    const webhookUrl = process.env.SLACK_WEBHOOK_URL
-    if (webhookUrl) {
-      const tierLabel = getTierLabel(scoreTier)
-      const categoryLines = CATEGORIES.map((cat) => {
-        const score = categoryScores[cat.id]
-        const tier = getCategoryTierLabel(getCategoryTier(score))
-        return `  ${cat.name}: ${score}/9 (${tier})`
-      }).join('\n')
-
-      const blocks = [
-        {
-          type: 'header',
-          text: {
-            type: 'plain_text',
-            text: 'New GTM Audit Submission',
-          },
-        },
-        {
-          type: 'section',
-          text: {
-            type: 'mrkdwn',
-            text: [
-              `*${name}*${company ? ` at ${company}` : ''}`,
-              `Email: ${email}`,
-              `*Score: ${totalScore}/45 — ${tierLabel}*`,
-              '',
-              categoryLines,
-            ].join('\n'),
-          },
-        },
-      ]
-
-      try {
-        await postToSlack(webhookUrl, blocks)
-      } catch (err) {
-        console.error('[Audit API] Slack error:', err)
-      }
     }
 
     return NextResponse.json({ success: true, id: data.id })

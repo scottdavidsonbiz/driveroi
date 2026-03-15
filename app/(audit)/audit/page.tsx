@@ -11,15 +11,12 @@ import {
   type AuditResult,
 } from '@/lib/audit/scoring'
 
-type Phase = 'questions' | 'gate' | 'results'
+type Phase = 'questions' | 'results'
 
 export default function AuditPage() {
   const [phase, setPhase] = useState<Phase>('questions')
   const [categoryIndex, setCategoryIndex] = useState(0)
   const [answers, setAnswers] = useState<Record<string, number>>({})
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [company, setCompany] = useState('')
   const [submitting, setSubmitting] = useState(false)
   const [result, setResult] = useState<AuditResult | null>(null)
 
@@ -32,11 +29,27 @@ export default function AuditPage() {
     setAnswers((prev) => ({ ...prev, [questionId]: score }))
   }
 
-  function handleNext() {
+  async function handleNext() {
     if (categoryIndex < CATEGORIES.length - 1) {
       setCategoryIndex((i) => i + 1)
     } else {
-      setPhase('gate')
+      setSubmitting(true)
+      const auditResult = scoreAudit(answers)
+
+      try {
+        await fetch('/api/audit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ answers }),
+        })
+      } catch {
+        // Non-blocking — show results even if save fails
+        console.error('Failed to save audit submission')
+      }
+
+      setResult(auditResult)
+      setPhase('results')
+      setSubmitting(false)
     }
   }
 
@@ -44,28 +57,6 @@ export default function AuditPage() {
     if (categoryIndex > 0) {
       setCategoryIndex((i) => i - 1)
     }
-  }
-
-  async function handleSubmit(e: React.FormEvent) {
-    e.preventDefault()
-    setSubmitting(true)
-
-    const auditResult = scoreAudit(answers)
-
-    try {
-      await fetch('/api/audit', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ name, email, company, answers }),
-      })
-    } catch {
-      // Non-blocking — show results even if save fails
-      console.error('Failed to save audit submission')
-    }
-
-    setResult(auditResult)
-    setPhase('results')
-    setSubmitting(false)
   }
 
   return (
@@ -176,102 +167,17 @@ export default function AuditPage() {
             <button
               type="button"
               onClick={handleNext}
-              disabled={!allQuestionsAnswered}
+              disabled={!allQuestionsAnswered || submitting}
               className="ml-auto rounded-lg px-6 py-2.5 text-sm font-medium text-white transition-opacity disabled:opacity-40 disabled:cursor-not-allowed"
               style={{ backgroundColor: '#8B5CF6' }}
             >
-              {categoryIndex < CATEGORIES.length - 1
-                ? 'Next Category'
-                : 'See My Results'}
+              {submitting
+                ? 'Calculating...'
+                : categoryIndex < CATEGORIES.length - 1
+                  ? 'Next Category'
+                  : 'See My Results'}
             </button>
           </div>
-        </div>
-      )}
-
-      {/* Gate Phase */}
-      {phase === 'gate' && (
-        <div className="rounded-xl border bg-card p-6 sm:p-8">
-          <h2 className="mb-2 text-lg font-semibold">
-            Almost there — where should we send your results?
-          </h2>
-          <p className="mb-6 text-sm text-muted-foreground">
-            Get your personalized score breakdown and recommendations.
-          </p>
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <div>
-              <label
-                htmlFor="name"
-                className="mb-1.5 block text-sm font-medium"
-              >
-                Name
-              </label>
-              <input
-                id="name"
-                type="text"
-                required
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                placeholder="Your name"
-                className="flex h-10 w-full rounded-md border border-input bg-transparent px-3 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-              />
-            </div>
-            <div>
-              <label
-                htmlFor="email"
-                className="mb-1.5 block text-sm font-medium"
-              >
-                Work Email
-              </label>
-              <input
-                id="email"
-                type="email"
-                required
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="you@company.com"
-                className="flex h-10 w-full rounded-md border border-input bg-transparent px-3 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-              />
-            </div>
-            <div>
-              <label
-                htmlFor="company"
-                className="mb-1.5 block text-sm font-medium"
-              >
-                Company{' '}
-                <span className="font-normal text-muted-foreground">
-                  (optional)
-                </span>
-              </label>
-              <input
-                id="company"
-                type="text"
-                value={company}
-                onChange={(e) => setCompany(e.target.value)}
-                placeholder="Your company"
-                className="flex h-10 w-full rounded-md border border-input bg-transparent px-3 py-2 text-sm placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
-              />
-            </div>
-            <div className="flex gap-3 pt-2">
-              <button
-                type="button"
-                onClick={() => {
-                  setPhase('questions')
-                  setCategoryIndex(CATEGORIES.length - 1)
-                }}
-                className="rounded-lg border border-border px-6 py-2.5 text-sm font-medium transition-colors hover:bg-muted"
-              >
-                Back
-              </button>
-              <button
-                type="submit"
-                disabled={submitting || !name || !email}
-                className="ml-auto rounded-lg px-6 py-2.5 text-sm font-medium text-white transition-opacity disabled:opacity-40 disabled:cursor-not-allowed"
-                style={{ backgroundColor: '#8B5CF6' }}
-              >
-                {submitting ? 'Calculating...' : 'Get My Score'}
-              </button>
-            </div>
-          </form>
         </div>
       )}
 
