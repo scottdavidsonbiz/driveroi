@@ -116,12 +116,17 @@ python .claude/skills/prospect-deliverable/scripts/generate-deliverable.py \
     --output public/leads/<prospect-slug>.html
 ```
 
-The script handles: CSV parsing, non-US filtering, email pattern detection and inference, branded HTML generation.
+The script handles: CSV parsing, non-US filtering, email pattern detection and inference, branded HTML generation with CTA elements.
+
+The generated HTML includes three CTA placements:
+- **Header CTA**: "Schedule a Call" button inline with the DriveROI logo at the top of the page
+- **Floating bar**: A sticky bar with DriveROI logo + CTA that slides in from the top when the user scrolls past the header — stays visible as they browse the list
+- **Bottom CTA section**: Full-width CTA block after the account list
 
 After generation, review the output:
 - Contacts that are obviously wrong (wrong country, wrong company)
 - Data quality issues (duplicate names, garbled titles)
-- CTA button should appear at top AND bottom of page
+- All three CTA placements should be present and link to the correct cal.com URL
 
 Fix issues by editing the CSV and re-running, or editing the HTML directly.
 
