@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ICP Target List — Prepared for Vizbl</title>
+<style>
+  :root {
+    --purple: #8B7FD4;
+    --purple-light: #f0eef9;
+    --purple-dark: #6b5fb4;
+    --text: #1a1a1a;
+    --text-secondary: #6b7280;
+    --border: #e5e7eb;
+    --bg: #ffffff;
+    --bg-alt: #f9fafb;
+    --success: #059669;
+    --amber: #d97706;
+    --amber-bg: #fffbeb;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: var(--text); background: var(--bg-alt); line-height: 1.6; -webkit-font-smoothing: antialiased;
+  }
+  .container { max-width: 960px; margin: 0 auto; background: var(--bg); min-height: 100vh; }
+  .header { padding: 40px 48px 32px; border-bottom: 1px solid var(--border); }
+  .logo { font-size: 28px; font-weight: 900; letter-spacing: -0.5px; color: var(--text); display: inline-block; margin-bottom: 24px; }
+  .logo span { position: relative; }
+  .logo span::after { content: ''; position: absolute; bottom: -2px; left: 0; right: 0; height: 4px; background: var(--purple); border-radius: 2px; }
+  .header h1 { font-size: 22px; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+  .header .subtitle { font-size: 15px; color: var(--text-secondary); }
+  .stats { display: flex; gap: 0; padding: 0 48px; border-bottom: 1px solid var(--border); }
+  .stat { flex: 1; padding: 20px 0; text-align: center; border-right: 1px solid var(--border); }
+  .stat:last-child { border-right: none; }
+  .stat-value { font-size: 28px; font-weight: 800; color: var(--text); }
+  .stat-label { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-secondary); margin-top: 2px; }
+  .stat-sublabel { font-size: 11px; color: var(--text-secondary); margin-top: 2px; }
+  .intro { padding: 28px 48px; border-bottom: 1px solid var(--border); text-align: center; }
+  .intro p { font-size: 15px; color: var(--text-secondary); max-width: 680px; margin: 0 auto; line-height: 1.7; }
+  .legend { padding: 16px 48px; border-bottom: 1px solid var(--border); display: flex; gap: 20px; align-items: center; }
+  .legend-item { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--text-secondary); }
+  .legend-dot { width: 10px; height: 10px; border-radius: 3px; }
+  .legend-dot-verified { background: #ecfdf5; border: 1px solid var(--success); }
+  .legend-dot-inferred { background: var(--amber-bg); border: 1px solid var(--amber); }
+  .table-section { padding: 0 48px; }
+  .company-group { border-bottom: 1px solid var(--border); }
+  .company-header { display: flex; align-items: baseline; gap: 12px; padding: 20px 0 8px; }
+  .company-name { font-size: 16px; font-weight: 700; color: var(--text); }
+  .company-location { font-size: 13px; color: var(--text-secondary); }
+  .company-domain { font-size: 13px; color: var(--purple); margin-left: auto; text-decoration: none; }
+  .company-domain:hover { text-decoration: underline; }
+  .contacts-table { width: 100%; border-collapse: collapse; margin-bottom: 16px; }
+  .contacts-table th { text-align: left; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-secondary); padding: 6px 12px 6px 0; border-bottom: 1px solid var(--border); }
+  .contacts-table td { padding: 10px 12px 10px 0; font-size: 14px; vertical-align: middle; }
+  .contacts-table tr:not(:last-child) td { border-bottom: 1px solid #f3f4f6; }
+  .contact-name { font-weight: 600; color: var(--text); }
+  .contact-title { color: var(--text-secondary); font-size: 13px; }
+  .contact-location { color: var(--text-secondary); font-size: 13px; }
+  .badge { display: inline-flex; align-items: center; gap: 4px; font-size: 12px; padding: 3px 8px; border-radius: 4px; font-weight: 500; text-decoration: none; }
+  .badge-linkedin { background: #f0f0f0; color: #0077b5; }
+  .badge-linkedin:hover { background: #e0e0e0; }
+  .badge-email { background: #ecfdf5; color: var(--success); }
+  .badge-email a { color: var(--success); text-decoration: none; }
+  .badge-email a:hover { text-decoration: underline; }
+  .badge-inferred { background: var(--amber-bg); color: var(--amber); }
+  .badge-inferred a { color: var(--amber); text-decoration: none; }
+  .badge-inferred a:hover { text-decoration: underline; }
+  .badges { display: flex; gap: 6px; flex-wrap: wrap; }
+  .cta-section { padding: 48px; text-align: center; background: var(--purple-light); }
+  .cta-section h2 { font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 8px; }
+  .cta-section p { font-size: 15px; color: var(--text-secondary); max-width: 520px; margin: 0 auto 24px; line-height: 1.7; }
+  .cta-button { display: inline-block; background: var(--purple); color: white; font-size: 15px; font-weight: 600; padding: 12px 32px; border-radius: 8px; text-decoration: none; transition: background 0.2s; }
+  .cta-button:hover { background: var(--purple-dark); }
+  .footer { padding: 24px 48px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; }
+  .footer-logo { font-size: 16px; font-weight: 800; color: var(--text); }
+  .footer-logo span { position: relative; }
+  .footer-logo span::after { content: ''; position: absolute; bottom: -1px; left: 0; right: 0; height: 3px; background: var(--purple); border-radius: 2px; }
+  .footer-text { font-size: 13px; color: var(--text-secondary); }
+  .footer-text a { color: var(--purple); text-decoration: none; }
+  @media (max-width: 640px) {
+    .header, .intro, .table-section, .cta-section, .footer, .legend { padding-left: 24px; padding-right: 24px; }
+    .stats { padding: 0 24px; flex-wrap: wrap; }
+    .stat { min-width: 50%; }
+    .company-header { flex-wrap: wrap; }
+    .company-domain { margin-left: 0; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="logo">Drive<span>ROI</span></div>
+    <h1>ICP Target List</h1>
+    <div class="subtitle">Prepared for Vizbl &mdash; March 2026</div>
+  </div>
+  <div class="stats">
+    <div class="stat">
+      <div class="stat-value">25</div>
+      <div class="stat-label">Accounts</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">25</div>
+      <div class="stat-label">Decision Makers</div>
+    </div>
+    <div class="stat">
+      <div class="stat-value">25</div>
+      <div class="stat-label">Emails</div>
+      
+    </div>
+    <div class="stat">
+      <div class="stat-value">0</div>
+      <div class="stat-label">States</div>
+    </div>
+  </div>
+  <div class="intro">
+    <p>These accounts were identified using firmographic data, technology signals, and semantic matching against Vizbl's ideal customer profile. Key contacts were selected based on decision-making authority for operations and technology purchases.</p>
+  </div>
+  
+  <div class="table-section">
+
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">American Sale</div>
+        <div class="company-location"></div>
+        <a class="company-domain" href="https://americansale.com" target="_blank">americansale.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Erica Steadman</td>
+            <td class="contact-title">Digital Marketing Manager</td>
+            <td class="contact-location"></td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/ericasteadman" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:esteadman@americansale.com">esteadman@americansale.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Areaware</div>
+        <div class="company-location"></div>
+        <a class="company-domain" href="https://areaware.com" target="_blank">areaware.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Roberto Fantauzzi</td>
+            <td class="contact-title">Product Developer</td>
+            <td class="contact-location"></td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/rfantauzzi" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:roberto@areaware.com">roberto@areaware.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Art.com</div>
+        <div class="company-location"></div>
+        <a class="company-domain" href="https://art.com" target="_blank">art.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Matt Taylor</td>
+            <td class="contact-title">Chief Digital Officer</td>
+            <td class="contact-location"></td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/matt-taylor-80b01a175" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:matt@art.com">matt@art.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Article</div>
+        <div class="company-location"></div>
+        <a class="company-domain" href="https://article.com" target="_blank">article.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Devon Neil</td>
+            <td class="contact-title">Lead Product Manager</td>
+            <td class="contact-location"></td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/devon-mac-neil-62039b10b" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:devon.neil@article.com">devon.neil@article.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Brooklinen</div>
+        <div class="company-location"></div>
+        <a class="company-domain" href="https://brooklinen.com" target="_blank">brooklinen.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Adarsh Doshi</td>
+            <td class="contact-title">Director of eCommerce Business Operations</td>
+            <td class="contact-location"></td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/adarshdoshi" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:adarsh@brooklinen.com">adarsh@brooklinen.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Canvas On Demand</div>
+        <div class="company-location"></div>
+        <a class="company-domain" href="https://canvasondemand.com" target="_blank">canvasondemand.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Tom Lotrecchiano</td>
+            <td class="contact-title">Co-founder</td>
+            <td class="contact-location"></td>
+            <td class="badges"><span class="badge badge-email"><a href="mailto:tl@canvasondemand.com">tl@canvasondemand.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">CanvasChamp</div>
+        <div class="company-location"></div>
+        <a class="company-domain" href="https://canvaschamp.com" target="_blank">canvaschamp.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Shakti Aggarwal</td>
+            <td class="contact-title">Chief Growth Officer &amp; General Manager</td>
+            <td class="contact-location"></td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/shakti-aggarwal-50bb0115" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:shakti@canvaschamp.com">shakti@canvaschamp.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Castlery</div>
+        <div class="company-location"></div>
+        <a class="company-domain" href="https://castlery.com" target="_blank">castlery.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Fred Ji</td>
+            <td class="contact-title">Founder and CEO</td>
+            <td class="contact-location"></td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/fred-ji-08866b26" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:fred.ji@castlery.com">fred.ji@castlery.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Couch.com</div>
+        <div class="company-location"></div>
+        <a class="company-domain" href="https://couch.com" target="_blank">couch.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Alex Back</td>
+            <td class="contact-title">Operations Manager</td>
+            <td class="contact-location"></td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/alex-back-49784435" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:alex@couch.com">alex@couch.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Designart</div>
+        <div class="company-location"></div>
+        <a class="company-domain" href="https://designartusa.com" target="_blank">designartusa.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Ajit Kumar</td>
+            <td class="contact-title">Partner</td>
+            <td class="contact-location"></td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/ajit-kumar-68aa78127" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:ajitkumar@designartusa.com">ajitkumar@designartusa.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Home Centric</div>
+        <div class="company-location"></div>
+        <a class="company-domain" href="https://homecentric.com" target="_blank">homecentric.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Leana Less</td>
+            <td class="contact-title">CMO</td>
+            <td class="contact-location"></td>
+            <td class="badges"><span class="badge badge-email"><a href="mailto:lless@beallsinc.com">lless@beallsinc.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Interior Define</div>
+        <div class="company-location"></div>
+        <a class="company-domain" href="https://interiordefine.com" target="_blank">interiordefine.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Mary Spreck</td>
+            <td class="contact-title">Director of Growth and Partnerships</td>
+            <td class="contact-location"></td>
+            <td class="badges"><span class="badge badge-email"><a href="mailto:mary.spreck@interiordefine.com">mary.spreck@interiordefine.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Istanbul Rug</div>
+        <div class="company-location"></div>
+        <a class="company-domain" href="https://istanbulrug.com" target="_blank">istanbulrug.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Ogi Teker</td>
+            <td class="contact-title">Co-Owner</td>
+            <td class="contact-location"></td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/ogiteker" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:ogi@istanbulrug.com">ogi@istanbulrug.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Joybird</div>
+        <div class="company-location"></div>
+        <a class="company-domain" href="https://joybird.com" target="_blank">joybird.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Kimberly Gonzales</td>
+            <td class="contact-title">Director of Marketing</td>
+            <td class="contact-location"></td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/kimberlygonzales2020" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:kimberly@joybird.com">kimberly@joybird.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Maiden Home</div>
+        <div class="company-location"></div>
+        <a class="company-domain" href="https://maidenhome.com" target="_blank">maidenhome.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Danielle Chin</td>
+            <td class="contact-title">Senior Director Brand Marketing</td>
+            <td class="contact-location"></td>
+            <td class="badges"><span class="badge badge-email"><a href="mailto:danielle@maidenhome.com">danielle@maidenhome.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Minted</div>
+        <div class="company-location"></div>
+        <a class="company-domain" href="https://minted.com" target="_blank">minted.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Lauren Kelly</td>
+            <td class="contact-title">Senior Director Brand Creative &amp; Product Development</td>
+            <td class="contact-location"></td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/laurenrichelkelly" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:lauren.kelly@minted.com">lauren.kelly@minted.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Nugget Comfort</div>
+        <div class="company-location"></div>
+        <a class="company-domain" href="https://nuggetcomfort.com" target="_blank">nuggetcomfort.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">David Baron</td>
+            <td class="contact-title">Founder</td>
+            <td class="contact-location"></td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/baronsdavid" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:david@nuggetcomfort.com">david@nuggetcomfort.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Parachute Home</div>
+        <div class="company-location"></div>
+        <a class="company-domain" href="https://parachutehome.com" target="_blank">parachutehome.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Katie Sheeran</td>
+            <td class="contact-title">Senior Vice President Marketing</td>
+            <td class="contact-location"></td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/sheerankatie" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:ksheeran@parachutehome.com">ksheeran@parachutehome.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Rove Concepts</div>
+        <div class="company-location"></div>
+        <a class="company-domain" href="https://roveconcepts.com" target="_blank">roveconcepts.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Alex Cheng</td>
+            <td class="contact-title">CEO</td>
+            <td class="contact-location"></td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/alex-cheng-a9003a66" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:alex@roveconcepts.com">alex@roveconcepts.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Ruggable</div>
+        <div class="company-location"></div>
+        <a class="company-domain" href="https://ruggable.com" target="_blank">ruggable.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Molly Leaf</td>
+            <td class="contact-title">Senior Director of Marketing and Creative Operations</td>
+            <td class="contact-location"></td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/mollyleaf" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:molly.leaf@ruggable.com">molly.leaf@ruggable.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Saatchi Art</div>
+        <div class="company-location"></div>
+        <a class="company-domain" href="https://saatchiart.com" target="_blank">saatchiart.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Alexander Kim</td>
+            <td class="contact-title">Director of Product</td>
+            <td class="contact-location"></td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/alex--kim" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:alexander.kim@saatchiart.com">alexander.kim@saatchiart.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Sixpenny</div>
+        <div class="company-location"></div>
+        <a class="company-domain" href="https://sixpenny.com" target="_blank">sixpenny.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Robert Natale</td>
+            <td class="contact-title">Global CEO</td>
+            <td class="contact-location"></td>
+            <td class="badges"><span class="badge badge-email"><a href="mailto:rob@sixpenny.com">rob@sixpenny.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Ultra Modern Pool &amp; Patio</div>
+        <div class="company-location"></div>
+        <a class="company-domain" href="https://ultramodern.com" target="_blank">ultramodern.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Kara Weed</td>
+            <td class="contact-title">VP Marketing &amp; General Management</td>
+            <td class="contact-location"></td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/kara-rowlen-weed-8936b315" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:kweed@ultramodern.com">kweed@ultramodern.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">Watson&#x27;s</div>
+        <div class="company-location"></div>
+        <a class="company-domain" href="https://watsons.com" target="_blank">watsons.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Benjamin Agnew</td>
+            <td class="contact-title">Marketing Manager</td>
+            <td class="contact-location"></td>
+            <td class="badges"><span class="badge badge-email"><a href="mailto:bagnew@watsons.com">bagnew@watsons.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="company-group">
+      <div class="company-header">
+        <div class="company-name">iCanvas</div>
+        <div class="company-location"></div>
+        <a class="company-domain" href="https://icanvas.com" target="_blank">icanvas.com</a>
+      </div>
+      <table class="contacts-table">
+        <thead><tr><th>Contact</th><th>Title</th><th>Location</th><th></th></tr></thead>
+        <tbody>
+          <tr>
+            <td class="contact-name">Leon Oks</td>
+            <td class="contact-title">Founder + COO</td>
+            <td class="contact-location"></td>
+            <td class="badges"><a class="badge badge-linkedin" href="https://www.linkedin.com/in/leon-oks-ab8b9532" target="_blank">LinkedIn</a><span class="badge badge-email"><a href="mailto:leon@icanvas.com">leon@icanvas.com</a></span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="cta-section">
+    <h2>This is a sample of what we can build.</h2>
+    <p>We source the accounts, find the right people, and give your team a list they can actually work. Let's talk about building pipeline for Vizbl.</p>
+    <a class="cta-button" href="https://cal.com/driveroi/30min" target="_blank">Schedule a Call &rarr;</a>
+  </div>
+  <div class="footer">
+    <div class="footer-logo">Drive<span>ROI</span></div>
+    <div class="footer-text"><a href="https://driveroi.ai">driveroi.ai</a></div>
+  </div>
+</div>
+</body>
+</html>
