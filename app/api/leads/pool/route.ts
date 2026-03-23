@@ -1,10 +1,16 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { createClient } from '@supabase/supabase-js'
+import { createClient, SupabaseClient } from '@supabase/supabase-js'
 
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.SUPABASE_SERVICE_ROLE_KEY!
-)
+let _supabase: SupabaseClient | null = null
+function getSupabase() {
+  if (!_supabase) {
+    _supabase = createClient(
+      process.env.NEXT_PUBLIC_SUPABASE_URL!,
+      process.env.SUPABASE_SERVICE_ROLE_KEY!
+    )
+  }
+  return _supabase
+}
 
 /**
  * POST /api/leads/pool
@@ -42,7 +48,7 @@ export async function POST(request: NextRequest) {
       }
 
       // Check if already contacted (never re-email)
-      const { data: contacted } = await supabase
+      const { data: contacted } = await getSupabase()
         .from('lead_pool_contacted')
         .select('email')
         .eq('email', lead.email)
@@ -54,7 +60,7 @@ export async function POST(request: NextRequest) {
       }
 
       // Upsert into lead pool (skip if already exists)
-      const { error } = await supabase
+      const { error } = await getSupabase()
         .from('lead_pool')
         .upsert(lead, { onConflict: 'email', ignoreDuplicates: true })
 
@@ -87,17 +93,17 @@ export async function POST(request: NextRequest) {
  * Returns pool stats for monitoring.
  */
 export async function GET() {
-  const { count: available } = await supabase
+  const { count: available } = await getSupabase()
     .from('lead_pool')
     .select('*', { count: 'exact', head: true })
     .eq('status', 'available')
 
-  const { count: assigned } = await supabase
+  const { count: assigned } = await getSupabase()
     .from('lead_pool')
     .select('*', { count: 'exact', head: true })
     .eq('status', 'assigned')
 
-  const { count: contacted } = await supabase
+  const { count: contacted } = await getSupabase()
     .from('lead_pool_contacted')
     .select('*', { count: 'exact', head: true })
 
