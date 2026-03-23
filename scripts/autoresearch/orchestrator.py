@@ -140,7 +140,7 @@ def instantly_create_campaign(name: str, subject: str, body: str, daily_limit: i
         "campaign_schedule": {
             "schedules": [{
                 "name": "Default",
-                "timezone": "America/New_York",
+                "timezone": "America/Chicago",
                 "days": {"1": 1, "2": 1, "3": 1, "4": 1, "5": 1},
                 "timing": {"from": "08:00", "to": "17:00"},
             }]
@@ -156,6 +156,8 @@ def instantly_create_campaign(name: str, subject: str, body: str, daily_limit: i
         },
     }
     r = requests.post(f"{INSTANTLY_BASE}/campaigns", json=payload, headers=_instantly_headers())
+    if not r.ok:
+        log.error("Campaign creation failed %d: %s", r.status_code, r.text[:500])
     r.raise_for_status()
     return r.json()["id"]
 
@@ -232,8 +234,8 @@ def parse_baseline(config_md: str) -> dict:
                 break
             body_lines.append(line.rstrip())
 
-    # Dedent body
-    body = "\n".join(body_lines).strip()
+    # Dedent body (strip leading whitespace from each line)
+    body = "\n".join(line.lstrip() for line in body_lines).strip()
     return {"subject": subject, "body": body}
 
 
@@ -317,7 +319,7 @@ body: |
 ## Campaign Settings
 daily_limit: 125
 email_gap: 10
-timezone: America/New_York
+timezone: America/Chicago
 schedule_start: "08:00"
 schedule_end: "17:00"
 """
@@ -433,7 +435,7 @@ body: |
         elif in_body:
             body_lines.append(line.rstrip())
 
-    body = "\n".join(body_lines).strip()
+    body = "\n".join(line.lstrip() for line in body_lines).strip()
 
     log.info("Generated challenger: subject='%s', hypothesis='%s'", subject, hypothesis)
     return {"subject": subject, "body": body, "hypothesis": hypothesis, "raw": text}
