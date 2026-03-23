@@ -61,6 +61,39 @@ SUPABASE_KEY = os.environ.get("SUPABASE_SERVICE_ROLE_KEY", "")
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 SLACK_WEBHOOK = os.environ.get("SLACK_WEBHOOK_URL", "")
 
+# Sending accounts for autoresearch campaigns (proxy domains)
+SENDING_ACCOUNTS = [
+    "alan@octagammaverse.com",
+    "charles@octagammaverse.com",
+    "eric@octagammaverse.com",
+    "kayla@octagammaverse.com",
+    "thomas@octagammaverse.com",
+    "evelyn@goprospectbridge.com",
+    "lawrence@goprospectbridge.com",
+    "ronald@goprospectbridge.com",
+    "justin@goprospectbridge.com",
+    "larry@goprospectbridge.com",
+    "ava@edgeb2b.org",
+    "hannah@edgeb2b.org",
+    "stephen@edgeb2b.org",
+    "steven@edgeb2b.org",
+    "daniela@edgeb2b.org",
+    "abigail@momentumsigma.com",
+    "alan@momentumsigma.com",
+    "audrey@momentumsigma.com",
+    "charles@momentumsigma.com",
+    "kyle@momentumsigma.com",
+    "autumn@pentadash.com",
+    "benjamin@pentadash.com",
+    "zoe@pentadash.com",
+    "bryan@pentadash.com",
+    "donald@pentadash.com",
+    "bryan@nonatechs.com",
+    "emily@nonatechs.com",
+    "george@nonatechs.com",
+    "kenneth@nonatechs.com",
+]
+
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY) if SUPABASE_URL and SUPABASE_KEY else None
 
 
@@ -93,9 +126,10 @@ def instantly_get_analytics(campaign_id: str) -> dict:
 
 
 def instantly_create_campaign(name: str, subject: str, body: str, daily_limit: int = 125) -> str:
-    """Create a single-step campaign. Returns campaign_id."""
+    """Create a single-step campaign with proxy sending accounts. Returns campaign_id."""
     payload = {
         "name": name,
+        "email_list": SENDING_ACCOUNTS,
         "sequences": [{
             "steps": [{
                 "type": "email",
