@@ -50,7 +50,7 @@ RESULTS_LOG = ROOT / "results.log"
 
 LEADS_PER_ARM = 250
 HARVEST_WINDOW_HOURS = 48
-MIN_REPLIES_FOR_WINNER = 2
+MIN_REPLIES_FOR_WINNER = 1
 
 # --- Clients ---
 INSTANTLY_API_KEY = os.environ.get("INSTANTLY_API_KEY", "")
@@ -180,6 +180,20 @@ def instantly_activate(campaign_id: str):
     r.raise_for_status()
 
 
+def instantly_get_replies(campaign_id: str) -> list[dict]:
+    """Fetch reply emails for a campaign with interest status."""
+    r = requests.get(
+        f"{INSTANTLY_BASE}/emails",
+        params={"campaign_id": campaign_id, "type": "reply", "limit": 50},
+        headers=_instantly_headers(),
+    )
+    if not r.ok:
+        log.warning("Failed to fetch replies for %s: %s", campaign_id[:8], r.status_code)
+        return []
+    data = r.json()
+    return data.get("items", [])
+
+
 # ─────────────────────────────────────────────
 # SUPABASE LEAD POOL
 # ─────────────────────────────────────────────
@@ -284,6 +298,22 @@ def harvest():
             winner = "baseline"
         else:
             winner = "tie"
+
+        # Fetch and notify on actual reply text
+        for arm_name, arm_id in [("BASELINE", exp["baseline_campaign_id"]), ("CHALLENGER", exp["challenger_campaign_id"])]:
+            replies = instantly_get_replies(arm_id)
+            for reply in replies:
+                i_status = reply.get("i_status", 0)
+                lead_email = reply.get("lead", reply.get("to_address_email_list", "?"))
+                preview = reply.get("content_preview", "")[:300]
+                status_label = "INTERESTED" if i_status == 1 else "NOT INTERESTED" if i_status == 0 else f"STATUS:{i_status}"
+                slack_notify(
+                    f"Reply on {arm_name} ({exp['id']})\n"
+                    f"From: {lead_email}\n"
+                    f"AI classification: {status_label}\n"
+                    f"Preview: {preview}"
+                )
+                log.info("Reply [%s] %s from %s: %s", arm_name, status_label, lead_email, preview[:100])
 
         # Update experiment record
         supabase.table("autoresearch_experiments").update({
