@@ -1,0 +1,21 @@
+data/
+transcripts/
+campaigns/
+clients/
+prospects/
+positioning/
+content/
+docs/
+scripts/
+remotion/
+shared/
+supabase/
+.claude/
+.cursor/
+.agents/
+.planning/
+*.db
+*.xlsx
+Basic Tracker*
+Client Lead Magnets/
+Clients/
