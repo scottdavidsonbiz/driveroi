@@ -54,8 +54,8 @@ export default function WebinarPage() {
       {/* Nav */}
       <nav className="border-b border-zinc-100">
         <div className="max-w-3xl mx-auto px-6 py-4 flex items-center justify-between">
-          <span className="text-sm font-semibold tracking-tight text-zinc-900">DriveROI</span>
-          <span className="text-xs text-zinc-400">Claude Code in the Wild</span>
+          <a href="https://driveroi.ai" target="_blank" rel="noopener noreferrer" className="text-sm font-semibold tracking-tight text-zinc-900 hover:text-zinc-600 transition-colors">DriveROI</a>
+          <a href="mailto:scott@driveroi.ai" className="text-xs text-zinc-400 hover:text-zinc-700 transition-colors">scott@driveroi.ai</a>
         </div>
       </nav>
 
