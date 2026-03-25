@@ -38,12 +38,11 @@ const SKILL_FILES = {
       { name: 'references/output-template.md', url: '/webinar/extract-insights-output-template.md' },
     ]
   },
-  prospectDeliverable: {
-    name: 'prospect-deliverable/SKILL.md',
-    download: '/webinar/prospect-deliverable-SKILL.md',
+  prospectDiscovery: {
+    name: 'prospect-discovery/SKILL.md',
+    download: '/webinar/prospect-discovery-SKILL.md',
     files: [
-      { name: 'SKILL.md', url: '/webinar/prospect-deliverable-SKILL.md' },
-      { name: 'references/discovery-workflow.md', url: '/webinar/prospect-deliverable-discovery-workflow.md' },
+      { name: 'SKILL.md', url: '/webinar/prospect-discovery-SKILL.md' },
     ]
   }
 }
@@ -103,7 +102,7 @@ export default function WebinarPage() {
             </div>
             <h3 className="font-semibold text-zinc-900 mb-2">Outbound Prospecting Pipeline</h3>
             <p className="text-sm text-zinc-500 leading-relaxed">
-              Full flow: find ICP lookalikes with DiscoLike, grab decision-maker contacts, verify emails, push straight to Instantly. One pipeline, no manual steps, live URL deliverable at the end.
+              Full flow: find ICP lookalikes with DiscoLike, grab decision-maker contacts, verify emails, push straight to Instantly. One pipeline, no manual steps.
             </p>
           </div>
         </div>
@@ -160,12 +159,8 @@ export default function WebinarPage() {
                 &nbsp;&nbsp;&nbsp;&nbsp;SKILL.md<br />
                 &nbsp;&nbsp;&nbsp;&nbsp;references/<br />
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;output-template.md<br />
-                &nbsp;&nbsp;prospect-deliverable/<br />
-                &nbsp;&nbsp;&nbsp;&nbsp;SKILL.md<br />
-                &nbsp;&nbsp;&nbsp;&nbsp;references/<br />
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;discovery-workflow.md<br />
-                &nbsp;&nbsp;&nbsp;&nbsp;scripts/<br />
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;generate-deliverable.py
+                &nbsp;&nbsp;prospect-discovery/<br />
+                &nbsp;&nbsp;&nbsp;&nbsp;SKILL.md
               </div>
             </div>
           </Expandable>
@@ -266,10 +261,10 @@ export default function WebinarPage() {
                 <h3 className="font-semibold text-zinc-900">Outbound Prospecting Pipeline</h3>
               </div>
               <p className="text-sm text-zinc-500 mb-4">
-                5-phase end-to-end workflow: prospect research, account discovery (DiscoLike + Exa), automated contact enrichment (DiscoLike contacts + Anymailfinder fallback), branded HTML deliverable generation, and Vercel deployment. Includes discovery workflow reference with query strategies.
+                End-to-end outbound pipeline: find ICP look-alikes with DiscoLike, find decision-maker contacts, verify emails via Anymailfinder, and push straight to Instantly. One skill, no manual steps.
               </p>
               <div className="flex flex-wrap gap-2">
-                {SKILL_FILES.prospectDeliverable.files.map((f) => (
+                {SKILL_FILES.prospectDiscovery.files.map((f) => (
                   <a
                     key={f.name}
                     href={f.url}
@@ -286,7 +281,7 @@ export default function WebinarPage() {
             </div>
             <div className="px-6 py-3 border-t border-zinc-100 bg-white">
               <p className="text-xs text-zinc-400">
-                Place in <code className="px-1 py-0.5 rounded bg-zinc-100 text-zinc-600">.claude/skills/prospect-deliverable/</code> in your project
+                Place in <code className="px-1 py-0.5 rounded bg-zinc-100 text-zinc-600">.claude/skills/prospect-discovery/</code> in your project
               </p>
             </div>
           </div>
@@ -352,6 +347,8 @@ export default function WebinarPage() {
             <a href="https://driveroi.ai" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-700 transition-colors">driveroi.ai</a>
             <span>·</span>
             <a href="mailto:scott@driveroi.ai" className="hover:text-zinc-700 transition-colors">scott@driveroi.ai</a>
+            <span>·</span>
+            <a href="https://www.linkedin.com/in/scott-davidson-39502864/" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-700 transition-colors">LinkedIn</a>
           </div>
           <span className="text-xs text-zinc-400">Claude Code in the Wild</span>
         </div>
