@@ -29,72 +29,24 @@ function Expandable({ title, children, defaultOpen = false }: { title: string; c
   )
 }
 
-const EXTRACT_INSIGHTS_SKILL = `---
-name: extract-insights
-description: Extracts actionable insights from meeting transcripts
----
-
-# Extract Insights Skill
-
-Point it at a transcript and it produces:
-
-1. **Participants** with roles and companies
-2. **Pain points** with direct quotes
-3. **Buying triggers** creating urgency
-4. **Objections** and concerns raised
-5. **Competitive intel** (tools, vendors, comparisons)
-6. **Decision criteria and timeline**
-7. **Next steps** with owners and deadlines
-8. **Follow-up email draft** (when relevant)
-9. **Content ideas** for LinkedIn/blog
-
-## How It Works
-
-Read the full transcript. For each section, extract
-specific quotes and data points. No fabrication.
-Pain points must cite actual quotes from the call.
-
-## Input
-
-Any transcript file: Zoom, Fathom, Otter, Fireflies,
-or plain text with speaker labels.
-
-## Output
-
-Saved to content/insights/YYYY-MM-DD-[topic].md`
-
-const PROSPECT_PIPELINE_SKILL = `---
-name: prospect-deliverable
-description: End-to-end outbound prospecting pipeline
----
-
-# Prospect Deliverable Pipeline
-
-Build and deliver a branded ICP lead list in 5 phases.
-
-## Phase 1: Research
-- Extract website text (DiscoLike) for site content
-- Business profile for firmographics
-- Web search for case studies, customers, news
-- Identify: product, ICP, verticals, company size
-
-## Phase 2: Account Discovery
-- DiscoLike: discover similar companies with filters
-- Exa: findSimilar for lookalike matching
-- Target: 25+ qualified accounts minimum
-
-## Phase 3: Contact Enrichment
-- DiscoLike search-contacts (primary)
-- Anymailfinder fallback for gaps
-- One decision-maker contact per account
-
-## Phase 4: Generate Deliverable
-- Branded HTML page with contacts and CTAs
-- Auto-generated from enriched CSV
-
-## Phase 5: Deploy
-- Push to Vercel, live URL in seconds
-- Send link to prospect`
+const SKILL_FILES = {
+  extractInsights: {
+    name: 'extract-insights/SKILL.md',
+    download: '/webinar/extract-insights-SKILL.md',
+    files: [
+      { name: 'SKILL.md', url: '/webinar/extract-insights-SKILL.md' },
+      { name: 'references/output-template.md', url: '/webinar/extract-insights-output-template.md' },
+    ]
+  },
+  prospectDeliverable: {
+    name: 'prospect-deliverable/SKILL.md',
+    download: '/webinar/prospect-deliverable-SKILL.md',
+    files: [
+      { name: 'SKILL.md', url: '/webinar/prospect-deliverable-SKILL.md' },
+      { name: 'references/discovery-workflow.md', url: '/webinar/prospect-deliverable-discovery-workflow.md' },
+    ]
+  }
+}
 
 export default function WebinarPage() {
   return (
@@ -296,30 +248,72 @@ export default function WebinarPage() {
         <div className="space-y-6">
           {/* Skill 1 */}
           <div className="rounded-xl border border-zinc-200 overflow-hidden">
-            <div className="flex items-center justify-between px-5 py-3 bg-zinc-900">
-              <div className="flex items-center gap-2">
-                <FileText size={14} className="text-zinc-400" />
-                <span className="text-sm font-mono text-zinc-300">extract-insights/SKILL.md</span>
+            <div className="px-6 py-5 bg-zinc-50/50">
+              <div className="flex items-center gap-2 mb-3">
+                <div className="w-8 h-8 rounded-lg bg-amber-100 flex items-center justify-center">
+                  <MessageSquare size={16} className="text-amber-700" />
+                </div>
+                <h3 className="font-semibold text-zinc-900">Meeting Insight Extraction</h3>
               </div>
-              <CopyButton text={EXTRACT_INSIGHTS_SKILL} />
+              <p className="text-sm text-zinc-500 mb-4">
+                Full skill with 11-step process: participant identification, pain point extraction with quote citations, buying triggers, objections, competitive intel, decision criteria, action items, follow-up email drafting, and content ideas. Includes output template.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {SKILL_FILES.extractInsights.files.map((f) => (
+                  <a
+                    key={f.name}
+                    href={f.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg border border-zinc-200 bg-white text-sm font-medium text-zinc-700 hover:border-zinc-300 hover:bg-zinc-50 transition-colors"
+                  >
+                    <FileText size={14} className="text-zinc-400" />
+                    {f.name}
+                    <ExternalLink size={12} className="text-zinc-300 ml-1" />
+                  </a>
+                ))}
+              </div>
             </div>
-            <pre className="p-5 text-xs font-mono text-zinc-700 bg-zinc-50 overflow-x-auto leading-relaxed whitespace-pre-wrap">
-              {EXTRACT_INSIGHTS_SKILL}
-            </pre>
+            <div className="px-6 py-3 border-t border-zinc-100 bg-white">
+              <p className="text-xs text-zinc-400">
+                Place in <code className="px-1 py-0.5 rounded bg-zinc-100 text-zinc-600">.claude/skills/extract-insights/</code> in your project
+              </p>
+            </div>
           </div>
 
           {/* Skill 2 */}
           <div className="rounded-xl border border-zinc-200 overflow-hidden">
-            <div className="flex items-center justify-between px-5 py-3 bg-zinc-900">
-              <div className="flex items-center gap-2">
-                <FileText size={14} className="text-zinc-400" />
-                <span className="text-sm font-mono text-zinc-300">prospect-deliverable/SKILL.md</span>
+            <div className="px-6 py-5 bg-zinc-50/50">
+              <div className="flex items-center gap-2 mb-3">
+                <div className="w-8 h-8 rounded-lg bg-blue-100 flex items-center justify-center">
+                  <Zap size={16} className="text-blue-700" />
+                </div>
+                <h3 className="font-semibold text-zinc-900">Outbound Prospecting Pipeline</h3>
               </div>
-              <CopyButton text={PROSPECT_PIPELINE_SKILL} />
+              <p className="text-sm text-zinc-500 mb-4">
+                5-phase end-to-end workflow: prospect research, account discovery (DiscoLike + Exa), automated contact enrichment (DiscoLike contacts + Anymailfinder fallback), branded HTML deliverable generation, and Vercel deployment. Includes discovery workflow reference with query strategies.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {SKILL_FILES.prospectDeliverable.files.map((f) => (
+                  <a
+                    key={f.name}
+                    href={f.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 px-3 py-2 rounded-lg border border-zinc-200 bg-white text-sm font-medium text-zinc-700 hover:border-zinc-300 hover:bg-zinc-50 transition-colors"
+                  >
+                    <FileText size={14} className="text-zinc-400" />
+                    {f.name}
+                    <ExternalLink size={12} className="text-zinc-300 ml-1" />
+                  </a>
+                ))}
+              </div>
             </div>
-            <pre className="p-5 text-xs font-mono text-zinc-700 bg-zinc-50 overflow-x-auto leading-relaxed whitespace-pre-wrap">
-              {PROSPECT_PIPELINE_SKILL}
-            </pre>
+            <div className="px-6 py-3 border-t border-zinc-100 bg-white">
+              <p className="text-xs text-zinc-400">
+                Place in <code className="px-1 py-0.5 rounded bg-zinc-100 text-zinc-600">.claude/skills/prospect-deliverable/</code> in your project
+              </p>
+            </div>
           </div>
         </div>
       </section>
