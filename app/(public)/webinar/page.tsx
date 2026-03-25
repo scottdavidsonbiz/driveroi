@@ -54,13 +54,7 @@ export default function WebinarPage() {
       <nav className="border-b border-zinc-100">
         <div className="max-w-3xl mx-auto px-6 py-4 flex items-center justify-between">
           <a href="https://driveroi.ai" target="_blank" rel="noopener noreferrer" className="text-sm font-semibold tracking-tight text-zinc-900 hover:text-zinc-600 transition-colors">DriveROI</a>
-          <div className="flex items-center gap-3">
-            <a href="mailto:scott@driveroi.ai" className="text-xs text-zinc-400 hover:text-zinc-700 transition-colors">scott@driveroi.ai</a>
-            <a href="https://www.linkedin.com/in/scott-davidson-39502864/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-[#0A66C2] text-white text-xs font-medium hover:bg-[#004182] transition-colors">
-              LinkedIn
-              <ExternalLink size={11} />
-            </a>
-          </div>
+          <a href="mailto:scott@driveroi.ai" className="text-xs text-zinc-400 hover:text-zinc-700 transition-colors">scott@driveroi.ai</a>
         </div>
       </nav>
 
@@ -74,12 +68,22 @@ export default function WebinarPage() {
           Two GTM tools built entirely in Claude Code. The skills, the reference files, and everything you need to try them yourself.
         </p>
 
-        <a
-          href="#skills"
-          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-zinc-900 text-white text-sm font-medium hover:bg-zinc-800 transition-colors"
-        >
-          Get the Skills <ArrowRight size={15} />
-        </a>
+        <div className="flex flex-wrap items-center gap-3">
+          <a
+            href="#skills"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-zinc-900 text-white text-sm font-medium hover:bg-zinc-800 transition-colors"
+          >
+            Get the Skills <ArrowRight size={15} />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/scott-davidson-39502864/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-[#0A66C2] text-white text-sm font-medium hover:bg-[#004182] transition-colors"
+          >
+            Connect with me on LinkedIn <ExternalLink size={14} />
+          </a>
+        </div>
       </header>
 
       {/* Divider */}
