@@ -55,51 +55,26 @@ export default function WebinarPage() {
       <nav className="border-b border-zinc-100">
         <div className="max-w-3xl mx-auto px-6 py-4 flex items-center justify-between">
           <span className="text-sm font-semibold tracking-tight text-zinc-900">DriveROI</span>
-          <a
-            href="https://luma.com/CCinthewildcb_sd"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm font-medium text-zinc-600 hover:text-zinc-900 transition-colors"
-          >
-            Register
-          </a>
+          <span className="text-xs text-zinc-400">Claude Code in the Wild</span>
         </div>
       </nav>
 
       {/* Hero */}
       <header className="max-w-3xl mx-auto px-6 pt-16 pb-12">
-        <div className="flex items-center gap-2 mb-6">
-          <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-medium">
-            <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-            Live Session
-          </span>
-          <span className="text-xs text-zinc-400">March 25, 2026 at 11:00 AM ET</span>
-        </div>
-
         <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-zinc-900 leading-tight mb-4">
           Claude Code for Go-to-Market
         </h1>
 
         <p className="text-lg text-zinc-500 leading-relaxed mb-8 max-w-2xl">
-          Two GTM tools built entirely in Claude Code. Live walkthrough of the builds, the decisions, and where things got messy. Plus a reference deck on MCPs, APIs, and getting started.
+          Two GTM tools built entirely in Claude Code. The skills, the reference files, and everything you need to try them yourself.
         </p>
 
-        <div className="flex flex-wrap gap-3">
-          <a
-            href="https://luma.com/CCinthewildcb_sd"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-zinc-900 text-white text-sm font-medium hover:bg-zinc-800 transition-colors"
-          >
-            Register Free <ArrowRight size={15} />
-          </a>
-          <a
-            href="#skills"
-            className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-zinc-200 text-zinc-700 text-sm font-medium hover:border-zinc-300 hover:bg-zinc-50 transition-colors"
-          >
-            Get the Skills <Terminal size={15} />
-          </a>
-        </div>
+        <a
+          href="#skills"
+          className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-zinc-900 text-white text-sm font-medium hover:bg-zinc-800 transition-colors"
+        >
+          Get the Skills <ArrowRight size={15} />
+        </a>
       </header>
 
       {/* Divider */}
@@ -323,18 +298,51 @@ export default function WebinarPage() {
         <div className="border-t border-zinc-100" />
       </div>
 
-      {/* CTA */}
-      <section className="max-w-3xl mx-auto px-6 py-16 text-center">
-        <h2 className="text-2xl font-bold text-zinc-900 mb-3">Live build session. Not slides.</h2>
-        <p className="text-zinc-500 mb-6">March 25, 2026 at 11:00 AM ET. Free and online.</p>
-        <a
-          href="https://luma.com/CCinthewildcb_sd"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-zinc-900 text-white font-medium hover:bg-zinc-800 transition-colors"
-        >
-          Register <ExternalLink size={15} />
-        </a>
+      {/* Tools Referenced */}
+      <section className="max-w-3xl mx-auto px-6 py-12">
+        <h2 className="text-sm font-semibold text-zinc-400 uppercase tracking-wider mb-8">Tools Referenced</h2>
+
+        <div className="grid sm:grid-cols-2 gap-4">
+          <a href="https://www.anthropic.com/claude-code" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-4 rounded-xl border border-zinc-100 hover:border-zinc-200 hover:bg-zinc-50/50 transition-colors group">
+            <div className="w-9 h-9 rounded-lg bg-zinc-900 flex items-center justify-center shrink-0">
+              <Terminal size={16} className="text-white" />
+            </div>
+            <div>
+              <p className="text-sm font-semibold text-zinc-900 group-hover:text-zinc-700">Claude Code</p>
+              <p className="text-xs text-zinc-400">Anthropic's CLI for AI-powered development</p>
+            </div>
+          </a>
+
+          <a href="https://www.discolike.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-4 rounded-xl border border-zinc-100 hover:border-zinc-200 hover:bg-zinc-50/50 transition-colors group">
+            <div className="w-9 h-9 rounded-lg bg-violet-100 flex items-center justify-center shrink-0">
+              <span className="text-lg">🪩</span>
+            </div>
+            <div>
+              <p className="text-sm font-semibold text-zinc-900 group-hover:text-zinc-700">DiscoLike</p>
+              <p className="text-xs text-zinc-400">Company discovery and enrichment (65M+ companies)</p>
+            </div>
+          </a>
+
+          <a href="https://instantly.ai" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-4 rounded-xl border border-zinc-100 hover:border-zinc-200 hover:bg-zinc-50/50 transition-colors group">
+            <div className="w-9 h-9 rounded-lg bg-blue-100 flex items-center justify-center shrink-0">
+              <Zap size={16} className="text-blue-700" />
+            </div>
+            <div>
+              <p className="text-sm font-semibold text-zinc-900 group-hover:text-zinc-700">Instantly.ai</p>
+              <p className="text-xs text-zinc-400">Cold email infrastructure and deliverability</p>
+            </div>
+          </a>
+
+          <a href="https://exa.ai" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-4 rounded-xl border border-zinc-100 hover:border-zinc-200 hover:bg-zinc-50/50 transition-colors group">
+            <div className="w-9 h-9 rounded-lg bg-emerald-100 flex items-center justify-center shrink-0">
+              <FileText size={16} className="text-emerald-700" />
+            </div>
+            <div>
+              <p className="text-sm font-semibold text-zinc-900 group-hover:text-zinc-700">Exa</p>
+              <p className="text-xs text-zinc-400">Semantic web search API for company research</p>
+            </div>
+          </a>
+        </div>
       </section>
 
       {/* Footer */}
