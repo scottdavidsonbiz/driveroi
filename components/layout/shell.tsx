@@ -11,7 +11,7 @@ interface ShellProps {
 export function Shell({ children }: ShellProps) {
   const pathname = usePathname()
 
-  if (pathname.startsWith('/audit') || pathname.startsWith('/login') || pathname.startsWith('/clay-templates')) {
+  if (pathname.startsWith('/audit') || pathname.startsWith('/login') || pathname.startsWith('/clay-templates') || pathname.startsWith('/webinar')) {
     return <>{children}</>
   }
 
