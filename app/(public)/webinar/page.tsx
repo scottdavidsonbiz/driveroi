@@ -348,8 +348,12 @@ export default function WebinarPage() {
       {/* Footer */}
       <footer className="border-t border-zinc-100">
         <div className="max-w-3xl mx-auto px-6 py-6 flex items-center justify-between">
-          <span className="text-xs text-zinc-400">DriveROI</span>
-          <span className="text-xs text-zinc-400">Part of the Claude Code in the Wild series</span>
+          <div className="flex items-center gap-3 text-xs text-zinc-400">
+            <a href="https://driveroi.ai" target="_blank" rel="noopener noreferrer" className="hover:text-zinc-700 transition-colors">driveroi.ai</a>
+            <span>·</span>
+            <a href="mailto:scott@driveroi.ai" className="hover:text-zinc-700 transition-colors">scott@driveroi.ai</a>
+          </div>
+          <span className="text-xs text-zinc-400">Claude Code in the Wild</span>
         </div>
       </footer>
     </div>
