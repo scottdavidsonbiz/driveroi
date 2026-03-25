@@ -313,7 +313,7 @@ export default function WebinarPage() {
             </div>
           </a>
 
-          <a href="https://www.discolike.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-4 rounded-xl border border-zinc-100 hover:border-zinc-200 hover:bg-zinc-50/50 transition-colors group">
+          <a href="https://www.discolike.com/?via=scott" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-4 rounded-xl border border-zinc-100 hover:border-zinc-200 hover:bg-zinc-50/50 transition-colors group">
             <div className="w-9 h-9 rounded-lg bg-violet-100 flex items-center justify-center shrink-0">
               <span className="text-lg">🪩</span>
             </div>
