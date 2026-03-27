@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HHS Breach & State AG Report — Prepared for BigID</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1a1a1a; background: #fafafa; }
+  .container { max-width: 960px; margin: 0 auto; padding: 24px; }
+  .header { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; border-bottom: 1px solid #e5e5e5; margin-bottom: 32px; }
+  .header-left { display: flex; align-items: center; gap: 12px; }
+  .logo { font-size: 18px; font-weight: 700; color: #8B7FD4; }
+  .cta-btn { display: inline-flex; align-items: center; gap: 6px; padding: 10px 20px; background: #8B7FD4; color: white; text-decoration: none; border-radius: 8px; font-size: 14px; font-weight: 500; }
+  .cta-btn:hover { background: #7A6EC3; }
+  .hero { text-align: center; margin-bottom: 40px; }
+  .hero h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+  .hero p { color: #666; font-size: 15px; max-width: 640px; margin: 0 auto; }
+  .stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 40px; }
+  .stat { background: white; border: 1px solid #e5e5e5; border-radius: 12px; padding: 20px; text-align: center; }
+  .stat-value { font-size: 28px; font-weight: 700; color: #8B7FD4; }
+  .stat-label { font-size: 12px; color: #888; margin-top: 4px; }
+  .section-title { font-size: 18px; font-weight: 600; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 2px solid #8B7FD4; }
+  .legend { display: flex; gap: 16px; margin-bottom: 24px; font-size: 13px; color: #666; }
+  .legend-item { display: flex; align-items: center; gap: 6px; }
+  .badge { display: inline-flex; align-items: center; gap: 4px; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: 500; }
+  .badge-verified { background: #dcfce7; color: #166534; }
+  .badge-linkedin { background: #e0e7ff; color: #3730a3; }
+  .badge-source { background: #fef3c7; color: #92400e; }
+  .badge-hhs { background: #fce7f3; color: #9d174d; }
+  .badge-stateag { background: #e0e7ff; color: #3730a3; }
+  table { width: 100%; border-collapse: collapse; margin-bottom: 32px; }
+  th { text-align: left; padding: 12px; font-size: 12px; font-weight: 600; color: #666; border-bottom: 2px solid #e5e5e5; text-transform: uppercase; letter-spacing: 0.5px; }
+  td { padding: 12px; font-size: 13px; border-bottom: 1px solid #f0f0f0; vertical-align: top; }
+  tr:hover { background: #f9f9ff; }
+  .company-name { font-weight: 600; }
+  .affected { font-weight: 600; color: #dc2626; }
+  .contact-info { display: flex; flex-direction: column; gap: 4px; }
+  .contact-name { font-weight: 500; }
+  .contact-title { font-size: 12px; color: #666; }
+  .contact-links { display: flex; gap: 6px; margin-top: 4px; }
+  .contact-links a { font-size: 11px; text-decoration: none; }
+  .no-dspm { background: #fef2f2; border: 1px solid #fecaca; border-radius: 8px; padding: 16px; margin-bottom: 32px; font-size: 14px; }
+  .no-dspm strong { color: #dc2626; }
+  .footer { text-align: center; padding: 32px 0; border-top: 1px solid #e5e5e5; margin-top: 40px; }
+  .footer p { color: #888; font-size: 13px; }
+  .cta-section { background: #f8f7ff; border: 1px solid #e0ddf5; border-radius: 12px; padding: 32px; text-align: center; margin: 40px 0; }
+  .cta-section h2 { font-size: 20px; margin-bottom: 8px; }
+  .cta-section p { color: #666; font-size: 14px; margin-bottom: 16px; }
+  @media (max-width: 640px) { .stats { grid-template-columns: repeat(2, 1fr); } }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="header-left">
+      <div class="logo">DriveROI</div>
+      <span style="color: #ccc;">|</span>
+      <span style="font-size: 13px; color: #888;">Prepared for BigID</span>
+    </div>
+    <a href="https://cal.com/driveroi/30min" class="cta-btn">Schedule a Call &rarr;</a>
+  </div>
+
+  <div class="hero">
+    <h1>HHS Breach & State AG Notification Report</h1>
+    <p>Companies that disclosed data incidents in the last 60 days with no DSPM vendor detected in their technology stack. CISO and VP Security contacts mapped where available.</p>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><div class="stat-value">21</div><div class="stat-label">Breached Companies</div></div>
+    <div class="stat"><div class="stat-value">848,509</div><div class="stat-label">Individuals Affected</div></div>
+    <div class="stat"><div class="stat-value">7</div><div class="stat-label">Verified Contacts</div></div>
+    <div class="stat"><div class="stat-value">0</div><div class="stat-label">DSPM Vendors Detected</div></div>
+  </div>
+
+  <div class="no-dspm">
+    <strong>No DSPM vendor detected</strong> in the technology stack of any company on this list. Technology stacks were checked against known DSPM providers including BigID, Cyera, Symmetry Systems, Normalyze, Dig Security, Laminar, and Open Raven.
+  </div>
+
+  <div class="legend">
+    <div class="legend-item"><span class="badge badge-verified">&#10003; Verified</span> AMF-verified email</div>
+    <div class="legend-item"><span class="badge badge-linkedin">in</span> LinkedIn profile</div>
+    <div class="legend-item"><span class="badge badge-hhs">HHS</span> HHS Breach Portal</div>
+    <div class="legend-item"><span class="badge badge-stateag">State AG</span> State Attorney General</div>
+  </div>
+
+  <h3 class="section-title">Breach Report — Last 60 Days</h3>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Company</th>
+        <th>Affected</th>
+        <th>Date</th>
+        <th>Type</th>
+        <th>Source</th>
+        <th>Security Contact</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><div class="company-name">ApolloMD Business Services</div><div style="font-size:11px;color:#888;">apollomd.com</div></td>
+        <td class="affected">626,540</td>
+        <td>2026-02-10</td>
+        <td style="font-size:12px;">Hacking/IT Incident</td>
+        <td><span class="badge badge-hhs">HHS</span></td>
+        <td><div class="contact-info">
+        <div class="contact-name">James Dale</div>
+        <div class="contact-title">CIO/CTO</div>
+        <div class="contact-links">
+          <span class="badge badge-verified">&#10003; jdale@apollomd.com</span>
+          <a href="https://www.linkedin.com/in/james-dale-15a4b4" target="_blank"><span class="badge badge-linkedin">in LinkedIn</span></a>
+        </div>
+      </div></td>
+      </tr>
+      <tr>
+        <td><div class="company-name">Clinic Service Corporation</div><div style="font-size:11px;color:#888;">clinicservicecorporation.com</div></td>
+        <td class="affected">82,331</td>
+        <td>2026-01-28</td>
+        <td style="font-size:12px;">Hacking/IT Incident</td>
+        <td><span class="badge badge-hhs">HHS</span></td>
+        <td><span style="color: #999; font-size: 12px;">Pending enrichment</span></td>
+      </tr>
+      <tr>
+        <td><div class="company-name">SoFi Technologies</div><div style="font-size:11px;color:#888;">sofi.com</div></td>
+        <td class="affected">38,049</td>
+        <td>2026-01-26</td>
+        <td style="font-size:12px;">Cyberattack</td>
+        <td><span class="badge badge-stateag">State AG</span></td>
+        <td><div class="contact-info">
+        <div class="contact-name">Khushbu Agarwal</div>
+        <div class="contact-title">Senior Security Engineer</div>
+        <div class="contact-links">
+          
+          <a href="https://www.linkedin.com/in/khushbuagarwal" target="_blank"><span class="badge badge-linkedin">in LinkedIn</span></a>
+        </div>
+      </div></td>
+      </tr>
+      <tr>
+        <td><div class="company-name">Enhabit Home Health & Hospice</div><div style="font-size:11px;color:#888;">ehab.com</div></td>
+        <td class="affected">22,552</td>
+        <td>2026-02-05</td>
+        <td style="font-size:12px;">Hacking/IT Incident</td>
+        <td><span class="badge badge-hhs">HHS</span></td>
+        <td><div class="contact-info">
+        <div class="contact-name">Robert Leech</div>
+        <div class="contact-title">Chief Compliance Officer</div>
+        <div class="contact-links">
+          <span class="badge badge-verified">&#10003; robert.leech@ehab.com</span>
+          <a href="https://www.linkedin.com/in/robert-leech-fache-chc-chpc-b8b376b" target="_blank"><span class="badge badge-linkedin">in LinkedIn</span></a>
+        </div>
+      </div></td>
+      </tr>
+      <tr>
+        <td><div class="company-name">CommonSpirit Health</div><div style="font-size:11px;color:#888;">commonspirit.org</div></td>
+        <td class="affected">19,027</td>
+        <td>2026-02-25</td>
+        <td style="font-size:12px;">Cyberattack</td>
+        <td><span class="badge badge-stateag">State AG</span></td>
+        <td><div class="contact-info">
+        <div class="contact-name">Hood Tammye</div>
+        <div class="contact-title">Dir, Risk Mgmt Ops</div>
+        <div class="contact-links">
+          
+          <a href="https://www.linkedin.com/in/hood-tammye-37727160" target="_blank"><span class="badge badge-linkedin">in LinkedIn</span></a>
+        </div>
+      </div></td>
+      </tr>
+      <tr>
+        <td><div class="company-name">EyeCare Partners</div><div style="font-size:11px;color:#888;">eyecarepartners.com</div></td>
+        <td class="affected">17,110</td>
+        <td>2026-02-03</td>
+        <td style="font-size:12px;">Hacking/IT Incident</td>
+        <td><span class="badge badge-hhs">HHS</span></td>
+        <td><span style="color: #999; font-size: 12px;">Pending enrichment</span></td>
+      </tr>
+      <tr>
+        <td><div class="company-name">Pecan Tree Dental</div><div style="font-size:11px;color:#888;">pecantreedentalgroup.com</div></td>
+        <td class="affected">13,300</td>
+        <td>2026-01-26</td>
+        <td style="font-size:12px;">Hacking/IT Incident</td>
+        <td><span class="badge badge-hhs">HHS</span></td>
+        <td><span style="color: #999; font-size: 12px;">Pending enrichment</span></td>
+      </tr>
+      <tr>
+        <td><div class="company-name">Insightin Health</div><div style="font-size:11px;color:#888;">insightinhealth.com</div></td>
+        <td class="affected">11,740</td>
+        <td>2026-03-05</td>
+        <td style="font-size:12px;">Ransomware</td>
+        <td><span class="badge badge-stateag">State AG</span></td>
+        <td><div class="contact-info">
+        <div class="contact-name">Anthony Wong</div>
+        <div class="contact-title">Director, Network & Data Security</div>
+        <div class="contact-links">
+          <span class="badge badge-verified">&#10003; awong@insightinhealth.com</span>
+          <a href="https://www.linkedin.com/in/anthony-wong-295931b" target="_blank"><span class="badge badge-linkedin">in LinkedIn</span></a>
+        </div>
+      </div></td>
+      </tr>
+      <tr>
+        <td><div class="company-name">Pyramid Global Hospitality</div><div style="font-size:11px;color:#888;">pyramidglobal.com</div></td>
+        <td class="affected">3,434</td>
+        <td>2026-02-25</td>
+        <td style="font-size:12px;">Cyberattack</td>
+        <td><span class="badge badge-stateag">State AG</span></td>
+        <td><div class="contact-info">
+        <div class="contact-name">Cory Lang</div>
+        <div class="contact-title">Risk Management</div>
+        <div class="contact-links">
+          <span class="badge badge-verified">&#10003; clang@pyramidglobal.com</span>
+          <a href="https://www.linkedin.com/in/cory-lang-454b628a" target="_blank"><span class="badge badge-linkedin">in LinkedIn</span></a>
+        </div>
+      </div></td>
+      </tr>
+      <tr>
+        <td><div class="company-name">The Phia Group</div><div style="font-size:11px;color:#888;">phiagroup.com</div></td>
+        <td class="affected">2,802</td>
+        <td>2026-01-30</td>
+        <td style="font-size:12px;">Cyberattack</td>
+        <td><span class="badge badge-stateag">State AG</span></td>
+        <td><div class="contact-info">
+        <div class="contact-name">Jeannie Comins-Roberts</div>
+        <div class="contact-title">Director, Compliance</div>
+        <div class="contact-links">
+          <span class="badge badge-verified">&#10003; jeannie.comins-roberts@phiagroup.com</span>
+          <a href="https://www.linkedin.com/in/jeannie-comins-roberts" target="_blank"><span class="badge badge-linkedin">in LinkedIn</span></a>
+        </div>
+      </div></td>
+      </tr>
+      <tr>
+        <td><div class="company-name">Baltimore City Health Department</div><div style="font-size:11px;color:#888;">health.baltimorecity.gov</div></td>
+        <td class="affected">2,597</td>
+        <td>2026-01-28</td>
+        <td style="font-size:12px;">Hacking/IT Incident</td>
+        <td><span class="badge badge-hhs">HHS</span></td>
+        <td><span style="color: #999; font-size: 12px;">Pending enrichment</span></td>
+      </tr>
+      <tr>
+        <td><div class="company-name">Fried, Frank, Harris, Shriver & Jacobson</div><div style="font-size:11px;color:#888;">friedfrank.com</div></td>
+        <td class="affected">2,106</td>
+        <td>2026-01-30</td>
+        <td style="font-size:12px;">Cyberattack</td>
+        <td><span class="badge badge-stateag">State AG</span></td>
+        <td><div class="contact-info">
+        <div class="contact-name">Tash Wahid</div>
+        <div class="contact-title">Manager of Information Security</div>
+        <div class="contact-links">
+          
+          <a href="https://www.linkedin.com/in/tashwahid" target="_blank"><span class="badge badge-linkedin">in LinkedIn</span></a>
+        </div>
+      </div></td>
+      </tr>
+      <tr>
+        <td><div class="company-name">Cempa Community Care</div><div style="font-size:11px;color:#888;">cempa.org</div></td>
+        <td class="affected">1,341</td>
+        <td>2026-01-30</td>
+        <td style="font-size:12px;">Hacking/IT Incident</td>
+        <td><span class="badge badge-hhs">HHS</span></td>
+        <td><span style="color: #999; font-size: 12px;">Pending enrichment</span></td>
+      </tr>
+      <tr>
+        <td><div class="company-name">Lakeside Pediatrics & Adolescent Medicine</div><div style="font-size:11px;color:#888;">lakesidepediatrics.com</div></td>
+        <td class="affected">1,314</td>
+        <td>2026-02-27</td>
+        <td style="font-size:12px;">Ransomware</td>
+        <td><span class="badge badge-stateag">State AG</span></td>
+        <td><span style="color: #999; font-size: 12px;">Pending enrichment</span></td>
+      </tr>
+      <tr>
+        <td><div class="company-name">New American Funding</div><div style="font-size:11px;color:#888;">newamericanfunding.com</div></td>
+        <td class="affected">699</td>
+        <td>2026-02-27</td>
+        <td style="font-size:12px;">Phishing</td>
+        <td><span class="badge badge-stateag">State AG</span></td>
+        <td><div class="contact-info">
+        <div class="contact-name">Erin Forbes</div>
+        <div class="contact-title">EVP of Compliance & Servicing</div>
+        <div class="contact-links">
+          
+          <a href="https://www.linkedin.com/in/erin-forbes-cmb-0281a530" target="_blank"><span class="badge badge-linkedin">in LinkedIn</span></a>
+        </div>
+      </div></td>
+      </tr>
+      <tr>
+        <td><div class="company-name">WindRose Health Network</div><div style="font-size:11px;color:#888;">windrosehealthnetwork.com</div></td>
+        <td class="affected">691</td>
+        <td>2026-01-27</td>
+        <td style="font-size:12px;">Hacking/IT Incident</td>
+        <td><span class="badge badge-hhs">HHS</span></td>
+        <td><span style="color: #999; font-size: 12px;">Pending enrichment</span></td>
+      </tr>
+      <tr>
+        <td><div class="company-name">Gravity Payments</div><div style="font-size:11px;color:#888;">gravitypayments.com</div></td>
+        <td class="affected">677</td>
+        <td>2026-02-04</td>
+        <td style="font-size:12px;">Cyberattack</td>
+        <td><span class="badge badge-stateag">State AG</span></td>
+        <td><div class="contact-info">
+        <div class="contact-name">Tobie Waal</div>
+        <div class="contact-title">Director of Risk & Underwriting</div>
+        <div class="contact-links">
+          <span class="badge badge-verified">&#10003; tdewaal@gravitypayments.com</span>
+          <a href="https://www.linkedin.com/in/tobie-de-waal" target="_blank"><span class="badge badge-linkedin">in LinkedIn</span></a>
+        </div>
+      </div></td>
+      </tr>
+      <tr>
+        <td><div class="company-name">Personalis</div><div style="font-size:11px;color:#888;">personalis.com</div></td>
+        <td class="affected">650</td>
+        <td>2026-02-04</td>
+        <td style="font-size:12px;">Hacking/IT Incident</td>
+        <td><span class="badge badge-hhs">HHS</span></td>
+        <td><span style="color: #999; font-size: 12px;">Pending enrichment</span></td>
+      </tr>
+      <tr>
+        <td><div class="company-name">Ko-Kwel Wellness Center</div><div style="font-size:11px;color:#888;">ctclusi.org</div></td>
+        <td class="affected">543</td>
+        <td>2026-02-03</td>
+        <td style="font-size:12px;">Hacking/IT Incident</td>
+        <td><span class="badge badge-hhs">HHS</span></td>
+        <td><span style="color: #999; font-size: 12px;">Pending enrichment</span></td>
+      </tr>
+      <tr>
+        <td><div class="company-name">Drivestream</div><div style="font-size:11px;color:#888;">drivestream.com</div></td>
+        <td class="affected">505</td>
+        <td>2026-02-27</td>
+        <td style="font-size:12px;">Ransomware</td>
+        <td><span class="badge badge-stateag">State AG</span></td>
+        <td><div class="contact-info">
+        <div class="contact-name">David Demers</div>
+        <div class="contact-title">CIO</div>
+        <div class="contact-links">
+          <span class="badge badge-verified">&#10003; david.demers@drivestream.com</span>
+          <a href="https://www.linkedin.com/in/david-demers-8595b890" target="_blank"><span class="badge badge-linkedin">in LinkedIn</span></a>
+        </div>
+      </div></td>
+      </tr>
+      <tr>
+        <td><div class="company-name">Issaqueena Pediatric Dentistry</div><div style="font-size:11px;color:#888;">issaqueenapediatricdentistry.com</div></td>
+        <td class="affected">501</td>
+        <td>2026-02-04</td>
+        <td style="font-size:12px;">Hacking/IT Incident</td>
+        <td><span class="badge badge-hhs">HHS</span></td>
+        <td><span style="color: #999; font-size: 12px;">Pending enrichment</span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="cta-section">
+    <h2>Want this as a live feed?</h2>
+    <p>We can set up automated monitoring of HHS breach disclosures and state AG notifications, matched to companies without DSPM coverage, with verified security contacts refreshed weekly.</p>
+    <a href="https://cal.com/driveroi/30min" class="cta-btn">Schedule a Call &rarr;</a>
+  </div>
+
+  <div class="footer">
+    <p>Prepared by <a href="https://driveroi.ai" style="color: #8B7FD4; text-decoration: none;">DriveROI</a> for BigID &middot; <a href="mailto:scott@driveroi.ai" style="color: #888; text-decoration: none;">scott@driveroi.ai</a></p>
+    <p style="margin-top: 8px; font-size: 11px; color: #aaa;">Data sourced from HHS Office for Civil Rights Breach Portal and State Attorney General breach notification databases. Contact information verified via Anymailfinder.</p>
+  </div>
+</div>
+</body>
+</html>
