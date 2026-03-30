@@ -26,7 +26,6 @@
   .badge { display: inline-flex; align-items: center; gap: 4px; padding: 2px 8px; border-radius: 12px; font-size: 11px; font-weight: 500; }
   .badge-verified { background: #dcfce7; color: #166534; }
   .badge-linkedin { background: #e0e7ff; color: #3730a3; }
-  .badge-source { background: #fef3c7; color: #92400e; }
   .badge-hhs { background: #fce7f3; color: #9d174d; }
   .badge-stateag { background: #e0e7ff; color: #3730a3; }
   table { width: 100%; border-collapse: collapse; margin-bottom: 32px; }
@@ -38,10 +37,12 @@
   .contact-info { display: flex; flex-direction: column; gap: 4px; }
   .contact-name { font-weight: 500; }
   .contact-title { font-size: 12px; color: #666; }
-  .contact-links { display: flex; gap: 6px; margin-top: 4px; }
+  .contact-links { display: flex; gap: 6px; margin-top: 4px; flex-wrap: wrap; }
   .contact-links a { font-size: 11px; text-decoration: none; }
-  .no-dspm { background: #fef2f2; border: 1px solid #fecaca; border-radius: 8px; padding: 16px; margin-bottom: 32px; font-size: 14px; }
-  .no-dspm strong { color: #dc2626; }
+  .methodology { background: #f8f8f8; border: 1px solid #e5e5e5; border-radius: 8px; padding: 16px; margin-bottom: 32px; font-size: 13px; color: #555; }
+  .methodology h4 { font-size: 14px; color: #333; margin-bottom: 8px; }
+  .methodology ul { margin-left: 16px; margin-top: 6px; }
+  .methodology li { margin-bottom: 4px; }
   .footer { text-align: center; padding: 32px 0; border-top: 1px solid #e5e5e5; margin-top: 40px; }
   .footer p { color: #888; font-size: 13px; }
   .cta-section { background: #f8f7ff; border: 1px solid #e0ddf5; border-radius: 12px; padding: 32px; text-align: center; margin: 40px 0; }
@@ -63,28 +64,35 @@
 
   <div class="hero">
     <h1>HHS Breach & State AG Notification Report</h1>
-    <p>Companies that disclosed data incidents in the last 60 days with no DSPM vendor detected in their technology stack. CISO and VP Security contacts mapped where available.</p>
+    <p>13 enterprise and mid-market companies that disclosed data incidents in the last 60 days, verified to have no DSPM vendor in their technology stack.</p>
   </div>
 
   <div class="stats">
-    <div class="stat"><div class="stat-value">21</div><div class="stat-label">Breached Companies</div></div>
-    <div class="stat"><div class="stat-value">848,509</div><div class="stat-label">Individuals Affected</div></div>
+    <div class="stat"><div class="stat-value">13</div><div class="stat-label">ICP-Qualified Companies</div></div>
+    <div class="stat"><div class="stat-value">790,173</div><div class="stat-label">Individuals Affected</div></div>
     <div class="stat"><div class="stat-value">7</div><div class="stat-label">Verified Contacts</div></div>
     <div class="stat"><div class="stat-value">0</div><div class="stat-label">DSPM Vendors Detected</div></div>
   </div>
 
-  <div class="no-dspm">
-    <strong>No DSPM vendor detected</strong> in the technology stack of any company on this list. Technology stacks were checked against known DSPM providers including BigID, Cyera, Symmetry Systems, Normalyze, Dig Security, Laminar, and Open Raven.
+  <div class="methodology">
+    <h4>Methodology</h4>
+    <ul>
+      <li><strong>Sources:</strong> HHS Office for Civil Rights Breach Portal + Washington and California State Attorney General breach notifications</li>
+      <li><strong>Date range:</strong> Last 60 days (reported Jan 26 - Mar 27, 2026)</li>
+      <li><strong>ICP filter:</strong> Enterprise and mid-market organizations only. Removed single-location practices, government entities, small nonprofits, and organizations too small for DSPM.</li>
+      <li><strong>DSPM check:</strong> Technology stacks verified against BigID, Cyera, Symmetry Systems, Normalyze, Dig Security, Laminar, Open Raven, Varonis, and Securiti. Two companies flagged: one already uses BigID (excluded), one uses Varonis (file security, not DSPM; included).</li>
+      <li><strong>Contacts:</strong> CISO, VP Security, Compliance, and Risk titles mapped and emails verified.</li>
+    </ul>
   </div>
 
   <div class="legend">
-    <div class="legend-item"><span class="badge badge-verified">&#10003; Verified</span> AMF-verified email</div>
+    <div class="legend-item"><span class="badge badge-verified">&#10003; Verified</span> Email verified</div>
     <div class="legend-item"><span class="badge badge-linkedin">in</span> LinkedIn profile</div>
     <div class="legend-item"><span class="badge badge-hhs">HHS</span> HHS Breach Portal</div>
     <div class="legend-item"><span class="badge badge-stateag">State AG</span> State Attorney General</div>
   </div>
 
-  <h3 class="section-title">Breach Report — Last 60 Days</h3>
+  <h3 class="section-title">Breach Report</h3>
 
   <table>
     <thead>
@@ -114,27 +122,12 @@
       </div></td>
       </tr>
       <tr>
-        <td><div class="company-name">Clinic Service Corporation</div><div style="font-size:11px;color:#888;">clinicservicecorporation.com</div></td>
+        <td><div class="company-name">Clinic Service Corporation</div><div style="font-size:11px;color:#888;">clinicservicecorp.com</div></td>
         <td class="affected">82,331</td>
         <td>2026-01-28</td>
         <td style="font-size:12px;">Hacking/IT Incident</td>
         <td><span class="badge badge-hhs">HHS</span></td>
         <td><span style="color: #999; font-size: 12px;">Pending enrichment</span></td>
-      </tr>
-      <tr>
-        <td><div class="company-name">SoFi Technologies</div><div style="font-size:11px;color:#888;">sofi.com</div></td>
-        <td class="affected">38,049</td>
-        <td>2026-01-26</td>
-        <td style="font-size:12px;">Cyberattack</td>
-        <td><span class="badge badge-stateag">State AG</span></td>
-        <td><div class="contact-info">
-        <div class="contact-name">Khushbu Agarwal</div>
-        <div class="contact-title">Senior Security Engineer</div>
-        <div class="contact-links">
-          
-          <a href="https://www.linkedin.com/in/khushbuagarwal" target="_blank"><span class="badge badge-linkedin">in LinkedIn</span></a>
-        </div>
-      </div></td>
       </tr>
       <tr>
         <td><div class="company-name">Enhabit Home Health & Hospice</div><div style="font-size:11px;color:#888;">ehab.com</div></td>
@@ -170,14 +163,6 @@
         <td><div class="company-name">EyeCare Partners</div><div style="font-size:11px;color:#888;">eyecarepartners.com</div></td>
         <td class="affected">17,110</td>
         <td>2026-02-03</td>
-        <td style="font-size:12px;">Hacking/IT Incident</td>
-        <td><span class="badge badge-hhs">HHS</span></td>
-        <td><span style="color: #999; font-size: 12px;">Pending enrichment</span></td>
-      </tr>
-      <tr>
-        <td><div class="company-name">Pecan Tree Dental</div><div style="font-size:11px;color:#888;">pecantreedentalgroup.com</div></td>
-        <td class="affected">13,300</td>
-        <td>2026-01-26</td>
         <td style="font-size:12px;">Hacking/IT Incident</td>
         <td><span class="badge badge-hhs">HHS</span></td>
         <td><span style="color: #999; font-size: 12px;">Pending enrichment</span></td>
@@ -228,14 +213,6 @@
       </div></td>
       </tr>
       <tr>
-        <td><div class="company-name">Baltimore City Health Department</div><div style="font-size:11px;color:#888;">health.baltimorecity.gov</div></td>
-        <td class="affected">2,597</td>
-        <td>2026-01-28</td>
-        <td style="font-size:12px;">Hacking/IT Incident</td>
-        <td><span class="badge badge-hhs">HHS</span></td>
-        <td><span style="color: #999; font-size: 12px;">Pending enrichment</span></td>
-      </tr>
-      <tr>
         <td><div class="company-name">Fried, Frank, Harris, Shriver & Jacobson</div><div style="font-size:11px;color:#888;">friedfrank.com</div></td>
         <td class="affected">2,106</td>
         <td>2026-01-30</td>
@@ -251,22 +228,6 @@
       </div></td>
       </tr>
       <tr>
-        <td><div class="company-name">Cempa Community Care</div><div style="font-size:11px;color:#888;">cempa.org</div></td>
-        <td class="affected">1,341</td>
-        <td>2026-01-30</td>
-        <td style="font-size:12px;">Hacking/IT Incident</td>
-        <td><span class="badge badge-hhs">HHS</span></td>
-        <td><span style="color: #999; font-size: 12px;">Pending enrichment</span></td>
-      </tr>
-      <tr>
-        <td><div class="company-name">Lakeside Pediatrics & Adolescent Medicine</div><div style="font-size:11px;color:#888;">lakesidepediatrics.com</div></td>
-        <td class="affected">1,314</td>
-        <td>2026-02-27</td>
-        <td style="font-size:12px;">Ransomware</td>
-        <td><span class="badge badge-stateag">State AG</span></td>
-        <td><span style="color: #999; font-size: 12px;">Pending enrichment</span></td>
-      </tr>
-      <tr>
         <td><div class="company-name">New American Funding</div><div style="font-size:11px;color:#888;">newamericanfunding.com</div></td>
         <td class="affected">699</td>
         <td>2026-02-27</td>
@@ -280,14 +241,6 @@
           <a href="https://www.linkedin.com/in/erin-forbes-cmb-0281a530" target="_blank"><span class="badge badge-linkedin">in LinkedIn</span></a>
         </div>
       </div></td>
-      </tr>
-      <tr>
-        <td><div class="company-name">WindRose Health Network</div><div style="font-size:11px;color:#888;">windrosehealthnetwork.com</div></td>
-        <td class="affected">691</td>
-        <td>2026-01-27</td>
-        <td style="font-size:12px;">Hacking/IT Incident</td>
-        <td><span class="badge badge-hhs">HHS</span></td>
-        <td><span style="color: #999; font-size: 12px;">Pending enrichment</span></td>
       </tr>
       <tr>
         <td><div class="company-name">Gravity Payments</div><div style="font-size:11px;color:#888;">gravitypayments.com</div></td>
@@ -313,14 +266,6 @@
         <td><span style="color: #999; font-size: 12px;">Pending enrichment</span></td>
       </tr>
       <tr>
-        <td><div class="company-name">Ko-Kwel Wellness Center</div><div style="font-size:11px;color:#888;">ctclusi.org</div></td>
-        <td class="affected">543</td>
-        <td>2026-02-03</td>
-        <td style="font-size:12px;">Hacking/IT Incident</td>
-        <td><span class="badge badge-hhs">HHS</span></td>
-        <td><span style="color: #999; font-size: 12px;">Pending enrichment</span></td>
-      </tr>
-      <tr>
         <td><div class="company-name">Drivestream</div><div style="font-size:11px;color:#888;">drivestream.com</div></td>
         <td class="affected">505</td>
         <td>2026-02-27</td>
@@ -335,14 +280,6 @@
         </div>
       </div></td>
       </tr>
-      <tr>
-        <td><div class="company-name">Issaqueena Pediatric Dentistry</div><div style="font-size:11px;color:#888;">issaqueenapediatricdentistry.com</div></td>
-        <td class="affected">501</td>
-        <td>2026-02-04</td>
-        <td style="font-size:12px;">Hacking/IT Incident</td>
-        <td><span class="badge badge-hhs">HHS</span></td>
-        <td><span style="color: #999; font-size: 12px;">Pending enrichment</span></td>
-      </tr>
     </tbody>
   </table>
 
@@ -354,7 +291,7 @@
 
   <div class="footer">
     <p>Prepared by <a href="https://driveroi.ai" style="color: #8B7FD4; text-decoration: none;">DriveROI</a> for BigID &middot; <a href="mailto:scott@driveroi.ai" style="color: #888; text-decoration: none;">scott@driveroi.ai</a></p>
-    <p style="margin-top: 8px; font-size: 11px; color: #aaa;">Data sourced from HHS Office for Civil Rights Breach Portal and State Attorney General breach notification databases. Contact information verified via Anymailfinder.</p>
+    <p style="margin-top: 8px; font-size: 11px; color: #aaa;">Data sourced from HHS Office for Civil Rights Breach Portal and State Attorney General breach notification databases.</p>
   </div>
 </div>
 </body>

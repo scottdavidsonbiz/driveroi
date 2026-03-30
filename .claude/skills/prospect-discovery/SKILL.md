@@ -2,22 +2,27 @@
 
 ## Metadata
 - **Name:** prospect-discovery
-- **Description:** End-to-end outbound prospecting pipeline. Find ICP look-alikes with DiscoLike, find decision-maker contacts, verify emails via Anymailfinder, and push straight to Instantly. One pipeline, no manual steps.
+- **Description:** End-to-end outbound prospecting pipeline. Find ICP look-alikes with DiscoLike, qualify against buyer's ICP, verify tech stack, find contacts, verify emails, and push to Instantly. One pipeline, no manual steps, no fabricated data.
 - **Invocation:** /prospect-discovery
 
 ---
 
 ## Overview
 
-This skill runs the full outbound prospecting pipeline in one shot:
+This skill runs the full outbound prospecting pipeline:
 
 1. **DiscoLike Discovery** — Find ICP look-alike companies
-2. **DiscoLike Contacts** — Find revenue leader contacts at each company
-3. **Anymailfinder Verify** — Verify every email
-4. **Anymailfinder Gap-Fill** — Find contacts at companies DiscoLike missed
-5. **Instantly Push** — Push verified leads with custom variables to a campaign
+2. **ICP Qualification** — Filter to actual buyer fits, remove non-fits
+3. **Tech Stack Verification** — Confirm companies don't already use the buyer's product or direct competitors (via Sumble)
+4. **DiscoLike Contacts** — Find decision-maker contacts at qualified companies
+5. **Email Verification** — Verify every email via Anymailfinder, gap-fill with Clay webhook
+6. **Instantly Push** — Push verified leads with custom variables to a campaign
 
-No HTML deliverables. No manual steps. Input goes in, leads come out in Instantly.
+**Rules:**
+- Never include a company you haven't qualified against the buyer's ICP
+- Never claim a tech stack check was done if it wasn't. Actually run it.
+- Never pad a list with non-fits to hit a number. 13 real fits > 25 padded.
+- Show methodology: what was checked, what was excluded, and why
 
 ---
 
@@ -25,12 +30,13 @@ No HTML deliverables. No manual steps. Input goes in, leads come out in Instantl
 
 1. **ICP description** — Natural language (e.g., "compliance SaaS companies selling to healthcare, 51-500 employees, US")
 2. **Persona** — Who to find (e.g., "VP+ marketing, sales, or CRO")
-3. **Campaign ID** — Instantly campaign to push to (create one first if needed)
+3. **Campaign ID** — Instantly campaign to push to (create one first if needed), or "create new"
 4. **Max accounts** — How many companies to find (default: 25)
 
 Optional:
 - **Seed domains** — Example companies for lookalike matching
 - **Segment name** — Label for file naming (default: derived from ICP)
+- **Buyer context** — If building a deliverable FOR a prospect (e.g., "BigID sells DSPM"), include their product category so we can check competitors in tech stacks
 
 ---
 
@@ -38,113 +44,147 @@ Optional:
 
 ### Step 1: DiscoLike Discovery
 
-Use `discover-similar-companies` with `icp_prompt` (let DiscoLike extract filters automatically):
+Use `discover-similar-companies` with `icp_prompt`:
 
 ```
 discover-similar-companies(
   icp_prompt="{user's full ICP description}",
   country=["US"],
-  max_records={max accounts},
+  max_records={max accounts + 50% buffer for filtering},
   fields=["domain", "name", "description", "employees", "similarity", "social_urls"]
 )
 ```
 
-Show results as a table. Move straight to Step 2 unless something looks obviously wrong.
+Request MORE than the target count. Filtering will remove non-fits.
 
-### Step 2: DiscoLike Contacts
+### Step 2: ICP Qualification
 
-Use `search-contacts` on ALL discovered domains in a single call:
+Review every result and remove companies that don't fit the buyer's ICP:
+
+**Remove if:**
+- Too small for the buyer's product (e.g., single-location practices won't buy enterprise DSPM)
+- Wrong segment (government entities if buyer only sells to private sector)
+- Wrong industry despite high similarity score
+- Already a customer of the buyer (check if known)
+- Duplicate domains (e.g., smartapp.com and smartappbeta.com)
+
+**For signal-based lists (breach data, funding, job postings):**
+- Apply the same ICP filter. A breach at a dental practice doesn't make them an enterprise DSPM buyer.
+- The signal (breach, funding round, hiring) creates urgency. The ICP filter confirms they can actually buy.
+
+Present the filtered list with removal reasons:
+```
+Removed: 8 of 21
+  ✗ Pecan Tree Dental: Single-location dental practice
+  ✗ Baltimore City Health Dept: Government entity
+  ...
+ICP fits: 13
+```
+
+### Step 3: Tech Stack Verification
+
+If the buyer sells a specific product category, check whether target companies already use the buyer's product or direct competitors.
+
+**Use Sumble API** (`https://api.sumble.com/v5/organizations/enrich`) with technology filters:
+
+```python
+# For each domain, check each competitor vendor
+payload = {
+  "organization": {"domain": domain},
+  "filters": {"technologies": ["vendor_name"]}
+}
+```
+
+- Sumble costs 0 credits if no match, 5 if match
+- Check all domains against the buyer's product AND known competitors
+- If a company already uses the buyer's product: REMOVE (they're already a customer)
+- If a company uses a competitor: KEEP but note it (potential displacement opportunity, or remove depending on buyer preference)
+
+**Common DSPM vendors:** bigid, cyera, symmetry systems, normalyze, dig security, laminar, open raven, varonis, securiti
+**Common CRM vendors:** salesforce, hubspot, zoho, pipedrive
+**Common outbound vendors:** outreach, salesloft, instantly, apollo
+
+Always ask the user or infer from context which vendors to check.
+
+### Step 4: DiscoLike Contacts
+
+Use `search-contacts` on ALL qualified domains:
 
 ```
 search-contacts(
-  domain=[all discovered domains],
-  seniority=[map from persona - e.g., "executive", "vp", "director"],
-  title=[map from persona - e.g., "marketing", "sales", "revenue", "growth", "demand", "CRO"],
+  domain=[all qualified domains],
+  seniority=[map from persona],
+  title=[map from persona],
   has_linkedin=true,
   results_by_company=1,
-  max_records={max accounts},
+  max_records={qualified count},
   fields=["name", "title", "domain", "company_name", "email", "social_urls", "seniority"]
 )
 ```
 
-Note which companies returned no contacts (gap companies).
+Note gap companies (no contacts returned).
 
-### Step 3: Anymailfinder Verify
+### Step 5: Email Verification
 
-For every contact from Step 2 that has a name, run AMF `findPersonEmail` to get a verified email:
+**Primary: Anymailfinder** — Run `findPersonEmail` for every contact with a name.
 
-```typescript
-// For each contact:
-findPersonEmail({
-  first_name: "First",
-  last_name: "Last",
-  domain: "company.com",
-  company_name: "Company Name"
-})
-```
-
-Write and execute a script at `scripts/demo-amf-verify.ts` using the manual .env loader pattern (no dotenv package):
-
+Write and execute a verification script using the manual .env loader:
 ```typescript
 import { readFileSync } from 'fs'
 import { resolve } from 'path'
-import { findPersonEmail } from '../lib/anymailfinder'
-
 const envPath = resolve(__dirname, '..', '.env')
-const envContent = readFileSync(envPath, 'utf-8')
-for (const line of envContent.split('\n')) {
-  const trimmed = line.trim()
-  if (!trimmed || trimmed.startsWith('#')) continue
-  const eqIdx = trimmed.indexOf('=')
-  if (eqIdx === -1) continue
-  const key = trimmed.slice(0, eqIdx)
-  const val = trimmed.slice(eqIdx + 1)
-  if (!process.env[key]) process.env[key] = val
+// ... parse and set process.env
+```
+
+**Gap-fill: Anymailfinder `findDecisionMaker`** — For domains where AMF person search returned not_found.
+
+**Final fallback: Clay webhook** — Push remaining unfound contacts to Clay for waterfall enrichment:
+```
+POST https://api.clay.com/v3/sources/webhook/{webhook-id}
+{
+  "full_name": "First Last",
+  "first_name": "First",
+  "last_name": "Last",
+  "job_title": "Title",
+  "company_name": "Company",
+  "company_domain": "domain.com"
 }
 ```
+Push one at a time with 2-second delays. Clay webhook field names: `full_name`, `first_name`, `last_name`, `job_title`, `company_name`, `company_domain`.
 
-Run with `npx tsx scripts/demo-amf-verify.ts`.
+### Step 6: Push to Instantly
 
-Contacts that come back VALID proceed. Contacts that come back not_found go to Step 4.
-
-### Step 4: Gap-Fill
-
-For domains with zero verified contacts (either DiscoLike returned nobody, or AMF couldn't verify), run AMF `findDecisionMaker`:
+For all contacts with verified emails, push to Instantly using `lib/instantly.ts`:
 
 ```typescript
-findDecisionMaker(domain, ["marketing", "sales", "ceo"])
+import { addLeadsToCampaign } from '../lib/instantly'
 ```
 
-This costs 2 credits but finds a decision-maker even when we don't have a name.
+Each lead gets: email, first_name, last_name, company_name, custom_variables (company_name, title, linkedin_url, domain).
 
-### Step 5: Push to Instantly
-
-For all contacts with verified emails, push to the Instantly campaign using `lib/instantly.ts`:
-
+If creating a new campaign with email sequence, use PATCH to add sequences (not a separate endpoint):
 ```typescript
-import { addLeadToCampaign } from '../lib/instantly'
-
-addLeadToCampaign(CAMPAIGN_ID, {
-  email: "verified@company.com",
-  first_name: "First",
-  last_name: "Last",
-  company_name: "Company Name",
-  custom_variables: {
-    company: "Company Name",
-    title: "VP Marketing",
-    linkedin_url: "https://linkedin.com/in/...",
-    domain: "company.com"
-  }
-})
+// Create campaign
+POST /campaigns → { id: campaignId }
+// Add sequence via PATCH
+PATCH /campaigns/{campaignId} → { sequences: [{ steps: [...] }] }
+// Push leads one at a time via lib
+addLeadsToCampaign(campaignId, lead)
 ```
 
-Write a push script at `scripts/push-{segment}-leads.ts` and execute it.
+### Step 7 (Deliverable mode): Generate HTML
+
+If building a deliverable for a prospect, generate branded HTML at `public/leads/{slug}.html` using the prospect-deliverable skill's generate pattern. Include:
+- Methodology section (sources, date range, ICP filter, tech stack check, contact verification)
+- Stats (qualified companies, affected/signal count, verified contacts, competitor vendor check)
+- Table with company, signal data, source, and contact info
+- CTA to cal.com/driveroi/30min
 
 Report final stats:
-- Accounts found
-- Contacts verified
-- Leads pushed to Instantly
+- Accounts discovered → ICP-qualified → tech stack verified
+- Contacts found → emails verified → pushed to Instantly
 - Gap companies (no contact found)
+- Removal reasons logged
 
 ---
 
@@ -154,9 +194,13 @@ Report final stats:
 - **DiscoLike** `discover-similar-companies` — ICP lookalike search
 - **DiscoLike** `search-contacts` — Find people at companies
 
+### APIs
+- **Sumble** (`api.sumble.com/v5/organizations/enrich`) — Tech stack verification. Key in `.env` as API key embedded in script (see `scripts/sumble-clay-check.py` for pattern)
+- **Clay webhook** — Fallback email finding. Push contacts with correct field names.
+
 ### Libraries
 - **`lib/anymailfinder.ts`** — `findPersonEmail`, `findDecisionMaker`, `batchVerify`
-- **`lib/instantly.ts`** — `addLeadToCampaign`
+- **`lib/instantly.ts`** — `addLeadToCampaign`, `addLeadsToCampaign`, `updateCampaignSequences`
 
 ### Environment Variables (in `.env`)
 - `ANYMAILFINDER_API_KEY`
@@ -175,8 +219,13 @@ const envPath = resolve(__dirname, '..', '.env')
 
 ## Quality Checks
 
-- [ ] Every pushed lead has a verified email (AMF status = valid)
+- [ ] Every company on the list was qualified against the buyer's ICP
+- [ ] Non-fits were removed with documented reasons
+- [ ] Tech stack was actually checked (not assumed)
+- [ ] Companies using the buyer's own product were excluded
+- [ ] Every pushed lead has a verified email
 - [ ] No leads pushed without email verification
 - [ ] Custom variables populated (company, title, linkedin_url)
 - [ ] No duplicate emails
+- [ ] Methodology is transparent (sources, filters, checks)
 - [ ] Gap companies documented for LinkedIn/HeyReach follow-up
