@@ -227,9 +227,12 @@ def extract_conversation_facts(conv: dict) -> dict:
 
 
 # ---------- Sends ----------
-def send_dm(conversation_id: str, message: str, dry_run: bool) -> dict:
-    if dry_run:
-        return {"dry_run": True, "conversation_id": conversation_id, "message_preview": message[:120]}
+def send_dm(conversation_id: str, message: str, dry_run: bool, pending_sends: list | None = None) -> dict:
+    if dry_run or pending_sends is not None:
+        result = {"dry_run": True, "conversation_id": conversation_id, "message_preview": message[:120]}
+        if pending_sends is not None:
+            pending_sends.append({"conversation_id": str(conversation_id), "message": message})
+        return result
     body = {
         "conversationId": str(conversation_id),
         "linkedInAccountId": LINKEDIN_ACCOUNT_ID,
@@ -246,6 +249,9 @@ def main() -> int:
     ap.add_argument("--max", type=int, default=MAX_SENDS_PER_RUN_DEFAULT, help="Max DM sends per run (default 20).")
     ap.add_argument("--only-dm1", action="store_true", help="Only send DM1s (skip DM2 follow-ups).")
     ap.add_argument("--verbose", action="store_true")
+    ap.add_argument("--leads-file", help="Path to pre-fetched campaign leads JSON (skips GetLeadsFromCampaign API call).")
+    ap.add_argument("--conversations-file", help="Path to pre-fetched conversations JSON (skips GetConversationsV2 API call).")
+    ap.add_argument("--output-sends", help="Write pending sends to this JSON file instead of calling SendMessage API.")
     args = ap.parse_args()
 
     openers = load_openers()
@@ -257,12 +263,17 @@ def main() -> int:
     # 1) Acceptance truth lives on campaign lead records, not inbox conversations.
     # Inbox rows don't exist for accepted-but-not-yet-messaged leads, so polling
     # /inbox misses them entirely. Poll /campaign leads and key off leadConnectionStatus.
-    print(f"Fetching campaign {CAMPAIGN_ID} leads...")
-    try:
-        campaign_leads = fetch_campaign_leads()
-    except RuntimeError as e:
-        print(f"ERROR fetching campaign leads: {e}")
-        return 1
+    if args.leads_file:
+        print(f"Loading campaign leads from {args.leads_file}...")
+        with open(args.leads_file, encoding="utf-8") as lf:
+            campaign_leads = json.load(lf)
+    else:
+        print(f"Fetching campaign {CAMPAIGN_ID} leads...")
+        try:
+            campaign_leads = fetch_campaign_leads()
+        except RuntimeError as e:
+            print(f"ERROR fetching campaign leads: {e}")
+            return 1
     print(f"Got {len(campaign_leads)} leads in campaign.")
 
     accepted = [cl for cl in campaign_leads if cl.get("leadConnectionStatus") == "ConnectionAccepted"]
@@ -274,12 +285,17 @@ def main() -> int:
     # 2) Conversation index: all inbox convos for our account, keyed by profileUrl.
     # We still need this to find the conversationId required by SendMessage and to
     # detect replies. No campaign filter — HeyReach doesn't tag convos with campaignId.
-    print(f"Fetching inbox conversations for account {LINKEDIN_ACCOUNT_ID}...")
-    try:
-        conversations = fetch_all_conversations()
-    except RuntimeError as e:
-        print(f"ERROR fetching conversations: {e}")
-        return 1
+    if args.conversations_file:
+        print(f"Loading conversations from {args.conversations_file}...")
+        with open(args.conversations_file, encoding="utf-8") as cf:
+            conversations = json.load(cf)
+    else:
+        print(f"Fetching inbox conversations for account {LINKEDIN_ACCOUNT_ID}...")
+        try:
+            conversations = fetch_all_conversations()
+        except RuntimeError as e:
+            print(f"ERROR fetching conversations: {e}")
+            return 1
     print(f"Got {len(conversations)} conversations.")
 
     conv_by_url: dict = {}
@@ -288,6 +304,7 @@ def main() -> int:
         if facts["profile_url"]:
             conv_by_url[facts["profile_url"]] = facts
 
+    pending_sends: list | None = [] if args.output_sends else None
     sends = 0
     blocked_no_thread = 0
 
@@ -364,7 +381,7 @@ def main() -> int:
             print(f"SEND DM1 -> {opener_email} ({lead['first_name']} {lead['last_name']})")
             print(f"  {message[:140]}...")
             try:
-                resp = send_dm(conv_id, message, args.dry_run)
+                resp = send_dm(conv_id, message, args.dry_run, pending_sends)
                 if not args.dry_run:
                     st["dm1_sent_at"] = now_iso()
                     st["dm1_text"] = message
@@ -391,7 +408,7 @@ def main() -> int:
             print(f"SEND DM2 -> {opener_email} ({lead['first_name']} {lead['last_name']})")
             print(f"  {dm2}")
             try:
-                resp = send_dm(conv_id, dm2, args.dry_run)
+                resp = send_dm(conv_id, dm2, args.dry_run, pending_sends)
                 if not args.dry_run:
                     st["dm2_sent_at"] = now_iso()
                     st["dm2_text"] = dm2
@@ -417,7 +434,7 @@ def main() -> int:
         print(f"SEND DM3 -> {opener_email} ({lead['first_name']} {lead['last_name']})")
         print(f"  {dm3}")
         try:
-            resp = send_dm(conv_id, dm3, args.dry_run)
+            resp = send_dm(conv_id, dm3, args.dry_run, pending_sends)
             if not args.dry_run:
                 st["dm3_sent_at"] = now_iso()
                 st["dm3_text"] = dm3
@@ -428,9 +445,14 @@ def main() -> int:
             print(f"  ERROR: {e}")
             log_event({"event": "dm3_error", "email": opener_email, "error": str(e)})
 
-    if not args.dry_run:
+    if args.output_sends:
+        with open(args.output_sends, "w", encoding="utf-8") as osf:
+            json.dump(pending_sends, osf, indent=2)
+        print(f"Pending sends written to {args.output_sends} ({len(pending_sends)} messages).")
         save_state(state)
-    print(f"\nDone. Sent {sends} messages{' (dry-run)' if args.dry_run else ''}.")
+    elif not args.dry_run:
+        save_state(state)
+    print(f"\nDone. Queued {sends} messages{' (dry-run)' if args.dry_run else ''}.")
     if blocked_no_thread:
         print(f"Blocked (no inbox thread yet): {blocked_no_thread} lead(s). "
               f"HeyReach SendMessage requires an existing conversationId — see launch checklist.")
