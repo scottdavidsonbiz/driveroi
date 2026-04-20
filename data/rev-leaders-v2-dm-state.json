@@ -1,1 +1,57 @@
-{}
+{
+  "henry.sanford@trimech.com": {
+    "accepted_at": "2026-04-15T23:52:42.973666Z"
+  },
+  "justin.kolman@megaport.com": {
+    "accepted_at": "2026-04-15T23:55:41.614015Z"
+  },
+  "zv@constructor.tech": {
+    "accepted_at": "2026-04-15T23:57:13.322116Z",
+    "dm1_sent_at": "2026-04-17T13:28:20.683Z",
+    "conversation_id": "2-MmI4M2FkYTktOTU2Zi00MzE1LTgyMjktNTM4MzNlZWVlNGUxXzEwMA=="
+  },
+  "andrew.schultz@brightinsight.com": {
+    "accepted_at": "2026-04-15T23:58:41.180618Z"
+  },
+  "nate.gosselin@mybrightwheel.com": {
+    "accepted_at": "2026-04-16T00:10:19.766567Z",
+    "dm1_sent_at": "2026-04-17T14:15:15.817Z",
+    "conversation_id": "2-OGEyNjlhNTItYjEyZi00YzY3LWJkMGItZjIzZDZjYjI4MjE2XzEwMA=="
+  },
+  "david.howard@dsisystemsinc.com": {
+    "accepted_at": "2026-04-16T00:21:27.638618Z"
+  },
+  "kelly.green@circles.co": {
+    "accepted_at": "2026-04-16T00:29:25.479462Z",
+    "dm1_sent_at": "2026-04-17T14:16:23.529Z",
+    "conversation_id": "2-OGY5ZjY3MWMtNmM5Yy00YjUwLThlMzAtNzA1MDFmM2M2OTYzXzEwMA=="
+  },
+  "sunny.joshi@veritasprime.com": {
+    "accepted_at": "2026-04-16T00:30:13.067035Z"
+  },
+  "jkoronich@kpa.io": {
+    "accepted_at": "2026-04-16T00:32:26.63049Z",
+    "dm1_sent_at": "2026-04-17T14:14:14.512Z",
+    "conversation_id": "2-OTYzMTA3MmYtMWIyNy00NjZkLWEwMzYtOTg3ZWI1MzAzZTIzXzEwMA=="
+  },
+  "emad.almarzoog@hcss.com": {
+    "accepted_at": "2026-04-16T19:18:33.746773Z"
+  },
+  "ryan.biever@optibus.com": {
+    "accepted_at": "2026-04-16T19:54:26.375073Z"
+  },
+  "sonny.pannu@adroll.com": {
+    "accepted_at": "2026-04-16T19:55:33.62563Z",
+    "dm1_sent_at": "2026-04-17T16:12:49.216Z",
+    "conversation_id": "2-ZTgxYzNlZDgtNjY2YS00YWY4LWFhNTAtOWU2MWM1NmYxM2Q1XzEwMA=="
+  },
+  "jake.goena@novatech.net": {
+    "accepted_at": "2026-04-17T17:41:25.405201Z"
+  },
+  "larry.anderson@commandlink.com": {
+    "accepted_at": "2026-04-17T18:15:31.191191Z"
+  },
+  "enelson@caisoft.com": {
+    "accepted_at": "2026-04-17T20:47:20.093644Z"
+  }
+}
