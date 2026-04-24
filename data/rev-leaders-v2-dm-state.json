@@ -1,1 +1,18 @@
-{}
+{
+  "nate.gosselin@mybrightwheel.com": {
+    "accepted_at": "2026-04-16T00:10:19.766585Z",
+    "dm1_sent_at": "2026-04-17T14:15:15.817Z",
+    "dm1_text": "(sent outside this script)",
+    "dm2_sent_at": "2026-04-23T13:06:02.067Z",
+    "dm2_text": "(sent outside this script)",
+    "profile_url": "https://www.linkedin.com/in/nate-gosselin-75120471"
+  },
+  "zv@constructor.tech": {
+    "accepted_at": "2026-04-15T23:57:13.322116Z",
+    "dm1_sent_at": "2026-04-17T13:28:20.683Z",
+    "dm1_text": "(sent outside this script)",
+    "dm2_sent_at": "2026-04-23T13:05:53.019Z",
+    "dm2_text": "(sent outside this script)",
+    "profile_url": "https://www.linkedin.com/in/zoran-vasiljev-928657"
+  }
+}
