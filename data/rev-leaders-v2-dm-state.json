@@ -1,1 +1,193 @@
-{}
+{
+  "henry.sanford@trimech.com": {
+    "profile_url": "https://www.linkedin.com/in/henry-sanford",
+    "accepted_at": "2026-04-15T23:52:42.973666Z"
+  },
+  "justin.kolman@megaport.com": {
+    "profile_url": "https://www.linkedin.com/in/justin-kolman-420b212a",
+    "accepted_at": "2026-04-15T23:55:41.614015Z"
+  },
+  "zv@constructor.tech": {
+    "profile_url": "https://www.linkedin.com/in/zoran-vasiljev-928657",
+    "accepted_at": "2026-04-15T23:57:13.322116Z",
+    "conversation_id": "2-MmI4M2FkYTktOTU2Zi00MzE1LTgyMjktNTM4MzNlZWVlNGUxXzEwMA==",
+    "dm1_sent_at": "2026-04-26T13:09:30.378Z",
+    "dm1_text": "(sent outside this script)"
+  },
+  "andrew.schultz@brightinsight.com": {
+    "profile_url": "https://www.linkedin.com/in/andrewschultzdesign",
+    "accepted_at": "2026-04-15T23:58:41.180618Z"
+  },
+  "nate.gosselin@mybrightwheel.com": {
+    "profile_url": "https://www.linkedin.com/in/nate-gosselin-75120471",
+    "accepted_at": "2026-04-16T00:10:19.766585Z",
+    "conversation_id": "2-OGEyNjlhNTItYjEyZi00YzY3LWJkMGItZjIzZDZjYjI4MjE2XzEwMA==",
+    "dm1_sent_at": "2026-04-26T13:09:33.007Z",
+    "dm1_text": "(sent outside this script)"
+  },
+  "david.howard@dsisystemsinc.com": {
+    "profile_url": "https://www.linkedin.com/in/david-howard-a56a2064",
+    "accepted_at": "2026-04-16T00:21:27.638982Z"
+  },
+  "kelly.green@circles.co": {
+    "profile_url": "https://www.linkedin.com/in/kelly-green-47aab4",
+    "accepted_at": "2026-04-16T00:29:25.479462Z",
+    "conversation_id": "2-OGY5ZjY3MWMtNmM5Yy00YjUwLThlMzAtNzA1MDFmM2M2OTYzXzEwMA==",
+    "dm1_sent_at": "2026-04-26T13:09:35.941Z",
+    "dm1_text": "(sent outside this script)"
+  },
+  "sunny.joshi@veritasprime.com": {
+    "profile_url": "https://www.linkedin.com/in/sunnyjoshi",
+    "accepted_at": "2026-04-16T00:30:13.067035Z"
+  },
+  "jkoronich@kpa.io": {
+    "profile_url": "https://www.linkedin.com/in/josh-koronich-171511a8",
+    "accepted_at": "2026-04-16T00:32:26.63049Z",
+    "conversation_id": "2-OTYzMTA3MmYtMWIyNy00NjZkLWEwMzYtOTg3ZWI1MzAzZTIzXzEwMA==",
+    "dm1_sent_at": "2026-04-26T13:09:39.013Z",
+    "dm1_text": "(sent outside this script)"
+  },
+  "cblydell@definitivehc.com": {
+    "profile_url": "https://www.linkedin.com/in/chris-blydell-24a114b5",
+    "accepted_at": "2026-04-16T19:17:27.437537Z"
+  },
+  "emad.almarzoog@hcss.com": {
+    "profile_url": "https://www.linkedin.com/in/emad-al-marzoog",
+    "accepted_at": "2026-04-16T19:18:33.746773Z"
+  },
+  "ryan.biever@optibus.com": {
+    "profile_url": "https://www.linkedin.com/in/ryan-biever",
+    "accepted_at": "2026-04-16T19:54:26.375073Z"
+  },
+  "sonny.pannu@adroll.com": {
+    "profile_url": "https://www.linkedin.com/in/sonny-pannu-7b5a86207",
+    "accepted_at": "2026-04-16T19:55:33.62563Z",
+    "conversation_id": "2-ZTgxYzNlZDgtNjY2YS00YWY4LWFhNTAtOWU2MWM1NmYxM2Q1XzEwMA==",
+    "dm1_sent_at": "2026-04-26T13:09:41.763Z",
+    "dm1_text": "(sent outside this script)"
+  },
+  "chris.beekman@nethealth.com": {
+    "profile_url": "https://www.linkedin.com/in/chris-beekman-2a46882",
+    "accepted_at": "2026-04-16T20:13:21.378061Z"
+  },
+  "jake.goena@novatech.net": {
+    "profile_url": "https://www.linkedin.com/in/jake-goena",
+    "accepted_at": "2026-04-17T17:41:25.405201Z"
+  },
+  "larry.anderson@commandlink.com": {
+    "profile_url": "https://www.linkedin.com/in/larryandersonprofessional",
+    "accepted_at": "2026-04-17T18:15:31.191199Z"
+  },
+  "bferreira@hhaexchange.com": {
+    "profile_url": "https://www.linkedin.com/in/benferreira1",
+    "accepted_at": "2026-04-17T20:09:58.67774Z"
+  },
+  "enelson@caisoft.com": {
+    "profile_url": "https://www.linkedin.com/in/nelsonbmaia",
+    "accepted_at": "2026-04-17T20:47:20.093644Z"
+  },
+  "steve.mccarthy@motionrecruitment.com": {
+    "profile_url": "https://www.linkedin.com/in/stevemccarthy",
+    "accepted_at": "2026-04-20T15:06:13.573524Z"
+  },
+  "jisenhower@officespacesoftware.com": {
+    "profile_url": "https://www.linkedin.com/in/jessicaisenhower",
+    "accepted_at": "2026-04-20T15:12:00.932551Z"
+  },
+  "rclark@goempyrean.com": {
+    "profile_url": "https://www.linkedin.com/in/randynclark",
+    "accepted_at": "2026-04-20T16:06:08.435015Z"
+  },
+  "cesar.aguilera@monarcasnacks.com": {
+    "profile_url": "https://www.linkedin.com/in/cesaraguilera20",
+    "accepted_at": "2026-04-20T17:57:09.665241Z"
+  },
+  "chris.ward@jellyfish.co": {
+    "profile_url": "https://www.linkedin.com/in/cloudhealth",
+    "accepted_at": "2026-04-21T15:20:01.701613Z"
+  },
+  "george.whetstone@justglobal.com": {
+    "profile_url": "https://www.linkedin.com/in/georgewhetstone",
+    "accepted_at": "2026-04-21T15:38:07.785592Z"
+  },
+  "mleiggi@rectanglehealth.com": {
+    "profile_url": "https://www.linkedin.com/in/matthewleiggi",
+    "accepted_at": "2026-04-21T16:31:14.898877Z"
+  },
+  "sridhar@adroitinnovative.com": {
+    "profile_url": "https://www.linkedin.com/in/sridhargoud123",
+    "accepted_at": "2026-04-21T17:05:55.607742Z"
+  },
+  "ayancoskie@edupoint.com": {
+    "profile_url": "https://www.linkedin.com/in/ashleyyancoskie",
+    "accepted_at": "2026-04-21T17:17:49.025835Z"
+  },
+  "dominicm@darby.com": {
+    "profile_url": "https://www.linkedin.com/in/dominicmangi",
+    "accepted_at": "2026-04-21T17:38:28.03498Z"
+  },
+  "chelsea.dadkhah@itj.com": {
+    "profile_url": "https://www.linkedin.com/in/chelseascruggs",
+    "accepted_at": "2026-04-21T17:47:44.955994Z"
+  },
+  "austin.lewis@getweave.com": {
+    "profile_url": "https://www.linkedin.com/in/austin-lewis-4530981a1",
+    "accepted_at": "2026-04-21T17:53:13.929315Z"
+  },
+  "cole.helmer@xtech.ai": {
+    "profile_url": "https://www.linkedin.com/in/cole-helmer-644ba3172",
+    "accepted_at": "2026-04-21T18:23:29.714453Z"
+  },
+  "dorian.dawson@netsmartz.com": {
+    "profile_url": "https://www.linkedin.com/in/doriandawson",
+    "accepted_at": "2026-04-21T18:27:59.224654Z"
+  },
+  "matt.barbieri@intentsify.io": {
+    "profile_url": "https://www.linkedin.com/in/matt-barbieri-814546a2",
+    "accepted_at": "2026-04-22T15:55:57.05904Z"
+  },
+  "joel.vanderpol@daxko.com": {
+    "profile_url": "https://www.linkedin.com/in/joelvp",
+    "accepted_at": "2026-04-22T16:57:05.431519Z"
+  },
+  "tselsor@smcelectric.com": {
+    "profile_url": "https://www.linkedin.com/in/travisselsor",
+    "accepted_at": "2026-04-23T17:06:40.825362Z"
+  },
+  "pamelap@interrait.com": {
+    "profile_url": "https://www.linkedin.com/in/acoaacxpzg8bm-jkhlzgqgb_v_twskxlcbbbq4g",
+    "accepted_at": "2026-04-23T17:16:27.749614Z"
+  },
+  "yeleine.pena@idt.net": {
+    "profile_url": "https://www.linkedin.com/in/yeleinep",
+    "accepted_at": "2026-04-23T17:56:35.911029Z"
+  },
+  "brandon.pace@splashbi.com": {
+    "profile_url": "https://www.linkedin.com/in/brandon-pace46",
+    "accepted_at": "2026-04-23T18:23:57.698477Z"
+  },
+  "jonathan.marshall@smartrent.com": {
+    "profile_url": "https://www.linkedin.com/in/jonathan-marshall-078598156",
+    "accepted_at": "2026-04-24T16:05:12.236014Z"
+  },
+  "rose.cmelak@intellinum.com": {
+    "profile_url": "https://www.linkedin.com/in/rose-cmelak-959653",
+    "accepted_at": "2026-04-24T17:09:53.18259Z"
+  },
+  "ntalens@demandbase.com": {
+    "profile_url": "https://www.linkedin.com/in/nicoleguicotalens",
+    "accepted_at": "2026-04-24T17:49:25.225196Z"
+  },
+  "amber@vereigenmedia.com": {
+    "profile_url": "https://www.linkedin.com/in/amberrebold3737",
+    "accepted_at": "2026-04-24T18:10:32.731972Z"
+  },
+  "jessica.cunning@getweave.com": {
+    "profile_url": "https://www.linkedin.com/in/jessica-cunning-72400921b",
+    "accepted_at": "2026-04-24T18:14:41.046526Z"
+  },
+  "kloucks@anteriad.com": {
+    "profile_url": "https://www.linkedin.com/in/kiara-loucks-14a04178",
+    "accepted_at": "2026-04-24T15:53:56.583035Z"
+  }
+}
