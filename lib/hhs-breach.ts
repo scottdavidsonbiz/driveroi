@@ -40,22 +40,32 @@ export async function downloadHhsBreaches(): Promise<string> {
 }
 
 async function downloadOnce(): Promise<string> {
-  const getRes = await fetch(PORTAL_URL, { headers: { 'User-Agent': USER_AGENT } })
+  // Next.js patches fetch and caches GETs by default. A cached GET would feed
+  // us stale ViewState + cookies, and the POST would land in a different JSF
+  // session — returning the frontpage HTML instead of the CSV.
+  const getRes = await fetch(PORTAL_URL, {
+    headers: { 'User-Agent': USER_AGENT },
+    cache: 'no-store',
+  })
   if (!getRes.ok) throw new Error(`HHS portal GET failed: ${getRes.status}`)
   const html = await getRes.text()
 
   const viewState = extractViewState(html)
   if (!viewState) throw new Error('Could not extract javax.faces.ViewState from HHS portal')
 
+  // JSF rotates form action IDs whenever the page template changes (the CSV
+  // anchor moved from j_idt385 to j_idt384 on 2026-04-30 mid-day, breaking the
+  // cron). Extract the live submit ID by locating the CSV image and scanning
+  // backward to its enclosing anchor's onclick payload.
+  const csvSubmitId = extractCsvSubmitId(html)
+  if (!csvSubmitId) throw new Error('Could not locate CSV export anchor on HHS portal')
+
   const cookie = extractJsessionCookie(getRes.headers)
 
-  // The CSV export anchor on breach_report_hip.jsf submits j_idt385 (as of 2026-04).
-  // Excel=j_idt381, PDF=j_idt383, CSV=j_idt385, XML=j_idt387. JSF auto-rotates these
-  // when the page template changes — re-extract from the live page if scraping breaks.
   const formData = new URLSearchParams({
     ocrForm: 'ocrForm',
     'javax.faces.ViewState': viewState,
-    'ocrForm:j_idt385': 'ocrForm:j_idt385',
+    [csvSubmitId]: csvSubmitId,
   })
 
   const postRes = await fetch(PORTAL_URL, {
@@ -68,6 +78,7 @@ async function downloadOnce(): Promise<string> {
       ...(cookie ? { Cookie: cookie } : {}),
     },
     body: formData.toString(),
+    cache: 'no-store',
   })
 
   if (!postRes.ok) throw new Error(`HHS CSV export failed: ${postRes.status}`)
@@ -79,6 +90,20 @@ async function downloadOnce(): Promise<string> {
   }
 
   return body
+}
+
+function extractCsvSubmitId(html: string): string | null {
+  // The CSV export is rendered as
+  //   <a onclick="mojarra.jsfcljs(...,{'ocrForm:j_idtNNN':'ocrForm:j_idtNNN'},'')">
+  //     <img alt="CSV" />
+  //   </a>
+  // The submit ID we POST is the anchor's onclick payload, NOT the image's id —
+  // those are sequential JSF ids and easy to confuse.
+  const csvImgIdx = html.search(/<img[^>]*alt=["']CSV["']/)
+  if (csvImgIdx < 0) return null
+  const before = html.slice(0, csvImgIdx)
+  const matches = [...before.matchAll(/['"](ocrForm:j_idt\d+)['"]:['"]ocrForm:j_idt\d+['"]/g)]
+  return matches.length > 0 ? matches[matches.length - 1][1] : null
 }
 
 function extractViewState(html: string): string | null {

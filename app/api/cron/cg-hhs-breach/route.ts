@@ -56,7 +56,16 @@ export async function GET(request: NextRequest) {
       .in('breach_id', ids)
     if (fetchErr) throw new Error(`Supabase fetch error: ${fetchErr.message}`)
     const existingSet = new Set((existingRows ?? []).map(r => r.breach_id))
-    const newRecords = records.filter(r => !existingSet.has(r.breach_id))
+    // Dedupe within the batch as well — the HHS CSV repeats (name|date|breachType)
+    // tuples for multi-state filings, amendments, and BA/CE pairs reporting the
+    // same incident. Without this, two such rows both pass the existing-DB filter
+    // and the bulk insert hits hhs_breaches_breach_id_key.
+    const seen = new Set<string>()
+    const newRecords = records.filter(r => {
+      if (existingSet.has(r.breach_id) || seen.has(r.breach_id)) return false
+      seen.add(r.breach_id)
+      return true
+    })
     const duplicates = records.length - newRecords.length
 
     if (!dry && newRecords.length > 0) {
