@@ -102,7 +102,10 @@ function extractCsvSubmitId(html: string): string | null {
   const csvImgIdx = html.search(/<img[^>]*alt=["']CSV["']/)
   if (csvImgIdx < 0) return null
   const before = html.slice(0, csvImgIdx)
-  const matches = [...before.matchAll(/['"](ocrForm:j_idt\d+)['"]:['"]ocrForm:j_idt\d+['"]/g)]
+  // Array.from instead of spread — tsconfig target doesn't allow iterating
+  // RegExpStringIterator via spread without downlevelIteration, and `next build`
+  // enforces this even though `next dev` does not.
+  const matches = Array.from(before.matchAll(/['"](ocrForm:j_idt\d+)['"]:['"]ocrForm:j_idt\d+['"]/g))
   return matches.length > 0 ? matches[matches.length - 1][1] : null
 }
 
