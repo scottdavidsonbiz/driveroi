@@ -157,6 +157,10 @@ def fetch_conversations(offset: int = 0, limit: int = 100) -> list[dict]:
 
 
 def fetch_all_conversations() -> list[dict]:
+    cache = os.environ.get("HEYREACH_CONVOS_CACHE")
+    if cache and Path(cache).exists():
+        with open(cache, encoding="utf-8") as f:
+            return json.load(f)
     all_items = []
     offset = 0
     page_size = 100
@@ -173,6 +177,10 @@ def fetch_all_conversations() -> list[dict]:
 
 def fetch_campaign_leads() -> list[dict]:
     """Get leads with their status. Returns items with 'status' field."""
+    cache = os.environ.get("HEYREACH_LEADS_CACHE")
+    if cache and Path(cache).exists():
+        with open(cache, encoding="utf-8") as f:
+            return json.load(f)
     all_items = []
     offset = 0
     page_size = 100
