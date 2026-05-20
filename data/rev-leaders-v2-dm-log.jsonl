@@ -1,0 +1,10 @@
+{"ts": "2026-05-20T13:14:44.197357+00:00", "event": "dm1_detected_external", "email": "sonny.pannu@adroll.com"}
+{"ts": "2026-05-20T13:14:44.197357+00:00", "event": "dm2_sent", "email": "sonny.pannu@adroll.com", "dry_run": false}
+{"ts": "2026-05-20T13:14:44.197357+00:00", "event": "dm1_detected_external", "email": "nate.gosselin@mybrightwheel.com"}
+{"ts": "2026-05-20T13:14:44.197357+00:00", "event": "dm2_sent", "email": "nate.gosselin@mybrightwheel.com", "dry_run": false}
+{"ts": "2026-05-20T13:14:44.197357+00:00", "event": "dm1_detected_external", "email": "zv@constructor.tech"}
+{"ts": "2026-05-20T13:14:44.197357+00:00", "event": "dm2_sent", "email": "zv@constructor.tech", "dry_run": false}
+{"ts": "2026-05-20T13:14:44.197357+00:00", "event": "dm1_detected_external", "email": "jkoronich@kpa.io"}
+{"ts": "2026-05-20T13:14:44.197357+00:00", "event": "dm2_sent", "email": "jkoronich@kpa.io", "dry_run": false}
+{"ts": "2026-05-20T13:14:44.197357+00:00", "event": "dm1_detected_external", "email": "kelly.green@circles.co"}
+{"ts": "2026-05-20T13:14:44.197357+00:00", "event": "dm2_sent", "email": "kelly.green@circles.co", "dry_run": false}
